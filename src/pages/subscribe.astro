@@ -1,0 +1,118 @@
+---
+import Base from '../layouts/Base.astro';
+
+const webhookExample = `POST https://ailens.news/api/subscribe
+Content-Type: application/json
+
+{
+  "webhook_url": "https://your-agent.com/webhook",
+  "filter": {
+    "categories": ["technology"],
+    "min_importance": 3
+  }
+}`;
+
+const deleteExample = 'DELETE https://ailens.news/api/subscribe/{id}';
+---
+
+<Base title="订阅">
+  <section class="subscribe-page">
+    <h1 class="subscribe-heading">订阅 AI Lens</h1>
+    <p class="subscribe-tagline">每天早上，AI 领域最重要的信号，直接送达。</p>
+
+    <div class="subscribe-methods">
+      <div class="subscribe-card">
+        <div class="card-icon">📧</div>
+        <h2 class="card-title">邮件订阅</h2>
+        <p class="card-desc">每天一期，直达邮箱。</p>
+        <form class="email-form" action="https://buttondown.email/api/emails/embed-subscribe/" method="post">
+          <input type="email" name="email" placeholder="your@email.com" required class="email-input" />
+          <input type="hidden" name="tag" value="ailens" />
+          <button type="submit" class="email-submit">订阅</button>
+        </form>
+      </div>
+
+      <div class="subscribe-card">
+        <div class="card-icon">📡</div>
+        <h2 class="card-title">RSS</h2>
+        <p class="card-desc">用你喜欢的 RSS 阅读器订阅。</p>
+        <a href="/rss.xml" class="card-link" target="_blank" rel="noopener">/rss.xml</a>
+      </div>
+
+      <div class="subscribe-card">
+        <div class="card-icon">🤖</div>
+        <h2 class="card-title">Agent 订阅</h2>
+        <p class="card-desc">让你的 AI Agent 自动获取每日 AI 日报数据。</p>
+        <div class="agent-options">
+          <div class="agent-opt">
+            <h3>主动拉取</h3>
+            <code>GET /data/latest.json</code>
+            <span class="agent-hint">获取最新一期结构化 JSON 数据</span>
+          </div>
+          <div class="agent-opt">
+            <h3>被动推送</h3>
+            <code>POST /api/subscribe</code>
+            <span class="agent-hint">注册 Webhook，自动推送</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="subscribe-card">
+        <div class="card-icon">🔗</div>
+        <h2 class="card-title">JSON Feed</h2>
+        <p class="card-desc">标准 JSON Feed 1.1 格式。</p>
+        <a href="/feed.json" class="card-link" target="_blank" rel="noopener">/feed.json</a>
+      </div>
+    </div>
+
+    <div class="api-section">
+      <h2 class="api-heading">Agent API</h2>
+      <div class="api-block">
+        <h3>获取最新日报</h3>
+        <pre class="code-block">GET https://ailens.news/data/latest.json</pre>
+      </div>
+      <div class="api-block">
+        <h3>获取指定日期</h3>
+        <pre class="code-block">GET https://ailens.news/data/YYYY-MM-DD.json</pre>
+      </div>
+      <div class="api-block">
+        <h3>注册 Webhook</h3>
+        <pre class="code-block"><code>{webhookExample}</code></pre>
+      </div>
+      <div class="api-block">
+        <h3>取消订阅</h3>
+        <pre class="code-block"><code>{deleteExample}</code></pre>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style is:global>
+  .subscribe-page { padding: 2.5rem 0; }
+  .subscribe-heading { font-family: var(--font-serif); font-size: 1.75rem; font-weight: 900; margin-bottom: 0.5rem; }
+  .subscribe-tagline { font-size: 1rem; color: var(--text-secondary); margin-bottom: 2.5rem; }
+  .subscribe-methods { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 3rem; }
+  .subscribe-card { padding: 1.5rem; background: var(--bg-white); border: 1px solid var(--border); border-radius: 12px; }
+  .card-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+  .card-title { font-family: var(--font-serif); font-size: 1.125rem; font-weight: 700; margin-bottom: 0.375rem; }
+  .card-desc { font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem; }
+  .card-link { display: inline-block; font-family: monospace; font-size: 0.8125rem; padding: 0.5rem 1rem; background: var(--accent-light); color: var(--accent); border-radius: 6px; font-weight: 600; }
+  .card-link:hover { background: #dbeafe; color: #1d4ed8; }
+  .email-form { display: flex; gap: 0.5rem; }
+  .email-input { flex: 1; padding: 0.625rem 0.875rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.875rem; font-family: var(--font-sans); outline: none; }
+  .email-input:focus { border-color: var(--accent); }
+  .email-submit { padding: 0.625rem 1.25rem; background: var(--accent); color: white; border: none; border-radius: 6px; font-size: 0.875rem; font-weight: 600; cursor: pointer; font-family: var(--font-sans); }
+  .email-submit:hover { background: #1d4ed8; }
+  .agent-options { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .agent-opt { padding: 0.875rem; background: var(--bg); border-radius: 8px; }
+  .agent-opt h3 { font-size: 0.8125rem; font-weight: 600; margin-bottom: 0.375rem; }
+  .agent-opt code { font-size: 0.75rem; color: var(--accent); }
+  .agent-hint { display: block; font-size: 0.75rem; color: var(--text-tertiary); margin-top: 0.25rem; }
+  .api-section { border-top: 1px solid var(--border); padding-top: 2rem; }
+  .api-heading { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; }
+  .api-block { margin-bottom: 1.5rem; }
+  .api-block h3 { font-size: 0.875rem; font-weight: 600; margin-bottom: 0.5rem; }
+  .code-block { background: #1e1e1e; color: #d4d4d4; padding: 1rem; border-radius: 8px; font-size: 0.8125rem; line-height: 1.6; overflow-x: auto; }
+  .code-block code { font-family: monospace; }
+  @media (max-width: 640px) { .agent-options { grid-template-columns: 1fr; } .email-form { flex-direction: column; } }
+</style>

@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Signals from '../components/Signals.astro';
+import DeepDive from '../components/DeepDive.astro';
+import { getDailyData, getAllDates } from '../lib/data';
+import { formatWeekday } from '../lib/utils';
+
+export function getStaticPaths() {
+  const dates = getAllDates();
+  return dates.map(date => ({ params: { date } }));
+}
+
+const { date } = Astro.params;
+const data = getDailyData(date!);
+
+if (!data) {
+  return Astro.redirect('/');
+}
+---
+
+<Base title={`AI 日报 · ${date}`}>
+  <Hero
+    date={date!}
+    summary={data.summary}
+    weekday={formatWeekday(date!)}
+  />
+  <Signals items={data.items} />
+  {data.deep_dive && (
+    <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
+  )}
+  <nav class="date-nav">
+    <a href="/" class="back-link">← 返回最新</a>
+  </nav>
+</Base>
+
+<style>
+  .date-nav {
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .back-link {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+  .back-link:hover {
+    color: var(--accent);
+  }
+</style>

@@ -1,0 +1,147 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Signals from '../components/Signals.astro';
+import DeepDive from '../components/DeepDive.astro';
+import { getLatestDate, getDailyData, getRecentDates } from '../lib/data';
+import { formatDate, formatWeekday } from '../lib/utils';
+
+export function getStaticPaths() {
+  // Always generate at least one page; actual data loaded client-side or at build
+  return [{ params: {} }];
+}
+
+const latestDate = getLatestDate();
+
+let data: ReturnType<typeof getDailyData> = null;
+let recentDates: string[] = [];
+
+if (latestDate) {
+  data = getDailyData(latestDate);
+  recentDates = getRecentDates(7);
+}
+---
+
+<Base title={latestDate ? `AI 日报 · ${latestDate}` : 'AI Lens'}>
+  {data ? (
+    <>
+      <Hero
+        date={latestDate!}
+        summary={data.summary}
+        weekday={formatWeekday(latestDate!)}
+      />
+      <Signals items={data.items} />
+      {data.deep_dive && (
+        <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
+      )}
+
+      {recentDates.length > 1 && (
+        <section class="recent">
+          <h2 class="recent-title">近期日报</h2>
+          <div class="recent-list">
+            {recentDates.slice(1).map((d) => (
+              <a href={`/${d}`} class="recent-item">
+                <span class="recent-date">{d}</span>
+                <span class="recent-weekday">{formatWeekday(d)}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+    </>
+  ) : (
+    <section class="empty-state">
+      <div class="empty-icon">🔭</div>
+      <h1 class="empty-title">AI Lens</h1>
+      <p class="empty-desc">透过镜头看 AI 新闻</p>
+      <p class="empty-hint">第一期日报即将发布，敬请期待。</p>
+      <a href="/subscribe" class="empty-cta">立即订阅 →</a>
+    </section>
+  )}
+</Base>
+
+<style>
+  .recent {
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .recent-title {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .recent-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+  }
+  .recent-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .recent-item:hover {
+    border-color: var(--accent);
+    background: var(--accent-light);
+    color: var(--accent);
+  }
+  .recent-date {
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  .recent-weekday {
+    color: var(--text-tertiary);
+    font-size: 0.75rem;
+  }
+
+  /* Empty state */
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0;
+    text-align: center;
+  }
+  .empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .empty-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.5rem;
+  }
+  .empty-desc {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+  .empty-hint {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    margin-bottom: 1.5rem;
+  }
+  .empty-cta {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    background: var(--accent);
+    color: white;
+    border-radius: var(--radius);
+    transition: background 0.2s;
+  }
+  .empty-cta:hover {
+    background: #1d4ed8;
+    color: white;
+  }
+</style>

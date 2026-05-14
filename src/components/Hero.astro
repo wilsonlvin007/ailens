@@ -1,0 +1,53 @@
+---
+interface Props {
+  date: string;
+  summary: string;
+  weekday: string;
+}
+
+const { date, summary, weekday } = Astro.props;
+---
+
+<section class="hero">
+  <div class="hero-date">
+    <time datetime={date}>{date}</time>
+    <span class="hero-weekday">{weekday}</span>
+  </div>
+  <p class="hero-summary">{summary}</p>
+</section>
+
+<style>
+  .hero {
+    padding: 3rem 0 2rem;
+  }
+  .hero-date {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .hero-date time {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+  }
+  .hero-weekday {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    font-weight: 500;
+  }
+  .hero-summary {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    font-weight: 400;
+  }
+  @media (max-width: 640px) {
+    .hero { padding: 2rem 0 1.5rem; }
+    .hero-date time { font-size: 1.25rem; }
+    .hero-summary { font-size: 1rem; }
+  }
+</style>

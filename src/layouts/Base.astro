@@ -1,0 +1,194 @@
+---
+const { title, description = '透过镜头看 AI 新闻' } = Astro.props;
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" type="application/rss+xml" title="AI Lens News" href="/rss.xml" />
+    <link rel="alternate" type="application/feed+json" title="AI Lens News" href="/feed.json" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <title>{title ? `${title} · AI Lens` : 'AI Lens · 透过镜头看 AI 新闻'}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="/" class="logo">AI Lens<span class="logo-dot">.</span></a>
+        <div class="nav-links">
+          <a href="/">日报</a>
+          <a href="/archive">归档</a>
+          <a href="/subscribe">订阅</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>AI Lens · 透过镜头看 AI 新闻</p>
+        <p class="footer-sub">技术 / 应用 / 硬件 / 思想 — 全维度 AI 日报</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #fafafa;
+    --bg-white: #ffffff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #6b7280;
+    --text-tertiary: #9ca3af;
+    --accent: #2563eb;
+    --accent-light: #eff6ff;
+    --border: #e5e7eb;
+    --border-light: #f3f4f6;
+    --cat-technology: #6366f1;
+    --cat-application: #06b6d4;
+    --cat-hardware: #f59e0b;
+    --cat-thought: #8b5cf6;
+    --radius: 8px;
+    --max-width: 720px;
+    --font-serif: 'Noto Serif SC', 'Georgia', serif;
+    --font-sans: 'Noto Sans SC', system-ui, sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    background: var(--bg);
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  a:hover {
+    color: #1d4ed8;
+  }
+
+  /* Header */
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-white);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+  }
+  .logo:hover {
+    color: var(--text-primary);
+  }
+  .logo-dot {
+    color: var(--accent);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.75rem;
+  }
+  .nav-links a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+  }
+  .nav-links a:hover {
+    color: var(--text-primary);
+  }
+  .nav-links a.active {
+    color: var(--text-primary);
+  }
+
+  /* Main */
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    min-height: calc(100vh - 56px - 120px);
+  }
+
+  /* Footer */
+  .site-footer {
+    border-top: 1px solid var(--border);
+    background: var(--bg-white);
+    padding: 2.5rem 0;
+    margin-top: 4rem;
+  }
+  .footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    text-align: center;
+  }
+  .footer-inner p:first-child {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+  }
+  .footer-sub {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-top: 0.25rem;
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .nav-links {
+      gap: 1rem;
+    }
+    .nav-links a {
+      font-size: 0.8125rem;
+    }
+  }
+</style>
