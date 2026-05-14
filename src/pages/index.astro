@@ -35,17 +35,29 @@ if (latestDate) {
         <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
       )}
 
-      {recentDates.length > 1 && (
+      {/* 历史期刊 */}
+      {recentDates.length > 0 && (
         <section class="recent">
           <h2 class="recent-title">近期日报</h2>
           <div class="recent-list">
-            {recentDates.slice(1).map((d) => (
-              <a href={`/${d}`} class="recent-item">
-                <span class="recent-date">{d}</span>
-                <span class="recent-weekday">{formatWeekday(d)}</span>
-              </a>
-            ))}
+            {recentDates.map((d) => {
+              const isToday = d === latestDate;
+              const dData = getDailyData(d);
+              const summary = dData?.summary || '';
+              return (
+                <a href={`/${d}`} class:list={["recent-item", { "recent-today": isToday }]}>
+                  <div class="recent-text">
+                    <span class="recent-date">{d.slice(5)}</span>
+                    <span class="recent-weekday">{formatWeekday(d)}</span>
+                  </div>
+                  {summary && (
+                    <span class="recent-summary">{summary.slice(0, 40)}{summary.length > 40 ? '…' : ''}</span>
+                  )}
+                </a>
+              );
+            })}
           </div>
+          <a href="/archive" class="recent-archive-link">查看完整归档 →</a>
         </section>
       )}
     </>
@@ -73,32 +85,65 @@ if (latestDate) {
   }
   .recent-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.625rem;
+    flex-direction: column;
+    gap: 0;
   }
   .recent-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
     background: var(--bg-white);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
+    border-bottom: 1px solid var(--border-light);
     font-size: 0.875rem;
-    transition: border-color 0.2s, background 0.2s;
+    transition: background 0.2s;
+  }
+  .recent-item:last-child {
+    border-bottom: none;
   }
   .recent-item:hover {
-    border-color: var(--accent);
     background: var(--accent-light);
-    color: var(--accent);
+  }
+  .recent-today {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+  }
+  .recent-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
   }
   .recent-date {
     font-weight: 600;
     color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
   }
   .recent-weekday {
     color: var(--text-tertiary);
     font-size: 0.75rem;
+  }
+  .recent-summary {
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+    text-align: right;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 400px;
+  }
+  .recent-archive-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+  }
+  .recent-archive-link:hover {
+    color: var(--accent);
   }
 
   /* Empty state */
