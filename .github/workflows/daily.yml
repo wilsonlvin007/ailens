@@ -1,0 +1,235 @@
+name: Daily AI News Pipeline
+
+on:
+  schedule:
+    # 每天 UTC 22:00 = 北京时间 06:00
+    - cron: '0 22 * * *'
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -q requests
+
+      - name: Call Dify workflow & process output
+        env:
+          DIFY_API_KEY: ${{ secrets.DIFY_API_KEY }}
+          DIFY_API_URL: https://api.dify.ai/v1/workflows/run
+        run: |
+          python3 << 'PYEOF'
+          import json, subprocess, sys, os
+          from datetime import datetime, timezone, timedelta
+          sys.path.insert(0, 'scripts')
+          from collect import main
+
+          # 1. 采集
+          raw = main()
+          items = json.loads(raw)[:10]
+          date = (datetime.now(timezone(timedelta(hours=8)))).strftime('%Y-%m-%d')
+          print(f"Collected {len(items)} items for {date}")
+
+          if len(items) == 0:
+              print("No items collected, exiting.")
+              sys.exit(0)
+
+          # 2. 调 Dify workflow
+          payload = {
+              'inputs': {'date': date, 'raw_items': json.dumps(items, ensure_ascii=False)},
+              'response_mode': 'streaming',
+              'user': 'ailens-pipeline'
+          }
+
+          with open('/tmp/dify_payload.json', 'w') as f:
+              json.dump(payload, f)
+
+          api_key = os.environ.get('DIFY_API_KEY', '')
+          api_url = os.environ.get('DIFY_API_URL', 'https://api.dify.ai/v1/workflows/run')
+
+          print(f"Calling Dify workflow...")
+          result = subprocess.run([
+              'curl', '-s', '-m', '600',
+              '-X', 'POST', api_url,
+              '-H', f'Authorization: Bearer {api_key}',
+              '-H', 'Content-Type: application/json',
+              '-d', '@/tmp/dify_payload.json'
+          ], capture_output=True, text=True, timeout=600)
+
+          with open('/tmp/dify_stream.txt', 'w') as f:
+              f.write(result.stdout)
+
+          if result.returncode != 0:
+              print(f'curl error: {result.stderr}')
+              sys.exit(1)
+
+          print(f"Dify response length: {len(result.stdout)} bytes")
+
+          # 3. 解析 SSE stream
+          # 真实 Dify streaming 格式（已验证）：
+          #   - workflow_started: data.event="workflow_started"
+          #   - node_started: data.event="node_started", data.data.title=节点标题, data.data.node_id=节点ID
+          #   - text_chunk: data.event="text_chunk", data.data.text=片段, data.data.from_variable_selector=["node_id","text"]
+          #   - node_finished: data.event="node_finished", data.data.outputs={"text":"完整输出","usage":{...},"finish_reason":"stop"}
+          #   - message_end: data.event="message_end"
+          #   SSE 行格式: "data: {json}\n\n"（data:后一个空格）
+          node_outputs = {}       # node_id -> output text
+          node_titles = {}        # node_id -> title
+          events_seen = set()
+          stream_ended = False
+          finished_nodes = set()  # 已通过 node_finished 获取完整输出的节点
+
+          with open('/tmp/dify_stream.txt', 'r') as f:
+              buffer = f.read()
+
+          for line in buffer.split('\n'):
+              line = line.strip()
+              if not line.startswith('data:'):
+                  continue
+              data_str = line.split('data:', 1)[1].strip()
+              if not data_str:
+                  continue
+              try:
+                  event = json.loads(data_str)
+              except json.JSONDecodeError as e:
+                  print(f"[WARN] Failed to parse SSE line: {e}")
+                  continue
+
+              evt_type = event.get('event', '')
+              events_seen.add(evt_type)
+              data = event.get('data', {})
+
+              if evt_type == 'node_finished':
+                  node_id = data.get('node_id', '')
+                  title = data.get('title', '')
+                  node_titles[node_id] = title
+                  outputs = data.get('outputs', {})
+                  # LLM 节点输出 key 为 "text"（已验证）
+                  # 直接取 "text" key，如果不存在则取最长的
+                  if 'text' in outputs:
+                      node_outputs[node_id] = outputs['text']
+                  elif outputs:
+                      best_key = max(outputs.keys(), key=lambda k: len(str(outputs[k])))
+                      node_outputs[node_id] = outputs[best_key]
+                  finished_nodes.add(node_id)
+                  print(f"  node_finished: title='{title}', output_len={len(node_outputs.get(node_id, ''))}")
+              elif evt_type == 'text_chunk':
+                  selectors = data.get('from_variable_selector', [])
+                  if selectors:
+                      nid = selectors[0]
+                      # 仅在 node_finished 未覆盖该节点时，用 text_chunk 拼接作为 fallback
+                      if nid not in finished_nodes:
+                          node_outputs[nid] = node_outputs.get(nid, '') + data.get('text', '')
+              elif evt_type == 'message_end':
+                  stream_ended = True
+
+          if not stream_ended:
+              print("[WARN] Stream did not end with message_end event — output may be incomplete")
+
+          print(f"SSE events seen: {sorted(events_seen)}")
+          print(f"Nodes parsed: {list(node_titles.values())}")
+
+          # 4. 提取各节点输出
+          def find_output(keyword):
+              for nid, title in node_titles.items():
+                  if keyword in title:
+                      return node_outputs.get(nid, '')
+              return ''
+
+          items_text = find_output('重构')
+          deep_dive_text = find_output('快评')
+          print(f"重构 output: {len(items_text)} chars")
+          print(f"快评 output: {len(deep_dive_text)} chars")
+
+          # 5. 生成数据文件
+          import re
+          from pathlib import Path
+
+          DATA_DIR = Path('public/data')
+          DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+          # 解析 items
+          try:
+              items_data = json.loads(items_text)
+              items_parsed = items_data.get('items', []) if isinstance(items_data, dict) else items_data if isinstance(items_data, list) else []
+          except:
+              items_parsed = []
+
+          for i, item in enumerate(items_parsed):
+              if 'id' not in item:
+                  item['id'] = f'{date}-{i+1:03d}'
+              if 'collected_at' not in item:
+                  item['collected_at'] = f'{date}T06:00:00+08:00'
+
+          # 解析 deep_dive
+          deep_dive = None
+          if deep_dive_text:
+              try:
+                  deep_dive = json.loads(deep_dive_text)
+              except:
+                  m = re.search(r'\{[\s\S]*\}', deep_dive_text)
+                  if m:
+                      try: deep_dive = json.loads(m.group())
+                      except: pass
+
+          site_data = {
+              'date': date,
+              'generated_at': datetime.now(timezone(timedelta(hours=8))).isoformat(),
+              'summary': '',
+              'items': items_parsed,
+          }
+          if deep_dive:
+              site_data['deep_dive'] = deep_dive
+
+          summaries = [it.get('summary','') or it.get('summary_cn','') for it in items_parsed[:3] if it.get('summary') or it.get('summary_cn')]
+          if summaries:
+              site_data['summary'] = '；'.join(summaries)
+
+          with open(DATA_DIR / f'{date}.json', 'w') as f:
+              json.dump(site_data, f, ensure_ascii=False, indent=2)
+          print(f"Written: {date}.json ({len(items_parsed)} items)")
+
+          with open(DATA_DIR / 'latest.json', 'w') as f:
+              json.dump(site_data, f, ensure_ascii=False, indent=2)
+          print("Written: latest.json")
+
+          # 更新 index
+          index_file = DATA_DIR / 'index.json'
+          dates = []
+          if index_file.exists():
+              try: dates = json.loads(open(index_file).read()).get('dates', [])
+              except: pass
+          if date not in dates:
+              dates.insert(0, date)
+          dates = sorted(set(dates), reverse=True)
+          with open(index_file, 'w') as f:
+              json.dump({'dates': dates, 'latest': dates[0] if dates else None}, f, ensure_ascii=False, indent=2)
+          print(f"Written: index.json ({len(dates)} dates)")
+          PYEOF
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install & Build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
