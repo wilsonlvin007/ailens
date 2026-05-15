@@ -58,216 +58,6 @@ jobs:
           api_url = os.environ.get('DIFY_API_URL', 'https://api.dify.ai/v1/workflows/run')
 
           print(f"Calling Dify workflow...")
-          result = subprocess.run([
-              'curl', '-s', '-m', '600',
-              '-X', 'POST', api_url,
-              '-H', f'Authorization: Bearer {api_key}',
-              '-H', 'Content-Type: application/json',
-              '-d', '@/tmp/dify_payload.json'
-          ], capture_output=True, text=True, timeout=600)
-
-          with open('/tmp/dify_stream.txt', 'w') as f:
-              f.write(result.stdout)
-
-          if result.returncode != 0:
-              print(f'curl error: {result.stderr}')
-              sys.exit(1)
-
-          print(f"Dify response length: {len(result.stdout)} bytes")
-
-          # 3. 解析 SSE stream
-          # 真实 Dify streaming 格式（已验证）：
-          #   - workflow_started: data.event="workflow_started"
-          #   - node_started: data.event="node_started", data.data.title=节点标题, data.data.node_id=节点ID
-          #   - text_chunk: data.event="text_chunk", data.data.text=片段, data.data.from_variable_selector=["node_id","text"]
-          #   - node_finished: data.event="node_finished", data.data.outputs={"text":"完整输出","usage":{...},"finish_reason":"stop"}
-          #   - message_end: data.event="message_end"
-          #   SSE 行格式: "data: {json}\n\n"（data:后一个空格）
-          node_outputs = {}       # node_id -> output text
-          node_titles = {}        # node_id -> title
-          events_seen = set()
-          stream_ended = False
-          finished_nodes = set()  # 已通过 node_finished 获取完整输出的节点
-
-          with open('/tmp/dify_stream.txt', 'r') as f:
-              buffer = f.read()
-
-          for line in buffer.split('\n'):
-              line = line.strip()
-              if not line.startswith('data:'):
-                  continue
-              data_str = line.split('data:', 1)[1].strip()
-              if not data_str:
-                  continue
-              try:
-                  event = json.loads(data_str)
-              except json.JSONDecodeError as e:
-                  print(f"[WARN] Failed to parse SSE line: {e}")
-                  continue
-
-              evt_type = event.get('event', '')
-              events_seen.add(evt_type)
-              data = event.get('data', {})
-
-              if evt_type == 'node_finished':
-                  node_id = data.get('node_id', '')
-                  title = data.get('title', '')
-                  node_titles[node_id] = title
-                  outputs = data.get('outputs', {})
-                  # LLM 节点输出 key 为 "text"（已验证）
-                  # 直接取 "text" key，如果不存在则取最长的
-                  if 'text' in outputs:
-                      node_outputs[node_id] = outputs['text']
-                  elif outputs:
-                      best_key = max(outputs.keys(), key=lambda k: len(str(outputs[k])))
-                      node_outputs[node_id] = outputs[best_key]
-                  finished_nodes.add(node_id)
-                  print(f"  node_finished: title='{title}', output_len={len(node_outputs.get(node_id, ''))}")
-              elif evt_type == 'text_chunk':
-                  selectors = data.get('from_variable_selector', [])
-                  if selectors:
-                      nid = selectors[0]
-                      # 仅在 node_finished 未覆盖该节点时，用 text_chunk 拼接作为 fallback
-                      if nid not in finished_nodes:
-                          node_outputs[nid] = node_outputs.get(nid, '') + data.get('text', '')
-              elif evt_type == 'message_end':
-                  stream_ended = True
-
-          if not stream_ended:
-              print("[WARN] Stream did not end with message_end event — output may be incomplete")
-
-          print(f"SSE events seen: {sorted(events_seen)}")
-          print(f"Nodes parsed: {list(node_titles.values())}")
-
-          # 4. 提取各节点输出
-          def find_output(keyword):
-              for nid, title in node_titles.items():
-                  if keyword in title:
-                      return node_outputs.get(nid, '')
-              return ''
-
-          items_text = find_output('重构')
-          deep_dive_text = find_output('快评')
-          print(f"重构 output: {len(items_text)} chars")
-          print(f"快评 output: {len(deep_dive_text)} chars")
-          # Debug: 打印重构输出的前 500 字符，方便排查解析问题
-          print(f"重构 output preview: {repr(items_text[:500])}")
-
-          # 5. 生成数据文件
-          import re
-          from pathlib import Path
-
-          DATA_DIR = Path('public/data')
-          DATA_DIR.mkdir(parents=True, exist_ok=True)
-
-          # 解析 items —— 兼容 LLM 输出的常见 JSON 错误
-          def fix_llm_json(text):
-              """修复 LLM 生成的 JSON 中的常见错误：未转义双引号、尾部逗号等"""
-              # 1. 修复未转义的双引号（在中文文本中最常见）
-              # 匹配 JSON 字符串值中的裸双引号（如 "事实 grounded" 中的 second quote）
-              # 策略：在每个 JSON 字符串值内，将非转义的 " 替换为 \"
-              result = []
-              in_string = False
-              escape_next = False
-              for i, ch in enumerate(text):
-                  if escape_next:
-                      result.append(ch)
-                      escape_next = False
-                      continue
-                  if ch == '\\' and in_string:
-                      result.append(ch)
-                      escape_next = True
-                      continue
-                  if ch == '"' and not in_string:
-                      result.append(ch)
-                      in_string = True
-                      continue
-                  if ch == '"' and in_string:
-                      # 检查下一个非空白字符是否是 JSON 语法字符
-                      rest = text[i+1:].lstrip()
-                      json_chars = set(':,]}')
-                      if rest and rest[0] in json_chars:
-                          result.append(ch)
-                          in_string = False
-                      else:
-                          # 这个引号很可能是未转义的，转义它
-                          result.append('\\"')
-                  else:
-                      result.append(ch)
-              text = ''.join(result)
-              # 2. 去掉尾部逗号（],} 前的 ,）
-              text = re.sub(r',(\s*[}\]])', r'\1', text)
-              return text
-
-          def extract_json(text):
-              """从 LLM 输出中提取 JSON，兼容 markdown 代码块包裹"""
-              if not text:
-                  return None
-              # 先尝试直接解析
-              text = text.strip()
-              try:
-                  return json.loads(text)
-              except json.JSONDecodeError as e:
-                  print(f"[DEBUG] Direct parse failed: {e}")
-              # 尝试修复 LLM JSON 后再解析
-              try:
-                  fixed = fix_llm_json(text)
-                  if fixed != text:
-                      print(f"[DEBUG] Trying fix_llm_json...")
-                      return json.loads(fixed)
-              except json.JSONDecodeError as e:
-                  print(f"[DEBUG] fix_llm_json failed: {e}")
-              # 尝试去掉 markdown 代码块包裹
-              m = re.search(r'```(?:json)?\s*\n?([\s\S]*?)\n?\s*```', text)
-              if m:
-                  try:
-                      return json.loads(m.group(1))
-                  except json.JSONDecodeError as e:
-                      print(f"[DEBUG] markdown-block parse failed: {e}")
-              # 最后尝试匹配最外层 { } + 修复
-              m = re.search(r'\{[\s\S]*\}', text)
-              if m:
-                  try:
-                      fixed = fix_llm_json(m.group())
-                      return json.loads(fixed)
-                  except json.JSONDecodeError as e:
-                      print(f"[DEBUG] brace-match+fix failed: {e}")
-              print(f"[ERROR] Failed to extract JSON from text ({len(text)} chars)")
-              return None
-
-          items_data = extract_json(items_text)
-          if items_data:
-              items_parsed = items_data.get('items', []) if isinstance(items_data, dict) else items_data if isinstance(items_data, list) else []
-          else:
-              items_parsed = []
-              print("[ERROR] items_text could not be parsed as JSON")
-
-          for i, item in enumerate(items_parsed):
-              if 'id' not in item:
-                  item['id'] = f'{date}-{i+1:03d}'
-              if 'collected_at' not in item:
-                  item['collected_at'] = f'{date}T06:00:00+08:00'
-
-          # 解析 deep_dive
-          deep_dive = None
-          if deep_dive_text:
-              deep_dive = extract_json(deep_dive_text)
-
-          site_data = {
-              'date': date,
-              'generated_at': datetime.now(timezone(timedelta(hours=8))).isoformat(),
-              'summary': '',
-              'items': items_parsed,
-          }
-          if deep_dive:
-              site_data['deep_dive'] = deep_dive
-
-          summaries = [it.get('summary','') or it.get('summary_cn','') for it in items_parsed[:3] if it.get('summary') or it.get('summary_cn')]
-          if summaries:
-              site_data['summary'] = '；'.join(summaries)
-
-          # 6. 质检：出门前的最后检查
-          VALID_CATEGORIES = {'technology', 'application', 'hardware', 'thought'}
 
           def quality_check(data):
               """上线前质检：结构完整性 + 内容质量，返回 (passed, warnings, errors)"""
@@ -372,23 +162,244 @@ jobs:
               passed = len(errors) == 0
               return passed, warnings, errors
 
-          passed, warnings, errors = quality_check(site_data)
+          MAX_RETRIES = 3
+          passed = False
+          last_errors = []
+          for attempt in range(1, MAX_RETRIES + 1):
+              if attempt > 1:
+                  print(f"Retry {attempt}/{MAX_RETRIES}")
+              result = subprocess.run([
+                  'curl', '-s', '-m', '600',
+                  '-X', 'POST', api_url,
+                  '-H', f'Authorization: Bearer {api_key}',
+                  '-H', 'Content-Type: application/json',
+                  '-d', '@/tmp/dify_payload.json'
+              ], capture_output=True, text=True, timeout=600)
 
-          print(f"\n{'='*50}")
-          print(f"质检结果: {'✅ 通过' if passed else '❌ 不通过'}")
-          if warnings:
-              print(f"⚠️  警告 ({len(warnings)}):")
-              for w in warnings:
-                  print(f"   - {w}")
-          if errors:
-              print(f"❌ 错误 ({len(errors)}):")
-              for e in errors:
-                  print(f"   - {e}")
-          print(f"{'='*50}\n")
+              with open('/tmp/dify_stream.txt', 'w') as f:
+                  f.write(result.stdout)
 
+              if result.returncode != 0:
+                  print(f'curl error: {result.stderr}')
+                  sys.exit(1)
+
+              print(f"Dify response length: {len(result.stdout)} bytes")
+
+              # 3. 解析 SSE stream
+              # 真实 Dify streaming 格式（已验证）：
+              #   - workflow_started: data.event="workflow_started"
+              #   - node_started: data.event="node_started", data.data.title=节点标题, data.data.node_id=节点ID
+              #   - text_chunk: data.event="text_chunk", data.data.text=片段, data.data.from_variable_selector=["node_id","text"]
+              #   - node_finished: data.event="node_finished", data.data.outputs={"text":"完整输出","usage":{...},"finish_reason":"stop"}
+              #   - message_end: data.event="message_end"
+              #   SSE 行格式: "data: {json}\n\n"（data:后一个空格）
+              node_outputs = {}       # node_id -> output text
+              node_titles = {}        # node_id -> title
+              events_seen = set()
+              stream_ended = False
+              finished_nodes = set()  # 已通过 node_finished 获取完整输出的节点
+
+              with open('/tmp/dify_stream.txt', 'r') as f:
+                  buffer = f.read()
+
+              for line in buffer.split('\n'):
+                  line = line.strip()
+                  if not line.startswith('data:'):
+                      continue
+                  data_str = line.split('data:', 1)[1].strip()
+                  if not data_str:
+                      continue
+                  try:
+                      event = json.loads(data_str)
+                  except json.JSONDecodeError as e:
+                      print(f"[WARN] Failed to parse SSE line: {e}")
+                      continue
+
+                  evt_type = event.get('event', '')
+                  events_seen.add(evt_type)
+                  data = event.get('data', {})
+
+                  if evt_type == 'node_finished':
+                      node_id = data.get('node_id', '')
+                      title = data.get('title', '')
+                      node_titles[node_id] = title
+                      outputs = data.get('outputs', {})
+                      # LLM 节点输出 key 为 "text"（已验证）
+                      # 直接取 "text" key，如果不存在则取最长的
+                      if 'text' in outputs:
+                          node_outputs[node_id] = outputs['text']
+                      elif outputs:
+                          best_key = max(outputs.keys(), key=lambda k: len(str(outputs[k])))
+                          node_outputs[node_id] = outputs[best_key]
+                      finished_nodes.add(node_id)
+                      print(f"  node_finished: title='{title}', output_len={len(node_outputs.get(node_id, ''))}")
+                  elif evt_type == 'text_chunk':
+                      selectors = data.get('from_variable_selector', [])
+                      if selectors:
+                          nid = selectors[0]
+                          # 仅在 node_finished 未覆盖该节点时，用 text_chunk 拼接作为 fallback
+                          if nid not in finished_nodes:
+                              node_outputs[nid] = node_outputs.get(nid, '') + data.get('text', '')
+                  elif evt_type == 'message_end':
+                      stream_ended = True
+
+              if not stream_ended:
+                  print("[WARN] Stream did not end with message_end event — output may be incomplete")
+
+              print(f"SSE events seen: {sorted(events_seen)}")
+              print(f"Nodes parsed: {list(node_titles.values())}")
+
+              # 4. 提取各节点输出
+              def find_output(keyword):
+                  for nid, title in node_titles.items():
+                      if keyword in title:
+                          return node_outputs.get(nid, '')
+                  return ''
+
+              items_text = find_output('重构')
+              deep_dive_text = find_output('快评')
+              print(f"重构 output: {len(items_text)} chars")
+              print(f"快评 output: {len(deep_dive_text)} chars")
+              # Debug: 打印重构输出的前 500 字符，方便排查解析问题
+              print(f"重构 output preview: {repr(items_text[:500])}")
+
+              # 5. 生成数据文件
+              import re
+              from pathlib import Path
+
+              DATA_DIR = Path('public/data')
+              DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+              # 解析 items —— 兼容 LLM 输出的常见 JSON 错误
+              def fix_llm_json(text):
+                  """修复 LLM 生成的 JSON 中的常见错误：未转义双引号、尾部逗号等"""
+                  # 1. 修复未转义的双引号（在中文文本中最常见）
+                  # 匹配 JSON 字符串值中的裸双引号（如 "事实 grounded" 中的 second quote）
+                  # 策略：在每个 JSON 字符串值内，将非转义的 " 替换为 \"
+                  result = []
+                  in_string = False
+                  escape_next = False
+                  for i, ch in enumerate(text):
+                      if escape_next:
+                          result.append(ch)
+                          escape_next = False
+                          continue
+                      if ch == '\\' and in_string:
+                          result.append(ch)
+                          escape_next = True
+                          continue
+                      if ch == '"' and not in_string:
+                          result.append(ch)
+                          in_string = True
+                          continue
+                      if ch == '"' and in_string:
+                          # 检查下一个非空白字符是否是 JSON 语法字符
+                          rest = text[i+1:].lstrip()
+                          json_chars = set(':,]}')
+                          if rest and rest[0] in json_chars:
+                              result.append(ch)
+                              in_string = False
+                          else:
+                              # 这个引号很可能是未转义的，转义它
+                              result.append('\\"')
+                      else:
+                          result.append(ch)
+                  text = ''.join(result)
+                  # 2. 去掉尾部逗号（],} 前的 ,）
+                  text = re.sub(r',(\s*[}\]])', r'\1', text)
+                  return text
+
+              def extract_json(text):
+                  """从 LLM 输出中提取 JSON，兼容 markdown 代码块包裹"""
+                  if not text:
+                      return None
+                  # 先尝试直接解析
+                  text = text.strip()
+                  try:
+                      return json.loads(text)
+                  except json.JSONDecodeError as e:
+                      print(f"[DEBUG] Direct parse failed: {e}")
+                  # 尝试修复 LLM JSON 后再解析
+                  try:
+                      fixed = fix_llm_json(text)
+                      if fixed != text:
+                          print(f"[DEBUG] Trying fix_llm_json...")
+                          return json.loads(fixed)
+                  except json.JSONDecodeError as e:
+                      print(f"[DEBUG] fix_llm_json failed: {e}")
+                  # 尝试去掉 markdown 代码块包裹
+                  m = re.search(r'```(?:json)?\s*\n?([\s\S]*?)\n?\s*```', text)
+                  if m:
+                      try:
+                          return json.loads(m.group(1))
+                      except json.JSONDecodeError as e:
+                          print(f"[DEBUG] markdown-block parse failed: {e}")
+                  # 最后尝试匹配最外层 { } + 修复
+                  m = re.search(r'\{[\s\S]*\}', text)
+                  if m:
+                      try:
+                          fixed = fix_llm_json(m.group())
+                          return json.loads(fixed)
+                      except json.JSONDecodeError as e:
+                          print(f"[DEBUG] brace-match+fix failed: {e}")
+                  print(f"[ERROR] Failed to extract JSON from text ({len(text)} chars)")
+                  return None
+
+              items_data = extract_json(items_text)
+              if items_data:
+                  items_parsed = items_data.get('items', []) if isinstance(items_data, dict) else items_data if isinstance(items_data, list) else []
+              else:
+                  items_parsed = []
+                  print("[ERROR] items_text could not be parsed as JSON")
+
+              for i, item in enumerate(items_parsed):
+                  if 'id' not in item:
+                      item['id'] = f'{date}-{i+1:03d}'
+                  if 'collected_at' not in item:
+                      item['collected_at'] = f'{date}T06:00:00+08:00'
+
+              # 解析 deep_dive
+              deep_dive = None
+              if deep_dive_text:
+                  deep_dive = extract_json(deep_dive_text)
+
+              site_data = {
+                  'date': date,
+                  'generated_at': datetime.now(timezone(timedelta(hours=8))).isoformat(),
+                  'summary': '',
+                  'items': items_parsed,
+              }
+              if deep_dive:
+                  site_data['deep_dive'] = deep_dive
+
+              summaries = [it.get('summary','') or it.get('summary_cn','') for it in items_parsed[:3] if it.get('summary') or it.get('summary_cn')]
+              if summaries:
+                  site_data['summary'] = '；'.join(summaries)
+
+              # 6. 质检：出门前的最后检查
+              VALID_CATEGORIES = {'technology', 'application', 'hardware', 'thought'}
+
+              passed, warnings, errors = quality_check(site_data)
+
+              print(f"\n{'='*50}")
+              print(f"质检结果: {'✅ 通过' if passed else '❌ 不通过'}")
+              if warnings:
+                  print(f"⚠️  警告 ({len(warnings)}):")
+                  for w in warnings:
+                      print(f"   - {w}")
+              if errors:
+                  print(f"❌ 错误 ({len(errors)}):")
+                  for e in errors:
+                      print(f"   - {e}")
+              print(f"{'='*50}\n")
+
+
+              if passed:
+                  break
+              last_errors = errors
+          # end for
           if not passed:
-              print("[FATAL] 质检未通过，中止上线")
-              import sys
+              print(f"[FATAL] {MAX_RETRIES} retries failed")
               sys.exit(1)
 
           with open(DATA_DIR / f'{date}.json', 'w') as f:
