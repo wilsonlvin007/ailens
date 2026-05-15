@@ -2,9 +2,26 @@
 interface Props {
   topic: string;
   content: string;
+  truncated?: boolean;
+  detailUrl?: string;
 }
 
-const { topic, content } = Astro.props;
+const { topic, content, truncated = false, detailUrl } = Astro.props;
+
+const previewLen = 150;
+const plainText = content.replace(/\n\n/g, '');
+const needsTruncation = truncated && plainText.length > previewLen;
+const previewParagraphs = content.split('\n\n');
+// 取前150字对应的段落数
+let totalLen = 0;
+let cutIndex = previewParagraphs.length;
+for (let i = 0; i < previewParagraphs.length; i++) {
+  totalLen += previewParagraphs[i].length;
+  if (totalLen >= previewLen) {
+    cutIndex = i + 1;
+    break;
+  }
+}
 ---
 
 <section class="deep-dive">
@@ -14,10 +31,21 @@ const { topic, content } = Astro.props;
   </h2>
   <h3 class="deep-dive-topic">{topic}</h3>
   <div class="deep-dive-content">
-    {content.split('\n\n').map((p) => (
-      <p>{p}</p>
-    ))}
+    {needsTruncation ? (
+      <>
+        {previewParagraphs.slice(0, cutIndex).map((p) => (
+          <p>{p}</p>
+        ))}
+      </>
+    ) : (
+      previewParagraphs.map((p) => (
+        <p>{p}</p>
+      ))
+    )}
   </div>
+  {needsTruncation && detailUrl && (
+    <a href={detailUrl} class="read-more">展开阅读 →</a>
+  )}
 </section>
 
 <style>
@@ -61,6 +89,17 @@ const { topic, content } = Astro.props;
   }
   .deep-dive-content p:last-child {
     margin-bottom: 0;
+  }
+  .read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent);
+    transition: color 0.2s;
+  }
+  .read-more:hover {
+    color: var(--accent-hover);
   }
   @media (max-width: 640px) {
     .deep-dive { padding: 1.25rem; margin: 2rem 0; }
