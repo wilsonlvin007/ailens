@@ -160,7 +160,45 @@ jobs:
           DATA_DIR = Path('public/data')
           DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-          # 解析 items —— 兼容多种 LLM 输出格式
+          # 解析 items —— 兼容 LLM 输出的常见 JSON 错误
+          def fix_llm_json(text):
+              """修复 LLM 生成的 JSON 中的常见错误：未转义双引号、尾部逗号等"""
+              # 1. 修复未转义的双引号（在中文文本中最常见）
+              # 匹配 JSON 字符串值中的裸双引号（如 "事实 grounded" 中的 second quote）
+              # 策略：在每个 JSON 字符串值内，将非转义的 " 替换为 \"
+              result = []
+              in_string = False
+              escape_next = False
+              for i, ch in enumerate(text):
+                  if escape_next:
+                      result.append(ch)
+                      escape_next = False
+                      continue
+                  if ch == '\\' and in_string:
+                      result.append(ch)
+                      escape_next = True
+                      continue
+                  if ch == '"' and not in_string:
+                      result.append(ch)
+                      in_string = True
+                      continue
+                  if ch == '"' and in_string:
+                      # 检查下一个非空白字符是否是 JSON 语法字符
+                      rest = text[i+1:].lstrip()
+                      json_chars = set(':,]}')
+                      if rest and rest[0] in json_chars:
+                          result.append(ch)
+                          in_string = False
+                      else:
+                          # 这个引号很可能是未转义的，转义它
+                          result.append('\\"')
+                  else:
+                      result.append(ch)
+              text = ''.join(result)
+              # 2. 去掉尾部逗号（],} 前的 ,）
+              text = re.sub(r',(\s*[}\]])', r'\1', text)
+              return text
+
           def extract_json(text):
               """从 LLM 输出中提取 JSON，兼容 markdown 代码块包裹"""
               if not text:
@@ -170,31 +208,32 @@ jobs:
               try:
                   return json.loads(text)
               except json.JSONDecodeError as e:
-                  print(f"[DEBUG] json.loads failed: {e} at pos {e.pos}")
-                  print(f"[DEBUG] Context around error: {repr(text[max(0,e.pos-80):e.pos+80])}")
-              except Exception as e:
-                  print(f"[DEBUG] Unexpected error in json.loads: {e}")
+                  print(f"[DEBUG] Direct parse failed: {e}")
+              # 尝试修复 LLM JSON 后再解析
+              try:
+                  fixed = fix_llm_json(text)
+                  if fixed != text:
+                      print(f"[DEBUG] Trying fix_llm_json...")
+                      return json.loads(fixed)
+              except json.JSONDecodeError as e:
+                  print(f"[DEBUG] fix_llm_json failed: {e}")
               # 尝试去掉 markdown 代码块包裹
               m = re.search(r'```(?:json)?\s*\n?([\s\S]*?)\n?\s*```', text)
               if m:
                   try:
                       return json.loads(m.group(1))
                   except json.JSONDecodeError as e:
-                      print(f"[DEBUG] markdown-block json.loads failed: {e}")
-                  except:
-                      pass
-              # 最后尝试匹配最外层 { }
+                      print(f"[DEBUG] markdown-block parse failed: {e}")
+              # 最后尝试匹配最外层 { } + 修复
               m = re.search(r'\{[\s\S]*\}', text)
               if m:
                   try:
-                      return json.loads(m.group())
+                      fixed = fix_llm_json(m.group())
+                      return json.loads(fixed)
                   except json.JSONDecodeError as e:
-                      print(f"[DEBUG] brace-match json.loads failed: {e}")
-                  except:
-                      pass
+                      print(f"[DEBUG] brace-match+fix failed: {e}")
               print(f"[ERROR] Failed to extract JSON from text ({len(text)} chars)")
-              print(f"[ERROR] Text starts with: {repr(text[:200])}")
-              print(f"[ERROR] Text ends with: {repr(text[-200:])}")
+              print(f"[ERROR] Error: {e}")
               return None
 
           items_data = extract_json(items_text)
