@@ -40,7 +40,7 @@ for (const d of dates) {
             <h2 class="archive-month">{group.label}</h2>
             <div class="archive-items">
               {group.dates.map((d) => (
-                <a href={`/${d}`} class="archive-item">
+                <a href={`${base}/${d}`} class="archive-item">
                   <span class="archive-date">{d.slice(5)}</span>
                   <span class="archive-weekday">{formatWeekday(d)}</span>
                 </a>
