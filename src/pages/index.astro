@@ -28,18 +28,12 @@ if (latestDate) {
     <>
       <Hero
         date={latestDate!}
+        summary={data.summary}
         weekday={formatWeekday(latestDate!)}
-        items={data.items}
-        deepDive={data.deep_dive}
       />
-      <div class="hero-divider"></div>
-      <div id="signals">
-        <Signals items={data.items} maxPerCategory={3} dateLink={`${base}/${latestDate}`} />
-      </div>
+      <Signals items={data.items} />
       {data.deep_dive && (
-        <div id="deep-dive">
-          <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated detailUrl={`${base}/${latestDate}`} />
-        </div>
+        <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
       )}
 
       {/* 历史期刊 */}
@@ -52,7 +46,7 @@ if (latestDate) {
               const dData = getDailyData(d);
               const summary = dData?.summary || '';
               return (
-                <a href={`${base}/${d}`} class:list={["recent-item", { "recent-today": isToday }]}>
+                <a href={`/${d}`} class:list={["recent-item", { "recent-today": isToday }]}>
                   <div class="recent-text">
                     <span class="recent-date">{d.slice(5)}</span>
                     <span class="recent-weekday">{formatWeekday(d)}</span>
@@ -64,7 +58,7 @@ if (latestDate) {
               );
             })}
           </div>
-          <a href={`${base}/archive`} class="recent-archive-link">查看完整归档 →</a>
+          <a href="${base}/archive" class="recent-archive-link">查看完整归档 →</a>
         </section>
       )}
     </>
@@ -74,7 +68,7 @@ if (latestDate) {
       <h1 class="empty-title">AI Lens</h1>
       <p class="empty-desc">透过镜头看 AI 新闻</p>
       <p class="empty-hint">第一期日报即将发布，敬请期待。</p>
-      <a href={`${base}/subscribe`} class="empty-cta">立即订阅 →</a>
+      <a href="${base}/subscribe" class="empty-cta">立即订阅 →</a>
     </section>
   )}
 </Base>
@@ -196,11 +190,4 @@ if (latestDate) {
     background: #1d4ed8;
     color: white;
   }
-
-.hero-divider {
-  height: 1px;
-  background: var(--border);
-  margin: 0;
-}
-
 </style>

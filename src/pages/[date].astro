@@ -23,21 +23,15 @@ if (!data) {
 <Base title={`AI 日报 · ${date}`}>
   <Hero
     date={date!}
+    summary={data.summary}
     weekday={formatWeekday(date!)}
-    items={data.items}
-    deepDive={data.deep_dive}
   />
-  <div class="hero-divider"></div>
-  <div id="signals">
-    <Signals items={data.items} />
-  </div>
+  <Signals items={data.items} />
   {data.deep_dive && (
-    <div id="deep-dive">
-      <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
-    </div>
+    <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
   )}
   <nav class="date-nav">
-    <a href={`${base}/`} class="back-link">← 返回最新</a>
+    <a href="${base}/" class="back-link">← 返回最新</a>
   </nav>
 </Base>
 
@@ -54,11 +48,4 @@ if (!data) {
   .back-link:hover {
     color: var(--accent);
   }
-
-.hero-divider {
-  height: 1px;
-  background: var(--border);
-  margin: 0;
-}
-
 </style>
