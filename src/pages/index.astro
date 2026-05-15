@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+const base = "/ailens";
 import Hero from '../components/Hero.astro';
 import Signals from '../components/Signals.astro';
 import DeepDive from '../components/DeepDive.astro';
@@ -57,7 +58,7 @@ if (latestDate) {
               );
             })}
           </div>
-          <a href="/archive" class="recent-archive-link">查看完整归档 →</a>
+          <a href="${base}/archive" class="recent-archive-link">查看完整归档 →</a>
         </section>
       )}
     </>
@@ -67,7 +68,7 @@ if (latestDate) {
       <h1 class="empty-title">AI Lens</h1>
       <p class="empty-desc">透过镜头看 AI 新闻</p>
       <p class="empty-hint">第一期日报即将发布，敬请期待。</p>
-      <a href="/subscribe" class="empty-cta">立即订阅 →</a>
+      <a href="${base}/subscribe" class="empty-cta">立即订阅 →</a>
     </section>
   )}
 </Base>
