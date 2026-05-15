@@ -1,0 +1,66 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "AI Lens · AI 日报",
+  "description": "透过镜头看 AI 新闻 — 技术 / 应用 / 硬件 / 思想",
+  "home_page_url": "https://ailens.news/",
+  "feed_url": "https://ailens.news//feed.json",
+  "language": "zh-CN",
+  "authors": [
+    {
+      "name": "AI Lens"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://ailens.news//2026-05-15",
+      "url": "https://ailens.news//2026-05-15",
+      "title": "AI 日报 · 2026-05-15",
+      "content_text": "",
+      "date_published": "2026-05-14T22:00:00.000Z",
+      "authors": [
+        {
+          "name": "AI Lens"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "https://ailens.news//2026-05-14",
+      "url": "https://ailens.news//2026-05-14",
+      "title": "AI 日报 · 2026-05-14",
+      "content_text": "Anthropic 发布专为小企业定制的 Claude 版本，通过优化成本与功能，显著降低中小企业接入高端 AI 的门槛。；谷歌宣布其 AI 驱动的 Google Finance 功能正式登陆欧洲市场，利用生成式 AI 为用户提供更智能的财经数据分析与服务。；开源项目 Needle 成功将 Gemini 复杂的工具调用能力蒸馏至仅 2600 万参数的微型模型，实现端侧高效运行。",
+      "date_published": "2026-05-13T22:00:00.000Z",
+      "authors": [
+        {
+          "name": "AI Lens"
+        }
+      ],
+      "tags": [
+        "Anthropic",
+        "中小企业",
+        "商业化",
+        "Google",
+        "金融科技",
+        "全球化",
+        "模型蒸馏",
+        "边缘计算",
+        "开源",
+        "模型评估",
+        "数据可视化",
+        "基准测试",
+        "产业分析",
+        "商业化",
+        "地缘科技",
+        "AI 安全",
+        "隐私保护",
+        "用户教育",
+        "教育科技",
+        "技能提升",
+        "代码生成",
+        "创意产业",
+        "市场营销",
+        "生成式 AI"
+      ]
+    }
+  ]
+}
