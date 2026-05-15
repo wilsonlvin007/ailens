@@ -86,27 +86,21 @@ jobs:
                   # title 校验
                   title = item.get('title', '')
                   if title:
-                      if len(title) > 15:
-                          # 自动修复：从 summary 截取前 15 字
-                          summary = item.get('summary', '')
-                          if summary:
-                              fixed = summary[:15].rstrip('，。、；：！？')
-                              item['title'] = fixed
-                              warnings.append(f'{prefix}: title "{title}" 超长({len(title)}字)，已修复为 "{fixed}"')
-                          else:
-                              warnings.append(f'{prefix}: title "{title}" 超长({len(title)}字)且无 summary 可回退')
+                      # 超长标题：只警告，不自动截断（Dify 生成的标题比 summary 截取更准确）
+                      if len(title) > 30:
+                          warnings.append(f'{prefix}: title "{title}" 超长({len(title)}字)，已保留原标题')
                       # 检查是否是日期型标题（如 "2026-05-15 ..." 或纯数字日期）
-                      if re.match(r'^\d{4}[-/]\d{1,2}[-/]\d{1,2}', title):
+                      elif re.match(r'^\d{4}[-/]\d{1,2}[-/]\d{1,2}', title):
                           summary = item.get('summary', '')
                           if summary:
-                              fixed = summary[:15].rstrip('，。、；：！？')
+                              fixed = summary[:30].rstrip('，。、；：！？ ')
                               item['title'] = fixed
                               warnings.append(f'{prefix}: title 是日期 "{title}"，已从 summary 修复为 "{fixed}"')
                       # 检查纯数字
-                      if title.strip().isdigit():
+                      elif title.strip().isdigit():
                           summary = item.get('summary', '')
                           if summary:
-                              fixed = summary[:15].rstrip('，。、；：！？')
+                              fixed = summary[:30].rstrip('，。、；：！？ ')
                               item['title'] = fixed
                               warnings.append(f'{prefix}: title 是纯数字 "{title}"，已从 summary 修复为 "{fixed}"')
 
@@ -353,8 +347,8 @@ jobs:
                   print("[ERROR] items_text could not be parsed as JSON")
 
               for i, item in enumerate(items_parsed):
-                  if 'id' not in item:
-                      item['id'] = f'{date}-{i+1:03d}'
+                  # 强制用当天日期重写 ID（Dify 可能输出旧日期）
+                  item['id'] = f'{date}-{i+1:03d}'
                   if 'collected_at' not in item:
                       item['collected_at'] = f'{date}T06:00:00+08:00'
 
