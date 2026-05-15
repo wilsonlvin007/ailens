@@ -6,52 +6,78 @@ import { importanceLabel } from '../lib/utils';
 interface Props {
   items: NewsItem[];
   compact?: boolean;
+  maxPerCategory?: number;
+  dateLink?: string;
 }
 
-const { items, compact = false } = Astro.props;
+const { items, compact = false, maxPerCategory = 3, dateLink } = Astro.props;
 
-function getCatStyle(category: string): string {
-  const cat = CATEGORIES[category as Category];
-  if (!cat) return '';
-  return `color: ${cat.color}; border-color: ${cat.color};`;
+// 按 category 分组，保持原始顺序
+const groups: { key: Category; label: string; icon: string; color: string; items: NewsItem[] }[] = [];
+const seen = new Set<string>();
+
+for (const item of items) {
+  const key = item.category as Category;
+  if (!seen.has(key) && CATEGORIES[key]) {
+    seen.add(key);
+    groups.push({
+      key,
+      label: CATEGORIES[key].label,
+      icon: CATEGORIES[key].icon,
+      color: CATEGORIES[key].color,
+      items: [],
+    });
+  }
+  const group = groups.find(g => g.key === key);
+  if (group) group.items.push(item);
 }
 ---
 
 <section class="signals">
-  <h2 class="signals-title">信号</h2>
-  <div class="signals-grid">
-    {items.map((item) => (
-      <article class={`signal-card importance-${item.importance}`}>
-        <div class="signal-header">
-          <span class="signal-category" style={getCatStyle(item.category)}>
-            {CATEGORIES[item.category as Category]?.icon || '📌'}
-            {CATEGORIES[item.category as Category]?.label || item.category}
-          </span>
-          <span class="signal-importance">{importanceLabel(item.importance)}</span>
-        </div>
-        <a href={item.source} target="_blank" rel="noopener noreferrer" class="signal-title">
-          {item.title}
+  <h2 class="signals-title">焦点</h2>
+  {groups.map((group) => (
+    <div class="category-group">
+      <div class="category-header" style={`border-color: ${group.color}`}>
+        <span class="category-dot" style={`background: ${group.color}`}></span>
+        <span class="category-label" style={`color: ${group.color}`}>{group.icon} {group.label}</span>
+        <span class="category-count">{group.items.length}</span>
+      </div>
+      <div class="signals-list">
+        {group.items.slice(0, maxPerCategory).map((item) => (
+          <article class={`signal-card importance-${item.importance}`}>
+            <div class="signal-header">
+              <span class="signal-importance">{importanceLabel(item.importance)}</span>
+            </div>
+            <a href={item.source} target="_blank" rel="noopener noreferrer" class="signal-title">
+              {item.title}
+            </a>
+            {!compact && (
+              <p class="signal-summary">{item.summary}</p>
+            )}
+            {!compact && item.analysis && (
+              <details class="signal-analysis">
+                <summary>深度解读</summary>
+                <div class="analysis-content">{item.analysis}</div>
+              </details>
+            )}
+            <div class="signal-meta">
+              <span class="signal-source">{item.source_name}</span>
+              <div class="signal-tags">
+                {item.tags?.map((tag) => (
+                  <span class="tag">#{tag}</span>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+      {group.items.length > maxPerCategory && dateLink && (
+        <a href={dateLink} class="view-all">
+          查看全部 {group.items.length} 条 →
         </a>
-        {!compact && (
-          <p class="signal-summary">{item.summary}</p>
-        )}
-        {!compact && item.analysis && (
-          <details class="signal-analysis">
-            <summary>深度解读</summary>
-            <div class="analysis-content">{item.analysis}</div>
-          </details>
-        )}
-        <div class="signal-meta">
-          <span class="signal-source">{item.source_name}</span>
-          <div class="signal-tags">
-            {item.tags?.map((tag) => (
-              <span class="tag">#{tag}</span>
-            ))}
-          </div>
-        </div>
-      </article>
-    ))}
-  </div>
+      )}
+    </div>
+  ))}
 </section>
 
 <style>
@@ -62,13 +88,43 @@ function getCatStyle(category: string): string {
     font-family: var(--font-serif);
     font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     color: var(--text-primary);
   }
-  .signals-grid {
+  .category-group {
+    margin-bottom: 1.75rem;
+  }
+  .category-group:last-child {
+    margin-bottom: 0;
+  }
+  .category-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.625rem;
+    border-bottom: 2px solid;
+    margin-bottom: 0;
+  }
+  .category-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .category-label {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+  .category-count {
+    font-size: 0.6875rem;
+    color: var(--text-tertiary);
+    margin-left: auto;
+    font-weight: 500;
+  }
+  .signals-list {
     display: flex;
     flex-direction: column;
-    gap: 0;
   }
   .signal-card {
     padding: 1.25rem 0;
@@ -82,14 +138,6 @@ function getCatStyle(category: string): string {
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 0.5rem;
-  }
-  .signal-category {
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 0.125rem 0.5rem;
-    border-radius: 4px;
-    border: 1px solid;
-    letter-spacing: 0.02em;
   }
   .signal-importance {
     font-size: 0.6875rem;
@@ -154,6 +202,23 @@ function getCatStyle(category: string): string {
   .tag {
     font-size: 0.6875rem;
     color: var(--text-tertiary);
+  }
+  .view-all {
+    display: block;
+    text-align: center;
+    padding: 0.625rem 0;
+    margin-top: 0.25rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--accent);
+    border: 1px dashed var(--border);
+    border-radius: 6px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .view-all:hover {
+    background: var(--accent-light);
+    border-color: var(--accent);
+    color: var(--accent-hover);
   }
 
   /* Importance visual hints */
