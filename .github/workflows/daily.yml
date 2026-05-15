@@ -169,13 +169,18 @@ jobs:
               text = text.strip()
               try:
                   return json.loads(text)
-              except:
-                  pass
+              except json.JSONDecodeError as e:
+                  print(f"[DEBUG] json.loads failed: {e} at pos {e.pos}")
+                  print(f"[DEBUG] Context around error: {repr(text[max(0,e.pos-80):e.pos+80])}")
+              except Exception as e:
+                  print(f"[DEBUG] Unexpected error in json.loads: {e}")
               # 尝试去掉 markdown 代码块包裹
               m = re.search(r'```(?:json)?\s*\n?([\s\S]*?)\n?\s*```', text)
               if m:
                   try:
                       return json.loads(m.group(1))
+                  except json.JSONDecodeError as e:
+                      print(f"[DEBUG] markdown-block json.loads failed: {e}")
                   except:
                       pass
               # 最后尝试匹配最外层 { }
@@ -183,10 +188,13 @@ jobs:
               if m:
                   try:
                       return json.loads(m.group())
+                  except json.JSONDecodeError as e:
+                      print(f"[DEBUG] brace-match json.loads failed: {e}")
                   except:
                       pass
               print(f"[ERROR] Failed to extract JSON from text ({len(text)} chars)")
               print(f"[ERROR] Text starts with: {repr(text[:200])}")
+              print(f"[ERROR] Text ends with: {repr(text[-200:])}")
               return None
 
           items_data = extract_json(items_text)
