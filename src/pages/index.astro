@@ -46,7 +46,7 @@ if (latestDate) {
               const dData = getDailyData(d);
               const summary = dData?.summary || '';
               return (
-                <a href={`/${d}`} class:list={["recent-item", { "recent-today": isToday }]}>
+                <a href={`${base}/${d}`} class:list={["recent-item", { "recent-today": isToday }]}>
                   <div class="recent-text">
                     <span class="recent-date">{d.slice(5)}</span>
                     <span class="recent-weekday">{formatWeekday(d)}</span>
@@ -58,7 +58,7 @@ if (latestDate) {
               );
             })}
           </div>
-          <a href="${base}/archive" class="recent-archive-link">查看完整归档 →</a>
+          <a href={`${base}/archive`} class="recent-archive-link">查看完整归档 →</a>
         </section>
       )}
     </>
@@ -68,7 +68,7 @@ if (latestDate) {
       <h1 class="empty-title">AI Lens</h1>
       <p class="empty-desc">透过镜头看 AI 新闻</p>
       <p class="empty-hint">第一期日报即将发布，敬请期待。</p>
-      <a href="${base}/subscribe" class="empty-cta">立即订阅 →</a>
+      <a href={`${base}/subscribe`} class="empty-cta">立即订阅 →</a>
     </section>
   )}
 </Base>
