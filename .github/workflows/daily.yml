@@ -233,7 +233,6 @@ jobs:
                   except json.JSONDecodeError as e:
                       print(f"[DEBUG] brace-match+fix failed: {e}")
               print(f"[ERROR] Failed to extract JSON from text ({len(text)} chars)")
-              print(f"[ERROR] Error: {e}")
               return None
 
           items_data = extract_json(items_text)
