@@ -1,5 +1,6 @@
 ---
 const { title, description = '透过镜头看 AI 新闻' } = Astro.props;
+const base = '/ailens';
 
 interface Props {
   title?: string;
@@ -18,9 +19,9 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
-    <link rel="alternate" type="application/rss+xml" title="AI Lens News" href="/rss.xml" />
-    <link rel="alternate" type="application/feed+json" title="AI Lens News" href="/feed.json" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="AI Lens News" href={`${base}/rss.xml`} />
+    <link rel="alternate" type="application/feed+json" title="AI Lens News" href={`${base}/feed.json`} />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -40,11 +41,11 @@ import '../styles/global.css';
   <body>
     <header class="site-header">
       <nav class="nav">
-        <a href="/" class="logo">AI Lens<span class="logo-dot">.</span></a>
+        <a href={`${base}/`} class="logo">AI Lens<span class="logo-dot">.</span></a>
         <div class="nav-links">
-          <a href="/">日报</a>
-          <a href="/archive">归档</a>
-          <a href="/subscribe">订阅</a>
+          <a href={`${base}/`}>日报</a>
+          <a href={`${base}/archive`}>归档</a>
+          <a href={`${base}/subscribe`}>订阅</a>
           <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
             <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
             <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
