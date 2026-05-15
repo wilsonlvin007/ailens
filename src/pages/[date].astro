@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+const base = "/ailens";
 import Hero from '../components/Hero.astro';
 import Signals from '../components/Signals.astro';
 import DeepDive from '../components/DeepDive.astro';
@@ -30,7 +31,7 @@ if (!data) {
     <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
   )}
   <nav class="date-nav">
-    <a href="/" class="back-link">← 返回最新</a>
+    <a href="${base}/" class="back-link">← 返回最新</a>
   </nav>
 </Base>
 
