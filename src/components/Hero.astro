@@ -5,7 +5,8 @@ interface NewsItem {
   category: string;
   importance: number;
   summary?: string;
-  analysis?: string;
+  source?: string;
+  tags?: string[];
 }
 
 interface Props {
@@ -17,216 +18,405 @@ interface Props {
 
 const { date, weekday, items, deepDive } = Astro.props;
 
-// 取 importance 最高的信号做钩子
-const hookItem = items.reduce((max, item) =>
-  (item.importance || 0) > (max.importance || 0) ? item : max, items[0]);
-
-// 从 analysis 或 summary 中动态提取引导语
-function extractTagline(item: NewsItem): string {
-  const text = item.analysis || item.summary || '';
-  const sentences = text.split(/[。；]/).map(s => s.trim()).filter(s => s.length >= 8);
-  for (let i = sentences.length - 1; i >= 0; i--) {
-    const s = sentences[i];
-    if (s.length >= 8 && s.length <= 50) return s;
-  }
-  const first = (item.summary || '').split(/[。，；]/)[0]?.trim() || '';
-  return first.length >= 6 ? first : '这件事值得关注';
+// === Seeded random (deterministic layout per day) ===
+function rand(seed: number): number {
+  const x = Math.sin(seed * 9301 + 49297) * 233280;
+  return x - Math.floor(x);
 }
 
-const tagline = extractTagline(hookItem);
+// === Data processing ===
+const sorted = [...items].sort((a, b) => (b.importance || 0) - (a.importance || 0));
+const topItems = sorted.slice(0, Math.min(3, items.length));
 
-// 分类统计
+const allTags = items.flatMap(it => it.tags || []);
+const seen = new Set<string>();
+const uniqueTags: string[] = [];
+for (const t of allTags) {
+  const key = t.toLowerCase();
+  if (!seen.has(key)) { seen.add(key); uniqueTags.push(t); }
+}
+const tags = uniqueTags.slice(0, 10);
+
 const catMap: Record<string, string> = {
   technology: '技术', application: '应用', hardware: '硬件', thought: '思想',
 };
 const catCounts: Record<string, number> = {};
-items.forEach(item => {
-  const cat = item.category || 'other';
-  catCounts[cat] = (catCounts[cat] || 0) + 1;
+items.forEach(it => {
+  const c = it.category || 'other';
+  catCounts[c] = (catCounts[c] || 0) + 1;
 });
-const catSummary = Object.entries(catCounts)
-  .map(([cat, count]) => `${catMap[cat] || cat} ${count}`)
-  .join(' · ');
+const dataPoints = [
+  { text: `${date} ${weekday}`, href: '#signals' },
+  ...Object.entries(catCounts).map(([c, n]) => ({ text: `${catMap[c] || c} ${n}`, href: '#signals' })),
+  { text: `${items.length} 条`, href: '#signals' },
+];
+
+// === Position generation ===
+// Cards: near center, spread by importance rank
+const cardPos = topItems.map((_, i) => {
+  const angle = (i / Math.max(topItems.length, 1)) * Math.PI * 2 - Math.PI / 2;
+  const dist = 4 + rand(i * 11 + 1) * 7;
+  return {
+    top: 44 + Math.cos(angle) * dist + (rand(i * 13 + 3) - 0.5) * 5,
+    left: 50 + Math.sin(angle) * dist + (rand(i * 17 + 5) - 0.5) * 5,
+  };
+});
+
+// Tags: ring around center zone
+const tagPos = tags.map((_, i) => {
+  const angle = (i / Math.max(tags.length, 1)) * Math.PI * 2 + rand(i * 19 + 7) * 0.35;
+  const dist = 18 + rand(i * 23 + 11) * 20;
+  return {
+    top: 46 + Math.cos(angle) * dist,
+    left: 50 + Math.sin(angle) * dist,
+    opacity: 0.45 + rand(i * 29 + 13) * 0.4,
+  };
+});
+
+// Data points: edges and corners
+const edgeSpots = [
+  { top: 8, left: 7 }, { top: 7, left: 88 },
+  { top: 93, left: 12 }, { top: 91, left: 83 },
+  { top: 16, left: 50 }, { top: 80, left: 50 },
+];
+const dataPos = dataPoints.map((_, i) => {
+  const s = edgeSpots[i % edgeSpots.length];
+  return {
+    top: s.top + (rand(i * 31 + 17) - 0.5) * 4,
+    left: s.left + (rand(i * 37 + 23) - 0.5) * 4,
+  };
+});
+
+// === Background stars ===
+const stars = Array.from({ length: 45 }, (_, i) => ({
+  x: rand(i * 1.1 + 0.3) * 100,
+  y: rand(i * 2.3 + 0.7) * 100,
+  r: rand(i * 3.7 + 1.1) > 0.85 ? 1.5 : 0.5 + rand(i * 4.1) * 0.5,
+  o: 0.05 + rand(i * 5.1 + 2.3) * 0.12,
+}));
+const starShadow = stars.map(s =>
+  `${s.x.toFixed(1)}vw ${s.y.toFixed(1)}vh 0 ${s.r.toFixed(1)}px rgba(129,140,248,${s.o.toFixed(2)})`
+).join(',');
+
+// === Category color mapping ===
+const catColorMap: Record<string, string> = {
+  technology: 'var(--cat-technology)',
+  application: 'var(--cat-application)',
+  hardware: 'var(--cat-hardware)',
+  thought: 'var(--cat-thought)',
+};
 ---
 
-<section class="hero">
-  <div class="hero-inner">
-    <p class="hero-slogan">每天 5 分钟，看透 AI 在发生什么</p>
-    <div class="hero-hook">
-      <h1 class="hero-hook-title">{hookItem.title}</h1>
-      <p class="hero-hook-tagline">——{tagline}</p>
-    </div>
-    <div class="hero-meta">
-      <span>今日 {items.length} 条</span>
-      <span class="hero-meta-sep">·</span>
-      <span>{catSummary}</span>
-      <span class="hero-meta-sep">·</span>
-      <time datetime={date} class="hero-meta-date">{date}</time>
-      <span class="hero-meta-weekday">{weekday}</span>
-    </div>
-    <div class="hero-actions">
-      <a href="#signals" class="hero-btn hero-btn-primary">→ 今日焦点</a>
-      <a href="#deep-dive" class="hero-btn hero-btn-secondary">→ 深度分析</a>
-    </div>
-  </div>
-  <div class="hero-scroll-hint">
-    <span class="hero-scroll-text">↓</span>
-  </div>
+<section class="nebula" aria-label="今日 AI 资讯概览">
+  <div class="nebula-bg" style={`--stars:${starShadow}`}></div>
+
+  <!-- ① Title cards -->
+  {topItems.map((item, i) => (
+    <a
+      href={item.source || '#signals'}
+      target={item.source ? '_blank' : undefined}
+      rel={item.source ? 'noopener noreferrer' : undefined}
+      class="nebula-card"
+      data-idx={String(i)}
+      style={`top:${cardPos[i].top.toFixed(1)}%;left:${cardPos[i].left.toFixed(1)}%;--delay:${(i * 0.12).toFixed(2)}s;--card-color:${catColorMap[item.category] || 'var(--accent)'}`}
+    >
+      <span class="nebula-card-title">{item.title}</span>
+      {item.summary && (
+        <span class="nebula-card-sub">{item.summary.slice(0, 15)}{item.summary.length > 15 ? '…' : ''}</span>
+      )}
+    </a>
+  ))}
+
+  <!-- ② Data points -->
+  {dataPoints.map((dp, i) => (
+    <a
+      href={dp.href}
+      class="nebula-data"
+      data-idx={String(i)}
+      style={`top:${dataPos[i].top.toFixed(1)}%;left:${dataPos[i].left.toFixed(1)}%;--delay:${(0.4 + i * 0.06).toFixed(2)}s`}
+    >{dp.text}</a>
+  ))}
+
+  <!-- ③ Keyword tags -->
+  {tags.map((tag, i) => (
+    <span
+      class="nebula-tag"
+      data-idx={String(i)}
+      style={`top:${tagPos[i].top.toFixed(1)}%;left:${tagPos[i].left.toFixed(1)}%;--tag-o:${tagPos[i].opacity.toFixed(2)};--delay:${(0.6 + i * 0.05).toFixed(2)}s`}
+    >#{tag}</span>
+  ))}
+
+  <a href="#signals" class="nebula-scroll"><span>↓</span></a>
 </section>
 
 <style>
-  .hero {
+  .nebula {
     position: relative;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 6rem 1.25rem 3rem;
+    min-height: 100vh;
+    overflow: hidden;
   }
 
-  .hero-inner {
-    max-width: var(--max-width);
-    width: 100%;
+  /* ── Background ── */
+  .nebula-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 45%, rgba(129,140,248,0.07) 0%, transparent 100%),
+      var(--bg);
+  }
+  .nebula-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: var(--stars);
+  }
+  [data-theme="light"] .nebula-bg {
+    background:
+      radial-gradient(ellipse 60% 50% at 50% 45%, rgba(99,102,241,0.04) 0%, transparent 100%),
+      var(--bg);
+  }
+  [data-theme="light"] .nebula-bg::before {
+    box-shadow: var(--stars);
+    filter: brightness(0.15);
   }
 
-  /* slogan */
-  .hero-slogan {
-    font-size: 1rem;
-    color: var(--text-tertiary);
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    margin-bottom: 2.5rem;
+  /* ── Shared animation ── */
+  @keyframes nebulaIn {
+    from { opacity: 0; transform: translate(-50%,-50%) translateY(12px); }
+    to   { transform: translate(-50%,-50%) translateY(0); }
   }
 
-  /* 今日钩子 */
-  .hero-hook {
-    margin-bottom: 2.5rem;
+  /* ── ① Title cards ── */
+  .nebula-card {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    background: rgba(255,255,255,0.035);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    max-width: 88%;
+    animation: nebulaIn 0.9s ease both;
+    animation-delay: var(--delay);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
   }
-  .hero-hook-title {
+  .nebula-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 1.5rem;
+    width: 3px; height: 60%;
+    border-radius: 2px;
+    background: var(--card-color);
+    opacity: 0.6;
+  }
+  .nebula-card:hover {
+    transform: translate(-50%,-50%) scale(1.05);
+    background: rgba(255,255,255,0.065);
+    box-shadow: 0 0 50px rgba(129,140,248,0.1);
+  }
+  [data-theme="light"] .nebula-card {
+    background: rgba(0,0,0,0.025);
+    border-color: rgba(0,0,0,0.06);
+  }
+  [data-theme="light"] .nebula-card:hover {
+    background: rgba(0,0,0,0.05);
+    box-shadow: 0 0 50px rgba(99,102,241,0.08);
+  }
+
+  /* Primary card (highest importance) */
+  .nebula-card[data-idx="0"] .nebula-card-title {
     font-family: var(--font-serif);
-    font-size: 3.75rem;
+    font-size: 2.5rem;
     font-weight: 900;
-    line-height: 1.25;
-    letter-spacing: -0.03em;
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-    /* 纯白：暗色主题下更亮 */
+    line-height: 1.3;
     color: #ffffff;
+    letter-spacing: -0.025em;
   }
-  [data-theme="light"] .hero-hook-title {
+  [data-theme="light"] .nebula-card[data-idx="0"] .nebula-card-title {
     color: #0a0a0a;
   }
-  .hero-hook-tagline {
-    font-size: 1.125rem;
-    color: var(--text-secondary);
-    font-weight: 400;
-    line-height: 1.6;
+  .nebula-card[data-idx="0"] {
+    padding: 2rem 2.25rem;
+  }
+  .nebula-card[data-idx="0"]::before {
+    height: 70%;
   }
 
-  /* 概览数字 */
-  .hero-meta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    font-size: 0.8125rem;
-    color: var(--text-tertiary);
-    margin-bottom: 2.5rem;
-    flex-wrap: wrap;
-  }
-  .hero-meta-sep {
-    color: var(--border);
-  }
-  .hero-meta-date {
-    font-variant-numeric: tabular-nums;
-  }
-
-  /* 按钮并排 */
-  .hero-actions {
-    display: flex;
-    justify-content: center;
-    gap: 0.75rem;
-  }
-  .hero-btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9375rem;
-    font-weight: 600;
-    border-radius: var(--radius);
-    transition: background 0.2s, color 0.2s;
-    text-decoration: none;
-  }
-  .hero-btn-primary {
-    background: var(--accent);
-    color: white;
-  }
-  .hero-btn-primary:hover {
-    color: white;
-    opacity: 0.85;
-  }
-  .hero-btn-secondary {
-    background: transparent;
-    color: var(--text-secondary);
-    border: 1px solid var(--border);
-  }
-  .hero-btn-secondary:hover {
-    border-color: var(--text-tertiary);
+  /* Secondary cards */
+  .nebula-card[data-idx="1"] .nebula-card-title,
+  .nebula-card[data-idx="2"] .nebula-card-title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
     color: var(--text-primary);
   }
+  .nebula-card[data-idx="1"],
+  .nebula-card[data-idx="2"] {
+    padding: 1rem 1.5rem;
+  }
+  .nebula-card[data-idx="1"]::before,
+  .nebula-card[data-idx="2"]::before {
+    width: 2px;
+    height: 50%;
+    opacity: 0.4;
+  }
 
-  /* 底部滚动提示 */
-  .hero-scroll-hint {
+  .nebula-card-sub {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    line-height: 1.5;
+  }
+
+  /* ── ② Data points ── */
+  .nebula-data {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    font-size: 0.75rem;
+    font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    color: var(--text-tertiary);
+    opacity: 0.45;
+    text-decoration: none;
+    animation: nebulaIn 0.8s ease both;
+    animation-delay: var(--delay);
+    transition: opacity 0.3s, color 0.3s;
+  }
+  .nebula-data:hover {
+    opacity: 1;
+    color: var(--text-secondary);
+  }
+
+  /* ── ③ Keyword tags ── */
+  .nebula-tag {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    white-space: nowrap;
+    color: rgba(255,255,255, var(--tag-o, 0.5));
+    border: 1px solid rgba(255,255,255, calc(var(--tag-o, 0.4) * 0.25));
+    border-radius: 999px;
+    animation: nebulaIn 0.8s ease both;
+    animation-delay: var(--delay);
+    transition: transform 0.3s, opacity 0.3s, color 0.3s, border-color 0.3s;
+  }
+  .nebula-tag:hover {
+    transform: translate(-50%,-50%) scale(1.12);
+    opacity: 1 !important;
+    color: #fff !important;
+    border-color: rgba(255,255,255,0.3) !important;
+  }
+  [data-theme="light"] .nebula-tag {
+    color: rgba(0,0,0, var(--tag-o, 0.45));
+    border-color: rgba(0,0,0, calc(var(--tag-o, 0.4) * 0.15));
+  }
+  [data-theme="light"] .nebula-tag:hover {
+    color: #000 !important;
+    border-color: rgba(0,0,0,0.25) !important;
+  }
+
+  /* ── Scroll hint ── */
+  .nebula-scroll {
     position: absolute;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 4;
+    text-decoration: none;
+    display: block;
   }
-  .hero-scroll-text {
+  .nebula-scroll span {
     font-size: 1.25rem;
     color: var(--text-tertiary);
     animation: bounce 2s ease-in-out infinite;
-    display: block;
     line-height: 1;
   }
-
   @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(8px); }
   }
 
-  /* 移动端 */
+  /* ── Mobile ── */
   @media (max-width: 640px) {
-    .hero {
-      min-height: 85vh;
-      padding: 4rem 1rem 2.5rem;
+    .nebula {
+      min-height: auto;
+      padding: 3rem 0 2rem;
     }
-    .hero-hook-title {
-      font-size: 1.875rem;
-      line-height: 1.35;
+
+    .nebula-card,
+    .nebula-data,
+    .nebula-tag {
+      position: static;
+      transform: none;
+      animation: none;
+      max-width: 100%;
     }
-    .hero-hook-tagline {
-      font-size: 1rem;
+
+    .nebula-card {
+      margin: 0 1rem 1rem;
     }
-    .hero-slogan {
-      font-size: 0.875rem;
-      margin-bottom: 2rem;
+    .nebula-card[data-idx="1"],
+    .nebula-card[data-idx="2"] {
+      display: none;
     }
-    .hero-meta {
+    .nebula-card[data-idx="0"] .nebula-card-title {
+      font-size: 1.5rem;
+    }
+    .nebula-card[data-idx="0"] {
+      padding: 1.5rem;
+    }
+
+    .nebula-data {
+      display: inline;
+      font-size: 0.6875rem;
+      opacity: 0.6;
+      margin: 0;
+    }
+    .nebula-data + .nebula-data::before {
+      content: ' · ';
+      color: var(--border);
+    }
+
+    .nebula-tag {
+      display: none;
+      position: static;
+      transform: none;
+      margin: 0.25rem;
       font-size: 0.75rem;
-      margin-bottom: 2rem;
+      padding: 0.25rem 0.65rem;
     }
-    .hero-actions {
+    /* Show first 6 tags as a flex row via trickery */
+    .nebula-tag:nth-of-type(1),
+    .nebula-tag:nth-of-type(2),
+    .nebula-tag:nth-of-type(3),
+    .nebula-tag:nth-of-type(4),
+    .nebula-tag:nth-of-type(5),
+    .nebula-tag:nth-of-type(6) {
+      display: inline-block;
+    }
+    /* Wrap tags in a visual container using the parent */
+    .nebula {
+      display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
     }
-    .hero-btn {
-      width: 100%;
-      max-width: 280px;
-      justify-content: center;
-    }
+
+    .nebula-scroll { display: none; }
+
+    .nebula-bg::before { display: none; }
   }
 </style>
