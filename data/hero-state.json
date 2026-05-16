@@ -1,0 +1,113 @@
+{
+  "updated_at": "2026-05-16",
+  "items": [
+    {
+      "id": "sig_20260516_001",
+      "level": 1,
+      "content": "Waymo 召回数千辆机器人出租车，安全性再遭质疑",
+      "summary": "美国监管介入，自动驾驶商业化进程或受阻",
+      "source": "https://example.com/waymo",
+      "date": "2026-05-16"
+    },
+    {
+      "id": "sig_20260516_002",
+      "level": 1,
+      "content": "OpenAI 发布 GPT-5，多模态推理能力大幅跃升",
+      "summary": "新模型在数学和编程基准上刷新纪录",
+      "source": "https://example.com/gpt5",
+      "date": "2026-05-16"
+    },
+    {
+      "id": "sig_20260516_003",
+      "level": 1,
+      "content": "Anthropic 开源 Claude 代码推理模型",
+      "summary": "开发者可直接部署，挑战 OpenAI 生态",
+      "source": "https://example.com/claude",
+      "date": "2026-05-16"
+    },
+    {
+      "id": "tag_20260515_001",
+      "level": 2,
+      "content": "自动驾驶安全",
+      "date": "2026-05-15"
+    },
+    {
+      "id": "tag_20260515_002",
+      "level": 2,
+      "content": "多模态大模型",
+      "date": "2026-05-15"
+    },
+    {
+      "id": "tag_20260515_003",
+      "level": 2,
+      "content": "开源生态",
+      "date": "2026-05-15"
+    },
+    {
+      "id": "tag_20260514_001",
+      "level": 2,
+      "content": "AI估值争议",
+      "date": "2026-05-14"
+    },
+    {
+      "id": "tag_20260514_002",
+      "level": 2,
+      "content": "编程助手",
+      "date": "2026-05-14"
+    },
+    {
+      "id": "tag_20260514_003",
+      "level": 2,
+      "content": "监管政策",
+      "date": "2026-05-14"
+    },
+    {
+      "id": "tag_20260513_001",
+      "level": 2,
+      "content": "芯片算力",
+      "date": "2026-05-13"
+    },
+    {
+      "id": "tag_20260513_002",
+      "level": 2,
+      "content": "数据隐私",
+      "date": "2026-05-13"
+    },
+    {
+      "id": "word_20260513_001",
+      "level": 3,
+      "content": "RAG",
+      "date": "2026-05-13"
+    },
+    {
+      "id": "word_20260512_001",
+      "level": 3,
+      "content": "Agent",
+      "date": "2026-05-12"
+    },
+    {
+      "id": "word_20260512_002",
+      "level": 3,
+      "content": "边缘计算",
+      "date": "2026-05-12"
+    },
+    {
+      "id": "word_20260511_001",
+      "level": 3,
+      "content": "Scaling Law",
+      "date": "2026-05-11"
+    },
+    {
+      "id": "word_20260511_002",
+      "level": 3,
+      "content": "合成数据",
+      "date": "2026-05-11"
+    },
+    {
+      "id": "word_20260511_003",
+      "level": 3,
+      "content": "蒸馏",
+      "date": "2026-05-11"
+    }
+  ]
+}
