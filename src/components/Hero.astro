@@ -92,7 +92,7 @@ function estimateSize(item: HeroItem): { w: number; h: number } {
 }
 
 // Convert px to % of reference canvas (1000px)
-const REF = 1400;
+const REF = 1200;
 function px2pct(px: number): number { return (px / REF) * 100; }
 
 function overlaps(a: PlacedItem, b: PlacedItem, gap: number = 12): boolean {
@@ -298,7 +298,7 @@ Astro.props;
   }
   .n-l1-inner {
     padding: 1rem 1.25rem;
-    max-width: 340px;        /* fixed width */
+    max-width: clamp(240px, 22vw, 380px);
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.07);
     border-radius: 14px;
@@ -332,7 +332,7 @@ Astro.props;
 
   .n-l1-title {
     font-family: var(--font-serif);
-    font-size: 1.5rem;       /* fixed size */
+    font-size: clamp(1.25rem, 1.6vw, 1.75rem);
     font-weight: 900;
     line-height: 1.35;
     color: #ffffff;
@@ -343,7 +343,7 @@ Astro.props;
 
   .n-l1-sub {
     margin: 0.4rem 0 0;
-    font-size: 0.8125rem;
+    font-size: clamp(0.7rem, 0.75vw, 0.875rem);
     color: var(--text-tertiary);
     line-height: 1.5;
   }
@@ -352,7 +352,7 @@ Astro.props;
   .n-l2 {
     z-index: 2;
     padding: 0.35rem 0.9rem;
-    font-size: 0.875rem;     /* fixed size */
+    font-size: clamp(0.75rem, 0.85vw, 0.9375rem);
     font-weight: 500;
     white-space: nowrap;
     color: rgba(255,255,255,0.6);
@@ -377,7 +377,7 @@ Astro.props;
   /* ═══ L3: Ghost word — fixed font size, bare text ═══ */
   .n-l3 {
     z-index: 1;
-    font-size: 0.75rem;     /* fixed size */
+    font-size: clamp(0.625rem, 0.65vw, 0.8125rem);
     font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
     letter-spacing: 0.04em;
     color: var(--text-tertiary);
