@@ -32,6 +32,7 @@ if (latestDate) {
         items={data.items}
         deepDive={data.deep_dive}
       />
+      <div class="hero-divider"></div>
       <div id="signals">
         <Signals items={data.items} maxPerCategory={3} dateLink={`${base}/${latestDate}`} />
       </div>
@@ -195,4 +196,11 @@ if (latestDate) {
     background: #1d4ed8;
     color: white;
   }
+
+.hero-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0;
+}
+
 </style>

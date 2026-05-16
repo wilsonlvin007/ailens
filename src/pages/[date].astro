@@ -27,6 +27,7 @@ if (!data) {
     items={data.items}
     deepDive={data.deep_dive}
   />
+  <div class="hero-divider"></div>
   <div id="signals">
     <Signals items={data.items} />
   </div>
@@ -53,4 +54,11 @@ if (!data) {
   .back-link:hover {
     color: var(--accent);
   }
+
+.hero-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0;
+}
+
 </style>
