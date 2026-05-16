@@ -16,12 +16,10 @@ interface HeroState {
   items: HeroItem[];
 }
 
-// === Hash function (deterministic per id) ===
+// === Hash ===
 function hash(str: string): number {
   let h = 0;
-  for (let i = 0; i < str.length; i++) {
-    h = ((h << 5) - h + str.charCodeAt(i)) | 0;
-  }
+  for (let i = 0; i < str.length; i++) h = ((h << 5) - h + str.charCodeAt(i)) | 0;
   return Math.abs(h);
 }
 function hashF(seed: number): number {
@@ -43,167 +41,203 @@ function loadHeroState(): HeroState | null {
 
 const state = loadHeroState();
 const items = state?.items || [];
+const l1 = items.filter(i => i.level === 1).slice(0, 3);
+const l2 = items.filter(i => i.level === 2).slice(0, 8);
+const l3 = items.filter(i => i.level === 3).slice(0, 6);
 
-// === Separate by level ===
-const l1Items = items.filter(i => i.level === 1).slice(0, 3);
-const l2Items = items.filter(i => i.level === 2).slice(0, 8);
-const l3Items = items.filter(i => i.level === 3).slice(0, 6);
+// === Collision-free placement engine ===
+// Reference canvas: 1000 × 1000 (abstract units)
+// All positions as % of this canvas.
+// L1/L2/L3 have FIXED pixel sizes — not relative to canvas.
 
-// === Grid cell definitions ===
-// 6 columns × 4 rows. Each cell: { row, col, rowSpan?, colSpan? }
-// L1: center area, larger cells
-// L2: middle ring
-// L3: edges
-const l1Cells = [
-  { row: 2, col: 3, colSpan: 2 },   // center-right
-  { row: 1, col: 2, colSpan: 2 },   // top-center-left
-  { row: 3, col: 4, colSpan: 2 },   // bottom-center-right
-];
-
-const l2Cells = [
-  { row: 1, col: 1 }, { row: 1, col: 4 },
-  { row: 2, col: 1 }, { row: 2, col: 2 },
-  { row: 3, col: 1 }, { row: 3, col: 2 },
-  { row: 4, col: 3 }, { row: 4, col: 5 },
-];
-
-const l3Cells = [
-  { row: 4, col: 1 }, { row: 4, col: 6 },
-  { row: 1, col: 5 }, { row: 1, col: 6 },
-  { row: 4, col: 4 }, { row: 3, col: 6 },
-];
-
-// === Animation params from hash ===
-interface AnimParams {
-  offX: number;      // px offset within cell (-15 to 15)
+interface PlacedItem {
+  id: string;
+  level: 1 | 2 | 3;
+  content: string;
+  summary?: string;
+  source?: string;
+  x: number;       // % from left
+  y: number;       // % from top
+  w: number;       // % width (estimated)
+  h: number;       // % height (estimated)
+  animAmp: number;  // float amplitude px
+  animPeriod: number; // float period s
+  animDelay: number;  // float delay s
+  offX: number;     // static offset px
   offY: number;
-  floatAmp: number;   // px
-  floatPeriod: number; // seconds
-  delay: number;       // seconds
 }
 
-function getAnim(item: HeroItem, level: 1 | 2 | 3): AnimParams {
+// Estimate rendered size of each element in px (fixed, not relative to container)
+function estimateSize(item: HeroItem): { w: number; h: number } {
+  if (item.level === 1) {
+    const charW = 22; // 1.5rem CJK char width
+    const titleW = item.content.length * charW;
+    return {
+      w: Math.min(Math.max(titleW + 56, 240), 380),  // padding + clamp
+      h: item.summary ? 110 : 80,
+    };
+  } else if (item.level === 2) {
+    const charW = 14;
+    return {
+      w: item.content.length * charW + 32,
+      h: 34,
+    };
+  } else {
+    const charW = 10;
+    return {
+      w: Math.max(item.content.length * charW, 40),
+      h: 22,
+    };
+  }
+}
+
+// Convert px to % of reference canvas (1000px)
+const REF = 1000;
+function px2pct(px: number): number { return (px / REF) * 100; }
+
+function overlaps(a: PlacedItem, b: PlacedItem, gap: number = 12): boolean {
+  const gapPct = px2pct(gap);
+  return (
+    Math.abs(a.x - b.x) < (a.w + b.w) / 2 + gapPct &&
+    Math.abs(a.y - b.y) < (a.h + b.h) / 2 + gapPct
+  );
+}
+
+function placeElement(
+  item: HeroItem,
+  placed: PlacedItem[],
+  minDist: number,
+  maxDist: number,
+): PlacedItem | null {
+  const size = estimateSize(item);
   const h = hash(item.id);
-  const h2 = hash(item.id + '_y');
-  const h3 = hash(item.id + '_t');
-  const h4 = hash(item.id + '_d');
 
-  const ampRange = level === 1 ? 8 : level === 2 ? 5 : 3;
-  const periodMin = level === 1 ? 6 : level === 2 ? 4 : 3;
-  const periodRange = level === 1 ? 3 : level === 2 ? 3 : 2;
+  for (let attempt = 0; attempt < 200; attempt++) {
+    const angle = hashF(h + attempt * 7.1) * Math.PI * 2;
+    const dist = minDist + hashF(h + attempt * 13.3) * (maxDist - minDist);
 
-  return {
-    offX: (hashF(h) - 0.5) * 30,
-    offY: (hashF(h2) - 0.5) * 20,
-    floatAmp: 3 + hashF(h3) * ampRange,
-    floatPeriod: periodMin + hashF(h4) * periodRange,
-    delay: (hash(h + '_delay') % 30) / 10,
-  };
+    let x = 50 + Math.cos(angle) * dist;
+    let y = 50 + Math.sin(angle) * dist;
+
+    // Clamp within canvas bounds (leave margin)
+    const mx = size.w / REF / 2 * 100 + 2;
+    const my = size.h / REF / 2 * 100 + 2;
+    x = Math.max(mx, Math.min(100 - mx, x));
+    y = Math.max(my, Math.min(100 - my, y));
+
+    const candidate: PlacedItem = {
+      id: item.id,
+      level: item.level,
+      content: item.content,
+      summary: item.summary,
+      source: item.source,
+      x, y,
+      w: px2pct(size.w),
+      h: px2pct(size.h),
+      animAmp: item.level === 1 ? 6 + hashF(h + 100) * 4 : item.level === 2 ? 4 + hashF(h + 200) * 3 : 2 + hashF(h + 300) * 2,
+      animPeriod: item.level === 1 ? 6 + hashF(h + 400) * 3 : item.level === 2 ? 4 + hashF(h + 500) * 3 : 3 + hashF(h + 600) * 2,
+      animDelay: (hash(item.id + '_d') % 40) / 10,
+      offX: (hashF(h + 700) - 0.5) * 16,
+      offY: (hashF(h + 800) - 0.5) * 10,
+    };
+
+    const hasOverlap = placed.some(p => overlaps(candidate, p));
+    if (!hasOverlap) return candidate;
+  }
+
+  return null; // give up if can't place
+}
+
+// Place all items: L1 near center, L2 middle ring, L3 outer ring
+const placed: PlacedItem[] = [];
+
+// L1: center zone (10-28% from center)
+for (const item of l1) {
+  const p = placeElement(item, placed, 10, 28);
+  if (p) placed.push(p);
+}
+// L2: middle ring (18-42% from center)
+for (const item of l2) {
+  const p = placeElement(item, placed, 18, 42);
+  if (p) placed.push(p);
+}
+// L3: outer ring (28-55% from center)
+for (const item of l3) {
+  const p = placeElement(item, placed, 28, 55);
+  if (p) placed.push(p);
 }
 
 // === Background stars ===
-const stars = Array.from({ length: 40 }, (_, i) => ({
+const stars = Array.from({ length: 50 }, (_, i) => ({
   x: hashF(i * 1.1 + 0.3) * 100,
   y: hashF(i * 2.3 + 0.7) * 100,
-  r: hashF(i * 3.7 + 1.1) > 0.85 ? 1.5 : 0.5 + hashF(i * 4.1) * 0.5,
-  o: 0.05 + hashF(i * 5.1 + 2.3) * 0.1,
+  r: hashF(i * 3.7 + 1.1) > 0.85 ? 1.5 : 0.4 + hashF(i * 4.1) * 0.6,
+  o: 0.04 + hashF(i * 5.1 + 2.3) * 0.1,
 }));
 const starShadow = stars.map(s =>
-  `${s.x.toFixed(1)}vw ${s.y.toFixed(1)}vh 0 ${s.r.toFixed(1)}px rgba(129,140,248,${s.o.toFixed(2)})`
+  `${s.x.toFixed(1)}vw ${s.y.toFixed(1)}vh 0 ${s.r.toFixed(1)}px rgba(140,150,255,${s.o.toFixed(2)})`
 ).join(',');
 
-// === Props (keep for backwards compat with index.astro) ===
-interface Props {
-  date?: string;
-  weekday?: string;
-  items?: any[];
-  deepDive?: any;
-}
+// === Props (backwards compat) ===
+interface Props { date?: string; weekday?: string; items?: any[]; deepDive?: any; }
 Astro.props;
 ---
 
 <section class="nebula" aria-label="AI 资讯星云">
   <div class="nebula-bg" style={`--stars:${starShadow}`}></div>
-  <div class="nebula-grid">
 
-    <!-- L1: Title cards -->
-    {l1Items.map((item, i) => {
-      if (i >= l1Cells.length) return null;
-      const cell = l1Cells[i];
-      const a = getAnim(item, 1);
-      return (
-        <a
-          href={item.source || '#signals'}
-          target={item.source ? '_blank' : undefined}
-          rel={item.source ? 'noopener noreferrer' : undefined}
-          class="nebula-cell nebula-l1"
-          style={`
-            grid-row: ${cell.row};
-            grid-column: ${cell.col} / span ${cell.colSpan || 1};
-            --off-x: ${a.offX.toFixed(1)}px;
-            --off-y: ${a.offY.toFixed(1)}px;
-            --float-amp: ${a.floatAmp.toFixed(1)}px;
-            --float-period: ${a.floatPeriod.toFixed(1)}s;
-            --delay: ${a.delay.toFixed(1)}s;
-          `}
-        >
-          <div class="l1-card">
-            <h2 class="l1-title">{item.content}</h2>
-            {item.summary && <p class="l1-summary">{item.summary}</p>}
-          </div>
-        </a>
-      );
-    })}
+  {placed.map(item => (
+    item.level === 1 ? (
+      <a
+        href={item.source || '#signals'}
+        target={item.source ? '_blank' : undefined}
+        rel={item.source ? 'noopener noreferrer' : undefined}
+        class="n n-l1"
+        style={`
+          left:${item.x.toFixed(1)}%;top:${item.y.toFixed(1)}%;
+          --amp:${item.animAmp.toFixed(1)}px;
+          --per:${item.animPeriod.toFixed(1)}s;
+          --del:${item.animDelay.toFixed(1)}s;
+          --ox:${item.offX.toFixed(0)}px;
+          --oy:${item.offY.toFixed(0)}px;
+        `}
+      >
+        <div class="n-l1-inner">
+          <h2 class="n-l1-title">{item.content}</h2>
+          {item.summary && <p class="n-l1-sub">{item.summary}</p>}
+        </div>
+      </a>
+    ) : item.level === 2 ? (
+      <span
+        class="n n-l2"
+        style={`
+          left:${item.x.toFixed(1)}%;top:${item.y.toFixed(1)}%;
+          --amp:${item.animAmp.toFixed(1)}px;
+          --per:${item.animPeriod.toFixed(1)}s;
+          --del:${item.animDelay.toFixed(1)}s;
+          --ox:${item.offX.toFixed(0)}px;
+          --oy:${item.offY.toFixed(0)}px;
+        `}
+      >{item.content}</span>
+    ) : (
+      <span
+        class="n n-l3"
+        style={`
+          left:${item.x.toFixed(1)}%;top:${item.y.toFixed(1)}%;
+          --amp:${item.animAmp.toFixed(1)}px;
+          --per:${item.animPeriod.toFixed(1)}s;
+          --del:${item.animDelay.toFixed(1)}s;
+          --ox:${item.offX.toFixed(0)}px;
+          --oy:${item.offY.toFixed(0)}px;
+        `}
+      >{item.content}</span>
+    )
+  ))}
 
-    <!-- L2: Topic tags -->
-    {l2Items.map((item, i) => {
-      if (i >= l2Cells.length) return null;
-      const cell = l2Cells[i];
-      const a = getAnim(item, 2);
-      return (
-        <span
-          class="nebula-cell nebula-l2"
-          style={`
-            grid-row: ${cell.row};
-            grid-column: ${cell.col};
-            --off-x: ${a.offX.toFixed(1)}px;
-            --off-y: ${a.offY.toFixed(1)}px;
-            --float-amp: ${a.floatAmp.toFixed(1)}px;
-            --float-period: ${a.floatPeriod.toFixed(1)}s;
-            --delay: ${a.delay.toFixed(1)}s;
-          `}
-        >{item.content}</span>
-      );
-    })}
-
-    <!-- L3: Ghost words -->
-    {l3Items.map((item, i) => {
-      if (i >= l3Cells.length) return null;
-      const cell = l3Cells[i];
-      const a = getAnim(item, 3);
-      return (
-        <span
-          class="nebula-cell nebula-l3"
-          style={`
-            grid-row: ${cell.row};
-            grid-column: ${cell.col};
-            --off-x: ${a.offX.toFixed(1)}px;
-            --off-y: ${a.offY.toFixed(1)}px;
-            --float-amp: ${a.floatAmp.toFixed(1)}px;
-            --float-period: ${a.floatPeriod.toFixed(1)}s;
-            --delay: ${a.delay.toFixed(1)}s;
-          `}
-        >{item.content}</span>
-      );
-    })}
-  </div>
-
-  <!-- Scroll hint -->
   <a href="#signals" class="nebula-scroll"><span>↓</span></a>
 </section>
 
 <style>
-  /* ── Container ── */
   .nebula {
     position: relative;
     min-height: 100vh;
@@ -216,7 +250,7 @@ Astro.props;
     inset: 0;
     z-index: 0;
     background:
-      radial-gradient(ellipse 60% 50% at 50% 45%, rgba(129,140,248,0.06) 0%, transparent 100%),
+      radial-gradient(ellipse 50% 45% at 50% 50%, rgba(120,130,255,0.07) 0%, transparent 100%),
       var(--bg);
   }
   .nebula-bg::before {
@@ -229,150 +263,128 @@ Astro.props;
   }
   [data-theme="light"] .nebula-bg {
     background:
-      radial-gradient(ellipse 60% 50% at 50% 45%, rgba(99,102,241,0.03) 0%, transparent 100%),
+      radial-gradient(ellipse 50% 45% at 50% 50%, rgba(100,110,230,0.03) 0%, transparent 100%),
       var(--bg);
   }
   [data-theme="light"] .nebula-bg::before {
-    filter: brightness(0.15);
+    filter: brightness(0.12);
   }
 
-  /* ── Grid layout (invisible, prevents overlap) ── */
-  .nebula-grid {
-    position: relative;
+  /* ── Shared: absolute positioned, centered on point ── */
+  .n {
+    position: absolute;
+    transform: translate(-50%, -50%);
     z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    min-height: 100vh;
-    padding: 1.5rem;
-    gap: 0;
-  }
-
-  /* ── Shared cell style ── */
-  .nebula-cell {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
     color: inherit;
-    animation: float var(--float-period, 5s) ease-in-out var(--delay, 0s) infinite;
+    animation: float var(--per, 5s) ease-in-out var(--del, 0s) infinite;
   }
 
-  /* ── Float keyframes (vertical + slight horizontal drift) ── */
   @keyframes float {
     0%, 100% {
-      transform:
-        translate(var(--off-x, 0px), calc(var(--off-y, 0px) - var(--float-amp, 5px)));
+      transform: translate(calc(-50% + var(--ox, 0px)), calc(-50% + var(--oy, 0px) - var(--amp, 4px)));
     }
     50% {
-      transform:
-        translate(calc(var(--off-x, 0px) + 2px), calc(var(--off-y, 0px) + var(--float-amp, 5px)));
+      transform: translate(calc(-50% + var(--ox, 0px) + 1.5px), calc(-50% + var(--oy, 0px) + var(--amp, 4px)));
     }
   }
 
-  /* ═══ L1: Title cards ═══ */
-  .nebula-l1 {
+  /* ═══ L1: Title card — fixed size, largest ═══ */
+  .n-l1 {
     z-index: 3;
     cursor: pointer;
-    transition: filter 0.3s;
   }
-  .nebula-l1:hover { filter: brightness(1.15); }
-
-  .l1-card {
-    padding: 1.5rem 1.75rem;
-    background: rgba(255,255,255,0.035);
+  .n-l1-inner {
+    padding: 1.25rem 1.5rem;
+    max-width: 360px;        /* fixed width */
+    background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.07);
     border-radius: 14px;
     backdrop-filter: blur(8px);
-    max-width: 95%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   }
-  .l1-card::before {
+  .n-l1-inner::before {
     content: '';
     position: absolute;
     top: 0; left: 0;
     width: 3px; height: 100%;
     background: var(--accent);
-    opacity: 0.5;
+    opacity: 0.45;
     border-radius: 0 2px 2px 0;
   }
-  .nebula-l1:hover .l1-card {
-    transform: scale(1.04);
-    box-shadow: 0 0 40px rgba(129,140,248,0.08);
+  .n-l1:hover .n-l1-inner {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.07);
+    box-shadow: 0 0 50px rgba(120,130,255,0.1);
   }
-  [data-theme="light"] .l1-card {
-    background: rgba(0,0,0,0.025);
+  [data-theme="light"] .n-l1-inner {
+    background: rgba(0,0,0,0.03);
     border-color: rgba(0,0,0,0.06);
   }
-  [data-theme="light"] .l1-card::before {
-    opacity: 0.3;
+  [data-theme="light"] .n-l1-inner::before { opacity: 0.25; }
+  [data-theme="light"] .n-l1:hover .n-l1-inner {
+    background: rgba(0,0,0,0.055);
   }
 
-  .l1-title {
+  .n-l1-title {
     font-family: var(--font-serif);
-    font-size: 1.5rem;
+    font-size: 1.5rem;       /* fixed size */
     font-weight: 900;
     line-height: 1.35;
     color: #ffffff;
     letter-spacing: -0.02em;
     margin: 0;
   }
-  [data-theme="light"] .l1-title { color: #0a0a0a; }
+  [data-theme="light"] .n-l1-title { color: #0a0a0a; }
 
-  .l1-summary {
-    margin: 0.5rem 0 0;
+  .n-l1-sub {
+    margin: 0.4rem 0 0;
     font-size: 0.8125rem;
     color: var(--text-tertiary);
     line-height: 1.5;
   }
 
-  /* First L1 card slightly larger */
-  .nebula-l1:nth-child(1) .l1-title {
-    font-size: 1.75rem;
-  }
-
-  /* ═══ L2: Topic tags ═══ */
-  .nebula-l2 {
+  /* ═══ L2: Topic tag — fixed font size, pill ═══ */
+  .n-l2 {
     z-index: 2;
-    padding: 0.4rem 1rem;
-    font-size: 0.875rem;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.875rem;     /* fixed size */
     font-weight: 500;
     white-space: nowrap;
-    color: rgba(255,255,255,0.65);
-    border: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.6);
+    border: 1px solid rgba(255,255,255,0.09);
     border-radius: 999px;
-    transition: transform 0.3s, color 0.3s, border-color 0.3s, opacity 0.3s;
+    transition: transform 0.3s, color 0.3s, border-color 0.3s;
   }
-  .nebula-l2:hover {
-    transform: scale(1.12) !important;
-    color: #ffffff !important;
+  .n-l2:hover {
+    transform: translate(-50%,-50%) scale(1.12);
+    color: #fff !important;
     border-color: rgba(255,255,255,0.25) !important;
   }
-  [data-theme="light"] .nebula-l2 {
-    color: rgba(0,0,0,0.5);
-    border-color: rgba(0,0,0,0.08);
+  [data-theme="light"] .n-l2 {
+    color: rgba(0,0,0,0.45);
+    border-color: rgba(0,0,0,0.07);
   }
-  [data-theme="light"] .nebula-l2:hover {
+  [data-theme="light"] .n-l2:hover {
     color: #000 !important;
     border-color: rgba(0,0,0,0.2) !important;
   }
 
-  /* ═══ L3: Ghost words ═══ */
-  .nebula-l3 {
+  /* ═══ L3: Ghost word — fixed font size, bare text ═══ */
+  .n-l3 {
     z-index: 1;
-    font-size: 0.75rem;
+    font-size: 0.75rem;     /* fixed size */
     font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
-    font-variant-numeric: tabular-nums;
     letter-spacing: 0.04em;
     color: var(--text-tertiary);
-    opacity: 0.35;
+    opacity: 0.32;
     white-space: nowrap;
     transition: opacity 0.3s, color 0.3s;
   }
-  .nebula-l3:hover {
-    opacity: 0.8;
+  .n-l3:hover {
+    opacity: 0.85;
     color: var(--text-secondary);
   }
 
@@ -388,7 +400,7 @@ Astro.props;
   .nebula-scroll span {
     font-size: 1.25rem;
     color: var(--text-tertiary);
-    opacity: 0.5;
+    opacity: 0.4;
     animation: bounce 2s ease-in-out infinite;
     line-height: 1;
   }
@@ -397,49 +409,25 @@ Astro.props;
     50% { transform: translateY(8px); }
   }
 
-  /* ── Mobile ── */
+  /* ── Mobile: stack vertically ── */
   @media (max-width: 640px) {
-    .nebula { min-height: auto; }
+    .nebula { min-height: auto; padding: 2rem 0; }
 
-    .nebula-grid {
-      display: flex;
-      flex-direction: column;
-      min-height: auto;
-      padding: 2rem 1rem;
-      gap: 0.75rem;
+    .n {
+      position: static !important;
+      transform: none !important;
+      animation: none !important;
+      display: block;
+      margin: 0 auto;
     }
-
-    .nebula-cell {
-      animation: none;
-      transform: none;
-    }
-
-    /* Show all L1, hide extra L2/L3 */
-    .nebula-l1 { justify-content: flex-start; }
-    .nebula-l1:nth-child(n+3) { display: none; }
-    .l1-title { font-size: 1.25rem !important; }
-    .l1-card {
-      width: 100%;
-      padding: 1.25rem;
-    }
-
-    .nebula-l2 {
-      opacity: 1;
-      animation: none;
-    }
-    .nebula-l2:nth-of-type(n+7) { display: none; }
-
-    .nebula-l3 {
-      opacity: 0.4;
-      animation: none;
-    }
-    .nebula-l3:nth-of-type(n+5) { display: none; }
-
-    /* Stack L2 and L3 in rows */
-    .nebula-l2, .nebula-l3 {
-      flex: 0 0 auto;
-    }
+    .n-l1 { margin-bottom: 1rem; max-width: 92vw; }
+    .n-l1:nth-of-type(1) ~ .n-l1 { display: none; }
+    .n-l2 { display: inline-block; margin: 0.2rem; opacity: 1; }
+    .n-l2:nth-of-type(n+6) { display: none; }
+    .n-l3 { display: inline; margin: 0 0.4rem; opacity: 0.35; font-size: 0.7rem; }
+    .n-l3:nth-of-type(n+5) { display: none; }
 
     .nebula-scroll { display: none; }
+    .nebula-bg::before { display: none; }
   }
 </style>
