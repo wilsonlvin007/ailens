@@ -148,22 +148,59 @@ function placeElement(
   return null; // give up if can't place
 }
 
-// Place all items: L1 near center, L2 middle ring, L3 outer ring
+// Place all items with sector-based distribution for visual balance
 const placed: PlacedItem[] = [];
 
-// L1: center zone (10-28% from center)
-for (const item of l1) {
-  const p = placeElement(item, placed, 10, 28);
+// Helper: place item in a specific sector with collision check
+function placeInSector(
+  item: HeroItem, sector: number, sectorCount: number,
+  minDist: number, maxDist: number,
+): PlacedItem | null {
+  const size = estimateSize(item);
+  const h = hash(item.id);
+  // Sector center angle
+  const sectorAngle = (sector / sectorCount) * Math.PI * 2 - Math.PI / 2;
+  // Random offset within sector (±30% of sector width)
+  const sectorWidth = (Math.PI * 2) / sectorCount;
+  const angleJitter = (hashF(h + 50) - 0.5) * sectorWidth * 0.6;
+
+  for (let attempt = 0; attempt < 200; attempt++) {
+    const angle = sectorAngle + angleJitter + (hashF(h + attempt * 7.1) - 0.5) * sectorWidth * 0.3;
+    const dist = minDist + hashF(h + attempt * 13.3) * (maxDist - minDist);
+    let x = 50 + Math.cos(angle) * dist;
+    let y = 50 + Math.sin(angle) * dist;
+    const mx = size.w / REF / 2 * 100 + 2;
+    const my = size.h / REF / 2 * 100 + 2;
+    x = Math.max(mx, Math.min(100 - mx, x));
+    y = Math.max(my, Math.min(100 - my, y));
+    const candidate: PlacedItem = {
+      id: item.id, level: item.level, content: item.content,
+      summary: item.summary, source: item.source,
+      x, y, w: px2pct(size.w), h: px2pct(size.h),
+      animAmp: item.level === 1 ? 6 + hashF(h+100)*4 : item.level === 2 ? 4 + hashF(h+200)*3 : 2 + hashF(h+300)*2,
+      animPeriod: item.level === 1 ? 6 + hashF(h+400)*3 : item.level === 2 ? 4 + hashF(h+500)*3 : 3 + hashF(h+600)*2,
+      animDelay: (hash(item.id+'_d') % 40) / 10,
+      offX: (hashF(h+700) - 0.5) * 16,
+      offY: (hashF(h+800) - 0.5) * 10,
+    };
+    if (!placed.some(p => overlaps(candidate, p))) return candidate;
+  }
+  return null;
+}
+
+// L1: 4 cards in 4 sectors, near center (12-28%)
+for (let i = 0; i < l1.length; i++) {
+  const p = placeInSector(l1[i], i, l1.length, 12, 28);
   if (p) placed.push(p);
 }
-// L2: middle ring (18-42% from center)
-for (const item of l2) {
-  const p = placeElement(item, placed, 18, 42);
+// L2: 8 tags in 8 sectors, middle ring (20-42%)
+for (let i = 0; i < l2.length; i++) {
+  const p = placeInSector(l2[i], i, l2.length, 20, 42);
   if (p) placed.push(p);
 }
-// L3: outer ring (28-55% from center)
-for (const item of l3) {
-  const p = placeElement(item, placed, 28, 55);
+// L3: 6 words in 6 sectors, outer ring (30-55%)
+for (let i = 0; i < l3.length; i++) {
+  const p = placeInSector(l3[i], i, l3.length, 30, 55);
   if (p) placed.push(p);
 }
 
