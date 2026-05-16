@@ -26,6 +26,14 @@
       "date": "2026-05-16"
     },
     {
+      "id": "sig_20260516_004",
+      "level": 1,
+      "content": "Google DeepMind 发布 Gemini 2.0 Flash",
+      "summary": "推理速度提升 3 倍，API 价格减半",
+      "source": "https://example.com/gemini",
+      "date": "2026-05-16"
+    },
+    {
       "id": "tag_20260515_001",
       "level": 2,
       "content": "自动驾驶安全",
