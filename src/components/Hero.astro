@@ -92,7 +92,7 @@ function estimateSize(item: HeroItem): { w: number; h: number } {
 }
 
 // Convert px to % of reference canvas (1000px)
-const REF = 1000;
+const REF = 1400;
 function px2pct(px: number): number { return (px / REF) * 100; }
 
 function overlaps(a: PlacedItem, b: PlacedItem, gap: number = 12): boolean {
@@ -240,6 +240,8 @@ Astro.props;
 <style>
   .nebula {
     position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     min-height: 100vh;
     overflow: hidden;
   }
@@ -295,8 +297,8 @@ Astro.props;
     cursor: pointer;
   }
   .n-l1-inner {
-    padding: 1.25rem 1.5rem;
-    max-width: 360px;        /* fixed width */
+    padding: 1rem 1.25rem;
+    max-width: 340px;        /* fixed width */
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.07);
     border-radius: 14px;
@@ -411,7 +413,7 @@ Astro.props;
 
   /* ── Mobile: stack vertically ── */
   @media (max-width: 640px) {
-    .nebula { min-height: auto; padding: 2rem 0; }
+    .nebula { min-height: auto; padding: 2rem 0; width: 100%; margin-left: 0; }
 
     .n {
       position: static !important;
