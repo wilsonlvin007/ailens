@@ -41,7 +41,7 @@ function loadHeroState(): HeroState | null {
 
 const state = loadHeroState();
 const items = state?.items || [];
-const l1 = items.filter(i => i.level === 1).slice(0, 3);
+const l1 = items.filter(i => i.level === 1).slice(0, 4);
 const l2 = items.filter(i => i.level === 2).slice(0, 8);
 const l3 = items.filter(i => i.level === 3).slice(0, 6);
 
@@ -237,13 +237,41 @@ Astro.props;
   <a href="#signals" class="nebula-scroll"><span>↓</span></a>
 </section>
 
-<style>
   .nebula {
     position: relative;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     min-height: 100vh;
     overflow: hidden;
+    /* Theme tokens — one place to rule both themes */
+    --c-title: #ffffff;
+    --c-sub: var(--text-tertiary);
+    --c-tag: rgba(255,255,255,0.6);
+    --c-tag-hover: #fff;
+    --c-tag-border: rgba(255,255,255,0.09);
+    --c-tag-hover-border: rgba(255,255,255,0.25);
+    --c-ghost: var(--text-tertiary);
+    --c-card-bg: rgba(255,255,255,0.04);
+    --c-card-border: rgba(255,255,255,0.07);
+    --c-card-hover-bg: rgba(255,255,255,0.07);
+    --c-card-glow: rgba(120,130,255,0.1);
+    --c-accent-bar: 0.45;
+    --c-bg-glow: rgba(120,130,255,0.07);
+    --c-star-bright: 1;
+  }
+  [data-theme="light"] .nebula {
+    --c-title: #111;
+    --c-tag: rgba(0,0,0,0.45);
+    --c-tag-hover: #000;
+    --c-tag-border: rgba(0,0,0,0.07);
+    --c-tag-hover-border: rgba(0,0,0,0.2);
+    --c-card-bg: rgba(0,0,0,0.03);
+    --c-card-border: rgba(0,0,0,0.06);
+    --c-card-hover-bg: rgba(0,0,0,0.055);
+    --c-card-glow: rgba(100,110,230,0.06);
+    --c-accent-bar: 0.25;
+    --c-bg-glow: rgba(100,110,230,0.03);
+    --c-star-bright: 0.12;
   }
 
   /* ── Background ── */
@@ -252,7 +280,7 @@ Astro.props;
     inset: 0;
     z-index: 0;
     background:
-      radial-gradient(ellipse 50% 45% at 50% 50%, rgba(120,130,255,0.07) 0%, transparent 100%),
+      radial-gradient(ellipse 50% 45% at 50% 50%, var(--c-bg-glow) 0%, transparent 100%),
       var(--bg);
   }
   .nebula-bg::before {
@@ -262,14 +290,7 @@ Astro.props;
     width: 1px; height: 1px;
     background: transparent;
     box-shadow: var(--stars);
-  }
-  [data-theme="light"] .nebula-bg {
-    background:
-      radial-gradient(ellipse 50% 45% at 50% 50%, rgba(100,110,230,0.03) 0%, transparent 100%),
-      var(--bg);
-  }
-  [data-theme="light"] .nebula-bg::before {
-    filter: brightness(0.12);
+    filter: brightness(var(--c-star-bright));
   }
 
   /* ── Shared: absolute positioned, centered on point ── */
@@ -281,7 +302,6 @@ Astro.props;
     color: inherit;
     animation: float var(--per, 5s) ease-in-out var(--del, 0s) infinite;
   }
-
   @keyframes float {
     0%, 100% {
       transform: translate(calc(-50% + var(--ox, 0px)), calc(-50% + var(--oy, 0px) - var(--amp, 4px)));
@@ -291,16 +311,13 @@ Astro.props;
     }
   }
 
-  /* ═══ L1: Title card — fixed size, largest ═══ */
-  .n-l1 {
-    z-index: 3;
-    cursor: pointer;
-  }
+  /* ═══ L1: Title card ═══ */
+  .n-l1 { z-index: 3; cursor: pointer; }
   .n-l1-inner {
     padding: 1rem 1.25rem;
     max-width: clamp(240px, 22vw, 380px);
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.07);
+    background: var(--c-card-bg);
+    border: 1px solid var(--c-card-border);
     border-radius: 14px;
     backdrop-filter: blur(8px);
     position: relative;
@@ -313,21 +330,13 @@ Astro.props;
     top: 0; left: 0;
     width: 3px; height: 100%;
     background: var(--accent);
-    opacity: 0.45;
+    opacity: var(--c-accent-bar);
     border-radius: 0 2px 2px 0;
   }
   .n-l1:hover .n-l1-inner {
     transform: scale(1.05);
-    background: rgba(255,255,255,0.07);
-    box-shadow: 0 0 50px rgba(120,130,255,0.1);
-  }
-  [data-theme="light"] .n-l1-inner {
-    background: rgba(0,0,0,0.03);
-    border-color: rgba(0,0,0,0.06);
-  }
-  [data-theme="light"] .n-l1-inner::before { opacity: 0.25; }
-  [data-theme="light"] .n-l1:hover .n-l1-inner {
-    background: rgba(0,0,0,0.055);
+    background: var(--c-card-hover-bg);
+    box-shadow: 0 0 50px var(--c-card-glow);
   }
 
   .n-l1-title {
@@ -335,52 +344,42 @@ Astro.props;
     font-size: clamp(1.25rem, 1.6vw, 1.75rem);
     font-weight: 900;
     line-height: 1.35;
-    color: #ffffff;
+    color: var(--c-title);
     letter-spacing: -0.02em;
     margin: 0;
   }
-  [data-theme="light"] .n-l1-title { color: #0a0a0a; }
-
   .n-l1-sub {
     margin: 0.4rem 0 0;
     font-size: clamp(0.7rem, 0.75vw, 0.875rem);
-    color: var(--text-tertiary);
+    color: var(--c-sub);
     line-height: 1.5;
   }
 
-  /* ═══ L2: Topic tag — fixed font size, pill ═══ */
+  /* ═══ L2: Topic tag ═══ */
   .n-l2 {
     z-index: 2;
     padding: 0.35rem 0.9rem;
     font-size: clamp(0.75rem, 0.85vw, 0.9375rem);
     font-weight: 500;
     white-space: nowrap;
-    color: rgba(255,255,255,0.6);
-    border: 1px solid rgba(255,255,255,0.09);
+    color: var(--c-tag);
+    border: 1px solid var(--c-tag-border);
     border-radius: 999px;
     transition: transform 0.3s, color 0.3s, border-color 0.3s;
   }
   .n-l2:hover {
     transform: translate(-50%,-50%) scale(1.12);
-    color: #fff !important;
-    border-color: rgba(255,255,255,0.25) !important;
-  }
-  [data-theme="light"] .n-l2 {
-    color: rgba(0,0,0,0.45);
-    border-color: rgba(0,0,0,0.07);
-  }
-  [data-theme="light"] .n-l2:hover {
-    color: #000 !important;
-    border-color: rgba(0,0,0,0.2) !important;
+    color: var(--c-tag-hover) !important;
+    border-color: var(--c-tag-hover-border) !important;
   }
 
-  /* ═══ L3: Ghost word — fixed font size, bare text ═══ */
+  /* ═══ L3: Ghost word ═══ */
   .n-l3 {
     z-index: 1;
     font-size: clamp(0.625rem, 0.65vw, 0.8125rem);
     font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
     letter-spacing: 0.04em;
-    color: var(--text-tertiary);
+    color: var(--c-ghost);
     opacity: 0.32;
     white-space: nowrap;
     transition: opacity 0.3s, color 0.3s;
@@ -414,7 +413,6 @@ Astro.props;
   /* ── Mobile: stack vertically ── */
   @media (max-width: 640px) {
     .nebula { min-height: auto; padding: 2rem 0; width: 100%; margin-left: 0; }
-
     .n {
       position: static !important;
       transform: none !important;
@@ -428,8 +426,6 @@ Astro.props;
     .n-l2:nth-of-type(n+6) { display: none; }
     .n-l3 { display: inline; margin: 0 0.4rem; opacity: 0.35; font-size: 0.7rem; }
     .n-l3:nth-of-type(n+5) { display: none; }
-
     .nebula-scroll { display: none; }
-    .nebula-bg::before { display: none; }
   }
 </style>
