@@ -23,17 +23,12 @@ const hookItem = items.reduce((max, item) =>
 
 // 从 analysis 或 summary 中动态提取引导语
 function extractTagline(item: NewsItem): string {
-  // 优先用 analysis（深度解读），取最后一句有价值的结论
   const text = item.analysis || item.summary || '';
   const sentences = text.split(/[。；]/).map(s => s.trim()).filter(s => s.length >= 8);
-  // 取最后一句（通常是结论/判断，最有"钩子"感）
   for (let i = sentences.length - 1; i >= 0; i--) {
     const s = sentences[i];
-    if (s.length >= 8 && s.length <= 50) {
-      return s;
-    }
+    if (s.length >= 8 && s.length <= 50) return s;
   }
-  // fallback: 取 summary 第一句
   const first = (item.summary || '').split(/[。，；]/)[0]?.trim() || '';
   return first.length >= 6 ? first : '这件事值得关注';
 }
@@ -55,28 +50,183 @@ const catSummary = Object.entries(catCounts)
 ---
 
 <section class="hero">
-  <!-- 第一行：slogan -->
-  <p class="hero-slogan">每天 5 分钟，看透 AI 在发生什么</p>
-
-  <!-- 第二行：今日钩子 -->
-  <div class="hero-hook">
-    <h1 class="hero-hook-title">{hookItem.title}</h1>
-    <p class="hero-hook-tagline">——{tagline}</p>
+  <div class="hero-inner">
+    <p class="hero-slogan">每天 5 分钟，看透 AI 在发生什么</p>
+    <div class="hero-hook">
+      <h1 class="hero-hook-title">{hookItem.title}</h1>
+      <p class="hero-hook-tagline">——{tagline}</p>
+    </div>
+    <div class="hero-meta">
+      <span>今日 {items.length} 条</span>
+      <span class="hero-meta-sep">·</span>
+      <span>{catSummary}</span>
+      <span class="hero-meta-sep">·</span>
+      <time datetime={date} class="hero-meta-date">{date}</time>
+      <span class="hero-meta-weekday">{weekday}</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#signals" class="hero-btn hero-btn-primary">→ 今日焦点</a>
+      <a href="#deep-dive" class="hero-btn hero-btn-secondary">→ 深度分析</a>
+    </div>
   </div>
-
-  <!-- 第三行：今日概览数字 -->
-  <div class="hero-meta">
-    <span>今日 {items.length} 条</span>
-    <span class="hero-meta-sep">·</span>
-    <span>{catSummary}</span>
-    <span class="hero-meta-sep">·</span>
-    <time datetime={date} class="hero-meta-date">{date}</time>
-    <span class="hero-meta-weekday">{weekday}</span>
-  </div>
-
-  <!-- 第四行：行动按钮 -->
-  <div class="hero-actions">
-    <a href="#signals" class="hero-btn hero-btn-primary">→ 今日焦点</a>
-    <a href="#deep-dive" class="hero-btn hero-btn-secondary">→ 深度分析</a>
+  <div class="hero-scroll-hint">
+    <span class="hero-scroll-text">↓</span>
   </div>
 </section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 1.25rem 3rem;
+  }
+
+  .hero-inner {
+    max-width: var(--max-width);
+    width: 100%;
+  }
+
+  /* slogan */
+  .hero-slogan {
+    font-size: 1rem;
+    color: var(--text-tertiary);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-bottom: 2.5rem;
+  }
+
+  /* 今日钩子 */
+  .hero-hook {
+    margin-bottom: 2.5rem;
+  }
+  .hero-hook-title {
+    font-family: var(--font-serif);
+    font-size: 3.75rem;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    /* 纯白：暗色主题下更亮 */
+    color: #ffffff;
+  }
+  [data-theme="light"] .hero-hook-title {
+    color: #0a0a0a;
+  }
+  .hero-hook-tagline {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  /* 概览数字 */
+  .hero-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .hero-meta-sep {
+    color: var(--border);
+  }
+  .hero-meta-date {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* 按钮并排 */
+  .hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .hero-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: var(--radius);
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+  }
+  .hero-btn-primary {
+    background: var(--accent);
+    color: white;
+  }
+  .hero-btn-primary:hover {
+    color: white;
+    opacity: 0.85;
+  }
+  .hero-btn-secondary {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+  }
+  .hero-btn-secondary:hover {
+    border-color: var(--text-tertiary);
+    color: var(--text-primary);
+  }
+
+  /* 底部滚动提示 */
+  .hero-scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero-scroll-text {
+    font-size: 1.25rem;
+    color: var(--text-tertiary);
+    animation: bounce 2s ease-in-out infinite;
+    display: block;
+    line-height: 1;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+
+  /* 移动端 */
+  @media (max-width: 640px) {
+    .hero {
+      min-height: 85vh;
+      padding: 4rem 1rem 2.5rem;
+    }
+    .hero-hook-title {
+      font-size: 1.875rem;
+      line-height: 1.35;
+    }
+    .hero-hook-tagline {
+      font-size: 1rem;
+    }
+    .hero-slogan {
+      font-size: 0.875rem;
+      margin-bottom: 2rem;
+    }
+    .hero-meta {
+      font-size: 0.75rem;
+      margin-bottom: 2rem;
+    }
+    .hero-actions {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .hero-btn {
+      width: 100%;
+      max-width: 280px;
+      justify-content: center;
+    }
+  }
+</style>
