@@ -1,155 +1,209 @@
 ---
-interface NewsItem {
+import fs from 'node:fs';
+import path from 'node:path';
+
+// === Types ===
+interface HeroItem {
   id: string;
-  title: string;
-  category: string;
-  importance: number;
+  level: 1 | 2 | 3;
+  content: string;
   summary?: string;
   source?: string;
-  tags?: string[];
-}
-
-interface Props {
   date: string;
-  weekday: string;
-  items: NewsItem[];
-  deepDive?: { topic: string };
+}
+interface HeroState {
+  updated_at: string;
+  items: HeroItem[];
 }
 
-const { date, weekday, items, deepDive } = Astro.props;
-
-// === Seeded random (deterministic layout per day) ===
-function rand(seed: number): number {
+// === Hash function (deterministic per id) ===
+function hash(str: string): number {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) {
+    h = ((h << 5) - h + str.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h);
+}
+function hashF(seed: number): number {
   const x = Math.sin(seed * 9301 + 49297) * 233280;
   return x - Math.floor(x);
 }
 
-// === Data processing ===
-const sorted = [...items].sort((a, b) => (b.importance || 0) - (a.importance || 0));
-const topItems = sorted.slice(0, Math.min(3, items.length));
-
-const allTags = items.flatMap(it => it.tags || []);
-const seen = new Set<string>();
-const uniqueTags: string[] = [];
-for (const t of allTags) {
-  const key = t.toLowerCase();
-  if (!seen.has(key)) { seen.add(key); uniqueTags.push(t); }
+// === Load hero-state.json ===
+function loadHeroState(): HeroState | null {
+  const candidates = [
+    path.join(process.cwd(), 'public', 'data', 'hero-state.json'),
+    path.join(process.cwd(), 'src', 'data', 'hero-state.json'),
+  ];
+  for (const p of candidates) {
+    if (fs.existsSync(p)) return JSON.parse(fs.readFileSync(p, 'utf-8'));
+  }
+  return null;
 }
-const tags = uniqueTags.slice(0, 10);
 
-const catMap: Record<string, string> = {
-  technology: '技术', application: '应用', hardware: '硬件', thought: '思想',
-};
-const catCounts: Record<string, number> = {};
-items.forEach(it => {
-  const c = it.category || 'other';
-  catCounts[c] = (catCounts[c] || 0) + 1;
-});
-const dataPoints = [
-  { text: `${date} ${weekday}`, href: '#signals' },
-  ...Object.entries(catCounts).map(([c, n]) => ({ text: `${catMap[c] || c} ${n}`, href: '#signals' })),
-  { text: `${items.length} 条`, href: '#signals' },
+const state = loadHeroState();
+const items = state?.items || [];
+
+// === Separate by level ===
+const l1Items = items.filter(i => i.level === 1).slice(0, 3);
+const l2Items = items.filter(i => i.level === 2).slice(0, 8);
+const l3Items = items.filter(i => i.level === 3).slice(0, 6);
+
+// === Grid cell definitions ===
+// 6 columns × 4 rows. Each cell: { row, col, rowSpan?, colSpan? }
+// L1: center area, larger cells
+// L2: middle ring
+// L3: edges
+const l1Cells = [
+  { row: 2, col: 3, colSpan: 2 },   // center-right
+  { row: 1, col: 2, colSpan: 2 },   // top-center-left
+  { row: 3, col: 4, colSpan: 2 },   // bottom-center-right
 ];
 
-// === Position generation ===
-// Cards: near center, spread by importance rank
-const cardPos = topItems.map((_, i) => {
-  const angle = (i / Math.max(topItems.length, 1)) * Math.PI * 2 - Math.PI / 2;
-  const dist = 4 + rand(i * 11 + 1) * 7;
-  return {
-    top: 44 + Math.cos(angle) * dist + (rand(i * 13 + 3) - 0.5) * 5,
-    left: 50 + Math.sin(angle) * dist + (rand(i * 17 + 5) - 0.5) * 5,
-  };
-});
-
-// Tags: ring around center zone
-const tagPos = tags.map((_, i) => {
-  const angle = (i / Math.max(tags.length, 1)) * Math.PI * 2 + rand(i * 19 + 7) * 0.35;
-  const dist = 18 + rand(i * 23 + 11) * 20;
-  return {
-    top: 46 + Math.cos(angle) * dist,
-    left: 50 + Math.sin(angle) * dist,
-    opacity: 0.45 + rand(i * 29 + 13) * 0.4,
-  };
-});
-
-// Data points: edges and corners
-const edgeSpots = [
-  { top: 8, left: 7 }, { top: 7, left: 88 },
-  { top: 93, left: 12 }, { top: 91, left: 83 },
-  { top: 16, left: 50 }, { top: 80, left: 50 },
+const l2Cells = [
+  { row: 1, col: 1 }, { row: 1, col: 4 },
+  { row: 2, col: 1 }, { row: 2, col: 2 },
+  { row: 3, col: 1 }, { row: 3, col: 2 },
+  { row: 4, col: 3 }, { row: 4, col: 5 },
 ];
-const dataPos = dataPoints.map((_, i) => {
-  const s = edgeSpots[i % edgeSpots.length];
+
+const l3Cells = [
+  { row: 4, col: 1 }, { row: 4, col: 6 },
+  { row: 1, col: 5 }, { row: 1, col: 6 },
+  { row: 4, col: 4 }, { row: 3, col: 6 },
+];
+
+// === Animation params from hash ===
+interface AnimParams {
+  offX: number;      // px offset within cell (-15 to 15)
+  offY: number;
+  floatAmp: number;   // px
+  floatPeriod: number; // seconds
+  delay: number;       // seconds
+}
+
+function getAnim(item: HeroItem, level: 1 | 2 | 3): AnimParams {
+  const h = hash(item.id);
+  const h2 = hash(item.id + '_y');
+  const h3 = hash(item.id + '_t');
+  const h4 = hash(item.id + '_d');
+
+  const ampRange = level === 1 ? 8 : level === 2 ? 5 : 3;
+  const periodMin = level === 1 ? 6 : level === 2 ? 4 : 3;
+  const periodRange = level === 1 ? 3 : level === 2 ? 3 : 2;
+
   return {
-    top: s.top + (rand(i * 31 + 17) - 0.5) * 4,
-    left: s.left + (rand(i * 37 + 23) - 0.5) * 4,
+    offX: (hashF(h) - 0.5) * 30,
+    offY: (hashF(h2) - 0.5) * 20,
+    floatAmp: 3 + hashF(h3) * ampRange,
+    floatPeriod: periodMin + hashF(h4) * periodRange,
+    delay: (hash(h + '_delay') % 30) / 10,
   };
-});
+}
 
 // === Background stars ===
-const stars = Array.from({ length: 45 }, (_, i) => ({
-  x: rand(i * 1.1 + 0.3) * 100,
-  y: rand(i * 2.3 + 0.7) * 100,
-  r: rand(i * 3.7 + 1.1) > 0.85 ? 1.5 : 0.5 + rand(i * 4.1) * 0.5,
-  o: 0.05 + rand(i * 5.1 + 2.3) * 0.12,
+const stars = Array.from({ length: 40 }, (_, i) => ({
+  x: hashF(i * 1.1 + 0.3) * 100,
+  y: hashF(i * 2.3 + 0.7) * 100,
+  r: hashF(i * 3.7 + 1.1) > 0.85 ? 1.5 : 0.5 + hashF(i * 4.1) * 0.5,
+  o: 0.05 + hashF(i * 5.1 + 2.3) * 0.1,
 }));
 const starShadow = stars.map(s =>
   `${s.x.toFixed(1)}vw ${s.y.toFixed(1)}vh 0 ${s.r.toFixed(1)}px rgba(129,140,248,${s.o.toFixed(2)})`
 ).join(',');
 
-// === Category color mapping ===
-const catColorMap: Record<string, string> = {
-  technology: 'var(--cat-technology)',
-  application: 'var(--cat-application)',
-  hardware: 'var(--cat-hardware)',
-  thought: 'var(--cat-thought)',
-};
+// === Props (keep for backwards compat with index.astro) ===
+interface Props {
+  date?: string;
+  weekday?: string;
+  items?: any[];
+  deepDive?: any;
+}
+Astro.props;
 ---
 
-<section class="nebula" aria-label="今日 AI 资讯概览">
+<section class="nebula" aria-label="AI 资讯星云">
   <div class="nebula-bg" style={`--stars:${starShadow}`}></div>
+  <div class="nebula-grid">
 
-  <!-- ① Title cards -->
-  {topItems.map((item, i) => (
-    <a
-      href={item.source || '#signals'}
-      target={item.source ? '_blank' : undefined}
-      rel={item.source ? 'noopener noreferrer' : undefined}
-      class="nebula-card"
-      data-idx={String(i)}
-      style={`top:${cardPos[i].top.toFixed(1)}%;left:${cardPos[i].left.toFixed(1)}%;--delay:${(i * 0.12).toFixed(2)}s;--card-color:${catColorMap[item.category] || 'var(--accent)'}`}
-    >
-      <span class="nebula-card-title">{item.title}</span>
-      {item.summary && (
-        <span class="nebula-card-sub">{item.summary.slice(0, 15)}{item.summary.length > 15 ? '…' : ''}</span>
-      )}
-    </a>
-  ))}
+    <!-- L1: Title cards -->
+    {l1Items.map((item, i) => {
+      if (i >= l1Cells.length) return null;
+      const cell = l1Cells[i];
+      const a = getAnim(item, 1);
+      return (
+        <a
+          href={item.source || '#signals'}
+          target={item.source ? '_blank' : undefined}
+          rel={item.source ? 'noopener noreferrer' : undefined}
+          class="nebula-cell nebula-l1"
+          style={`
+            grid-row: ${cell.row};
+            grid-column: ${cell.col} / span ${cell.colSpan || 1};
+            --off-x: ${a.offX.toFixed(1)}px;
+            --off-y: ${a.offY.toFixed(1)}px;
+            --float-amp: ${a.floatAmp.toFixed(1)}px;
+            --float-period: ${a.floatPeriod.toFixed(1)}s;
+            --delay: ${a.delay.toFixed(1)}s;
+          `}
+        >
+          <div class="l1-card">
+            <h2 class="l1-title">{item.content}</h2>
+            {item.summary && <p class="l1-summary">{item.summary}</p>}
+          </div>
+        </a>
+      );
+    })}
 
-  <!-- ② Data points -->
-  {dataPoints.map((dp, i) => (
-    <a
-      href={dp.href}
-      class="nebula-data"
-      data-idx={String(i)}
-      style={`top:${dataPos[i].top.toFixed(1)}%;left:${dataPos[i].left.toFixed(1)}%;--delay:${(0.4 + i * 0.06).toFixed(2)}s`}
-    >{dp.text}</a>
-  ))}
+    <!-- L2: Topic tags -->
+    {l2Items.map((item, i) => {
+      if (i >= l2Cells.length) return null;
+      const cell = l2Cells[i];
+      const a = getAnim(item, 2);
+      return (
+        <span
+          class="nebula-cell nebula-l2"
+          style={`
+            grid-row: ${cell.row};
+            grid-column: ${cell.col};
+            --off-x: ${a.offX.toFixed(1)}px;
+            --off-y: ${a.offY.toFixed(1)}px;
+            --float-amp: ${a.floatAmp.toFixed(1)}px;
+            --float-period: ${a.floatPeriod.toFixed(1)}s;
+            --delay: ${a.delay.toFixed(1)}s;
+          `}
+        >{item.content}</span>
+      );
+    })}
 
-  <!-- ③ Keyword tags -->
-  {tags.map((tag, i) => (
-    <span
-      class="nebula-tag"
-      data-idx={String(i)}
-      style={`top:${tagPos[i].top.toFixed(1)}%;left:${tagPos[i].left.toFixed(1)}%;--tag-o:${tagPos[i].opacity.toFixed(2)};--delay:${(0.6 + i * 0.05).toFixed(2)}s`}
-    >#{tag}</span>
-  ))}
+    <!-- L3: Ghost words -->
+    {l3Items.map((item, i) => {
+      if (i >= l3Cells.length) return null;
+      const cell = l3Cells[i];
+      const a = getAnim(item, 3);
+      return (
+        <span
+          class="nebula-cell nebula-l3"
+          style={`
+            grid-row: ${cell.row};
+            grid-column: ${cell.col};
+            --off-x: ${a.offX.toFixed(1)}px;
+            --off-y: ${a.offY.toFixed(1)}px;
+            --float-amp: ${a.floatAmp.toFixed(1)}px;
+            --float-period: ${a.floatPeriod.toFixed(1)}s;
+            --delay: ${a.delay.toFixed(1)}s;
+          `}
+        >{item.content}</span>
+      );
+    })}
+  </div>
 
+  <!-- Scroll hint -->
   <a href="#signals" class="nebula-scroll"><span>↓</span></a>
 </section>
 
 <style>
+  /* ── Container ── */
   .nebula {
     position: relative;
     min-height: 100vh;
@@ -162,187 +216,179 @@ const catColorMap: Record<string, string> = {
     inset: 0;
     z-index: 0;
     background:
-      radial-gradient(ellipse 60% 50% at 50% 45%, rgba(129,140,248,0.07) 0%, transparent 100%),
+      radial-gradient(ellipse 60% 50% at 50% 45%, rgba(129,140,248,0.06) 0%, transparent 100%),
       var(--bg);
   }
   .nebula-bg::before {
     content: '';
     position: absolute;
     inset: 0;
-    width: 1px;
-    height: 1px;
+    width: 1px; height: 1px;
     background: transparent;
     box-shadow: var(--stars);
   }
   [data-theme="light"] .nebula-bg {
     background:
-      radial-gradient(ellipse 60% 50% at 50% 45%, rgba(99,102,241,0.04) 0%, transparent 100%),
+      radial-gradient(ellipse 60% 50% at 50% 45%, rgba(99,102,241,0.03) 0%, transparent 100%),
       var(--bg);
   }
   [data-theme="light"] .nebula-bg::before {
-    box-shadow: var(--stars);
     filter: brightness(0.15);
   }
 
-  /* ── Shared animation ── */
-  @keyframes nebulaIn {
-    from { opacity: 0; transform: translate(-50%,-50%) translateY(12px); }
-    to   { transform: translate(-50%,-50%) translateY(0); }
+  /* ── Grid layout (invisible, prevents overlap) ── */
+  .nebula-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    min-height: 100vh;
+    padding: 1.5rem;
+    gap: 0;
   }
 
-  /* ── ① Title cards ── */
-  .nebula-card {
-    position: absolute;
-    transform: translate(-50%,-50%);
-    z-index: 3;
+  /* ── Shared cell style ── */
+  .nebula-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    padding: 1.5rem 2rem;
+    color: inherit;
+    animation: float var(--float-period, 5s) ease-in-out var(--delay, 0s) infinite;
+  }
+
+  /* ── Float keyframes (vertical + slight horizontal drift) ── */
+  @keyframes float {
+    0%, 100% {
+      transform:
+        translate(var(--off-x, 0px), calc(var(--off-y, 0px) - var(--float-amp, 5px)));
+    }
+    50% {
+      transform:
+        translate(calc(var(--off-x, 0px) + 2px), calc(var(--off-y, 0px) + var(--float-amp, 5px)));
+    }
+  }
+
+  /* ═══ L1: Title cards ═══ */
+  .nebula-l1 {
+    z-index: 3;
+    cursor: pointer;
+    transition: filter 0.3s;
+  }
+  .nebula-l1:hover { filter: brightness(1.15); }
+
+  .l1-card {
+    padding: 1.5rem 1.75rem;
     background: rgba(255,255,255,0.035);
     border: 1px solid rgba(255,255,255,0.07);
     border-radius: 14px;
-    backdrop-filter: blur(10px);
-    max-width: 88%;
-    animation: nebulaIn 0.9s ease both;
-    animation-delay: var(--delay);
-    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    backdrop-filter: blur(8px);
+    max-width: 95%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
   }
-  .nebula-card::before {
+  .l1-card::before {
     content: '';
     position: absolute;
-    top: 0; left: 1.5rem;
-    width: 3px; height: 60%;
-    border-radius: 2px;
-    background: var(--card-color);
-    opacity: 0.6;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--accent);
+    opacity: 0.5;
+    border-radius: 0 2px 2px 0;
   }
-  .nebula-card:hover {
-    transform: translate(-50%,-50%) scale(1.05);
-    background: rgba(255,255,255,0.065);
-    box-shadow: 0 0 50px rgba(129,140,248,0.1);
+  .nebula-l1:hover .l1-card {
+    transform: scale(1.04);
+    box-shadow: 0 0 40px rgba(129,140,248,0.08);
   }
-  [data-theme="light"] .nebula-card {
+  [data-theme="light"] .l1-card {
     background: rgba(0,0,0,0.025);
     border-color: rgba(0,0,0,0.06);
   }
-  [data-theme="light"] .nebula-card:hover {
-    background: rgba(0,0,0,0.05);
-    box-shadow: 0 0 50px rgba(99,102,241,0.08);
+  [data-theme="light"] .l1-card::before {
+    opacity: 0.3;
   }
 
-  /* Primary card (highest importance) */
-  .nebula-card[data-idx="0"] .nebula-card-title {
+  .l1-title {
     font-family: var(--font-serif);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 900;
-    line-height: 1.3;
+    line-height: 1.35;
     color: #ffffff;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.02em;
+    margin: 0;
   }
-  [data-theme="light"] .nebula-card[data-idx="0"] .nebula-card-title {
-    color: #0a0a0a;
-  }
-  .nebula-card[data-idx="0"] {
-    padding: 2rem 2.25rem;
-  }
-  .nebula-card[data-idx="0"]::before {
-    height: 70%;
-  }
+  [data-theme="light"] .l1-title { color: #0a0a0a; }
 
-  /* Secondary cards */
-  .nebula-card[data-idx="1"] .nebula-card-title,
-  .nebula-card[data-idx="2"] .nebula-card-title {
-    font-family: var(--font-serif);
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.4;
-    color: var(--text-primary);
-  }
-  .nebula-card[data-idx="1"],
-  .nebula-card[data-idx="2"] {
-    padding: 1rem 1.5rem;
-  }
-  .nebula-card[data-idx="1"]::before,
-  .nebula-card[data-idx="2"]::before {
-    width: 2px;
-    height: 50%;
-    opacity: 0.4;
-  }
-
-  .nebula-card-sub {
-    display: block;
-    margin-top: 0.5rem;
+  .l1-summary {
+    margin: 0.5rem 0 0;
     font-size: 0.8125rem;
     color: var(--text-tertiary);
     line-height: 1.5;
   }
 
-  /* ── ② Data points ── */
-  .nebula-data {
-    position: absolute;
-    transform: translate(-50%,-50%);
+  /* First L1 card slightly larger */
+  .nebula-l1:nth-child(1) .l1-title {
+    font-size: 1.75rem;
+  }
+
+  /* ═══ L2: Topic tags ═══ */
+  .nebula-l2 {
+    z-index: 2;
+    padding: 0.4rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    color: rgba(255,255,255,0.65);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 999px;
+    transition: transform 0.3s, color 0.3s, border-color 0.3s, opacity 0.3s;
+  }
+  .nebula-l2:hover {
+    transform: scale(1.12) !important;
+    color: #ffffff !important;
+    border-color: rgba(255,255,255,0.25) !important;
+  }
+  [data-theme="light"] .nebula-l2 {
+    color: rgba(0,0,0,0.5);
+    border-color: rgba(0,0,0,0.08);
+  }
+  [data-theme="light"] .nebula-l2:hover {
+    color: #000 !important;
+    border-color: rgba(0,0,0,0.2) !important;
+  }
+
+  /* ═══ L3: Ghost words ═══ */
+  .nebula-l3 {
     z-index: 1;
     font-size: 0.75rem;
     font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
     font-variant-numeric: tabular-nums;
     letter-spacing: 0.04em;
     color: var(--text-tertiary);
-    opacity: 0.45;
-    text-decoration: none;
-    animation: nebulaIn 0.8s ease both;
-    animation-delay: var(--delay);
+    opacity: 0.35;
+    white-space: nowrap;
     transition: opacity 0.3s, color 0.3s;
   }
-  .nebula-data:hover {
-    opacity: 1;
+  .nebula-l3:hover {
+    opacity: 0.8;
     color: var(--text-secondary);
-  }
-
-  /* ── ③ Keyword tags ── */
-  .nebula-tag {
-    position: absolute;
-    transform: translate(-50%,-50%);
-    z-index: 2;
-    display: inline-block;
-    padding: 0.35rem 0.85rem;
-    font-size: 0.8125rem;
-    font-weight: 500;
-    white-space: nowrap;
-    color: rgba(255,255,255, var(--tag-o, 0.5));
-    border: 1px solid rgba(255,255,255, calc(var(--tag-o, 0.4) * 0.25));
-    border-radius: 999px;
-    animation: nebulaIn 0.8s ease both;
-    animation-delay: var(--delay);
-    transition: transform 0.3s, opacity 0.3s, color 0.3s, border-color 0.3s;
-  }
-  .nebula-tag:hover {
-    transform: translate(-50%,-50%) scale(1.12);
-    opacity: 1 !important;
-    color: #fff !important;
-    border-color: rgba(255,255,255,0.3) !important;
-  }
-  [data-theme="light"] .nebula-tag {
-    color: rgba(0,0,0, var(--tag-o, 0.45));
-    border-color: rgba(0,0,0, calc(var(--tag-o, 0.4) * 0.15));
-  }
-  [data-theme="light"] .nebula-tag:hover {
-    color: #000 !important;
-    border-color: rgba(0,0,0,0.25) !important;
   }
 
   /* ── Scroll hint ── */
   .nebula-scroll {
     position: absolute;
-    bottom: 2rem;
+    bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
     text-decoration: none;
-    display: block;
   }
   .nebula-scroll span {
     font-size: 1.25rem;
     color: var(--text-tertiary);
+    opacity: 0.5;
     animation: bounce 2s ease-in-out infinite;
     line-height: 1;
   }
@@ -353,70 +399,47 @@ const catColorMap: Record<string, string> = {
 
   /* ── Mobile ── */
   @media (max-width: 640px) {
-    .nebula {
-      min-height: auto;
-      padding: 3rem 0 2rem;
-    }
+    .nebula { min-height: auto; }
 
-    .nebula-card,
-    .nebula-data,
-    .nebula-tag {
-      position: static;
-      transform: none;
-      animation: none;
-      max-width: 100%;
-    }
-
-    .nebula-card {
-      margin: 0 1rem 1rem;
-    }
-    .nebula-card[data-idx="1"],
-    .nebula-card[data-idx="2"] {
-      display: none;
-    }
-    .nebula-card[data-idx="0"] .nebula-card-title {
-      font-size: 1.5rem;
-    }
-    .nebula-card[data-idx="0"] {
-      padding: 1.5rem;
-    }
-
-    .nebula-data {
-      display: inline;
-      font-size: 0.6875rem;
-      opacity: 0.6;
-      margin: 0;
-    }
-    .nebula-data + .nebula-data::before {
-      content: ' · ';
-      color: var(--border);
-    }
-
-    .nebula-tag {
-      display: none;
-      position: static;
-      transform: none;
-      margin: 0.25rem;
-      font-size: 0.75rem;
-      padding: 0.25rem 0.65rem;
-    }
-    /* Show first 6 tags as a flex row via trickery */
-    .nebula-tag:nth-of-type(1),
-    .nebula-tag:nth-of-type(2),
-    .nebula-tag:nth-of-type(3),
-    .nebula-tag:nth-of-type(4),
-    .nebula-tag:nth-of-type(5),
-    .nebula-tag:nth-of-type(6) {
-      display: inline-block;
-    }
-    /* Wrap tags in a visual container using the parent */
-    .nebula {
+    .nebula-grid {
       display: flex;
       flex-direction: column;
+      min-height: auto;
+      padding: 2rem 1rem;
+      gap: 0.75rem;
+    }
+
+    .nebula-cell {
+      animation: none;
+      transform: none;
+    }
+
+    /* Show all L1, hide extra L2/L3 */
+    .nebula-l1 { justify-content: flex-start; }
+    .nebula-l1:nth-child(n+3) { display: none; }
+    .l1-title { font-size: 1.25rem !important; }
+    .l1-card {
+      width: 100%;
+      padding: 1.25rem;
+    }
+
+    .nebula-l2 {
+      opacity: 1;
+      animation: none;
+    }
+    .nebula-l2:nth-of-type(n+7) { display: none; }
+
+    .nebula-l3 {
+      opacity: 0.4;
+      animation: none;
+    }
+    .nebula-l3:nth-of-type(n+5) { display: none; }
+
+    /* Stack L2 and L3 in rows */
+    .nebula-l2, .nebula-l3 {
+      flex: 0 0 auto;
     }
 
     .nebula-scroll { display: none; }
-
-    .nebula-bg::before { display: none; }
   }
 </style>
