@@ -1,53 +1,211 @@
 ---
-interface Props {
-  date: string;
-  summary: string;
-  weekday: string;
+interface NewsItem {
+  id: string;
+  title: string;
+  category: string;
+  importance: number;
 }
 
-const { date, summary, weekday } = Astro.props;
+interface Props {
+  date: string;
+  weekday: string;
+  items: NewsItem[];
+  deepDive?: { topic: string };
+}
+
+const { date, weekday, items, deepDive } = Astro.props;
+
+// 取 importance 最高的信号做钩子
+const hookItem = items.reduce((max, item) =>
+  (item.importance || 0) > (max.importance || 0) ? item : max, items[0]);
+
+// 分类统计
+const catMap: Record<string, string> = {
+  technology: '技术', application: '应用', hardware: '硬件', thought: '思想',
+};
+const catCounts: Record<string, number> = {};
+items.forEach(item => {
+  const cat = item.category || 'other';
+  catCounts[cat] = (catCounts[cat] || 0) + 1;
+});
+const catSummary = Object.entries(catCounts)
+  .map(([cat, count]) => `${catMap[cat] || cat} ${count}`)
+  .join(' · ');
+
+// 引导语按分类变化
+const taglines: Record<string, string> = {
+  thought: '这件事，可能正在影响你的判断',
+  technology: '这个技术进展，可能改变你正在做的事',
+  application: '这个应用落地，可能重塑你的工作方式',
+  hardware: '这个硬件动态，值得关注',
+};
+const tagline = taglines[hookItem.category] || '这件事，可能正在影响你的判断';
 ---
 
 <section class="hero">
-  <div class="hero-date">
-    <time datetime={date}>{date}</time>
-    <span class="hero-weekday">{weekday}</span>
+  <!-- 第一行：品牌 + 定位 -->
+  <div class="hero-brand">
+    <span class="hero-brand-name">AI Lens</span>
+    <span class="hero-brand-sep">|</span>
+    <span class="hero-brand-tagline">每天 5 分钟，看透 AI 在发生什么</span>
   </div>
-  <p class="hero-summary">{summary}</p>
+
+  <!-- 第二行：今日钩子 -->
+  <div class="hero-hook">
+    <h1 class="hero-hook-title">{hookItem.title}</h1>
+    <p class="hero-hook-tagline">——{tagline}</p>
+  </div>
+
+  <!-- 第三行：今日概览数字 -->
+  <div class="hero-meta">
+    <span>今日 {items.length} 条</span>
+    <span class="hero-meta-sep">·</span>
+    <span>{catSummary}</span>
+    <span class="hero-meta-sep">·</span>
+    <time datetime={date} class="hero-meta-date">{date}</time>
+    <span class="hero-meta-weekday">{weekday}</span>
+  </div>
+
+  <!-- 第四行：行动按钮 -->
+  <div class="hero-actions">
+    <a href="#signals" class="hero-btn hero-btn-primary">→ 今日焦点</a>
+    {deepDive && (
+      <a href="#deep-dive" class="hero-btn hero-btn-secondary">→ 深度分析</a>
+    )}
+  </div>
 </section>
 
 <style>
   .hero {
-    padding: 3rem 0 2rem;
+    padding: 2.5rem 0 2rem;
   }
-  .hero-date {
+
+  /* 第一行：品牌 + 定位 */
+  .hero-brand {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 0.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
-  .hero-date time {
+  .hero-brand-name {
     font-family: var(--font-serif);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 900;
     color: var(--text-primary);
     letter-spacing: -0.02em;
   }
-  .hero-weekday {
+  .hero-brand-sep {
+    color: var(--text-tertiary);
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  .hero-brand-tagline {
     font-size: 0.875rem;
     color: var(--text-tertiary);
-    font-weight: 500;
-  }
-  .hero-summary {
-    font-family: var(--font-serif);
-    font-size: 1.125rem;
-    line-height: 1.8;
-    color: var(--text-primary);
     font-weight: 400;
   }
+
+  /* 第二行：今日钩子 */
+  .hero-hook {
+    margin-bottom: 2rem;
+  }
+  .hero-hook-title {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 1.4;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+  .hero-hook-tagline {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  /* 第三行：概览数字 */
+  .hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  .hero-meta-sep {
+    color: var(--border);
+  }
+  .hero-meta-date {
+    font-variant-numeric: tabular-nums;
+  }
+  .hero-meta-weekday {
+    color: var(--text-tertiary);
+  }
+
+  /* 第四行：行动按钮 */
+  .hero-actions {
+    display: flex;
+    gap: 0.75rem;
+  }
+  .hero-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: var(--radius);
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+  }
+  .hero-btn-primary {
+    background: var(--accent);
+    color: white;
+  }
+  .hero-btn-primary:hover {
+    color: white;
+    opacity: 0.9;
+  }
+  .hero-btn-secondary {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+  }
+  .hero-btn-secondary:hover {
+    border-color: var(--text-tertiary);
+    color: var(--text-primary);
+  }
+
+  /* 移动端适配 */
   @media (max-width: 640px) {
-    .hero { padding: 2rem 0 1.5rem; }
-    .hero-date time { font-size: 1.25rem; }
-    .hero-summary { font-size: 1rem; }
+    .hero {
+      padding: 1.5rem 0 1.5rem;
+    }
+    .hero-brand {
+      margin-bottom: 1.5rem;
+    }
+    .hero-brand-tagline {
+      font-size: 0.8125rem;
+    }
+    .hero-hook-title {
+      font-size: 1.375rem;
+    }
+    .hero-hook-tagline {
+      font-size: 0.9375rem;
+    }
+    .hero-meta {
+      font-size: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-actions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .hero-btn {
+      justify-content: center;
+    }
   }
 </style>

@@ -28,12 +28,17 @@ if (latestDate) {
     <>
       <Hero
         date={latestDate!}
-        summary={data.summary}
         weekday={formatWeekday(latestDate!)}
+        items={data.items}
+        deepDive={data.deep_dive}
       />
-      <Signals items={data.items} maxPerCategory={3} dateLink={`${base}/${latestDate}`} />
+      <div id="signals">
+        <Signals items={data.items} maxPerCategory={3} dateLink={`${base}/${latestDate}`} />
+      </div>
       {data.deep_dive && (
-        <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated detailUrl={`${base}/${latestDate}`} />
+        <div id="deep-dive">
+          <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated detailUrl={`${base}/${latestDate}`} />
+        </div>
       )}
 
       {/* 历史期刊 */}

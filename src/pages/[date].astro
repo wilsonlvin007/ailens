@@ -23,12 +23,17 @@ if (!data) {
 <Base title={`AI 日报 · ${date}`}>
   <Hero
     date={date!}
-    summary={data.summary}
     weekday={formatWeekday(date!)}
+    items={data.items}
+    deepDive={data.deep_dive}
   />
-  <Signals items={data.items} />
+  <div id="signals">
+    <Signals items={data.items} />
+  </div>
   {data.deep_dive && (
-    <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
+    <div id="deep-dive">
+      <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
+    </div>
   )}
   <nav class="date-nav">
     <a href={`${base}/`} class="back-link">← 返回最新</a>
