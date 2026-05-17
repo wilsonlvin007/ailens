@@ -1,96 +1,126 @@
 {
-  "updated_at": "2026-05-16",
+  "updated_at": "2026-05-18",
   "items": [
     {
-      "id": "sig_2026-05-17_005",
+      "id": "sig_2026-05-18_001",
       "level": 1,
-      "content": "谷歌 AI 财经服务扩展欧洲",
-      "summary": "谷歌宣布其 AI 驱动的 Google Finance 服务正式扩展至欧洲，提升",
+      "content": "谷歌 AI 金融拓展欧洲",
+      "summary": "谷歌将 AI 驱动的金融搜索功能扩展至欧洲，提升当地用户获取实时市场数据与洞察的",
       "source": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
-      "date": "2026-05-17",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_20260516_001",
-      "level": 1,
-      "content": "Waymo 召回数千辆机器人出租车，安全性再遭质疑",
-      "summary": "美国监管介入，自动驾驶商业化进程或受阻",
-      "source": "https://example.com/waymo",
-      "date": "2026-05-16",
+      "date": "2026-05-18",
       "signal_index": 0
     },
     {
-      "id": "sig_20260516_002",
+      "id": "sig_2026-05-18_002",
       "level": 1,
-      "content": "OpenAI 发布 GPT-5，多模态推理能力大幅跃升",
-      "summary": "新模型在数学和编程基准上刷新纪录",
-      "source": "https://example.com/gpt5",
-      "date": "2026-05-16",
+      "content": "AI 穿戴设备面临场景考验",
+      "summary": "行业指出 AI 穿戴设备需通过“咖啡馆测试”，即在公共场合自然使用而不显尴尬，方",
+      "source": "https://www.inc.com/connor-jewiss/ai-wearables-are-coming-but-theyll-need-to-pass-this-crucial-coffee-shop-test-to-survive/91345526",
+      "date": "2026-05-18",
       "signal_index": 1
     },
     {
-      "id": "sig_20260516_003",
+      "id": "sig_2026-05-18_003",
       "level": 1,
-      "content": "Anthropic 开源 Claude 代码推理模型",
-      "summary": "开发者可直接部署，挑战 OpenAI 生态",
-      "source": "https://example.com/claude",
-      "date": "2026-05-16",
+      "content": "业界反思 AI 技术本质定位",
+      "summary": "观点文章强调 AI 应被视为底层赋能技术而非独立商品，呼吁行业回归理性，避免过度",
+      "source": "https://daringfireball.net/2026/05/ai_is_technology_not_a_product",
+      "date": "2026-05-18",
       "signal_index": 2
     },
     {
-      "id": "sig_20260516_004",
+      "id": "sig_2026-05-18_004",
       "level": 1,
-      "content": "Google DeepMind 发布 Gemini 2.0 Flash",
-      "summary": "推理速度提升 3 倍，API 价格减半",
-      "source": "https://example.com/gemini",
-      "date": "2026-05-16",
+      "content": "质疑 AI 加速业务流程实效",
+      "summary": "作者质疑盲目引入 AI 未必能提升效率，指出若流程本身不合理，AI 仅会加速错误",
+      "source": "https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/",
+      "date": "2026-05-18",
       "signal_index": 3
     },
     {
-      "id": "tag_20260515_001",
+      "id": "sig_2026-05-18_005",
+      "level": 1,
+      "content": "创意专家借 AI 赋能小企广告",
+      "summary": "谷歌展示创意专家利用 AI 工具为小企业制作高质量广告案例，探索降低营销门槛的新",
+      "source": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+      "date": "2026-05-18",
+      "signal_index": 4
+    },
+    {
+      "id": "tag_2026-05-18_001",
       "level": 2,
+      "content": "谷歌宣布其 AI",
+      "date": "2026-05-18"
+    },
+    {
+      "id": "tag_2026-05-18_002",
+      "level": 2,
+      "content": "美国监管介入",
+      "date": "2026-05-18"
+    },
+    {
+      "id": "tag_2026-05-18_003",
+      "level": 2,
+      "content": "新模型在数学和编",
+      "date": "2026-05-18"
+    },
+    {
+      "id": "tag_2026-05-18_004",
+      "level": 2,
+      "content": "开发者可直接部署",
+      "date": "2026-05-18"
+    },
+    {
+      "id": "tag_2026-05-18_005",
+      "level": 2,
+      "content": "推理速度提升 3",
+      "date": "2026-05-18"
+    },
+    {
+      "id": "word_20260515_001",
+      "level": 3,
       "content": "自动驾驶安全",
       "date": "2026-05-15"
     },
     {
-      "id": "tag_20260515_002",
-      "level": 2,
+      "id": "word_20260515_002",
+      "level": 3,
       "content": "多模态大模型",
       "date": "2026-05-15"
     },
     {
-      "id": "tag_20260515_003",
-      "level": 2,
+      "id": "word_20260515_003",
+      "level": 3,
       "content": "开源生态",
       "date": "2026-05-15"
     },
     {
-      "id": "tag_20260514_001",
-      "level": 2,
+      "id": "word_20260514_001",
+      "level": 3,
       "content": "AI估值争议",
       "date": "2026-05-14"
     },
     {
-      "id": "tag_20260514_002",
-      "level": 2,
+      "id": "word_20260514_002",
+      "level": 3,
       "content": "编程助手",
       "date": "2026-05-14"
     },
     {
-      "id": "tag_20260514_003",
-      "level": 2,
+      "id": "word_20260514_003",
+      "level": 3,
       "content": "监管政策",
       "date": "2026-05-14"
     },
     {
-      "id": "tag_20260513_001",
-      "level": 2,
+      "id": "word_20260513_001",
+      "level": 3,
       "content": "芯片算力",
       "date": "2026-05-13"
     },
     {
-      "id": "tag_20260513_002",
-      "level": 2,
+      "id": "word_20260513_002",
+      "level": 3,
       "content": "数据隐私",
       "date": "2026-05-13"
     },
