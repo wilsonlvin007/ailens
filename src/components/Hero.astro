@@ -72,11 +72,11 @@ interface PlacedItem {
 // Estimate rendered size of each element in px (fixed, not relative to container)
 function estimateSize(item: HeroItem): { w: number; h: number } {
   if (item.level === 1) {
-    const charW = 22; // 1.5rem CJK char width
+    const charW = 16; // CJK char width (reduced from 22)
     const titleW = item.content.length * charW;
     return {
-      w: Math.min(Math.max(titleW + 56, 240), 380),  // padding + clamp
-      h: item.summary ? 110 : 80,
+      w: Math.min(Math.max(titleW + 40, 180), 300),  // smaller bounds
+      h: item.summary ? 90 : 65,
     };
   } else if (item.level === 2) {
     const charW = 14;
@@ -208,18 +208,18 @@ if (l1.length > 0) {
 
   // Remaining L1 in 4 sectors around center
   for (let i = 1; i < l1.length; i++) {
-    const p = placeInSector(l1[i], i - 1, 4, 10, 25);
+    const p = placeInSector(l1[i], i - 1, 4, 14, 32);
     if (p) placed.push(p);
   }
 }
-// L2: 8 tags in 8 sectors, middle ring (20-42%)
+// L2: 8 tags in 8 sectors, middle ring (28-48%)
 for (let i = 0; i < l2.length; i++) {
-  const p = placeInSector(l2[i], i, l2.length, 20, 42);
+  const p = placeInSector(l2[i], i, l2.length, 28, 48);
   if (p) placed.push(p);
 }
-// L3: 6 words in 6 sectors, outer ring (30-55%)
+// L3: 6 words in 6 sectors, outer ring (38-60%)
 for (let i = 0; i < l3.length; i++) {
-  const p = placeInSector(l3[i], i, l3.length, 30, 55);
+  const p = placeInSector(l3[i], i, l3.length, 38, 60);
   if (p) placed.push(p);
 }
 
