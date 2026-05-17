@@ -416,6 +416,118 @@ jobs:
           with open(index_file, 'w') as f:
               json.dump({'dates': dates, 'latest': dates[0] if dates else None}, f, ensure_ascii=False, indent=2)
           print(f"Written: index.json ({len(dates)} dates)")
+
+          # ========== hero-state.json 生成/更新 ==========
+          hero_state_path = DATA_DIR / 'hero-state.json'
+
+          def load_hero_state():
+              if hero_state_path.exists():
+                  try:
+                      return json.loads(open(hero_state_path).read())
+                  except Exception:
+                      pass
+              return {'updated_at': '', 'items': []}
+
+          def extract_topic(item):
+              """从 L1 卡片提取核心话题词，用于降级为 L2"""
+              tags = item.get('_tags', [])
+              if tags:
+                  return tags[0]
+              summary = item.get('summary', '') or ''
+              if summary:
+                  for sep in ['，', '。', ',', '.', '；']:
+                      if sep in summary:
+                          clause = summary.split(sep)[0].strip()
+                          if len(clause) >= 3:
+                              return clause[:8]
+                  return summary[:8]
+              return item.get('content', '')[:8]
+
+          MAX_L1 = 4
+          MAX_TOTAL = 27
+
+          old_state = load_hero_state()
+          old_items = old_state.get('items', [])
+
+          # 1) 当天 importance 最高的 MAX_L1 条 → 新 L1
+          sorted_items = sorted(items_parsed, key=lambda x: x.get('importance', 0), reverse=True)
+          new_l1 = []
+          for item in sorted_items[:MAX_L1]:
+              new_l1.append({
+                  'id': f'sig_{date}_{len(new_l1)+1:03d}',
+                  'level': 1,
+                  'content': item.get('title', ''),
+                  'summary': (item.get('summary', '') or item.get('summary_cn', ''))[:40],
+                  'source': item.get('source', ''),
+                  'date': date,
+                  '_tags': item.get('tags', []),   # 内部用，写盘前删除
+              })
+
+          # 2) 原 L1 → 提取核心词 → 降为 L2
+          new_l2 = []
+          for item in old_items:
+              if item.get('level') != 1:
+                  continue
+              topic = extract_topic(item)
+              new_l2.append({
+                  'id': f'tag_{date}_{len(new_l2)+1:03d}',
+                  'level': 2,
+                  'content': topic,
+                  'date': date,
+              })
+
+          # 3) 原 L2 → 降为 L3
+          new_l3_from_l2 = []
+          for item in old_items:
+              if item.get('level') == 2:
+                  new_l3_from_l2.append({
+                      'id': item['id'].replace('tag_', 'word_'),
+                      'level': 3,
+                      'content': item['content'],
+                      'date': item.get('date', date),
+                  })
+
+          # 4) 原 L3 保留（不继续降级）
+          old_l3 = [i for i in old_items if i.get('level') == 3]
+
+          # 5) 合并
+          all_l3 = new_l3_from_l2 + old_l3
+          all_items = new_l1 + new_l2 + all_l3
+
+          # 6) 清理内部字段
+          for it in all_items:
+              it.pop('_tags', None)
+
+          # 7) 去重（同 content 只保留最新的）
+          seen = set()
+          deduped = []
+          for it in reversed(all_items):
+              key = it['content']
+              if key not in seen:
+                  seen.add(key)
+                  deduped.append(it)
+          all_items = list(reversed(deduped))
+
+          # 8) 容量检查：总数 ≤ MAX_TOTAL，超出删最旧 L3
+          if len(all_items) > MAX_TOTAL:
+              l1 = [i for i in all_items if i.get('level') == 1]
+              l2 = [i for i in all_items if i.get('level') == 2]
+              l3 = [i for i in all_items if i.get('level') == 3]
+              l3.sort(key=lambda x: x.get('date', ''))
+              excess = len(all_items) - MAX_TOTAL
+              l3 = l3[excess:]
+              all_items = l1 + l2 + l3
+
+          hero_state = {'updated_at': date, 'items': all_items}
+          with open(hero_state_path, 'w') as f:
+              json.dump(hero_state, f, ensure_ascii=False, indent=2)
+
+          l1c = sum(1 for i in all_items if i.get('level') == 1)
+          l2c = sum(1 for i in all_items if i.get('level') == 2)
+          l3c = sum(1 for i in all_items if i.get('level') == 3)
+          print(f"Written: hero-state.json ({len(all_items)} items: L1={l1c}, L2={l2c}, L3={l3c})")
+          # ========== /hero-state.json ==========
+
           PYEOF
 
       - name: Setup Node.js
