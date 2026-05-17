@@ -72,11 +72,11 @@ interface PlacedItem {
 // Estimate rendered size of each element in px (fixed, not relative to container)
 function estimateSize(item: HeroItem): { w: number; h: number } {
   if (item.level === 1) {
-    const charW = 16; // CJK char width (reduced from 22)
+    const charW = 16; // CJK char width
     const titleW = item.content.length * charW;
     return {
-      w: Math.min(Math.max(titleW + 40, 180), 300),  // smaller bounds
-      h: item.summary ? 90 : 65,
+      w: Math.min(Math.max(titleW + 40, 180), 300),
+      h: 50,
     };
   } else if (item.level === 2) {
     const charW = 14;
@@ -258,7 +258,6 @@ Astro.props;
       >
         <div class="n-l1-inner">
           <h2 class="n-l1-title">{item.content}</h2>
-          {item.summary && <p class="n-l1-sub">{item.summary}</p>}
         </div>
       </a>
     ) : item.level === 2 ? (
