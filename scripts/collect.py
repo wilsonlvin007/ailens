@@ -162,6 +162,7 @@ def main():
 
     # RSS Feeds
     feeds = [
+        ("https://news.smol.ai/rss.xml", "AINews (smol.ai)"),
         ("https://blog.google/technology/ai/rss/", "Google AI Blog"),
         ("https://openai.com/blog/rss.xml", "OpenAI Blog"),
         ("https://www.anthropic.com/news/rss", "Anthropic News"),
