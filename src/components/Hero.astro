@@ -51,11 +51,14 @@ const l3 = items.filter(i => i.level === 3).slice(0, 8);
 // Positions are % of the nebula container.
 // Each cell center = ((col + 0.5) / COLS * 100, (row + 0.5) / ROWS * 100)
 // with random jitter ±30% of cell size for organic feel.
+// VERTICAL OFFSET: shift center up by ~3% to visually align with Signals section
+// (compensates for header height affecting perceived center)
 
 const COLS = 9;
 const ROWS = 7;
 const CELL_W = 100 / COLS;  // ~11.1%
 const CELL_H = 100 / ROWS; // ~14.3%
+const V_OFFSET = -2.8; // shift all items up to align with content center
 
 interface GridCell {
   col: number;
@@ -76,7 +79,7 @@ for (let r = 0; r < ROWS; r++) {
     allCells.push({
       col: c, row: r,
       cx: (c + 0.5) / COLS * 100,
-      cy: (r + 0.5) / ROWS * 100,
+      cy: (r + 0.5) / ROWS * 100 + V_OFFSET,
       distToCenter: Math.sqrt(dx * dx + dy * dy),
     });
   }
