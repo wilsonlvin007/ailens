@@ -143,72 +143,45 @@ function jitter(h: number, cell: GridCell): { x: number; y: number } {
 const placed: PlacedItem[] = [];
 
 // === Step 1: Place L1 ===
-// First item → center cell, rest → cells near center (sorted by distance, with randomness)
+// Center item → cell (centerCol, centerRow)
+// Remaining L1 → 4 quadrants (NW, NE, SW, SE), pick closest unoccupied cell in each
 if (l1.length > 0) {
-  // Place center item
   const centerCell = allCells.find(c => c.col === centerCol && c.row === centerRow)!;
   occupied.add(cellKey(centerCell.col, centerCell.row));
   const anim0 = makeAnim(l1[0]);
   placed.push({
     id: l1[0].id, level: 1, content: l1[0].content,
-    signal_index: l1[0].signal_index,
+    signal_index: l1[0].signal_index ?? 0,
     x: centerCell.cx, y: centerCell.cy,
     ...anim0,
   });
 
-  // Remaining L1: pick from cells near center, biased toward closer cells
-  // Shuffle nearby cells with distance bias (closer = higher probability)
-  const remainingCells = allCells.filter(c => !occupied.has(cellKey(c.col, c.row)));
+  // 4 quadrants around center: NW, NE, SW, SE
+  const quadrants = [
+    (c: GridCell) => c.col <= centerCol && c.row <= centerRow,
+    (c: GridCell) => c.col >= centerCol && c.row <= centerRow,
+    (c: GridCell) => c.col <= centerCol && c.row >= centerRow,
+    (c: GridCell) => c.col >= centerCol && c.row >= centerRow,
+  ];
+
   for (let i = 1; i < l1.length; i++) {
+    const qi = (i - 1) % quadrants.length;
     const itemSeed = hash(l1[i].id);
-    // Score cells: closer to center = higher score, but add randomness
-    const scored = remainingCells
-      .map(c => {
-        // Higher score = more likely to be picked
-        const closeness = 1 / (1 + c.distToCenter * 0.5);
-        const randomness = hashF(itemSeed + c.col * 3.7 + c.row * 5.3 + i * 11);
-        return { cell: c, score: closeness * 2 + randomness };
-      })
-      .sort((a, b) => b.score - a.score);
-
-    // Try cells in score order until we find a non-adjacent-to-center one that looks good
-    let placedOk = false;
-    for (const { cell } of scored) {
-      // Avoid cells too close to each other (at least 1 cell gap between L1s)
-      const tooClose = placed.some(p => {
-        const pcx = p.x, pcy = p.y;
-        return Math.abs(pcx - cell.cx) < CELL_W * 1.2 && Math.abs(pcy - cell.cy) < CELL_H * 1.2;
-      });
-      if (tooClose) continue;
-
-      occupied.add(cellKey(cell.col, cell.row));
-      const j = jitter(itemSeed, cell);
+    const qCells = allCells
+      .filter(c => !occupied.has(cellKey(c.col, c.row)) && quadrants[qi](c))
+      .sort((a, b) => a.distToCenter - b.distToCenter);
+    if (qCells.length > 0) {
+      const top = qCells.slice(0, Math.min(3, qCells.length));
+      const pick = top[Math.floor(hashF(itemSeed + i * 7) * top.length)];
+      occupied.add(cellKey(pick.col, pick.row));
+      const j = jitter(itemSeed, pick);
       const anim = makeAnim(l1[i]);
       placed.push({
         id: l1[i].id, level: 1, content: l1[i].content,
-        signal_index: l1[i].signal_index,
+        signal_index: l1[i].signal_index ?? 0,
         x: j.x, y: j.y,
         ...anim,
       });
-      placedOk = true;
-      break;
-    }
-    // Fallback: force place in next best cell (should rarely happen)
-    if (!placedOk) {
-      for (const { cell } of scored) {
-        if (!occupied.has(cellKey(cell.col, cell.row))) {
-          occupied.add(cellKey(cell.col, cell.row));
-          const j = jitter(itemSeed, cell);
-          const anim = makeAnim(l1[i]);
-          placed.push({
-            id: l1[i].id, level: 1, content: l1[i].content,
-            signal_index: l1[i].signal_index,
-            x: j.x, y: j.y,
-            ...anim,
-          });
-          break;
-        }
-      }
     }
   }
 }
