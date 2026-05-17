@@ -177,6 +177,7 @@
     .nebula-scroll { display: none; }
   }
 
+  .signals {
     padding: 1.5rem 0;
   }
   .signals-title {
