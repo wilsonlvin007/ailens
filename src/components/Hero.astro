@@ -178,18 +178,16 @@ if (l1.length > 0) {
     const cell = allCells.find(c => c.col === target.col && c.row === target.row);
     if (!cell || occupied.has(cellKey(cell.col, cell.row))) continue;
     occupied.add(cellKey(cell.col, cell.row));
-    const itemSeed = hash(l1[i].id);
-    const j = jitter(itemSeed, cell);
     const anim = makeAnim(l1[i]);
     placed.push({
       id: l1[i].id, level: 1, content: l1[i].content,
       signal_index: l1[i].signal_index ?? 0,
-      x: j.x, y: j.y,
+      x: cell.cx, y: cell.cy,
       ...anim,
     });
   }
 
-  // Place L1[5+] in diagonal cells (random)
+  // Place L1[5+] in diagonal cells (random, small jitter)
   for (let i = 5; i < l1.length; i++) {
     const itemSeed = hash(l1[i].id);
     const available = diagonals.filter(d => {
@@ -200,12 +198,14 @@ if (l1.length > 0) {
     const pick = available[Math.floor(hashF(itemSeed + i * 3) * available.length)];
     const cell = allCells.find(c => c.col === pick.col && c.row === pick.row)!;
     occupied.add(cellKey(cell.col, cell.row));
-    const j = jitter(itemSeed, cell);
+    // Small jitter for diagonals only
+    const jx = (hashF(itemSeed * 3 + cell.col * 7 + cell.row * 13) - 0.5) * CELL_W * 0.2;
+    const jy = (hashF(itemSeed * 5 + cell.col * 11 + cell.row * 17) - 0.5) * CELL_H * 0.2;
     const anim = makeAnim(l1[i]);
     placed.push({
       id: l1[i].id, level: 1, content: l1[i].content,
       signal_index: l1[i].signal_index ?? 0,
-      x: j.x, y: j.y,
+      x: cell.cx + jx, y: cell.cy + jy,
       ...anim,
     });
   }
