@@ -28,20 +28,12 @@ jobs:
           npm ci
           npm run build
 
-      - name: Debug: check CSS output
-        run: |
-          echo "=== Style blocks in dist/index.html ==="
-          grep -c '<style' dist/index.html || echo "0"
-          echo "=== Check for Hero/Signals CSS ==="
-          grep -c 'n-l1' dist/index.html || echo "n-l1: NOT FOUND"
-          grep -c 'signal-card' dist/index.html || echo "signal-card: NOT FOUND"
-          echo "=== Check data files ==="
-          ls -la public/data/ || echo "NO DATA DIR"
-          echo "=== dist/data/ ==="
-          ls -la dist/data/ 2>/dev/null || echo "NO dist/data/"
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Deploy to server via SSH
+        uses: easingthemes/ssh-deploy@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+          ARGS: "-rlgoDzvc --delete"
+          SOURCE: "dist/"
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ubuntu
+          TARGET: "/var/www/ailens/"
