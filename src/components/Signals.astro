@@ -43,8 +43,11 @@ for (const item of items) {
         <span class="category-count">{group.items.length}</span>
       </div>
       <div class="signals-list">
-        {group.items.slice(0, maxPerCategory).map((item) => (
-          <article class={`signal-card importance-${item.importance}`}>
+        {group.items.slice(0, maxPerCategory).map((item, idx) => {
+          // 计算全局 article index（跨分组累加）
+          const globalIdx = items.indexOf(item);
+          return (
+            <article id={`signal-${globalIdx}`} class={`signal-card importance-${item.importance} scroll-mt-20`}>
             <div class="signal-header">
               <span class="signal-importance">{importanceLabel(item.importance)}</span>
             </div>
@@ -69,7 +72,8 @@ for (const item of items) {
               </div>
             </div>
           </article>
-        ))}
+          );
+        })}
       </div>
       {group.items.length > maxPerCategory && dateLink && (
         <a href={dateLink} class="view-all">

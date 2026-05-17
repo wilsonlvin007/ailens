@@ -2,12 +2,22 @@
   "updated_at": "2026-05-16",
   "items": [
     {
+      "id": "sig_2026-05-17_005",
+      "level": 1,
+      "content": "谷歌 AI 财经服务扩展欧洲",
+      "summary": "谷歌宣布其 AI 驱动的 Google Finance 服务正式扩展至欧洲，提升",
+      "source": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
+      "date": "2026-05-17",
+      "signal_index": 4
+    },
+    {
       "id": "sig_20260516_001",
       "level": 1,
       "content": "Waymo 召回数千辆机器人出租车，安全性再遭质疑",
       "summary": "美国监管介入，自动驾驶商业化进程或受阻",
       "source": "https://example.com/waymo",
-      "date": "2026-05-16"
+      "date": "2026-05-16",
+      "signal_index": 0
     },
     {
       "id": "sig_20260516_002",
@@ -15,7 +25,8 @@
       "content": "OpenAI 发布 GPT-5，多模态推理能力大幅跃升",
       "summary": "新模型在数学和编程基准上刷新纪录",
       "source": "https://example.com/gpt5",
-      "date": "2026-05-16"
+      "date": "2026-05-16",
+      "signal_index": 1
     },
     {
       "id": "sig_20260516_003",
@@ -23,7 +34,8 @@
       "content": "Anthropic 开源 Claude 代码推理模型",
       "summary": "开发者可直接部署，挑战 OpenAI 生态",
       "source": "https://example.com/claude",
-      "date": "2026-05-16"
+      "date": "2026-05-16",
+      "signal_index": 2
     },
     {
       "id": "sig_20260516_004",
@@ -31,7 +43,8 @@
       "content": "Google DeepMind 发布 Gemini 2.0 Flash",
       "summary": "推理速度提升 3 倍，API 价格减半",
       "source": "https://example.com/gemini",
-      "date": "2026-05-16"
+      "date": "2026-05-16",
+      "signal_index": 3
     },
     {
       "id": "tag_20260515_001",

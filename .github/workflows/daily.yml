@@ -443,7 +443,7 @@ jobs:
                   return summary[:8]
               return item.get('content', '')[:8]
 
-          MAX_L1 = 4
+          MAX_L1 = 5
           MAX_TOTAL = 27
 
           old_state = load_hero_state()
@@ -452,7 +452,12 @@ jobs:
           # 1) 当天 importance 最高的 MAX_L1 条 → 新 L1
           sorted_items = sorted(items_parsed, key=lambda x: x.get('importance', 0), reverse=True)
           new_l1 = []
-          for item in sorted_items[:MAX_L1]:
+          for idx, item in enumerate(sorted_items[:MAX_L1]):
+              # 找到该 item 在 items_parsed 中的原始索引
+              try:
+                  original_index = items_parsed.index(item)
+              except ValueError:
+                  original_index = idx
               new_l1.append({
                   'id': f'sig_{date}_{len(new_l1)+1:03d}',
                   'level': 1,
@@ -460,6 +465,7 @@ jobs:
                   'summary': (item.get('summary', '') or item.get('summary_cn', ''))[:40],
                   'source': item.get('source', ''),
                   'date': date,
+                  'signal_index': original_index,
                   '_tags': item.get('tags', []),   # 内部用，写盘前删除
               })
 

@@ -10,6 +10,7 @@ interface HeroItem {
   summary?: string;
   source?: string;
   date: string;
+  signal_index?: number;
 }
 interface HeroState {
   updated_at: string;
@@ -41,7 +42,7 @@ function loadHeroState(): HeroState | null {
 
 const state = loadHeroState();
 const items = state?.items || [];
-const l1 = items.filter(i => i.level === 1).slice(0, 4);
+const l1 = items.filter(i => i.level === 1).slice(0, 5);
 const l2 = items.filter(i => i.level === 2).slice(0, 8);
 const l3 = items.filter(i => i.level === 3).slice(0, 6);
 
@@ -56,6 +57,7 @@ interface PlacedItem {
   content: string;
   summary?: string;
   source?: string;
+  signal_index?: number;
   x: number;       // % from left
   y: number;       // % from top
   w: number;       // % width (estimated)
@@ -176,6 +178,7 @@ function placeInSector(
     const candidate: PlacedItem = {
       id: item.id, level: item.level, content: item.content,
       summary: item.summary, source: item.source,
+      signal_index: (item as any).signal_index,
       x, y, w: px2pct(size.w), h: px2pct(size.h),
       animAmp: item.level === 1 ? 6 + hashF(h+100)*4 : item.level === 2 ? 4 + hashF(h+200)*3 : 2 + hashF(h+300)*2,
       animPeriod: item.level === 1 ? 6 + hashF(h+400)*3 : item.level === 2 ? 4 + hashF(h+500)*3 : 3 + hashF(h+600)*2,
@@ -188,10 +191,26 @@ function placeInSector(
   return null;
 }
 
-// L1: 4 cards in 4 sectors, near center (12-28%)
-for (let i = 0; i < l1.length; i++) {
-  const p = placeInSector(l1[i], i, l1.length, 12, 28);
-  if (p) placed.push(p);
+// L1: first item → center, rest → 4 sectors around center (8-24%)
+if (l1.length > 0) {
+  const centerItem = l1[0];
+  const centerSize = estimateSize(centerItem);
+  const centerPlaced: PlacedItem = {
+    id: centerItem.id, level: 1, content: centerItem.content,
+    summary: centerItem.summary, source: centerItem.source,
+    signal_index: centerItem.signal_index,
+    x: 50, y: 48,
+    w: px2pct(centerSize.w), h: px2pct(centerSize.h),
+    animAmp: 6, animPeriod: 7, animDelay: 0,
+    offX: 0, offY: 0,
+  };
+  placed.push(centerPlaced);
+
+  // Remaining L1 in 4 sectors around center
+  for (let i = 1; i < l1.length; i++) {
+    const p = placeInSector(l1[i], i - 1, 4, 10, 25);
+    if (p) placed.push(p);
+  }
 }
 // L2: 8 tags in 8 sectors, middle ring (20-42%)
 for (let i = 0; i < l2.length; i++) {
@@ -226,10 +245,8 @@ Astro.props;
   {placed.map(item => (
     item.level === 1 ? (
       <a
-        href={item.source || '#signals'}
-        target={item.source ? '_blank' : undefined}
-        rel={item.source ? 'noopener noreferrer' : undefined}
-        class="n n-l1"
+        href={`#signal-${item.signal_index ?? 0}`}
+        class={`n n-l1 ${item.signal_index === undefined ? 'n-l1-center' : ''}`}
         style={`
           left:${item.x.toFixed(1)}%;top:${item.y.toFixed(1)}%;
           --amp:${item.animAmp.toFixed(1)}px;
