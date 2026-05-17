@@ -159,19 +159,19 @@ if (l1.length > 0) {
     ...anim0,
   });
 
-  // 4 cardinal cells: up, right, down, left
+  // 4 cardinal cells: up, right, down, left (skip 1 cell for spacing)
   const cardinals = [
-    { col: centerCol, row: centerRow - 1 },     // up
-    { col: centerCol + 1, row: centerRow },     // right
-    { col: centerCol, row: centerRow + 1 },     // down
-    { col: centerCol - 1, row: centerRow },     // left
+    { col: centerCol, row: centerRow - 2 },     // up
+    { col: centerCol + 2, row: centerRow },     // right
+    { col: centerCol, row: centerRow + 2 },     // down
+    { col: centerCol - 2, row: centerRow },     // left
   ];
-  // 4 diagonal cells: NW, NE, SW, SE
+  // 4 diagonal cells at distance 2
   const diagonals = [
-    { col: centerCol - 1, row: centerRow - 1 }, // NW
-    { col: centerCol + 1, row: centerRow - 1 }, // NE
-    { col: centerCol - 1, row: centerRow + 1 }, // SW
-    { col: centerCol + 1, row: centerRow + 1 }, // SE
+    { col: centerCol - 2, row: centerRow - 2 }, // NW
+    { col: centerCol + 2, row: centerRow - 2 }, // NE
+    { col: centerCol - 2, row: centerRow + 2 }, // SW
+    { col: centerCol + 2, row: centerRow + 2 }, // SE
   ];
 
   // Place L1[1-4] in cardinal cells
@@ -184,7 +184,8 @@ if (l1.length > 0) {
     placed.push({
       id: l1[i].id, level: 1, content: l1[i].content,
       signal_index: l1[i].signal_index ?? 0,
-      x: cell.cx, y: cell.cy,
+      x: cell.cx + (hashF(hash(l1[i].id) * 3 + i * 7) - 0.5) * 5,
+      y: cell.cy + (hashF(hash(l1[i].id) * 5 + i * 11) - 0.5) * 5,
       depth: (i === 1 || i === 2) ? 'mg' : 'bg',
       ...anim,
     });
