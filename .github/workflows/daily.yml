@@ -430,7 +430,7 @@ jobs:
           npm run build
 
       - name: Deploy to server via SSH
-        uses: easingthemes/ssh-deploy@v5
+        uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
           ARGS: "-rlgoDzvc --delete"
