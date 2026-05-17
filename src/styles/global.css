@@ -3,7 +3,7 @@
     position: relative;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    min-height: 100vh;
+    height: 100vh;
     overflow: hidden;
     /* Theme tokens — one place to rule both themes */
     --c-title: #ffffff;
