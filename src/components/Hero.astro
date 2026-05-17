@@ -355,27 +355,16 @@ Astro.props;
   .n-l1-inner {
     padding: 1rem 1.25rem;
     max-width: clamp(240px, 22vw, 380px);
-    background: var(--c-card-bg);
-    border: 1px solid var(--c-card-border);
-    border-radius: 14px;
-    backdrop-filter: blur(8px);
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    backdrop-filter: none;
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-  }
-  .n-l1-inner::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 3px; height: 100%;
-    background: var(--accent);
-    opacity: var(--c-accent-bar);
-    border-radius: 0 2px 2px 0;
+    transition: transform 0.3s ease, color 0.3s ease;
   }
   .n-l1:hover .n-l1-inner {
     transform: scale(1.05);
-    background: var(--c-card-hover-bg);
-    box-shadow: 0 0 50px var(--c-card-glow);
   }
 
   .n-l1-title {
@@ -397,19 +386,16 @@ Astro.props;
   /* ═══ L2: Topic tag ═══ */
   .n-l2 {
     z-index: 2;
-    padding: 0.35rem 0.9rem;
+    padding: 0.35rem 0;
     font-size: clamp(0.75rem, 0.85vw, 0.9375rem);
     font-weight: 500;
     white-space: nowrap;
     color: var(--c-tag);
-    border: 1px solid var(--c-tag-border);
-    border-radius: 999px;
-    transition: transform 0.3s, color 0.3s, border-color 0.3s;
+    transition: transform 0.3s, color 0.3s;
   }
   .n-l2:hover {
     transform: translate(-50%,-50%) scale(1.12);
     color: var(--c-tag-hover) !important;
-    border-color: var(--c-tag-hover-border) !important;
   }
 
   /* ═══ L3: Ghost word ═══ */
