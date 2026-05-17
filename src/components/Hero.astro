@@ -42,14 +42,51 @@ function loadHeroState(): HeroState | null {
 
 const state = loadHeroState();
 const items = state?.items || [];
-const l1 = items.filter(i => i.level === 1).slice(0, 5);
-const l2 = items.filter(i => i.level === 2).slice(0, 8);
-const l3 = items.filter(i => i.level === 3).slice(0, 6);
+const l1 = items.filter(i => i.level === 1).slice(0, 6);
+const l2 = items.filter(i => i.level === 2).slice(0, 10);
+const l3 = items.filter(i => i.level === 3).slice(0, 8);
 
-// === Collision-free placement engine ===
-// Reference canvas: 1000 × 1000 (abstract units)
-// All positions as % of this canvas.
-// L1/L2/L3 have FIXED pixel sizes — not relative to canvas.
+// === Grid-based placement engine ===
+// Virtual grid: COLS × ROWS. L1 occupies grid cells (1×1).
+// Positions are % of the nebula container.
+// Each cell center = ((col + 0.5) / COLS * 100, (row + 0.5) / ROWS * 100)
+// with random jitter ±30% of cell size for organic feel.
+
+const COLS = 9;
+const ROWS = 7;
+const CELL_W = 100 / COLS;  // ~11.1%
+const CELL_H = 100 / ROWS; // ~14.3%
+
+interface GridCell {
+  col: number;
+  row: number;
+  cx: number; // center x %
+  cy: number; // center y %
+  distToCenter: number; // distance from center cell (0,0 at center)
+}
+
+// Generate all grid cells with distance to center
+const centerCol = Math.floor(COLS / 2);
+const centerRow = Math.floor(ROWS / 2);
+const allCells: GridCell[] = [];
+for (let r = 0; r < ROWS; r++) {
+  for (let c = 0; c < COLS; c++) {
+    const dx = c - centerCol;
+    const dy = r - centerRow;
+    allCells.push({
+      col: c, row: r,
+      cx: (c + 0.5) / COLS * 100,
+      cy: (r + 0.5) / ROWS * 100,
+      distToCenter: Math.sqrt(dx * dx + dy * dy),
+    });
+  }
+}
+// Sort by distance to center (center first)
+allCells.sort((a, b) => a.distToCenter - b.distToCenter);
+
+// Track which cells are occupied
+const occupied = new Set<string>();
+function cellKey(col: number, row: number): string { return `${col},${row}`; }
 
 interface PlacedItem {
   id: string;
@@ -58,169 +95,151 @@ interface PlacedItem {
   summary?: string;
   source?: string;
   signal_index?: number;
-  x: number;       // % from left
-  y: number;       // % from top
-  w: number;       // % width (estimated)
-  h: number;       // % height (estimated)
-  animAmp: number;  // float amplitude px
-  animPeriod: number; // float period s
-  animDelay: number;  // float delay s
-  offX: number;     // static offset px
+  x: number;
+  y: number;
+  animAmp: number;
+  animPeriod: number;
+  animDelay: number;
+  offX: number;
   offY: number;
 }
 
-// Estimate rendered size of each element in px (fixed, not relative to container)
-function estimateSize(item: HeroItem): { w: number; h: number } {
-  if (item.level === 1) {
-    const charW = 16; // CJK char width
-    const titleW = item.content.length * charW;
-    return {
-      w: Math.min(Math.max(titleW + 40, 180), 300),
-      h: 50,
-    };
-  } else if (item.level === 2) {
-    const charW = 14;
-    return {
-      w: item.content.length * charW + 32,
-      h: 34,
-    };
-  } else {
-    const charW = 10;
-    return {
-      w: Math.max(item.content.length * charW, 40),
-      h: 22,
-    };
-  }
-}
-
-// Convert px to % of reference canvas (1000px)
-const REF = 1200;
-function px2pct(px: number): number { return (px / REF) * 100; }
-
-function overlaps(a: PlacedItem, b: PlacedItem, gap: number = 12): boolean {
-  const gapPct = px2pct(gap);
-  return (
-    Math.abs(a.x - b.x) < (a.w + b.w) / 2 + gapPct &&
-    Math.abs(a.y - b.y) < (a.h + b.h) / 2 + gapPct
-  );
-}
-
-function placeElement(
-  item: HeroItem,
-  placed: PlacedItem[],
-  minDist: number,
-  maxDist: number,
-): PlacedItem | null {
-  const size = estimateSize(item);
+function makeAnim(item: HeroItem): { amp: number; per: number; del: number; ox: number; oy: number } {
   const h = hash(item.id);
-
-  for (let attempt = 0; attempt < 200; attempt++) {
-    const angle = hashF(h + attempt * 7.1) * Math.PI * 2;
-    const dist = minDist + hashF(h + attempt * 13.3) * (maxDist - minDist);
-
-    let x = 50 + Math.cos(angle) * dist;
-    let y = 50 + Math.sin(angle) * dist;
-
-    // Clamp within canvas bounds (leave margin)
-    const mx = size.w / REF / 2 * 100 + 2;
-    const my = size.h / REF / 2 * 100 + 2;
-    x = Math.max(mx, Math.min(100 - mx, x));
-    y = Math.max(my, Math.min(100 - my, y));
-
-    const candidate: PlacedItem = {
-      id: item.id,
-      level: item.level,
-      content: item.content,
-      summary: item.summary,
-      source: item.source,
-      x, y,
-      w: px2pct(size.w),
-      h: px2pct(size.h),
-      animAmp: item.level === 1 ? 6 + hashF(h + 100) * 4 : item.level === 2 ? 4 + hashF(h + 200) * 3 : 2 + hashF(h + 300) * 2,
-      animPeriod: item.level === 1 ? 6 + hashF(h + 400) * 3 : item.level === 2 ? 4 + hashF(h + 500) * 3 : 3 + hashF(h + 600) * 2,
-      animDelay: (hash(item.id + '_d') % 40) / 10,
-      offX: (hashF(h + 700) - 0.5) * 16,
-      offY: (hashF(h + 800) - 0.5) * 10,
-    };
-
-    const hasOverlap = placed.some(p => overlaps(candidate, p));
-    if (!hasOverlap) return candidate;
+  const base = { amp: 2, per: 3, del: 0, ox: 0, oy: 0 };
+  if (item.level === 1) {
+    base.amp = 4 + hashF(h + 100) * 3;
+    base.per = 6 + hashF(h + 400) * 3;
+  } else if (item.level === 2) {
+    base.amp = 3 + hashF(h + 200) * 2;
+    base.per = 5 + hashF(h + 500) * 3;
+  } else {
+    base.amp = 1.5 + hashF(h + 300) * 1.5;
+    base.per = 4 + hashF(h + 600) * 2;
   }
-
-  return null; // give up if can't place
+  base.del = (hash(item.id + '_d') % 40) / 10;
+  base.ox = (hashF(h + 700) - 0.5) * 12;
+  base.oy = (hashF(h + 800) - 0.5) * 8;
+  return base;
 }
 
-// Place all items with sector-based distribution for visual balance
+// Jitter: random offset within cell (±35% of cell size)
+function jitter(h: number, cell: GridCell): { x: number; y: number } {
+  const jx = (hashF(h * 3 + cell.col * 7 + cell.row * 13) - 0.5) * CELL_W * 0.7;
+  const jy = (hashF(h * 5 + cell.col * 11 + cell.row * 17) - 0.5) * CELL_H * 0.7;
+  return { x: cell.cx + jx, y: cell.cy + jy };
+}
+
 const placed: PlacedItem[] = [];
 
-// Helper: place item in a specific sector with collision check
-function placeInSector(
-  item: HeroItem, sector: number, sectorCount: number,
-  minDist: number, maxDist: number,
-): PlacedItem | null {
-  const size = estimateSize(item);
-  const h = hash(item.id);
-  // Sector center angle
-  const sectorAngle = (sector / sectorCount) * Math.PI * 2 - Math.PI / 2;
-  // Random offset within sector (±30% of sector width)
-  const sectorWidth = (Math.PI * 2) / sectorCount;
-  const angleJitter = (hashF(h + 50) - 0.5) * sectorWidth * 0.6;
-
-  for (let attempt = 0; attempt < 200; attempt++) {
-    const angle = sectorAngle + angleJitter + (hashF(h + attempt * 7.1) - 0.5) * sectorWidth * 0.3;
-    const dist = minDist + hashF(h + attempt * 13.3) * (maxDist - minDist);
-    let x = 50 + Math.cos(angle) * dist;
-    let y = 50 + Math.sin(angle) * dist;
-    const mx = size.w / REF / 2 * 100 + 2;
-    const my = size.h / REF / 2 * 100 + 2;
-    x = Math.max(mx, Math.min(100 - mx, x));
-    y = Math.max(my, Math.min(100 - my, y));
-    const candidate: PlacedItem = {
-      id: item.id, level: item.level, content: item.content,
-      summary: item.summary, source: item.source,
-      signal_index: (item as any).signal_index,
-      x, y, w: px2pct(size.w), h: px2pct(size.h),
-      animAmp: item.level === 1 ? 6 + hashF(h+100)*4 : item.level === 2 ? 4 + hashF(h+200)*3 : 2 + hashF(h+300)*2,
-      animPeriod: item.level === 1 ? 6 + hashF(h+400)*3 : item.level === 2 ? 4 + hashF(h+500)*3 : 3 + hashF(h+600)*2,
-      animDelay: (hash(item.id+'_d') % 40) / 10,
-      offX: (hashF(h+700) - 0.5) * 16,
-      offY: (hashF(h+800) - 0.5) * 10,
-    };
-    if (!placed.some(p => overlaps(candidate, p))) return candidate;
-  }
-  return null;
-}
-
-// L1: first item → center, rest → 4 sectors around center (8-24%)
+// === Step 1: Place L1 ===
+// First item → center cell, rest → cells near center (sorted by distance, with randomness)
 if (l1.length > 0) {
-  const centerItem = l1[0];
-  const centerSize = estimateSize(centerItem);
-  const centerPlaced: PlacedItem = {
-    id: centerItem.id, level: 1, content: centerItem.content,
-    summary: centerItem.summary, source: centerItem.source,
-    signal_index: centerItem.signal_index,
-    x: 50, y: 48,
-    w: px2pct(centerSize.w), h: px2pct(centerSize.h),
-    animAmp: 6, animPeriod: 7, animDelay: 0,
-    offX: 0, offY: 0,
-  };
-  placed.push(centerPlaced);
+  // Place center item
+  const centerCell = allCells.find(c => c.col === centerCol && c.row === centerRow)!;
+  occupied.add(cellKey(centerCell.col, centerCell.row));
+  const anim0 = makeAnim(l1[0]);
+  placed.push({
+    id: l1[0].id, level: 1, content: l1[0].content,
+    signal_index: l1[0].signal_index,
+    x: centerCell.cx, y: centerCell.cy,
+    ...anim0,
+  });
 
-  // Remaining L1 in 4 sectors around center
+  // Remaining L1: pick from cells near center, biased toward closer cells
+  // Shuffle nearby cells with distance bias (closer = higher probability)
+  const remainingCells = allCells.filter(c => !occupied.has(cellKey(c.col, c.row)));
   for (let i = 1; i < l1.length; i++) {
-    const p = placeInSector(l1[i], i - 1, 4, 14, 32);
-    if (p) placed.push(p);
+    const itemSeed = hash(l1[i].id);
+    // Score cells: closer to center = higher score, but add randomness
+    const scored = remainingCells
+      .map(c => {
+        // Higher score = more likely to be picked
+        const closeness = 1 / (1 + c.distToCenter * 0.5);
+        const randomness = hashF(itemSeed + c.col * 3.7 + c.row * 5.3 + i * 11);
+        return { cell: c, score: closeness * 2 + randomness };
+      })
+      .sort((a, b) => b.score - a.score);
+
+    // Try cells in score order until we find a non-adjacent-to-center one that looks good
+    let placedOk = false;
+    for (const { cell } of scored) {
+      // Avoid cells too close to each other (at least 1 cell gap between L1s)
+      const tooClose = placed.some(p => {
+        const pcx = p.x, pcy = p.y;
+        return Math.abs(pcx - cell.cx) < CELL_W * 1.2 && Math.abs(pcy - cell.cy) < CELL_H * 1.2;
+      });
+      if (tooClose) continue;
+
+      occupied.add(cellKey(cell.col, cell.row));
+      const j = jitter(itemSeed, cell);
+      const anim = makeAnim(l1[i]);
+      placed.push({
+        id: l1[i].id, level: 1, content: l1[i].content,
+        signal_index: l1[i].signal_index,
+        x: j.x, y: j.y,
+        ...anim,
+      });
+      placedOk = true;
+      break;
+    }
+    // Fallback: force place in next best cell (should rarely happen)
+    if (!placedOk) {
+      for (const { cell } of scored) {
+        if (!occupied.has(cellKey(cell.col, cell.row))) {
+          occupied.add(cellKey(cell.col, cell.row));
+          const j = jitter(itemSeed, cell);
+          const anim = makeAnim(l1[i]);
+          placed.push({
+            id: l1[i].id, level: 1, content: l1[i].content,
+            signal_index: l1[i].signal_index,
+            x: j.x, y: j.y,
+            ...anim,
+          });
+          break;
+        }
+      }
+    }
   }
 }
-// L2: 8 tags in 8 sectors, middle ring (28-48%)
-for (let i = 0; i < l2.length; i++) {
-  const p = placeInSector(l2[i], i, l2.length, 28, 48);
-  if (p) placed.push(p);
+
+// === Step 2: Place L2 (in remaining cells, no center preference) ===
+const l2Cells = allCells.filter(c => !occupied.has(cellKey(c.col, c.row)));
+// Shuffle for randomness
+for (let i = l2Cells.length - 1; i > 0; i--) {
+  const j = Math.floor(hashF(hash(`l2shuffle${i}`) + i * 1.3) * (i + 1));
+  [l2Cells[i], l2Cells[j]] = [l2Cells[j], l2Cells[i]];
 }
-// L3: 6 words in 6 sectors, outer ring (38-60%)
-for (let i = 0; i < l3.length; i++) {
-  const p = placeInSector(l3[i], i, l3.length, 38, 60);
-  if (p) placed.push(p);
+for (let i = 0; i < l2.length && i < l2Cells.length; i++) {
+  const cell = l2Cells[i];
+  occupied.add(cellKey(cell.col, cell.row));
+  const itemSeed = hash(l2[i].id);
+  const j = jitter(itemSeed, cell);
+  const anim = makeAnim(l2[i]);
+  placed.push({
+    id: l2[i].id, level: 2, content: l2[i].content,
+    x: j.x, y: j.y,
+    ...anim,
+  });
+}
+
+// === Step 3: Place L3 (in remaining cells) ===
+const l3Cells = allCells.filter(c => !occupied.has(cellKey(c.col, c.row)));
+for (let i = l3Cells.length - 1; i > 0; i--) {
+  const j = Math.floor(hashF(hash(`l3shuffle${i}`) + i * 2.7) * (i + 1));
+  [l3Cells[i], l3Cells[j]] = [l3Cells[j], l3Cells[i]];
+}
+for (let i = 0; i < l3.length && i < l3Cells.length; i++) {
+  const cell = l3Cells[i];
+  occupied.add(cellKey(cell.col, cell.row));
+  const itemSeed = hash(l3[i].id);
+  const j = jitter(itemSeed, cell);
+  const anim = makeAnim(l3[i]);
+  placed.push({
+    id: l3[i].id, level: 3, content: l3[i].content,
+    x: j.x, y: j.y,
+    ...anim,
+  });
 }
 
 // === Background stars ===
