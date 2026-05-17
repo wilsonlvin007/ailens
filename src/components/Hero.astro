@@ -120,7 +120,14 @@ function makeAnim(item: HeroItem): { amp: number; per: number; del: number; ox: 
   base.del = (hash(item.id + '_d') % 40) / 10;
   base.ox = (hashF(h + 700) - 0.5) * 12;
   base.oy = (hashF(h + 800) - 0.5) * 8;
-  return base;
+  // Ensure all values are finite numbers
+  return {
+    amp: base.amp || 2,
+    per: base.per || 3,
+    del: base.del || 0,
+    ox: base.ox || 0,
+    oy: base.oy || 0,
+  };
 }
 
 // Jitter: random offset within cell (±35% of cell size)
@@ -270,12 +277,12 @@ Astro.props;
         href={`#signal-${item.signal_index ?? 0}`}
         class={`n n-l1 ${item.signal_index === undefined ? 'n-l1-center' : ''}`}
         style={`
-          left:${item.x.toFixed(1)}%;top:${item.y.toFixed(1)}%;
-          --amp:${item.animAmp.toFixed(1)}px;
-          --per:${item.animPeriod.toFixed(1)}s;
-          --del:${item.animDelay.toFixed(1)}s;
-          --ox:${item.offX.toFixed(0)}px;
-          --oy:${item.offY.toFixed(0)}px;
+          left:${(item.x ?? 50).toFixed(1)}%;top:${(item.y ?? 50).toFixed(1)}%;
+          --amp:${(item.animAmp ?? 4).toFixed(1)}px;
+          --per:${(item.animPeriod ?? 5).toFixed(1)}s;
+          --del:${(item.animDelay ?? 0).toFixed(1)}s;
+          --ox:${(item.offX ?? 0).toFixed(0)}px;
+          --oy:${(item.offY ?? 0).toFixed(0)}px;
         `}
       >
         <div class="n-l1-inner">
@@ -286,24 +293,24 @@ Astro.props;
       <span
         class="n n-l2"
         style={`
-          left:${item.x.toFixed(1)}%;top:${item.y.toFixed(1)}%;
-          --amp:${item.animAmp.toFixed(1)}px;
-          --per:${item.animPeriod.toFixed(1)}s;
-          --del:${item.animDelay.toFixed(1)}s;
-          --ox:${item.offX.toFixed(0)}px;
-          --oy:${item.offY.toFixed(0)}px;
+          left:${(item.x ?? 50).toFixed(1)}%;top:${(item.y ?? 50).toFixed(1)}%;
+          --amp:${(item.animAmp ?? 3).toFixed(1)}px;
+          --per:${(item.animPeriod ?? 5).toFixed(1)}s;
+          --del:${(item.animDelay ?? 0).toFixed(1)}s;
+          --ox:${(item.offX ?? 0).toFixed(0)}px;
+          --oy:${(item.offY ?? 0).toFixed(0)}px;
         `}
       >{item.content}</span>
     ) : (
       <span
         class="n n-l3"
         style={`
-          left:${item.x.toFixed(1)}%;top:${item.y.toFixed(1)}%;
-          --amp:${item.animAmp.toFixed(1)}px;
-          --per:${item.animPeriod.toFixed(1)}s;
-          --del:${item.animDelay.toFixed(1)}s;
-          --ox:${item.offX.toFixed(0)}px;
-          --oy:${item.offY.toFixed(0)}px;
+          left:${(item.x ?? 50).toFixed(1)}%;top:${(item.y ?? 50).toFixed(1)}%;
+          --amp:${(item.animAmp ?? 2).toFixed(1)}px;
+          --per:${(item.animPeriod ?? 4).toFixed(1)}s;
+          --del:${(item.animDelay ?? 0).toFixed(1)}s;
+          --ox:${(item.offX ?? 0).toFixed(0)}px;
+          --oy:${(item.offY ?? 0).toFixed(0)}px;
         `}
       >{item.content}</span>
     )
