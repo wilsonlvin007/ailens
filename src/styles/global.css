@@ -1,1 +1,325 @@
 /* Global styles are in Base.astro — this file exists as import target only. */
+  .nebula {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    min-height: 100vh;
+    overflow: hidden;
+    /* Theme tokens — one place to rule both themes */
+    --c-title: #ffffff;
+    --c-sub: var(--text-tertiary);
+    --c-tag: rgba(255,255,255,0.6);
+    --c-tag-hover: #fff;
+    --c-tag-border: rgba(255,255,255,0.09);
+    --c-tag-hover-border: rgba(255,255,255,0.25);
+    --c-ghost: var(--text-tertiary);
+    --c-card-bg: rgba(255,255,255,0.04);
+    --c-card-border: rgba(255,255,255,0.07);
+    --c-card-hover-bg: rgba(255,255,255,0.07);
+    --c-card-glow: rgba(120,130,255,0.1);
+    --c-accent-bar: 0.45;
+    --c-bg-glow: rgba(120,130,255,0.07);
+    --c-star-bright: 1;
+  }
+  [data-theme="light"] .nebula {
+    --c-title: #111;
+    --c-tag: rgba(0,0,0,0.45);
+    --c-tag-hover: #000;
+    --c-tag-border: rgba(0,0,0,0.07);
+    --c-tag-hover-border: rgba(0,0,0,0.2);
+    --c-card-bg: rgba(0,0,0,0.03);
+    --c-card-border: rgba(0,0,0,0.06);
+    --c-card-hover-bg: rgba(0,0,0,0.055);
+    --c-card-glow: rgba(100,110,230,0.06);
+    --c-accent-bar: 0.25;
+    --c-bg-glow: rgba(100,110,230,0.03);
+    --c-star-bright: 0.12;
+  }
+
+  /* ── Background ── */
+  .nebula-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background:
+      radial-gradient(ellipse 50% 45% at 50% 50%, var(--c-bg-glow) 0%, transparent 100%),
+      var(--bg);
+  }
+  .nebula-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 1px; height: 1px;
+    background: transparent;
+    box-shadow: var(--stars);
+    filter: brightness(var(--c-star-bright));
+  }
+
+  /* ── Shared: absolute positioned, centered on point ── */
+  .n {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-decoration: none;
+    color: inherit;
+    animation: float var(--per, 5s) ease-in-out var(--del, 0s) infinite;
+  }
+  @keyframes float {
+    0%, 100% {
+      transform: translate(calc(-50% + var(--ox, 0px)), calc(-50% + var(--oy, 0px) - var(--amp, 4px)));
+    }
+    50% {
+      transform: translate(calc(-50% + var(--ox, 0px) + 1.5px), calc(-50% + var(--oy, 0px) + var(--amp, 4px)));
+    }
+  }
+
+  /* ═══ L1: Title card ═══ */
+  .n-l1 { z-index: 3; cursor: pointer; }
+  .n-l1-inner {
+    padding: 1rem 1.25rem;
+    max-width: clamp(240px, 22vw, 380px);
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    backdrop-filter: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .n-l1:hover .n-l1-inner {
+    transform: scale(1.05);
+  }
+
+  .n-l1-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.25rem, 1.6vw, 1.75rem);
+    font-weight: 900;
+    line-height: 1.35;
+    color: var(--c-title);
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .n-l1-sub {
+    margin: 0.4rem 0 0;
+    font-size: clamp(0.7rem, 0.75vw, 0.875rem);
+    color: var(--c-sub);
+    line-height: 1.5;
+  }
+
+  /* ═══ L2: Topic tag ═══ */
+  .n-l2 {
+    z-index: 2;
+    padding: 0.35rem 0;
+    font-size: clamp(0.75rem, 0.85vw, 0.9375rem);
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--c-tag);
+    transition: transform 0.3s, color 0.3s;
+  }
+  .n-l2:hover {
+    transform: translate(-50%,-50%) scale(1.12);
+    color: var(--c-tag-hover) !important;
+  }
+
+  /* ═══ L3: Ghost word ═══ */
+  .n-l3 {
+    z-index: 1;
+    font-size: clamp(0.625rem, 0.65vw, 0.8125rem);
+    font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+    letter-spacing: 0.04em;
+    color: var(--c-ghost);
+    opacity: 0.32;
+    white-space: nowrap;
+    transition: opacity 0.3s, color 0.3s;
+  }
+  .n-l3:hover {
+    opacity: 0.85;
+    color: var(--text-secondary);
+  }
+
+  /* ── Scroll hint ── */
+  .nebula-scroll {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    text-decoration: none;
+  }
+  .nebula-scroll span {
+    font-size: 1.25rem;
+    color: var(--text-tertiary);
+    opacity: 0.4;
+    animation: bounce 2s ease-in-out infinite;
+    line-height: 1;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+
+  /* ── Mobile: stack vertically ── */
+  @media (max-width: 640px) {
+    .nebula { min-height: auto; padding: 2rem 0; width: 100%; margin-left: 0; }
+    .n {
+      position: static !important;
+      transform: none !important;
+      animation: none !important;
+      display: block;
+      margin: 0 auto;
+    }
+    .n-l1 { margin-bottom: 1rem; max-width: 92vw; }
+    .n-l1:nth-of-type(1) ~ .n-l1 { display: none; }
+    .n-l2 { display: inline-block; margin: 0.2rem; opacity: 1; }
+    .n-l2:nth-of-type(n+6) { display: none; }
+    .n-l3 { display: inline; margin: 0 0.4rem; opacity: 0.35; font-size: 0.7rem; }
+    .n-l3:nth-of-type(n+5) { display: none; }
+    .nebula-scroll { display: none; }
+  }
+
+    padding: 1.5rem 0;
+  }
+  .signals-title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+  }
+  .category-group {
+    margin-bottom: 1.75rem;
+  }
+  .category-group:last-child {
+    margin-bottom: 0;
+  }
+  .category-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.625rem;
+    border-bottom: 2px solid;
+    margin-bottom: 0;
+  }
+  .category-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .category-label {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+  .category-count {
+    font-size: 0.6875rem;
+    color: var(--text-tertiary);
+    margin-left: auto;
+    font-weight: 500;
+  }
+  .signals-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .signal-card {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .signal-card:last-child {
+    border-bottom: none;
+  }
+  .signal-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .signal-importance {
+    font-size: 0.6875rem;
+    color: var(--text-tertiary);
+    font-weight: 500;
+  }
+  .signal-title {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin-bottom: 0.375rem;
+    transition: color 0.2s;
+  }
+  .signal-title:hover {
+    color: var(--accent);
+  }
+  .signal-summary {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+  .signal-analysis {
+    margin-top: 0.75rem;
+  }
+  .signal-analysis summary {
+    font-size: 0.8125rem;
+    color: var(--accent);
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+  }
+  .signal-analysis summary:hover {
+    color: #1d4ed8;
+  }
+  .analysis-content {
+    margin-top: 0.75rem;
+    padding: 0.875rem 1rem;
+    background: var(--accent-light);
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+  }
+  .signal-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.625rem;
+  }
+  .signal-source {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+  }
+  .signal-tags {
+    display: flex;
+    gap: 0.375rem;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 0.6875rem;
+    color: var(--text-tertiary);
+  }
+  .view-all {
+    display: block;
+    text-align: center;
+    padding: 0.625rem 0;
+    margin-top: 0.25rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--accent);
+    border: 1px dashed var(--border);
+    border-radius: 6px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .view-all:hover {
+    background: var(--accent-light);
+    border-color: var(--accent);
+    color: var(--accent-hover);
+  }
+
+  /* Importance visual hints */
+  .importance-5 { border-left: 3px solid #dc2626; padding-left: 1rem; }
+  .importance-4 { border-left: 3px solid #f59e0b; padding-left: 1rem; }
+
+  @media (max-width: 640px) {
+    .signal-meta { flex-direction: column; align-items: flex-start; gap: 0.375rem; }
+  }
