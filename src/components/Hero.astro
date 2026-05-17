@@ -216,8 +216,11 @@ if (l1.length > 0) {
   }
 }
 
-// === Step 2: Place L2 (in remaining cells, no center preference) ===
-const l2Cells = allCells.filter(c => !occupied.has(cellKey(c.col, c.row)));
+// === Step 2: Place L2 in empty cells of the 3×3 grid around center ===
+const surroundCells = allCells.filter(c =>
+  Math.abs(c.col - centerCol) <= 1 && Math.abs(c.row - centerRow) <= 1
+);
+const l2Cells = surroundCells.filter(c => !occupied.has(cellKey(c.col, c.row)));
 // Shuffle for randomness
 for (let i = l2Cells.length - 1; i > 0; i--) {
   const j = Math.floor(hashF(hash(`l2shuffle${i}`) + i * 1.3) * (i + 1));
