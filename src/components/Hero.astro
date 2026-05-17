@@ -100,6 +100,7 @@ interface PlacedItem {
   signal_index?: number;
   x: number;
   y: number;
+  depth: 'fg' | 'mg' | 'bg';  // foreground / midground / background
   animAmp: number;
   animPeriod: number;
   animDelay: number;
@@ -154,6 +155,7 @@ if (l1.length > 0) {
     id: l1[0].id, level: 1, content: l1[0].content,
     signal_index: l1[0].signal_index ?? 0,
     x: centerCell.cx, y: centerCell.cy,
+    depth: 'fg',
     ...anim0,
   });
 
@@ -183,6 +185,7 @@ if (l1.length > 0) {
       id: l1[i].id, level: 1, content: l1[i].content,
       signal_index: l1[i].signal_index ?? 0,
       x: cell.cx, y: cell.cy,
+      depth: (i === 1 || i === 2) ? 'mg' : 'bg',
       ...anim,
     });
   }
@@ -206,6 +209,7 @@ if (l1.length > 0) {
       id: l1[i].id, level: 1, content: l1[i].content,
       signal_index: l1[i].signal_index ?? 0,
       x: cell.cx + jx, y: cell.cy + jy,
+      depth: 'bg',
       ...anim,
     });
   }
@@ -276,7 +280,8 @@ Astro.props;
     item.level === 1 ? (
       <a
         href={`#signal-${item.signal_index ?? 0}`}
-        class={`n n-l1 ${item.signal_index === undefined ? 'n-l1-center' : ''}`}
+        class={`n n-l1 ${item.depth === 'fg' ? 'n-l1-fg' : item.depth === 'mg' ? 'n-l1-mg' : 'n-l1-bg'}`}
+        data-depth={item.depth}
         style={`
           left:${(item.x ?? 50).toFixed(1)}%;top:${(item.y ?? 50).toFixed(1)}%;
           --amp:${(item.animAmp ?? 4).toFixed(1)}px;
