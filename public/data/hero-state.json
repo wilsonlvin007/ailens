@@ -1,116 +1,98 @@
 {
-  "updated_at": "2026-05-18",
+  "updated_at": "2026-05-19",
   "items": [
     {
-      "id": "sig_2026-05-18_001",
+      "id": "sig_2026-05-19_001",
       "level": 1,
-      "content": "谷歌 AI 金融拓展欧洲",
-      "summary": "谷歌将 AI 驱动的金融搜索功能扩展至欧洲，提升当地用户获取实时市场数据与洞察的",
-      "source": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
-      "date": "2026-05-18",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-05-18_002",
-      "level": 1,
-      "content": "AI 穿戴设备面临场景考验",
-      "summary": "行业指出 AI 穿戴设备需通过“咖啡馆测试”，即在公共场合自然使用而不显尴尬，方",
-      "source": "https://www.inc.com/connor-jewiss/ai-wearables-are-coming-but-theyll-need-to-pass-this-crucial-coffee-shop-test-to-survive/91345526",
-      "date": "2026-05-18",
+      "content": "单人利用 Claude 攻破墨西哥政府",
+      "summary": "攻击者借助 Claude 自动化漏洞挖掘，窃取墨西哥政府 150GB 数据，警示",
+      "source": "https://konstantintkachuk.com/writing/the-floor-doesnt-exist/",
+      "date": "2026-05-19",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-05-18_003",
+      "id": "sig_2026-05-19_002",
       "level": 1,
-      "content": "业界反思 AI 技术本质定位",
-      "summary": "观点文章强调 AI 应被视为底层赋能技术而非独立商品，呼吁行业回归理性，避免过度",
-      "source": "https://daringfireball.net/2026/05/ai_is_technology_not_a_product",
-      "date": "2026-05-18",
+      "content": "Anthropic 收购代码工具 Stainless",
+      "summary": "Anthropic 收购 Stainless，旨在强化代码生成能力，完善其面向开",
+      "source": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "date": "2026-05-19",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-05-19_003",
+      "level": 1,
+      "content": "马斯克起诉 OpenAI 案件败诉",
+      "summary": "法院驳回马斯克对 OpenAI 及阿尔特曼的诉讼，终结了围绕 AI 初创治理结构",
+      "source": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/",
+      "date": "2026-05-19",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-05-18_004",
+      "id": "sig_2026-05-19_004",
       "level": 1,
-      "content": "质疑 AI 加速业务流程实效",
-      "summary": "作者质疑盲目引入 AI 未必能提升效率，指出若流程本身不合理，AI 仅会加速错误",
-      "source": "https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/",
-      "date": "2026-05-18",
+      "content": "语音 AI 系统面临隐藏音频攻击",
+      "summary": "研究揭示语音 AI 易受隐蔽音频信号操控，暴露出多模态交互中尚未被重视的底层安全",
+      "source": "https://spectrum.ieee.org/voice-ai-audio-attacks",
+      "date": "2026-05-19",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-05-18_005",
+      "id": "sig_2026-05-19_005",
       "level": 1,
-      "content": "创意专家借 AI 赋能小企广告",
-      "summary": "谷歌展示创意专家利用 AI 工具为小企业制作高质量广告案例，探索降低营销门槛的新",
-      "source": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
-      "date": "2026-05-18",
+      "content": "AI 话语可能导致自我实现的对齐",
+      "summary": "新论文指出 AI 训练数据中的伦理话语可能引发自我实现的（错）对齐，为安全研究提",
+      "source": "https://arxiv.org/abs/2601.10160",
+      "date": "2026-05-19",
       "signal_index": 4
     },
     {
-      "id": "tag_2026-05-18_001",
+      "id": "tag_2026-05-19_001",
       "level": 2,
-      "content": "谷歌宣布其 AI",
-      "date": "2026-05-18"
+      "content": "谷歌将 AI 驱",
+      "date": "2026-05-19"
     },
     {
-      "id": "tag_2026-05-18_002",
+      "id": "tag_2026-05-19_002",
       "level": 2,
-      "content": "美国监管介入",
-      "date": "2026-05-18"
+      "content": "行业指出 AI ",
+      "date": "2026-05-19"
     },
     {
-      "id": "tag_2026-05-18_003",
+      "id": "tag_2026-05-19_003",
       "level": 2,
-      "content": "新模型在数学和编",
-      "date": "2026-05-18"
+      "content": "观点文章强调 A",
+      "date": "2026-05-19"
     },
     {
-      "id": "tag_2026-05-18_004",
+      "id": "tag_2026-05-19_004",
       "level": 2,
-      "content": "开发者可直接部署",
-      "date": "2026-05-18"
+      "content": "作者质疑盲目引入",
+      "date": "2026-05-19"
     },
     {
-      "id": "tag_2026-05-18_005",
+      "id": "tag_2026-05-19_005",
       "level": 2,
-      "content": "推理速度提升 3",
-      "date": "2026-05-18"
+      "content": "谷歌展示创意专家",
+      "date": "2026-05-19"
     },
     {
-      "id": "word_20260515_001",
+      "id": "word_20260511_003",
       "level": 3,
-      "content": "自动驾驶安全",
-      "date": "2026-05-15"
+      "content": "蒸馏",
+      "date": "2026-05-11"
     },
     {
-      "id": "word_20260515_002",
+      "id": "word_20260512_001",
       "level": 3,
-      "content": "多模态大模型",
-      "date": "2026-05-15"
+      "content": "Agent",
+      "date": "2026-05-12"
     },
     {
-      "id": "word_20260515_003",
+      "id": "word_20260512_002",
       "level": 3,
-      "content": "开源生态",
-      "date": "2026-05-15"
-    },
-    {
-      "id": "word_20260514_001",
-      "level": 3,
-      "content": "AI估值争议",
-      "date": "2026-05-14"
-    },
-    {
-      "id": "word_20260514_002",
-      "level": 3,
-      "content": "编程助手",
-      "date": "2026-05-14"
-    },
-    {
-      "id": "word_20260514_003",
-      "level": 3,
-      "content": "监管政策",
-      "date": "2026-05-14"
+      "content": "边缘计算",
+      "date": "2026-05-12"
     },
     {
       "id": "word_20260513_001",
@@ -131,34 +113,70 @@
       "date": "2026-05-13"
     },
     {
-      "id": "word_20260512_001",
+      "id": "word_20260514_001",
       "level": 3,
-      "content": "Agent",
-      "date": "2026-05-12"
+      "content": "AI估值争议",
+      "date": "2026-05-14"
     },
     {
-      "id": "word_20260512_002",
+      "id": "word_20260514_002",
       "level": 3,
-      "content": "边缘计算",
-      "date": "2026-05-12"
+      "content": "编程助手",
+      "date": "2026-05-14"
     },
     {
-      "id": "word_20260511_001",
+      "id": "word_20260514_003",
       "level": 3,
-      "content": "Scaling Law",
-      "date": "2026-05-11"
+      "content": "监管政策",
+      "date": "2026-05-14"
     },
     {
-      "id": "word_20260511_002",
+      "id": "word_20260515_001",
       "level": 3,
-      "content": "合成数据",
-      "date": "2026-05-11"
+      "content": "自动驾驶安全",
+      "date": "2026-05-15"
     },
     {
-      "id": "word_20260511_003",
+      "id": "word_20260515_002",
       "level": 3,
-      "content": "蒸馏",
-      "date": "2026-05-11"
+      "content": "多模态大模型",
+      "date": "2026-05-15"
+    },
+    {
+      "id": "word_20260515_003",
+      "level": 3,
+      "content": "开源生态",
+      "date": "2026-05-15"
+    },
+    {
+      "id": "word_2026-05-18_001",
+      "level": 3,
+      "content": "谷歌宣布其 AI",
+      "date": "2026-05-18"
+    },
+    {
+      "id": "word_2026-05-18_002",
+      "level": 3,
+      "content": "美国监管介入",
+      "date": "2026-05-18"
+    },
+    {
+      "id": "word_2026-05-18_003",
+      "level": 3,
+      "content": "新模型在数学和编",
+      "date": "2026-05-18"
+    },
+    {
+      "id": "word_2026-05-18_004",
+      "level": 3,
+      "content": "开发者可直接部署",
+      "date": "2026-05-18"
+    },
+    {
+      "id": "word_2026-05-18_005",
+      "level": 3,
+      "content": "推理速度提升 3",
+      "date": "2026-05-18"
     }
   ]
 }
