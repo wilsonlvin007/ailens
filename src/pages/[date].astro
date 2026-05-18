@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import Hero from '../components/Hero.astro';
 import Signals from '../components/Signals.astro';
 import DeepDive from '../components/DeepDive.astro';
 import { getDailyData, getAllDates } from '../lib/data';
@@ -20,11 +19,6 @@ if (!data) {
 ---
 
 <Base title={`AI 日报 · ${date}`}>
-  <Hero
-    date={date!}
-    summary={data.summary}
-    weekday={formatWeekday(date!)}
-  />
   <Signals items={data.items} />
   {data.deep_dive && (
     <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
