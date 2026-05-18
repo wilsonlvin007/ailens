@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-const base = "/ailens";
+const base = import.meta.env.BASE_URL;
 import { getAllDates } from '../lib/data';
 import { formatWeekday } from '../lib/utils';
 
