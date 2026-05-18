@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-const base = import.meta.env.BASE_URL;
 import Hero from '../components/Hero.astro';
 import Signals from '../components/Signals.astro';
 import DeepDive from '../components/DeepDive.astro';
@@ -31,7 +30,7 @@ if (!data) {
     <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
   )}
   <nav class="date-nav">
-    <a href={`${base}/`} class="back-link">← 返回最新</a>
+    <a href={`${Astro.url.pathname.replace(/\/[^/]*$/, '')}/`} class="back-link">← 返回最新</a>
   </nav>
 </Base>
 
