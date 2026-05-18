@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-const base = "/ailens";
+const base = import.meta.env.BASE_URL;
 
 const webhookExample = `POST https://ailens.news/api/subscribe
 Content-Type: application/json
