@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import { getAllDates } from '../lib/data';
 import { formatWeekday } from '../lib/utils';
 
-const dates = getAllDates();
+const dates = getAllDates().slice(1); // 排除当天最新一期
 
 interface YearMonth {
   year: string;
