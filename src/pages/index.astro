@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-const base = import.meta.env.BASE_URL;
 import Hero from '../components/Hero.astro';
 import Signals from '../components/Signals.astro';
 import DeepDive from '../components/DeepDive.astro';
@@ -31,9 +30,9 @@ if (latestDate) {
         summary={data.summary}
         weekday={formatWeekday(latestDate!)}
       />
-      <Signals items={data.items} maxPerCategory={3} dateLink={`${base}/${latestDate}`} />
+      <Signals items={data.items} maxPerCategory={3} dateLink={`/${latestDate}`} />
       {data.deep_dive && (
-        <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated detailUrl={`${base}/${latestDate}`} />
+        <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated detailUrl={`/${latestDate}`} />
       )}
 
       {/* 历史期刊 */}
@@ -46,7 +45,7 @@ if (latestDate) {
               const dData = getDailyData(d);
               const summary = dData?.summary || '';
               return (
-                <a href={`${base}/${d}`} class:list={["recent-item", { "recent-today": isToday }]}>
+                <a href={`/${d}`} class:list={["recent-item", { "recent-today": isToday }]}>
                   <div class="recent-text">
                     <span class="recent-date">{d.slice(5)}</span>
                     <span class="recent-weekday">{formatWeekday(d)}</span>
@@ -58,7 +57,7 @@ if (latestDate) {
               );
             })}
           </div>
-          <a href={`${base}/archive`} class="recent-archive-link">查看完整归档 →</a>
+          <a href="/archive" class="recent-archive-link">查看完整归档 →</a>
         </section>
       )}
     </>
@@ -68,7 +67,7 @@ if (latestDate) {
       <h1 class="empty-title">AI Lens</h1>
       <p class="empty-desc">透过镜头看 AI 新闻</p>
       <p class="empty-hint">第一期日报即将发布，敬请期待。</p>
-      <a href={`${base}/subscribe`} class="empty-cta">立即订阅 →</a>
+      <a href="/subscribe" class="empty-cta">立即订阅 →</a>
     </section>
   )}
 </Base>
