@@ -8,9 +8,8 @@ interface Props {
 
 const { topic, content, truncated = false, detailUrl } = Astro.props;
 
-const paragraphs = content.split('
-
-');
+// Split by double newline without using \n (which breaks in heredoc)
+const paragraphs = content.split(new RegExp(String.fromCharCode(10) + String.fromCharCode(10)));
 const needsTruncation = truncated && content.length > 300;
 
 let previewLen = 0;
@@ -31,40 +30,19 @@ for (let i = 0; i < paragraphs.length; i++) {
   </h2>
   <h3 class="deep-dive-topic">{topic}</h3>
   <div class="deep-dive-content">
-    {paragraphs.map((p) => <p>{p}</p>)}
+    {needsTruncation ? (
+      <>
+        {paragraphs.slice(0, cutAt).map((p) => <p>{p}</p>)}
+        <details class="deep-dive-details">
+          <summary class="read-more">展开阅读 →</summary>
+          {paragraphs.slice(cutAt).map((p) => <p>{p}</p>)}
+        </details>
+      </>
+    ) : (
+      paragraphs.map((p) => <p>{p}</p>)
+    )}
   </div>
-  {needsTruncation && (
-    <button class="read-more" data-cut={cutAt}>展开阅读 →</button>
-  )}
 </section>
-
-{needsTruncation && (
-  <script>
-    (function() {
-      var btns = document.querySelectorAll('.read-more[data-cut]');
-      btns.forEach(function(btn) {
-        var container = btn.closest('.deep-dive');
-        if (!container) return;
-        var allParas = container.querySelectorAll('.deep-dive-content p');
-        var showCount = parseInt(btn.dataset.cut) || allParas.length;
-        if (showCount >= allParas.length) {
-          btn.style.display = 'none';
-          return;
-        }
-        for (var i = showCount; i < allParas.length; i++) {
-          allParas[i].style.display = 'none';
-        }
-        btn.addEventListener('click', function() {
-          var isExpanded = btn.textContent.indexOf('收起') >= 0;
-          for (var i = showCount; i < allParas.length; i++) {
-            allParas[i].style.display = isExpanded ? 'none' : '';
-          }
-          btn.textContent = isExpanded ? '展开阅读 →' : '收起 ↑';
-        });
-      });
-    })();
-  </script>
-)}
 
 <style>
   .deep-dive {
@@ -108,18 +86,26 @@ for (let i = 0; i < paragraphs.length; i++) {
   .deep-dive-content p:last-child {
     margin-bottom: 0;
   }
+  .deep-dive-details {
+    margin-top: 0;
+  }
+  .deep-dive-details summary {
+    margin-top: 1rem;
+  }
+  .deep-dive-details[open] summary {
+    display: none;
+  }
   .read-more {
     display: inline-block;
-    margin-top: 1rem;
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--accent);
-    background: none;
-    border: none;
     cursor: pointer;
-    padding: 0;
-    font-family: inherit;
     transition: color 0.2s;
+    list-style: none;
+  }
+  .read-more::-webkit-details-marker {
+    display: none;
   }
   .read-more:hover {
     color: var(--accent-hover);
