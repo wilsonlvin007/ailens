@@ -21,10 +21,10 @@ if (!data) {
 <Base title={`AI 日报 · ${date}`}>
   <Signals items={data.items} />
   {data.deep_dive && (
-    <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} />
+    <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated />
   )}
   <nav class="date-nav">
-    <a href={`${Astro.url.pathname.replace(/\/[^/]*$/, '')}/`} class="back-link">← 返回最新</a>
+    <a href="/" class="back-link">← 返回最新</a>
   </nav>
 </Base>
 
