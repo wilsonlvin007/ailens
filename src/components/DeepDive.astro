@@ -8,15 +8,11 @@ interface Props {
 
 const { topic, content, truncated = false, detailUrl } = Astro.props;
 
-const plainText = content.replace(/
-
-/g, '');
 const paragraphs = content.split('
 
 ');
-const needsTruncation = truncated && plainText.length > 150;
+const needsTruncation = truncated && content.length > 300;
 
-// 截取前150字对应的段落
 let previewLen = 0;
 let cutAt = paragraphs.length;
 for (let i = 0; i < paragraphs.length; i++) {
@@ -45,22 +41,22 @@ for (let i = 0; i < paragraphs.length; i++) {
 {needsTruncation && (
   <script>
     (function() {
-      const btns = document.querySelectorAll('.read-more[data-cut]');
-      btns.forEach(btn => {
-        const container = btn.closest('.deep-dive');
+      var btns = document.querySelectorAll('.read-more[data-cut]');
+      btns.forEach(function(btn) {
+        var container = btn.closest('.deep-dive');
         if (!container) return;
-        const allParas = container.querySelectorAll('.deep-dive-content p');
-        const showCount = parseInt(btn.dataset.cut) || allParas.length;
+        var allParas = container.querySelectorAll('.deep-dive-content p');
+        var showCount = parseInt(btn.dataset.cut) || allParas.length;
         if (showCount >= allParas.length) {
           btn.style.display = 'none';
           return;
         }
-        for (let i = showCount; i < allParas.length; i++) {
+        for (var i = showCount; i < allParas.length; i++) {
           allParas[i].style.display = 'none';
         }
-        btn.addEventListener('click', () => {
-          const isExpanded = btn.textContent.includes('收起');
-          for (let i = showCount; i < allParas.length; i++) {
+        btn.addEventListener('click', function() {
+          var isExpanded = btn.textContent.indexOf('收起') >= 0;
+          for (var i = showCount; i < allParas.length; i++) {
             allParas[i].style.display = isExpanded ? 'none' : '';
           }
           btn.textContent = isExpanded ? '展开阅读 →' : '收起 ↑';
