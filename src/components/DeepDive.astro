@@ -26,12 +26,9 @@ for (let i = 0; i < paragraphs.length; i++) {
     break;
   }
 }
-
-// 生成唯一 ID，避免多组件冲突
-const id = 'dd-' + Math.random().toString(36).slice(2, 8);
 ---
 
-<section class="deep-dive" id={id}>
+<section class="deep-dive">
   <h2 class="deep-dive-title">
     <span class="deep-dive-icon">🔍</span>
     特写
@@ -41,30 +38,33 @@ const id = 'dd-' + Math.random().toString(36).slice(2, 8);
     {paragraphs.map((p) => <p>{p}</p>)}
   </div>
   {needsTruncation && (
-    <button class="read-more" data-target={id}>展开阅读 →</button>
+    <button class="read-more" data-cut={cutAt}>展开阅读 →</button>
   )}
 </section>
 
 {needsTruncation && (
   <script>
     (function() {
-      const container = document.getElementById('{id}');
-      if (!container) return;
-      const content = container.querySelector('.deep-dive-content');
-      const btn = container.querySelector('.read-more');
-      if (!content || !btn) return;
-      const allParas = content.querySelectorAll('p');
-      const showCount = {cutAt};
-      // 初始只显示前 showCount 段
-      for (let i = showCount; i < allParas.length; i++) {
-        allParas[i].style.display = 'none';
-      }
-      btn.addEventListener('click', () => {
-        const isExpanded = btn.textContent.includes('收起');
-        for (let i = showCount; i < allParas.length; i++) {
-          allParas[i].style.display = isExpanded ? 'none' : '';
+      const btns = document.querySelectorAll('.read-more[data-cut]');
+      btns.forEach(btn => {
+        const container = btn.closest('.deep-dive');
+        if (!container) return;
+        const allParas = container.querySelectorAll('.deep-dive-content p');
+        const showCount = parseInt(btn.dataset.cut) || allParas.length;
+        if (showCount >= allParas.length) {
+          btn.style.display = 'none';
+          return;
         }
-        btn.textContent = isExpanded ? '展开阅读 →' : '收起 ↑';
+        for (let i = showCount; i < allParas.length; i++) {
+          allParas[i].style.display = 'none';
+        }
+        btn.addEventListener('click', () => {
+          const isExpanded = btn.textContent.includes('收起');
+          for (let i = showCount; i < allParas.length; i++) {
+            allParas[i].style.display = isExpanded ? 'none' : '';
+          }
+          btn.textContent = isExpanded ? '展开阅读 →' : '收起 ↑';
+        });
       });
     })();
   </script>
