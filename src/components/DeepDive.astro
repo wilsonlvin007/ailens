@@ -8,45 +8,67 @@ interface Props {
 
 const { topic, content, truncated = false, detailUrl } = Astro.props;
 
-const previewLen = 150;
-const plainText = content.replace(/\n\n/g, '');
-const needsTruncation = truncated && plainText.length > previewLen;
-const previewParagraphs = content.split('\n\n');
-// 取前150字对应的段落数
-let totalLen = 0;
-let cutIndex = previewParagraphs.length;
-for (let i = 0; i < previewParagraphs.length; i++) {
-  totalLen += previewParagraphs[i].length;
-  if (totalLen >= previewLen) {
-    cutIndex = i + 1;
+const plainText = content.replace(/
+
+/g, '');
+const paragraphs = content.split('
+
+');
+const needsTruncation = truncated && plainText.length > 150;
+
+// 截取前150字对应的段落
+let previewLen = 0;
+let cutAt = paragraphs.length;
+for (let i = 0; i < paragraphs.length; i++) {
+  previewLen += paragraphs[i].length;
+  if (previewLen >= 150) {
+    cutAt = i + 1;
     break;
   }
 }
+
+// 生成唯一 ID，避免多组件冲突
+const id = 'dd-' + Math.random().toString(36).slice(2, 8);
 ---
 
-<section class="deep-dive">
+<section class="deep-dive" id={id}>
   <h2 class="deep-dive-title">
     <span class="deep-dive-icon">🔍</span>
     特写
   </h2>
   <h3 class="deep-dive-topic">{topic}</h3>
   <div class="deep-dive-content">
-    {needsTruncation ? (
-      <>
-        {previewParagraphs.slice(0, cutIndex).map((p) => (
-          <p>{p}</p>
-        ))}
-      </>
-    ) : (
-      previewParagraphs.map((p) => (
-        <p>{p}</p>
-      ))
-    )}
+    {paragraphs.map((p) => <p>{p}</p>)}
   </div>
-  {needsTruncation && detailUrl && (
-    <a href={detailUrl} class="read-more">展开阅读 →</a>
+  {needsTruncation && (
+    <button class="read-more" data-target={id}>展开阅读 →</button>
   )}
 </section>
+
+{needsTruncation && (
+  <script>
+    (function() {
+      const container = document.getElementById('{id}');
+      if (!container) return;
+      const content = container.querySelector('.deep-dive-content');
+      const btn = container.querySelector('.read-more');
+      if (!content || !btn) return;
+      const allParas = content.querySelectorAll('p');
+      const showCount = {cutAt};
+      // 初始只显示前 showCount 段
+      for (let i = showCount; i < allParas.length; i++) {
+        allParas[i].style.display = 'none';
+      }
+      btn.addEventListener('click', () => {
+        const isExpanded = btn.textContent.includes('收起');
+        for (let i = showCount; i < allParas.length; i++) {
+          allParas[i].style.display = isExpanded ? 'none' : '';
+        }
+        btn.textContent = isExpanded ? '展开阅读 →' : '收起 ↑';
+      });
+    })();
+  </script>
+)}
 
 <style>
   .deep-dive {
@@ -96,6 +118,11 @@ for (let i = 0; i < previewParagraphs.length; i++) {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--accent);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
     transition: color 0.2s;
   }
   .read-more:hover {
