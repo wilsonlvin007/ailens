@@ -1,110 +1,80 @@
 {
-  "updated_at": "2026-05-19",
+  "updated_at": "2026-05-20",
   "items": [
     {
-      "id": "sig_2026-05-19_001",
+      "id": "sig_2026-05-20_001",
       "level": 1,
-      "content": "单人利用 Claude 攻破墨西哥政府",
-      "summary": "攻击者借助 Claude 自动化漏洞挖掘，窃取墨西哥政府 150GB 数据，警示",
-      "source": "https://konstantintkachuk.com/writing/the-floor-doesnt-exist/",
-      "date": "2026-05-19",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-05-19_002",
-      "level": 1,
-      "content": "Anthropic 收购代码工具 Stainless",
-      "summary": "Anthropic 收购 Stainless，旨在强化代码生成能力，完善其面向开",
-      "source": "https://www.anthropic.com/news/anthropic-acquires-stainless",
-      "date": "2026-05-19",
+      "content": "谷歌发布 Gemini 3.5 Flash",
+      "summary": "谷歌推出 Gemini 3.5 Flash，显著提升推理速度与多模态处理效率，优",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "date": "2026-05-20",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-05-19_003",
+      "id": "sig_2026-05-20_002",
       "level": 1,
-      "content": "马斯克起诉 OpenAI 案件败诉",
-      "summary": "法院驳回马斯克对 OpenAI 及阿尔特曼的诉讼，终结了围绕 AI 初创治理结构",
-      "source": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/",
-      "date": "2026-05-19",
-      "signal_index": 2
+      "content": "OpenAI 采用 SynthID 水印技术",
+      "summary": "OpenAI 集成谷歌 SynthID 技术为图像添加隐形水印，并推出验证工具以",
+      "source": "https://openai.com/index/advancing-content-provenance/",
+      "date": "2026-05-20",
+      "signal_index": 1
     },
     {
-      "id": "sig_2026-05-19_004",
+      "id": "sig_2026-05-20_003",
       "level": 1,
-      "content": "语音 AI 系统面临隐藏音频攻击",
-      "summary": "研究揭示语音 AI 易受隐蔽音频信号操控，暴露出多模态交互中尚未被重视的底层安全",
-      "source": "https://spectrum.ieee.org/voice-ai-audio-attacks",
-      "date": "2026-05-19",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-05-19_005",
-      "level": 1,
-      "content": "AI 话语可能导致自我实现的对齐",
-      "summary": "新论文指出 AI 训练数据中的伦理话语可能引发自我实现的（错）对齐，为安全研究提",
-      "source": "https://arxiv.org/abs/2601.10160",
-      "date": "2026-05-19",
+      "content": "DeepMind 推出 Gemini Omni 模型",
+      "summary": "DeepMind 发布 Gemini Omni，支持复杂跨模态交互与超长上下文理",
+      "source": "https://deepmind.google/models/gemini-omni/",
+      "date": "2026-05-20",
       "signal_index": 4
     },
     {
-      "id": "tag_2026-05-19_001",
+      "id": "sig_2026-05-20_004",
+      "level": 1,
+      "content": "Mistral 收购 Emmi 构建全栈能力",
+      "summary": "Mistral AI 收购 Emmi AI，整合技术资源致力于打造领先的端到端人",
+      "source": "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai",
+      "date": "2026-05-20",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-05-20_005",
+      "level": 1,
+      "content": "Forge 提升小模型代理成功率",
+      "summary": "开源项目 Forge 利用防护栏机制，将 8B 参数模型在代理任务中的成功率从 ",
+      "source": "https://github.com/antoinezambelli/forge",
+      "date": "2026-05-20",
+      "signal_index": 3
+    },
+    {
+      "id": "tag_2026-05-20_001",
       "level": 2,
-      "content": "谷歌将 AI 驱",
-      "date": "2026-05-19"
+      "content": "攻击者借助 Cl",
+      "date": "2026-05-20"
     },
     {
-      "id": "tag_2026-05-19_002",
+      "id": "tag_2026-05-20_002",
       "level": 2,
-      "content": "行业指出 AI ",
-      "date": "2026-05-19"
+      "content": "Anthropi",
+      "date": "2026-05-20"
     },
     {
-      "id": "tag_2026-05-19_003",
+      "id": "tag_2026-05-20_003",
       "level": 2,
-      "content": "观点文章强调 A",
-      "date": "2026-05-19"
+      "content": "法院驳回马斯克对",
+      "date": "2026-05-20"
     },
     {
-      "id": "tag_2026-05-19_004",
+      "id": "tag_2026-05-20_004",
       "level": 2,
-      "content": "作者质疑盲目引入",
-      "date": "2026-05-19"
+      "content": "研究揭示语音 A",
+      "date": "2026-05-20"
     },
     {
-      "id": "tag_2026-05-19_005",
+      "id": "tag_2026-05-20_005",
       "level": 2,
-      "content": "谷歌展示创意专家",
-      "date": "2026-05-19"
-    },
-    {
-      "id": "word_20260511_003",
-      "level": 3,
-      "content": "蒸馏",
-      "date": "2026-05-11"
-    },
-    {
-      "id": "word_20260512_001",
-      "level": 3,
-      "content": "Agent",
-      "date": "2026-05-12"
-    },
-    {
-      "id": "word_20260512_002",
-      "level": 3,
-      "content": "边缘计算",
-      "date": "2026-05-12"
-    },
-    {
-      "id": "word_20260513_001",
-      "level": 3,
-      "content": "芯片算力",
-      "date": "2026-05-13"
-    },
-    {
-      "id": "word_20260513_002",
-      "level": 3,
-      "content": "数据隐私",
-      "date": "2026-05-13"
+      "content": "新论文指出 AI",
+      "date": "2026-05-20"
     },
     {
       "id": "word_20260513_001",
@@ -177,6 +147,36 @@
       "level": 3,
       "content": "推理速度提升 3",
       "date": "2026-05-18"
+    },
+    {
+      "id": "word_2026-05-19_001",
+      "level": 3,
+      "content": "谷歌将 AI 驱",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "word_2026-05-19_002",
+      "level": 3,
+      "content": "行业指出 AI ",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "word_2026-05-19_003",
+      "level": 3,
+      "content": "观点文章强调 A",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "word_2026-05-19_004",
+      "level": 3,
+      "content": "作者质疑盲目引入",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "word_2026-05-19_005",
+      "level": 3,
+      "content": "谷歌展示创意专家",
+      "date": "2026-05-19"
     }
   ]
 }
