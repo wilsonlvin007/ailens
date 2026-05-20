@@ -1,110 +1,80 @@
 {
-  "updated_at": "2026-05-20",
+  "updated_at": "2026-05-21",
   "items": [
     {
-      "id": "sig_2026-05-20_001",
+      "id": "sig_2026-05-21_001",
       "level": 1,
-      "content": "谷歌发布 Gemini 3.5 Flash",
-      "summary": "谷歌推出 Gemini 3.5 Flash，显著提升推理速度与多模态处理效率，优",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
-      "date": "2026-05-20",
+      "content": "OpenAI 模型证伪几何猜想",
+      "summary": "OpenAI 模型成功证伪离散几何核心猜想，标志 AI 在数学推理领域实现范式级",
+      "source": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+      "date": "2026-05-21",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-05-20_002",
+      "id": "sig_2026-05-21_002",
       "level": 1,
-      "content": "OpenAI 采用 SynthID 水印技术",
-      "summary": "OpenAI 集成谷歌 SynthID 技术为图像添加隐形水印，并推出验证工具以",
-      "source": "https://openai.com/index/advancing-content-provenance/",
-      "date": "2026-05-20",
+      "content": "谷歌发布 Gemini 3.5 及代理栈",
+      "summary": "Google I/O 发布 Gemini 3.5 Flash 及全新代理栈，显著",
+      "source": "https://news.smol.ai/issues/26-05-19-not-much/",
+      "date": "2026-05-21",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-05-20_003",
+      "id": "sig_2026-05-21_003",
       "level": 1,
-      "content": "DeepMind 推出 Gemini Omni 模型",
-      "summary": "DeepMind 发布 Gemini Omni，支持复杂跨模态交互与超长上下文理",
-      "source": "https://deepmind.google/models/gemini-omni/",
-      "date": "2026-05-20",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-05-20_004",
-      "level": 1,
-      "content": "Mistral 收购 Emmi 构建全栈能力",
-      "summary": "Mistral AI 收购 Emmi AI，整合技术资源致力于打造领先的端到端人",
-      "source": "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai",
-      "date": "2026-05-20",
+      "content": "谷歌反击 AI 搜索结果操纵",
+      "summary": "谷歌正积极应对针对其 AI 搜索结果的操纵攻击，凸显生成式内容安全与完整性面临的",
+      "source": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
+      "date": "2026-05-21",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-05-20_005",
+      "id": "sig_2026-05-21_004",
       "level": 1,
-      "content": "Forge 提升小模型代理成功率",
-      "summary": "开源项目 Forge 利用防护栏机制，将 8B 参数模型在代理任务中的成功率从 ",
-      "source": "https://github.com/antoinezambelli/forge",
-      "date": "2026-05-20",
+      "content": "PopuLoRA 提升模型推理能力",
+      "summary": "提出 PopuLoRA 框架，利用大模型群体协同进化与自我博弈机制，显著提升复杂",
+      "source": "https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play",
+      "date": "2026-05-21",
       "signal_index": 3
     },
     {
-      "id": "tag_2026-05-20_001",
+      "id": "sig_2026-05-21_005",
+      "level": 1,
+      "content": "形式化验证保障 AI 编码",
+      "summary": "引入形式化验证机制作为 AI 编码循环的关键关卡，确保自动生成代码的结构正确性与",
+      "source": "https://reubenbrooks.dev/blog/structural-backpressure-beats-smarter-agents/",
+      "date": "2026-05-21",
+      "signal_index": 4
+    },
+    {
+      "id": "tag_2026-05-21_001",
       "level": 2,
-      "content": "攻击者借助 Cl",
-      "date": "2026-05-20"
+      "content": "谷歌推出 Gem",
+      "date": "2026-05-21"
     },
     {
-      "id": "tag_2026-05-20_002",
+      "id": "tag_2026-05-21_002",
       "level": 2,
-      "content": "Anthropi",
-      "date": "2026-05-20"
+      "content": "OpenAI 集",
+      "date": "2026-05-21"
     },
     {
-      "id": "tag_2026-05-20_003",
+      "id": "tag_2026-05-21_003",
       "level": 2,
-      "content": "法院驳回马斯克对",
-      "date": "2026-05-20"
+      "content": "DeepMind",
+      "date": "2026-05-21"
     },
     {
-      "id": "tag_2026-05-20_004",
+      "id": "tag_2026-05-21_004",
       "level": 2,
-      "content": "研究揭示语音 A",
-      "date": "2026-05-20"
+      "content": "Mistral ",
+      "date": "2026-05-21"
     },
     {
-      "id": "tag_2026-05-20_005",
+      "id": "tag_2026-05-21_005",
       "level": 2,
-      "content": "新论文指出 AI",
-      "date": "2026-05-20"
-    },
-    {
-      "id": "word_20260513_001",
-      "level": 3,
-      "content": "RAG",
-      "date": "2026-05-13"
-    },
-    {
-      "id": "word_20260514_001",
-      "level": 3,
-      "content": "AI估值争议",
-      "date": "2026-05-14"
-    },
-    {
-      "id": "word_20260514_002",
-      "level": 3,
-      "content": "编程助手",
-      "date": "2026-05-14"
-    },
-    {
-      "id": "word_20260514_003",
-      "level": 3,
-      "content": "监管政策",
-      "date": "2026-05-14"
-    },
-    {
-      "id": "word_20260515_001",
-      "level": 3,
-      "content": "自动驾驶安全",
-      "date": "2026-05-15"
+      "content": "开源项目 For",
+      "date": "2026-05-21"
     },
     {
       "id": "word_20260515_002",
@@ -177,6 +147,36 @@
       "level": 3,
       "content": "谷歌展示创意专家",
       "date": "2026-05-19"
+    },
+    {
+      "id": "word_2026-05-20_001",
+      "level": 3,
+      "content": "攻击者借助 Cl",
+      "date": "2026-05-20"
+    },
+    {
+      "id": "word_2026-05-20_002",
+      "level": 3,
+      "content": "Anthropi",
+      "date": "2026-05-20"
+    },
+    {
+      "id": "word_2026-05-20_003",
+      "level": 3,
+      "content": "法院驳回马斯克对",
+      "date": "2026-05-20"
+    },
+    {
+      "id": "word_2026-05-20_004",
+      "level": 3,
+      "content": "研究揭示语音 A",
+      "date": "2026-05-20"
+    },
+    {
+      "id": "word_2026-05-20_005",
+      "level": 3,
+      "content": "新论文指出 AI",
+      "date": "2026-05-20"
     }
   ]
 }
