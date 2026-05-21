@@ -452,7 +452,7 @@ jobs:
               # 动词前至少2字符（避免把"开源项目"中的"开源"当动词，保留"微软开源"等真实动词用法）
               actions = r'(?:发布|推出|开源|上线|宣布|更新|升级|收购|投资|融资|展示|提出|上市)'
               m = re.search(rf'.{2,}?{actions}\s*(.+)', title)
-              if m:
+              if m and m.group(1) is not None:
                   core = m.group(1).strip()
                   if len(core) <= MAX_LEN:
                       return core
