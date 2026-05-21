@@ -428,7 +428,17 @@ jobs:
                       pass
               return {'updated_at': '', 'items': []}
 
-          def extract_topic(item):
+                        def _smart_truncate(text, max_len):
+                  """智能截断：优先在标点处断句，避免截出碎片"""
+                  if len(text) <= max_len:
+                      return text
+                  for sep in ['。', '，', '！', '？', '；', '：', '、']:
+                      idx = text.rfind(sep, 0, max_len)
+                      if idx > max_len // 2:
+                          return text[:idx + 1]
+                  return text[:max_len]
+
+              def extract_topic(item):
               """从 L1 提取 L2 核心话题。
               原则：宁可完整略长，绝不截断出不完整表述（如 'Gem'、'For'、'Chat'）。
               """
@@ -445,7 +455,7 @@ jobs:
                           title = summary
               if not title:
                   return (item.get('content', '') or '')[:20]
-              MAX_LEN = 16
+              MAX_LEN = 25
               if len(title) <= MAX_LEN:
                   return title
               # 尝试提取「动词后的核心主语」
