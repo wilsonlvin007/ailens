@@ -465,20 +465,6 @@ jobs:
               return _smart_truncate(title, MAX_LEN)
 
 
-          def _smart_truncate(text, max_len):
-              """在词边界截断，绝不切割英文单词"""
-              if len(text) <= max_len:
-                  return text
-              result = text[:max_len]
-              for i in range(len(result) - 1, 2, -1):
-                  if result[i] in (' ', '，', '。', '、', '；', '：', '（', '('):
-                      return result[:i].strip()
-              if result[-1].isalnum() and len(text) > max_len and text[max_len].isalnum():
-                  last_space = result.rfind(' ')
-                  if last_space > 2:
-                      return result[:last_space].strip()
-              return result.strip()
-
           MAX_L1 = 5
           MAX_TOTAL = 36
 
