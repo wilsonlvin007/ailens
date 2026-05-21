@@ -5,7 +5,7 @@
       "id": "sig_2026-05-21_001",
       "level": 1,
       "content": "OpenAI 模型证伪几何猜想",
-      "summary": "OpenAI 模型成功证伪离散几何核心猜想，标志 AI 在数学推理领域实现范式级",
+      "summary": "OpenAI 模型成功证伪离散几何核心猜想，标志 AI 在数学推理领域取得范式级",
       "source": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
       "date": "2026-05-21",
       "signal_index": 0
@@ -13,98 +13,68 @@
     {
       "id": "sig_2026-05-21_002",
       "level": 1,
-      "content": "谷歌发布 Gemini 3.5 及代理栈",
-      "summary": "Google I/O 发布 Gemini 3.5 Flash 及全新代理栈，显著",
-      "source": "https://news.smol.ai/issues/26-05-19-not-much/",
+      "content": "Anthropic 扩建 GB200 集群",
+      "summary": "Anthropic 宣布扩建 Colossus2 超级计算机，将采用英伟达 GB",
+      "source": "https://xcancel.com/nottombrown/status/2057194829986300375",
       "date": "2026-05-21",
       "signal_index": 1
     },
     {
       "id": "sig_2026-05-21_003",
       "level": 1,
-      "content": "谷歌反击 AI 搜索结果操纵",
-      "summary": "谷歌正积极应对针对其 AI 搜索结果的操纵攻击，凸显生成式内容安全与完整性面临的",
-      "source": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
+      "content": "Google 发布新模型及智能体栈",
+      "summary": "Google I/O 发布 Gemini 3.5 Flash 及 Omni 模型",
+      "source": "https://news.smol.ai/issues/26-05-19-not-much/",
       "date": "2026-05-21",
       "signal_index": 2
     },
     {
       "id": "sig_2026-05-21_004",
       "level": 1,
-      "content": "PopuLoRA 提升模型推理能力",
-      "summary": "提出 PopuLoRA 框架，利用大模型群体协同进化与自我博弈机制，显著提升复杂",
-      "source": "https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play",
+      "content": "Google 反击 AI 搜索结果操纵",
+      "summary": "针对搜索引擎 AI 结果被恶意操纵的现象，Google 正在采取隐蔽措施进行防御",
+      "source": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
       "date": "2026-05-21",
       "signal_index": 3
     },
     {
       "id": "sig_2026-05-21_005",
       "level": 1,
-      "content": "形式化验证保障 AI 编码",
-      "summary": "引入形式化验证机制作为 AI 编码循环的关键关卡，确保自动生成代码的结构正确性与",
-      "source": "https://reubenbrooks.dev/blog/structural-backpressure-beats-smarter-agents/",
+      "content": "PopuLoRA 提升模型推理能力",
+      "summary": "提出 PopuLoRA 新方法，通过协同进化大模型种群进行推理自我博弈，提升模型",
+      "source": "https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play",
       "date": "2026-05-21",
       "signal_index": 4
     },
     {
       "id": "tag_2026-05-21_001",
       "level": 2,
-      "content": "谷歌推出 Gem",
+      "content": "OpenAI",
       "date": "2026-05-21"
     },
     {
       "id": "tag_2026-05-21_002",
       "level": 2,
-      "content": "OpenAI 集",
+      "content": "Google I/O 发布",
       "date": "2026-05-21"
     },
     {
       "id": "tag_2026-05-21_003",
       "level": 2,
-      "content": "DeepMind",
+      "content": "谷歌正积极应对针对其 AI",
       "date": "2026-05-21"
     },
     {
       "id": "tag_2026-05-21_004",
       "level": 2,
-      "content": "Mistral ",
+      "content": "提出 PopuLoRA 框架",
       "date": "2026-05-21"
     },
     {
       "id": "tag_2026-05-21_005",
       "level": 2,
-      "content": "开源项目 For",
+      "content": "引入形式化验证机制作为 AI",
       "date": "2026-05-21"
-    },
-    {
-      "id": "word_20260515_002",
-      "level": 3,
-      "content": "多模态大模型",
-      "date": "2026-05-15"
-    },
-    {
-      "id": "word_20260515_003",
-      "level": 3,
-      "content": "开源生态",
-      "date": "2026-05-15"
-    },
-    {
-      "id": "word_2026-05-18_001",
-      "level": 3,
-      "content": "谷歌宣布其 AI",
-      "date": "2026-05-18"
-    },
-    {
-      "id": "word_2026-05-18_002",
-      "level": 3,
-      "content": "美国监管介入",
-      "date": "2026-05-18"
-    },
-    {
-      "id": "word_2026-05-18_003",
-      "level": 3,
-      "content": "新模型在数学和编",
-      "date": "2026-05-18"
     },
     {
       "id": "word_2026-05-18_004",
@@ -177,6 +147,36 @@
       "level": 3,
       "content": "新论文指出 AI",
       "date": "2026-05-20"
+    },
+    {
+      "id": "word_2026-05-21_001",
+      "level": 3,
+      "content": "谷歌推出 Gem",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_002",
+      "level": 3,
+      "content": "OpenAI 集",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_003",
+      "level": 3,
+      "content": "DeepMind",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_004",
+      "level": 3,
+      "content": "Mistral ",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_005",
+      "level": 3,
+      "content": "开源项目 For",
+      "date": "2026-05-21"
     }
   ]
 }
