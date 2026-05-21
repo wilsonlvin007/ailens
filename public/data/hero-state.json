@@ -5,7 +5,7 @@
       "id": "sig_2026-05-21_001",
       "level": 1,
       "content": "OpenAI 模型证伪几何猜想",
-      "summary": "OpenAI 模型成功证伪离散几何核心猜想，标志 AI 在数学推理领域取得范式级",
+      "summary": "OpenAI 模型成功证伪离散几何核心猜想，标志 AI 在基础科学发现领域取得突",
       "source": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
       "date": "2026-05-21",
       "signal_index": 0
@@ -13,17 +13,17 @@
     {
       "id": "sig_2026-05-21_002",
       "level": 1,
-      "content": "Anthropic 扩建 GB200 集群",
-      "summary": "Anthropic 宣布扩建 Colossus2 超级计算机，将采用英伟达 GB",
-      "source": "https://xcancel.com/nottombrown/status/2057194829986300375",
+      "content": "谷歌确认 AI 搜索将含广告",
+      "summary": "谷歌正式宣布在 AI 模式搜索结果中植入广告，引发业界对搜索体验商业化边界的广泛",
+      "source": "https://blog.google/products/ads-commerce/google-marketing-live-search-ads/",
       "date": "2026-05-21",
       "signal_index": 1
     },
     {
       "id": "sig_2026-05-21_003",
       "level": 1,
-      "content": "Google 发布新模型及智能体栈",
-      "summary": "Google I/O 发布 Gemini 3.5 Flash 及 Omni 模型",
+      "content": "谷歌 I/O 发布新一代模型",
+      "summary": "谷歌 I/O 大会发布 Gemini 3.5 Flash 及 Omni 模型，推",
       "source": "https://news.smol.ai/issues/26-05-19-not-much/",
       "date": "2026-05-21",
       "signal_index": 2
@@ -31,48 +31,66 @@
     {
       "id": "sig_2026-05-21_004",
       "level": 1,
-      "content": "Google 反击 AI 搜索结果操纵",
-      "summary": "针对搜索引擎 AI 结果被恶意操纵的现象，Google 正在采取隐蔽措施进行防御",
-      "source": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
+      "content": "观点：AI 本质是大规模抄袭",
+      "summary": "文章犀利指出当前 AI 训练机制实为大规模未经授权抄袭，引发关于数据伦理与版权的",
+      "source": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
       "date": "2026-05-21",
       "signal_index": 3
     },
     {
       "id": "sig_2026-05-21_005",
       "level": 1,
-      "content": "PopuLoRA 提升模型推理能力",
-      "summary": "提出 PopuLoRA 新方法，通过协同进化大模型种群进行推理自我博弈，提升模型",
-      "source": "https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play",
+      "content": "论批判性看待 AI 的价值",
+      "summary": "文章探讨对 AI 保持批判态度的必要性，强调反思技术狂热有助于规避潜在风险与社会",
+      "source": "https://www.thehandbasket.co/p/hating-ai-is-good-actually",
       "date": "2026-05-21",
       "signal_index": 4
     },
     {
-      "id": "tag_2026-05-21_001",
-      "level": 2,
-      "content": "OpenAI",
-      "date": "2026-05-21"
-    },
-    {
       "id": "tag_2026-05-21_002",
       "level": 2,
-      "content": "Google I/O 发布",
-      "date": "2026-05-21"
-    },
-    {
-      "id": "tag_2026-05-21_003",
-      "level": 2,
-      "content": "谷歌正积极应对针对其 AI",
+      "content": "Anthropic 宣布扩建",
       "date": "2026-05-21"
     },
     {
       "id": "tag_2026-05-21_004",
       "level": 2,
-      "content": "提出 PopuLoRA 框架",
+      "content": "针对搜索引擎 AI",
       "date": "2026-05-21"
     },
     {
       "id": "tag_2026-05-21_005",
       "level": 2,
+      "content": "提出 PopuLoRA 新方法",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_001",
+      "level": 3,
+      "content": "OpenAI",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_002",
+      "level": 3,
+      "content": "Google I/O 发布",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_003",
+      "level": 3,
+      "content": "谷歌正积极应对针对其 AI",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_004",
+      "level": 3,
+      "content": "提出 PopuLoRA 框架",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_005",
+      "level": 3,
       "content": "引入形式化验证机制作为 AI",
       "date": "2026-05-21"
     },
