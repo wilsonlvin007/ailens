@@ -480,7 +480,7 @@ jobs:
               return result.strip()
 
           MAX_L1 = 5
-          MAX_TOTAL = 27
+          MAX_TOTAL = 36
 
           old_state = load_hero_state()
           old_items = old_state.get('items', [])
