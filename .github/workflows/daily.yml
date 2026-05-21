@@ -428,17 +428,7 @@ jobs:
                       pass
               return {'updated_at': '', 'items': []}
 
-              def _smart_truncate(text, max_len):
-                  """智能截断：优先在标点处断句，避免截出碎片"""
-                  if len(text) <= max_len:
-                      return text
-                  for sep in ['。', '，', '！', '？', '；', '：', '、']:
-                      idx = text.rfind(sep, 0, max_len)
-                      if idx > max_len // 2:
-                          return text[:idx + 1]
-                  return text[:max_len]
-
-              def extract_topic(item):
+          def extract_topic(item):
               """从 L1 提取 L2 核心话题。
               原则：宁可完整略长，绝不截断出不完整表述（如 'Gem'、'For'、'Chat'）。
               """
@@ -474,6 +464,20 @@ jobs:
                   return _smart_truncate(core, MAX_LEN)
               return _smart_truncate(title, MAX_LEN)
 
+
+          def _smart_truncate(text, max_len):
+              """在词边界截断，绝不切割英文单词"""
+              if len(text) <= max_len:
+                  return text
+              result = text[:max_len]
+              for i in range(len(result) - 1, 2, -1):
+                  if result[i] in (' ', '，', '。', '、', '；', '：', '（', '('):
+                      return result[:i].strip()
+              if result[-1].isalnum() and len(text) > max_len and text[max_len].isalnum():
+                  last_space = result.rfind(' ')
+                  if last_space > 2:
+                      return result[:last_space].strip()
+              return result.strip()
 
           MAX_L1 = 5
           MAX_TOTAL = 36
