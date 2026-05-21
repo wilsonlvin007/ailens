@@ -5,7 +5,7 @@
       "id": "sig_2026-05-21_001",
       "level": 1,
       "content": "OpenAI 模型证伪几何猜想",
-      "summary": "OpenAI 模型成功证伪离散几何核心猜想，标志 AI 在基础科学发现领域取得突",
+      "summary": "OpenAI 模型成功证伪离散几何核心猜想，标志 AI 在基础科学发现领域取得实",
       "source": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
       "date": "2026-05-21",
       "signal_index": 0
@@ -14,7 +14,7 @@
       "id": "sig_2026-05-21_002",
       "level": 1,
       "content": "谷歌确认 AI 搜索将含广告",
-      "summary": "谷歌正式宣布在 AI 模式搜索结果中植入广告，引发业界对搜索体验商业化边界的广泛",
+      "summary": "谷歌正式宣布在 AI 模式搜索结果中植入广告，引发关于生成式 AI 商业化边界与",
       "source": "https://blog.google/products/ads-commerce/google-marketing-live-search-ads/",
       "date": "2026-05-21",
       "signal_index": 1
@@ -22,45 +22,75 @@
     {
       "id": "sig_2026-05-21_003",
       "level": 1,
-      "content": "谷歌 I/O 发布新一代模型",
-      "summary": "谷歌 I/O 大会发布 Gemini 3.5 Flash 及 Omni 模型，推",
-      "source": "https://news.smol.ai/issues/26-05-19-not-much/",
+      "content": "谷歌 I/O 发布多项 AI 新品",
+      "summary": "谷歌 I/O 大会汇总百项更新，重点推出 Gemini 新模型及智能体堆栈，全面",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
       "date": "2026-05-21",
       "signal_index": 2
     },
     {
       "id": "sig_2026-05-21_004",
       "level": 1,
-      "content": "观点：AI 本质是大规模抄袭",
-      "summary": "文章犀利指出当前 AI 训练机制实为大规模未经授权抄袭，引发关于数据伦理与版权的",
-      "source": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
+      "content": "详解 Gemini 3.5 与智能体栈",
+      "summary": "深度解析谷歌 I/O 技术细节，聚焦 Gemini 3.5 Flash 特性及全",
+      "source": "https://news.smol.ai/issues/26-05-19-not-much/",
       "date": "2026-05-21",
       "signal_index": 3
     },
     {
       "id": "sig_2026-05-21_005",
       "level": 1,
-      "content": "论批判性看待 AI 的价值",
-      "summary": "文章探讨对 AI 保持批判态度的必要性，强调反思技术狂热有助于规避潜在风险与社会",
-      "source": "https://www.thehandbasket.co/p/hating-ai-is-good-actually",
+      "content": "文章称 AI 本质是大规模抄袭",
+      "summary": "尖锐观点指出当前大模型训练实质是大规模未授权抄袭，引发对数据版权与 AI 伦理的",
+      "source": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
       "date": "2026-05-21",
       "signal_index": 4
     },
     {
+      "id": "tag_2026-05-21_001",
+      "level": 2,
+      "content": "OpenAI 模型成功证伪离散几何核心猜想，标志",
+      "date": "2026-05-21"
+    },
+    {
       "id": "tag_2026-05-21_002",
       "level": 2,
-      "content": "Anthropic 宣布扩建",
+      "content": "谷歌正式宣布在 AI 模式搜索结果中植入广告",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "tag_2026-05-21_003",
+      "level": 2,
+      "content": "谷歌 I/O 大会发布 Gemini 3.5",
       "date": "2026-05-21"
     },
     {
       "id": "tag_2026-05-21_004",
       "level": 2,
-      "content": "针对搜索引擎 AI",
+      "content": "文章犀利指出当前 AI",
       "date": "2026-05-21"
     },
     {
       "id": "tag_2026-05-21_005",
       "level": 2,
+      "content": "文章探讨对 AI 保持批判态度的必要性",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_002",
+      "level": 3,
+      "content": "Anthropic 宣布扩建",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_004",
+      "level": 3,
+      "content": "针对搜索引擎 AI",
+      "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-21_005",
+      "level": 3,
       "content": "提出 PopuLoRA 新方法",
       "date": "2026-05-21"
     },
