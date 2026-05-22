@@ -1,86 +1,62 @@
 {
-  "updated_at": "2026-05-22",
+  "updated_at": "2026-05-23",
   "items": [
     {
-      "id": "sig_2026-05-22_001",
+      "id": "sig_2026-05-23_001",
       "level": 1,
-      "content": "谷歌发布 Gemini 3.5 及智能体栈",
-      "summary": "谷歌 I/O 大会推出 Gemini 3.5 Flash、Omni 模型及全新智",
-      "source": "https://news.smol.ai/issues/26-05-19-not-much/",
-      "date": "2026-05-22",
+      "content": "多智能体系统遭新型注入攻击",
+      "summary": "研究发现领域伪装注入攻击可绕过检测，暴露多智能体 LLM 系统重大安全漏洞。",
+      "source": "https://arxiv.org/abs/2605.22001",
+      "date": "2026-05-23",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-05-22_002",
+      "id": "sig_2026-05-23_002",
       "level": 1,
-      "content": "Waymo 因洪水暂停亚特兰大服务",
-      "summary": "Waymo 机器人出租车因频繁误入洪水区域，存在安全隐患，被迫暂停亚特兰大地区运",
-      "source": "https://techcrunch.com/2026/05/21/waymo-pauses-atlanta-service-as-its-robotaxis-keep-driving-into-floods/",
-      "date": "2026-05-22",
+      "content": "Antigravity 2.0 登顶架构基准",
+      "summary": "Antigravity 2.0 在 OpenSCAD 架构 3D 基准测试中表现",
+      "source": "https://modelrift.com/blog/openscad-llm-benchmark/",
+      "date": "2026-05-23",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-05-22_003",
+      "id": "sig_2026-05-23_003",
       "level": 1,
-      "content": "新论文提出多流 LLM 架构",
-      "summary": "新研究提出多流大语言模型架构，实现提示解析、逻辑推理与输入输出的并行化处理。",
-      "source": "https://arxiv.org/abs/2605.12460",
-      "date": "2026-05-22",
+      "content": "开源数据库汇总 AI 模型规格",
+      "summary": "Models.dev 发布开源数据库，整合模型规格、定价及能力数据，助力开发者高",
+      "source": "https://github.com/anomalyco/models.dev",
+      "date": "2026-05-23",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-05-22_004",
-      "level": 1,
-      "content": "谷歌汇总 I/O 2026 百项更新",
-      "summary": "谷歌官方博客详细梳理了 I/O 2026 大会上发布的百项产品更新与技术落地细节",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
-      "date": "2026-05-22",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-05-22_005",
-      "level": 1,
-      "content": "谷歌 Beam 实验优化会议体验",
-      "summary": "谷歌推出 Google Beam 实验性功能，利用 AI 技术优化多人会议体验与",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-beam-group-meetings/",
-      "date": "2026-05-22",
-      "signal_index": 4
-    },
-    {
-      "id": "tag_2026-05-22_003",
+      "id": "tag_2026-05-23_001",
       "level": 2,
-      "content": "谷歌 I/O 大会汇总百项更新，重点推出",
-      "date": "2026-05-22"
+      "content": "谷歌 I/O 大会推出 Gemini 3.5",
+      "date": "2026-05-23"
     },
     {
-      "id": "tag_2026-05-22_004",
+      "id": "tag_2026-05-23_002",
       "level": 2,
-      "content": "深度解析谷歌 I/O 技术细节，聚焦",
-      "date": "2026-05-22"
+      "content": "Waymo 机器人出租车因频繁误入洪水区域",
+      "date": "2026-05-23"
     },
     {
-      "id": "tag_2026-05-22_005",
+      "id": "tag_2026-05-23_003",
       "level": 2,
-      "content": "尖锐观点指出当前大模型训练实质是大规模未授权抄袭",
-      "date": "2026-05-22"
+      "content": "新研究提出多流大语言模型架构，实现提示解析",
+      "date": "2026-05-23"
     },
     {
-      "id": "word_2026-05-19_001",
-      "level": 3,
-      "content": "谷歌将 AI 驱",
-      "date": "2026-05-19"
+      "id": "tag_2026-05-23_004",
+      "level": 2,
+      "content": "谷歌官方博客详细梳理了 I/O 2026",
+      "date": "2026-05-23"
     },
     {
-      "id": "word_2026-05-19_002",
-      "level": 3,
-      "content": "行业指出 AI ",
-      "date": "2026-05-19"
-    },
-    {
-      "id": "word_2026-05-19_003",
-      "level": 3,
-      "content": "观点文章强调 A",
-      "date": "2026-05-19"
+      "id": "tag_2026-05-23_005",
+      "level": 2,
+      "content": "谷歌推出 Google Beam 实验性功能",
+      "date": "2026-05-23"
     },
     {
       "id": "word_2026-05-19_004",
@@ -231,6 +207,24 @@
       "level": 3,
       "content": "开源项目 For",
       "date": "2026-05-21"
+    },
+    {
+      "id": "word_2026-05-22_003",
+      "level": 3,
+      "content": "谷歌 I/O 大会汇总百项更新，重点推出",
+      "date": "2026-05-22"
+    },
+    {
+      "id": "word_2026-05-22_004",
+      "level": 3,
+      "content": "深度解析谷歌 I/O 技术细节，聚焦",
+      "date": "2026-05-22"
+    },
+    {
+      "id": "word_2026-05-22_005",
+      "level": 3,
+      "content": "尖锐观点指出当前大模型训练实质是大规模未授权抄袭",
+      "date": "2026-05-22"
     }
   ]
 }
