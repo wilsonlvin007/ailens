@@ -428,35 +428,36 @@ jobs:
                       pass
               return {'updated_at': '', 'items': []}
 
-           def extract_topic(item):
-               """从标题中提取语义核心：去导语 -> 取第一主句 -> 最多18字"""
-               import re
-               title0 = (item.get('title', '') or item.get('content', '')).strip()
-               if not title0:
-                   return ''
-               MAX_LEN = 18
-
-               # Step 1: 去掉开头导语
-               intro_words = [
-                   '深度解析', '深度分析', '深入解读',
-                   '聚焦', '探讨', '分析', '解读', '盘点', '综述',
-                   '研究', '调查', '揭秘', '曝光', '实测', '对比',
-                   '观点', '评论', 'Preview', 'Review',
-               ]
-               for w in sorted(intro_words, key=len, reverse=True):
-                   if title0.startswith(w):
-                       title0 = title0[len(w):].lstrip('：: ')
-                       break
-
-               # Step 2: 取第一个分句
-               min_len = 4 if len(title0) > 10 else 2
-               for sep in ['，', '。', '；', '、']:
-                   idx = title0.find(sep)
-                   if idx > 0 and idx >= min_len:
-                       title0 = title0[:idx].strip()
-                       break
-
-               # Step 3: 截断
-               if len(title0) <= MAX_LEN:
-                   return title0
-               return _smart_truncate(title0, MAX_LEN)
+              
+              def extract_topic(item):
+                  """从标题中提取语义核心：去导语 -> 取第一主句 -> 最多18字"""
+                  import re
+                  title0 = (item.get('title', '') or item.get('content', '')).strip()
+                  if not title0:
+                      return ''
+                  MAX_LEN = 18
+              
+                  # Step 1: 去掉开头导语
+                  intro_words = [
+                      '深度解析', '深度分析', '深入解读',
+                      '聚焦', '探讨', '分析', '解读', '盘点', '综述',
+                      '研究', '调查', '揭秘', '曝光', '实测', '对比',
+                      '观点', '评论', 'Preview', 'Review',
+                  ]
+                  for w in sorted(intro_words, key=len, reverse=True):
+                      if title0.startswith(w):
+                          title0 = title0[len(w):].lstrip('：: ')
+                          break
+              
+                  # Step 2: 取第一个分句
+                  min_len = 4 if len(title0) > 10 else 2
+                  for sep in ['，', '。', '；', '、']:
+                      idx = title0.find(sep)
+                      if idx > 0 and idx >= min_len:
+                          title0 = title0[:idx].strip()
+                          break
+              
+                  # Step 3: 截断
+                  if len(title0) <= MAX_LEN:
+                      return title0
+                  return _smart_truncate(title0, MAX_LEN)
