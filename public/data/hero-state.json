@@ -4,29 +4,47 @@
     {
       "id": "sig_2026-05-23_001",
       "level": 1,
-      "content": "多智能体系统遭新型注入攻击",
-      "summary": "研究发现领域伪装注入攻击可绕过检测，暴露多智能体 LLM 系统重大安全漏洞。",
-      "source": "https://arxiv.org/abs/2605.22001",
+      "content": "微软称 AI 成本超人力",
+      "summary": "微软报告指出当前 AI 运营成本已高于雇佣人类员工，引发行业对经济可行性的深思。",
+      "source": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
       "date": "2026-05-23",
       "signal_index": 0
     },
     {
       "id": "sig_2026-05-23_002",
       "level": 1,
-      "content": "Antigravity 2.0 登顶架构基准",
-      "summary": "Antigravity 2.0 在 OpenSCAD 架构 3D 基准测试中表现",
-      "source": "https://modelrift.com/blog/openscad-llm-benchmark/",
+      "content": "Waymo 因洪水暂停服务",
+      "summary": "因自动驾驶出租车多次驶入洪水，Waymo 宣布在四个城市暂停服务，暴露极端天气下",
+      "source": "https://techcrunch.com/2026/05/21/waymo-pauses-service-in-four-cities-as-robotaxis-keep-driving-into-floods/",
       "date": "2026-05-23",
       "signal_index": 1
     },
     {
       "id": "sig_2026-05-23_003",
       "level": 1,
-      "content": "开源数据库汇总 AI 模型规格",
-      "summary": "Models.dev 发布开源数据库，整合模型规格、定价及能力数据，助力开发者高",
-      "source": "https://github.com/anomalyco/models.dev",
+      "content": "Antigravity 2.0 刷新架构基准",
+      "summary": "Antigravity 2.0 在 OpenSCAD 建筑 3D 大模型基准测试",
+      "source": "https://modelrift.com/blog/openscad-llm-benchmark/",
       "date": "2026-05-23",
       "signal_index": 2
+    },
+    {
+      "id": "sig_2026-05-23_004",
+      "level": 1,
+      "content": "开源模型数据库 Models.dev 发布",
+      "summary": "发布开源数据库 Models.dev，汇总各类 AI 模型的规格、定价及能力参数",
+      "source": "https://github.com/anomalyco/models.dev",
+      "date": "2026-05-23",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-05-23_005",
+      "level": 1,
+      "content": "探讨大模型文本读取优化",
+      "summary": "文章探讨大模型如何读取和理解特定文本格式，提出优化训练数据交互的新观点。",
+      "source": "https://annas-archive.gl/blog/llms-txt.html",
+      "date": "2026-05-23",
+      "signal_index": 4
     },
     {
       "id": "tag_2026-05-23_001",
@@ -59,46 +77,22 @@
       "date": "2026-05-23"
     },
     {
-      "id": "word_2026-05-19_004",
+      "id": "word_2026-05-22_003",
       "level": 3,
-      "content": "作者质疑盲目引入",
-      "date": "2026-05-19"
+      "content": "谷歌 I/O 大会汇总百项更新，重点推出",
+      "date": "2026-05-22"
     },
     {
-      "id": "word_2026-05-19_005",
+      "id": "word_2026-05-22_004",
       "level": 3,
-      "content": "谷歌展示创意专家",
-      "date": "2026-05-19"
+      "content": "深度解析谷歌 I/O 技术细节，聚焦",
+      "date": "2026-05-22"
     },
     {
-      "id": "word_2026-05-20_001",
+      "id": "word_2026-05-22_005",
       "level": 3,
-      "content": "攻击者借助 Cl",
-      "date": "2026-05-20"
-    },
-    {
-      "id": "word_2026-05-20_002",
-      "level": 3,
-      "content": "Anthropi",
-      "date": "2026-05-20"
-    },
-    {
-      "id": "word_2026-05-20_003",
-      "level": 3,
-      "content": "法院驳回马斯克对",
-      "date": "2026-05-20"
-    },
-    {
-      "id": "word_2026-05-20_004",
-      "level": 3,
-      "content": "研究揭示语音 A",
-      "date": "2026-05-20"
-    },
-    {
-      "id": "word_2026-05-20_005",
-      "level": 3,
-      "content": "新论文指出 AI",
-      "date": "2026-05-20"
+      "content": "尖锐观点指出当前大模型训练实质是大规模未授权抄袭",
+      "date": "2026-05-22"
     },
     {
       "id": "word_2026-05-21_001",
@@ -201,30 +195,6 @@
       "level": 3,
       "content": "Mistral ",
       "date": "2026-05-21"
-    },
-    {
-      "id": "word_2026-05-21_005",
-      "level": 3,
-      "content": "开源项目 For",
-      "date": "2026-05-21"
-    },
-    {
-      "id": "word_2026-05-22_003",
-      "level": 3,
-      "content": "谷歌 I/O 大会汇总百项更新，重点推出",
-      "date": "2026-05-22"
-    },
-    {
-      "id": "word_2026-05-22_004",
-      "level": 3,
-      "content": "深度解析谷歌 I/O 技术细节，聚焦",
-      "date": "2026-05-22"
-    },
-    {
-      "id": "word_2026-05-22_005",
-      "level": 3,
-      "content": "尖锐观点指出当前大模型训练实质是大规模未授权抄袭",
-      "date": "2026-05-22"
     }
   ]
 }
