@@ -519,8 +519,8 @@ jobs:
                   new_l1.append(old)
 
           # 旧L1中没被保留的 → 溢流入L2池
-          kept_l1_ids = {i['id'] for i in new_l1}
-          overflow_to_l2 = [i for i in old_l1_items if i['id'] not in kept_l1_ids]
+          kept_l1_content = {i['content'] for i in new_l1}
+          overflow_to_l2 = [i for i in old_l1_items if i['content'] not in kept_l1_content]
 
           # ===== L2: 溢流+旧L2，填满FIXED_L2 =====
           l2_from_overflow = []
@@ -538,8 +538,8 @@ jobs:
           new_l2 = l2_pool[:FIXED_L2]
 
           # 旧L2中没被保留的 → 溢流入L3池
-          kept_l2_ids = {i['id'] for i in new_l2}
-          overflow_to_l3 = [i for i in l2_pool if i['id'] not in kept_l2_ids]
+          kept_l2_content = {i['content'] for i in new_l2}
+          overflow_to_l3 = [i for i in l2_pool if i['content'] not in kept_l2_content]
 
           # ===== L3: 溢流+旧L3，填满FIXED_L3 =====
           l3_from_overflow = []
