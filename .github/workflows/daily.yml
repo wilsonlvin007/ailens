@@ -584,7 +584,8 @@ jobs:
           overflow_l1 = len(overflow_to_l2)
           overflow_l2 = len(overflow_to_l3)
           evicted = len(l3_pool) - FIXED_L3 if len(l3_pool) > FIXED_L3 else 0
-          print(f"Water-bucket: new={len(new_candidates)}, overflow L1->L2={overflow_l1}, L2->L3={overflow_l2}, evicted={evicted}")          print(f"Written: hero-state.json ({len(all_items)} items: L1={l1c}, L2={l2c}, L3={l3c})")
+          print(f"Water-bucket: new={len(new_candidates)}, overflow L1->L2={overflow_l1}, L2->L3={overflow_l2}, evicted={evicted}")
+          print(f"Written: hero-state.json ({len(all_items)} items: L1={l1c}, L2={l2c}, L3={l3c})")
           # ========== /hero-state.json ==========
 
           PYEOF
