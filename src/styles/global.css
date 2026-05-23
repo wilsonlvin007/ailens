@@ -103,6 +103,7 @@
     transform: scale(1.06);
   }
   .n-l1-fg .n-l1-title {
+    max-width: 10em;
     font-family: var(--font-serif);
     font-size: clamp(1.15rem, 1.45vw, 1.55rem);
     font-weight: 800;
@@ -131,6 +132,7 @@
     transform: scale(1.05);
   }
   .n-l1-mg .n-l1-title {
+    max-width: 10em;
     font-family: var(--font-serif);
     font-size: clamp(0.95rem, 1.1vw, 1.2rem);
     font-weight: 700;
@@ -161,6 +163,7 @@
     transform: scale(1.05);
   }
   .n-l1-bg .n-l1-title {
+    max-width: 10em;
     font-family: var(--font-serif);
     font-size: clamp(0.82rem, 0.9vw, 1rem);
     font-weight: 600;
@@ -180,7 +183,8 @@
     padding: 0.3rem 0;
     font-size: clamp(0.7rem, 0.8vw, 0.875rem);
     font-weight: 500;
-    white-space: nowrap;
+    white-space: normal;
+    max-width: 14em;
     color: var(--c-tag);
     opacity: 0.75;
     transition: transform 0.3s, color 0.3s, opacity 0.3s;
@@ -199,7 +203,8 @@
     letter-spacing: 0.04em;
     color: var(--c-ghost);
     opacity: 0.25;
-    white-space: nowrap;
+    white-space: normal;
+    max-width: 14em;
     transition: opacity 0.3s, color 0.3s, transform 0.3s;
   }
   .n-l3:hover {
