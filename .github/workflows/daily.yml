@@ -428,193 +428,35 @@ jobs:
                       pass
               return {'updated_at': '', 'items': []}
 
-          def extract_topic(item):
-              """从 L1 提取 L2 核心话题。
-              原则：宁可完整略长，绝不截断出不完整表述（如 'Gem'、'For'、'Chat'）。
-              """
-              import re
-              title = item.get('title', '') or ''
-              if not title:
-                  summary = item.get('summary', '') or ''
-                  if summary:
-                      for sep in ['。', '！', '？', '\n']:
-                          if sep in summary:
-                              title = summary.split(sep)[0].strip()
-                              break
-                      if not title:
-                          title = summary
-              if not title:
-                  return (item.get('content', '') or '')[:20]
-              MAX_LEN = 25
-              if len(title) <= MAX_LEN:
-                  return title
-              # 尝试提取「动词后的核心主语」
-              # 动词前至少2字符（避免把"开源项目"中的"开源"当动词，保留"微软开源"等真实动词用法）
-              actions = r'(?:发布|推出|开源|上线|宣布|更新|升级|收购|投资|融资|展示|提出|上市)'
-              m = re.search(rf'.{2,}?{actions}\s*(.+)', title)
-              if m and m.group(1) is not None:
-                  core = m.group(1).strip()
-                  if len(core) <= MAX_LEN:
-                      return core
-                  for sep in ['及', '和', '与', '，', ',', '、', '；', '（', '(']:
-                      if sep in core:
-                          first = core.split(sep)[0].strip()
-                          if first:
-                              return _smart_truncate(first, MAX_LEN)
-                  return _smart_truncate(core, MAX_LEN)
-              return _smart_truncate(title, MAX_LEN)
+           def extract_topic(item):
+               """从标题中提取语义核心：去导语 -> 取第一主句 -> 最多18字"""
+               import re
+               title0 = (item.get('title', '') or item.get('content', '')).strip()
+               if not title0:
+                   return ''
+               MAX_LEN = 18
 
+               # Step 1: 去掉开头导语
+               intro_words = [
+                   '深度解析', '深度分析', '深入解读',
+                   '聚焦', '探讨', '分析', '解读', '盘点', '综述',
+                   '研究', '调查', '揭秘', '曝光', '实测', '对比',
+                   '观点', '评论', 'Preview', 'Review',
+               ]
+               for w in sorted(intro_words, key=len, reverse=True):
+                   if title0.startswith(w):
+                       title0 = title0[len(w):].lstrip('：: ')
+                       break
 
-          def _smart_truncate(text, max_len):
-              """在词边界截断，绝不切割英文单词"""
-              if len(text) <= max_len:
-                  return text
-              result = text[:max_len]
-              for i in range(len(result) - 1, 2, -1):
-                  if result[i] in (' ', '，', '。', '、', '；', '：', '（', '('):
-                      return result[:i].strip()
-              if result[-1].isalnum() and len(text) > max_len and text[max_len].isalnum():
-                  last_space = result.rfind(' ')
-                  if last_space > 2:
-                      return result[:last_space].strip()
-              return result.strip()
+               # Step 2: 取第一个分句
+               min_len = 4 if len(title0) > 10 else 2
+               for sep in ['，', '。', '；', '、']:
+                   idx = title0.find(sep)
+                   if idx > 0 and idx >= min_len:
+                       title0 = title0[:idx].strip()
+                       break
 
-          FIXED_L1 = 5
-          FIXED_L2 = 10
-          FIXED_L3 = 20
-
-          old_state = load_hero_state()
-          old_items = old_state.get('items', [])
-          old_l1_items = [i for i in old_items if i.get('level') == 1]
-          old_l2_items = [i for i in old_items if i.get('level') == 2]
-          old_l3_items = [i for i in old_items if i.get('level') == 3]
-
-          # ===== L1: 新内容优先，不够从旧L1补水 =====
-          sorted_items = sorted(items_parsed, key=lambda x: x.get('importance', 0), reverse=True)
-          new_candidates = sorted_items[:FIXED_L1]
-
-          new_l1 = []
-          for idx, item in enumerate(new_candidates):
-              try:
-                  original_index = items_parsed.index(item)
-              except ValueError:
-                  original_index = idx
-              new_l1.append({
-                  'id': f'sig_{date}_{len(new_l1)+1:03d}',
-                  'level': 1,
-                  'content': item.get('title', ''),
-                  'summary': (item.get('summary', '') or '')[:40],
-                  'source': item.get('source', ''),
-                  'date': date,
-                  'signal_index': original_index,
-                  '_tags': item.get('tags', []),
-              })
-
-          # 新内容不够5个 → 从旧L1中补水（保留最高排名的旧L1）
-          remaining = FIXED_L1 - len(new_l1)
-          if remaining > 0 and old_l1_items:
-              for old in old_l1_items[:remaining]:
-                  old['date'] = date
-                  old['signal_index'] = None  # 补水项的signal_index清空
-                  new_l1.append(old)
-
-          # 旧L1中没被保留的 → 溢流入L2池
-          kept_l1_content = {i['content'] for i in new_l1}
-          overflow_to_l2 = [i for i in old_l1_items if i['content'] not in kept_l1_content]
-
-          # ===== L2: 溢流+旧L2，填满FIXED_L2 =====
-          l2_from_overflow = []
-          for item in overflow_to_l2:
-              topic = extract_topic({**item, 'title': item.get('content', '')})
-              l2_from_overflow.append({
-                  'id': f'tag_{date}_{len(l2_from_overflow)+1:03d}',
-                  'level': 2,
-                  'content': topic,
-                  'date': date,
-              })
-
-          l2_pool = l2_from_overflow + old_l2_items
-          l2_pool.sort(key=lambda x: x.get('date', ''), reverse=True)
-          new_l2 = l2_pool[:FIXED_L2]
-
-          # 旧L2中没被保留的 → 溢流入L3池
-          kept_l2_content = {i['content'] for i in new_l2}
-          overflow_to_l3 = [i for i in l2_pool if i['content'] not in kept_l2_content]
-
-          # ===== L3: 溢流+旧L3，填满FIXED_L3 =====
-          l3_from_overflow = []
-          for item in overflow_to_l3:
-              l3_from_overflow.append({
-                  'id': item['id'].replace('tag_', 'word_'),
-                  'level': 3,
-                  'content': item['content'],
-                  'date': item.get('date', date),
-              })
-
-          l3_pool = l3_from_overflow + old_l3_items
-          l3_pool.sort(key=lambda x: x.get('date', ''), reverse=True)
-          new_l3 = l3_pool[:FIXED_L3]
-
-          # 超出FIXED_L3的 → 淘汰（出水口）
-          all_items = new_l1 + new_l2 + new_l3
-
-          # 清理内部字段
-          for it in all_items:
-              it.pop('_tags', None)
-
-          # 去重（同 content 保留日期最新的）
-          seen = set()
-          deduped = []
-          for it in reversed(all_items):
-              key = it['content']
-              if key not in seen:
-                  seen.add(key)
-                  deduped.append(it)
-          all_items = list(reversed(deduped))
-
-          # 写盘
-          hero_state = {'updated_at': date, 'items': all_items}
-          with open(hero_state_path, 'w') as f:
-              json.dump(hero_state, f, ensure_ascii=False, indent=2)
-
-          l1c = sum(1 for i in all_items if i.get('level') == 1)
-          l2c = sum(1 for i in all_items if i.get('level') == 2)
-          l3c = sum(1 for i in all_items if i.get('level') == 3)
-          # 计算溢出和淘汰（用于日志）
-          overflow_l1 = len(overflow_to_l2)
-          overflow_l2 = len(overflow_to_l3)
-          evicted = len(l3_pool) - FIXED_L3 if len(l3_pool) > FIXED_L3 else 0
-          print(f"Water-bucket: new={len(new_candidates)}, overflow L1->L2={overflow_l1}, L2->L3={overflow_l2}, evicted={evicted}")
-          print(f"Written: hero-state.json ({len(all_items)} items: L1={l1c}, L2={l2c}, L3={l3c})")
-          # ========== /hero-state.json ==========
-
-          PYEOF
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install & Build
-        run: |
-          npm ci
-          npm run build
-
-      - name: Deploy to server via SSH
-        uses: easingthemes/ssh-deploy@main
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
-          ARGS: "-rlgoDzvc --delete"
-          SOURCE: "dist/"
-          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
-          REMOTE_USER: ubuntu
-          TARGET: "/var/www/ailens/"
-
-      - name: Commit data files back to main
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/
-          git diff --cached --quiet || git commit -m "data: update ${DATE:-$(date -u +%Y-%m-%d)} news data"
-          git push
+               # Step 3: 截断
+               if len(title0) <= MAX_LEN:
+                   return title0
+               return _smart_truncate(title0, MAX_LEN)
