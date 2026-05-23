@@ -105,7 +105,7 @@
   .n-l1-fg .n-l1-title {
     max-width: 10em;
     font-family: var(--font-serif);
-    font-size: clamp(1.15rem, 1.45vw, 1.55rem);
+    font-size: clamp(1.25rem, 1.6vw, 1.7rem);
     font-weight: 800;
     line-height: 1.3;
     color: var(--c-title);
@@ -134,7 +134,7 @@
   .n-l1-mg .n-l1-title {
     max-width: 10em;
     font-family: var(--font-serif);
-    font-size: clamp(0.95rem, 1.1vw, 1.2rem);
+    font-size: clamp(1.0rem, 1.2vw, 1.3rem);
     font-weight: 700;
     line-height: 1.3;
     color: var(--c-title);
@@ -165,7 +165,7 @@
   .n-l1-bg .n-l1-title {
     max-width: 10em;
     font-family: var(--font-serif);
-    font-size: clamp(0.82rem, 0.9vw, 1rem);
+    font-size: clamp(0.85rem, 1.0vw, 1.1rem);
     font-weight: 600;
     line-height: 1.3;
     color: var(--c-title);
@@ -181,7 +181,7 @@
   .n-l2 {
     z-index: 2;
     padding: 0.3rem 0;
-    font-size: clamp(0.7rem, 0.8vw, 0.875rem);
+    font-size: clamp(0.75rem, 0.9vw, 0.95rem);
     font-weight: 500;
     white-space: normal;
     max-width: 14em;
@@ -199,7 +199,7 @@
   /* ═══ L3: Ghost word — BACKGROUND ═══ */
   .n-l3 {
     z-index: 1;
-    font-size: clamp(0.6rem, 0.65vw, 0.75rem);
+    font-size: clamp(0.62rem, 0.68vw, 0.78rem);
     font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
     letter-spacing: 0.04em;
     color: var(--c-ghost);
