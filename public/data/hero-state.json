@@ -31,8 +31,8 @@
     {
       "id": "sig_2026-05-23_004",
       "level": 1,
-      "content": "开源模型数据库 Models.dev 发布",
-      "summary": "发布开源数据库 Models.dev，汇总各类 AI 模型的规格、定价及能力参数",
+      "content": "Models.dev 开源模型数据库",
+      "summary": "推出开源数据库 Models.dev，汇总 AI 模型规格、定价及能力数据，助力",
       "source": "https://github.com/anomalyco/models.dev",
       "date": "2026-05-23",
       "signal_index": 3
@@ -40,8 +40,8 @@
     {
       "id": "sig_2026-05-23_005",
       "level": 1,
-      "content": "探讨大模型文本读取优化",
-      "summary": "文章探讨大模型如何读取和理解特定文本格式，提出优化训练数据交互的新观点。",
+      "content": "探讨大模型文本读取规范",
+      "summary": "文章探讨大语言模型应如何读取和理解特定文本格式，涉及模型训练与数据交互伦理。",
       "source": "https://annas-archive.gl/blog/llms-txt.html",
       "date": "2026-05-23",
       "signal_index": 4
