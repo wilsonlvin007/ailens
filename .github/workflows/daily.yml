@@ -492,7 +492,7 @@ jobs:
           if not passed:
               print(f"[FATAL] {MAX_RETRIES} retries failed")
               sys.exit(1)
-PYEOF
+          PYEOF
 
       - name: Commit & push data files
         run: |
