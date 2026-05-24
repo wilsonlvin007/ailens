@@ -428,66 +428,65 @@ jobs:
                       pass
               return {'updated_at': '', 'items': []}
 
-              
-              def extract_topic(item):
-                  """从标题中提取语义核心：去导语 -> 取第一主句 -> 最多18字"""
-                  import re
-                  title0 = (item.get('title', '') or item.get('content', '')).strip()
-                  if not title0:
-                      return ''
-                  MAX_LEN = 18
-              
-                  # Step 1: 去掉开头导语
-                  intro_words = [
-                      '深度解析', '深度分析', '深入解读',
-                      '聚焦', '探讨', '分析', '解读', '盘点', '综述',
-                      '研究', '调查', '揭秘', '曝光', '实测', '对比',
-                      '观点', '评论', 'Preview', 'Review',
-                  ]
-                  for w in sorted(intro_words, key=len, reverse=True):
-                      if title0.startswith(w):
-                          title0 = title0[len(w):].lstrip('：: ')
-                          break
-              
-                  # Step 2: 取第一个分句
-                  min_len = 4 if len(title0) > 10 else 2
-                  for sep in ['，', '。', '；', '、']:
-                      idx = title0.find(sep)
-                      if idx > 0 and idx >= min_len:
-                          title0 = title0[:idx].strip()
-                          break
-              
-                  # Step 3: 截断
-                  if len(title0) <= MAX_LEN:
-                      return title0
-                  return title0[:MAX_LEN-1] + '…'
+          def extract_topic(item):
+              """从标题中提取语义核心：去导语 -> 取第一主句 -> 最多18字"""
+              import re
+              title0 = (item.get('title', '') or item.get('content', '')).strip()
+              if not title0:
+                  return ''
+              MAX_LEN = 18
+          
+              # Step 1: 去掉开头导语
+              intro_words = [
+                  '深度解析', '深度分析', '深入解读',
+                  '聚焦', '探讨', '分析', '解读', '盘点', '综述',
+                  '研究', '调查', '揭秘', '曝光', '实测', '对比',
+                  '观点', '评论', 'Preview', 'Review',
+              ]
+              for w in sorted(intro_words, key=len, reverse=True):
+                  if title0.startswith(w):
+                      title0 = title0[len(w):].lstrip('：: ')
+                      break
+          
+              # Step 2: 取第一个分句
+              min_len = 4 if len(title0) > 10 else 2
+              for sep in ['，', '。', '；', '、']:
+                  idx = title0.find(sep)
+                  if idx > 0 and idx >= min_len:
+                      title0 = title0[:idx].strip()
+                      break
+          
+              # Step 3: 截断
+              if len(title0) <= MAX_LEN:
+                  return title0
+              return title0[:MAX_LEN-1] + '…'
 
-              hero_state = load_hero_state()
-              hero_state['updated_at'] = datetime.now(timezone(timedelta(hours=8))).isoformat()
+          hero_state = load_hero_state()
+          hero_state['updated_at'] = datetime.now(timezone(timedelta(hours=8))).isoformat()
 
-              # 从当天 items 生成 hero items
-              new_hero_items = []
-              for i, item in enumerate(items_parsed):
-                  level = 1 if item.get('importance', 3) >= 4 else (2 if item.get('importance', 3) >= 2 else 3)
-                  topic = extract_topic(item)
-                  new_hero_items.append({
-                      'id': item.get('id', f'{date}-{i+1:03d}'),
-                      'level': level,
-                      'content': topic or item.get('title', ''),
-                      'summary': item.get('summary', ''),
-                      'source': item.get('source', ''),
-                      'date': date,
-                      'signal_index': i,
-                  })
+          # 从当天 items 生成 hero items
+          new_hero_items = []
+          for i, item in enumerate(items_parsed):
+              level = 1 if item.get('importance', 3) >= 4 else (2 if item.get('importance', 3) >= 2 else 3)
+              topic = extract_topic(item)
+              new_hero_items.append({
+                  'id': item.get('id', f'{date}-{i+1:03d}'),
+                  'level': level,
+                  'content': topic or item.get('title', ''),
+                  'summary': item.get('summary', ''),
+                  'source': item.get('source', ''),
+                  'date': date,
+                  'signal_index': i,
+              })
 
-              # 合并历史 hero items（去重），保留最近 60 条
-              existing_ids = {it['id'] for it in new_hero_items}
-              old_items = [it for it in hero_state.get('items', []) if it.get('id', '') not in existing_ids]
-              hero_state['items'] = (new_hero_items + old_items)[:60]
+          # 合并历史 hero items（去重），保留最近 60 条
+          existing_ids = {it['id'] for it in new_hero_items}
+          old_items = [it for it in hero_state.get('items', []) if it.get('id', '') not in existing_ids]
+          hero_state['items'] = (new_hero_items + old_items)[:60]
 
-              with open(hero_state_path, 'w') as f:
-                  json.dump(hero_state, f, ensure_ascii=False, indent=2)
-              print(f"Written: hero-state.json ({len(hero_state['items'])} items)")
+          with open(hero_state_path, 'w') as f:
+              json.dump(hero_state, f, ensure_ascii=False, indent=2)
+          print(f"Written: hero-state.json ({len(hero_state['items'])} items)")
           # end for
           if not passed:
               print(f"[FATAL] {MAX_RETRIES} retries failed")
