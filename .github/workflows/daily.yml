@@ -460,4 +460,44 @@ jobs:
                   # Step 3: 截断
                   if len(title0) <= MAX_LEN:
                       return title0
-                  return _smart_truncate(title0, MAX_LEN)
+                  return title0[:MAX_LEN-1] + '…'
+
+              hero_state = load_hero_state()
+              hero_state['updated_at'] = datetime.now(timezone(timedelta(hours=8))).isoformat()
+
+              # 从当天 items 生成 hero items
+              new_hero_items = []
+              for i, item in enumerate(items_parsed):
+                  level = 1 if item.get('importance', 3) >= 4 else (2 if item.get('importance', 3) >= 2 else 3)
+                  topic = extract_topic(item)
+                  new_hero_items.append({
+                      'id': item.get('id', f'{date}-{i+1:03d}'),
+                      'level': level,
+                      'content': topic or item.get('title', ''),
+                      'summary': item.get('summary', ''),
+                      'source': item.get('source', ''),
+                      'date': date,
+                      'signal_index': i,
+                  })
+
+              # 合并历史 hero items（去重），保留最近 60 条
+              existing_ids = {it['id'] for it in new_hero_items}
+              old_items = [it for it in hero_state.get('items', []) if it.get('id', '') not in existing_ids]
+              hero_state['items'] = (new_hero_items + old_items)[:60]
+
+              with open(hero_state_path, 'w') as f:
+                  json.dump(hero_state, f, ensure_ascii=False, indent=2)
+              print(f"Written: hero-state.json ({len(hero_state['items'])} items)")
+          # end for
+          if not passed:
+              print(f"[FATAL] {MAX_RETRIES} retries failed")
+              sys.exit(1)
+PYEOF
+
+      - name: Commit & push data files
+        run: |
+          git config user.name "ailens-bot"
+          git config user.email "bot@ailens.news"
+          git add public/data/
+          git diff --staged --quiet || git commit -m "data: daily $(date +%Y-%m-%d)"
+          git push
