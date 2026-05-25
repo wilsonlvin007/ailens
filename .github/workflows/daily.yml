@@ -461,32 +461,106 @@ jobs:
                   return title0
               return title0[:MAX_LEN-1] + '…'
 
-          hero_state = load_hero_state()
-          hero_state['updated_at'] = datetime.now(timezone(timedelta(hours=8))).isoformat()
+          FIXED_L1 = 5
+          FIXED_L2 = 10
+          FIXED_L3 = 20
 
-          # 从当天 items 生成 hero items
-          new_hero_items = []
-          for i, item in enumerate(items_parsed):
-              level = 1 if item.get('importance', 3) >= 4 else (2 if item.get('importance', 3) >= 2 else 3)
-              topic = extract_topic(item)
-              new_hero_items.append({
-                  'id': item.get('id', f'{date}-{i+1:03d}'),
-                  'level': level,
-                  'content': topic or item.get('title', ''),
-                  'summary': item.get('summary', ''),
+          old_state = load_hero_state()
+          old_items = old_state.get('items', [])
+          old_l1_items = [i for i in old_items if i.get('level') == 1]
+          old_l2_items = [i for i in old_items if i.get('level') == 2]
+          old_l3_items = [i for i in old_items if i.get('level') == 3]
+
+          # ===== L1: 新内容优先，不够从旧L1补水 =====
+          sorted_items = sorted(items_parsed, key=lambda x: x.get('importance', 0), reverse=True)
+          new_candidates = sorted_items[:FIXED_L1]
+
+          new_l1 = []
+          for idx, item in enumerate(new_candidates):
+              try:
+                  original_index = items_parsed.index(item)
+              except ValueError:
+                  original_index = idx
+              new_l1.append({
+                  'id': f'sig_{date}_{len(new_l1)+1:03d}',
+                  'level': 1,
+                  'content': item.get('title', ''),
+                  'summary': (item.get('summary', '') or '')[:40],
                   'source': item.get('source', ''),
                   'date': date,
-                  'signal_index': i,
+                  'signal_index': original_index,
+                  '_tags': item.get('tags', []),
               })
 
-          # 合并历史 hero items（去重），保留最近 60 条
-          existing_ids = {it['id'] for it in new_hero_items}
-          old_items = [it for it in hero_state.get('items', []) if it.get('id', '') not in existing_ids]
-          hero_state['items'] = (new_hero_items + old_items)[:60]
+          # 补水
+          remaining = FIXED_L1 - len(new_l1)
+          if remaining > 0 and old_l1_items:
+              for old in old_l1_items[:remaining]:
+                  old['date'] = date
+                  old['signal_index'] = None
+                  new_l1.append(old)
 
+          # 溢流到L2
+          kept_l1_content = {i['content'] for i in new_l1}
+          overflow_to_l2 = [i for i in old_l1_items if i['content'] not in kept_l1_content]
+
+          # ===== L2 =====
+          l2_from_overflow = []
+          for item in overflow_to_l2:
+              topic = extract_topic({**item, 'title': item.get('content', '')})
+              l2_from_overflow.append({
+                  'id': f'tag_{date}_{len(l2_from_overflow)+1:03d}',
+                  'level': 2,
+                  'content': topic,
+                  'date': date,
+              })
+
+          l2_pool = l2_from_overflow + old_l2_items
+          l2_pool.sort(key=lambda x: x.get('date', ''), reverse=True)
+          new_l2 = l2_pool[:FIXED_L2]
+
+          kept_l2_content = {i['content'] for i in new_l2}
+          overflow_to_l3 = [i for i in l2_pool if i['content'] not in kept_l2_content]
+
+          # ===== L3 =====
+          l3_from_overflow = []
+          for item in overflow_to_l3:
+              l3_from_overflow.append({
+                  'id': item['id'].replace('tag_', 'word_'),
+                  'level': 3,
+                  'content': item['content'],
+                  'date': item.get('date', date),
+              })
+
+          l3_pool = l3_from_overflow + old_l3_items
+          l3_pool.sort(key=lambda x: x.get('date', ''), reverse=True)
+          new_l3 = l3_pool[:FIXED_L3]
+
+          all_items = new_l1 + new_l2 + new_l3
+          for it in all_items:
+              it.pop('_tags', None)
+
+          seen = set()
+          deduped = []
+          for it in reversed(all_items):
+              key = it['content']
+              if key not in seen:
+                  seen.add(key)
+                  deduped.append(it)
+          all_items = list(reversed(deduped))
+
+          hero_state = {'updated_at': date, 'items': all_items}
           with open(hero_state_path, 'w') as f:
               json.dump(hero_state, f, ensure_ascii=False, indent=2)
-          print(f"Written: hero-state.json ({len(hero_state['items'])} items)")
+
+          l1c = sum(1 for i in all_items if i.get('level') == 1)
+          l2c = sum(1 for i in all_items if i.get('level') == 2)
+          l3c = sum(1 for i in all_items if i.get('level') == 3)
+          overflow_l1 = len(overflow_to_l2)
+          overflow_l2 = len(overflow_to_l3)
+          evicted = len(l3_pool) - FIXED_L3 if len(l3_pool) > FIXED_L3 else 0
+          print(f"Water-bucket: new={len(new_candidates)}, overflow L1->L2={overflow_l1}, L2->L3={overflow_l2}, evicted={evicted}")
+          print(f"Written: hero-state.json ({len(all_items)} items: L1={l1c}, L2={l2c}, L3={l3c})")
           # end for
           if not passed:
               print(f"[FATAL] {MAX_RETRIES} retries failed")
