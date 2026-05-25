@@ -574,3 +574,7 @@ jobs:
           git add public/data/
           git diff --staged --quiet || git commit -m "data: daily $(date +%Y-%m-%d)"
           git push
+      - name: Trigger Deploy Site
+        run: gh workflow run "Deploy Site" --repo wilsonlvin007/ailens
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
