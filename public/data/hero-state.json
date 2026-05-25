@@ -1,50 +1,74 @@
 {
-  "updated_at": "2026-05-25",
+  "updated_at": "2026-05-26",
   "items": [
     {
-      "id": "sig_2026-05-25_001",
+      "id": "sig_2026-05-26_001",
       "level": 1,
       "content": "谷歌发布 Gemini 3.5 及智能体栈",
-      "summary": "谷歌 I/O 大会推出 Gemini 3.5 系列模型与全新智能体堆栈，加速 A",
+      "summary": "谷歌推出 Gemini 3.5 系列模型与全新智能体开发栈，确立多模态交互与自主",
       "source": "https://news.smol.ai/issues/26-05-19-not-much/",
-      "date": "2026-05-25",
+      "date": "2026-05-26",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-05-25_002",
+      "id": "sig_2026-05-26_002",
       "level": 1,
-      "content": "内存成本占 AI 芯片总额近三分之二",
-      "summary": "最新研究显示，内存组件成本已飙升至 AI 芯片总成本的近三分之二，成为制约算力扩",
-      "source": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
-      "date": "2026-05-25",
+      "content": "挪威采用华为存储训练大模型",
+      "summary": "挪威部署 2PB 华为闪存存储用于大模型训练，验证了非美系高性能硬件在 AI 基",
+      "source": "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-lll-training/5244910",
+      "date": "2026-05-26",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-05-25_003",
+      "id": "sig_2026-05-26_003",
       "level": 1,
-      "content": "研究揭示智能体代码生成约束衰减",
-      "summary": "新论文指出大模型智能体在后端代码生成中易出现约束衰减现象，长程任务稳定性仍待突破",
-      "source": "https://arxiv.org/abs/2605.06445",
-      "date": "2026-05-25",
+      "content": "谷歌汇总 I/O 大会百项发布",
+      "summary": "谷歌系统梳理 I/O 大会百项更新，全面展示从底层模型到行业应用落地的完整 AI",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "date": "2026-05-26",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-05-25_004",
+      "id": "sig_2026-05-26_004",
       "level": 1,
-      "content": "谷歌实验 AI 优化 Beam 群组会议",
-      "summary": "谷歌在 Beam 平台测试新 AI 功能，旨在通过实时辅助提升群组会议效率与协作",
+      "content": "谷歌 Beam 实验优化群组会议",
+      "summary": "谷歌 Beam 引入 AI 实验功能，通过实时分析与引导优化群组会议流程，提升远",
       "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-beam-group-meetings/",
-      "date": "2026-05-25",
+      "date": "2026-05-26",
       "signal_index": 3
     },
     {
-      "id": "2026-05-25-001",
+      "id": "sig_2026-05-26_005",
       "level": 1,
+      "content": "荷兰查获服务器打击网络攻击",
+      "summary": "荷兰执法部门查获 800 台服务器并逮捕嫌疑人，揭示算力资源被滥用协助网络攻击的",
+      "source": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/",
+      "date": "2026-05-26",
+      "signal_index": 4
+    },
+    {
+      "id": "tag_2026-05-26_001",
+      "level": 2,
+      "content": "内存成本占 AI 芯片总额近三分之二",
+      "date": "2026-05-26"
+    },
+    {
+      "id": "tag_2026-05-26_002",
+      "level": 2,
+      "content": "揭示智能体代码生成约束衰减",
+      "date": "2026-05-26"
+    },
+    {
+      "id": "tag_2026-05-26_003",
+      "level": 2,
+      "content": "谷歌实验 AI 优化 Beam 群…",
+      "date": "2026-05-26"
+    },
+    {
+      "id": "tag_2026-05-26_004",
+      "level": 2,
       "content": "DeepSeek 旗舰模型永久降价",
-      "summary": "DeepSeek 宣布对其旗舰 AI 模型实施永久性 75% 降价，大幅降低用户调用成本，加剧行业价格竞争。",
-      "source": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
-      "date": "2026-05-25",
-      "signal_index": null
+      "date": "2026-05-26"
     },
     {
       "id": "tag_2026-05-25_001",
@@ -83,34 +107,28 @@
       "date": "2026-05-25"
     },
     {
-      "id": "tag_2026-05-25_007",
-      "level": 2,
+      "id": "word_2026-05-25_007",
+      "level": 3,
       "content": "开源数据库 Models.dev …",
       "date": "2026-05-25"
     },
     {
-      "id": "tag_2026-05-25_008",
-      "level": 2,
+      "id": "word_2026-05-25_008",
+      "level": 3,
       "content": "大模型文本读取机制",
       "date": "2026-05-25"
     },
     {
       "id": "2026-05-25-003",
-      "level": 2,
+      "level": 3,
       "content": "内存成 AI 芯片主要成本驱动因素",
-      "summary": "最新数据显示，内存在 AI 芯片组件成本中占比激增至近三分之二，成为制约算力扩张的关键瓶颈。",
-      "source": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
-      "date": "2026-05-25",
-      "signal_index": 2
+      "date": "2026-05-25"
     },
     {
       "id": "2026-05-25-004",
-      "level": 2,
+      "level": 3,
       "content": "揭示 LLM 智能体约束衰减问题",
-      "summary": "新研究指出大语言模型智能体在后端代码生成中存在约束衰减现象，导致长任务执行可靠性下降。",
-      "source": "https://arxiv.org/abs/2605.06445",
-      "date": "2026-05-25",
-      "signal_index": 3
+      "date": "2026-05-25"
     },
     {
       "id": "2026-05-25-005",
@@ -206,30 +224,6 @@
       "id": "word_2026-05-21_002",
       "level": 3,
       "content": "谷歌正式宣布在 AI 模式搜索结果中植入广告",
-      "date": "2026-05-21"
-    },
-    {
-      "id": "word_2026-05-21_003",
-      "level": 3,
-      "content": "谷歌 I/O 大会发布 Gemini 3.5",
-      "date": "2026-05-21"
-    },
-    {
-      "id": "word_2026-05-21_004",
-      "level": 3,
-      "content": "文章犀利指出当前 AI",
-      "date": "2026-05-21"
-    },
-    {
-      "id": "word_2026-05-21_005",
-      "level": 3,
-      "content": "文章探讨对 AI 保持批判态度的必要性",
-      "date": "2026-05-21"
-    },
-    {
-      "id": "word_2026-05-21_002",
-      "level": 3,
-      "content": "Anthropic 宣布扩建",
       "date": "2026-05-21"
     }
   ]
