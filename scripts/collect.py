@@ -167,6 +167,12 @@ def main():
         ("https://openai.com/blog/rss.xml", "OpenAI Blog"),
         ("https://www.anthropic.com/news/rss", "Anthropic News"),
         ("https://mistral.ai/news/rss/", "Mistral AI"),
+        ("https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "The Verge AI"),
+        ("https://arstechnica.com/ai/rss", "Ars Technica AI"),
+        ("https://venturebeat.com/category/ai/feed/", "VentureBeat AI"),
+        ("https://www.marktechpost.com/feed/", "MarkTechPost"),
+        ("https://www.artificialintelligence-news.com/feed/", "AI News"),
+        ("https://techcrunch.com/category/artificial-intelligence/feed/", "TechCrunch AI"),
     ]
     for feed_url, source_name in feeds:
         print(f"  Collecting {source_name}...")
