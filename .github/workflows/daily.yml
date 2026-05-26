@@ -529,7 +529,7 @@ jobs:
                       'signal_index': original_index,
                       '_tags': item.get('tags', []),
                   })
-              # 还不够从旧L1补（兜底）
+              # 还不够从旧L1补（兜底，但排除已发布过的来源）
               still_need = FIXED_L1 - len(new_l1)
               if still_need > 0 and old_l1_items:
                   for old in old_l1_items[:still_need]:
