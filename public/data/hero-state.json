@@ -2,10 +2,28 @@
   "updated_at": "2026-05-26",
   "items": [
     {
+      "id": "sig_2026-05-26_001",
+      "level": 1,
+      "content": "Claude 独立发现 macOS 内核漏洞",
+      "summary": "AI 模型 Claude 自主挖掘出 macOS 内核严重漏洞，验证了其在系统级",
+      "source": "https://support.apple.com/en-us/127115",
+      "date": "2026-05-26",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-05-26_002",
+      "level": 1,
+      "content": "挪威建华为集群训练大模型",
+      "summary": "挪威部署 2PB 华为闪存存储构建算力集群，凸显高性能存储在大模型训练中的基石作",
+      "source": "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910",
+      "date": "2026-05-26",
+      "signal_index": 2
+    },
+    {
       "id": "sig_2026-05-26_003",
       "level": 1,
-      "content": "AI 辅助编程需慢工出细活",
-      "summary": "文章提出 AI 编程新范式：通过放缓编码节奏换取更高代码质量，反思人机协作中的效",
+      "content": "利用 AI 慢速编写高质量代码",
+      "summary": "文章倡导在 AI 辅助编程中采取“慢策略”，通过深度审查换取更高的代码质量与可维",
       "source": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
       "date": "2026-05-26",
       "signal_index": 3
@@ -13,20 +31,26 @@
     {
       "id": "sig_2026-05-26_004",
       "level": 1,
-      "content": "谷歌 I/O 探讨 AI 伦理与未来",
-      "summary": "谷歌 I/O 对话阶段聚焦 AI 伦理、社会影响及技术演进，汇集多方观点展望负责",
+      "content": "谷歌 I/O 展示 AI 行业落地案例",
+      "summary": "谷歌 I/O 大会回顾展示了 AI 在医疗诊断、个性化教育等垂直领域的深度应用与",
       "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
       "date": "2026-05-26",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-05-26_001",
+      "id": "sig_2026-05-26_003",
       "level": 1,
-      "content": "Claude 独立发现 macOS 内核漏洞",
-      "summary": "AI 模型 Claude 自主挖掘出苹果 macOS 内核高危漏洞，验证了 AI",
-      "source": "https://support.apple.com/en-us/127115",
+      "content": "AI 辅助编程需慢工出细活",
+      "summary": "文章提出 AI 编程新范式：通过放缓编码节奏换取更高代码质量，反思人机协作中的效",
+      "source": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
       "date": "2026-05-26",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-05-26_001",
+      "level": 2,
+      "content": "谷歌 I/O 探讨 AI 伦理与未来",
+      "date": "2026-05-26"
     },
     {
       "id": "tag_2026-05-26_001",
