@@ -480,7 +480,12 @@ jobs:
           for it in old_l2_items:
               if it.get('source'):
                   yesterday_sources.add(it['source'])
+          print(f"[DEDUP] yesterday_sources count: {len(yesterday_sources)}")
+          # print first few for debug
+          for s in list(yesterday_sources)[:3]:
+              print(f"[DEDUP]   src: {s[:80]}")
           fresh_items = [it for it in items_parsed if it.get('source', '') not in yesterday_sources]
+          print(f"[DEDUP] items_parsed={len(items_parsed)}, fresh_items={len(fresh_items)}, filtered={len(items_parsed)-len(fresh_items)}")
           if not fresh_items:
               fresh_items = items_parsed  # fallback: 全部被过滤时保持原样
           sorted_items = sorted(fresh_items, key=lambda x: x.get('importance', 0), reverse=True)
