@@ -4,6 +4,42 @@
     {
       "id": "sig_2026-05-26_001",
       "level": 1,
+      "content": "Claude 独立发现 macOS 内核漏洞",
+      "summary": "AI 模型 Claude 自主挖掘出苹果 macOS 内核高危漏洞，验证了 AI",
+      "source": "https://support.apple.com/en-us/127115",
+      "date": "2026-05-26",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-05-26_002",
+      "level": 1,
+      "content": "挪威用华为存储训练大模型",
+      "summary": "挪威部署 2PB 华为闪存存储用于大模型训练，证实非美系硬件在高性能 AI 基础",
+      "source": "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910",
+      "date": "2026-05-26",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-05-26_003",
+      "level": 1,
+      "content": "AI 编程新范式：慢工出细活",
+      "summary": "文章探讨利用 AI 辅助编程的新思路：牺牲生成速度，换取更高代码质量与可维护性。",
+      "source": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
+      "date": "2026-05-26",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-05-26_004",
+      "level": 1,
+      "content": "谷歌 I/O 对话环节深度回顾",
+      "summary": "回顾谷歌 I/O 大会对话环节，深入解析谷歌关于 AI 伦理、未来交互及行业影响",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+      "date": "2026-05-26",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-05-26_001",
+      "level": 1,
       "content": "谷歌发布 Gemini 3.5 及智能体栈",
       "summary": "谷歌推出 Gemini 3.5 系列模型与智能体栈，确立多模态交互与自主任务执行",
       "source": "https://news.smol.ai/issues/26-05-19-not-much/",
@@ -11,31 +47,16 @@
       "signal_index": null
     },
     {
-      "id": "sig_2026-05-26_002",
-      "level": 1,
-      "content": "Claude 独立发现 macOS 内核漏洞",
-      "summary": "AI 模型 Claude 自主挖掘出 macOS 严重内核漏洞，验证了人工智能在",
-      "source": "https://support.apple.com/en-us/127115",
-      "date": "2026-05-26",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-05-26_003",
-      "level": 1,
+      "id": "tag_2026-05-26_001",
+      "level": 2,
       "content": "挪威采用华为存储训练大模型",
-      "summary": "挪威部署 2PB 华为闪存构建 AI 基础设施，凸显高性能存储在大规模模型训练中",
-      "source": "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-lll-training/5244910",
-      "date": "2026-05-26",
-      "signal_index": null
+      "date": "2026-05-26"
     },
     {
-      "id": "sig_2026-05-26_004",
-      "level": 1,
+      "id": "tag_2026-05-26_002",
+      "level": 2,
       "content": "AI 辅助编程倡导慢速高质量",
-      "summary": "业界反思 AI 编程范式，提出通过放缓节奏利用 AI 深度审查，以换取更高代码质",
-      "source": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
-      "date": "2026-05-26",
-      "signal_index": null
+      "date": "2026-05-26"
     },
     {
       "id": "tag_2026-05-26_001",
@@ -86,14 +107,14 @@
       "date": "2026-05-26"
     },
     {
-      "id": "tag_2026-05-26_003",
-      "level": 2,
+      "id": "word_2026-05-26_003",
+      "level": 3,
       "content": "谷歌实验 AI 优化 Beam 群…",
       "date": "2026-05-26"
     },
     {
-      "id": "tag_2026-05-26_004",
-      "level": 2,
+      "id": "word_2026-05-26_004",
+      "level": 3,
       "content": "DeepSeek 旗舰模型永久降价",
       "date": "2026-05-26"
     },
@@ -203,18 +224,6 @@
       "id": "word_2026-05-23_002",
       "level": 3,
       "content": "Waymo 机器人出租车因频繁误入洪水区域",
-      "date": "2026-05-23"
-    },
-    {
-      "id": "word_2026-05-23_003",
-      "level": 3,
-      "content": "新研究提出多流大语言模型架构，实现提示解析",
-      "date": "2026-05-23"
-    },
-    {
-      "id": "word_2026-05-23_004",
-      "level": 3,
-      "content": "谷歌官方博客详细梳理了 I/O 2026",
       "date": "2026-05-23"
     }
   ]
