@@ -532,8 +532,7 @@ jobs:
               # 还不够从旧L1补（兜底，但排除已发布过的来源）
               still_need = FIXED_L1 - len(new_l1)
               if still_need > 0 and old_l1_items:
-                  old_clean = [o for o in old_l1_items if o.get('source', '') not in yesterday_sources]
-                  for old in old_clean[:still_need]:
+                  for old in old_l1_items[:still_need]:
                       old['date'] = date
                       old['signal_index'] = None
                       new_l1.append(old)
