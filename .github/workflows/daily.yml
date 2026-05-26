@@ -472,7 +472,18 @@ jobs:
           old_l3_items = [i for i in old_items if i.get('level') == 3]
 
           # ===== L1: 新内容优先，不够从旧L1补水 =====
-          sorted_items = sorted(items_parsed, key=lambda x: x.get('importance', 0), reverse=True)
+          # 跨天去重：排除昨天 L1 已出现过的来源
+          yesterday_sources = set()
+          for it in old_l1_items:
+              if it.get('source'):
+                  yesterday_sources.add(it['source'])
+          for it in old_l2_items:
+              if it.get('source'):
+                  yesterday_sources.add(it['source'])
+          fresh_items = [it for it in items_parsed if it.get('source', '') not in yesterday_sources]
+          if not fresh_items:
+              fresh_items = items_parsed  # fallback: 全部被过滤时保持原样
+          sorted_items = sorted(fresh_items, key=lambda x: x.get('importance', 0), reverse=True)
           new_candidates = sorted_items[:FIXED_L1]
 
           new_l1 = []
