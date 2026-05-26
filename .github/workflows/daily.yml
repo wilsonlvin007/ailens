@@ -503,13 +503,33 @@ jobs:
                   '_tags': item.get('tags', []),
               })
 
-          # 补水
+          # 补水：优先从当天新内容池取（取去重后排名靠后的），不够再从旧L1补
           remaining = FIXED_L1 - len(new_l1)
-          if remaining > 0 and old_l1_items:
-              for old in old_l1_items[:remaining]:
-                  old['date'] = date
-                  old['signal_index'] = None
-                  new_l1.append(old)
+          if remaining > 0:
+              # 先取当天剩余新内容
+              extra_fresh = sorted_items[FIXED_L1:FIXED_L1 + remaining]
+              for idx, item in enumerate(extra_fresh):
+                  try:
+                      original_index = items_parsed.index(item)
+                  except ValueError:
+                      original_index = idx
+                  new_l1.append({
+                      'id': f'sig_{date}_{len(new_l1)+1:03d}',
+                      'level': 1,
+                      'content': item.get('title', ''),
+                      'summary': (item.get('summary', '') or '')[:40],
+                      'source': item.get('source', ''),
+                      'date': date,
+                      'signal_index': original_index,
+                      '_tags': item.get('tags', []),
+                  })
+              # 还不够从旧L1补（兜底）
+              still_need = FIXED_L1 - len(new_l1)
+              if still_need > 0 and old_l1_items:
+                  for old in old_l1_items[:still_need]:
+                      old['date'] = date
+                      old['signal_index'] = None
+                      new_l1.append(old)
 
           # 溢流到L2
           kept_l1_content = {i['content'] for i in new_l1}
