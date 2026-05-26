@@ -2,28 +2,10 @@
   "updated_at": "2026-05-26",
   "items": [
     {
-      "id": "sig_2026-05-26_001",
-      "level": 1,
-      "content": "Claude 独立发现 macOS 内核漏洞",
-      "summary": "AI 模型 Claude 自主挖掘出苹果 macOS 内核高危漏洞，验证了 AI",
-      "source": "https://support.apple.com/en-us/127115",
-      "date": "2026-05-26",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-05-26_002",
-      "level": 1,
-      "content": "挪威用华为存储训练大模型",
-      "summary": "挪威部署 2PB 华为闪存存储用于大模型训练，证实非美系硬件在高性能 AI 基础",
-      "source": "https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910",
-      "date": "2026-05-26",
-      "signal_index": 2
-    },
-    {
       "id": "sig_2026-05-26_003",
       "level": 1,
-      "content": "AI 编程新范式：慢工出细活",
-      "summary": "文章探讨利用 AI 辅助编程的新思路：牺牲生成速度，换取更高代码质量与可维护性。",
+      "content": "AI 辅助编程需慢工出细活",
+      "summary": "文章提出 AI 编程新范式：通过放缓编码节奏换取更高代码质量，反思人机协作中的效",
       "source": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/",
       "date": "2026-05-26",
       "signal_index": 3
@@ -31,8 +13,8 @@
     {
       "id": "sig_2026-05-26_004",
       "level": 1,
-      "content": "谷歌 I/O 对话环节深度回顾",
-      "summary": "回顾谷歌 I/O 大会对话环节，深入解析谷歌关于 AI 伦理、未来交互及行业影响",
+      "content": "谷歌 I/O 探讨 AI 伦理与未来",
+      "summary": "谷歌 I/O 对话阶段聚焦 AI 伦理、社会影响及技术演进，汇集多方观点展望负责",
       "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
       "date": "2026-05-26",
       "signal_index": 4
@@ -40,11 +22,29 @@
     {
       "id": "sig_2026-05-26_001",
       "level": 1,
-      "content": "谷歌发布 Gemini 3.5 及智能体栈",
-      "summary": "谷歌推出 Gemini 3.5 系列模型与智能体栈，确立多模态交互与自主任务执行",
-      "source": "https://news.smol.ai/issues/26-05-19-not-much/",
+      "content": "Claude 独立发现 macOS 内核漏洞",
+      "summary": "AI 模型 Claude 自主挖掘出苹果 macOS 内核高危漏洞，验证了 AI",
+      "source": "https://support.apple.com/en-us/127115",
       "date": "2026-05-26",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-05-26_001",
+      "level": 2,
+      "content": "挪威用华为存储训练大模型",
+      "date": "2026-05-26"
+    },
+    {
+      "id": "tag_2026-05-26_002",
+      "level": 2,
+      "content": "AI 编程新范式：慢工出细活",
+      "date": "2026-05-26"
+    },
+    {
+      "id": "tag_2026-05-26_003",
+      "level": 2,
+      "content": "谷歌 I/O 对话环节深度回顾",
+      "date": "2026-05-26"
     },
     {
       "id": "tag_2026-05-26_001",
@@ -83,26 +83,26 @@
       "date": "2026-05-26"
     },
     {
-      "id": "tag_2026-05-26_002",
-      "level": 2,
+      "id": "word_2026-05-26_002",
+      "level": 3,
       "content": "谷歌 Beam 实验优化群组会议",
       "date": "2026-05-26"
     },
     {
-      "id": "tag_2026-05-26_003",
-      "level": 2,
+      "id": "word_2026-05-26_003",
+      "level": 3,
       "content": "荷兰查获服务器打击网络攻击",
       "date": "2026-05-26"
     },
     {
-      "id": "tag_2026-05-26_001",
-      "level": 2,
+      "id": "word_2026-05-26_001",
+      "level": 3,
       "content": "内存成本占 AI 芯片总额近三分之二",
       "date": "2026-05-26"
     },
     {
-      "id": "tag_2026-05-26_002",
-      "level": 2,
+      "id": "word_2026-05-26_002",
+      "level": 3,
       "content": "揭示智能体代码生成约束衰减",
       "date": "2026-05-26"
     },
@@ -201,30 +201,6 @@
       "level": 3,
       "content": "重读深度学习第一性原理文章",
       "date": "2026-05-24"
-    },
-    {
-      "id": "word_2026-05-23_001",
-      "level": 3,
-      "content": "Models.dev 开源模型数据库",
-      "date": "2026-05-23"
-    },
-    {
-      "id": "word_2026-05-23_002",
-      "level": 3,
-      "content": "探讨大模型文本读取规范",
-      "date": "2026-05-23"
-    },
-    {
-      "id": "word_2026-05-23_001",
-      "level": 3,
-      "content": "谷歌 I/O 大会推出 Gemini 3.5",
-      "date": "2026-05-23"
-    },
-    {
-      "id": "word_2026-05-23_002",
-      "level": 3,
-      "content": "Waymo 机器人出租车因频繁误入洪水区域",
-      "date": "2026-05-23"
     }
   ]
 }
