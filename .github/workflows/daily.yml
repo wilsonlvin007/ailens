@@ -472,20 +472,21 @@ jobs:
           old_l3_items = [i for i in old_items if i.get('level') == 3]
 
           # ===== L1: 新内容优先，不够从旧L1补水 =====
-          # 跨天去重：排除昨天 L1 已出现过的来源
+          # 跨天去重：读取昨天及前天的数据文件，排除已发布的来源
+          from datetime import datetime as dt2
           yesterday_sources = set()
-          for it in old_l1_items:
-              if it.get('source'):
-                  yesterday_sources.add(it['source'])
-          for it in old_l2_items:
-              if it.get('source'):
-                  yesterday_sources.add(it['source'])
-          print(f"[DEDUP] yesterday_sources count: {len(yesterday_sources)}")
-          # print first few for debug
-          for s in list(yesterday_sources)[:3]:
-              print(f"[DEDUP]   src: {s[:80]}")
+          for d_offset in [1, 2]:  # 查昨天和前天
+              past_date = (dt2.now(timezone(timedelta(hours=8))) - timedelta(days=d_offset)).strftime('%Y-%m-%d')
+              past_file = DATA_DIR / f'{past_date}.json'
+              if past_file.exists():
+                  try:
+                      past_data = json.loads(open(past_file).read())
+                      for it in past_data.get('items', []):
+                          if it.get('source'):
+                              yesterday_sources.add(it['source'])
+                  except:
+                      pass
           fresh_items = [it for it in items_parsed if it.get('source', '') not in yesterday_sources]
-          print(f"[DEDUP] items_parsed={len(items_parsed)}, fresh_items={len(fresh_items)}, filtered={len(items_parsed)-len(fresh_items)}")
           if not fresh_items:
               fresh_items = items_parsed  # fallback: 全部被过滤时保持原样
           sorted_items = sorted(fresh_items, key=lambda x: x.get('importance', 0), reverse=True)
