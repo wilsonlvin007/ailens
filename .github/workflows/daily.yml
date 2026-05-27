@@ -38,10 +38,12 @@ jobs:
           raw = main()
           raw_items_all = json.loads(raw)
           # 去重：排除过去5天已出现过的 source URL
-          seen_sources = set()
+          from pathlib import Path
+          _data_dir = Path('public/data')
+                    seen_sources = set()
           for d_offset in range(1, 6):
               past_date = (datetime.now(timezone(timedelta(hours=8))) - timedelta(days=d_offset)).strftime('%Y-%m-%d')
-              past_file = DATA_DIR / f'{past_date}.json'
+              past_file = _data_dir / f'{past_date}.json'
               if past_file.exists():
                   try:
                       past_data = json.loads(open(past_file).read())
