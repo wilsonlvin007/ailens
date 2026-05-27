@@ -36,7 +36,27 @@ jobs:
 
           # 1. 采集
           raw = main()
-          items = json.loads(raw)[:10]
+          raw_items_all = json.loads(raw)
+          # 去重：排除过去5天已出现过的 source URL
+          seen_sources = set()
+          for d_offset in range(1, 6):
+              past_date = (datetime.now(timezone(timedelta(hours=8))) - timedelta(days=d_offset)).strftime('%Y-%m-%d')
+              past_file = DATA_DIR / f'{past_date}.json'
+              if past_file.exists():
+                  try:
+                      past_data = json.loads(open(past_file).read())
+                      for it in past_data.get('items', []):
+                          if it.get('source'):
+                              seen_sources.add(it['source'])
+                  except:
+                      pass
+          fresh_raw = [it for it in raw_items_all if it.get('url', '') not in seen_sources]
+          # 如果去重后不够10条，用原列表补足
+          if len(fresh_raw) < 10:
+              extra = [it for it in raw_items_all if it.get('url', '') in seen_sources][:10 - len(fresh_raw)]
+              fresh_raw += extra
+          items = fresh_raw[:10]
+          print(f"Raw: {len(raw_items_all)} -> dedup: {len(fresh_raw)} -> to Dify: {len(items)} (seen sources: {len(seen_sources)})")
           date = (datetime.now(timezone(timedelta(hours=8)))).strftime('%Y-%m-%d')
           print(f"Collected {len(items)} items for {date}")
 
@@ -472,24 +492,7 @@ jobs:
           old_l3_items = [i for i in old_items if i.get('level') == 3]
 
           # ===== L1: 新内容优先，不够从旧L1补水 =====
-          # 跨天去重：读取昨天及前天的数据文件，排除已发布的来源
-          from datetime import datetime as dt2
-          yesterday_sources = set()
-          for d_offset in [1, 2]:  # 查昨天和前天
-              past_date = (dt2.now(timezone(timedelta(hours=8))) - timedelta(days=d_offset)).strftime('%Y-%m-%d')
-              past_file = DATA_DIR / f'{past_date}.json'
-              if past_file.exists():
-                  try:
-                      past_data = json.loads(open(past_file).read())
-                      for it in past_data.get('items', []):
-                          if it.get('source'):
-                              yesterday_sources.add(it['source'])
-                  except:
-                      pass
-          fresh_items = [it for it in items_parsed if it.get('source', '') not in yesterday_sources]
-          if not fresh_items:
-              fresh_items = items_parsed  # fallback: 全部被过滤时保持原样
-          sorted_items = sorted(fresh_items, key=lambda x: x.get('importance', 0), reverse=True)
+          sorted_items = sorted(items_parsed, key=lambda x: x.get('importance', 0), reverse=True)
           new_candidates = sorted_items[:FIXED_L1]
 
           new_l1 = []
