@@ -1,50 +1,80 @@
 {
-  "updated_at": "2026-05-27",
+  "updated_at": "2026-05-28",
   "items": [
     {
-      "id": "sig_2026-05-27_001",
+      "id": "sig_2026-05-28_001",
       "level": 1,
-      "content": "Gartner 认定 OpenAI 编码领导地位",
-      "summary": "Gartner 报告将 OpenAI 列为企业级编码代理领导者，确立其在自动化软",
-      "source": "https://openai.com/index/gartner-2026-agentic-coding-leader",
-      "date": "2026-05-27",
+      "content": "YouTube 强制自动标注 AI 视频",
+      "summary": "YouTube 宣布将自动为 AI 生成内容添加标签，旨在提升媒体透明度并帮助用",
+      "source": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+      "date": "2026-05-28",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-05-27_002",
+      "id": "sig_2026-05-28_002",
       "level": 1,
-      "content": "OpenAI 携手巴西媒体巨头深化合作",
-      "summary": "OpenAI 与巴西 Grupo Folha 及 UOL 达成战略合作，旨在优化",
-      "source": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
-      "date": "2026-05-27",
+      "content": "多智能体系统自动挖掘漏洞",
+      "summary": "研究提出多智能体大模型系统，可自动化发现并复现软件漏洞，显著提升安全测试效率。",
+      "source": "https://arxiv.org/abs/2605.21779",
+      "date": "2026-05-28",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-05-27_003",
+      "id": "sig_2026-05-28_003",
       "level": 1,
-      "content": "谷歌发布 I/O 2026 开发者工具合集",
-      "summary": "谷歌推出 I/O 2026 开发者工具集，展示最新 AI 框架升级及模型在移动端",
-      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/",
-      "date": "2026-05-27",
+      "content": "科技 CEO 被指患 AI 狂热症",
+      "summary": "文章批评科技 CEO 们对 AI 表现出非理性狂热，可能忽视实际风险与市场真实需",
+      "source": "https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/",
+      "date": "2026-05-28",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-05-27_004",
+      "id": "sig_2026-05-28_004",
       "level": 1,
-      "content": "维珍航空借 Codex 加速软件交付",
-      "summary": "维珍航空案例显示，利用 Codex 显著缩短软件交付周期，验证大模型在传统航空业",
-      "source": "https://openai.com/index/virgin-atlantic",
-      "date": "2026-05-27",
+      "content": "Claude Code 日常开发实战指南",
+      "summary": "深度解析如何将 Claude Code 配置为日常开发主力，涵盖技能插件、子代理",
+      "source": "https://arps18.github.io/posts/claude-code-mastery/",
+      "date": "2026-05-28",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-05-27_005",
+      "id": "sig_2026-05-28_005",
       "level": 1,
-      "content": "LLM 开发应回归成熟编程语言",
-      "summary": "观点主张在大模型开发中优先使用成熟稳定语言，提出反直觉但符合工程长期主义的技术选",
-      "source": "https://jry.io/writing/use-boring-languages-with-llms/",
-      "date": "2026-05-27",
+      "content": "Anthropic 与 OpenAI 找准市场定位",
+      "summary": "观点分析认为 Anthropic 和 OpenAI 已通过特定应用场景找到了真正",
+      "source": "https://simonwillison.net/2026/May/27/product-market-fit/",
+      "date": "2026-05-28",
       "signal_index": 4
+    },
+    {
+      "id": "tag_2026-05-28_001",
+      "level": 2,
+      "content": "Gartner 认定 OpenAI…",
+      "date": "2026-05-28"
+    },
+    {
+      "id": "tag_2026-05-28_002",
+      "level": 2,
+      "content": "OpenAI 携手巴西媒体巨头深化…",
+      "date": "2026-05-28"
+    },
+    {
+      "id": "tag_2026-05-28_003",
+      "level": 2,
+      "content": "谷歌发布 I/O 2026 开发者…",
+      "date": "2026-05-28"
+    },
+    {
+      "id": "tag_2026-05-28_004",
+      "level": 2,
+      "content": "维珍航空借 Codex 加速软件交付",
+      "date": "2026-05-28"
+    },
+    {
+      "id": "tag_2026-05-28_005",
+      "level": 2,
+      "content": "LLM 开发应回归成熟编程语言",
+      "date": "2026-05-28"
     },
     {
       "id": "tag_2026-05-27_001",
@@ -77,32 +107,32 @@
       "date": "2026-05-27"
     },
     {
-      "id": "tag_2026-05-27_002",
-      "level": 2,
+      "id": "word_2026-05-27_002",
+      "level": 3,
       "content": "利用 AI 慢速编写高质量代码",
       "date": "2026-05-27"
     },
     {
-      "id": "tag_2026-05-27_003",
-      "level": 2,
+      "id": "word_2026-05-27_003",
+      "level": 3,
       "content": "谷歌 I/O 展示 AI 行业落地…",
       "date": "2026-05-27"
     },
     {
-      "id": "tag_2026-05-27_004",
-      "level": 2,
+      "id": "word_2026-05-27_004",
+      "level": 3,
       "content": "AI 辅助编程需慢工出细活",
       "date": "2026-05-27"
     },
     {
-      "id": "tag_2026-05-26_001",
-      "level": 2,
+      "id": "word_2026-05-26_001",
+      "level": 3,
       "content": "谷歌 I/O 探讨 AI 伦理与未来",
       "date": "2026-05-26"
     },
     {
-      "id": "tag_2026-05-26_001",
-      "level": 2,
+      "id": "word_2026-05-26_001",
+      "level": 3,
       "content": "挪威用华为存储训练大模型",
       "date": "2026-05-26"
     },
@@ -194,36 +224,6 @@
       "id": "word_2026-05-25_001",
       "level": 3,
       "content": "谷歌发布 Gemini 新系列及智…",
-      "date": "2026-05-25"
-    },
-    {
-      "id": "word_2026-05-25_002",
-      "level": 3,
-      "content": "谷歌发布 Gemini 3.5 及…",
-      "date": "2026-05-25"
-    },
-    {
-      "id": "word_2026-05-25_003",
-      "level": 3,
-      "content": "谷歌汇总 I/O 2026 百项发布",
-      "date": "2026-05-25"
-    },
-    {
-      "id": "word_2026-05-25_004",
-      "level": 3,
-      "content": "微软称 AI 成本超人力",
-      "date": "2026-05-25"
-    },
-    {
-      "id": "word_2026-05-25_005",
-      "level": 3,
-      "content": "Waymo 因洪水暂停服务",
-      "date": "2026-05-25"
-    },
-    {
-      "id": "word_2026-05-25_006",
-      "level": 3,
-      "content": "Antigravity 2.0 刷…",
       "date": "2026-05-25"
     }
   ]
