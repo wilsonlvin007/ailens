@@ -49,7 +49,8 @@ for (const item of items) {
           return (
             <article id={`signal-${globalIdx}`} class={`signal-card importance-${item.importance} scroll-mt-20`}>
             <div class="signal-header">
-              <span class="signal-importance">{importanceLabel(item.importance)}</span>
+              <span class="signal-cat" style={`color:${group.color}`}>{group.icon} {group.label}</span>
+              <span class="signal-importance">★{item.importance}</span>
             </div>
             <a href={item.source} target="_blank" rel="noopener noreferrer" class="signal-title">
               {item.title}
