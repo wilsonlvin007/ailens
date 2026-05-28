@@ -30,38 +30,10 @@ if (latestDate) {
         summary={data.summary}
         weekday={formatWeekday(latestDate!)}
       />
-      
-      {/* 今日速览 */}
-      <section class="tldr">
-        <p class="tldr-text">{data.summary}</p>
-      </section>
-
       <Signals items={data.items} maxPerCategory={3} dateLink={`/${latestDate}`} />
       {data.deep_dive && (
         <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated detailUrl={`/${latestDate}`} />
       )}
-
-
-      {/* 推荐阅读 */}
-      {recentDates.length > 1 && (
-        <section class="recommended">
-          <h2 class="rec-title">你可能错过</h2>
-          <div class="rec-grid">
-            {recentDates.slice(1, 4).map((d) => {
-              const dData = getDailyData(d);
-              const head = dData?.items?.[0];
-              if (!head) return null;
-              return (
-                <a href={`/${d}`} class="rec-card">
-                  <span class="rec-date">{d.slice(5)} · {formatWeekday(d)}</span>
-                  <span class="rec-headline">{head.title.slice(0, 30)}{head.title.length > 30 ? '…' : ''}</span>
-                </a>
-              );
-            })}
-          </div>
-        </section>
-      )}
-
 
       {/* 历史期刊 */}
       {recentDates.length > 0 && (
@@ -101,64 +73,6 @@ if (latestDate) {
 </Base>
 
 <style>
-  .tldr {
-    padding: 1.25rem 1.5rem;
-    margin: 1rem 0 2rem;
-    background: linear-gradient(135deg, #eef2ff, #f0f9ff);
-    border-radius: 10px;
-    border-left: 3px solid var(--accent);
-  }
-  .tldr-text {
-    font-family: var(--font-serif);
-    font-size: 0.9375rem;
-    line-height: 1.7;
-    color: var(--text-secondary);
-    margin: 0;
-  }
-
-  .recommended {
-    padding: 2rem 0;
-    border-top: 1px solid var(--border);
-  }
-  .rec-title {
-    font-family: var(--font-serif);
-    font-size: 1.125rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  .rec-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 0.75rem;
-  }
-  .rec-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-    padding: 0.875rem 1rem;
-    background: var(--bg-white);
-    border: 1px solid var(--border-light);
-    border-radius: 8px;
-    text-decoration: none;
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .rec-card:hover {
-    border-color: var(--accent);
-    background: var(--accent-light);
-  }
-  .rec-date {
-    font-size: 0.6875rem;
-    font-weight: 600;
-    color: var(--text-tertiary);
-    letter-spacing: 0.04em;
-  }
-  .rec-headline {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    line-height: 1.5;
-  }
-
   .recent {
     padding: 2rem 0;
     border-top: 1px solid var(--border);
@@ -232,6 +146,7 @@ if (latestDate) {
     color: var(--accent);
   }
 
+  /* Empty state */
   .empty-state {
     display: flex;
     flex-direction: column;
@@ -275,3 +190,4 @@ if (latestDate) {
     color: white;
   }
 </style>
+
