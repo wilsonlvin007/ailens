@@ -13,38 +13,80 @@
     {
       "id": "sig_2026-05-29_002",
       "level": 1,
-      "content": "OpenAI 发布前沿治理框架",
-      "summary": "OpenAI 推出前沿治理框架，确立超级智能开发过程中的安全准则与伦理规范。",
-      "source": "https://openai.com/index/openai-frontier-governance-framework",
+      "content": "谷歌 I/O 发布多项 AI 进展",
+      "summary": "谷歌回顾 I/O 2026 十二大时刻，展示最新 AI 技术在搜索、办公及终端设",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
       "date": "2026-05-29",
       "signal_index": 1
     },
     {
       "id": "sig_2026-05-29_003",
       "level": 1,
-      "content": "谷歌 I/O 大会回顾 AI 亮点",
-      "summary": "复盘谷歌 I/O 2026 十二大时刻，展示最新 AI 模型及其在生态中的深度整",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+      "content": "Anthropic 发布 Claude Opus 4.8",
+      "summary": "Anthropic 推出 Claude Opus 4.8 模型，显著增强复杂逻辑",
+      "source": "https://www.anthropic.com/news/claude-opus-4-8",
       "date": "2026-05-29",
       "signal_index": 2
     },
     {
       "id": "sig_2026-05-29_004",
       "level": 1,
-      "content": "Anthropic 推出 Claude Opus 4.8",
-      "summary": "Anthropic 发布 Claude Opus 4.8，显著增强模型在复杂逻辑",
-      "source": "https://www.anthropic.com/news/claude-opus-4-8",
+      "content": "Endava 利用 Codex 构建代理组织",
+      "summary": "Endava 分享利用 Codex 构建代理型组织的实践，探索企业级 AI 自动",
+      "source": "https://openai.com/index/endava",
       "date": "2026-05-29",
       "signal_index": 3
     },
     {
       "id": "sig_2026-05-29_005",
       "level": 1,
-      "content": "巨头修正 AI 就业末日论",
-      "summary": "Altman 与 Amodei 修正观点，认为 AI 将转变工作形态而非导致大规",
-      "source": "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/",
+      "content": "机器人公司秘密测试引争议",
+      "summary": "某机器人公司被指控在 Airbnb 秘密测试原型机并造成破坏，引发伦理与法律广泛",
+      "source": "https://sfstandard.com/2026/05/28/sf-startup-secretly-testing-robots-airbnbs-trashing-lawsuit-claims/",
       "date": "2026-05-29",
       "signal_index": 4
+    },
+    {
+      "id": "sig_2026-05-29_006",
+      "level": 1,
+      "content": "总结大语言模型开发异味",
+      "summary": "文章系统总结大语言模型开发中常见的代码异味与潜在陷阱，为开发者提供避坑指南。",
+      "source": "https://shvbsle.in/various-llm-smells/",
+      "date": "2026-05-29",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-05-29_007",
+      "level": 1,
+      "content": "小游戏揭示代理权限疲劳",
+      "summary": "一款互动小游戏生动揭示用户对 AI 代理频繁请求权限的疲劳感，引发交互设计思考。",
+      "source": "https://llmgame.scalex.dev",
+      "date": "2026-05-29",
+      "signal_index": 6
+    },
+    {
+      "id": "tag_2026-05-29_001",
+      "level": 2,
+      "content": "OpenAI 发布前沿治理框架",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "tag_2026-05-29_002",
+      "level": 2,
+      "content": "谷歌 I/O 大会回顾 AI 亮点",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "tag_2026-05-29_003",
+      "level": 2,
+      "content": "Anthropic 推出 Clau…",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "tag_2026-05-29_004",
+      "level": 2,
+      "content": "巨头修正 AI 就业末日论",
+      "date": "2026-05-29"
     },
     {
       "id": "tag_2026-05-29_001",
@@ -71,38 +113,38 @@
       "date": "2026-05-29"
     },
     {
-      "id": "tag_2026-05-29_005",
-      "level": 2,
+      "id": "word_2026-05-29_005",
+      "level": 3,
       "content": "Anthropic 与 OpenA…",
       "date": "2026-05-29"
     },
     {
-      "id": "tag_2026-05-28_001",
-      "level": 2,
+      "id": "word_2026-05-28_001",
+      "level": 3,
       "content": "Gartner 认定 OpenAI…",
       "date": "2026-05-28"
     },
     {
-      "id": "tag_2026-05-28_002",
-      "level": 2,
+      "id": "word_2026-05-28_002",
+      "level": 3,
       "content": "OpenAI 携手巴西媒体巨头深化…",
       "date": "2026-05-28"
     },
     {
-      "id": "tag_2026-05-28_003",
-      "level": 2,
+      "id": "word_2026-05-28_003",
+      "level": 3,
       "content": "谷歌发布 I/O 2026 开发者…",
       "date": "2026-05-28"
     },
     {
-      "id": "tag_2026-05-28_004",
-      "level": 2,
+      "id": "word_2026-05-28_004",
+      "level": 3,
       "content": "维珍航空借 Codex 加速软件交付",
       "date": "2026-05-28"
     },
     {
-      "id": "tag_2026-05-28_005",
-      "level": 2,
+      "id": "word_2026-05-28_005",
+      "level": 3,
       "content": "LLM 开发应回归成熟编程语言",
       "date": "2026-05-28"
     },
@@ -188,42 +230,6 @@
       "id": "word_2026-05-26_002",
       "level": 3,
       "content": "AI 辅助编程倡导慢速高质量",
-      "date": "2026-05-26"
-    },
-    {
-      "id": "word_2026-05-26_001",
-      "level": 3,
-      "content": "谷歌 I/O 对话环节聚焦 AI …",
-      "date": "2026-05-26"
-    },
-    {
-      "id": "word_2026-05-26_001",
-      "level": 3,
-      "content": "AI 辅助编程：以慢换质的新范式",
-      "date": "2026-05-26"
-    },
-    {
-      "id": "word_2026-05-26_002",
-      "level": 3,
-      "content": "谷歌 I/O 解析 AI 伦理与应…",
-      "date": "2026-05-26"
-    },
-    {
-      "id": "word_2026-05-26_001",
-      "level": 3,
-      "content": "谷歌汇总 I/O 大会百项发布",
-      "date": "2026-05-26"
-    },
-    {
-      "id": "word_2026-05-26_002",
-      "level": 3,
-      "content": "谷歌 Beam 实验优化群组会议",
-      "date": "2026-05-26"
-    },
-    {
-      "id": "word_2026-05-26_003",
-      "level": 3,
-      "content": "荷兰查获服务器打击网络攻击",
       "date": "2026-05-26"
     }
   ]
