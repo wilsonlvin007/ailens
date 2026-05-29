@@ -143,77 +143,62 @@ function jitter(h: number, cell: GridCell): { x: number; y: number } {
 
 const placed: PlacedItem[] = [];
 
-// === Step 1: Place L1 ===
-// L1[0] → center cell (centerCol, centerRow)
-// L1[1-4] → center column: up2, up1, down1, down2
-// L1[5-6] → left, right (fill horizontal)
+function halfSize(level: number): { hw: number; hh: number } {
+  if (level === 1) return { hw: 5.5, hh: 2 };
+  if (level === 2) return { hw: 3, hh: 1.2 };
+  return { hw: 2, hh: 0.8 };
+}
+function overlapsAny(x: number, y: number, hw: number, hh: number): boolean {
+  const gap = 0.8;
+  return placed.some(p => {
+    const ps = halfSize(p.level);
+    return Math.abs(x - p.x) < hw + ps.hw + gap &&
+           Math.abs(y - p.y) < hh + ps.hh + gap;
+  });
+}
+
+// === Step 1: Place L1 — free-form scattering within 3×5 area ===
+const L1_AREA_LEFT = (centerCol - 1 + 0.1) / COLS * 100;
+const L1_AREA_RIGHT = (centerCol + 1 + 0.9) / COLS * 100;
+const L1_AREA_TOP = (centerRow - 2 + 0.1) / ROWS * 100 + V_OFFSET;
+const L1_AREA_BOTTOM = (centerRow + 2 + 0.9) / ROWS * 100 + V_OFFSET;
+
 if (l1.length > 0) {
-  const centerCell = allCells.find(c => c.col === centerCol && c.row === centerRow)!;
-  occupied.add(cellKey(centerCell.col, centerCell.row));
+  // Place center item first
+  const centerX = (centerCol + 0.5) / COLS * 100;
+  const centerY = (centerRow + 0.5) / ROWS * 100 + V_OFFSET;
   const anim0 = makeAnim(l1[0]);
   placed.push({
     id: l1[0].id, level: 1, content: l1[0].content,
     signal_index: l1[0].signal_index ?? 0,
-    x: centerCell.cx, y: centerCell.cy,
-    depth: 'fg',
+    x: centerX, y: centerY, depth: 'fg',
     ...anim0,
   });
 
-  // 4 cardinal cells: up, right, down, left (skip 1 cell for spacing)
-  const cardinals = [
-    { col: centerCol, row: centerRow - 2 },     // up2 (far)
-    { col: centerCol, row: centerRow - 1 },     // up1 (near)
-    { col: centerCol, row: centerRow + 1 },     // down1 (near)
-    { col: centerCol, row: centerRow + 2 },     // down2 (far)
-  ];
-  // 4 diagonal cells at distance 2
-  const diagonals = [
-    { col: centerCol - 1, row: centerRow - 1 }, // NW
-    { col: centerCol + 1, row: centerRow - 1 }, // NE
-    { col: centerCol - 1, row: centerRow + 1 }, // SW
-    { col: centerCol + 1, row: centerRow + 1 }, // SE
-  ];
-
-  // Place L1[1-4] in cardinal cells
-  for (let i = 1; i < l1.length && i <= 4; i++) {
-    const target = cardinals[i - 1];
-    const cell = allCells.find(c => c.col === target.col && c.row === target.row);
-    if (!cell || occupied.has(cellKey(cell.col, cell.row))) continue;
-    occupied.add(cellKey(cell.col, cell.row));
-    const anim = makeAnim(l1[i]);
-    placed.push({
-      id: l1[i].id, level: 1, content: l1[i].content,
-      signal_index: l1[i].signal_index ?? 0,
-      x: cell.cx + (hashF(hash(l1[i].id) * 3 + i * 7) - 0.5) * 5,
-      y: cell.cy + (hashF(hash(l1[i].id) * 5 + i * 11) - 0.5) * 5,
-      depth: 'mg',
-      ...anim,
-    });
-  }
-
-  // L1[5-10] → fill left/right at middle 3 rows (diamond shape)
-  const extraL1Positions = [];
-  for (const dr of [-1, 0, 1]) {
-    extraL1Positions.push({ col: centerCol - 1, row: centerRow + dr }); // left
-    extraL1Positions.push({ col: centerCol + 1, row: centerRow + dr }); // right
-  }
-  for (let i = 5; i < Math.min(l1.length, extraL1Positions.length + 5); i++) {
-    const pos = extraL1Positions[i - 5];
-    if (!pos) continue;
-    const cell = allCells.find(c => c.col === pos.col && c.row === pos.row);
-    if (!cell || occupied.has(cellKey(cell.col, cell.row))) continue;
-    occupied.add(cellKey(cell.col, cell.row));
-    const itemSeed = hash(l1[i].id);
-    const jx = (hashF(itemSeed * 3 + cell.col * 7 + cell.row * 13) - 0.5) * CELL_W * 0.2;
-    const jy = (hashF(itemSeed * 5 + cell.col * 11 + cell.row * 17) - 0.5) * CELL_H * 0.2;
-    const anim = makeAnim(l1[i]);
-    placed.push({
-      id: l1[i].id, level: 1, content: l1[i].content,
-      signal_index: l1[i].signal_index ?? 0,
-      x: cell.cx + jx, y: cell.cy + jy,
-      depth: 'bg',
-      ...anim,
-    });
+  // Scatter remaining L1 items randomly with collision avoidance
+  for (let i = 1; i < l1.length; i++) {
+    let ok = false;
+    const seed = hash(l1[i].id);
+    for (let attempt = 0; attempt < 100; attempt++) {
+      const rx = L1_AREA_LEFT + hashF(seed + attempt * 3.1 + i * 7) * (L1_AREA_RIGHT - L1_AREA_LEFT);
+      const ry = L1_AREA_TOP + hashF(seed + attempt * 5.3 + i * 11) * (L1_AREA_BOTTOM - L1_AREA_TOP);
+      if (!overlapsAny(rx, ry, 5.5, 2)) {
+        const anim = makeAnim(l1[i]);
+        // Depth based on distance from center
+        const dx = rx - centerX;
+        const dy = ry - centerY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const depth = dist < 12 ? 'mg' : 'bg';
+        placed.push({
+          id: l1[i].id, level: 1, content: l1[i].content,
+          signal_index: l1[i].signal_index ?? 0,
+          x: rx, y: ry, depth,
+          ...anim,
+        });
+        ok = true;
+        break;
+      }
+    }
   }
 }
 
@@ -261,14 +246,7 @@ function halfSize(level: number): { hw: number; hh: number } {
   if (level === 2) return { hw: 3, hh: 1.2 };
   return { hw: 2, hh: 0.8 };
 }
-function overlapsAny(x: number, y: number, hw: number, hh: number): boolean {
-  const gap = 0.8;
-  return placed.some(p => {
-    const ps = halfSize(p.level);
-    return Math.abs(x - p.x) < hw + ps.hw + gap &&
-           Math.abs(y - p.y) < hh + ps.hh + gap;
-  });
-}
+
 const maxL3 = Math.min(l3.length, 12);
 for (let i = 0; i < maxL3; i++) {
   const itemSeed = hash(l3[i].id);
