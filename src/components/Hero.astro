@@ -42,7 +42,7 @@ function loadHeroState(): HeroState | null {
 
 const state = loadHeroState();
 const items = state?.items || [];
-const l1 = items.filter(i => i.level === 1).slice(0, 6);
+const l1 = items.filter(i => i.level === 1).slice(0, 7);
 const l2 = items.filter(i => i.level === 2).slice(0, 10);
 const l3 = items.filter(i => i.level === 3).slice(0, 14);
 
@@ -191,18 +191,18 @@ if (l1.length > 0) {
     });
   }
 
-  // Place L1[5+] in diagonal cells (random, small jitter)
-  for (let i = 5; i < l1.length; i++) {
-    const itemSeed = hash(l1[i].id);
-    const available = diagonals.filter(d => {
-      const cell = allCells.find(c => c.col === d.col && c.row === d.row);
-      return cell && !occupied.has(cellKey(cell.col, cell.row));
-    });
-    if (available.length === 0) break;
-    const pick = available[Math.floor(hashF(itemSeed + i * 3) * available.length)];
-    const cell = allCells.find(c => c.col === pick.col && c.row === pick.row)!;
+  // L1[5] → left, L1[6] → right (fill horizontal edges)
+  const extraL1Positions = [
+    { col: centerCol - 1, row: centerRow },     // left
+    { col: centerCol + 1, row: centerRow },     // right
+  ];
+  for (let i = 5; i < Math.min(l1.length, extraL1Positions.length + 5); i++) {
+    const pos = extraL1Positions[i - 5];
+    if (!pos) continue;
+    const cell = allCells.find(c => c.col === pos.col && c.row === pos.row);
+    if (!cell || occupied.has(cellKey(cell.col, cell.row))) continue;
     occupied.add(cellKey(cell.col, cell.row));
-    // Small jitter for diagonals only
+    const itemSeed = hash(l1[i].id);
     const jx = (hashF(itemSeed * 3 + cell.col * 7 + cell.row * 13) - 0.5) * CELL_W * 0.2;
     const jy = (hashF(itemSeed * 5 + cell.col * 11 + cell.row * 17) - 0.5) * CELL_H * 0.2;
     const anim = makeAnim(l1[i]);
