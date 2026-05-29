@@ -2,13 +2,112 @@
   "updated_at": "2026-05-29",
   "items": [
     {
+      "id": "sig_2026-05-29_001",
+      "level": 1,
+      "content": "Anthropic 获六百五十亿融资",
+      "summary": "Anthropic 完成 H 轮 650 亿美元融资，估值达 9650 亿，刷新",
+      "source": "https://www.anthropic.com/news/series-h",
+      "date": "2026-05-29",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-05-29_002",
+      "level": 1,
+      "content": "Anthropic 发布 Claude Opus 4.8",
+      "summary": "Anthropic 发布最新旗舰模型 Claude Opus 4.8，性能进一步",
+      "source": "https://www.anthropic.com/news/claude-opus-4-8",
+      "date": "2026-05-29",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-05-29_003",
+      "level": 1,
+      "content": "谷歌发布 Gemini 新模型及智能体栈",
+      "summary": "Google I/O 大会发布 Gemini 3.5 Flash、Omni 模型",
+      "source": "https://news.smol.ai/issues/26-05-19-not-much/",
+      "date": "2026-05-29",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-05-29_004",
+      "level": 1,
+      "content": "Endava 利用 Codex 重塑工程流程",
+      "summary": "OpenAI 案例：Endava 利用 Codex 构建代理型组织，重塑工程流程",
+      "source": "https://openai.com/index/endava",
+      "date": "2026-05-29",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-05-29_005",
+      "level": 1,
+      "content": "思科携手 OpenAI 定义企业工程",
+      "summary": "思科与 OpenAI 合作，利用 Codex 重新定义企业级软件工程实践。",
+      "source": "https://openai.com/index/cisco",
+      "date": "2026-05-29",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-05-29_007",
+      "level": 1,
+      "content": "YouTube 将自动标记 AI 生成视频",
+      "summary": "YouTube 宣布将自动标记 AI 生成视频，增强内容透明度和用户信任。",
+      "source": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+      "date": "2026-05-29",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-05-29_008",
+      "level": 1,
+      "content": "Microsoft 365 Copilot 提速焕新",
+      "summary": "Microsoft 365 Copilot 迎来速度提升与设计焕新，优化用户体验",
+      "source": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign",
+      "date": "2026-05-29",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-05-29_009",
+      "level": 1,
+      "content": "Codex 构建自改进税务智能体",
+      "summary": "OpenAI 展示如何利用 Codex 构建可自我改进的税务处理智能体。",
+      "source": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
+      "date": "2026-05-29",
+      "signal_index": 8
+    },
+    {
+      "id": "sig_2026-05-29_010",
+      "level": 1,
+      "content": "探讨大语言模型开发异味",
+      "summary": "技术文章探讨大语言模型开发中的常见反模式与异味识别。",
+      "source": "https://shvbsle.in/various-llm-smells/",
+      "date": "2026-05-29",
+      "signal_index": 9
+    },
+    {
+      "id": "sig_2026-05-29_011",
+      "level": 1,
+      "content": "机器人公司测试致房屋受损",
+      "summary": "机器人初创公司被指控在测试原型机时损坏 Airbnb 租赁房屋。",
+      "source": "https://sfstandard.com/2026/05/28/sf-startup-secretly-testing-robots-airbnbs-trashing-lawsuit-claims/",
+      "date": "2026-05-29",
+      "signal_index": 10
+    },
+    {
+      "id": "sig_2026-05-29_012",
+      "level": 1,
+      "content": "OpenAI 公布选举安全防护措施",
+      "summary": "OpenAI 公布 2026 年选举期间的信息安全措施与防护策略。",
+      "source": "https://openai.com/index/election-safeguards-2026",
+      "date": "2026-05-29",
+      "signal_index": 11
+    },
+    {
       "id": "sig_2026-05-29_002",
       "level": 1,
       "content": "Claude Opus 4.8 旗舰模型发布",
       "summary": "Anthropic 发布最新旗舰模型 Claude Opus 4.8，在推理与代",
       "source": "https://www.anthropic.com/news/claude-opus-4-8",
       "date": "2026-05-29",
-      "signal_index": 1
+      "signal_index": null
     },
     {
       "id": "sig_2026-05-29_003",
@@ -17,7 +116,7 @@
       "summary": "回顾 Google I/O 2026 大会上的 12 个重大 AI 时刻，展示原",
       "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
       "date": "2026-05-29",
-      "signal_index": 2
+      "signal_index": null
     },
     {
       "id": "sig_2026-05-29_004",
@@ -26,125 +125,83 @@
       "summary": "Endava 利用 Codex 构建代理型组织的案例分析，展示企业落地新范式与人",
       "source": "https://openai.com/index/endava",
       "date": "2026-05-29",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-05-29_005",
-      "level": 1,
-      "content": "机器人测试破坏民宿引伦理争议",
-      "summary": "机器人初创公司被指控在 Airbnb 测试原型机时造成破坏，引发关于实地测试伦理",
-      "source": "https://sfstandard.com/2026/05/28/sf-startup-secretly-testing-robots-airbnbs-trashing-lawsuit-claims/",
-      "date": "2026-05-29",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-05-29_006",
-      "level": 1,
-      "content": "互动游戏揭示代理权限疲劳痛点",
-      "summary": "一款关于 AI 代理权限疲劳的互动游戏，生动反映人机交互中频繁授权的新痛点。",
-      "source": "https://llmgame.scalex.dev",
-      "date": "2026-05-29",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-05-29_007",
-      "level": 1,
-      "content": "大语言模型开发常见代码异味解析",
-      "summary": "探讨大语言模型开发中常见的代码异味与最佳实践建议，助力提升工程质量。",
-      "source": "https://shvbsle.in/various-llm-smells/",
-      "date": "2026-05-29",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-05-29_001",
-      "level": 1,
-      "content": "Anthropic 获六百五十亿融资",
-      "summary": "Anthropic 完成 H 轮 650 亿美元融资，投后估值达 9650 亿美",
-      "source": "https://www.anthropic.com/news/series-h",
-      "date": "2026-05-29",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-05-29_002",
-      "level": 1,
-      "content": "谷歌 I/O 发布多项 AI 进展",
-      "summary": "谷歌回顾 I/O 2026 十二大时刻，展示最新 AI 技术在搜索、办公及终端设",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
-      "date": "2026-05-29",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-05-29_003",
-      "level": 1,
-      "content": "Anthropic 发布 Claude Opus 4.8",
-      "summary": "Anthropic 推出 Claude Opus 4.8 模型，显著增强复杂逻辑",
-      "source": "https://www.anthropic.com/news/claude-opus-4-8",
-      "date": "2026-05-29",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-05-29_004",
-      "level": 1,
-      "content": "Endava 利用 Codex 构建代理组织",
-      "summary": "Endava 分享利用 Codex 构建代理型组织的实践，探索企业级 AI 自动",
-      "source": "https://openai.com/index/endava",
-      "date": "2026-05-29",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-05-29_005",
-      "level": 1,
-      "content": "机器人公司秘密测试引争议",
-      "summary": "某机器人公司被指控在 Airbnb 秘密测试原型机并造成破坏，引发伦理与法律广泛",
-      "source": "https://sfstandard.com/2026/05/28/sf-startup-secretly-testing-robots-airbnbs-trashing-lawsuit-claims/",
-      "date": "2026-05-29",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-05-29_006",
-      "level": 1,
-      "content": "总结大语言模型开发异味",
-      "summary": "文章系统总结大语言模型开发中常见的代码异味与潜在陷阱，为开发者提供避坑指南。",
-      "source": "https://shvbsle.in/various-llm-smells/",
-      "date": "2026-05-29",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-05-29_007",
-      "level": 1,
-      "content": "小游戏揭示代理权限疲劳",
-      "summary": "一款互动小游戏生动揭示用户对 AI 代理频繁请求权限的疲劳感，引发交互设计思考。",
-      "source": "https://llmgame.scalex.dev",
-      "date": "2026-05-29",
       "signal_index": null
     },
     {
       "id": "tag_2026-05-29_001",
       "level": 2,
-      "content": "OpenAI 发布前沿治理框架",
+      "content": "机器人测试破坏民宿引伦理争议",
       "date": "2026-05-29"
     },
     {
       "id": "tag_2026-05-29_002",
       "level": 2,
-      "content": "谷歌 I/O 大会回顾 AI 亮点",
+      "content": "互动游戏揭示代理权限疲劳痛点",
       "date": "2026-05-29"
     },
     {
       "id": "tag_2026-05-29_003",
       "level": 2,
-      "content": "Anthropic 推出 Clau…",
+      "content": "大语言模型开发常见代码异味解析",
       "date": "2026-05-29"
     },
     {
       "id": "tag_2026-05-29_004",
       "level": 2,
+      "content": "谷歌 I/O 发布多项 AI 进展",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "tag_2026-05-29_005",
+      "level": 2,
+      "content": "Endava 利用 Codex 构…",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "word_2026-05-29_006",
+      "level": 3,
+      "content": "机器人公司秘密测试引争议",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "word_2026-05-29_007",
+      "level": 3,
+      "content": "总结大语言模型开发异味",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "word_2026-05-29_008",
+      "level": 3,
+      "content": "小游戏揭示代理权限疲劳",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "word_2026-05-29_001",
+      "level": 3,
+      "content": "OpenAI 发布前沿治理框架",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "word_2026-05-29_002",
+      "level": 3,
+      "content": "谷歌 I/O 大会回顾 AI 亮点",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "word_2026-05-29_003",
+      "level": 3,
+      "content": "Anthropic 推出 Clau…",
+      "date": "2026-05-29"
+    },
+    {
+      "id": "word_2026-05-29_004",
+      "level": 3,
       "content": "巨头修正 AI 就业末日论",
       "date": "2026-05-29"
     },
     {
-      "id": "tag_2026-05-29_001",
-      "level": 2,
+      "id": "word_2026-05-29_001",
+      "level": 3,
       "content": "YouTube 强制自动标注 AI…",
       "date": "2026-05-29"
     },
@@ -189,54 +246,6 @@
       "level": 3,
       "content": "谷歌发布 I/O 2026 开发者…",
       "date": "2026-05-28"
-    },
-    {
-      "id": "word_2026-05-28_004",
-      "level": 3,
-      "content": "维珍航空借 Codex 加速软件交付",
-      "date": "2026-05-28"
-    },
-    {
-      "id": "word_2026-05-28_005",
-      "level": 3,
-      "content": "LLM 开发应回归成熟编程语言",
-      "date": "2026-05-28"
-    },
-    {
-      "id": "word_2026-05-27_001",
-      "level": 3,
-      "content": "西班牙封禁无牌预测市场",
-      "date": "2026-05-27"
-    },
-    {
-      "id": "word_2026-05-27_002",
-      "level": 3,
-      "content": "本地 AI 加外包模式更具经济性",
-      "date": "2026-05-27"
-    },
-    {
-      "id": "word_2026-05-27_003",
-      "level": 3,
-      "content": "主张大模型开发使用成熟语言",
-      "date": "2026-05-27"
-    },
-    {
-      "id": "word_2026-05-27_004",
-      "level": 3,
-      "content": "Claude 独立发现 macOS…",
-      "date": "2026-05-27"
-    },
-    {
-      "id": "word_2026-05-27_001",
-      "level": 3,
-      "content": "挪威建华为集群训练大模型",
-      "date": "2026-05-27"
-    },
-    {
-      "id": "word_2026-05-27_002",
-      "level": 3,
-      "content": "利用 AI 慢速编写高质量代码",
-      "date": "2026-05-27"
     }
   ]
 }
