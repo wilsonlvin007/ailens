@@ -145,7 +145,7 @@ const placed: PlacedItem[] = [];
 
 // === Step 1: Place L1 ===
 // L1[0] → center cell (centerCol, centerRow)
-// L1[1-4] → 4 cardinal neighbors: up, right, down, left
+// L1[1-4] → 5-row vertical spread: up2, up1, down1, down2
 // L1[5+]  → diagonal neighbors (random pick)
 if (l1.length > 0) {
   const centerCell = allCells.find(c => c.col === centerCol && c.row === centerRow)!;
@@ -161,10 +161,10 @@ if (l1.length > 0) {
 
   // 4 cardinal cells: up, right, down, left (skip 1 cell for spacing)
   const cardinals = [
-    { col: centerCol, row: centerRow - 1 },     // up
-    { col: centerCol + 1, row: centerRow },     // right
-    { col: centerCol, row: centerRow + 1 },     // down
-    { col: centerCol - 1, row: centerRow },     // left
+    { col: centerCol, row: centerRow - 2 },     // up2 (far)
+    { col: centerCol, row: centerRow - 1 },     // up1 (near)
+    { col: centerCol, row: centerRow + 1 },     // down1 (near)
+    { col: centerCol, row: centerRow + 2 },     // down2 (far)
   ];
   // 4 diagonal cells at distance 2
   const diagonals = [
