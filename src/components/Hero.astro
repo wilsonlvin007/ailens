@@ -181,16 +181,23 @@ if (l1.length > 0) {
     const cell = allCells.find(c => c.col === target.col && c.row === target.row);
     if (!cell || occupied.has(cellKey(cell.col, cell.row))) continue;
     occupied.add(cellKey(cell.col, cell.row));
-    // Big jitter: ±40% of cell size for organic feel
-    const jx = (hashF(hash(l1[i].id) * 3 + i * 7) - 0.5) * CELL_W * 0.8;
-    const jy = (hashF(hash(l1[i].id) * 5 + i * 11) - 0.5) * CELL_H * 0.8;
-    const anim = makeAnim(l1[i]);
-    placed.push({
-      id: l1[i].id, level: 1, content: l1[i].content,
-      signal_index: l1[i].signal_index ?? 0,
-      x: cell.cx + jx, y: cell.cy + jy, depth: 'mg',
-      ...anim,
-    });
+    // Big jitter with L1 collision check
+    let okCard = false;
+    for (let att = 0; att < 30; att++) {
+      const jx = (hashF(hash(l1[i].id) * 3 + i * 7 + att * 13) - 0.5) * CELL_W * 0.7;
+      const jy = (hashF(hash(l1[i].id) * 5 + i * 11 + att * 17) - 0.5) * CELL_H * 0.7;
+      if (!overlapsAny(cell.cx + jx, cell.cy + jy, 5.5, 2)) {
+        const anim = makeAnim(l1[i]);
+        placed.push({
+          id: l1[i].id, level: 1, content: l1[i].content,
+          signal_index: l1[i].signal_index ?? 0,
+          x: cell.cx + jx, y: cell.cy + jy, depth: 'mg',
+          ...anim,
+        });
+        okCard = true;
+        break;
+      }
+    }
   }
 
   // Left/right columns at middle 3 rows (dr -1,0,1)
@@ -204,15 +211,22 @@ if (l1.length > 0) {
     const cell = allCells.find(c => c.col === pos.col && c.row === pos.row);
     if (!cell || occupied.has(cellKey(cell.col, cell.row))) continue;
     occupied.add(cellKey(cell.col, cell.row));
-    const jx = (hashF(hash(l1[i].id) * 3 + i * 7) - 0.5) * CELL_W * 0.6;
-    const jy = (hashF(hash(l1[i].id) * 5 + i * 11) - 0.5) * CELL_H * 0.6;
-    const anim = makeAnim(l1[i]);
-    placed.push({
-      id: l1[i].id, level: 1, content: l1[i].content,
-      signal_index: l1[i].signal_index ?? 0,
-      x: cell.cx + jx, y: cell.cy + jy, depth: 'bg',
-      ...anim,
-    });
+    let okExtra = false;
+    for (let att = 0; att < 30; att++) {
+      const jx = (hashF(hash(l1[i].id) * 3 + i * 7 + att * 13) - 0.5) * CELL_W * 0.5;
+      const jy = (hashF(hash(l1[i].id) * 5 + i * 11 + att * 17) - 0.5) * CELL_H * 0.5;
+      if (!overlapsAny(cell.cx + jx, cell.cy + jy, 5.5, 2)) {
+        const anim = makeAnim(l1[i]);
+        placed.push({
+          id: l1[i].id, level: 1, content: l1[i].content,
+          signal_index: l1[i].signal_index ?? 0,
+          x: cell.cx + jx, y: cell.cy + jy, depth: 'bg',
+          ...anim,
+        });
+        okExtra = true;
+        break;
+      }
+    }
   }
 }
 
