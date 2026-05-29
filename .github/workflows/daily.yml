@@ -36,7 +36,7 @@ jobs:
 
           # 1. 采集
           raw = main()
-          raw_items_all = json.loads(raw)
+          raw_items_all = json.loads(raw)[:20]
           # 去重：排除过去5天已出现过的 source URL
           from pathlib import Path
           _data_dir = Path('public/data')
@@ -54,10 +54,10 @@ jobs:
                       pass
           fresh_raw = [it for it in raw_items_all if it.get('url', '') not in seen_sources]
           # 如果去重后不够10条，用原列表补足
-          if len(fresh_raw) < 10:
-              extra = [it for it in raw_items_all if it.get('url', '') in seen_sources][:10 - len(fresh_raw)]
+          if len(fresh_raw) < 20:
+              extra = [it for it in raw_items_all if it.get('url', '') in seen_sources][:20 - len(fresh_raw)]
               fresh_raw += extra
-          items = fresh_raw[:10]
+          items = fresh_raw[:20]
           print(f"Raw: {len(raw_items_all)} -> dedup: {len(fresh_raw)} -> to Dify: {len(items)} (seen sources: {len(seen_sources)})")
           date = (datetime.now(timezone(timedelta(hours=8)))).strftime('%Y-%m-%d')
           print(f"Collected {len(items)} items for {date}")
