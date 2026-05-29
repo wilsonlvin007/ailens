@@ -483,7 +483,7 @@ jobs:
                   return title0
               return title0[:MAX_LEN-1] + '…'
 
-          FIXED_L1 = 15
+          FIXED_L1 = 11
           FIXED_L2 = 10
           FIXED_L3 = 15
 
