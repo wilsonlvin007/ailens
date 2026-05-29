@@ -173,6 +173,10 @@ def main():
         ("https://www.marktechpost.com/feed/", "MarkTechPost"),
         ("https://www.artificialintelligence-news.com/feed/", "AI News"),
         ("https://techcrunch.com/category/artificial-intelligence/feed/", "TechCrunch AI"),
+        ("https://www.producthunt.com/feed?topic=ai", "Product Hunt AI"),
+        ("https://towardsdatascience.com/feed", "Towards Data Science"),
+        ("https://syncedreview.com/feed/", "Synced Review"),
+        ("https://www.aitools.fyi/rss", "AI Tools"),
     ]
     for feed_url, source_name in feeds:
         print(f"  Collecting {source_name}...")
