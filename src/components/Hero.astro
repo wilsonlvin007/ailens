@@ -136,8 +136,8 @@ function makeAnim(item: HeroItem): { amp: number; per: number; del: number; ox: 
 
 // Jitter: random offset within cell (±35% of cell size)
 function jitter(h: number, cell: GridCell): { x: number; y: number } {
-  const jx = (hashF(h * 3 + cell.col * 7 + cell.row * 13) - 0.5) * CELL_W * 0.7;
-  const jy = (hashF(h * 5 + cell.col * 11 + cell.row * 17) - 0.5) * CELL_H * 0.7;
+  const jx = (hashF(h * 3 + cell.col * 7 + cell.row * 13) - 0.5) * CELL_W * 0.45;
+  const jy = (hashF(h * 5 + cell.col * 11 + cell.row * 17) - 0.5) * CELL_H * 0.45;
   return { x: cell.cx + jx, y: cell.cy + jy };
 }
 
@@ -184,8 +184,8 @@ if (l1.length > 0) {
     // Big jitter with L1 collision check
     let okCard = false;
     for (let att = 0; att < 30; att++) {
-      const jx = (hashF(hash(l1[i].id) * 3 + i * 7 + att * 13) - 0.5) * CELL_W * 0.7;
-      const jy = (hashF(hash(l1[i].id) * 5 + i * 11 + att * 17) - 0.5) * CELL_H * 0.7;
+      const jx = (hashF(hash(l1[i].id) * 3 + i * 7 + att * 13) - 0.5) * CELL_W * 0.45;
+      const jy = (hashF(hash(l1[i].id) * 5 + i * 11 + att * 17) - 0.5) * CELL_H * 0.45;
       if (!overlapsAny(cell.cx + jx, cell.cy + jy, 5.5, 2)) {
         const anim = makeAnim(l1[i]);
         placed.push({
@@ -213,8 +213,8 @@ if (l1.length > 0) {
     occupied.add(cellKey(cell.col, cell.row));
     let okExtra = false;
     for (let att = 0; att < 30; att++) {
-      const jx = (hashF(hash(l1[i].id) * 3 + i * 7 + att * 13) - 0.5) * CELL_W * 0.5;
-      const jy = (hashF(hash(l1[i].id) * 5 + i * 11 + att * 17) - 0.5) * CELL_H * 0.5;
+      const jx = (hashF(hash(l1[i].id) * 3 + i * 7 + att * 13) - 0.5) * CELL_W * 0.35;
+      const jy = (hashF(hash(l1[i].id) * 5 + i * 11 + att * 17) - 0.5) * CELL_H * 0.35;
       if (!overlapsAny(cell.cx + jx, cell.cy + jy, 5.5, 2)) {
         const anim = makeAnim(l1[i]);
         placed.push({
