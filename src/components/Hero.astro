@@ -55,10 +55,10 @@ const l3 = items.filter(i => i.level === 3).slice(0, 14);
 // (compensates for header height affecting perceived center)
 
 const COLS = 7;
-const ROWS = 8;
+const ROWS = 5;
 const CELL_W = 100 / COLS;  // ~11.1%
-const CELL_H = 100 / ROWS; // ~12.5%
-const V_OFFSET = -1.5; // shift all items up to align with content center
+const CELL_H = 100 / ROWS; // ~20%
+const V_OFFSET = -2.8; // shift all items up to align with content center
 
 interface GridCell {
   col: number;
