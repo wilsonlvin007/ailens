@@ -42,7 +42,7 @@ function loadHeroState(): HeroState | null {
 
 const state = loadHeroState();
 const items = state?.items || [];
-const l1 = items.filter(i => i.level === 1).slice(0, 7);
+const l1 = items.filter(i => i.level === 1).slice(0, 15);
 const l2 = items.filter(i => i.level === 2).slice(0, 10);
 const l3 = items.filter(i => i.level === 3).slice(0, 14);
 
@@ -186,16 +186,17 @@ if (l1.length > 0) {
       signal_index: l1[i].signal_index ?? 0,
       x: cell.cx + (hashF(hash(l1[i].id) * 3 + i * 7) - 0.5) * 5,
       y: cell.cy + (hashF(hash(l1[i].id) * 5 + i * 11) - 0.5) * 5,
-      depth: (i === 1 || i === 2) ? 'mg' : 'bg',
+      depth: 'mg',
       ...anim,
     });
   }
 
-  // L1[5] → left, L1[6] → right (fill horizontal edges)
-  const extraL1Positions = [
-    { col: centerCol - 1, row: centerRow },     // left
-    { col: centerCol + 1, row: centerRow },     // right
-  ];
+  // L1[5-14] → fill 5x3 grid: left/right columns at all 5 rows
+  const extraL1Positions = [];
+  for (const dr of [-2, -1, 1, 2]) {
+    extraL1Positions.push({ col: centerCol - 1, row: centerRow + dr }); // left
+    extraL1Positions.push({ col: centerCol + 1, row: centerRow + dr }); // right
+  }
   for (let i = 5; i < Math.min(l1.length, extraL1Positions.length + 5); i++) {
     const pos = extraL1Positions[i - 5];
     if (!pos) continue;
