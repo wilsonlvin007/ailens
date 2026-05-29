@@ -42,7 +42,7 @@ function loadHeroState(): HeroState | null {
 
 const state = loadHeroState();
 const items = state?.items || [];
-const l1 = items.filter(i => i.level === 1).slice(0, 11);
+const l1 = items.filter(i => i.level === 1).slice(0, 15);
 const l2 = items.filter(i => i.level === 2).slice(0, 10);
 const l3 = items.filter(i => i.level === 3).slice(0, 14);
 
@@ -158,10 +158,10 @@ function overlapsAny(x: number, y: number, hw: number, hh: number): boolean {
 }
 
 // === Step 1: Place L1 — free-form scattering within 3×5 area ===
-const L1_AREA_LEFT = (centerCol - 1 + 0.1) / COLS * 100;
-const L1_AREA_RIGHT = (centerCol + 1 + 0.9) / COLS * 100;
-const L1_AREA_TOP = (centerRow - 2 + 0.1) / ROWS * 100 + V_OFFSET;
-const L1_AREA_BOTTOM = (centerRow + 2 + 0.9) / ROWS * 100 + V_OFFSET;
+const L1_AREA_LEFT = (centerCol - 1 + 0.25) / COLS * 100;
+const L1_AREA_RIGHT = (centerCol + 1 + 0.75) / COLS * 100;
+const L1_AREA_TOP = (centerRow - 2 + 0.35) / ROWS * 100 + V_OFFSET;
+const L1_AREA_BOTTOM = (centerRow + 2 + 0.65) / ROWS * 100 + V_OFFSET;
 
 if (l1.length > 0) {
   // Place center item first
