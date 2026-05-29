@@ -146,7 +146,7 @@ const placed: PlacedItem[] = [];
 // === Step 1: Place L1 ===
 // L1[0] → center cell (centerCol, centerRow)
 // L1[1-4] → 5-row vertical spread: up2, up1, down1, down2
-// L1[5+]  → diagonal neighbors (random pick)
+// L1[5-6] → left, right (fill horizontal)
 if (l1.length > 0) {
   const centerCell = allCells.find(c => c.col === centerCol && c.row === centerRow)!;
   occupied.add(cellKey(centerCell.col, centerCell.row));
