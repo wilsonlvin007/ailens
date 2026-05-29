@@ -483,8 +483,8 @@ jobs:
                   return title0
               return title0[:MAX_LEN-1] + '…'
 
-          FIXED_L1 = 5
-          FIXED_L2 = 10
+          FIXED_L1 = 7
+          FIXED_L2 = 8
           FIXED_L3 = 20
 
           old_state = load_hero_state()
