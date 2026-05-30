@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-05-30",
+  "updated_at": "2026-05-31",
   "items": [
     {
-      "id": "sig_2026-05-30_001",
+      "id": "sig_2026-05-31_001",
       "level": 1,
-      "content": "Anthropic 获巨资发 Opus4.8",
-      "summary": "Anthropic 完成 650 亿美元融资，估值近万亿，同步发布 Opus 4",
+      "content": "Anthropic 获巨资发布新模型",
+      "summary": "Anthropic 完成 650 亿美元融资，估值近万亿，同步推出具备更强判断力",
       "source": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
-      "date": "2026-05-30",
+      "date": "2026-05-31",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-05-30_002",
+      "id": "sig_2026-05-31_002",
       "level": 1,
-      "content": "谷歌展示 Gemini 多模态进展",
-      "summary": "谷歌 I/O 展示 Gemini Omni 及 3.5 版本九大演示，凸显其在实",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
-      "date": "2026-05-30",
+      "content": "OpenAI 推进生物防御计划",
+      "summary": "OpenAI 推出 Rosalind 生物防御计划，向受信任开发者开放专用模型以",
+      "source": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "date": "2026-05-31",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-05-30_003",
+      "id": "sig_2026-05-31_003",
       "level": 1,
-      "content": "Liquid AI 开源高效 MoE 模型",
-      "summary": "Liquid AI 公布基于 38T 数据训练的 8B-A1B 混合专家模型，在",
-      "source": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
-      "date": "2026-05-30",
+      "content": "AI 助力罕见病诊断突破",
+      "summary": "波士顿儿童医院利用 OpenAI 技术优化护理流程，成功确诊超过 40 例以往难",
+      "source": "https://openai.com/index/boston-childrens-hospital",
+      "date": "2026-05-31",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-05-30_004",
+      "id": "sig_2026-05-31_004",
       "level": 1,
-      "content": "波士顿儿童医院 AI 辅助诊断",
-      "summary": "波士顿儿童医院利用 AI 技术辅助诊断罕见病，标志着医疗领域落地应用的重要进展。",
-      "source": "https://openai.com/index/boston-childrens-hospital",
-      "date": "2026-05-30",
+      "content": "Google 展示 Gemini 新能力",
+      "summary": "Google 发布九个演示视频，直观展示 Gemini Omni 及 3.5 版",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+      "date": "2026-05-31",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-05-30_005",
+      "id": "sig_2026-05-31_005",
       "level": 1,
-      "content": "神秘模型 Hy3 霸榜 OpenRouter",
-      "summary": "神秘模型 Hy3 在 OpenRouter 排行榜上大幅领先，引发社区对其架构和",
-      "source": "https://minimaxir.com/2026/05/openrouter-hy3/",
-      "date": "2026-05-30",
+      "content": "Braintrust 用 Codex 提效开发",
+      "summary": "Braintrust 工程师利用 Codex 和 GPT-5.5 将客户需求快速",
+      "source": "https://openai.com/index/braintrust",
+      "date": "2026-05-31",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-05-30_006",
+      "id": "sig_2026-05-31_006",
       "level": 1,
-      "content": "Shift 免费清洁换取机器人数据",
-      "summary": "初创公司 Shift 通过免费清洁服务收集家庭数据，旨在为未来机器人训练提供真实",
-      "source": "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning",
-      "date": "2026-05-30",
+      "content": "开源定义智能体协作模式",
+      "summary": "Open Envelope 提出用于定义 AI 智能体团队的开放模式，旨在促进多",
+      "source": "https://openenvelope.org/docs/schema/",
+      "date": "2026-05-31",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-05-30_007",
+      "id": "sig_2026-05-31_007",
       "level": 1,
-      "content": "Tiny-vLLM 开源高性能推理引擎",
-      "summary": "开发者开源 Tiny-vLLM，这是一个用 C++ 和 CUDA 编写的高性能轻",
+      "content": "高性能推理引擎 Tiny-vLLM",
+      "summary": "Tiny-vLLM 是一个用 C++ 和 CUDA 编写的高性能推理引擎，专为优",
       "source": "https://github.com/jmaczan/tiny-vllm",
-      "date": "2026-05-30",
+      "date": "2026-05-31",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-05-30_008",
+      "id": "sig_2026-05-31_008",
       "level": 1,
-      "content": "OpenAI 推 Rosalind 生物防御项目",
-      "summary": "OpenAI 推出 Rosalind 生物防御项目，利用 AI 增强社会应对生物",
-      "source": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
-      "date": "2026-05-30",
+      "content": "Zot 简化代码智能体流程",
+      "summary": "Zot 推出新的编程智能体框架，旨在简化和增强自动化代码生成与测试的全流程管理。",
+      "source": "https://www.zot.sh",
+      "date": "2026-05-31",
       "signal_index": 7
     },
     {
-      "id": "sig_2026-05-30_009",
+      "id": "sig_2026-05-31_009",
       "level": 1,
-      "content": "Braintrust 集成 Codex 自动写码",
-      "summary": "Braintrust 平台集成 Codex，实现将客户需求直接转化为代码，提升软",
-      "source": "https://openai.com/index/braintrust",
-      "date": "2026-05-30",
+      "content": "高校展示 AI 教育原型应用",
+      "summary": "滑铁卢大学学生开发手语导师等 AI 原型，探索 AI 在教育公平和工作辅助领域的",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+      "date": "2026-05-31",
       "signal_index": 8
+    },
+    {
+      "id": "tag_2026-05-31_001",
+      "level": 2,
+      "content": "Anthropic 获巨资发 Op…",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "tag_2026-05-31_002",
+      "level": 2,
+      "content": "谷歌展示 Gemini 多模态进展",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "tag_2026-05-31_003",
+      "level": 2,
+      "content": "Liquid AI 开源高效 Mo…",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "tag_2026-05-31_004",
+      "level": 2,
+      "content": "波士顿儿童医院 AI 辅助诊断",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "tag_2026-05-31_005",
+      "level": 2,
+      "content": "神秘模型 Hy3 霸榜 OpenR…",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "tag_2026-05-31_006",
+      "level": 2,
+      "content": "Shift 免费清洁换取机器人数据",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "tag_2026-05-31_007",
+      "level": 2,
+      "content": "Tiny-vLLM 开源高性能推理…",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "tag_2026-05-31_008",
+      "level": 2,
+      "content": "OpenAI 推 Rosalind…",
+      "date": "2026-05-31"
+    },
+    {
+      "id": "tag_2026-05-31_009",
+      "level": 2,
+      "content": "Braintrust 集成 Cod…",
+      "date": "2026-05-31"
     },
     {
       "id": "tag_2026-05-30_001",
@@ -89,56 +143,56 @@
       "date": "2026-05-30"
     },
     {
-      "id": "tag_2026-05-30_002",
-      "level": 2,
+      "id": "word_2026-05-30_002",
+      "level": 3,
       "content": "Anthropic 发布 Clau…",
       "date": "2026-05-30"
     },
     {
-      "id": "tag_2026-05-30_003",
-      "level": 2,
+      "id": "word_2026-05-30_003",
+      "level": 3,
       "content": "谷歌发布 Gemini 新模型及智…",
       "date": "2026-05-30"
     },
     {
-      "id": "tag_2026-05-30_004",
-      "level": 2,
+      "id": "word_2026-05-30_004",
+      "level": 3,
       "content": "Endava 利用 Codex 重…",
       "date": "2026-05-30"
     },
     {
-      "id": "tag_2026-05-30_005",
-      "level": 2,
+      "id": "word_2026-05-30_005",
+      "level": 3,
       "content": "思科携手 OpenAI 定义企业工程",
       "date": "2026-05-30"
     },
     {
-      "id": "tag_2026-05-30_006",
-      "level": 2,
+      "id": "word_2026-05-30_006",
+      "level": 3,
       "content": "YouTube 将自动标记 AI …",
       "date": "2026-05-30"
     },
     {
-      "id": "tag_2026-05-30_007",
-      "level": 2,
+      "id": "word_2026-05-30_007",
+      "level": 3,
       "content": "Microsoft 365 Cop…",
       "date": "2026-05-30"
     },
     {
-      "id": "tag_2026-05-30_008",
-      "level": 2,
+      "id": "word_2026-05-30_008",
+      "level": 3,
       "content": "Codex 构建自改进税务智能体",
       "date": "2026-05-30"
     },
     {
-      "id": "tag_2026-05-30_009",
-      "level": 2,
+      "id": "word_2026-05-30_009",
+      "level": 3,
       "content": "大语言模型开发异味",
       "date": "2026-05-30"
     },
     {
-      "id": "tag_2026-05-30_010",
-      "level": 2,
+      "id": "word_2026-05-30_010",
+      "level": 3,
       "content": "机器人公司测试致房屋受损",
       "date": "2026-05-30"
     },
@@ -176,60 +230,6 @@
       "id": "word_2026-05-29_002",
       "level": 3,
       "content": "互动游戏揭示代理权限疲劳痛点",
-      "date": "2026-05-29"
-    },
-    {
-      "id": "word_2026-05-29_003",
-      "level": 3,
-      "content": "大语言模型开发常见代码异味解析",
-      "date": "2026-05-29"
-    },
-    {
-      "id": "word_2026-05-29_004",
-      "level": 3,
-      "content": "谷歌 I/O 发布多项 AI 进展",
-      "date": "2026-05-29"
-    },
-    {
-      "id": "word_2026-05-29_005",
-      "level": 3,
-      "content": "Endava 利用 Codex 构…",
-      "date": "2026-05-29"
-    },
-    {
-      "id": "word_2026-05-29_006",
-      "level": 3,
-      "content": "机器人公司秘密测试引争议",
-      "date": "2026-05-29"
-    },
-    {
-      "id": "word_2026-05-29_007",
-      "level": 3,
-      "content": "总结大语言模型开发异味",
-      "date": "2026-05-29"
-    },
-    {
-      "id": "word_2026-05-29_008",
-      "level": 3,
-      "content": "小游戏揭示代理权限疲劳",
-      "date": "2026-05-29"
-    },
-    {
-      "id": "word_2026-05-29_001",
-      "level": 3,
-      "content": "OpenAI 发布前沿治理框架",
-      "date": "2026-05-29"
-    },
-    {
-      "id": "word_2026-05-29_002",
-      "level": 3,
-      "content": "谷歌 I/O 大会回顾 AI 亮点",
-      "date": "2026-05-29"
-    },
-    {
-      "id": "word_2026-05-29_003",
-      "level": 3,
-      "content": "Anthropic 推出 Clau…",
       "date": "2026-05-29"
     }
   ]
