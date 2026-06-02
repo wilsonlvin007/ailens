@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-06-02",
+  "updated_at": "2026-06-03",
   "items": [
     {
-      "id": "sig_2026-06-02_001",
+      "id": "sig_2026-06-03_001",
       "level": 1,
-      "content": "Anthropic 获巨资并发布 Opus 4.8",
-      "summary": "Anthropic 完成 650 亿美元融资，估值近万亿，同步推出 Claude",
+      "content": "Anthropic 获巨额融资发布新模型",
+      "summary": "Anthropic 完成 650 亿美元融资，估值近万亿，同步发布具备更强判断力",
       "source": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
-      "date": "2026-06-02",
+      "date": "2026-06-03",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-06-02_002",
+      "id": "sig_2026-06-03_002",
       "level": 1,
-      "content": "OpenAI 扩建密歇根巨型数据中心",
-      "summary": "OpenAI 启动密歇根州 1GW 数据中心项目，作为 Stargate 计划核",
-      "source": "https://openai.com/index/stargate-michigan-data-center",
-      "date": "2026-06-02",
+      "content": "英伟达开源 Cosmos 3 世界模型",
+      "summary": "NVIDIA 开源 Cosmos 3 世界模型及 Nemotron 3 Ultr",
+      "source": "https://news.smol.ai/issues/26-06-01-not-much/",
+      "date": "2026-06-03",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-06-02_003",
+      "id": "sig_2026-06-03_003",
       "level": 1,
-      "content": "OpenAI 前沿模型正式登陆 AWS",
-      "summary": "OpenAI 前沿模型与 Codex 上线 AWS，企业可直接在现有云环境中构建",
-      "source": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
-      "date": "2026-06-02",
+      "content": "Travelers 全国部署 OpenAI 理赔助手",
+      "summary": "Travelers 保险公司携手 OpenAI 在全国范围部署 AI 理赔助手，",
+      "source": "https://openai.com/index/travelers",
+      "date": "2026-06-03",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-06-02_004",
+      "id": "sig_2026-06-03_004",
       "level": 1,
-      "content": "AI 助力波士顿儿童医院诊断罕见病",
-      "summary": "波士顿儿童医院利用 OpenAI 技术优化护理流程，成功确诊超过 40 例此前未",
-      "source": "https://openai.com/index/boston-childrens-hospital",
-      "date": "2026-06-02",
+      "content": "OpenAI 呼吁建立青少年保护国际机构",
+      "summary": "OpenAI 提议建立国际机构以加强青少年 AI 安全标准，呼吁全球协同行动保障",
+      "source": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
+      "date": "2026-06-03",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-06-02_005",
+      "id": "sig_2026-06-03_005",
       "level": 1,
-      "content": "Google 展示 Gemini 最新九大演示",
-      "summary": "Google 发布九个视频演示，全面展示 Gemini Omni 和 3.5 版",
+      "content": "谷歌展示 Gemini 系列九大实战演示",
+      "summary": "谷歌发布九大演示视频，展示 Gemini Omni 与 3.5 版本在 I/O ",
       "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
-      "date": "2026-06-02",
+      "date": "2026-06-03",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-06-02_006",
+      "id": "sig_2026-06-03_006",
       "level": 1,
-      "content": "Google 利用 Gemini 策划 I/O 大会",
-      "summary": "Google 团队分享如何利用 Gemini AI 技术全程辅助策划并制作了 G",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
-      "date": "2026-06-02",
+      "content": "OpenAI 推出全角色 Codex 协作工具",
+      "summary": "OpenAI 发布面向分析师、设计师等多角色的 Codex 插件，旨在提升各类专",
+      "source": "https://openai.com/index/codex-for-every-role-tool-workflow",
+      "date": "2026-06-03",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-06-02_007",
+      "id": "sig_2026-06-03_007",
       "level": 1,
-      "content": "开源高性能推理引擎 Tiny-vLLM",
-      "summary": "开源项目 Tiny-vLLM 发布，这是一个用 C++ 和 CUDA 编写的高性",
-      "source": "https://github.com/jmaczan/tiny-vllm",
-      "date": "2026-06-02",
+      "content": "MetaBrain 推出本地文档记忆系统",
+      "summary": "MetaBrain 发布本地文档记忆系统，为 AI 智能体提供高效的上下文存储与",
+      "source": "https://metabrain.eu",
+      "date": "2026-06-03",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-06-02_008",
+      "id": "sig_2026-06-03_008",
       "level": 1,
-      "content": "开源数据智能体上下文层 Ktx",
-      "summary": "Ktx 是一个开源的可执行上下文层，专为数据智能体设计，旨在提升代理任务的执行效",
-      "source": "https://github.com/Kaelio/ktx",
-      "date": "2026-06-02",
+      "content": "开发者分享 150 行代码构建 Agent",
+      "summary": "社区开发者分享如何用 150 行代码构建自定义 AI 智能体命令行工具，大幅降低",
+      "source": "https://go-micro.dev/blog/11",
+      "date": "2026-06-03",
       "signal_index": 7
     },
     {
-      "id": "sig_2026-06-02_009",
+      "id": "sig_2026-06-03_009",
       "level": 1,
-      "content": "Open Envelope 定义智能体协作模式",
-      "summary": "Open Envelope 推出开放模式，用于定义和协调 AI 智能体团队的协作",
-      "source": "https://openenvelope.org/docs/schema/",
-      "date": "2026-06-02",
+      "content": "谷歌揭秘利用 Gemini 制作 I/O 大会",
+      "summary": "谷歌团队披露利用 Gemini 系列模型辅助策划与制作 Google I/O 2",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+      "date": "2026-06-03",
       "signal_index": 8
+    },
+    {
+      "id": "tag_2026-06-03_001",
+      "level": 2,
+      "content": "Anthropic 获巨资并发布 …",
+      "date": "2026-06-03"
+    },
+    {
+      "id": "tag_2026-06-03_002",
+      "level": 2,
+      "content": "OpenAI 扩建密歇根巨型数据中心",
+      "date": "2026-06-03"
+    },
+    {
+      "id": "tag_2026-06-03_003",
+      "level": 2,
+      "content": "OpenAI 前沿模型正式登陆 A…",
+      "date": "2026-06-03"
+    },
+    {
+      "id": "tag_2026-06-03_004",
+      "level": 2,
+      "content": "AI 助力波士顿儿童医院诊断罕见病",
+      "date": "2026-06-03"
+    },
+    {
+      "id": "tag_2026-06-03_005",
+      "level": 2,
+      "content": "Google 展示 Gemini …",
+      "date": "2026-06-03"
+    },
+    {
+      "id": "tag_2026-06-03_006",
+      "level": 2,
+      "content": "Google 利用 Gemini …",
+      "date": "2026-06-03"
+    },
+    {
+      "id": "tag_2026-06-03_007",
+      "level": 2,
+      "content": "开源高性能推理引擎 Tiny-vL…",
+      "date": "2026-06-03"
+    },
+    {
+      "id": "tag_2026-06-03_008",
+      "level": 2,
+      "content": "开源数据智能体上下文层 Ktx",
+      "date": "2026-06-03"
+    },
+    {
+      "id": "tag_2026-06-03_009",
+      "level": 2,
+      "content": "Open Envelope 定义智…",
+      "date": "2026-06-03"
     },
     {
       "id": "tag_2026-06-02_001",
@@ -89,56 +143,50 @@
       "date": "2026-06-02"
     },
     {
-      "id": "tag_2026-06-02_002",
-      "level": 2,
+      "id": "word_2026-06-02_002",
+      "level": 3,
       "content": "OpenAI 推出生物防御专用模型",
       "date": "2026-06-02"
     },
     {
-      "id": "tag_2026-06-02_003",
-      "level": 2,
-      "content": "Google 展示 Gemini …",
-      "date": "2026-06-02"
-    },
-    {
-      "id": "tag_2026-06-02_004",
-      "level": 2,
+      "id": "word_2026-06-02_004",
+      "level": 3,
       "content": "AI 助力儿童医院诊断罕见病",
       "date": "2026-06-02"
     },
     {
-      "id": "tag_2026-06-02_005",
-      "level": 2,
+      "id": "word_2026-06-02_005",
+      "level": 3,
       "content": "Braintrust 利用 Cod…",
       "date": "2026-06-02"
     },
     {
-      "id": "tag_2026-06-02_006",
-      "level": 2,
+      "id": "word_2026-06-02_006",
+      "level": 3,
       "content": "开源工具 Ouijit 管理编程智…",
       "date": "2026-06-02"
     },
     {
-      "id": "tag_2026-06-02_007",
-      "level": 2,
+      "id": "word_2026-06-02_007",
+      "level": 3,
       "content": "Komi-learn 赋予智能体持…",
       "date": "2026-06-02"
     },
     {
-      "id": "tag_2026-06-02_008",
-      "level": 2,
+      "id": "word_2026-06-02_008",
+      "level": 3,
       "content": "Agentpack 隔离智能体配置层",
       "date": "2026-06-02"
     },
     {
-      "id": "tag_2026-06-02_009",
-      "level": 2,
+      "id": "word_2026-06-02_009",
+      "level": 3,
       "content": "Llmff 为推理提供多媒体处理",
       "date": "2026-06-02"
     },
     {
-      "id": "tag_2026-06-01_001",
-      "level": 2,
+      "id": "word_2026-06-01_001",
+      "level": 3,
       "content": "Anthropic 获巨资发布新模型",
       "date": "2026-06-01"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "高校展示 AI 教育原型应用",
       "date": "2026-06-01"
-    },
-    {
-      "id": "word_2026-05-31_001",
-      "level": 3,
-      "content": "Anthropic 获巨资发 Op…",
-      "date": "2026-05-31"
-    },
-    {
-      "id": "word_2026-05-31_002",
-      "level": 3,
-      "content": "谷歌展示 Gemini 多模态进展",
-      "date": "2026-05-31"
-    },
-    {
-      "id": "word_2026-05-31_003",
-      "level": 3,
-      "content": "Liquid AI 开源高效 Mo…",
-      "date": "2026-05-31"
-    },
-    {
-      "id": "word_2026-05-31_004",
-      "level": 3,
-      "content": "波士顿儿童医院 AI 辅助诊断",
-      "date": "2026-05-31"
-    },
-    {
-      "id": "word_2026-05-31_005",
-      "level": 3,
-      "content": "神秘模型 Hy3 霸榜 OpenR…",
-      "date": "2026-05-31"
-    },
-    {
-      "id": "word_2026-05-31_006",
-      "level": 3,
-      "content": "Shift 免费清洁换取机器人数据",
-      "date": "2026-05-31"
-    },
-    {
-      "id": "word_2026-05-31_007",
-      "level": 3,
-      "content": "Tiny-vLLM 开源高性能推理…",
-      "date": "2026-05-31"
-    },
-    {
-      "id": "word_2026-05-31_008",
-      "level": 3,
-      "content": "OpenAI 推 Rosalind…",
-      "date": "2026-05-31"
     }
   ]
 }
