@@ -493,8 +493,41 @@ jobs:
           old_l2_items = [i for i in old_items if i.get('level') == 2]
           old_l3_items = [i for i in old_items if i.get('level') == 3]
 
-          # ===== L1: 新内容优先，不够从旧L1补水 =====
-          sorted_items = sorted(items_parsed, key=lambda x: x.get('importance', 0), reverse=True)
+          # ===== L1: 双重新鲜度检查（来源重叠 + 来源日期老化） =====
+          # 1. 昨日来源去重：source URL 在昨日数据中出现过 → 降权
+          yesterday_str = (datetime.now(timezone(timedelta(hours=8))) - timedelta(days=1)).strftime('%Y-%m-%d')
+          yesterday_file = DATA_DIR / f'{yesterday_str}.json'
+          yesterday_sources = set()
+          if yesterday_file.exists():
+              try:
+                  yd = json.loads(open(yesterday_file).read())
+                  for it in yd.get('items', []):
+                      if it.get('source'):
+                          yesterday_sources.add(it['source'])
+              except:
+                  pass
+          # 2. 来源日期老化惩罚：从 smol.ai URL 提取日期，按天数打折 importance
+          def src_age_days(source_url, today_str):
+              m = re.search(r'(\d{2})-(\d{2})-(\d{2})', source_url or '')
+              if m:
+                  yy, mm, dd = int(m.group(1)), int(m.group(2)), int(m.group(3))
+                  src_date = f"20{yy}-{mm:02d}-{dd:02d}"
+                  try:
+                      src_dt = datetime.strptime(src_date, '%Y-%m-%d')
+                      today_dt = datetime.strptime(today_str, '%Y-%m-%d')
+                      return max(0, (today_dt - src_dt).days)
+                  except:
+                      pass
+              return 0
+          AGE_WEIGHT = 0.7  # 每天老化扣 0.7 分（2天旧闻 imp=5 → 有效分 3.6）
+          # 复合排序：(新鲜来源 > 旧来源, 有效重要性 DESC, 原始重要性 DESC)
+          sorted_items = sorted(items_parsed,
+              key=lambda x: (
+                  0 if x.get('source', '') in yesterday_sources else 1,
+                  x.get('importance', 0) - src_age_days(x.get('source', ''), date) * AGE_WEIGHT,
+                  x.get('importance', 0)
+              ),
+              reverse=True)
           new_candidates = sorted_items[:FIXED_L1]
 
           new_l1 = []
@@ -514,33 +547,13 @@ jobs:
                   '_tags': item.get('tags', []),
               })
 
-          # 补水：优先从当天新内容池取（取去重后排名靠后的），不够再从旧L1补
+          # 补水：当天新内容不够 FIXED_L1 时从旧 L1 补
           remaining = FIXED_L1 - len(new_l1)
-          if remaining > 0:
-              # 先取当天剩余新内容
-              extra_fresh = sorted_items[FIXED_L1:FIXED_L1 + remaining]
-              for idx, item in enumerate(extra_fresh):
-                  try:
-                      original_index = items_parsed.index(item)
-                  except ValueError:
-                      original_index = idx
-                  new_l1.append({
-                      'id': f'sig_{date}_{len(new_l1)+1:03d}',
-                      'level': 1,
-                      'content': item.get('title', ''),
-                      'summary': (item.get('summary', '') or '')[:40],
-                      'source': item.get('source', ''),
-                      'date': date,
-                      'signal_index': original_index,
-                      '_tags': item.get('tags', []),
-                  })
-              # 还不够从旧L1补（兜底，但排除已发布过的来源）
-              still_need = FIXED_L1 - len(new_l1)
-              if still_need > 0 and old_l1_items:
-                  for old in old_l1_items[:still_need]:
-                      old['date'] = date
-                      old['signal_index'] = None
-                      new_l1.append(old)
+          if remaining > 0 and old_l1_items:
+              for old in old_l1_items[:remaining]:
+                  old['date'] = date
+                  old['signal_index'] = None
+                  new_l1.append(old)
 
           # 溢流到L2
           kept_l1_content = {i['content'] for i in new_l1}
