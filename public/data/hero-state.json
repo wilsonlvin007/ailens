@@ -4,24 +4,6 @@
     {
       "id": "sig_2026-06-03_001",
       "level": 1,
-      "content": "Anthropic 获巨额融资发布新模型",
-      "summary": "Anthropic 完成 650 亿美元融资，估值近万亿，同步发布具备更强判断力",
-      "source": "https://news.smol.ai/issues/26-05-28-anthropic-series-h/",
-      "date": "2026-06-03",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-06-03_002",
-      "level": 1,
-      "content": "英伟达开源 Cosmos 3 世界模型",
-      "summary": "NVIDIA 开源 Cosmos 3 世界模型及 Nemotron 3 Ultr",
-      "source": "https://news.smol.ai/issues/26-06-01-not-much/",
-      "date": "2026-06-03",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-06-03_003",
-      "level": 1,
       "content": "Travelers 全国部署 OpenAI 理赔助手",
       "summary": "Travelers 保险公司携手 OpenAI 在全国范围部署 AI 理赔助手，",
       "source": "https://openai.com/index/travelers",
@@ -29,7 +11,7 @@
       "signal_index": 2
     },
     {
-      "id": "sig_2026-06-03_004",
+      "id": "sig_2026-06-03_002",
       "level": 1,
       "content": "OpenAI 呼吁建立青少年保护国际机构",
       "summary": "OpenAI 提议建立国际机构以加强青少年 AI 安全标准，呼吁全球协同行动保障",
@@ -38,16 +20,16 @@
       "signal_index": 3
     },
     {
-      "id": "sig_2026-06-03_005",
+      "id": "sig_2026-06-03_003",
       "level": 1,
-      "content": "谷歌展示 Gemini 系列九大实战演示",
-      "summary": "谷歌发布九大演示视频，展示 Gemini Omni 与 3.5 版本在 I/O ",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+      "content": "英伟达开源 Cosmos 3 世界模型",
+      "summary": "NVIDIA 开源 Cosmos 3 世界模型及 Nemotron 3 Ultr",
+      "source": "https://news.smol.ai/issues/26-06-01-not-much/",
       "date": "2026-06-03",
-      "signal_index": 4
+      "signal_index": 1
     },
     {
-      "id": "sig_2026-06-03_006",
+      "id": "sig_2026-06-03_004",
       "level": 1,
       "content": "OpenAI 推出全角色 Codex 协作工具",
       "summary": "OpenAI 发布面向分析师、设计师等多角色的 Codex 插件，旨在提升各类专",
@@ -56,7 +38,7 @@
       "signal_index": 5
     },
     {
-      "id": "sig_2026-06-03_007",
+      "id": "sig_2026-06-03_005",
       "level": 1,
       "content": "MetaBrain 推出本地文档记忆系统",
       "summary": "MetaBrain 发布本地文档记忆系统，为 AI 智能体提供高效的上下文存储与",
@@ -65,13 +47,31 @@
       "signal_index": 6
     },
     {
-      "id": "sig_2026-06-03_008",
+      "id": "sig_2026-06-03_006",
       "level": 1,
       "content": "开发者分享 150 行代码构建 Agent",
       "summary": "社区开发者分享如何用 150 行代码构建自定义 AI 智能体命令行工具，大幅降低",
       "source": "https://go-micro.dev/blog/11",
       "date": "2026-06-03",
       "signal_index": 7
+    },
+    {
+      "id": "sig_2026-06-03_007",
+      "level": 1,
+      "content": "Clor 项目赋予智能体执行能力",
+      "summary": "Clor 项目旨在为 AI 智能体赋予执行操作的能力，扩展其在数字环境中的交互与",
+      "source": "https://clor.com/",
+      "date": "2026-06-03",
+      "signal_index": 9
+    },
+    {
+      "id": "sig_2026-06-03_008",
+      "level": 1,
+      "content": "谷歌展示 Gemini 系列九大实战演示",
+      "summary": "谷歌发布九大演示视频，展示 Gemini Omni 与 3.5 版本在 I/O ",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+      "date": "2026-06-03",
+      "signal_index": 4
     },
     {
       "id": "sig_2026-06-03_009",
@@ -81,6 +81,12 @@
       "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
       "date": "2026-06-03",
       "signal_index": 8
+    },
+    {
+      "id": "tag_2026-06-03_001",
+      "level": 2,
+      "content": "Anthropic 获巨额融资发布…",
+      "date": "2026-06-03"
     },
     {
       "id": "tag_2026-06-03_001",
@@ -135,12 +141,6 @@
       "level": 2,
       "content": "Open Envelope 定义智…",
       "date": "2026-06-03"
-    },
-    {
-      "id": "tag_2026-06-02_001",
-      "level": 2,
-      "content": "Anthropic 获巨额融资发布…",
-      "date": "2026-06-02"
     },
     {
       "id": "word_2026-06-02_002",
