@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-06-05",
+  "updated_at": "2026-06-06",
   "items": [
     {
-      "id": "sig_2026-06-05_001",
+      "id": "sig_2026-06-06_001",
       "level": 1,
-      "content": "OpenAI 推出 ChatGPT 全新记忆系统",
-      "summary": "OpenAI 为 ChatGPT 引入全新记忆系统，能跨对话保留用户偏好与上下文",
-      "source": "https://openai.com/index/chatgpt-memory-dreaming",
-      "date": "2026-06-05",
-      "signal_index": 2
+      "content": "英伟达开源 550B MoE 模型",
+      "summary": "英伟达发布完全开源的 Nemotron 3 Ultra，拥有 550B 参数及百",
+      "source": "https://news.smol.ai/issues/26-06-04-not-much/",
+      "date": "2026-06-06",
+      "signal_index": 0
     },
     {
-      "id": "sig_2026-06-05_002",
+      "id": "sig_2026-06-06_002",
       "level": 1,
-      "content": "Endava 重构软件交付流程",
-      "summary": "Endava 利用 AI 代理、ChatGPT Enterprise 和 Cod",
-      "source": "https://openai.com/index/endava-frontiers",
-      "date": "2026-06-05",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-06-05_003",
-      "level": 1,
-      "content": "OpenAI 发布生物防御行动计划",
-      "summary": "OpenAI 发布行动计划，探讨如何利用人工智能增强生物防御能力，提升全球生物韧",
-      "source": "https://openai.com/index/biodefense-in-the-intelligence-age",
-      "date": "2026-06-05",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-06-05_004",
-      "level": 1,
-      "content": "Cost.dev 优化代理调用成本",
-      "summary": "Cost.dev 帮助开发者优化 AI 代理调用成本，提供成本感知工具以降低大规",
-      "source": "https://cost.dev/",
-      "date": "2026-06-05",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-06-05_005",
-      "level": 1,
-      "content": "Boxes.dev 实现云端代码运行",
-      "summary": "Boxes.dev 允许用户在云端运行 Claude Code 和 Codex，",
-      "source": "https://boxes.dev",
-      "date": "2026-06-05",
+      "content": "Lowfat: 节省九成 Token 的 CLI 过滤器",
+      "summary": "开源项目 Lowfat 作为可插拔 CLI 过滤器，能显著减少 LLM 调用时的",
+      "source": "https://github.com/zdk/lowfat",
+      "date": "2026-06-06",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-06-05_006",
+      "id": "sig_2026-06-06_003",
       "level": 1,
-      "content": "谷歌开源 Gemma 4 12B 模型",
-      "summary": "谷歌推出 Gemma 4 12B 开源模型，为开发者提供高性能、轻量级的本地部署",
-      "source": "https://www.producthunt.com/products/gemma-4-12b",
-      "date": "2026-06-05",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-06-05_007",
-      "level": 1,
-      "content": "Bot or Not 识别 AI 生成内容",
-      "summary": "Bot or Not 是一款互动工具，帮助用户识别并区分 AI 生成的随机内容与",
-      "source": "https://play-bot-or-not.vercel.app/",
-      "date": "2026-06-05",
+      "content": "Mnemo: Rust 构建本地 AI 记忆层",
+      "summary": "Mnemo 是基于 Rust 和 SQLite 的本地优先 AI 记忆层，可为任",
+      "source": "https://github.com/zaydmulani09/mnemo",
+      "date": "2026-06-06",
       "signal_index": 9
     },
     {
-      "id": "sig_2026-06-05_008",
+      "id": "sig_2026-06-06_004",
       "level": 1,
-      "content": "谷歌利用 Gemini 制作 I/O 大会",
-      "summary": "谷歌团队分享如何利用 Gemini 系列 AI 工具策划并制作 Google I",
+      "content": "ChatGPT 升级 Dreaming 记忆系统",
+      "summary": "OpenAI 为 ChatGPT 引入 Dreaming 记忆系统，显著提升跨对",
+      "source": "https://openai.com/index/chatgpt-memory-dreaming",
+      "date": "2026-06-06",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-06-06_005",
+      "level": 1,
+      "content": "Endava 重构 AI 原生软件交付流程",
+      "summary": "Endava 利用 AI 代理与 ChatGPT Enterprise 重构软件",
+      "source": "https://openai.com/index/endava-frontiers",
+      "date": "2026-06-06",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-06-06_006",
+      "level": 1,
+      "content": "OpenAI 发布 AI 生物防御行动计划",
+      "summary": "OpenAI 发布行动计划，探讨利用人工智能技术增强全球生物防御能力，提升应对生",
+      "source": "https://openai.com/index/biodefense-in-the-intelligence-age",
+      "date": "2026-06-06",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-06-06_007",
+      "level": 1,
+      "content": "谷歌利用 Gemini 策划 I/O 大会",
+      "summary": "谷歌团队分享如何利用 Gemini 等 AI 工具全流程策划和制作 Google",
       "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
-      "date": "2026-06-05",
+      "date": "2026-06-06",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-06-06_008",
+      "level": 1,
+      "content": "Cost.dev 赋予 AI 代理成本感知力",
+      "summary": "YC 孵化的 Cost.dev 旨在让 AI 代理具备成本感知能力，通过优化调用",
+      "source": "https://cost.dev/",
+      "date": "2026-06-06",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-06-06_009",
+      "level": 1,
+      "content": "Boxes.dev 提供云端代码运行环境",
+      "summary": "Boxes.dev 提供云端环境支持直接运行 Claude Code 和 Cod",
+      "source": "https://boxes.dev",
+      "date": "2026-06-06",
       "signal_index": 8
     },
     {
-      "id": "sig_2026-06-05_009",
-      "level": 1,
-      "content": "微软发布 MAI-Thinking-1 推理模型",
-      "summary": "微软推出 35B 参数 MoE 模型 MAI-Thinking-1，AIME 2",
-      "source": "https://news.smol.ai/issues/26-06-02-msft-mai-2/",
-      "date": "2026-06-05",
-      "signal_index": 0
+      "id": "tag_2026-06-06_001",
+      "level": 2,
+      "content": "OpenAI 推出 ChatGPT…",
+      "date": "2026-06-06"
+    },
+    {
+      "id": "tag_2026-06-06_002",
+      "level": 2,
+      "content": "Endava 重构软件交付流程",
+      "date": "2026-06-06"
+    },
+    {
+      "id": "tag_2026-06-06_003",
+      "level": 2,
+      "content": "OpenAI 发布生物防御行动计划",
+      "date": "2026-06-06"
+    },
+    {
+      "id": "tag_2026-06-06_004",
+      "level": 2,
+      "content": "Cost.dev 优化代理调用成本",
+      "date": "2026-06-06"
+    },
+    {
+      "id": "tag_2026-06-06_005",
+      "level": 2,
+      "content": "Boxes.dev 实现云端代码运行",
+      "date": "2026-06-06"
+    },
+    {
+      "id": "tag_2026-06-06_006",
+      "level": 2,
+      "content": "谷歌开源 Gemma 4 12B …",
+      "date": "2026-06-06"
+    },
+    {
+      "id": "tag_2026-06-06_007",
+      "level": 2,
+      "content": "Bot or Not 识别 AI …",
+      "date": "2026-06-06"
+    },
+    {
+      "id": "tag_2026-06-06_008",
+      "level": 2,
+      "content": "谷歌利用 Gemini 制作 I/…",
+      "date": "2026-06-06"
+    },
+    {
+      "id": "tag_2026-06-06_009",
+      "level": 2,
+      "content": "微软发布 MAI-Thinking…",
+      "date": "2026-06-06"
     },
     {
       "id": "tag_2026-06-05_001",
@@ -89,56 +143,56 @@
       "date": "2026-06-05"
     },
     {
-      "id": "tag_2026-06-05_002",
-      "level": 2,
+      "id": "word_2026-06-05_002",
+      "level": 3,
       "content": "OpenAI 提出前沿 AI 治理…",
       "date": "2026-06-05"
     },
     {
-      "id": "tag_2026-06-05_003",
-      "level": 2,
+      "id": "word_2026-06-05_003",
+      "level": 3,
       "content": "微软发布 MAI 大模型家族",
       "date": "2026-06-05"
     },
     {
-      "id": "tag_2026-06-05_004",
-      "level": 2,
+      "id": "word_2026-06-05_004",
+      "level": 3,
       "content": "Wasmer 利用 Codex 构…",
       "date": "2026-06-05"
     },
     {
-      "id": "tag_2026-06-05_005",
-      "level": 2,
+      "id": "word_2026-06-05_005",
+      "level": 3,
       "content": "Mnemo 推本地优先 AI 记忆层",
       "date": "2026-06-05"
     },
     {
-      "id": "tag_2026-06-05_006",
-      "level": 2,
+      "id": "word_2026-06-05_006",
+      "level": 3,
       "content": "CAST 解决 Agent 访问控…",
       "date": "2026-06-05"
     },
     {
-      "id": "tag_2026-06-05_007",
-      "level": 2,
+      "id": "word_2026-06-05_007",
+      "level": 3,
       "content": "Paseo 优化编码 Agent …",
       "date": "2026-06-05"
     },
     {
-      "id": "tag_2026-06-05_008",
-      "level": 2,
+      "id": "word_2026-06-05_008",
+      "level": 3,
       "content": "谷歌利用 Gemini 策划 I/…",
       "date": "2026-06-05"
     },
     {
-      "id": "tag_2026-06-05_009",
-      "level": 2,
+      "id": "word_2026-06-05_009",
+      "level": 3,
       "content": "英伟达发布全模态世界模型",
       "date": "2026-06-05"
     },
     {
-      "id": "tag_2026-06-04_001",
-      "level": 2,
+      "id": "word_2026-06-04_001",
+      "level": 3,
       "content": "Travelers 全国部署 Op…",
       "date": "2026-06-04"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "Clor 项目赋予智能体执行能力",
       "date": "2026-06-04"
-    },
-    {
-      "id": "word_2026-06-04_008",
-      "level": 3,
-      "content": "谷歌展示 Gemini 系列九大实…",
-      "date": "2026-06-04"
-    },
-    {
-      "id": "word_2026-06-04_009",
-      "level": 3,
-      "content": "谷歌揭秘利用 Gemini 制作 …",
-      "date": "2026-06-04"
-    },
-    {
-      "id": "word_2026-06-03_001",
-      "level": 3,
-      "content": "Anthropic 获巨额融资发布…",
-      "date": "2026-06-03"
-    },
-    {
-      "id": "word_2026-06-03_001",
-      "level": 3,
-      "content": "Anthropic 获巨资并发布 …",
-      "date": "2026-06-03"
-    },
-    {
-      "id": "word_2026-06-03_002",
-      "level": 3,
-      "content": "OpenAI 扩建密歇根巨型数据中心",
-      "date": "2026-06-03"
-    },
-    {
-      "id": "word_2026-06-03_003",
-      "level": 3,
-      "content": "OpenAI 前沿模型正式登陆 A…",
-      "date": "2026-06-03"
-    },
-    {
-      "id": "word_2026-06-03_004",
-      "level": 3,
-      "content": "AI 助力波士顿儿童医院诊断罕见病",
-      "date": "2026-06-03"
-    },
-    {
-      "id": "word_2026-06-03_005",
-      "level": 3,
-      "content": "Google 展示 Gemini …",
-      "date": "2026-06-03"
-    },
-    {
-      "id": "word_2026-06-03_006",
-      "level": 3,
-      "content": "Google 利用 Gemini …",
-      "date": "2026-06-03"
     }
   ]
 }
