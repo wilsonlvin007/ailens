@@ -1,77 +1,134 @@
 {
-  "updated_at": "2026-06-08",
+  "updated_at": "2026-06-09",
   "items": [
     {
-      "id": "sig_2026-06-08_001",
+      "id": "sig_2026-06-09_001",
       "level": 1,
-      "content": "Google 汇总五月 AI 进展",
-      "summary": "Google 发布 2026 年 5 月 AI 进展汇总，涵盖多项核心模型技术与",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
-      "date": "2026-06-08",
-      "signal_index": 4
+      "content": "OpenAI 秘密提交 IPO 申请",
+      "summary": "OpenAI 向 SEC 秘密提交 S-1 文件，标志其商业化进程迈出关键一步，",
+      "source": "https://openai.com/index/openai-submits-confidential-s-1",
+      "date": "2026-06-09",
+      "signal_index": 0
     },
     {
-      "id": "sig_2026-06-08_002",
+      "id": "sig_2026-06-09_002",
       "level": 1,
-      "content": "Gemini 助力谷歌 I/O 大会",
-      "summary": "Google 团队展示如何利用 Gemini 模型辅助策划与制作 Google ",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
-      "date": "2026-06-08",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-06-08_003",
-      "level": 1,
-      "content": "Lathe 助深度学习新领域",
-      "summary": "开源项目 Lathe 利用大语言模型引导用户深入学习新领域知识，避免浅尝辄止。",
-      "source": "https://github.com/devenjarvis/lathe",
-      "date": "2026-06-08",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-06-08_004",
-      "level": 1,
-      "content": "Nightwatch 开源 AI 运维工具",
-      "summary": "Nightwatch 是一款开源只读 AI 站点可靠性工程工具，用于实时监控系统",
-      "source": "https://github.com/ninoxAI/nightwatch",
-      "date": "2026-06-08",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-06-08_005",
-      "level": 1,
-      "content": "谷歌搜索赋能二手购物",
-      "summary": "Google 搜索集成 AI 工具，帮助用户更便捷地发现二手商品与复古购物优惠信",
-      "source": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
-      "date": "2026-06-08",
-      "signal_index": 10
-    },
-    {
-      "id": "sig_2026-06-08_006",
-      "level": 1,
-      "content": "OpenAI 推出 ChatGPT 记忆系统",
-      "summary": "ChatGPT 新增跨对话记忆功能，可自动保留用户偏好与上下文，显著提升助手实用",
-      "source": "https://openai.com/index/chatgpt-memory-dreaming",
-      "date": "2026-06-08",
+      "content": "OpenAI 启动经济影响研究",
+      "summary": "OpenAI 推出经济研究交流平台，旨在深入评估 AI 对就业、生产力及宏观经济",
+      "source": "https://openai.com/index/economic-research-exchange",
+      "date": "2026-06-09",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-06-08_007",
+      "id": "sig_2026-06-09_003",
       "level": 1,
-      "content": "OpenAI 启动生物防御计划",
-      "summary": "OpenAI 发布生物防御行动计划，旨在利用人工智能技术增强全球生物韧性以应对潜",
-      "source": "https://openai.com/index/biodefense-in-the-intelligence-age",
-      "date": "2026-06-08",
-      "signal_index": 2
+      "content": "OpenAI 公布普惠 AGI 愿景",
+      "summary": "OpenAI 发布未来计划，聚焦确保 AGI 的普及性、安全性及共享繁荣，致力于",
+      "source": "https://openai.com/index/built-to-benefit-everyone-our-plan",
+      "date": "2026-06-09",
+      "signal_index": 4
     },
     {
-      "id": "sig_2026-06-08_009",
+      "id": "sig_2026-06-09_004",
       "level": 1,
-      "content": "Lowfat 节省大模型 Token",
-      "summary": "Lowfat 是一款可插拔 CLI 过滤器，能显著减少大语言模型调用的 Toke",
+      "content": "Command Center 专注代码质量",
+      "summary": "推出 Command Center，专为注重质量的开发者打造 AI 编程环境，提",
+      "source": "https://www.cc.dev/",
+      "date": "2026-06-09",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-06-09_005",
+      "level": 1,
+      "content": "Lowfat 大幅节省 LLM Token",
+      "summary": "开源项目 Lowfat 推出可插拔 CLI 过滤器，通过压缩输入内容，帮助用户节",
       "source": "https://github.com/zdk/lowfat",
-      "date": "2026-06-08",
+      "date": "2026-06-09",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-06-09_006",
+      "level": 1,
+      "content": "Nightwatch 赋能只读 AI 运维",
+      "summary": "发布 Nightwatch，一款开源只读 AI 站点可靠性工程工具，辅助系统监控",
+      "source": "https://github.com/ninoxAI/nightwatch",
+      "date": "2026-06-09",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-06-09_007",
+      "level": 1,
+      "content": "谷歌汇总五月 AI 进展",
+      "summary": "谷歌汇总 2026 年 5 月 AI 进展，涵盖多项技术创新及产品更新，展示其在",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+      "date": "2026-06-09",
+      "signal_index": 8
+    },
+    {
+      "id": "sig_2026-06-09_008",
+      "level": 1,
+      "content": "Lathe 助力深度领域学习",
+      "summary": "Lathe 项目利用大语言模型帮助用户深入学习新领域知识，旨在促进实质性理解而非",
+      "source": "https://github.com/devenjarvis/lathe",
+      "date": "2026-06-09",
       "signal_index": 9
+    },
+    {
+      "id": "sig_2026-06-09_009",
+      "level": 1,
+      "content": "Anthropic 新模型性能引争议",
+      "summary": "Anthropic 新模型表现不一：Opus 4.7 化学任务强劲，但 Opus",
+      "source": "https://news.smol.ai/issues/26-06-05-not-much/",
+      "date": "2026-06-09",
+      "signal_index": 3
+    },
+    {
+      "id": "tag_2026-06-09_001",
+      "level": 2,
+      "content": "Google 汇总五月 AI 进展",
+      "date": "2026-06-09"
+    },
+    {
+      "id": "tag_2026-06-09_002",
+      "level": 2,
+      "content": "Gemini 助力谷歌 I/O 大会",
+      "date": "2026-06-09"
+    },
+    {
+      "id": "tag_2026-06-09_003",
+      "level": 2,
+      "content": "Lathe 助深度学习新领域",
+      "date": "2026-06-09"
+    },
+    {
+      "id": "tag_2026-06-09_004",
+      "level": 2,
+      "content": "Nightwatch 开源 AI …",
+      "date": "2026-06-09"
+    },
+    {
+      "id": "tag_2026-06-09_005",
+      "level": 2,
+      "content": "谷歌搜索赋能二手购物",
+      "date": "2026-06-09"
+    },
+    {
+      "id": "tag_2026-06-09_006",
+      "level": 2,
+      "content": "OpenAI 推出 ChatGPT…",
+      "date": "2026-06-09"
+    },
+    {
+      "id": "tag_2026-06-09_007",
+      "level": 2,
+      "content": "OpenAI 启动生物防御计划",
+      "date": "2026-06-09"
+    },
+    {
+      "id": "tag_2026-06-09_008",
+      "level": 2,
+      "content": "Lowfat 节省大模型 Token",
+      "date": "2026-06-09"
     },
     {
       "id": "tag_2026-06-08_001",
@@ -86,50 +143,50 @@
       "date": "2026-06-08"
     },
     {
-      "id": "tag_2026-06-08_003",
-      "level": 2,
+      "id": "word_2026-06-08_003",
+      "level": 3,
       "content": "StructOCR 解析全球文档",
       "date": "2026-06-08"
     },
     {
-      "id": "tag_2026-06-08_004",
-      "level": 2,
+      "id": "word_2026-06-08_004",
+      "level": 3,
       "content": "Anthropic 新版模型引热议",
       "date": "2026-06-08"
     },
     {
-      "id": "tag_2026-06-08_005",
-      "level": 2,
+      "id": "word_2026-06-08_005",
+      "level": 3,
       "content": "Nanocode 终端编程助手",
       "date": "2026-06-08"
     },
     {
-      "id": "tag_2026-06-08_006",
-      "level": 2,
+      "id": "word_2026-06-08_006",
+      "level": 3,
       "content": "OpenAI 升级 ChatGPT…",
       "date": "2026-06-08"
     },
     {
-      "id": "tag_2026-06-08_007",
-      "level": 2,
+      "id": "word_2026-06-08_007",
+      "level": 3,
       "content": "OpenAI 发布生物防御计划",
       "date": "2026-06-08"
     },
     {
-      "id": "tag_2026-06-08_008",
-      "level": 2,
+      "id": "word_2026-06-08_008",
+      "level": 3,
       "content": "Lowfat 过滤器节省 Token",
       "date": "2026-06-08"
     },
     {
-      "id": "tag_2026-06-07_001",
-      "level": 2,
+      "id": "word_2026-06-07_001",
+      "level": 3,
       "content": "英伟达开源 550B MoE 模型",
       "date": "2026-06-07"
     },
     {
-      "id": "tag_2026-06-07_002",
-      "level": 2,
+      "id": "word_2026-06-07_002",
+      "level": 3,
       "content": "Lowfat: 节省九成 Toke…",
       "date": "2026-06-07"
     },
@@ -174,54 +231,6 @@
       "level": 3,
       "content": "Boxes.dev 提供云端代码运…",
       "date": "2026-06-07"
-    },
-    {
-      "id": "word_2026-06-06_001",
-      "level": 3,
-      "content": "OpenAI 推出 ChatGPT…",
-      "date": "2026-06-06"
-    },
-    {
-      "id": "word_2026-06-06_002",
-      "level": 3,
-      "content": "Endava 重构软件交付流程",
-      "date": "2026-06-06"
-    },
-    {
-      "id": "word_2026-06-06_003",
-      "level": 3,
-      "content": "OpenAI 发布生物防御行动计划",
-      "date": "2026-06-06"
-    },
-    {
-      "id": "word_2026-06-06_004",
-      "level": 3,
-      "content": "Cost.dev 优化代理调用成本",
-      "date": "2026-06-06"
-    },
-    {
-      "id": "word_2026-06-06_005",
-      "level": 3,
-      "content": "Boxes.dev 实现云端代码运行",
-      "date": "2026-06-06"
-    },
-    {
-      "id": "word_2026-06-06_006",
-      "level": 3,
-      "content": "谷歌开源 Gemma 4 12B …",
-      "date": "2026-06-06"
-    },
-    {
-      "id": "word_2026-06-06_007",
-      "level": 3,
-      "content": "Bot or Not 识别 AI …",
-      "date": "2026-06-06"
-    },
-    {
-      "id": "word_2026-06-06_008",
-      "level": 3,
-      "content": "谷歌利用 Gemini 制作 I/…",
-      "date": "2026-06-06"
     }
   ]
 }
