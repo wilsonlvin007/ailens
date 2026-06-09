@@ -314,12 +314,12 @@
     flex-shrink: 0;
   }
   .category-label {
-    font-size: 1.0625rem;
+    font-size: 0.9375rem;
     font-weight: 700;
     letter-spacing: 0.04em;
   }
   .category-count {
-    font-size: 1.0625rem;
+    font-size: 0.9375rem;
     color: var(--text-tertiary);
     margin-left: auto;
     font-weight: 500;
@@ -342,7 +342,7 @@
     margin-bottom: 0.5rem;
   }
   .signal-importance {
-    font-size: 1.0625rem;
+    font-size: 0.9375rem;
     color: var(--text-tertiary);
     font-weight: 500;
   }
@@ -368,7 +368,7 @@
     margin-top: 0.75rem;
   }
   .signal-analysis summary {
-    font-size: 1.0625rem;
+    font-size: 0.9375rem;
     color: var(--accent);
     cursor: pointer;
     font-weight: 500;
@@ -393,7 +393,7 @@
     margin-top: 0.625rem;
   }
   .signal-source {
-    font-size: 1.0625rem;
+    font-size: 0.9375rem;
     color: var(--text-tertiary);
   }
   .signal-tags {
@@ -402,7 +402,7 @@
     flex-wrap: wrap;
   }
   .tag {
-    font-size: 1.0625rem;
+    font-size: 0.9375rem;
     color: var(--text-tertiary);
   }
   .view-all {
@@ -410,7 +410,7 @@
     text-align: center;
     padding: 0.625rem 0;
     margin-top: 0.25rem;
-    font-size: 1.0625rem;
+    font-size: 0.9375rem;
     font-weight: 600;
     color: var(--accent);
     border: 1px dashed var(--border);
