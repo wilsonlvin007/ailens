@@ -14,28 +14,10 @@ jobs:
           ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
       - run: |
           ssh ubuntu@${{ secrets.SERVER_HOST }} << 'REMOTE'
-            sudo tee /etc/nginx/sites-available/ailens > /dev/null << 'NGINX'
-            server {
-                listen 80;
-                server_name www.ailens.news ailens.news;
-                return 301 https://$host$request_uri;
-            }
-            server {
-                listen 443 ssl;
-                server_name www.ailens.news ailens.news;
-                root /var/www/ailens;
-                index index.html;
-                ssl_certificate /etc/letsencrypt/live/www.ailens.news/fullchain.pem;
-                ssl_certificate_key /etc/letsencrypt/live/www.ailens.news/privkey.pem;
-                location / {
-                    try_files $uri $uri/ /index.html;
-                }
-            }
-            NGINX
-            sudo nginx -t && sudo systemctl reload nginx
+            echo "=== Current nginx configs ==="
+            ls -la /etc/nginx/sites-enabled/
+            echo "=== Default config ==="
+            cat /etc/nginx/sites-enabled/default 2>/dev/null || echo "no default"
+            echo "=== ailens config ==="
+            cat /etc/nginx/sites-available/ailens 2>/dev/null || echo "no ailens"
             REMOTE
-      - run: |
-          curl -sko /dev/null -w "%{http_code}" https://www.ailens.news/
-          echo " HTTPS"
-          curl -sko /dev/null -w "%{http_code} %{redirect_url}" http://www.ailens.news/
-          echo " HTTP"
