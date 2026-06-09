@@ -15,6 +15,7 @@ jobs:
       - run: |
           ssh ubuntu@${{ secrets.SERVER_HOST }} 'sudo apt update -qq && sudo apt install -y certbot python3-certbot-nginx'
       - run: |
-          ssh ubuntu@${{ secrets.SERVER_HOST }} 'sudo certbot certonly --nginx -d www.ailens.news -d ailens.news --non-interactive --agree-tos --email bot@ailens.news'
+          ssh ubuntu@${{ secrets.SERVER_HOST }} 'sudo certbot --nginx -d www.ailens.news -d ailens.news --non-interactive --agree-tos --email bot@ailens.news --redirect || true'
       - run: |
-          ssh ubuntu@${{ secrets.SERVER_HOST }} 'curl -sI https://www.ailens.news/ | head -3'
+          ssh ubuntu@${{ secrets.SERVER_HOST }} 'sudo nginx -t && sudo systemctl reload nginx'
+          curl -sI https://www.ailens.news/ | head -5
