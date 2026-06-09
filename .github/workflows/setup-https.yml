@@ -16,6 +16,26 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
 
+      - name: Create nginx site config
+        run: |
+          ssh ubuntu@${{ secrets.SERVER_HOST }} 'sudo tee /etc/nginx/sites-available/ailens <<NGINX
+server {
+    listen 80;
+    server_name www.ailens.news ailens.news;
+    root /var/www/ailens;
+    index index.html;
+    location / {
+        try_files \$uri \$uri/ /index.html;
+    }
+    location /data/ {
+        alias /var/www/ailens/data/;
+    }
+}
+NGINX
+sudo ln -sf /etc/nginx/sites-available/ailens /etc/nginx/sites-enabled/ailens
+sudo rm -f /etc/nginx/sites-enabled/default
+sudo nginx -t && sudo systemctl reload nginx'
+
       - name: Install certbot
         run: |
           ssh ubuntu@${{ secrets.SERVER_HOST }} 'sudo apt update -qq && sudo apt install -y certbot python3-certbot-nginx'
@@ -26,6 +46,6 @@ jobs:
 
       - name: Verify HTTPS
         run: |
-         ssh ubuntu@${{ secrets.SERVER_HOST }} 'sudo nginx -t && sudo systemctl reload nginx'
+          ssh ubuntu@${{ secrets.SERVER_HOST }} 'sudo nginx -t && sudo systemctl reload nginx'
           sleep 5
           curl -sI https://www.ailens.news/ | head -5
