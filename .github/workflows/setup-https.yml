@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Install certbot
-        uses: appleboy/ssh-action@v1
+        uses: appleboy/ssh-action@v1.2.1
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ubuntu
@@ -20,7 +20,7 @@ jobs:
             sudo apt install -y certbot python3-certbot-nginx
 
       - name: Obtain SSL certificate
-        uses: appleboy/ssh-action@v1
+        uses: appleboy/ssh-action@v1.2.1
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ubuntu
@@ -29,7 +29,7 @@ jobs:
             sudo certbot --nginx -d www.ailens.news -d ailens.news --non-interactive --agree-tos --email bot@ailens.news --redirect
 
       - name: Verify and reload
-        uses: appleboy/ssh-action@v1
+        uses: appleboy/ssh-action@v1.2.1
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ubuntu
