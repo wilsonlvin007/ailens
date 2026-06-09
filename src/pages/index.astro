@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import Hero from '../components/Hero.astro';
 import Signals from '../components/Signals.astro';
 import DeepDive from '../components/DeepDive.astro';
 import { getLatestDate, getDailyData, getRecentDates } from '../lib/data';
@@ -25,11 +24,6 @@ if (latestDate) {
 <Base title={latestDate ? `AI 日报 · ${latestDate}` : 'AI Lens'}>
   {data ? (
     <>
-      <Hero
-        date={latestDate!}
-        summary={data.summary}
-        weekday={formatWeekday(latestDate!)}
-      />
       <Signals items={data.items} maxPerCategory={3} dateLink={`/${latestDate}`} />
       {data.deep_dive && (
         <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated detailUrl={`/${latestDate}`} />
