@@ -217,7 +217,18 @@ def main():
     except Exception as e:
         print(f"    Anthropic HN error: {e}")
 
+    # === AI 硬件 ===
+    hardware_feeds = [
+        ("https://www.anandtech.com/tag/ai/feed", "AnandTech AI"),
+        ("https://www.semianalysis.com/feed", "SemiAnalysis"),
+        ("https://www.tomshardware.com/feeds/ai", "Tom's Hardware AI"),
+    ]
+    for feed_url, source_name in hardware_feeds:
+        print(f"  Collecting {source_name}...")
+        all_items.extend(collect_rss(feed_url, source_name, limit=3))
+
     # === AI 生产力应用 ===
+
     print("  Collecting Product Hunt AI...")
     all_items.extend(collect_rss(
         "https://www.producthunt.com/feed?topic=ai",
