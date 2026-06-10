@@ -219,9 +219,9 @@ def main():
 
     # === AI 硬件 ===
     hardware_feeds = [
-        ("https://www.anandtech.com/tag/ai/feed", "AnandTech AI"),
-        ("https://www.semianalysis.com/feed", "SemiAnalysis"),
-        ("https://www.tomshardware.com/feeds/ai", "Tom's Hardware AI"),
+        ("https://hnrss.org/frontpage?q=nvidia+OR+gpu+OR+chip+OR+semiconductor+OR+hardware+OR+tpu", "HN Hardware"),
+        ("https://blogs.nvidia.com/feed/", "NVIDIA Blog"),
+        ("https://semiengineering.com/feed/", "Semiconductor Engineering"),
     ]
     for feed_url, source_name in hardware_feeds:
         print(f"  Collecting {source_name}...")
