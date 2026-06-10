@@ -100,7 +100,7 @@ for (const item of items) {
               );
             })}
           </div>
-          <button class="view-all" onclick="const fold=this.previousElementSibling;const showing=fold.style.display!=='none';fold.style.display=showing?'none':'';this.textContent=showing?'{group.items.slice(0, maxPerCategory).length} / {group.items.length} 条 — 展开全部':'收起';">
+          <button class="view-all-btn" data-total={group.items.length} data-visible={group.items.slice(0, maxPerCategory).length} onclick="var fold=this.previousElementSibling,s=fold.style.display!=='none';fold.style.display=s?'none':'';this.textContent=s?this.dataset.visible+' / '+this.dataset.total+' 条 — 展开全部':'收起'">
             {group.items.slice(0, maxPerCategory).length} / {group.items.length} 条 — 展开全部
           </button>
         </>
