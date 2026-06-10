@@ -198,33 +198,24 @@ def main():
         all_items.extend(collect_rss(feed_url, source_name, limit=3))
 
 
-    # === Anthropic News (HTML scrape, no RSS) ===
-    print("  Collecting Anthropic News (HTML)...")
+    # === Anthropic News (via HN API — no reliable RSS) ===
+    print("  Collecting Anthropic News (HN search)...")
     try:
-        anthropic_html = fetch_text("https://www.anthropic.com/news", timeout=10)
-        import re as re2
-        # Parse news items from HTML
-        links = re2.findall(r'<a[^>]*href="(/news/[^"]+)"[^>]*>([^<]+)</a>', anthropic_html)
-        seen_anthropic = set()
-        anthropic_count = 0
-        for href, text in links:
-            text = text.strip()
-            if not text or text in seen_anthropic or len(text) < 5:
-                continue
-            seen_anthropic.add(text)
-            full_url = "https://www.anthropic.com" + href if href.startswith("/") else href
-            all_items.append({
-                "title": text,
-                "url": full_url,
-                "source_name": "Anthropic",
-                "snippet": text,
-            })
-            anthropic_count += 1
-            if anthropic_count >= 5:
-                break
-        print(f"    Got {anthropic_count} items from Anthropic")
+        hn_url = "https://hn.algolia.com/api/v1/search?query=anthropic+OR+claude&tags=story&hitsPerPage=5&numericFilters=points>5"
+        hn_data = fetch_json(hn_url, timeout=10)
+        for hit in hn_data.get("hits", [])[:5]:
+            title = hit.get("title", "")
+            url = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID')}"
+            if len(title) > 5 and "anthropic" in title.lower() or "claude" in title.lower():
+                all_items.append({
+                    "title": title,
+                    "url": url,
+                    "source_name": "Anthropic (via HN)",
+                    "snippet": title,
+                })
+        print(f"    Got {len([i for i in all_items if 'Anthropic (via HN)' in i.get('source_name','')])} items from Anthropic")
     except Exception as e:
-        print(f"    Anthropic scrape error: {e}")
+        print(f"    Anthropic HN error: {e}")
 
     # === AI 生产力应用 ===
     print("  Collecting Product Hunt AI...")
