@@ -74,11 +74,8 @@ for (const item of items) {
         })}
       </div>
       {group.items.length > maxPerCategory && (
-        <details class="view-all-details">
-          <summary class="view-all">
-            {group.items.slice(0, maxPerCategory).length} / {group.items.length} 条 — 展开阅读全部
-          </summary>
-          <div class="signals-list">
+        <>
+          <div class="signals-fold" style="display:none">
             {group.items.slice(maxPerCategory).map((item, idx) => {
               const globalIdx = items.indexOf(item);
               return (
@@ -103,7 +100,10 @@ for (const item of items) {
               );
             })}
           </div>
-        </details>
+          <button class="view-all" onclick="const fold=this.previousElementSibling;const showing=fold.style.display!=='none';fold.style.display=showing?'none':'';this.textContent=showing?'{group.items.slice(0, maxPerCategory).length} / {group.items.length} 条 — 展开全部':'收起';">
+            {group.items.slice(0, maxPerCategory).length} / {group.items.length} 条 — 展开全部
+          </button>
+        </>
       )}
     </div>
   ))}
