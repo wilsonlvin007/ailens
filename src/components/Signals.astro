@@ -51,9 +51,7 @@ for (const item of items) {
             <div class="signal-header">
               <span class="signal-importance">{importanceLabel(item.importance)}</span>
             </div>
-            <a href={item.source} target="_blank" rel="noopener noreferrer" class="signal-title">
-              {item.title}
-            </a>
+            <span class="signal-title">{item.title}</span>
             {!compact && (
               <p class="signal-summary">{item.summary}</p>
             )}
