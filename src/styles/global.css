@@ -356,9 +356,7 @@
     margin-bottom: 0.375rem;
     transition: color 0.2s;
   }
-  .signal-title:hover {
-    color: var(--accent);
-  }
+  
   .signal-summary {
     font-size: 0.875rem;
     color: var(--text-secondary);
