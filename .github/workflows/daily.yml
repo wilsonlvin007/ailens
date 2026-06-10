@@ -404,7 +404,7 @@ jobs:
               if any(kw.lower() in title_lower for kw in hardware_kw):
                   it['category'] = 'hardware'
 
-                    VALID_CATEGORIES = {'technology', 'application', 'hardware', 'thought'}
+          VALID_CATEGORIES = {'technology', 'application', 'hardware', 'thought'}
 
               passed, warnings, errors = quality_check(site_data)
 
