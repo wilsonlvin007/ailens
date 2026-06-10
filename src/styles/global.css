@@ -426,6 +426,9 @@
   /* Importance visual hints */
   .importance-5 { border-left: 3px solid #dc2626; padding-left: 1rem; }
   .importance-4 { border-left: 3px solid #f59e0b; padding-left: 1rem; }
+.importance-3 { border-left: 3px solid #06b6d4; padding-left: 1rem; }
+.importance-2 { border-left: 3px solid #84cc16; padding-left: 1rem; }
+.importance-1 { border-left: 3px solid #94a3b8; padding-left: 1rem; }
 
 
   /* ═══ Lens vignette overlay ═══ */
