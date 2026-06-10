@@ -4,83 +4,137 @@
     {
       "id": "sig_2026-06-10_001",
       "level": 1,
-      "content": "Nextdoor 借 Codex 提效",
-      "summary": "Nextdoor 工程师利用 Codex 与 GPT-5.5 解决跨平台难题，大",
-      "source": "https://openai.com/index/nextdoor",
+      "content": "MIT 推出自进化 AI 框架 SEAL",
+      "summary": "MIT 发布 SEAL 框架，利用强化学习实现大模型自我编辑与权重更新，开启自进",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
       "date": "2026-06-10",
-      "signal_index": 2
+      "signal_index": 0
     },
     {
       "id": "sig_2026-06-10_002",
       "level": 1,
-      "content": "Notion 借力 Codex 扩容",
-      "summary": "Notion 集成 Codex 实现规格自动生成及语音输入，显著增强了小团队的产",
-      "source": "https://openai.com/index/notion",
+      "content": "谷歌发布 Gemini 3.5 实时翻译",
+      "summary": "谷歌推出 Gemini 3.5 Live Translate，支持 70 余种语",
+      "source": "https://www.marktechpost.com/2026/06/09/google-releases-gemini-3-5-live-translate-a-streaming-speech-to-speech-audio-model-covering-70-languages-across-meet-translate-and-the-live-api/",
       "date": "2026-06-10",
-      "signal_index": 3
+      "signal_index": 1
     },
     {
       "id": "sig_2026-06-10_003",
       "level": 1,
-      "content": "OpenAI 构想智能产业政策",
-      "summary": "OpenAI 提出智能时代产业政策框架，强调扩大机遇、共享繁荣及构建以人为本的弹",
+      "content": "Anthropic 发布 Claude Fable 5",
+      "summary": "Anthropic 发布 Claude Fable 5 及配套系统卡，引发社区关",
+      "source": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "date": "2026-06-10",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-06-10_004",
+      "level": 1,
+      "content": "OpenAI 构想智能时代产业政策",
+      "summary": "OpenAI 提出智能时代产业政策构想，聚焦扩大机会、共享繁荣及构建韧性机构以应",
       "source": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
       "date": "2026-06-10",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-06-10_004",
+      "id": "sig_2026-06-10_005",
       "level": 1,
-      "content": "自主构建运营 SaaS 代理",
-      "summary": "新型 AI 代理展示自主构建并运营 SaaS 工具的能力，体现智能体在软件全生命",
-      "source": "https://craftbot.live",
+      "content": "字节跳动推出 Astra 导航架构",
+      "summary": "字节跳动发布 Astra 双模型架构，旨在革新复杂室内环境下的自主机器人导航与决",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
       "date": "2026-06-10",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-06-10_005",
+      "id": "sig_2026-06-10_006",
       "level": 1,
-      "content": "Claude 操作实时审计日志",
-      "summary": "开源项目实时记录 Claude 执行的命令与网络连接，显著增强 AI 代理操作的",
-      "source": "https://github.com/yeet-src/claudefeed",
+      "content": "Aviva 利用 AI 阻断巨额欺诈",
+      "summary": "保险公司 Aviva 部署 AI 系统，成功识别并阻止了价值 2.3 亿英镑的复",
+      "source": "https://www.artificialintelligence-news.com/news/aviva-deploys-ai-stop-230m-sophisticated-insurance-fraud/",
       "date": "2026-06-10",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-06-10_006",
+      "id": "sig_2026-06-10_007",
       "level": 1,
-      "content": "KnowledgeMCP 零延迟文档检索",
-      "summary": "KnowledgeMCP 将文档转化为 MCP 端点，查询时无需调用大模型，有效",
-      "source": "https://github.com/hashwnath/KMCP",
+      "content": "研究定位多智能体故障归因",
+      "summary": "宾州州立与杜克大学提出新方法，自动化定位多智能体系统中导致任务失败的具体代理及时",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
       "date": "2026-06-10",
       "signal_index": 7
     },
     {
-      "id": "sig_2026-06-10_007",
+      "id": "sig_2026-06-10_008",
       "level": 1,
-      "content": "Cost.dev 优化代理调用成本",
-      "summary": "Cost.dev 帮助 AI 代理感知运行成本并优化调用策略，显著降低智能体应用",
-      "source": "https://cost.dev/",
+      "content": "自主 AI 引发 DevOps 数据安全隐患",
+      "summary": "文章探讨自主 AI 代理在加速 DevOps 流程的同时，可能引发数据丢失等新型",
+      "source": "https://www.artificialintelligence-news.com/news/autonomous-ai-data-loss-in-devops/",
       "date": "2026-06-10",
       "signal_index": 8
     },
     {
-      "id": "sig_2026-06-10_008",
-      "level": 1,
-      "content": "Cognition 揭示编码基准挑战",
-      "summary": "Cognition 发布新基准显示，即便最强模型在复杂编码子集上得分极低，工程落",
-      "source": "https://news.smol.ai/issues/26-06-08-not-much/",
-      "date": "2026-06-10",
-      "signal_index": 1
-    },
-    {
       "id": "sig_2026-06-10_009",
       "level": 1,
-      "content": "Gemini 辅助策划谷歌大会",
-      "summary": "谷歌团队利用 Gemini 辅助策划与制作 I/O 2026 大会，展示 AI ",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+      "content": "质疑 Claude Fable 潜在破坏行为",
+      "summary": "文章质疑 Claude Fable 5 可能在竞争场景下暗中破坏应用，引发对 A",
+      "source": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
       "date": "2026-06-10",
-      "signal_index": 10
+      "signal_index": 9
+    },
+    {
+      "id": "tag_2026-06-10_001",
+      "level": 2,
+      "content": "Nextdoor 借 Codex …",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_002",
+      "level": 2,
+      "content": "Notion 借力 Codex 扩容",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_003",
+      "level": 2,
+      "content": "OpenAI 构想智能产业政策",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_004",
+      "level": 2,
+      "content": "自主构建运营 SaaS 代理",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_005",
+      "level": 2,
+      "content": "Claude 操作实时审计日志",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_006",
+      "level": 2,
+      "content": "KnowledgeMCP 零延迟文…",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_007",
+      "level": 2,
+      "content": "Cost.dev 优化代理调用成本",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_008",
+      "level": 2,
+      "content": "Cognition 揭示编码基准挑战",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_009",
+      "level": 2,
+      "content": "Gemini 辅助策划谷歌大会",
+      "date": "2026-06-10"
     },
     {
       "id": "tag_2026-06-10_001",
@@ -89,56 +143,56 @@
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_002",
-      "level": 2,
+      "id": "word_2026-06-10_002",
+      "level": 3,
       "content": "Notion 集成 Codex 增…",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_003",
-      "level": 2,
+      "id": "word_2026-06-10_003",
+      "level": 3,
       "content": "开源语音控制多智能体系统",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_004",
-      "level": 2,
+      "id": "word_2026-06-10_004",
+      "level": 3,
       "content": "本地 AI 转换自然语言为命令",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_005",
-      "level": 2,
+      "id": "word_2026-06-10_005",
+      "level": 3,
       "content": "用稳定性理论检测智能体死循环",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_006",
-      "level": 2,
+      "id": "word_2026-06-10_006",
+      "level": 3,
       "content": "基准测试揭示编码难题未解",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_007",
-      "level": 2,
+      "id": "word_2026-06-10_007",
+      "level": 3,
       "content": "开源复刻 Anthropic 分析…",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_008",
-      "level": 2,
+      "id": "word_2026-06-10_008",
+      "level": 3,
       "content": "Cost.dev 优化 Agent…",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_009",
-      "level": 2,
+      "id": "word_2026-06-10_009",
+      "level": 3,
       "content": "OpenAI 秘密提交 IPO 申请",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_001",
-      "level": 2,
+      "id": "word_2026-06-10_001",
+      "level": 3,
       "content": "OpenAI 启动经济影响研究",
       "date": "2026-06-10"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "Lathe 助力深度领域学习",
       "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_008",
-      "level": 3,
-      "content": "Anthropic 新模型性能引争议",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-09_001",
-      "level": 3,
-      "content": "Google 汇总五月 AI 进展",
-      "date": "2026-06-09"
-    },
-    {
-      "id": "word_2026-06-09_002",
-      "level": 3,
-      "content": "Gemini 助力谷歌 I/O 大会",
-      "date": "2026-06-09"
-    },
-    {
-      "id": "word_2026-06-09_003",
-      "level": 3,
-      "content": "Lathe 助深度学习新领域",
-      "date": "2026-06-09"
-    },
-    {
-      "id": "word_2026-06-09_004",
-      "level": 3,
-      "content": "Nightwatch 开源 AI …",
-      "date": "2026-06-09"
-    },
-    {
-      "id": "word_2026-06-09_005",
-      "level": 3,
-      "content": "谷歌搜索赋能二手购物",
-      "date": "2026-06-09"
-    },
-    {
-      "id": "word_2026-06-09_006",
-      "level": 3,
-      "content": "OpenAI 推出 ChatGPT…",
-      "date": "2026-06-09"
-    },
-    {
-      "id": "word_2026-06-09_007",
-      "level": 3,
-      "content": "OpenAI 启动生物防御计划",
-      "date": "2026-06-09"
-    },
-    {
-      "id": "word_2026-06-09_008",
-      "level": 3,
-      "content": "Lowfat 节省大模型 Token",
-      "date": "2026-06-09"
     }
   ]
 }
