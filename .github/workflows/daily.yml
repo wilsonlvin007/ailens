@@ -393,7 +393,18 @@ jobs:
                   site_data['summary'] = '；'.join(summaries)
 
               # 6. 质检：出门前的最后检查
-              VALID_CATEGORIES = {'technology', 'application', 'hardware', 'thought'}
+    
+          # 关键词重新归类：硬件
+          hardware_kw = ['芯片', 'GPU', 'CPU', 'TPU', 'NPU', '半导体', '算力', '加速器',
+                         'NVIDIA', '英伟达', 'AMD', 'Intel', '英特尔', 'HBM', '显存',
+                         '制程', '晶圆', 'chip', 'processor', 'datacenter', '数据中心',
+                         '服务器', 'server', '冷却', '电源', '量子', 'quantum']
+          for it in items_parsed:
+              title_lower = (it.get('title', '') + it.get('summary', '')).lower()
+              if any(kw.lower() in title_lower for kw in hardware_kw):
+                  it['category'] = 'hardware'
+
+                    VALID_CATEGORIES = {'technology', 'application', 'hardware', 'thought'}
 
               passed, warnings, errors = quality_check(site_data)
 
