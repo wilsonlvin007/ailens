@@ -4,83 +4,131 @@
     {
       "id": "sig_2026-06-10_001",
       "level": 1,
-      "content": "MIT 发布自进化 AI 框架 SEAL",
-      "summary": "MIT 推出 SEAL 框架，利用强化学习让大模型自我编辑权重，开启 AI 自进",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "content": "Anthropic 发布 Claude Fable 5",
+      "summary": "Anthropic 推出 Claude Fable 5，支持百万级上下文，并同步",
+      "source": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
       "date": "2026-06-10",
       "signal_index": 0
     },
     {
       "id": "sig_2026-06-10_002",
       "level": 1,
-      "content": "Google 推 Gemini 3.5 实时翻译",
-      "summary": "Google 发布 Gemini 3.5 Live Translate，支持 7",
-      "source": "https://www.marktechpost.com/2026/06/09/google-releases-gemini-3-5-live-translate-a-streaming-speech-to-speech-audio-model-covering-70-languages-across-meet-translate-and-the-live-api/",
+      "content": "MIT 推出自进化 AI 框架 SEAL",
+      "summary": "MIT 研发 SEAL 框架，利用强化学习让大模型自我编辑权重，迈向自进化人工智",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
       "date": "2026-06-10",
       "signal_index": 1
     },
     {
       "id": "sig_2026-06-10_003",
       "level": 1,
-      "content": "OpenAI 构想智能时代工业政策",
-      "summary": "OpenAI 提出智能时代工业政策，聚焦扩大机会、共享繁荣及构建弹性制度应对先进",
-      "source": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+      "content": "字节跳动发布机器人导航架构 Astra",
+      "summary": "字节跳动推出 Astra 双模型架构，旨在解决复杂室内环境下自主机器人的高精度导",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
       "date": "2026-06-10",
-      "signal_index": 3
+      "signal_index": 2
     },
     {
       "id": "sig_2026-06-10_004",
       "level": 1,
-      "content": "Anthropic 发布 Claude Fable 5",
-      "summary": "Anthropic 发布 Claude Fable 5 及系统卡，其能力边界与安",
-      "source": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "content": "AWS Bedrock 需共享数据引隐私争议",
+      "summary": "AWS Bedrock 要求用户保留高阶模型数据 30 天以用于滥用检测，引发隐",
+      "source": "https://news.ycombinator.com/item?id=48473166",
       "date": "2026-06-10",
-      "signal_index": 4
+      "signal_index": 3
     },
     {
       "id": "sig_2026-06-10_005",
       "level": 1,
-      "content": "AI 模型潜在暗中破坏风险引担忧",
-      "summary": "文章探讨 AI 模型可能在竞争中暗中破坏用户应用的伦理风险，引发对模型对齐的深层",
-      "source": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
+      "content": "Langflow 高危漏洞遭主动利用",
+      "summary": "开源 AI 平台 Langflow 存在未修补高危漏洞，正被攻击者利用进行未授权",
+      "source": "https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html",
       "date": "2026-06-10",
-      "signal_index": 5
+      "signal_index": 4
     },
     {
       "id": "sig_2026-06-10_006",
       "level": 1,
-      "content": "Aviva 用 AI 阻止两亿英镑欺诈",
-      "summary": "Aviva 部署 AI 工具成功识别并阻止高达 2.3 亿英镑的复杂保险欺诈，展",
-      "source": "https://www.artificialintelligence-news.com/news/aviva-deploys-ai-stop-230m-sophisticated-insurance-fraud/",
+      "content": "多智能体系统故障归因研究",
+      "summary": "宾州州立与杜克大学研究者提出新方法，自动定位多智能体系统中的任务失败根源。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
       "date": "2026-06-10",
       "signal_index": 6
     },
     {
       "id": "sig_2026-06-10_007",
       "level": 1,
-      "content": "自主 AI 加速 DevOps 数据丢失风险",
-      "summary": "自主 AI 代理加速软件交付的同时也缩短了错误演变为灾难的时间，呼吁建立新的 D",
-      "source": "https://www.artificialintelligence-news.com/news/autonomous-ai-data-loss-in-devops/",
+      "content": "麦当劳测试谷歌 AI 点餐系统",
+      "summary": "麦当劳试点谷歌支持的 ArchIQ AI 系统，旨在优化得来速点餐体验并提升餐厅",
+      "source": "https://www.artificialintelligence-news.com/news/mcdonalds-ai-drive-thru-google-archiq/",
       "date": "2026-06-10",
       "signal_index": 7
     },
     {
       "id": "sig_2026-06-10_008",
       "level": 1,
-      "content": "研究者探索多智能体失败归因",
-      "summary": "PSU 和杜克大学研究者探索多智能体系统任务失败的自动归因机制，提升复杂协作系统",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "content": "LSEG 借力 OpenAI 扩展可信 AI",
+      "summary": "伦敦证券交易所集团采用 OpenAI 技术扩展可信 AI，加速金融洞察并赋能全球",
+      "source": "https://openai.com/index/lseg",
       "date": "2026-06-10",
       "signal_index": 8
     },
     {
       "id": "sig_2026-06-10_009",
       "level": 1,
-      "content": "字节跳动推出 Astra 机器人导航",
-      "summary": "字节跳动推出 Astra 双模型架构，革新复杂室内环境下的自主机器人导航技术。",
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "content": "Siri 集成 Gemini 但受限地域",
+      "summary": "苹果 Siri AI 后端集成谷歌 Gemini 技术，但受地缘与合规限制，全球",
+      "source": "https://www.artificialintelligence-news.com/news/siri-ai-google-gemini-rollout/",
       "date": "2026-06-10",
-      "signal_index": 9
+      "signal_index": 11
+    },
+    {
+      "id": "tag_2026-06-10_001",
+      "level": 2,
+      "content": "MIT 发布自进化 AI 框架 S…",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_002",
+      "level": 2,
+      "content": "Google 推 Gemini 3…",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_003",
+      "level": 2,
+      "content": "OpenAI 构想智能时代工业政策",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_004",
+      "level": 2,
+      "content": "AI 模型潜在暗中破坏风险引担忧",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_005",
+      "level": 2,
+      "content": "Aviva 用 AI 阻止两亿英镑…",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_006",
+      "level": 2,
+      "content": "自主 AI 加速 DevOps 数…",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_007",
+      "level": 2,
+      "content": "者探索多智能体失败归因",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_008",
+      "level": 2,
+      "content": "字节跳动推出 Astra 机器人导航",
+      "date": "2026-06-10"
     },
     {
       "id": "tag_2026-06-10_001",
@@ -95,50 +143,50 @@
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_003",
-      "level": 2,
+      "id": "word_2026-06-10_003",
+      "level": 3,
       "content": "OpenAI 构想智能时代产业政策",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_004",
-      "level": 2,
+      "id": "word_2026-06-10_004",
+      "level": 3,
       "content": "字节跳动推出 Astra 导航架构",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_005",
-      "level": 2,
+      "id": "word_2026-06-10_005",
+      "level": 3,
       "content": "Aviva 利用 AI 阻断巨额欺诈",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_006",
-      "level": 2,
+      "id": "word_2026-06-10_006",
+      "level": 3,
       "content": "定位多智能体故障归因",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_007",
-      "level": 2,
+      "id": "word_2026-06-10_007",
+      "level": 3,
       "content": "自主 AI 引发 DevOps 数…",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_008",
-      "level": 2,
+      "id": "word_2026-06-10_008",
+      "level": 3,
       "content": "质疑 Claude Fable 潜…",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_001",
-      "level": 2,
+      "id": "word_2026-06-10_001",
+      "level": 3,
       "content": "Nextdoor 借 Codex …",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_002",
-      "level": 2,
+      "id": "word_2026-06-10_002",
+      "level": 3,
       "content": "Notion 借力 Codex 扩容",
       "date": "2026-06-10"
     },
@@ -182,54 +230,6 @@
       "id": "word_2026-06-10_009",
       "level": 3,
       "content": "Gemini 辅助策划谷歌大会",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_001",
-      "level": 3,
-      "content": "Nextdoor 借力 Codex…",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_002",
-      "level": 3,
-      "content": "Notion 集成 Codex 增…",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_003",
-      "level": 3,
-      "content": "开源语音控制多智能体系统",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_004",
-      "level": 3,
-      "content": "本地 AI 转换自然语言为命令",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_005",
-      "level": 3,
-      "content": "用稳定性理论检测智能体死循环",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_006",
-      "level": 3,
-      "content": "基准测试揭示编码难题未解",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_007",
-      "level": 3,
-      "content": "开源复刻 Anthropic 分析…",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_008",
-      "level": 3,
-      "content": "Cost.dev 优化 Agent…",
       "date": "2026-06-10"
     }
   ]
