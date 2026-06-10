@@ -185,13 +185,46 @@ def main():
 
     # === 官方一手 ===
     official_feeds = [
-        ("https://openai.com/blog/rss.xml", "OpenAI Blog"),
+        ("https://openai.com/news/rss.xml", "OpenAI Blog"),
         ("https://blog.google/technology/ai/rss/", "Google AI Blog"),
-        ("https://www.anthropic.com/news/rss", "Anthropic News"),
+        ("https://hnrss.org/frontpage?q=claude+OR+gpt+OR+llm+OR+openai+OR+gemini+OR+anthropic", "HN AI"),
+        ("https://feeds.feedburner.com/TheHackersNews", "Hacker News"),
+        ("https://www.artificialintelligence-news.com/feed/", "AI News"),
+        ("https://syncedreview.com/feed/", "Synced Review"),
+        ("https://www.marktechpost.com/feed/", "MarkTechPost"),
     ]
     for feed_url, source_name in official_feeds:
         print(f"  Collecting {source_name}...")
         all_items.extend(collect_rss(feed_url, source_name, limit=3))
+
+
+    # === Anthropic News (HTML scrape, no RSS) ===
+    print("  Collecting Anthropic News (HTML)...")
+    try:
+        anthropic_html = fetch_text("https://www.anthropic.com/news", timeout=10)
+        import re as re2
+        # Parse news items from HTML
+        links = re2.findall(r'<a[^>]*href="(/news/[^"]+)"[^>]*>([^<]+)</a>', anthropic_html)
+        seen_anthropic = set()
+        anthropic_count = 0
+        for href, text in links:
+            text = text.strip()
+            if not text or text in seen_anthropic or len(text) < 5:
+                continue
+            seen_anthropic.add(text)
+            full_url = "https://www.anthropic.com" + href if href.startswith("/") else href
+            all_items.append({
+                "title": text,
+                "url": full_url,
+                "source_name": "Anthropic",
+                "snippet": text,
+            })
+            anthropic_count += 1
+            if anthropic_count >= 5:
+                break
+        print(f"    Got {anthropic_count} items from Anthropic")
+    except Exception as e:
+        print(f"    Anthropic scrape error: {e}")
 
     # === AI 生产力应用 ===
     print("  Collecting Product Hunt AI...")
