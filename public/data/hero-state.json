@@ -4,83 +4,137 @@
     {
       "id": "sig_2026-06-10_001",
       "level": 1,
-      "content": "Nextdoor 借力 Codex 提效",
-      "summary": "Nextdoor 利用 Codex 解决跨平台复现难题，显著提升工程交付与产品聚",
+      "content": "Nextdoor 借 Codex 提效",
+      "summary": "Nextdoor 工程师利用 Codex 与 GPT-5.5 解决跨平台难题，大",
       "source": "https://openai.com/index/nextdoor",
-      "date": "2026-06-10",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-06-10_002",
-      "level": 1,
-      "content": "Notion 集成 Codex 增强功能",
-      "summary": "Notion 借助 Codex 实现规范自动生成与语音输入，大幅提升小团队工程产",
-      "source": "https://openai.com/index/notion",
-      "date": "2026-06-10",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-06-10_003",
-      "level": 1,
-      "content": "开源语音控制多智能体系统",
-      "summary": "OpenYabby 项目开源，支持通过语音指令编排 Claude Code 的多",
-      "source": "https://github.com/OpenYabby/OpenYabby",
-      "date": "2026-06-10",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-06-10_004",
-      "level": 1,
-      "content": "本地 AI 转换自然语言为命令",
-      "summary": "LocalCode 利用苹果本地 AI 模型，将自然语言实时转换为命令行指令，优",
-      "source": "https://github.com/localcodeai/localcode",
-      "date": "2026-06-10",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-06-10_005",
-      "level": 1,
-      "content": "用稳定性理论检测智能体死循环",
-      "summary": "研究者引入李雅普诺夫稳定性理论，有效检测并防止 LLM 智能体陷入死循环。",
-      "source": "https://github.com/vishal-dehurdle/state-harness",
-      "date": "2026-06-10",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-06-10_006",
-      "level": 1,
-      "content": "基准测试揭示编码难题未解",
-      "summary": "FrontierCode 基准显示，最强模型在极高难度编码子集得分仅 13%，挑",
-      "source": "https://news.smol.ai/issues/26-06-08-not-much/",
       "date": "2026-06-10",
       "signal_index": 2
     },
     {
+      "id": "sig_2026-06-10_002",
+      "level": 1,
+      "content": "Notion 借力 Codex 扩容",
+      "summary": "Notion 集成 Codex 实现规格自动生成及语音输入，显著增强了小团队的产",
+      "source": "https://openai.com/index/notion",
+      "date": "2026-06-10",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-06-10_003",
+      "level": 1,
+      "content": "OpenAI 构想智能产业政策",
+      "summary": "OpenAI 提出智能时代产业政策框架，强调扩大机遇、共享繁荣及构建以人为本的弹",
+      "source": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+      "date": "2026-06-10",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-06-10_004",
+      "level": 1,
+      "content": "自主构建运营 SaaS 代理",
+      "summary": "新型 AI 代理展示自主构建并运营 SaaS 工具的能力，体现智能体在软件全生命",
+      "source": "https://craftbot.live",
+      "date": "2026-06-10",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-06-10_005",
+      "level": 1,
+      "content": "Claude 操作实时审计日志",
+      "summary": "开源项目实时记录 Claude 执行的命令与网络连接，显著增强 AI 代理操作的",
+      "source": "https://github.com/yeet-src/claudefeed",
+      "date": "2026-06-10",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-06-10_006",
+      "level": 1,
+      "content": "KnowledgeMCP 零延迟文档检索",
+      "summary": "KnowledgeMCP 将文档转化为 MCP 端点，查询时无需调用大模型，有效",
+      "source": "https://github.com/hashwnath/KMCP",
+      "date": "2026-06-10",
+      "signal_index": 7
+    },
+    {
       "id": "sig_2026-06-10_007",
       "level": 1,
-      "content": "开源复刻 Anthropic 分析引擎",
-      "summary": "KTX 开源版本复刻了 Anthropic 内部数据分析引擎，为社区提供透明分析",
-      "source": "https://github.com/Kaelio/ktx",
+      "content": "Cost.dev 优化代理调用成本",
+      "summary": "Cost.dev 帮助 AI 代理感知运行成本并优化调用策略，显著降低智能体应用",
+      "source": "https://cost.dev/",
       "date": "2026-06-10",
       "signal_index": 8
     },
     {
       "id": "sig_2026-06-10_008",
       "level": 1,
-      "content": "Cost.dev 优化 Agent 调用成本",
-      "summary": "Cost.dev 帮助开发者赋予 Agent 成本感知能力，通过优化策略降低运行",
-      "source": "https://cost.dev/",
+      "content": "Cognition 揭示编码基准挑战",
+      "summary": "Cognition 发布新基准显示，即便最强模型在复杂编码子集上得分极低，工程落",
+      "source": "https://news.smol.ai/issues/26-06-08-not-much/",
       "date": "2026-06-10",
-      "signal_index": 9
+      "signal_index": 1
     },
     {
       "id": "sig_2026-06-10_009",
       "level": 1,
-      "content": "OpenAI 秘密提交 IPO 申请",
-      "summary": "OpenAI 向 SEC 秘密提交 S-1 文件，标志其商业化与上市进程迈出决定",
-      "source": "https://openai.com/index/openai-submits-confidential-s-1",
+      "content": "Gemini 辅助策划谷歌大会",
+      "summary": "谷歌团队利用 Gemini 辅助策划与制作 I/O 2026 大会，展示 AI ",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
       "date": "2026-06-10",
-      "signal_index": 0
+      "signal_index": 10
+    },
+    {
+      "id": "tag_2026-06-10_001",
+      "level": 2,
+      "content": "Nextdoor 借力 Codex…",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_002",
+      "level": 2,
+      "content": "Notion 集成 Codex 增…",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_003",
+      "level": 2,
+      "content": "开源语音控制多智能体系统",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_004",
+      "level": 2,
+      "content": "本地 AI 转换自然语言为命令",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_005",
+      "level": 2,
+      "content": "用稳定性理论检测智能体死循环",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_006",
+      "level": 2,
+      "content": "基准测试揭示编码难题未解",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_007",
+      "level": 2,
+      "content": "开源复刻 Anthropic 分析…",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_008",
+      "level": 2,
+      "content": "Cost.dev 优化 Agent…",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "tag_2026-06-10_009",
+      "level": 2,
+      "content": "OpenAI 秘密提交 IPO 申请",
+      "date": "2026-06-10"
     },
     {
       "id": "tag_2026-06-10_001",
@@ -89,56 +143,56 @@
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_002",
-      "level": 2,
+      "id": "word_2026-06-10_002",
+      "level": 3,
       "content": "OpenAI 公布普惠 AGI 愿景",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_003",
-      "level": 2,
+      "id": "word_2026-06-10_003",
+      "level": 3,
       "content": "Command Center 专注…",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_004",
-      "level": 2,
+      "id": "word_2026-06-10_004",
+      "level": 3,
       "content": "Lowfat 大幅节省 LLM T…",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_005",
-      "level": 2,
+      "id": "word_2026-06-10_005",
+      "level": 3,
       "content": "Nightwatch 赋能只读 A…",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_006",
-      "level": 2,
+      "id": "word_2026-06-10_006",
+      "level": 3,
       "content": "谷歌汇总五月 AI 进展",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_007",
-      "level": 2,
+      "id": "word_2026-06-10_007",
+      "level": 3,
       "content": "Lathe 助力深度领域学习",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-10_008",
-      "level": 2,
+      "id": "word_2026-06-10_008",
+      "level": 3,
       "content": "Anthropic 新模型性能引争议",
       "date": "2026-06-10"
     },
     {
-      "id": "tag_2026-06-09_001",
-      "level": 2,
+      "id": "word_2026-06-09_001",
+      "level": 3,
       "content": "Google 汇总五月 AI 进展",
       "date": "2026-06-09"
     },
     {
-      "id": "tag_2026-06-09_002",
-      "level": 2,
+      "id": "word_2026-06-09_002",
+      "level": 3,
       "content": "Gemini 助力谷歌 I/O 大会",
       "date": "2026-06-09"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "Lowfat 节省大模型 Token",
       "date": "2026-06-09"
-    },
-    {
-      "id": "word_2026-06-08_001",
-      "level": 3,
-      "content": "Sub-Agent MCP 实现任…",
-      "date": "2026-06-08"
-    },
-    {
-      "id": "word_2026-06-08_002",
-      "level": 3,
-      "content": "Ccgs 工具协作代码会话",
-      "date": "2026-06-08"
-    },
-    {
-      "id": "word_2026-06-08_003",
-      "level": 3,
-      "content": "StructOCR 解析全球文档",
-      "date": "2026-06-08"
-    },
-    {
-      "id": "word_2026-06-08_004",
-      "level": 3,
-      "content": "Anthropic 新版模型引热议",
-      "date": "2026-06-08"
-    },
-    {
-      "id": "word_2026-06-08_005",
-      "level": 3,
-      "content": "Nanocode 终端编程助手",
-      "date": "2026-06-08"
-    },
-    {
-      "id": "word_2026-06-08_006",
-      "level": 3,
-      "content": "OpenAI 升级 ChatGPT…",
-      "date": "2026-06-08"
-    },
-    {
-      "id": "word_2026-06-08_007",
-      "level": 3,
-      "content": "OpenAI 发布生物防御计划",
-      "date": "2026-06-08"
-    },
-    {
-      "id": "word_2026-06-08_008",
-      "level": 3,
-      "content": "Lowfat 过滤器节省 Token",
-      "date": "2026-06-08"
-    },
-    {
-      "id": "word_2026-06-07_001",
-      "level": 3,
-      "content": "英伟达开源 550B MoE 模型",
-      "date": "2026-06-07"
     }
   ]
 }
