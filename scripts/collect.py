@@ -229,6 +229,12 @@ def main():
 
     # === AI 生产力应用 ===
 
+    print("  Collecting HN Hardware...")
+    all_items.extend(collect_rss(
+        "https://hnrss.org/frontpage?q=nvidia+OR+gpu+OR+chip+OR+semiconductor+OR+tpu", "HN Hardware", limit=3))
+    print("  Collecting NVIDIA Blog...")
+    all_items.extend(collect_rss("https://blogs.nvidia.com/feed/", "NVIDIA Blog", limit=2))
+
     print("  Collecting Product Hunt AI...")
     all_items.extend(collect_rss(
         "https://www.producthunt.com/feed?topic=ai",
