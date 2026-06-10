@@ -229,11 +229,21 @@ def main():
 
     # === AI 生产力应用 ===
 
-    print("  Collecting HN Hardware...")
-    all_items.extend(collect_rss(
-        "https://hnrss.org/frontpage?q=nvidia+OR+gpu+OR+chip+OR+semiconductor+OR+tpu", "HN Hardware", limit=3))
-    print("  Collecting NVIDIA Blog...")
-    all_items.extend(collect_rss("https://blogs.nvidia.com/feed/", "NVIDIA Blog", limit=2))
+    print("  Collecting HN Hardware (API)...")
+    try:
+        hw_url = "https://hn.algolia.com/api/v1/search?query=nvidia+OR+gpu+OR+chip+OR+semiconductor+OR+hardware&tags=story&hitsPerPage=5&numericFilters=points>3"
+        hw_data = fetch_json(hw_url, timeout=10)
+        for hit in hw_data.get("hits", [])[:5]:
+            title = hit.get("title", "")
+            url = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID')}"
+            if len(title) > 5:
+                all_items.append({
+                    "title": title, "url": url,
+                    "source_name": "HN Hardware", "snippet": title,
+                })
+        print(f"    Got {min(5, len(hw_data.get('hits', [])))} items")
+    except Exception as e:
+        print(f"    HN Hardware error: {e}")
 
     print("  Collecting Product Hunt AI...")
     all_items.extend(collect_rss(
