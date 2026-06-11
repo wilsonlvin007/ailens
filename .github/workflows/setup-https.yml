@@ -28,7 +28,7 @@ jobs:
               ssl_certificate /etc/letsencrypt/live/www.ailens.news/fullchain.pem;
               ssl_certificate_key /etc/letsencrypt/live/www.ailens.news/privkey.pem;
               location / {
-                  try_files $uri $uri/ /index.html;
+                  try_files $uri $uri/ /index.html =404;
               }
           }
           NGINX
