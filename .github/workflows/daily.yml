@@ -395,10 +395,10 @@ jobs:
               # 6. 质检：出门前的最后检查
     
           # 关键词重新归类：硬件
-              hardware_kw = ['芯片', 'GPU', 'CPU', 'TPU', 'NPU', '半导体', '算力', '加速器',
-                             'NVIDIA', '英伟达', 'AMD', 'Intel', '英特尔', 'HBM', '显存',
-                             '制程', '晶圆', 'chip', 'processor', 'datacenter', '数据中心',
-                             '服务器', 'server', '冷却', '电源', '量子', 'quantum']
+              hardware_kw = ['AI眼镜', '智能眼镜', 'AR眼镜', 'AI穿戴', 'NPU', 'TPU', 'AI芯片',
+                             'AI加速器', 'AI硬件', 'NVIDIA', '英伟达', 'HBM', '显存',
+                             '机器人', '自动驾驶', '具身智能', 'AI设备', '神经处理',
+                             'AI处理器', 'AI相机', 'AI耳机', 'AI手表', 'AI戒指']
               for it in items_parsed:
                   title_lower = (it.get('title', '')).lower()
                   if any(kw.lower() in title_lower for kw in hardware_kw):
