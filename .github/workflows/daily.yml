@@ -392,7 +392,52 @@ jobs:
               if summaries:
                   site_data['summary'] = '；'.join(summaries)
 
-              # 6. 质检：出门前的最后检查
+    
+          # 内容级去重：排除与近7天标题高度相似的新条目
+              seen_titles = set()
+              for d_offset in range(1, 8):
+                  past_file = _data_dir / f'{(datetime.now(timezone(timedelta(hours=8))) - timedelta(days=d_offset)).strftime("%Y-%m-%d")}.json'
+                  if past_file.exists():
+                      try:
+                          past_data = json.loads(open(past_file).read())
+                          for it in past_data.get('items', []):
+                              t = (it.get('title', '') or '').strip()
+                              if len(t) >= 6:
+                                  seen_titles.add(t)
+                      except:
+                          pass
+
+              def title_overlap(t1, t2):
+                  """简单标题重叠度：两标题共有的连续4字以上的短语"""
+                  if len(t1) < 6 or len(t2) < 6:
+                      return 0
+                  shorter, longer = (t1, t2) if len(t1) <= len(t2) else (t2, t1)
+                  for n in range(min(len(shorter), 8), 3, -1):
+                      for i in range(len(shorter) - n + 1):
+                          chunk = shorter[i:i+n]
+                          if chunk in longer:
+                              return n / len(shorter)
+                  return 0
+
+              deduped_items = []
+              for it in items_parsed:
+                  title = (it.get('title', '') or '').strip()
+                  if len(title) < 6:
+                      deduped_items.append(it)
+                      continue
+                  duplicate = False
+                  for seen in seen_titles:
+                      if title_overlap(title, seen) > 0.6:
+                          duplicate = True
+                          break
+                  if not duplicate:
+                      deduped_items.append(it)
+                  # else: silently skip duplicate
+
+              if deduped_items:
+                  items_parsed = deduped_items
+
+          # 6. 质检：出门前的最后检查
     
           # 关键词重新归类：硬件
               hardware_kw = ['AI眼镜', '智能眼镜', 'AR眼镜', 'AI穿戴', 'NPU', 'TPU', 'AI芯片',
