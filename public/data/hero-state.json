@@ -4,83 +4,131 @@
     {
       "id": "sig_2026-06-11_001",
       "level": 1,
-      "content": "OpenAI 揭露地缘政治影响操作",
-      "summary": "OpenAI 报告指出有背景的行动利用 AI 干预美国技术辩论，操纵数据中心叙事",
-      "source": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+      "content": "Fable 安全限制引发争议",
+      "summary": "网络安全专家批评 Fable 模型过度防御，认为其安全护栏阻碍了正常的漏洞研究与",
+      "source": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
       "date": "2026-06-11",
-      "signal_index": 3
+      "signal_index": 1
     },
     {
       "id": "sig_2026-06-11_002",
       "level": 1,
-      "content": "天体物理学家用 Codex 模拟黑洞",
-      "summary": "科研人员利用 Codex 辅助构建黑洞模拟代码，验证广义相对论，展现 AI 驱动",
-      "source": "https://openai.com/index/using-codex-to-simulate-black-holes",
-      "date": "2026-06-11",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-06-11_003",
-      "level": 1,
       "content": "Anthropic 发布 Claude Fable 5",
-      "summary": "Anthropic 推出 Claude Fable 5，支持百万级上下文窗口，以",
+      "summary": "Anthropic 推出百万上下文窗口模型 Fable 5 及受限访问的 Myt",
       "source": "https://news.smol.ai/issues/26-06-09-anthropic-claude-fable-5/",
       "date": "2026-06-11",
       "signal_index": 0
     },
     {
+      "id": "sig_2026-06-11_003",
+      "level": 1,
+      "content": "OpenAI 支持欧盟透明准则",
+      "summary": "OpenAI 宣布支持欧盟 AI 透明度倡议，推行内容溯源标准以增强公众对生成内",
+      "source": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+      "date": "2026-06-11",
+      "signal_index": 4
+    },
+    {
       "id": "sig_2026-06-11_004",
       "level": 1,
-      "content": "OpenAI 模型接入 Oracle 云承诺",
-      "summary": "OpenAI 与 Oracle 云深化合作，企业可利用现有云消费承诺访问模型，优",
-      "source": "https://openai.com/index/openai-on-oracle-cloud",
+      "content": "Anthropic 实施数据保留政策",
+      "summary": "Anthropic 规定 Fable 和 Mythos 模型数据需保留 30 天",
+      "source": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
       "date": "2026-06-11",
       "signal_index": 5
     },
     {
       "id": "sig_2026-06-11_005",
       "level": 1,
-      "content": "研究人员批评 Fable 安全护栏",
-      "summary": "网络安全专家质疑 Anthropic Fable 模型的安全限制过于严苛，恐阻碍",
-      "source": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
+      "content": "OpenAI 模型接入 Oracle 云",
+      "summary": "企业现可通过 Oracle 云承诺额度直接调用 OpenAI 模型，享受集成化的",
+      "source": "https://openai.com/index/openai-on-oracle-cloud",
       "date": "2026-06-11",
-      "signal_index": 6
+      "signal_index": 8
     },
     {
       "id": "sig_2026-06-11_006",
       "level": 1,
-      "content": "MIT 推出自进化 AI 框架 SEAL",
-      "summary": "MIT 研发 SEAL 框架，利用强化学习实现大模型权重自我编辑，开启人工智能自",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "content": "Codex 辅助黑洞模拟研究",
+      "summary": "天体物理学家利用 Codex 编写代码模拟黑洞，助力极端物理环境研究与广义相对论",
+      "source": "https://openai.com/index/using-codex-to-simulate-black-holes",
       "date": "2026-06-11",
-      "signal_index": 1
+      "signal_index": 9
     },
     {
       "id": "sig_2026-06-11_007",
       "level": 1,
-      "content": "Langflow 高危漏洞遭活跃利用",
-      "summary": "开源 AI 编排平台 Langflow 存在未修复高危漏洞，已被攻击者利用执行远",
-      "source": "https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html",
+      "content": "苹果拟重构 Siri 底层模型",
+      "summary": "苹果正评估接入 Anthropic 或 OpenAI 大模型以重构 Siri，旨",
+      "source": "https://www.bloomberg.com/news/articles/2025-06-30/apple-weighs-replacing-siri-s-ai-llms-with-anthropic-claude-or-openai-chatgpt",
       "date": "2026-06-11",
       "signal_index": 2
     },
     {
       "id": "sig_2026-06-11_008",
       "level": 1,
-      "content": "麦当劳测试谷歌 AI 点餐系统",
-      "summary": "麦当劳试点谷歌支持的 ArchIQ 驾车点餐系统，旨在通过语音 AI 优化运营效",
-      "source": "https://www.artificialintelligence-news.com/news/mcdonalds-ai-drive-thru-google-archiq/",
+      "content": "MIT 提出 AI 自我进化框架",
+      "summary": "MIT 推出 SEAL 框架，利用强化学习让大模型自我编辑权重，迈出 AI 自主",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
       "date": "2026-06-11",
-      "signal_index": 7
+      "signal_index": 3
     },
     {
       "id": "sig_2026-06-11_009",
       "level": 1,
-      "content": "字节跳动发布 Astra 导航架构",
-      "summary": "字节跳动推出 Astra 双模型架构，显著提升机器人在复杂室内环境中的自主导航与",
+      "content": "字节跳动推出机器人导航架构",
+      "summary": "字节跳动发布 Astra 双模型架构，显著提升机器人在复杂室内环境中的自主导航与",
       "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
       "date": "2026-06-11",
-      "signal_index": 8
+      "signal_index": 6
+    },
+    {
+      "id": "tag_2026-06-11_001",
+      "level": 2,
+      "content": "OpenAI 揭露地缘政治影响操作",
+      "date": "2026-06-11"
+    },
+    {
+      "id": "tag_2026-06-11_002",
+      "level": 2,
+      "content": "天体物理学家用 Codex 模拟黑洞",
+      "date": "2026-06-11"
+    },
+    {
+      "id": "tag_2026-06-11_003",
+      "level": 2,
+      "content": "OpenAI 模型接入 Oracl…",
+      "date": "2026-06-11"
+    },
+    {
+      "id": "tag_2026-06-11_004",
+      "level": 2,
+      "content": "人员批评 Fable 安全护栏",
+      "date": "2026-06-11"
+    },
+    {
+      "id": "tag_2026-06-11_005",
+      "level": 2,
+      "content": "MIT 推出自进化 AI 框架 S…",
+      "date": "2026-06-11"
+    },
+    {
+      "id": "tag_2026-06-11_006",
+      "level": 2,
+      "content": "Langflow 高危漏洞遭活跃利用",
+      "date": "2026-06-11"
+    },
+    {
+      "id": "tag_2026-06-11_007",
+      "level": 2,
+      "content": "麦当劳测试谷歌 AI 点餐系统",
+      "date": "2026-06-11"
+    },
+    {
+      "id": "tag_2026-06-11_008",
+      "level": 2,
+      "content": "字节跳动发布 Astra 导航架构",
+      "date": "2026-06-11"
     },
     {
       "id": "tag_2026-06-11_001",
@@ -95,50 +143,50 @@
       "date": "2026-06-11"
     },
     {
-      "id": "tag_2026-06-11_003",
-      "level": 2,
+      "id": "word_2026-06-11_003",
+      "level": 3,
       "content": "Oracle 云可直连 OpenA…",
       "date": "2026-06-11"
     },
     {
-      "id": "tag_2026-06-11_001",
-      "level": 2,
+      "id": "word_2026-06-11_001",
+      "level": 3,
       "content": "字节跳动发布机器人导航架构 Ast…",
       "date": "2026-06-11"
     },
     {
-      "id": "tag_2026-06-11_002",
-      "level": 2,
+      "id": "word_2026-06-11_002",
+      "level": 3,
       "content": "AWS Bedrock 需共享数据…",
       "date": "2026-06-11"
     },
     {
-      "id": "tag_2026-06-11_003",
-      "level": 2,
+      "id": "word_2026-06-11_003",
+      "level": 3,
       "content": "Langflow 高危漏洞遭主动利用",
       "date": "2026-06-11"
     },
     {
-      "id": "tag_2026-06-11_004",
-      "level": 2,
+      "id": "word_2026-06-11_004",
+      "level": 3,
       "content": "多智能体系统故障归因研究",
       "date": "2026-06-11"
     },
     {
-      "id": "tag_2026-06-11_005",
-      "level": 2,
+      "id": "word_2026-06-11_005",
+      "level": 3,
       "content": "LSEG 借力 OpenAI 扩展…",
       "date": "2026-06-11"
     },
     {
-      "id": "tag_2026-06-11_006",
-      "level": 2,
+      "id": "word_2026-06-11_006",
+      "level": 3,
       "content": "Siri 集成 Gemini 但受…",
       "date": "2026-06-11"
     },
     {
-      "id": "tag_2026-06-10_001",
-      "level": 2,
+      "id": "word_2026-06-10_001",
+      "level": 3,
       "content": "MIT 发布自进化 AI 框架 S…",
       "date": "2026-06-10"
     },
@@ -182,54 +230,6 @@
       "id": "word_2026-06-10_008",
       "level": 3,
       "content": "字节跳动推出 Astra 机器人导航",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_001",
-      "level": 3,
-      "content": "MIT 推出自进化 AI 框架 S…",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_002",
-      "level": 3,
-      "content": "谷歌发布 Gemini 3.5 实…",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_003",
-      "level": 3,
-      "content": "OpenAI 构想智能时代产业政策",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_004",
-      "level": 3,
-      "content": "字节跳动推出 Astra 导航架构",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_005",
-      "level": 3,
-      "content": "Aviva 利用 AI 阻断巨额欺诈",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_006",
-      "level": 3,
-      "content": "定位多智能体故障归因",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_007",
-      "level": 3,
-      "content": "自主 AI 引发 DevOps 数…",
-      "date": "2026-06-10"
-    },
-    {
-      "id": "word_2026-06-10_008",
-      "level": 3,
-      "content": "质疑 Claude Fable 潜…",
       "date": "2026-06-10"
     }
   ]
