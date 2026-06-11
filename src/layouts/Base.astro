@@ -49,6 +49,37 @@ import '../styles/global.css';
   })();
   </script>
 
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content={title ? `${title} · AI Lens` : 'AI Lens · 透过镜头看 AI'}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={Astro.url}>
+  <meta property="og:site_name" content="AI Lens">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content={title ? `${title} · AI Lens` : 'AI Lens · 透过镜头看 AI'}>
+  <meta name="twitter:description" content={description}>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AI Lens",
+    "url": "https://ailens.news/",
+    "description": "透过镜头看 AI — 每日 AI 新闻精选，涵盖技术、应用、硬件、思想四大维度",
+    "inLanguage": "zh-CN",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ailens.news/archive?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap-index.xml">
+
 </head>
   <body>
     <header class="site-header">
