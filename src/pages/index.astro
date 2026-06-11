@@ -24,6 +24,7 @@ if (latestDate) {
 <Base title={latestDate ? `AI 日报 · ${latestDate}` : 'AI Lens'}>
   {data ? (
     <>
+      <h1 class="sr-only">AI 日报 · {latestDate}</h1>
       <Signals items={data.items} maxPerCategory={3} dateLink={`/${latestDate}`} />
       {data.deep_dive && (
         <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated detailUrl={`/${latestDate}`} />
@@ -182,6 +183,18 @@ if (latestDate) {
   .empty-cta:hover {
     background: #1d4ed8;
     color: white;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
 </style>
 
