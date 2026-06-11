@@ -400,7 +400,7 @@ jobs:
                              '制程', '晶圆', 'chip', 'processor', 'datacenter', '数据中心',
                              '服务器', 'server', '冷却', '电源', '量子', 'quantum']
               for it in items_parsed:
-                  title_lower = (it.get('title', '') + it.get('summary', '')).lower()
+                  title_lower = (it.get('title', '')).lower()
                   if any(kw.lower() in title_lower for kw in hardware_kw):
                       it['category'] = 'hardware'
 
