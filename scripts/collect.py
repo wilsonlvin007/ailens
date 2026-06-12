@@ -129,6 +129,8 @@ def collect_hn_show(limit=10):
                         "url": story.get("url", ""),
                         "source_name": "HN Show HN",
                         "snippet": title,
+                        "hn_points": story.get("points", 0) or 0,
+                        "hn_comments": story.get("num_comments", 0) or 0,
                     })
                     count += 1
             except Exception:
@@ -212,6 +214,8 @@ def main():
                     "url": url,
                     "source_name": "Anthropic (via HN)",
                     "snippet": title,
+                        "hn_points": story.get("points", 0) or 0,
+                        "hn_comments": story.get("num_comments", 0) or 0,
                 })
         print(f"    Got {len([i for i in all_items if 'Anthropic (via HN)' in i.get('source_name','')])} items from Anthropic")
     except Exception as e:
