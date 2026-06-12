@@ -67,18 +67,10 @@ jobs:
               sys.exit(0)
 
           # 2. 调 Dify workflow
-          # 构建信息增益上下文：HN评论数、同日上下文
-          item_contexts = []
-          for it in items:
-              ctx = {'title': it.get('title',''), 'summary': it.get('snippet',''), 
-                     'source': it.get('source_name',''), 'url': it.get('url','')}
-              item_contexts.append(ctx)
-          
           payload = {
               'inputs': {
                   'date': date, 
                   'raw_items': json.dumps(items, ensure_ascii=False),
-                  'item_contexts': json.dumps(item_contexts, ensure_ascii=False),
                   'instruction': '每条解读必须：1)避免模板化用语 2)从技术权衡/落地障碍/产业链影响/视角冲突中选一个框架 3)对同日相关条目做交叉引用'
               },
               'response_mode': 'streaming',
