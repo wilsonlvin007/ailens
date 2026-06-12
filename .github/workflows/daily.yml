@@ -68,11 +68,7 @@ jobs:
 
           # 2. 调 Dify workflow
           payload = {
-              'inputs': {
-                  'date': date, 
-                  'raw_items': json.dumps(items, ensure_ascii=False),
-                  'instruction': '每条解读必须：1)避免模板化用语 2)从技术权衡/落地障碍/产业链影响/视角冲突中选一个框架 3)对同日相关条目做交叉引用'
-              },
+              'inputs': {'date': date, 'raw_items': json.dumps(items, ensure_ascii=False)},
               'response_mode': 'streaming',
               'user': 'ailens-pipeline'
           }
