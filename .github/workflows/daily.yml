@@ -450,6 +450,7 @@ jobs:
 
               if deduped_items:
                   items_parsed = deduped_items
+                  site_data['items'] = items_parsed
 
           # 6. 质检：出门前的最后检查
     
