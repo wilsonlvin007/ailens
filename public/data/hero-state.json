@@ -4,83 +4,131 @@
     {
       "id": "sig_2026-06-13_001",
       "level": 1,
-      "content": "月之暗面发布本地智能体 Kimi Work",
-      "summary": "月之暗面推出基于 K2.6 的本地桌面智能体，拥有 300 个子智能体集群，可自",
+      "content": "月之暗面推出本地多智能体系统",
+      "summary": "月之暗面发布 Kimi Work，基于 K2.6 模型驱动 300 个子智能体，",
       "source": "https://www.marktechpost.com/2026/06/12/moonshot-ai-launches-kimi-work-a-local-desktop-agent-reportedly-running-on-kimi-k2-6-with-a-300-sub-agent-agent-swarm/",
-      "date": "2026-06-13",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-06-13_002",
-      "level": 1,
-      "content": "谷歌发布 Gemini-SQL2 刷新榜单",
-      "summary": "谷歌推出基于 Gemini 3.1 Pro 的 Gemini-SQL2，在 BI",
-      "source": "https://www.marktechpost.com/2026/06/12/google-releases-gemini-sql2-gemini-3-1-pro-text-to-sql-scores-80-04-on-bird-single-model-leaderboard/",
       "date": "2026-06-13",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-06-13_003",
+      "id": "sig_2026-06-13_002",
       "level": 1,
-      "content": "Coinbase 推智能体自动交易服务",
-      "summary": "Coinbase 推出面向智能体的服务，连接 AI 与金融渠道，实现从投资组合管",
-      "source": "https://www.artificialintelligence-news.com/news/coinbase-for-agents-automating-portfolio-trading-with-ai/",
+      "content": "谷歌起诉利用 AI 钓鱼犯罪团伙",
+      "summary": "谷歌起诉一网络犯罪团伙，指控其滥用 Gemini AI 代理生成钓鱼短信，攻击美",
+      "source": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
       "date": "2026-06-13",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-06-13_004",
+      "id": "sig_2026-06-13_003",
       "level": 1,
-      "content": "Visa 集成 ChatGPT 赋能零售支付",
-      "summary": "Visa 与 ChatGPT 集成，允许 AI 智能体推荐商品并直接完成支付，移",
-      "source": "https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing/",
+      "content": "Coinbase 推 AI 自动交易代理服务",
+      "summary": "Coinbase 推出 Agent 服务，打通 AI 与金融执行通道，实现投资组",
+      "source": "https://www.artificialintelligence-news.com/news/coinbase-for-agents-automating-portfolio-trailing-with-ai/",
       "date": "2026-06-13",
       "signal_index": 3
     },
     {
+      "id": "sig_2026-06-13_004",
+      "level": 1,
+      "content": "Visa 集成 ChatGPT 支持自主购物",
+      "summary": "Visa 与 ChatGPT 深度集成，允许 AI 代理直接推荐商品并完成支付，",
+      "source": "https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing/",
+      "date": "2026-06-13",
+      "signal_index": 4
+    },
+    {
       "id": "sig_2026-06-13_005",
       "level": 1,
-      "content": "OpenAI 学院推出新世代工作课程",
-      "summary": "OpenAI 推出三门新课程，旨在帮助用户构建实用 AI 技能、创建可重复工作流",
-      "source": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "content": "谷歌发布 Gemini-SQL2 刷新榜单",
+      "summary": "谷歌发布 Gemini-SQL2，基于 Gemini 3.1 Pro，在 BIR",
+      "source": "https://www.marktechpost.com/2026/06/12/google-releases-gemini-sql2-gemini-3-1-pro-text-to-sql-scores-80-04-on-bird-single-model-leaderboard/",
       "date": "2026-06-13",
       "signal_index": 5
     },
     {
       "id": "sig_2026-06-13_006",
       "level": 1,
-      "content": "谷歌起诉利用 AI 钓鱼的中国团伙",
-      "summary": "谷歌起诉一中国网络犯罪团伙，指控其利用 Gemini AI 代理发送钓鱼短信，引",
-      "source": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
+      "content": "OpenAI 推出职场应用学院课程",
+      "summary": "OpenAI 发布三门新课程，指导用户构建实用 AI 技能，将智能体融入日常工作",
+      "source": "https://openai.com/index/academy-courses-applying-ai-at-work",
       "date": "2026-06-13",
       "signal_index": 6
     },
     {
       "id": "sig_2026-06-13_007",
       "level": 1,
-      "content": "学者探索多智能体系统故障归因",
-      "summary": "宾州州立和杜克大学研究者提出自动故障归因方法，解决多智能体协作系统中任务失败难以",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "content": "Xebia 强调智能体数据基础重要性",
+      "summary": "Xebia CTO 指出数据基础是 AI 智能体成功的关键，缺乏高质量数据将导致",
+      "source": "https://www.artificialintelligence-news.com/news/xebia-on-building-the-data-foundation-for-ai-agents-and-then-accelerating/",
       "date": "2026-06-13",
-      "signal_index": 4
+      "signal_index": 8
     },
     {
       "id": "sig_2026-06-13_008",
       "level": 1,
-      "content": "OpenAI 支持欧盟可信 AI 生态",
-      "summary": "OpenAI 宣布支持欧盟 AI 内容透明度行为准则，推进溯源标准，帮助公众理解",
-      "source": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+      "content": "Preply 融合 AI 与真人导师教学",
+      "summary": "Preply 结合 OpenAI 技术与人类导师，提供个性化反馈及 AI 生成的",
+      "source": "https://openai.com/index/preply",
       "date": "2026-06-13",
-      "signal_index": 7
+      "signal_index": 9
     },
     {
       "id": "sig_2026-06-13_009",
       "level": 1,
-      "content": "基准测试显示编码任务远未解决",
-      "summary": "Cognition 发布 FrontierCode 基准测试显示，即便最强模型在",
-      "source": "https://news.smol.ai/issues/26-06-08-not-much/",
+      "content": "研究揭示多智能体故障归因机制",
+      "summary": "宾州州立与杜克大学研究多智能体系统故障归因，探索自动定位导致任务失败的智能体。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
       "date": "2026-06-13",
-      "signal_index": 8
+      "signal_index": 7
+    },
+    {
+      "id": "tag_2026-06-13_001",
+      "level": 2,
+      "content": "月之暗面发布本地智能体 Kimi …",
+      "date": "2026-06-13"
+    },
+    {
+      "id": "tag_2026-06-13_002",
+      "level": 2,
+      "content": "Coinbase 推智能体自动交易…",
+      "date": "2026-06-13"
+    },
+    {
+      "id": "tag_2026-06-13_003",
+      "level": 2,
+      "content": "Visa 集成 ChatGPT 赋…",
+      "date": "2026-06-13"
+    },
+    {
+      "id": "tag_2026-06-13_004",
+      "level": 2,
+      "content": "OpenAI 学院推出新世代工作课程",
+      "date": "2026-06-13"
+    },
+    {
+      "id": "tag_2026-06-13_005",
+      "level": 2,
+      "content": "谷歌起诉利用 AI 钓鱼的中国团伙",
+      "date": "2026-06-13"
+    },
+    {
+      "id": "tag_2026-06-13_006",
+      "level": 2,
+      "content": "学者探索多智能体系统故障归因",
+      "date": "2026-06-13"
+    },
+    {
+      "id": "tag_2026-06-13_007",
+      "level": 2,
+      "content": "OpenAI 支持欧盟可信 AI …",
+      "date": "2026-06-13"
+    },
+    {
+      "id": "tag_2026-06-13_008",
+      "level": 2,
+      "content": "基准测试显示编码任务远未解决",
+      "date": "2026-06-13"
     },
     {
       "id": "tag_2026-06-13_001",
@@ -95,50 +143,50 @@
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_003",
-      "level": 2,
+      "id": "word_2026-06-13_003",
+      "level": 3,
       "content": "Visa 接入 ChatGPT 实…",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_004",
-      "level": 2,
+      "id": "word_2026-06-13_004",
+      "level": 3,
       "content": "OpenAI 推出职场应用新课程",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_005",
-      "level": 2,
+      "id": "word_2026-06-13_005",
+      "level": 3,
       "content": "Coinbase 推出代理自动交易…",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_006",
-      "level": 2,
+      "id": "word_2026-06-13_006",
+      "level": 3,
       "content": "谷歌发布 Gemini-SQL2 …",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_007",
-      "level": 2,
+      "id": "word_2026-06-13_007",
+      "level": 3,
       "content": "黑客潜伏十年后门 Linux 系统",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_008",
-      "level": 2,
+      "id": "word_2026-06-13_008",
+      "level": 3,
       "content": "Xebia 论代理失败的数据根源",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_009",
-      "level": 2,
+      "id": "word_2026-06-13_009",
+      "level": 3,
       "content": "MIT 提出 SEAL 自改进框架",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_001",
-      "level": 2,
+      "id": "word_2026-06-13_001",
+      "level": 3,
       "content": "OpenAI 收购 Ona 拓展企…",
       "date": "2026-06-13"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "多智能体系统故障自动归因研究",
       "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_009",
-      "level": 3,
-      "content": "天体物理学家用 Codex 模拟黑洞",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-12_001",
-      "level": 3,
-      "content": "OpenAI 收购 Ona 强化企…",
-      "date": "2026-06-12"
-    },
-    {
-      "id": "word_2026-06-12_002",
-      "level": 3,
-      "content": "OpenClaw 代理遭攻击泄露机密",
-      "date": "2026-06-12"
-    },
-    {
-      "id": "word_2026-06-12_004",
-      "level": 3,
-      "content": "NVIDIA 加速 Diffusi…",
-      "date": "2026-06-12"
-    },
-    {
-      "id": "word_2026-06-12_005",
-      "level": 3,
-      "content": "NVIDIA 强调机器人出租车内置…",
-      "date": "2026-06-12"
-    },
-    {
-      "id": "word_2026-06-12_006",
-      "level": 3,
-      "content": "MIT 提出自进化 AI 框架 S…",
-      "date": "2026-06-12"
-    },
-    {
-      "id": "word_2026-06-12_007",
-      "level": 3,
-      "content": "字节跳动推出 Astra 机器人导航",
-      "date": "2026-06-12"
-    },
-    {
-      "id": "word_2026-06-12_008",
-      "level": 3,
-      "content": "Anthropic 发布 Clau…",
-      "date": "2026-06-12"
     }
   ]
 }
