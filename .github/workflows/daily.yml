@@ -405,7 +405,7 @@ jobs:
           if boost_sources:
               print(f"[Strategy] 重点信源: {boost_sources}")
 
-                            site_data = {
+              site_data = {
                   'date': date,
                   'generated_at': datetime.now(timezone(timedelta(hours=8))).isoformat(),
                   'summary': '',
