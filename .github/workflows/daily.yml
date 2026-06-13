@@ -692,6 +692,40 @@ jobs:
               sys.exit(1)
           PYEOF
 
+      - name: Cross-day dedup check
+        run: |
+          python3 << 'PYEOF'
+          import json, sys
+          from pathlib import Path
+          from datetime import datetime, timezone, timedelta
+
+          tz = timezone(timedelta(hours=8))
+          today = datetime.now(tz).strftime('%Y-%m-%d')
+          yesterday = (datetime.now(tz) - timedelta(days=1)).strftime('%Y-%m-%d')
+
+          today_file = Path(f'public/data/{today}.json')
+          yesterday_file = Path(f'public/data/{yesterday}.json')
+
+          if not today_file.exists():
+              print(f'[WARN] Today file {today}.json not found, skip check')
+              sys.exit(0)
+
+          today_data = json.loads(open(today_file).read())
+          today_titles = {item.get('title', '').strip() for item in today_data.get('items', [])}
+
+          if yesterday_file.exists():
+              yesterday_data = json.loads(open(yesterday_file).read())
+              yesterday_titles = {item.get('title', '').strip() for item in yesterday_data.get('items', [])}
+              dupes = today_titles & yesterday_titles
+              if dupes:
+                  for t in sorted(dupes):
+                      print(f'  ✗ 跨天重复: {t}')
+                  print(f'\n FAIL: {len(dupes)} cross-day duplicate title(s) found. Pipeline aborted.')
+                  sys.exit(1)
+
+          print('  ✓ Cross-day dedup check passed')
+          PYEOF
+
       - name: Commit & push data files
         run: |
           git config user.name "ailens-bot"
