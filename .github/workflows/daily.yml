@@ -692,7 +692,7 @@ jobs:
               sys.exit(1)
           PYEOF
 
-      - name: Cross-day dedup check
+      - name: Cross-day dedup auto-clean
         run: |
           python3 << 'PYEOF'
           import json, sys
@@ -707,23 +707,23 @@ jobs:
           yesterday_file = Path(f'public/data/{yesterday}.json')
 
           if not today_file.exists():
-              print(f'[WARN] Today file {today}.json not found, skip check')
               sys.exit(0)
 
           today_data = json.loads(open(today_file).read())
-          today_titles = {item.get('title', '').strip() for item in today_data.get('items', [])}
+          items = today_data.get('items', [])
+          original_count = len(items)
 
           if yesterday_file.exists():
               yesterday_data = json.loads(open(yesterday_file).read())
               yesterday_titles = {item.get('title', '').strip() for item in yesterday_data.get('items', [])}
-              dupes = today_titles & yesterday_titles
-              if dupes:
-                  for t in sorted(dupes):
-                      print(f'  ⚠ 跨天重复(去重未拦截): {t}')
-                  print(f'\n WARN: {len(dupes)} cross-day duplicate(s) found but pipeline continues.')
-                  sys.exit(0)
+              cleaned = [it for it in items if (it.get('title', '') or '').strip() not in yesterday_titles]
+              removed = original_count - len(cleaned)
+              if removed > 0:
+                  today_data['items'] = cleaned
+                  with open(today_file, 'w') as f:
+                      json.dump(today_data, f, ensure_ascii=False, indent=2)
+                  print(f'  ✓ Auto-cleaned {removed} cross-day duplicate(s), {original_count}→{len(cleaned)} items')
 
-          print('  ✓ Cross-day dedup check passed')
           PYEOF
 
       - name: Commit & push data files
