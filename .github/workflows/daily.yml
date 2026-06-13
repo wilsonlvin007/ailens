@@ -395,7 +395,7 @@ jobs:
     
           # 内容级去重：标题+摘要与近7天内容重叠度>0.5则排除
               seen_articles = []
-              for d_offset in range(1, 8):
+              for d_offset in range(1, 31):
                   past_file = _data_dir / f'{(datetime.now(timezone(timedelta(hours=8))) - timedelta(days=d_offset)).strftime("%Y-%m-%d")}.json'
                   if past_file.exists():
                       try:
@@ -693,37 +693,50 @@ jobs:
               sys.exit(1)
           PYEOF
 
-      - name: Cross-day dedup auto-clean
+      - name: Site-wide dedup auto-clean
         run: |
           python3 << 'PYEOF'
-          import json, sys
+          import json, sys, re
           from pathlib import Path
-          from datetime import datetime, timezone, timedelta
 
-          tz = timezone(timedelta(hours=8))
-          today = datetime.now(tz).strftime('%Y-%m-%d')
-          yesterday = (datetime.now(tz) - timedelta(days=1)).strftime('%Y-%m-%d')
-
-          today_file = Path(f'public/data/{today}.json')
-          yesterday_file = Path(f'public/data/{yesterday}.json')
-
-          if not today_file.exists():
-              sys.exit(0)
-
+          data_dir = Path('public/data')
+          today_file = max(data_dir.glob('20??-??-??.json'), key=lambda p: p.name)
           today_data = json.loads(open(today_file).read())
           items = today_data.get('items', [])
           original_count = len(items)
 
-          if yesterday_file.exists():
-              yesterday_data = json.loads(open(yesterday_file).read())
-              yesterday_titles = {item.get('title', '').strip() for item in yesterday_data.get('items', [])}
-              cleaned = [it for it in items if (it.get('title', '') or '').strip() not in yesterday_titles]
-              removed = original_count - len(cleaned)
-              if removed > 0:
-                  today_data['items'] = cleaned
-                  with open(today_file, 'w') as f:
-                      json.dump(today_data, f, ensure_ascii=False, indent=2)
-                  print(f'  ✓ Auto-cleaned {removed} cross-day duplicate(s), {original_count}→{len(cleaned)} items')
+          # Build set of all titles from ALL past history, excluding today
+          all_past_titles = set()
+          for f in sorted(data_dir.glob('20??-??-??.json')):
+              if f.name == today_file.name:
+                  continue
+              try:
+                  d = json.loads(open(f).read())
+                  for it in d.get('items', []):
+                      t = (it.get('title', '') or '').strip()
+                      if len(t) >= 4:
+                          all_past_titles.add(t)
+              except:
+                  pass
+
+          cleaned = []
+          removed = []
+          for it in items:
+              t = (it.get('title', '') or '').strip()
+              if t in all_past_titles:
+                  removed.append(t)
+              else:
+                  cleaned.append(it)
+
+          if removed:
+              today_data['items'] = cleaned
+              with open(today_file, 'w') as f:
+                  json.dump(today_data, f, ensure_ascii=False, indent=2)
+              for t in removed:
+                  print(f'  ✗ Site-wide dedup removed: {t}')
+              print(f'  ✓ Auto-cleaned {len(removed)} duplicate(s), {original_count}→{len(cleaned)} items')
+          else:
+              print(f'  ✓ Site-wide dedup: 0 duplicates ({len(all_past_titles)} historical titles checked)')
 
           PYEOF
 
