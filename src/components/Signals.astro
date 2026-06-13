@@ -10,6 +10,8 @@ interface Props {
   dateLink?: string;
 }
 
+const categoryOrder = ['technology', 'application', 'hardware', 'thought'];
+
 const { items, compact = false, maxPerCategory = 3, dateLink } = Astro.props;
 
 // 按 category 分组，保持原始顺序
