@@ -419,58 +419,6 @@ jobs:
                   site_data['summary'] = '；'.join(summaries)
 
     
-              # 内容级去重：标题+摘要与近7天内容重叠度>0.5则排除
-              seen_articles = []
-              for d_offset in range(1, 8):
-                  past_file = _data_dir / f'{(datetime.now(timezone(timedelta(hours=8))) - timedelta(days=d_offset)).strftime("%Y-%m-%d")}.json'
-                  if past_file.exists():
-                      try:
-                          past_data = json.loads(open(past_file).read())
-                          for it in past_data.get('items', []):
-                              t = (it.get('title', '') or '').strip()
-                              s = (it.get('summary', '') or '').strip()
-                              if len(t) >= 6:
-                                  seen_articles.append({'title': t, 'summary': s})
-                      except:
-                          pass
-
-              def text_overlap(t1, s1, t2, s2):
-                  """标题+摘要综合重叠度"""
-                  combined1 = (t1 + ' ' + (s1 or ''))[:200]
-                  combined2 = (t2 + ' ' + (s2 or ''))[:200]
-                  if len(combined1) < 10 or len(combined2) < 10:
-                      return 0
-                  # 找最长公共子串
-                  shorter, longer = (combined1, combined2) if len(combined1) <= len(combined2) else (combined2, combined1)
-                  best = 0
-                  for n in range(min(len(shorter), 15), 4, -1):
-                      if best > 0:
-                          break
-                      for i in range(len(shorter) - n + 1):
-                          chunk = shorter[i:i+n]
-                          if chunk in longer:
-                              best = n
-                              break
-                  return best / len(shorter) if best > 0 else 0
-
-              deduped_items = []
-              for it in items_parsed:
-                  title = (it.get('title', '') or '').strip()
-                  summary = (it.get('summary', '') or '').strip()
-                  if len(title) < 6:
-                      deduped_items.append(it)
-                      continue
-                  duplicate = False
-                  for seen in seen_articles:
-                      if text_overlap(title, summary, seen['title'], seen['summary']) > 0.5:
-                          duplicate = True
-                          break
-                  if not duplicate:
-                      deduped_items.append(it)
-                  # else: silently skip duplicate
-
-              if deduped_items:
-                  items_parsed = deduped_items
 
               # 6. 质检：出门前的最后检查
     
