@@ -472,9 +472,9 @@ jobs:
               if deduped_items:
                   items_parsed = deduped_items
 
-          # 6. 质检：出门前的最后检查
-    
-          # 关键词重新归类：硬件
+              # 6. 质检：出门前的最后检查
+
+              # 关键词重新归类：硬件
               hardware_kw = ['AI眼镜', '智能眼镜', 'AR眼镜', 'AI穿戴', 'NPU', 'TPU', 'AI芯片',
                              'AI加速器', 'AI硬件', 'NVIDIA', '英伟达', 'HBM', '显存',
                              '机器人', '自动驾驶', '具身智能', 'AI设备', '神经处理',
@@ -504,36 +504,36 @@ jobs:
               if passed:
                   break
               last_errors = errors
-          # end for
-          if not passed:
+              # end for
+              if not passed:
               print(f"[FATAL] {MAX_RETRIES} retries failed")
               sys.exit(1)
 
-          with open(DATA_DIR / f'{date}.json', 'w') as f:
+              with open(DATA_DIR / f'{date}.json', 'w') as f:
               json.dump(site_data, f, ensure_ascii=False, indent=2)
-          print(f"Written: {date}.json ({len(items_parsed)} items)")
+              print(f"Written: {date}.json ({len(items_parsed)} items)")
 
-          with open(DATA_DIR / 'latest.json', 'w') as f:
+              with open(DATA_DIR / 'latest.json', 'w') as f:
               json.dump(site_data, f, ensure_ascii=False, indent=2)
-          print("Written: latest.json")
+              print("Written: latest.json")
 
-          # 更新 index
-          index_file = DATA_DIR / 'index.json'
-          dates = []
-          if index_file.exists():
+              # 更新 index
+              index_file = DATA_DIR / 'index.json'
+              dates = []
+              if index_file.exists():
               try: dates = json.loads(open(index_file).read()).get('dates', [])
               except: pass
-          if date not in dates:
+              if date not in dates:
               dates.insert(0, date)
-          dates = sorted(set(dates), reverse=True)
-          with open(index_file, 'w') as f:
+              dates = sorted(set(dates), reverse=True)
+              with open(index_file, 'w') as f:
               json.dump({'dates': dates, 'latest': dates[0] if dates else None}, f, ensure_ascii=False, indent=2)
-          print(f"Written: index.json ({len(dates)} dates)")
+              print(f"Written: index.json ({len(dates)} dates)")
 
-          # ========== hero-state.json 生成/更新 ==========
-          hero_state_path = DATA_DIR / 'hero-state.json'
+              # ========== hero-state.json 生成/更新 ==========
+              hero_state_path = DATA_DIR / 'hero-state.json'
 
-          def load_hero_state():
+              def load_hero_state():
               if hero_state_path.exists():
                   try:
                       return json.loads(open(hero_state_path).read())
@@ -541,7 +541,7 @@ jobs:
                       pass
               return {'updated_at': '', 'items': []}
 
-          def extract_topic(item):
+              def extract_topic(item):
               """从标题中提取语义核心：去导语 -> 取第一主句 -> 最多18字"""
               import re
               title0 = (item.get('title', '') or item.get('content', '')).strip()
