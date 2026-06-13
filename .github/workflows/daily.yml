@@ -720,6 +720,18 @@ jobs:
           git add public/data/
           git diff --staged --quiet || git commit -m "data: daily $(date +%Y-%m-%d)"
           git push
+
+      - name: Submit URLs to Baidu
+        run: |
+          DATE=$(date -u -d '+8 hours' +%Y-%m-%d)
+          cat > /tmp/urls.txt << EOF
+          https://www.ailens.news/
+          https://www.ailens.news/${DATE}/
+          https://www.ailens.news/archive/
+          EOF
+          echo "Submitting to Baidu..."
+          curl -s -H 'Content-Type:text/plain' --data-binary @/tmp/urls.txt "http://data.zz.baidu.com/urls?site=https://www.ailens.news&token=srbZuTtw9Gf0Rfrt"
+
       - name: Trigger Deploy Site
         run: gh workflow run "Deploy Site" --repo wilsonlvin007/ailens
         env:
