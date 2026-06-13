@@ -31,6 +31,9 @@ for (const item of items) {
   const group = groups.find(g => g.key === key);
   if (group) group.items.push(item);
 }
+
+// Sort groups by predefined category order: 技术 → 应用 → 硬件 → 思想
+groups.sort((a, b) => categoryOrder.indexOf(a.key as typeof categoryOrder[number]) - categoryOrder.indexOf(b.key as typeof categoryOrder[number]));
 ---
 
 <section class="signals">
