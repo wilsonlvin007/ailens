@@ -389,23 +389,23 @@ jobs:
 
 
           # === 运营策略驱动 ===
-          import os as os2
-          strategy_path = Path('public/data/content-strategy.json')
-          strategy = {}
-          if strategy_path.exists():
-              try:
-                  strategy = json.loads(open(strategy_path).read())
-                  print(f"[Strategy] 加载运营策略: {strategy.get('date','unknown')}")
-              except: pass
-          # 策略：重点分类加分
-          boost_categories = strategy.get('boost_categories', [])
-          boost_sources = strategy.get('boost_sources', [])
-          if boost_categories:
-              print(f"[Strategy] 重点分类: {boost_categories}")
-          if boost_sources:
-              print(f"[Strategy] 重点信源: {boost_sources}")
+              import os as os2
+              strategy_path = Path('public/data/content-strategy.json')
+              strategy = {}
+              if strategy_path.exists():
+                  try:
+                      strategy = json.loads(open(strategy_path).read())
+                      print(f"[Strategy] 加载运营策略: {strategy.get('date','unknown')}")
+                  except: pass
+              # 策略：重点分类加分
+              boost_categories = strategy.get('boost_categories', [])
+              boost_sources = strategy.get('boost_sources', [])
+              if boost_categories:
+                  print(f"[Strategy] 重点分类: {boost_categories}")
+              if boost_sources:
+                  print(f"[Strategy] 重点信源: {boost_sources}")
 
-                            site_data = {
+                                site_data = {
                   'date': date,
                   'generated_at': datetime.now(timezone(timedelta(hours=8))).isoformat(),
                   'summary': '',
