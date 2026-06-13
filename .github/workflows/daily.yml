@@ -368,14 +368,6 @@ jobs:
                   items_parsed = []
                   print("[ERROR] items_text could not be parsed as JSON")
 
-
-          # 策略加分：重点分类和信源的条目提高 importance
-          for it in items_parsed:
-              if boost_categories and it.get('category', '') in boost_categories:
-                  it['importance'] = min(5, it.get('importance', 3) + 1)
-              if boost_sources and it.get('source_name', '') in boost_sources:
-                  it['importance'] = min(5, it.get('importance', 3) + 1)
-
               for i, item in enumerate(items_parsed):
                   # 强制用当天日期重写 ID（Dify 可能输出旧日期）
                   item['id'] = f'{date}-{i+1:03d}'
@@ -386,24 +378,6 @@ jobs:
               deep_dive = None
               if deep_dive_text:
                   deep_dive = extract_json(deep_dive_text)
-
-
-          # === 运营策略驱动 ===
-          import os as os2
-          strategy_path = Path('public/data/content-strategy.json')
-          strategy = {}
-          if strategy_path.exists():
-              try:
-                  strategy = json.loads(open(strategy_path).read())
-                  print(f"[Strategy] 加载运营策略: {strategy.get('date','unknown')}")
-              except: pass
-          # 策略：重点分类加分
-          boost_categories = strategy.get('boost_categories', [])
-          boost_sources = strategy.get('boost_sources', [])
-          if boost_categories:
-              print(f"[Strategy] 重点分类: {boost_categories}")
-          if boost_sources:
-              print(f"[Strategy] 重点信源: {boost_sources}")
 
               site_data = {
                   'date': date,
