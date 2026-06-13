@@ -4,38 +4,6 @@
   "summary": "Anthropic 推出支持百万级上下文的 Claude Fable 5，并同步开放受限访问的 Mythos 5 模型。；MIT 研发 SEAL 框架，利用强化学习让大模型自我编辑权重，开启自进化 AI 新阶段。；在首个智能体 AI 基准测试 AgentPerf 中，NVIDIA Blackwell Ultra 平台展现出领先的系统性能。",
   "items": [
     {
-      "id": "2026-06-13-001",
-      "title": "Anthropic 发布 Claude Fable 5",
-      "category": "technology",
-      "importance": 5,
-      "source": "https://news.smol.ai/issues/26-06-09-anthropic-claude-fable-5/",
-      "source_name": "AINews (smol.ai)",
-      "summary": "Anthropic 推出支持百万级上下文的 Claude Fable 5，并同步开放受限访问的 Mythos 5 模型。",
-      "analysis": "Claude Fable 5 的发布标志着长上下文处理能力的重大突破，百万级窗口意味着模型能直接“阅读”整本技术手册或长篇法律文档，极大减少了信息切片带来的语义丢失。同步推出的 Mythos 5 虽限制访问，但暗示了 Anthropic 在高端定制化模型上的布局。这对企业级应用至关重要，表明大模型正从通用对话转向深度专业任务处理，上下文长度已成为新的竞争壁垒。",
-      "tags": [
-        "大模型",
-        "长上下文",
-        "Anthropic"
-      ],
-      "collected_at": "2026-06-13T06:00:00+08:00"
-    },
-    {
-      "id": "2026-06-13-002",
-      "title": "MIT 推出自进化 AI 框架 SEAL",
-      "category": "technology",
-      "importance": 5,
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "source_name": "Synced Review",
-      "summary": "MIT 研发 SEAL 框架，利用强化学习让大模型自我编辑权重，开启自进化 AI 新阶段。",
-      "analysis": "SEAL 框架的核心价值在于打破了传统模型训练后权重固定的范式。通过强化学习驱动模型自我编辑和更新权重，AI 具备了类似生物进化的持续适应能力。这一进展若成熟，将大幅降低模型迭代的数据和算力成本，使 AI 能在动态环境中实时优化。然而，这也引发了对“失控”风险的深层担忧，如何确保自我进化的方向符合人类价值观，将是未来对齐研究的关键挑战。",
-      "tags": [
-        "自进化",
-        "强化学习",
-        "MIT"
-      ],
-      "collected_at": "2026-06-13T06:00:00+08:00"
-    },
-    {
       "id": "2026-06-13-003",
       "title": "Blackwell 领跑智能体基准测试",
       "category": "hardware",
@@ -144,22 +112,6 @@
         "自动驾驶",
         "功能安全",
         "NVIDIA"
-      ],
-      "collected_at": "2026-06-13T06:00:00+08:00"
-    },
-    {
-      "id": "2026-06-13-010",
-      "title": "OpenAI 支持欧盟 AI 透明度准则",
-      "category": "thought",
-      "importance": 3,
-      "source": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-      "source_name": "OpenAI Blog",
-      "summary": "OpenAI 支持欧盟 AI 内容透明度行为准则，推动溯源标准发展以增强公众理解。",
-      "analysis": "OpenAI 此举显示其在全球合规策略上的成熟，主动拥抱欧盟严格的监管框架有助于消除地缘政治阻力。推动内容溯源标准（如水印技术）不仅是合规需求，更是重建公众对生成式内容信任的关键。在深度伪造泛滥的背景下，建立统一的内容指纹标准将成为行业基础设施。这表明 AI 巨头正从“技术自由主义”转向“负责任的创新”，试图通过参与规则制定来引导行业健康发展。",
-      "tags": [
-        "AI 治理",
-        "欧盟",
-        "内容溯源"
       ],
       "collected_at": "2026-06-13T06:00:00+08:00"
     },
