@@ -416,16 +416,12 @@ jobs:
                       return 0
                   # 找最长公共子串
                   shorter, longer = (combined1, combined2) if len(combined1) <= len(combined2) else (combined2, combined1)
-                  best = 0
-                  for n in range(min(len(shorter), 15), 4, -1):
-                      if best > 0:
-                          break
+                  for n in range(len(shorter), 4, -1):
                       for i in range(len(shorter) - n + 1):
                           chunk = shorter[i:i+n]
                           if chunk in longer:
-                              best = n
-                              break
-                  return best / len(shorter) if best > 0 else 0
+                              return n / len(shorter)
+                  return 0
 
               deduped_items = []
               for it in items_parsed:
