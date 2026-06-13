@@ -423,6 +423,8 @@ jobs:
                               return n / len(shorter)
                   return 0
 
+              print(f'[DEDUP-DEBUG] seen_articles loaded: {len(seen_articles)} items from past days')
+              print(f'[DEDUP-DEBUG] items_parsed to check: {len(items_parsed)} items')
               deduped_items = []
               for it in items_parsed:
                   title = (it.get('title', '') or '').strip()
