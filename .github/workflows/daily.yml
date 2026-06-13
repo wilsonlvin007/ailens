@@ -423,8 +423,6 @@ jobs:
                               return n / len(shorter)
                   return 0
 
-              print(f'[DEDUP-DEBUG] seen_articles loaded: {len(seen_articles)} items from past days')
-              print(f'[DEDUP-DEBUG] items_parsed to check: {len(items_parsed)} items')
               deduped_items = []
               for it in items_parsed:
                   title = (it.get('title', '') or '').strip()
@@ -443,7 +441,7 @@ jobs:
                       if text_overlap(title, summary, seen['title'], seen['summary']) > 0.45:
                           duplicate = True
                           break
-                      if len(title) > 8 and seen_title and text_overlap(title, '', seen_title, '') > 0.8:
+                      if len(title) > 8 and seen_title and text_overlap(title, '', seen_title, '') >= 0.6:
                           duplicate = True
                           break
                   if not duplicate:
