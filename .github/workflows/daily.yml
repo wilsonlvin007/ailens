@@ -432,7 +432,16 @@ jobs:
                       continue
                   duplicate = False
                   for seen in seen_articles:
-                      if text_overlap(title, summary, seen['title'], seen['summary']) > 0.5:
+                      seen_title = seen.get('title', '')
+                      # 标题完全一致则直接判重
+                      if title == seen_title:
+                          duplicate = True
+                          break
+                      # 标题+摘要综合重叠度 > 0.45 或标题单独重叠度 > 0.8
+                      if text_overlap(title, summary, seen['title'], seen['summary']) > 0.45:
+                          duplicate = True
+                          break
+                      if len(title) > 8 and seen_title and text_overlap(title, '', seen_title, '') > 0.8:
                           duplicate = True
                           break
                   if not duplicate:
