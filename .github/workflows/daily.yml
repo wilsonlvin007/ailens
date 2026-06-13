@@ -748,26 +748,26 @@ jobs:
           URLS=""
           # Today's page
           URLS="$URLS
-https://ailens.news/$TODAY"
+https://www.ailens.news/$TODAY"
           # Sitemap and RSS
           URLS="$URLS
-https://ailens.news/sitemap-index.xml"
+https://www.ailens.news/sitemap-index.xml"
           URLS="$URLS
-https://ailens.news/rss.xml"
+https://www.ailens.news/rss.xml"
           URLS="$URLS
-https://ailens.news/feed.json"
+https://www.ailens.news/feed.json"
           # Archive
           URLS="$URLS
-https://ailens.news/archive"
+https://www.ailens.news/archive"
           URLS="$URLS
-https://ailens.news/subscribe"
+https://www.ailens.news/subscribe"
 
           echo -e "$URLS" | sed '/^$/d' > /tmp/baidu_urls.txt
           echo "URLs to push:"
           cat /tmp/baidu_urls.txt
 
           if [ -n "${{ secrets.BAIDU_ZZ_TOKEN }}" ]; then
-            RESULT=$(curl -s -H 'Content-Type:text/plain' --data-binary @/tmp/baidu_urls.txt "http://data.zz.baidu.com/urls?site=ailens.news&token=${{ secrets.BAIDU_ZZ_TOKEN }}")
+            RESULT=$(curl -s -H 'Content-Type:text/plain' --data-binary @/tmp/baidu_urls.txt "http://data.zz.baidu.com/urls?site=https://www.ailens.news&token=${{ secrets.BAIDU_ZZ_TOKEN }}")
             echo "Baidu response: $RESULT"
           else
             echo "[SKIP] BAIDU_ZZ_TOKEN not set — URL push skipped"
