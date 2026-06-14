@@ -1,14 +1,32 @@
 {
-  "updated_at": "2026-06-13",
+  "updated_at": "2026-06-14",
   "items": [
+    {
+      "id": "sig_2026-06-14_001",
+      "level": 1,
+      "content": "视觉语言模型优化光刻缺陷检测",
+      "summary": "研究提出改进的视觉 - 语言模型，用于半导体光刻工艺中的微小图案缺陷检测，提升可",
+      "source": "https://semiengineering.com/refining-vision-language-models-for-lithography-defect detection/",
+      "date": "2026-06-14",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-06-14_002",
+      "level": 1,
+      "content": "字节推 Astra 双模机器人导航",
+      "summary": "字节跳动推出 Astra 双模型架构，旨在革新复杂室内环境下的自主机器人导航能力",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-06-14",
+      "signal_index": 0
+    },
     {
       "id": "sig_2026-06-13_001",
       "level": 1,
       "content": "Blackwell 领跑智能体基准测试",
       "summary": "在首个智能体 AI 基准测试 AgentPerf 中，NVIDIA Blackw",
       "source": "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/",
-      "date": "2026-06-13",
-      "signal_index": 0
+      "date": "2026-06-14",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-13_002",
@@ -16,8 +34,8 @@
       "content": "谷歌起诉利用 AI 钓鱼团伙",
       "summary": "谷歌起诉一中国网络犯罪团伙，指控其利用 Gemini AI 代理发送钓鱼短信，引",
       "source": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
-      "date": "2026-06-13",
-      "signal_index": 1
+      "date": "2026-06-14",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-13_003",
@@ -25,8 +43,8 @@
       "content": "Linux 登录组件潜伏十年后门",
       "summary": "与中国有关的黑客组织在 Linux 登录核心组件植入后门潜伏近十年，严重威胁供应",
       "source": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
-      "date": "2026-06-13",
-      "signal_index": 2
+      "date": "2026-06-14",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-13_005",
@@ -34,8 +52,8 @@
       "content": "NVIDIA 强调机器人出租车安全",
       "summary": "NVIDIA 强调机器人出租车需将安全机制内置于系统设计，而非后期附加，以保障商",
       "source": "https://blogs.nvidia.com/blog/halos-os-robotaxi-safety/",
-      "date": "2026-06-13",
-      "signal_index": 4
+      "date": "2026-06-14",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-13_006",
@@ -43,8 +61,8 @@
       "content": "Preply 结合 AI 与人工教学",
       "summary": "Preply 结合 OpenAI 技术与人类导师，提供个性化反馈及语言学习练习，",
       "source": "https://openai.com/index/preply",
-      "date": "2026-06-13",
-      "signal_index": 5
+      "date": "2026-06-14",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-13_007",
@@ -52,8 +70,8 @@
       "content": "Arch Linux 软件包遭大规模篡改",
       "summary": "超 400 个 Arch Linux 软件包被篡改植入窃密木马，凸显开源供应链面",
       "source": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
-      "date": "2026-06-13",
-      "signal_index": 6
+      "date": "2026-06-14",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-13_001",
@@ -61,17 +79,14 @@
       "content": "月之暗面推出本地多智能体系统",
       "summary": "月之暗面发布 Kimi Work，基于 K2.6 模型驱动 300 个子智能体，",
       "source": "https://www.marktechpost.com/2026/06/12/moonshot-ai-launches-kimi-work-a-local-desktop-agent-reportedly-running-on-kimi-k2-6-with-a-300-sub-agent-agent-swarm/",
-      "date": "2026-06-13",
+      "date": "2026-06-14",
       "signal_index": null
     },
     {
-      "id": "sig_2026-06-13_002",
-      "level": 1,
+      "id": "tag_2026-06-14_001",
+      "level": 2,
       "content": "谷歌起诉利用 AI 钓鱼犯罪团伙",
-      "summary": "谷歌起诉一网络犯罪团伙，指控其滥用 Gemini AI 代理生成钓鱼短信，攻击美",
-      "source": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
-      "date": "2026-06-13",
-      "signal_index": null
+      "date": "2026-06-14"
     },
     {
       "id": "tag_2026-06-13_001",
