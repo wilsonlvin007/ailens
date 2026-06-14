@@ -4,11 +4,65 @@
     {
       "id": "sig_2026-06-14_001",
       "level": 1,
+      "content": "美政府责令禁用顶尖模型",
+      "summary": "美国以国家安全为由，强制 Anthropic 向外国用户禁用其最新旗舰模型 Fa",
+      "source": "https://thehackernews.com/2026/06/us-orders-anthropic-to-suspend-fable-5.html",
+      "date": "2026-06-14",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-06-14_002",
+      "level": 1,
+      "content": "月之暗面开源代码模型",
+      "summary": "月之暗面开源 Kimi K2.7-Code 模型，支持 256K 上下文，代码基",
+      "source": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/",
+      "date": "2026-06-14",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-06-14_003",
+      "level": 1,
+      "content": "Visa 集成 ChatGPT 支付",
+      "summary": "Visa 与 ChatGPT 深度集成，允许 AI 代理直接推荐商品并执行支付，",
+      "source": "https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing/",
+      "date": "2026-06-14",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-06-14_004",
+      "level": 1,
+      "content": "Coinbase 推 AI 自动交易服务",
+      "summary": "Coinbase 推出 Agent 服务，连接 AI 与金融执行通道，实现基于大",
+      "source": "https://www.artificialintelligence-news.com/news/coinbase-for-agents-automating-portfolio-trading-with-ai/",
+      "date": "2026-06-14",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-06-14_005",
+      "level": 1,
+      "content": "Xebia 强调数据基础重要性",
+      "summary": "Xebia 指出数据基础是 AI 智能体成功的关键，强调需先整理数据以供 AI ",
+      "source": "https://www.artificialintelligence-news.com/news/xebia-on-building-the-data-foundation-for-ai-agents-and-then-accelerating/",
+      "date": "2026-06-14",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-06-14_006",
+      "level": 1,
+      "content": "谷歌投资弗吉尼亚基建",
+      "summary": "谷歌在弗吉尼亚州投资基础设施，支持当地就业并提升能源可负担性以支撑 AI 发展。",
+      "source": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virginia-community-investments/",
+      "date": "2026-06-14",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-06-14_001",
+      "level": 1,
       "content": "视觉语言模型优化光刻缺陷检测",
       "summary": "研究提出改进的视觉 - 语言模型，用于半导体光刻工艺中的微小图案缺陷检测，提升可",
       "source": "https://semiengineering.com/refining-vision-language-models-for-lithography-defect detection/",
       "date": "2026-06-14",
-      "signal_index": 1
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-14_002",
@@ -17,7 +71,7 @@
       "summary": "字节跳动推出 Astra 双模型架构，旨在革新复杂室内环境下的自主机器人导航能力",
       "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
       "date": "2026-06-14",
-      "signal_index": 0
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-13_001",
@@ -29,58 +83,40 @@
       "signal_index": null
     },
     {
-      "id": "sig_2026-06-13_002",
-      "level": 1,
+      "id": "tag_2026-06-14_001",
+      "level": 2,
       "content": "谷歌起诉利用 AI 钓鱼团伙",
-      "summary": "谷歌起诉一中国网络犯罪团伙，指控其利用 Gemini AI 代理发送钓鱼短信，引",
-      "source": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
-      "date": "2026-06-14",
-      "signal_index": null
+      "date": "2026-06-14"
     },
     {
-      "id": "sig_2026-06-13_003",
-      "level": 1,
+      "id": "tag_2026-06-14_002",
+      "level": 2,
       "content": "Linux 登录组件潜伏十年后门",
-      "summary": "与中国有关的黑客组织在 Linux 登录核心组件植入后门潜伏近十年，严重威胁供应",
-      "source": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
-      "date": "2026-06-14",
-      "signal_index": null
+      "date": "2026-06-14"
     },
     {
-      "id": "sig_2026-06-13_005",
-      "level": 1,
+      "id": "tag_2026-06-14_003",
+      "level": 2,
       "content": "NVIDIA 强调机器人出租车安全",
-      "summary": "NVIDIA 强调机器人出租车需将安全机制内置于系统设计，而非后期附加，以保障商",
-      "source": "https://blogs.nvidia.com/blog/halos-os-robotaxi-safety/",
-      "date": "2026-06-14",
-      "signal_index": null
+      "date": "2026-06-14"
     },
     {
-      "id": "sig_2026-06-13_006",
-      "level": 1,
+      "id": "tag_2026-06-14_004",
+      "level": 2,
       "content": "Preply 结合 AI 与人工教学",
-      "summary": "Preply 结合 OpenAI 技术与人类导师，提供个性化反馈及语言学习练习，",
-      "source": "https://openai.com/index/preply",
-      "date": "2026-06-14",
-      "signal_index": null
+      "date": "2026-06-14"
     },
     {
-      "id": "sig_2026-06-13_007",
-      "level": 1,
-      "content": "Arch Linux 软件包遭大规模篡改",
-      "summary": "超 400 个 Arch Linux 软件包被篡改植入窃密木马，凸显开源供应链面",
-      "source": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
-      "date": "2026-06-14",
-      "signal_index": null
+      "id": "tag_2026-06-14_005",
+      "level": 2,
+      "content": "Arch Linux 软件包遭大规…",
+      "date": "2026-06-14"
     },
     {
-      "id": "sig_2026-06-13_001",
-      "level": 1,
+      "id": "tag_2026-06-14_006",
+      "level": 2,
       "content": "月之暗面推出本地多智能体系统",
-      "summary": "月之暗面发布 Kimi Work，基于 K2.6 模型驱动 300 个子智能体，",
-      "source": "https://www.marktechpost.com/2026/06/12/moonshot-ai-launches-kimi-work-a-local-desktop-agent-reportedly-running-on-kimi-k2-6-with-a-300-sub-agent-agent-swarm/",
-      "date": "2026-06-14",
-      "signal_index": null
+      "date": "2026-06-14"
     },
     {
       "id": "tag_2026-06-14_001",
@@ -107,38 +143,38 @@
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_005",
-      "level": 2,
+      "id": "word_2026-06-13_005",
+      "level": 3,
       "content": "Xebia 强调智能体数据基础重要性",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_006",
-      "level": 2,
+      "id": "word_2026-06-13_006",
+      "level": 3,
       "content": "Preply 融合 AI 与真人导…",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_007",
-      "level": 2,
+      "id": "word_2026-06-13_007",
+      "level": 3,
       "content": "揭示多智能体故障归因机制",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_001",
-      "level": 2,
+      "id": "word_2026-06-13_001",
+      "level": 3,
       "content": "月之暗面发布本地智能体 Kimi …",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_002",
-      "level": 2,
+      "id": "word_2026-06-13_002",
+      "level": 3,
       "content": "Coinbase 推智能体自动交易…",
       "date": "2026-06-13"
     },
     {
-      "id": "tag_2026-06-13_003",
-      "level": 2,
+      "id": "word_2026-06-13_003",
+      "level": 3,
       "content": "Visa 集成 ChatGPT 赋…",
       "date": "2026-06-13"
     },
@@ -194,42 +230,6 @@
       "id": "word_2026-06-13_004",
       "level": 3,
       "content": "OpenAI 推出职场应用新课程",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_005",
-      "level": 3,
-      "content": "Coinbase 推出代理自动交易…",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_006",
-      "level": 3,
-      "content": "谷歌发布 Gemini-SQL2 …",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_007",
-      "level": 3,
-      "content": "黑客潜伏十年后门 Linux 系统",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_008",
-      "level": 3,
-      "content": "Xebia 论代理失败的数据根源",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_009",
-      "level": 3,
-      "content": "MIT 提出 SEAL 自改进框架",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_001",
-      "level": 3,
-      "content": "OpenAI 收购 Ona 拓展企…",
       "date": "2026-06-13"
     }
   ]
