@@ -1,6 +1,10 @@
 name: Daily AI News Pipeline
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/data/**'
   schedule:
     # 每天 UTC 22:00 = 北京时间 06:00
     - cron: '0 22 * * *'
