@@ -367,7 +367,20 @@ jobs:
 
               items_data = extract_json(items_text)
               if items_data:
-                  items_parsed = items_data.get('items', []) if isinstance(items_data, dict) else items_data if isinstance(items_data, list) else []
+                  raw_items = items_data.get('items', []) if isinstance(items_data, dict) else items_data if isinstance(items_data, list) else []
+                  # 处理双编码：Dify 有时把 items 包裹成 JSON 字符串
+                  if isinstance(raw_items, str):
+                      print(f"[DEBUG] items is double-encoded string ({len(raw_items)} chars), re-parsing...")
+                      inner = extract_json(raw_items)
+                      if inner and isinstance(inner, dict) and 'items' in inner:
+                          items_parsed = inner['items']
+                      elif inner and isinstance(inner, list):
+                          items_parsed = inner
+                      else:
+                          items_parsed = []
+                          print("[ERROR] Could not unwrap double-encoded items")
+                  else:
+                      items_parsed = raw_items
               else:
                   items_parsed = []
                   print("[ERROR] items_text could not be parsed as JSON")
