@@ -747,34 +747,22 @@ jobs:
       - name: Push URLs to Baidu Zhanzhang
         if: success()
         run: |
-          echo "Pushing new URLs to Baidu..."
           TODAY=$(date +%Y-%m-%d)
-          URLS=""
-          # Today's page
-          URLS="$URLS
-https://www.ailens.news/$TODAY"
-          # Sitemap and RSS
-          URLS="$URLS
-https://www.ailens.news/sitemap-index.xml"
-          URLS="$URLS
-https://www.ailens.news/rss.xml"
-          URLS="$URLS
-https://www.ailens.news/feed.json"
-          # Archive
-          URLS="$URLS
-https://www.ailens.news/archive"
-          URLS="$URLS
-https://www.ailens.news/subscribe"
-
-          echo -e "$URLS" | sed '/^$/d' > /tmp/baidu_urls.txt
+          cat > /tmp/baidu_urls.txt << URLSEOF
+          https://www.ailens.news/
+          https://www.ailens.news/${TODAY}
+          https://www.ailens.news/sitemap-index.xml
+          https://www.ailens.news/rss.xml
+          https://www.ailens.news/feed.json
+          https://www.ailens.news/archive
+          URLSEOF
           echo "URLs to push:"
           cat /tmp/baidu_urls.txt
-
           if [ -n "${{ secrets.BAIDU_ZZ_TOKEN }}" ]; then
             RESULT=$(curl -s -H 'Content-Type:text/plain' --data-binary @/tmp/baidu_urls.txt "http://data.zz.baidu.com/urls?site=https://www.ailens.news&token=${{ secrets.BAIDU_ZZ_TOKEN }}")
             echo "Baidu response: $RESULT"
           else
-            echo "[SKIP] BAIDU_ZZ_TOKEN not set — URL push skipped"
+            echo "[SKIP] BAIDU_ZZ_TOKEN not set"
           fi
 
       - name: Commit & push data files
