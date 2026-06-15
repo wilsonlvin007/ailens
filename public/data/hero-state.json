@@ -1,14 +1,59 @@
 {
-  "updated_at": "2026-06-15",
+  "updated_at": "2026-06-16",
   "items": [
+    {
+      "id": "sig_2026-06-16_001",
+      "level": 1,
+      "content": "OpenAI 建立全球合作伙伴网络",
+      "summary": "OpenAI 投资 1.5 亿美元构建合作伙伴网络，旨在加速全球企业级 AI 应",
+      "source": "https://openai.com/index/introducing-openai-partner-network",
+      "date": "2026-06-16",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-06-16_002",
+      "level": 1,
+      "content": "LiteLLM 曝严重漏洞链风险",
+      "summary": "LiteLLM 发现严重漏洞链，低权限用户可接管 AI 网关服务器，引发开源基础",
+      "source": "https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html",
+      "date": "2026-06-16",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-06-16_003",
+      "level": 1,
+      "content": "本地模型替代云端编程热议",
+      "summary": "开发者社区热议利用本地模型完全替代云端大模型进行日常编程的可行性与性能表现。",
+      "source": "https://news.ycombinator.com/item?id=48542100",
+      "date": "2026-06-16",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-06-16_004",
+      "level": 1,
+      "content": "物理神经网络研究综述发布",
+      "summary": "最新综述探讨物理神经网络进展，探索超越传统硅基硬件的新型神经计算材料与机制。",
+      "source": "https://semiengineering.com/physical-neural-networks-a-survey-u-of-lubeck-tu-hamburg/",
+      "date": "2026-06-16",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-06-16_005",
+      "level": 1,
+      "content": "OpenAI 学院推出职场新课",
+      "summary": "OpenAI 学院上线三门新课程，指导用户掌握实用 AI 技能并将智能体高效融入",
+      "source": "https://openai.com/index/academy-courses-applying-ai-at-work",
+      "date": "2026-06-16",
+      "signal_index": 4
+    },
     {
       "id": "sig_2026-06-15_001",
       "level": 1,
       "content": "NVIDIA 黑威尔领跑代理基准测试",
       "summary": "在首个代理 AI 基础设施基准测试中，NVIDIA Blackwell Ultr",
       "source": "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/",
-      "date": "2026-06-15",
-      "signal_index": 2
+      "date": "2026-06-16",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-15_002",
@@ -16,8 +61,8 @@
       "content": "里约热内卢国产模型涉造假争议",
       "summary": "社区发现里约热内卢宣称的“国产”大模型疑似为现有模型的合并版本，引发诚信讨论。",
       "source": "https://github.com/nex-agi/Nex-N2/issues/4",
-      "date": "2026-06-15",
-      "signal_index": 3
+      "date": "2026-06-16",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-15_003",
@@ -25,8 +70,8 @@
       "content": "Claude 模型行为变化引争议",
       "summary": "文章探讨 Claude 模型行为变化引发的争议，分析其对用户体验及对齐策略的潜在",
       "source": "https://bramcohen.com/p/why-is-claude-turning-into-an-asshole",
-      "date": "2026-06-15",
-      "signal_index": 4
+      "date": "2026-06-16",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-15_004",
@@ -34,53 +79,32 @@
       "content": "Anthropic 发布百万上下文新模型",
       "summary": "Anthropic 推出 Fable 5 与 Mythos 5，前者支持百万级上",
       "source": "https://news.smol.ai/issues/26-06-09-anthropic-claude-fable-5/",
-      "date": "2026-06-15",
-      "signal_index": 1
+      "date": "2026-06-16",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-06-15_005",
-      "level": 1,
-      "content": "美政府限制 Anthropic 模型出口",
-      "summary": "美国政府以国家安全为由，命令 Anthropic 暂停向外国用户开放 Fable",
-      "source": "https://thehackernews.com/2026/06/us-orders-anthropic-to-suspend-fable-5.html",
-      "date": "2026-06-15",
-      "signal_index": 0
+      "id": "tag_2026-06-16_001",
+      "level": 2,
+      "content": "美政府限制 Anthropic 模…",
+      "date": "2026-06-16"
     },
     {
-      "id": "sig_2026-06-14_001",
-      "level": 1,
+      "id": "tag_2026-06-16_002",
+      "level": 2,
       "content": "美政府责令禁用顶尖模型",
-      "summary": "美国以国家安全为由，强制 Anthropic 向外国用户禁用其最新旗舰模型 Fa",
-      "source": "https://thehackernews.com/2026/06/us-orders-anthropic-to-suspend-fable-5.html",
-      "date": "2026-06-15",
-      "signal_index": null
+      "date": "2026-06-16"
     },
     {
-      "id": "sig_2026-06-14_002",
-      "level": 1,
+      "id": "tag_2026-06-16_003",
+      "level": 2,
       "content": "月之暗面开源代码模型",
-      "summary": "月之暗面开源 Kimi K2.7-Code 模型，支持 256K 上下文，代码基",
-      "source": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/",
-      "date": "2026-06-15",
-      "signal_index": null
+      "date": "2026-06-16"
     },
     {
-      "id": "sig_2026-06-14_003",
-      "level": 1,
+      "id": "tag_2026-06-16_004",
+      "level": 2,
       "content": "Visa 集成 ChatGPT 支付",
-      "summary": "Visa 与 ChatGPT 深度集成，允许 AI 代理直接推荐商品并执行支付，",
-      "source": "https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing/",
-      "date": "2026-06-15",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-06-14_004",
-      "level": 1,
-      "content": "Coinbase 推 AI 自动交易服务",
-      "summary": "Coinbase 推出 Agent 服务，连接 AI 与金融执行通道，实现基于大",
-      "source": "https://www.artificialintelligence-news.com/news/coinbase-for-agents-automating-portfolio-trading-with-ai/",
-      "date": "2026-06-15",
-      "signal_index": null
+      "date": "2026-06-16"
     },
     {
       "id": "tag_2026-06-15_001",
@@ -113,32 +137,32 @@
       "date": "2026-06-15"
     },
     {
-      "id": "tag_2026-06-14_001",
-      "level": 2,
+      "id": "word_2026-06-14_001",
+      "level": 3,
       "content": "谷歌起诉利用 AI 钓鱼团伙",
       "date": "2026-06-14"
     },
     {
-      "id": "tag_2026-06-14_002",
-      "level": 2,
+      "id": "word_2026-06-14_002",
+      "level": 3,
       "content": "Linux 登录组件潜伏十年后门",
       "date": "2026-06-14"
     },
     {
-      "id": "tag_2026-06-14_003",
-      "level": 2,
+      "id": "word_2026-06-14_003",
+      "level": 3,
       "content": "NVIDIA 强调机器人出租车安全",
       "date": "2026-06-14"
     },
     {
-      "id": "tag_2026-06-14_004",
-      "level": 2,
+      "id": "word_2026-06-14_004",
+      "level": 3,
       "content": "Preply 结合 AI 与人工教学",
       "date": "2026-06-14"
     },
     {
-      "id": "tag_2026-06-14_005",
-      "level": 2,
+      "id": "word_2026-06-14_005",
+      "level": 3,
       "content": "Arch Linux 软件包遭大规…",
       "date": "2026-06-14"
     },
@@ -200,36 +224,6 @@
       "id": "word_2026-06-13_002",
       "level": 3,
       "content": "Coinbase 推智能体自动交易…",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_003",
-      "level": 3,
-      "content": "Visa 集成 ChatGPT 赋…",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_004",
-      "level": 3,
-      "content": "OpenAI 学院推出新世代工作课程",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_005",
-      "level": 3,
-      "content": "谷歌起诉利用 AI 钓鱼的中国团伙",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_006",
-      "level": 3,
-      "content": "学者探索多智能体系统故障归因",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_007",
-      "level": 3,
-      "content": "OpenAI 支持欧盟可信 AI …",
       "date": "2026-06-13"
     }
   ]
