@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-06-16",
+  "updated_at": "2026-06-17",
   "items": [
+    {
+      "id": "sig_2026-06-17_001",
+      "level": 1,
+      "content": "OpenAI 推部署模拟技术",
+      "summary": "OpenAI 利用真实对话数据模拟部署环境，提前预测模型行为，显著提升安全性评估",
+      "source": "https://openai.com/index/deployment-simulation",
+      "date": "2026-06-17",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-06-17_002",
+      "level": 1,
+      "content": "NVIDIA 联合 HPE 扩展代理工厂",
+      "summary": "NVIDIA 与 HPE 升级 AI 工厂架构，集成新一代硬件设施，专为智能体时",
+      "source": "https://blogs.nvidia.com/blog/hpe-ai-factory-agentic-enterprise/",
+      "date": "2026-06-17",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-06-17_003",
+      "level": 1,
+      "content": "谷歌详解五代 TPU 演进历程",
+      "summary": "谷歌公开五代 TPU 超算架构细节，展示其在规模扩展、能效优化及可持续性方面的技",
+      "source": "https://semiengineering.com/google-details-five-generations-of-tpu-training-supercomputers/",
+      "date": "2026-06-17",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-06-17_004",
+      "level": 1,
+      "content": "NVIDIA XR AI 赋能 AR 眼镜",
+      "summary": "NVIDIA XR AI 框架开启公测，助力开发者在 AR 眼镜上构建多模态智能",
+      "source": "https://blogs.nvidia.com/blog/nvidia-xr-ai/",
+      "date": "2026-06-17",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-06-17_005",
+      "level": 1,
+      "content": "荷兰推出主权语言模型 GPT-NL",
+      "summary": "荷兰发布 GPT-NL 主权模型，旨在满足本地语言文化需求，保障国家数据主权与技",
+      "source": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
+      "date": "2026-06-17",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-06-17_006",
+      "level": 1,
+      "content": "Google Vertex AI 曝严重漏洞",
+      "summary": "Google Vertex AI SDK 发现高危漏洞，攻击者可利用存储桶劫持技",
+      "source": "https://thehackernews.com/2026/06/google-vertex-ai-sdk-flaw-let-attackers.html",
+      "date": "2026-06-17",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-06-17_007",
+      "level": 1,
+      "content": "Coherent 扩建光互连产能",
+      "summary": "Coherent 扩建德州工厂以提升激光组件产能，满足 AI 系统对高速光互连骨",
+      "source": "https://blogs.nvidia.com/blog/coherent-texas-ai-optical/",
+      "date": "2026-06-17",
+      "signal_index": 6
+    },
     {
       "id": "sig_2026-06-16_001",
       "level": 1,
       "content": "OpenAI 建立全球合作伙伴网络",
       "summary": "OpenAI 投资 1.5 亿美元构建合作伙伴网络，旨在加速全球企业级 AI 应",
       "source": "https://openai.com/index/introducing-openai-partner-network",
-      "date": "2026-06-16",
-      "signal_index": 0
+      "date": "2026-06-17",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-16_002",
@@ -16,71 +79,50 @@
       "content": "LiteLLM 曝严重漏洞链风险",
       "summary": "LiteLLM 发现严重漏洞链，低权限用户可接管 AI 网关服务器，引发开源基础",
       "source": "https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html",
-      "date": "2026-06-16",
-      "signal_index": 1
+      "date": "2026-06-17",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-06-16_003",
-      "level": 1,
+      "id": "tag_2026-06-17_001",
+      "level": 2,
       "content": "本地模型替代云端编程热议",
-      "summary": "开发者社区热议利用本地模型完全替代云端大模型进行日常编程的可行性与性能表现。",
-      "source": "https://news.ycombinator.com/item?id=48542100",
-      "date": "2026-06-16",
-      "signal_index": 2
+      "date": "2026-06-17"
     },
     {
-      "id": "sig_2026-06-16_004",
-      "level": 1,
+      "id": "tag_2026-06-17_002",
+      "level": 2,
       "content": "物理神经网络研究综述发布",
-      "summary": "最新综述探讨物理神经网络进展，探索超越传统硅基硬件的新型神经计算材料与机制。",
-      "source": "https://semiengineering.com/physical-neural-networks-a-survey-u-of-lubeck-tu-hamburg/",
-      "date": "2026-06-16",
-      "signal_index": 3
+      "date": "2026-06-17"
     },
     {
-      "id": "sig_2026-06-16_005",
-      "level": 1,
+      "id": "tag_2026-06-17_003",
+      "level": 2,
       "content": "OpenAI 学院推出职场新课",
-      "summary": "OpenAI 学院上线三门新课程，指导用户掌握实用 AI 技能并将智能体高效融入",
-      "source": "https://openai.com/index/academy-courses-applying-ai-at-work",
-      "date": "2026-06-16",
-      "signal_index": 4
+      "date": "2026-06-17"
     },
     {
-      "id": "sig_2026-06-15_001",
-      "level": 1,
+      "id": "tag_2026-06-17_004",
+      "level": 2,
       "content": "NVIDIA 黑威尔领跑代理基准测试",
-      "summary": "在首个代理 AI 基础设施基准测试中，NVIDIA Blackwell Ultr",
-      "source": "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/",
-      "date": "2026-06-16",
-      "signal_index": null
+      "date": "2026-06-17"
     },
     {
-      "id": "sig_2026-06-15_002",
-      "level": 1,
+      "id": "tag_2026-06-17_005",
+      "level": 2,
       "content": "里约热内卢国产模型涉造假争议",
-      "summary": "社区发现里约热内卢宣称的“国产”大模型疑似为现有模型的合并版本，引发诚信讨论。",
-      "source": "https://github.com/nex-agi/Nex-N2/issues/4",
-      "date": "2026-06-16",
-      "signal_index": null
+      "date": "2026-06-17"
     },
     {
-      "id": "sig_2026-06-15_003",
-      "level": 1,
+      "id": "tag_2026-06-17_006",
+      "level": 2,
       "content": "Claude 模型行为变化引争议",
-      "summary": "文章探讨 Claude 模型行为变化引发的争议，分析其对用户体验及对齐策略的潜在",
-      "source": "https://bramcohen.com/p/why-is-claude-turning-into-an-asshole",
-      "date": "2026-06-16",
-      "signal_index": null
+      "date": "2026-06-17"
     },
     {
-      "id": "sig_2026-06-15_004",
-      "level": 1,
-      "content": "Anthropic 发布百万上下文新模型",
-      "summary": "Anthropic 推出 Fable 5 与 Mythos 5，前者支持百万级上",
-      "source": "https://news.smol.ai/issues/26-06-09-anthropic-claude-fable-5/",
-      "date": "2026-06-16",
-      "signal_index": null
+      "id": "tag_2026-06-17_007",
+      "level": 2,
+      "content": "Anthropic 发布百万上下文…",
+      "date": "2026-06-17"
     },
     {
       "id": "tag_2026-06-16_001",
@@ -101,38 +143,38 @@
       "date": "2026-06-16"
     },
     {
-      "id": "tag_2026-06-16_004",
-      "level": 2,
+      "id": "word_2026-06-16_004",
+      "level": 3,
       "content": "Visa 集成 ChatGPT 支付",
       "date": "2026-06-16"
     },
     {
-      "id": "tag_2026-06-15_001",
-      "level": 2,
+      "id": "word_2026-06-15_001",
+      "level": 3,
       "content": "Xebia 强调数据基础重要性",
       "date": "2026-06-15"
     },
     {
-      "id": "tag_2026-06-15_002",
-      "level": 2,
+      "id": "word_2026-06-15_002",
+      "level": 3,
       "content": "谷歌投资弗吉尼亚基建",
       "date": "2026-06-15"
     },
     {
-      "id": "tag_2026-06-15_003",
-      "level": 2,
+      "id": "word_2026-06-15_003",
+      "level": 3,
       "content": "视觉语言模型优化光刻缺陷检测",
       "date": "2026-06-15"
     },
     {
-      "id": "tag_2026-06-15_004",
-      "level": 2,
+      "id": "word_2026-06-15_004",
+      "level": 3,
       "content": "字节推 Astra 双模机器人导航",
       "date": "2026-06-15"
     },
     {
-      "id": "tag_2026-06-15_005",
-      "level": 2,
+      "id": "word_2026-06-15_005",
+      "level": 3,
       "content": "Blackwell 领跑智能体基准…",
       "date": "2026-06-15"
     },
@@ -188,42 +230,6 @@
       "id": "word_2026-06-13_002",
       "level": 3,
       "content": "Visa 集成 ChatGPT 支…",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_004",
-      "level": 3,
-      "content": "OpenAI 推出职场应用学院课程",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_005",
-      "level": 3,
-      "content": "Xebia 强调智能体数据基础重要性",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_006",
-      "level": 3,
-      "content": "Preply 融合 AI 与真人导…",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_007",
-      "level": 3,
-      "content": "揭示多智能体故障归因机制",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_001",
-      "level": 3,
-      "content": "月之暗面发布本地智能体 Kimi …",
-      "date": "2026-06-13"
-    },
-    {
-      "id": "word_2026-06-13_002",
-      "level": 3,
-      "content": "Coinbase 推智能体自动交易…",
       "date": "2026-06-13"
     }
   ]
