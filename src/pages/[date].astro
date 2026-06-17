@@ -12,19 +12,29 @@ export function getStaticPaths() {
 
 const { date } = Astro.params;
 const data = getDailyData(date!);
+const allDates = getAllDates();
+
+// Compute prev/next dates
+const currentIdx = allDates.indexOf(date!);
+const prevDate = currentIdx > 0 ? allDates[currentIdx - 1] : null;
+const nextDate = currentIdx < allDates.length - 1 ? allDates[currentIdx + 1] : null;
 
 if (!data) {
   return Astro.redirect('/');
 }
 ---
 
-<Base title={`AI 日报 · ${date}`}>
+<Base title={`AI 日报 · ${date}`} description={`${date} AI 新闻精选，涵盖 AI 技术、应用落地、硬件产品与前沿思想`}>
   <Signals items={data.items} />
   {data.deep_dive && (
     <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated />
   )}
   <nav class="date-nav">
     <a href="/" class="back-link">← 返回最新</a>
+    <div class="date-nav-links">
+      {prevDate && <a href={`/${prevDate}`} class="prev-link">← {prevDate}</a>}
+      {nextDate && <a href={`/${nextDate}`} class="next-link">{nextDate} →</a>}
+    </div>
   </nav>
 </Base>
 
@@ -32,13 +42,23 @@ if (!data) {
   .date-nav {
     padding: 2rem 0;
     border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
-  .back-link {
+  .date-nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .back-link, .prev-link, .next-link {
     font-size: 0.875rem;
     color: var(--text-secondary);
     font-weight: 500;
+    text-decoration: none;
   }
-  .back-link:hover {
+  .back-link:hover, .prev-link:hover, .next-link:hover {
     color: var(--accent);
   }
 </style>
