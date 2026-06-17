@@ -761,10 +761,12 @@ jobs:
         if: success()
         run: |
           TODAY=$(date +%Y-%m-%d)
+          YESTERDAY=$(date -d "yesterday" +%Y-%m-%d 2>/dev/null || date -v-1d +%Y-%m-%d)
           cat > /tmp/baidu_urls.txt << URLSEOF
           https://www.ailens.news/
-          https://www.ailens.news/${TODAY}
-          https://www.ailens.news/sitemap-index.xml
+          https://www.ailens.news/${TODAY}/
+          https://www.ailens.news/${YESTERDAY}/
+          https://www.ailens.news/sitemap.xml
           https://www.ailens.news/rss.xml
           https://www.ailens.news/feed.json
           https://www.ailens.news/archive
