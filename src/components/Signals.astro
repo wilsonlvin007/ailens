@@ -67,7 +67,7 @@ groups.sort((a, b) => categoryOrder.indexOf(a.key as typeof categoryOrder[number
               </details>
             )}
             <div class="signal-meta">
-              <span class="signal-source">{item.source_name}</span>
+              {item.source ? <a href={item.source} class="signal-source" rel="nofollow noopener" target="_blank">{item.source_name}</a> : <span class="signal-source">{item.source_name}</span>}
               <div class="signal-tags">
                 {item.tags?.map((tag) => (
                   <span class="tag">#{tag}</span>
@@ -99,7 +99,7 @@ groups.sort((a, b) => categoryOrder.indexOf(a.key as typeof categoryOrder[number
                   </details>
                 )}
                 <div class="signal-meta">
-                  <span class="signal-source">{item.source_name}</span>
+                  {item.source ? <a href={item.source} class="signal-source" rel="nofollow noopener" target="_blank">{item.source_name}</a> : <span class="signal-source">{item.source_name}</span>}
                 </div>
               </article>
               );
