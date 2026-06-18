@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-06-18",
+  "updated_at": "2026-06-19",
   "items": [
+    {
+      "id": "sig_2026-06-19_001",
+      "level": 1,
+      "content": "OpenAI 升级医疗与企业功能",
+      "summary": "OpenAI 推出 GPT-5.5 医疗增强版及企业支出管控工具，并助力诊断罕见",
+      "source": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "date": "2026-06-19",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-06-19_002",
+      "level": 1,
+      "content": "谷歌 AMIE 展现疾病管理潜力",
+      "summary": "谷歌研究显示对话式医疗 AI AMIE 在复杂疾病管理方面表现媲美初级保健医生。",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
+      "date": "2026-06-19",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-06-19_003",
+      "level": 1,
+      "content": "谷歌前高管 Noam Shazeer 加入 OpenAI",
+      "summary": "Google Gemini 联合负责人 Noam Shazeer 跳槽至 Ope",
+      "source": "https://twitter.com/NoamShazeer/status/2067400851438932297",
+      "date": "2026-06-19",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-06-19_004",
+      "level": 1,
+      "content": "谷歌投资十五亿扩建阿拉巴马数据中心",
+      "summary": "谷歌宣布投资 15 亿美元扩建阿拉巴马州数据中心，以支撑其日益增长的 AI 基础",
+      "source": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/alabama-investment-june-2026/",
+      "date": "2026-06-19",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-06-19_005",
+      "level": 1,
+      "content": "FERC 新规助力 AI 工厂电网接入",
+      "summary": "FERC 出台新规优化大型负载并网流程，旨在缓解 AI 工厂带来的电网压力并提升",
+      "source": "https://blogs.nvidia.com/blog/ferc-large-load-interconnection/",
+      "date": "2026-06-19",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-06-19_006",
+      "level": 1,
+      "content": "孤儿 AI 代理引发企业安全隐患",
+      "summary": "企业快速部署 AI 导致“孤儿代理”泛滥，带来难以追踪的核心资产访问安全风险。",
+      "source": "https://thehackernews.com/2026/06/orphaned-ai-agents-how-to-find-hidden.html",
+      "date": "2026-06-19",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-06-19_007",
+      "level": 1,
+      "content": "基准测试揭示编码任务仍存瓶颈",
+      "summary": "Cognition 基准测试显示最强模型在硬编码任务上得分仅 13%，表明自动编",
+      "source": "https://news.smol.ai/issues/26-06-08-not-much/",
+      "date": "2026-06-19",
+      "signal_index": 6
+    },
     {
       "id": "sig_2026-06-18_001",
       "level": 1,
       "content": "OpenAI 推出自主 AI 化学家",
       "summary": "OpenAI 展示基于 GPT-5.4 的 AI 化学家，成功优化关键药物合成反",
       "source": "https://openai.com/index/ai-chemist-improves-reaction",
-      "date": "2026-06-18",
-      "signal_index": 0
+      "date": "2026-06-19",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-18_002",
@@ -16,71 +79,50 @@
       "content": "MIT 提出自进化框架 SEAL",
       "summary": "MIT 研发 SEAL 框架，允许大模型通过强化学习自我编辑权重实现进化。",
       "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-06-18",
-      "signal_index": 1
+      "date": "2026-06-19",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-06-18_003",
-      "level": 1,
+      "id": "tag_2026-06-19_001",
+      "level": 2,
       "content": "泄露文件显示 OpenAI 巨额亏损",
-      "summary": "泄露财报显示 OpenAI 年亏损数十亿美元，引发对其商业模式可持续性质疑。",
-      "source": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-year/",
-      "date": "2026-06-18",
-      "signal_index": 2
+      "date": "2026-06-19"
     },
     {
-      "id": "sig_2026-06-18_004",
-      "level": 1,
+      "id": "tag_2026-06-19_002",
+      "level": 2,
       "content": "欧盟发布 AI 内容标签指南",
-      "summary": "欧盟出台 AI 内容标识规范，助力企业在《AI 法案》生效前完成合规准备。",
-      "source": "https://www.artificialintelligence-news.com/news/ai-content-labelling-eu-code-practice/",
-      "date": "2026-06-18",
-      "signal_index": 3
+      "date": "2026-06-19"
     },
     {
-      "id": "sig_2026-06-18_005",
-      "level": 1,
+      "id": "tag_2026-06-19_003",
+      "level": 2,
       "content": "Vercel 开源 Eve 代理框架",
-      "summary": "Vercel 推出开源框架 Eve，以文件目录定义智能体，内置沙箱与审批机制。",
-      "source": "https://www.marktechpost.com/2026/06/17/vercel-releases-eve/",
-      "date": "2026-06-18",
-      "signal_index": 4
+      "date": "2026-06-19"
     },
     {
-      "id": "sig_2026-06-18_006",
-      "level": 1,
+      "id": "tag_2026-06-19_004",
+      "level": 2,
       "content": "谷歌医疗 AI AMIE 媲美医生",
-      "summary": "谷歌研究显示，其医疗 AI 系统 AMIE 在复杂疾病管理上表现堪比全科医生。",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-nature/",
-      "date": "2026-06-18",
-      "signal_index": 5
+      "date": "2026-06-19"
     },
     {
-      "id": "sig_2026-06-18_007",
-      "level": 1,
+      "id": "tag_2026-06-19_005",
+      "level": 2,
       "content": "OpenAI 推出生命科学校准基准",
-      "summary": "OpenAI 发布由专家审核的 LifeSciBench，专用于评估 AI 在生",
-      "source": "https://openai.com/index/introducing-life-sci-bench",
-      "date": "2026-06-18",
-      "signal_index": 6
+      "date": "2026-06-19"
     },
     {
-      "id": "sig_2026-06-18_008",
-      "level": 1,
+      "id": "tag_2026-06-19_006",
+      "level": 2,
       "content": "保险业聚焦 AI 风险承保",
-      "summary": "保险公司调整战略，将 AI 深度嵌入核心风险承保流程以创造实际业务价值。",
-      "source": "https://www.artificialintelligence-news.com/news/insurers-pivot-ai-strategy-toward-core-risk-underwriting/",
-      "date": "2026-06-18",
-      "signal_index": 7
+      "date": "2026-06-19"
     },
     {
-      "id": "sig_2026-06-18_009",
-      "level": 1,
+      "id": "tag_2026-06-19_007",
+      "level": 2,
       "content": "最强模型编码任务得分低迷",
-      "summary": "Cognition 基准测试显示，顶尖模型在困难编码任务上成功率仅为 13%。",
-      "source": "https://news.smol.ai/issues/26-06-08-not-much/",
-      "date": "2026-06-18",
-      "signal_index": 8
+      "date": "2026-06-19"
     },
     {
       "id": "tag_2026-06-18_001",
@@ -101,44 +143,44 @@
       "date": "2026-06-18"
     },
     {
-      "id": "tag_2026-06-18_004",
-      "level": 2,
+      "id": "word_2026-06-18_004",
+      "level": 3,
       "content": "NVIDIA XR AI 赋能 A…",
       "date": "2026-06-18"
     },
     {
-      "id": "tag_2026-06-18_005",
-      "level": 2,
+      "id": "word_2026-06-18_005",
+      "level": 3,
       "content": "荷兰推出主权语言模型 GPT-NL",
       "date": "2026-06-18"
     },
     {
-      "id": "tag_2026-06-18_006",
-      "level": 2,
+      "id": "word_2026-06-18_006",
+      "level": 3,
       "content": "Google Vertex AI …",
       "date": "2026-06-18"
     },
     {
-      "id": "tag_2026-06-18_007",
-      "level": 2,
+      "id": "word_2026-06-18_007",
+      "level": 3,
       "content": "Coherent 扩建光互连产能",
       "date": "2026-06-18"
     },
     {
-      "id": "tag_2026-06-18_008",
-      "level": 2,
+      "id": "word_2026-06-18_008",
+      "level": 3,
       "content": "OpenAI 建立全球合作伙伴网络",
       "date": "2026-06-18"
     },
     {
-      "id": "tag_2026-06-18_009",
-      "level": 2,
+      "id": "word_2026-06-18_009",
+      "level": 3,
       "content": "LiteLLM 曝严重漏洞链风险",
       "date": "2026-06-18"
     },
     {
-      "id": "tag_2026-06-17_001",
-      "level": 2,
+      "id": "word_2026-06-17_001",
+      "level": 3,
       "content": "本地模型替代云端编程热议",
       "date": "2026-06-17"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "美政府责令禁用顶尖模型",
       "date": "2026-06-16"
-    },
-    {
-      "id": "word_2026-06-16_003",
-      "level": 3,
-      "content": "月之暗面开源代码模型",
-      "date": "2026-06-16"
-    },
-    {
-      "id": "word_2026-06-16_004",
-      "level": 3,
-      "content": "Visa 集成 ChatGPT 支付",
-      "date": "2026-06-16"
-    },
-    {
-      "id": "word_2026-06-15_001",
-      "level": 3,
-      "content": "Xebia 强调数据基础重要性",
-      "date": "2026-06-15"
-    },
-    {
-      "id": "word_2026-06-15_002",
-      "level": 3,
-      "content": "谷歌投资弗吉尼亚基建",
-      "date": "2026-06-15"
-    },
-    {
-      "id": "word_2026-06-15_003",
-      "level": 3,
-      "content": "视觉语言模型优化光刻缺陷检测",
-      "date": "2026-06-15"
-    },
-    {
-      "id": "word_2026-06-15_004",
-      "level": 3,
-      "content": "字节推 Astra 双模机器人导航",
-      "date": "2026-06-15"
-    },
-    {
-      "id": "word_2026-06-15_005",
-      "level": 3,
-      "content": "Blackwell 领跑智能体基准…",
-      "date": "2026-06-15"
     }
   ]
 }
