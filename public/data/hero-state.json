@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-06-19",
+  "updated_at": "2026-06-20",
   "items": [
+    {
+      "id": "sig_2026-06-20_001",
+      "level": 1,
+      "content": "OpenAI 助力诊断罕见儿童遗传病",
+      "summary": "OpenAI 推理模型辅助医生成功确诊 18 例此前未明的罕见儿童遗传病，展现医",
+      "source": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "date": "2026-06-20",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-06-20_002",
+      "level": 1,
+      "content": "AutoJack 攻击威胁 AI 代理安全",
+      "summary": "微软披露 AutoJack 攻击链，可将 AI 浏览代理转化为远程代码执行工具，",
+      "source": "https://thehackernews.com/2026/06/autojack-attack-lets-one-web-page.html",
+      "date": "2026-06-20",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-06-20_003",
+      "level": 1,
+      "content": "英伟达伙伴展示 AI 重塑广告营销",
+      "summary": "英伟达合作伙伴在戛纳创意节展示 AI 驱动的广告营销方案，推动自动化运营落地。",
+      "source": "https://blogs.nvidia.com/blog/nvidia-ai-marketing-advertising-cannes-lions/",
+      "date": "2026-06-20",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-06-20_004",
+      "level": 1,
+      "content": "OpenAI 升级企业版支出控制功能",
+      "summary": "OpenAI 为 ChatGPT Enterprise 新增使用分析与支出控制功",
+      "source": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+      "date": "2026-06-20",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-06-20_005",
+      "level": 1,
+      "content": "芯片行业周报：合作与自研并行",
+      "summary": "芯片周报涵盖苹果英特尔合作、亚马逊自研芯片销售及 CHIPS 法案资金落地等关键",
+      "source": "https://semiengineering.com/chip-industry-week-in-review-143/",
+      "date": "2026-06-20",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-06-20_006",
+      "level": 1,
+      "content": "谷歌 AMIE 媲美初级保健医生",
+      "summary": "谷歌医疗 AI 系统 AMIE 在复杂疾病管理表现上媲美初级医生，成果发表于《自",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
+      "date": "2026-06-20",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-06-20_007",
+      "level": 1,
+      "content": "FERC 新规影响 AI 工厂电力并网",
+      "summary": "美国联邦能源监管委员会新规优化大型负载并网流程，关乎 AI 数据中心电力供应与成",
+      "source": "https://blogs.nvidia.com/blog/ferc-large-load-interconnection/",
+      "date": "2026-06-20",
+      "signal_index": 5
+    },
     {
       "id": "sig_2026-06-19_001",
       "level": 1,
       "content": "OpenAI 升级医疗与企业功能",
       "summary": "OpenAI 推出 GPT-5.5 医疗增强版及企业支出管控工具，并助力诊断罕见",
       "source": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
-      "date": "2026-06-19",
-      "signal_index": 0
+      "date": "2026-06-20",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-19_002",
@@ -16,71 +79,50 @@
       "content": "谷歌 AMIE 展现疾病管理潜力",
       "summary": "谷歌研究显示对话式医疗 AI AMIE 在复杂疾病管理方面表现媲美初级保健医生。",
       "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
-      "date": "2026-06-19",
-      "signal_index": 2
+      "date": "2026-06-20",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-06-19_003",
-      "level": 1,
-      "content": "谷歌前高管 Noam Shazeer 加入 OpenAI",
-      "summary": "Google Gemini 联合负责人 Noam Shazeer 跳槽至 Ope",
-      "source": "https://twitter.com/NoamShazeer/status/2067400851438932297",
-      "date": "2026-06-19",
-      "signal_index": 1
+      "id": "tag_2026-06-20_001",
+      "level": 2,
+      "content": "谷歌前高管 Noam Shazee…",
+      "date": "2026-06-20"
     },
     {
-      "id": "sig_2026-06-19_004",
-      "level": 1,
+      "id": "tag_2026-06-20_002",
+      "level": 2,
       "content": "谷歌投资十五亿扩建阿拉巴马数据中心",
-      "summary": "谷歌宣布投资 15 亿美元扩建阿拉巴马州数据中心，以支撑其日益增长的 AI 基础",
-      "source": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/alabama-investment-june-2026/",
-      "date": "2026-06-19",
-      "signal_index": 3
+      "date": "2026-06-20"
     },
     {
-      "id": "sig_2026-06-19_005",
-      "level": 1,
-      "content": "FERC 新规助力 AI 工厂电网接入",
-      "summary": "FERC 出台新规优化大型负载并网流程，旨在缓解 AI 工厂带来的电网压力并提升",
-      "source": "https://blogs.nvidia.com/blog/ferc-large-load-interconnection/",
-      "date": "2026-06-19",
-      "signal_index": 4
+      "id": "tag_2026-06-20_003",
+      "level": 2,
+      "content": "FERC 新规助力 AI 工厂电网…",
+      "date": "2026-06-20"
     },
     {
-      "id": "sig_2026-06-19_006",
-      "level": 1,
+      "id": "tag_2026-06-20_004",
+      "level": 2,
       "content": "孤儿 AI 代理引发企业安全隐患",
-      "summary": "企业快速部署 AI 导致“孤儿代理”泛滥，带来难以追踪的核心资产访问安全风险。",
-      "source": "https://thehackernews.com/2026/06/orphaned-ai-agents-how-to-find-hidden.html",
-      "date": "2026-06-19",
-      "signal_index": 5
+      "date": "2026-06-20"
     },
     {
-      "id": "sig_2026-06-19_007",
-      "level": 1,
+      "id": "tag_2026-06-20_005",
+      "level": 2,
       "content": "基准测试揭示编码任务仍存瓶颈",
-      "summary": "Cognition 基准测试显示最强模型在硬编码任务上得分仅 13%，表明自动编",
-      "source": "https://news.smol.ai/issues/26-06-08-not-much/",
-      "date": "2026-06-19",
-      "signal_index": 6
+      "date": "2026-06-20"
     },
     {
-      "id": "sig_2026-06-18_001",
-      "level": 1,
+      "id": "tag_2026-06-20_006",
+      "level": 2,
       "content": "OpenAI 推出自主 AI 化学家",
-      "summary": "OpenAI 展示基于 GPT-5.4 的 AI 化学家，成功优化关键药物合成反",
-      "source": "https://openai.com/index/ai-chemist-improves-reaction",
-      "date": "2026-06-19",
-      "signal_index": null
+      "date": "2026-06-20"
     },
     {
-      "id": "sig_2026-06-18_002",
-      "level": 1,
+      "id": "tag_2026-06-20_007",
+      "level": 2,
       "content": "MIT 提出自进化框架 SEAL",
-      "summary": "MIT 研发 SEAL 框架，允许大模型通过强化学习自我编辑权重实现进化。",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-06-19",
-      "signal_index": null
+      "date": "2026-06-20"
     },
     {
       "id": "tag_2026-06-19_001",
@@ -101,44 +143,44 @@
       "date": "2026-06-19"
     },
     {
-      "id": "tag_2026-06-19_004",
-      "level": 2,
+      "id": "word_2026-06-19_004",
+      "level": 3,
       "content": "谷歌医疗 AI AMIE 媲美医生",
       "date": "2026-06-19"
     },
     {
-      "id": "tag_2026-06-19_005",
-      "level": 2,
+      "id": "word_2026-06-19_005",
+      "level": 3,
       "content": "OpenAI 推出生命科学校准基准",
       "date": "2026-06-19"
     },
     {
-      "id": "tag_2026-06-19_006",
-      "level": 2,
+      "id": "word_2026-06-19_006",
+      "level": 3,
       "content": "保险业聚焦 AI 风险承保",
       "date": "2026-06-19"
     },
     {
-      "id": "tag_2026-06-19_007",
-      "level": 2,
+      "id": "word_2026-06-19_007",
+      "level": 3,
       "content": "最强模型编码任务得分低迷",
       "date": "2026-06-19"
     },
     {
-      "id": "tag_2026-06-18_001",
-      "level": 2,
+      "id": "word_2026-06-18_001",
+      "level": 3,
       "content": "OpenAI 推部署模拟技术",
       "date": "2026-06-18"
     },
     {
-      "id": "tag_2026-06-18_002",
-      "level": 2,
+      "id": "word_2026-06-18_002",
+      "level": 3,
       "content": "NVIDIA 联合 HPE 扩展代…",
       "date": "2026-06-18"
     },
     {
-      "id": "tag_2026-06-18_003",
-      "level": 2,
+      "id": "word_2026-06-18_003",
+      "level": 3,
       "content": "谷歌详解五代 TPU 演进历程",
       "date": "2026-06-18"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "物理神经网络研究综述发布",
       "date": "2026-06-17"
-    },
-    {
-      "id": "word_2026-06-17_003",
-      "level": 3,
-      "content": "OpenAI 学院推出职场新课",
-      "date": "2026-06-17"
-    },
-    {
-      "id": "word_2026-06-17_004",
-      "level": 3,
-      "content": "NVIDIA 黑威尔领跑代理基准测试",
-      "date": "2026-06-17"
-    },
-    {
-      "id": "word_2026-06-17_005",
-      "level": 3,
-      "content": "里约热内卢国产模型涉造假争议",
-      "date": "2026-06-17"
-    },
-    {
-      "id": "word_2026-06-17_006",
-      "level": 3,
-      "content": "Claude 模型行为变化引争议",
-      "date": "2026-06-17"
-    },
-    {
-      "id": "word_2026-06-17_007",
-      "level": 3,
-      "content": "Anthropic 发布百万上下文…",
-      "date": "2026-06-17"
-    },
-    {
-      "id": "word_2026-06-16_001",
-      "level": 3,
-      "content": "美政府限制 Anthropic 模…",
-      "date": "2026-06-16"
-    },
-    {
-      "id": "word_2026-06-16_002",
-      "level": 3,
-      "content": "美政府责令禁用顶尖模型",
-      "date": "2026-06-16"
     }
   ]
 }
