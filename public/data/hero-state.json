@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-06-20",
+  "updated_at": "2026-06-21",
   "items": [
+    {
+      "id": "sig_2026-06-21_001",
+      "level": 1,
+      "content": "SAP 联手谷歌部署代理商业架构",
+      "summary": "SAP 与谷歌云合作部署代理商业架构，实现企业级营销与零售多智能体自动化操作。",
+      "source": "https://www.artificialintelligence-news.com/news/sap-and-google-cloud-deploy-agentic-commerce-architecture/",
+      "date": "2026-06-21",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-06-21_002",
+      "level": 1,
+      "content": "字节跳动发布机器人导航双模型 Astra",
+      "summary": "字节跳动推出 Astra 双模型架构，革新复杂室内环境下自主机器人的导航能力。",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-06-21",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-06-21_003",
+      "level": 1,
+      "content": "思科开源 FAPO 优化多步 LLM 流水线",
+      "summary": "思科开源 FAPO 系统，自动优化多步大模型流水线并精确定位步骤级失败原因。",
+      "source": "https://www.marktechpost.com/2026/06/20/cisco-ai-introduces-fapo-pipeline-aware-prompt-optimization-with-step-level-failure attribution-and-claude-code-orchestration/",
+      "date": "2026-06-21",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-06-21_004",
+      "level": 1,
+      "content": "英国推出主权 AI 驱动零日 SOC 平台",
+      "summary": "英国推出首个主权 AI 驱动零日 SOC 平台 Cumulo，利用数字孪生技术防",
+      "source": "https://www.artificialintelligence-news.com/news/e2e-assure-introduces-cumulo-the-u-k-s-only-sovereign-ai-driven-zero-day-soc-platform-to-secure-it-and-ot-environments/",
+      "date": "2026-06-21",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-06-21_005",
+      "level": 1,
+      "content": "计算机视觉提升零售业生产力",
+      "summary": "计算机视觉通过自动化货架跟踪，显著提升零售业生产力并有效保护利润空间。",
+      "source": "https://www.artificialintelligence-news.com/news/computer-vision-deployments-drive-retail-productivity-gains/",
+      "date": "2026-06-21",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-06-21_006",
+      "level": 1,
+      "content": "Nous Research 更新 Hermes 智能体权限控制",
+      "summary": "Nous Research 更新 Hermes 智能体，新增空白模式以灵活控制工",
+      "source": "https://www.marktechpost.com/2026/06/20/nous-research-updates-hermes-agent-with-a-blank-slate-mode-that-pins-toolsets-via-platform_toolsets-cli-and-disabled_toolsets/",
+      "date": "2026-06-21",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-06-21_007",
+      "level": 1,
+      "content": "ChatGPT 健康领域回复质量升级",
+      "summary": "GPT-5.5 Instant 提升 ChatGPT 健康领域回复质量，增强医学",
+      "source": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "date": "2026-06-21",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-06-21_008",
+      "level": 1,
+      "content": "OpenAI 推企业版支出控制新功能",
+      "summary": "OpenAI 为企业版 ChatGPT 推出新使用分析及支出控制功能，助力精细化",
+      "source": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+      "date": "2026-06-21",
+      "signal_index": 7
+    },
     {
       "id": "sig_2026-06-20_001",
       "level": 1,
       "content": "OpenAI 助力诊断罕见儿童遗传病",
       "summary": "OpenAI 推理模型辅助医生成功确诊 18 例此前未明的罕见儿童遗传病，展现医",
       "source": "https://openai.com/index/diagnose-rare-childhood-diseases",
-      "date": "2026-06-20",
-      "signal_index": 0
+      "date": "2026-06-21",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-06-20_002",
-      "level": 1,
-      "content": "AutoJack 攻击威胁 AI 代理安全",
-      "summary": "微软披露 AutoJack 攻击链，可将 AI 浏览代理转化为远程代码执行工具，",
-      "source": "https://thehackernews.com/2026/06/autojack-attack-lets-one-web-page.html",
-      "date": "2026-06-20",
-      "signal_index": 2
+      "id": "tag_2026-06-21_001",
+      "level": 2,
+      "content": "AutoJack 攻击威胁 AI …",
+      "date": "2026-06-21"
     },
     {
-      "id": "sig_2026-06-20_003",
-      "level": 1,
+      "id": "tag_2026-06-21_002",
+      "level": 2,
       "content": "英伟达伙伴展示 AI 重塑广告营销",
-      "summary": "英伟达合作伙伴在戛纳创意节展示 AI 驱动的广告营销方案，推动自动化运营落地。",
-      "source": "https://blogs.nvidia.com/blog/nvidia-ai-marketing-advertising-cannes-lions/",
-      "date": "2026-06-20",
-      "signal_index": 3
+      "date": "2026-06-21"
     },
     {
-      "id": "sig_2026-06-20_004",
-      "level": 1,
+      "id": "tag_2026-06-21_003",
+      "level": 2,
       "content": "OpenAI 升级企业版支出控制功能",
-      "summary": "OpenAI 为 ChatGPT Enterprise 新增使用分析与支出控制功",
-      "source": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-      "date": "2026-06-20",
-      "signal_index": 4
+      "date": "2026-06-21"
     },
     {
-      "id": "sig_2026-06-20_005",
-      "level": 1,
+      "id": "tag_2026-06-21_004",
+      "level": 2,
       "content": "芯片行业周报：合作与自研并行",
-      "summary": "芯片周报涵盖苹果英特尔合作、亚马逊自研芯片销售及 CHIPS 法案资金落地等关键",
-      "source": "https://semiengineering.com/chip-industry-week-in-review-143/",
-      "date": "2026-06-20",
-      "signal_index": 6
+      "date": "2026-06-21"
     },
     {
-      "id": "sig_2026-06-20_006",
-      "level": 1,
+      "id": "tag_2026-06-21_005",
+      "level": 2,
       "content": "谷歌 AMIE 媲美初级保健医生",
-      "summary": "谷歌医疗 AI 系统 AMIE 在复杂疾病管理表现上媲美初级医生，成果发表于《自",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
-      "date": "2026-06-20",
-      "signal_index": 1
+      "date": "2026-06-21"
     },
     {
-      "id": "sig_2026-06-20_007",
-      "level": 1,
-      "content": "FERC 新规影响 AI 工厂电力并网",
-      "summary": "美国联邦能源监管委员会新规优化大型负载并网流程，关乎 AI 数据中心电力供应与成",
-      "source": "https://blogs.nvidia.com/blog/ferc-large-load-interconnection/",
-      "date": "2026-06-20",
-      "signal_index": 5
+      "id": "tag_2026-06-21_006",
+      "level": 2,
+      "content": "FERC 新规影响 AI 工厂电力…",
+      "date": "2026-06-21"
     },
     {
-      "id": "sig_2026-06-19_001",
-      "level": 1,
+      "id": "tag_2026-06-21_007",
+      "level": 2,
       "content": "OpenAI 升级医疗与企业功能",
-      "summary": "OpenAI 推出 GPT-5.5 医疗增强版及企业支出管控工具，并助力诊断罕见",
-      "source": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
-      "date": "2026-06-20",
-      "signal_index": null
+      "date": "2026-06-21"
     },
     {
-      "id": "sig_2026-06-19_002",
-      "level": 1,
+      "id": "tag_2026-06-21_008",
+      "level": 2,
       "content": "谷歌 AMIE 展现疾病管理潜力",
-      "summary": "谷歌研究显示对话式医疗 AI AMIE 在复杂疾病管理方面表现媲美初级保健医生。",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
-      "date": "2026-06-20",
-      "signal_index": null
+      "date": "2026-06-21"
     },
     {
       "id": "tag_2026-06-20_001",
@@ -95,50 +143,50 @@
       "date": "2026-06-20"
     },
     {
-      "id": "tag_2026-06-20_003",
-      "level": 2,
+      "id": "word_2026-06-20_003",
+      "level": 3,
       "content": "FERC 新规助力 AI 工厂电网…",
       "date": "2026-06-20"
     },
     {
-      "id": "tag_2026-06-20_004",
-      "level": 2,
+      "id": "word_2026-06-20_004",
+      "level": 3,
       "content": "孤儿 AI 代理引发企业安全隐患",
       "date": "2026-06-20"
     },
     {
-      "id": "tag_2026-06-20_005",
-      "level": 2,
+      "id": "word_2026-06-20_005",
+      "level": 3,
       "content": "基准测试揭示编码任务仍存瓶颈",
       "date": "2026-06-20"
     },
     {
-      "id": "tag_2026-06-20_006",
-      "level": 2,
+      "id": "word_2026-06-20_006",
+      "level": 3,
       "content": "OpenAI 推出自主 AI 化学家",
       "date": "2026-06-20"
     },
     {
-      "id": "tag_2026-06-20_007",
-      "level": 2,
+      "id": "word_2026-06-20_007",
+      "level": 3,
       "content": "MIT 提出自进化框架 SEAL",
       "date": "2026-06-20"
     },
     {
-      "id": "tag_2026-06-19_001",
-      "level": 2,
+      "id": "word_2026-06-19_001",
+      "level": 3,
       "content": "泄露文件显示 OpenAI 巨额亏损",
       "date": "2026-06-19"
     },
     {
-      "id": "tag_2026-06-19_002",
-      "level": 2,
+      "id": "word_2026-06-19_002",
+      "level": 3,
       "content": "欧盟发布 AI 内容标签指南",
       "date": "2026-06-19"
     },
     {
-      "id": "tag_2026-06-19_003",
-      "level": 2,
+      "id": "word_2026-06-19_003",
+      "level": 3,
       "content": "Vercel 开源 Eve 代理框架",
       "date": "2026-06-19"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "谷歌详解五代 TPU 演进历程",
       "date": "2026-06-18"
-    },
-    {
-      "id": "word_2026-06-18_004",
-      "level": 3,
-      "content": "NVIDIA XR AI 赋能 A…",
-      "date": "2026-06-18"
-    },
-    {
-      "id": "word_2026-06-18_005",
-      "level": 3,
-      "content": "荷兰推出主权语言模型 GPT-NL",
-      "date": "2026-06-18"
-    },
-    {
-      "id": "word_2026-06-18_006",
-      "level": 3,
-      "content": "Google Vertex AI …",
-      "date": "2026-06-18"
-    },
-    {
-      "id": "word_2026-06-18_007",
-      "level": 3,
-      "content": "Coherent 扩建光互连产能",
-      "date": "2026-06-18"
-    },
-    {
-      "id": "word_2026-06-18_008",
-      "level": 3,
-      "content": "OpenAI 建立全球合作伙伴网络",
-      "date": "2026-06-18"
-    },
-    {
-      "id": "word_2026-06-18_009",
-      "level": 3,
-      "content": "LiteLLM 曝严重漏洞链风险",
-      "date": "2026-06-18"
-    },
-    {
-      "id": "word_2026-06-17_001",
-      "level": 3,
-      "content": "本地模型替代云端编程热议",
-      "date": "2026-06-17"
-    },
-    {
-      "id": "word_2026-06-17_002",
-      "level": 3,
-      "content": "物理神经网络研究综述发布",
-      "date": "2026-06-17"
     }
   ]
 }
