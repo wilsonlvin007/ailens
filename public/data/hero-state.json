@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-06-24",
+  "updated_at": "2026-06-25",
   "items": [
     {
-      "id": "sig_2026-06-24_001",
+      "id": "sig_2026-06-25_001",
       "level": 1,
-      "content": "GPT-5 助力免疫学突破",
-      "summary": "GPT-5 Pro 协助免疫学家解开三年谜题，揭示 T 细胞行为新机制，有望推动",
-      "source": "https://openai.com/index/gpt-5-immunology-mystery",
-      "date": "2026-06-24",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-06-24_002",
-      "level": 1,
-      "content": "五眼联盟警告 AI 网安威胁",
-      "summary": "五眼联盟情报机构发出紧急警告，称 AI 驱动的网络威胁将在数月内影响普通人，不再",
-      "source": "https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats/",
-      "date": "2026-06-24",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-06-24_003",
-      "level": 1,
-      "content": "Datalab 开源 PDF 解析模型",
-      "summary": "Datalab 发布 90 亿参数开源视觉模型 lift，利用模式约束解码从 P",
-      "source": "https://www.marktechpost.com/2026/06/23/datalab-releases-lift-a-9b-open-weights-vision-model-that-extracts-structured-json-from-pdfs-using-schemas/",
-      "date": "2026-06-24",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-06-24_004",
-      "level": 1,
-      "content": "伪造 AI 技能绕过安检",
-      "summary": "安全公司发现伪造 AI 代理技能可绕过所有主流安全扫描器，已渗透约 2.6 万个",
-      "source": "https://thehackernews.com/2026/06/fake-ai-agent-skill-passed-security.html",
-      "date": "2026-06-24",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-06-24_005",
-      "level": 1,
-      "content": "Sakana AI 推多代理模型",
-      "summary": "Sakana AI 推出 Fugu 多代理模型，旨在编排多代理操作并缓解企业对单",
-      "source": "https://www.artificialintelligence-news.com/news/mitigating-vendor-lock-in-sakana-ai-fugu-multi-agent models/",
-      "date": "2026-06-24",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-06-24_006",
-      "level": 1,
-      "content": "OpenAI 推动 AI 共享标准",
-      "summary": "OpenAI 通过 Appia 基金会支持建立高级 AI 共享标准，推动评估框架",
-      "source": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-      "date": "2026-06-24",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-06-24_007",
-      "level": 1,
-      "content": "OpenAI 推网络安全模型",
-      "summary": "OpenAI 扩展 Daybreak 计划，推出 GPT-5.5-Cyber 模",
-      "source": "https://news.smol.ai/issues/26-06-22-not-much/",
-      "date": "2026-06-24",
+      "content": "OpenAI 博通联合发布推理芯片",
+      "summary": "OpenAI 携手博通推出 Jalapeño 定制芯片，专为大模型推理优化，显著",
+      "source": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "date": "2026-06-25",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-06-23_001",
+      "id": "sig_2026-06-25_002",
       "level": 1,
-      "content": "OpenAI 推 Daybreak 安全计划",
-      "summary": "OpenAI 推出 Daybreak 计划，利用 GPT-5.5-Cyber 协",
-      "source": "https://openai.com/index/daybreak-securing-the-world",
-      "date": "2026-06-24",
-      "signal_index": null
+      "content": "谷歌医疗 AI 系统媲美全科医生",
+      "summary": "谷歌 AMIE 系统在复杂疾病管理中表现优异，获 Nature 发表，展现出媲美",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
+      "date": "2026-06-25",
+      "signal_index": 3
     },
     {
-      "id": "sig_2026-06-23_002",
+      "id": "sig_2026-06-25_003",
       "level": 1,
-      "content": "Sakana AI 发布 Fugu 架构",
-      "summary": "Sakana AI 推出 Fugu 编排模型，通过动态路由任务至可替换模型池，有",
-      "source": "https://www.marktechpost.com/2026/06/22/sakana-ai-launches-sakana-fugu-an-orchestration-model-that-routes-tasks-across-a-swappable-pool-of-frontier-lms/",
-      "date": "2026-06-24",
-      "signal_index": null
+      "content": "Gemini 3.5 Flash 新增电脑操作能力",
+      "summary": "谷歌 Gemini 3.5 Flash 升级电脑操作功能，可直接控制界面元素，执",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+      "date": "2026-06-25",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-06-25_004",
+      "level": 1,
+      "content": "英伟达 AWS 深化大规模生产合作",
+      "summary": "英伟达与 AWS 深化战略合作，共同攻克大规模 AI 部署中的延迟、成本及运维复",
+      "source": "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
+      "date": "2026-06-25",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-06-25_005",
+      "level": 1,
+      "content": "新法自动归因多智能体失败源",
+      "summary": "宾州州立与杜克大学提出新方法，可自动定位多智能体系统中的任务失败源头，提升系统鲁",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-06-25",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-06-25_006",
+      "level": 1,
+      "content": "美国安局失去 Anthropic 工具权限",
+      "summary": "因商业纠纷，美国国家安全局失去对 Anthropic 监控工具 Mythos 的",
+      "source": "https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html",
+      "date": "2026-06-25",
+      "signal_index": 8
+    },
+    {
+      "id": "sig_2026-06-25_007",
+      "level": 1,
+      "content": "Anthropic 推出 Slack 协作新工具",
+      "summary": "Anthropic 发布集成于 Slack 的 Claude Tag，支持异步团",
+      "source": "https://news.smol.ai/issues/26-06-23-not-much/",
+      "date": "2026-06-25",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-06-25_008",
+      "level": 1,
+      "content": "英伟达推工具包助建可信 AI 代理",
+      "summary": "英伟达发布代理工具包，提供安全运行时与开发组件，助力企业构建可信赖的专用 AI ",
+      "source": "https://blogs.nvidia.com/blog/nvidia-agent-toolkit-open-models-tools-skills-secure-runtime-ai-agents/",
+      "date": "2026-06-25",
+      "signal_index": 9
+    },
+    {
+      "id": "sig_2026-06-25_009",
+      "level": 1,
+      "content": "GPT-5 协助解开免疫学三年谜题",
+      "summary": "GPT-5 Pro 助力免疫学家发现 T 细胞新行为机制，成功解开困扰学界三年的",
+      "source": "https://openai.com/index/gpt-5-immunology-mystery",
+      "date": "2026-06-25",
+      "signal_index": 2
+    },
+    {
+      "id": "tag_2026-06-25_001",
+      "level": 2,
+      "content": "GPT-5 助力免疫学突破",
+      "date": "2026-06-25"
+    },
+    {
+      "id": "tag_2026-06-25_002",
+      "level": 2,
+      "content": "五眼联盟警告 AI 网安威胁",
+      "date": "2026-06-25"
+    },
+    {
+      "id": "tag_2026-06-25_003",
+      "level": 2,
+      "content": "Datalab 开源 PDF 解析…",
+      "date": "2026-06-25"
+    },
+    {
+      "id": "tag_2026-06-25_004",
+      "level": 2,
+      "content": "伪造 AI 技能绕过安检",
+      "date": "2026-06-25"
+    },
+    {
+      "id": "tag_2026-06-25_005",
+      "level": 2,
+      "content": "Sakana AI 推多代理模型",
+      "date": "2026-06-25"
+    },
+    {
+      "id": "tag_2026-06-25_006",
+      "level": 2,
+      "content": "OpenAI 推动 AI 共享标准",
+      "date": "2026-06-25"
+    },
+    {
+      "id": "tag_2026-06-25_007",
+      "level": 2,
+      "content": "OpenAI 推网络安全模型",
+      "date": "2026-06-25"
+    },
+    {
+      "id": "tag_2026-06-25_008",
+      "level": 2,
+      "content": "OpenAI 推 Daybreak…",
+      "date": "2026-06-25"
+    },
+    {
+      "id": "tag_2026-06-25_009",
+      "level": 2,
+      "content": "Sakana AI 发布 Fugu…",
+      "date": "2026-06-25"
     },
     {
       "id": "tag_2026-06-24_001",
@@ -89,56 +143,56 @@
       "date": "2026-06-24"
     },
     {
-      "id": "tag_2026-06-24_002",
-      "level": 2,
+      "id": "word_2026-06-24_002",
+      "level": 3,
       "content": "xAI 升级 Grok 自主编码能力",
       "date": "2026-06-24"
     },
     {
-      "id": "tag_2026-06-24_003",
-      "level": 2,
+      "id": "word_2026-06-24_003",
+      "level": 3,
       "content": "Dify 曝跨租户数据漏洞",
       "date": "2026-06-24"
     },
     {
-      "id": "tag_2026-06-24_004",
-      "level": 2,
+      "id": "word_2026-06-24_004",
+      "level": 3,
       "content": "多智能体故障归因新法",
       "date": "2026-06-24"
     },
     {
-      "id": "tag_2026-06-24_005",
-      "level": 2,
+      "id": "word_2026-06-24_005",
+      "level": 3,
       "content": "SAP 谷歌云部署代理商业",
       "date": "2026-06-24"
     },
     {
-      "id": "tag_2026-06-24_006",
-      "level": 2,
+      "id": "word_2026-06-24_006",
+      "level": 3,
       "content": "OpenAI 发起修补地球计划",
       "date": "2026-06-24"
     },
     {
-      "id": "tag_2026-06-24_007",
-      "level": 2,
+      "id": "word_2026-06-24_007",
+      "level": 3,
       "content": "三星全球部署企业级 AI",
       "date": "2026-06-24"
     },
     {
-      "id": "tag_2026-06-23_001",
-      "level": 2,
+      "id": "word_2026-06-23_001",
+      "level": 3,
       "content": "谷歌医疗 AI 媲美全科医生",
       "date": "2026-06-23"
     },
     {
-      "id": "tag_2026-06-23_002",
-      "level": 2,
+      "id": "word_2026-06-23_002",
+      "level": 3,
       "content": "英国首发主权 AI 零日防御",
       "date": "2026-06-23"
     },
     {
-      "id": "tag_2026-06-23_003",
-      "level": 2,
+      "id": "word_2026-06-23_003",
+      "level": 3,
       "content": "AI 工程师代理记忆指南",
       "date": "2026-06-23"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "SAP 联手谷歌部署代理商业架构",
       "date": "2026-06-22"
-    },
-    {
-      "id": "word_2026-06-22_002",
-      "level": 3,
-      "content": "字节跳动发布机器人导航双模型 As…",
-      "date": "2026-06-22"
-    },
-    {
-      "id": "word_2026-06-22_003",
-      "level": 3,
-      "content": "思科开源 FAPO 优化多步 LL…",
-      "date": "2026-06-22"
-    },
-    {
-      "id": "word_2026-06-22_004",
-      "level": 3,
-      "content": "英国推出主权 AI 驱动零日 SO…",
-      "date": "2026-06-22"
-    },
-    {
-      "id": "word_2026-06-22_005",
-      "level": 3,
-      "content": "计算机视觉提升零售业生产力",
-      "date": "2026-06-22"
-    },
-    {
-      "id": "word_2026-06-22_006",
-      "level": 3,
-      "content": "Nous Research 更新 …",
-      "date": "2026-06-22"
-    },
-    {
-      "id": "word_2026-06-22_007",
-      "level": 3,
-      "content": "ChatGPT 健康领域回复质量升级",
-      "date": "2026-06-22"
-    },
-    {
-      "id": "word_2026-06-22_008",
-      "level": 3,
-      "content": "OpenAI 推企业版支出控制新功能",
-      "date": "2026-06-22"
-    },
-    {
-      "id": "word_2026-06-22_009",
-      "level": 3,
-      "content": "OpenAI 助力诊断罕见儿童遗传病",
-      "date": "2026-06-22"
-    },
-    {
-      "id": "word_2026-06-21_001",
-      "level": 3,
-      "content": "AutoJack 攻击威胁 AI …",
-      "date": "2026-06-21"
     }
   ]
 }
