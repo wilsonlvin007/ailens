@@ -1,14 +1,59 @@
 {
-  "updated_at": "2026-06-26",
+  "updated_at": "2026-06-27",
   "items": [
+    {
+      "id": "sig_2026-06-27_001",
+      "level": 1,
+      "content": "OpenAI 发布 GPT-5.6 系列",
+      "summary": "OpenAI 推出 GPT-5.6 分层模型系列，引入新推理模式，显著增强编码与",
+      "source": "https://www.marktechpost.com/2026/06/26/openai-previews-gpt-5-6-with-sol-terra-and-luna-tiered-models-new-reasoning-modes-limited-access/",
+      "date": "2026-06-27",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-06-27_002",
+      "level": 1,
+      "content": "Perplexity 推法律工作流代理",
+      "summary": "Perplexity 推出 Computer for Counsel，整合多模型",
+      "source": "https://www.marktechpost.com/2026/06/26/perplexity-launches-computer-for-counsel-a-multi-model-agentic-layer-for-legal-workflows/",
+      "date": "2026-06-27",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-06-27_003",
+      "level": 1,
+      "content": "SAP 整合数据实现 AI 个性化",
+      "summary": "SAP 整合碎片化商业数据，在执行层实现运营级 AI 个性化，精准预测客户需求。",
+      "source": "https://www.artificialintelligence-news.com/news/sap-aligns-commerce-data-for-ai-personalisation/",
+      "date": "2026-06-27",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-06-27_004",
+      "level": 1,
+      "content": "苹果开源 Swift 容器工具",
+      "summary": "苹果开源 Swift 工具 container 1.0，允许在 Apple Si",
+      "source": "https://www.marktechpost.com/2026/06/26/meet-container-apples-open-source-swift-tool-for-running-linux-containers-as-lightweight-vm-on-apple-silicon/",
+      "date": "2026-06-27",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-06-27_005",
+      "level": 1,
+      "content": "OpenAI 解析代理如何变革工作",
+      "summary": "OpenAI 新论文揭示 AI 代理支持更长更复杂任务，显著提升各角色生产力，重",
+      "source": "https://openai.com/index/how-agents-are-transforming-work",
+      "date": "2026-06-27",
+      "signal_index": 2
+    },
     {
       "id": "sig_2026-06-26_001",
       "level": 1,
       "content": "Anthropic 将 AI 代理嵌入 Slack",
       "summary": "Anthropic 推出 Claude Tag 功能，直接将 AI 代理集成至 ",
       "source": "https://www.artificialintelligence-news.com/news/anthropic-slack-workplace-ai-agents/",
-      "date": "2026-06-26",
-      "signal_index": 1
+      "date": "2026-06-27",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-26_002",
@@ -16,8 +61,8 @@
       "content": "DeepReinforce 开源自进化编程模型",
       "summary": "DeepReinforce 开源 Ornith-1.0 模型家族，能在强化学习中",
       "source": "https://www.marktechpost.com/2026/06/25/deepreinforce-releases-ornith-1-0-an-open-source-coding-model-family-that-learns-its-own-rl-scaffolds/",
-      "date": "2026-06-26",
-      "signal_index": 2
+      "date": "2026-06-27",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-26_003",
@@ -25,8 +70,8 @@
       "content": "百度开源长文档解析 OCR 模型",
       "summary": "百度开源 Unlimited OCR 模型，采用创新注意力机制，实现长文档解析时",
       "source": "https://www.marktechpost.com/2026/06/24/baidu-releases-unlimited-ocr-a-3b-model-that-keeps-the-kv-cache-flat-for-long-document-parsing/",
-      "date": "2026-06-26",
-      "signal_index": 3
+      "date": "2026-06-27",
+      "signal_index": null
     },
     {
       "id": "sig_2026-06-26_004",
@@ -34,53 +79,38 @@
       "content": "MIT 提出大模型自我进化框架",
       "summary": "MIT 提出 SEAL 框架，使大模型能通过强化学习自我编辑权重，迈向自我进化 ",
       "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-06-26",
-      "signal_index": 4
+      "date": "2026-06-27",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-06-26_005",
-      "level": 1,
-      "content": "OpenAI 研究显示代理重塑工作方式",
-      "summary": "OpenAI 新研究显示 AI 代理正重塑工作方式，能执行更长更复杂的任务，显著",
-      "source": "https://openai.com/index/how-agents-are-transforming-work",
-      "date": "2026-06-26",
-      "signal_index": 5
+      "id": "tag_2026-06-27_001",
+      "level": 2,
+      "content": "OpenAI 研究显示代理重塑工作…",
+      "date": "2026-06-27"
     },
     {
-      "id": "sig_2026-06-26_006",
-      "level": 1,
+      "id": "tag_2026-06-27_002",
+      "level": 2,
       "content": "三星解除内部 AI 使用限制",
-      "summary": "三星解除内部 AI 限制，向全球员工开放 ChatGPT Enterprise ",
-      "source": "https://www.artificialintelligence-news.com/news/samsung-chatgpt-enterprise-codex-employee-ai-use/",
-      "date": "2026-06-26",
-      "signal_index": 6
+      "date": "2026-06-27"
     },
     {
-      "id": "sig_2026-06-26_007",
-      "level": 1,
+      "id": "tag_2026-06-27_003",
+      "level": 2,
       "content": "Gradium 发布实时语音翻译模型",
-      "summary": "Gradium 发布实时语音翻译模型，在准确率与延迟上超越 GPT，支持多国语言",
-      "source": "https://www.marktechpost.com/2026/06/24/gradium-launches-stt-translate-and-s2s-translate-real-time-speech-translation-models-beating-gpt-realtime-translate-on-accuracy-and-latency/",
-      "date": "2026-06-26",
-      "signal_index": 7
+      "date": "2026-06-27"
     },
     {
-      "id": "sig_2026-06-26_008",
-      "level": 1,
-      "content": "媒体报道 OpenAI 推迟 IPO 计划",
-      "summary": "媒体报道 OpenAI 倾向于推迟至明年进行 IPO，以等待更有利的市场时机与监",
-      "source": "https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html",
-      "date": "2026-06-26",
-      "signal_index": 9
+      "id": "tag_2026-06-27_004",
+      "level": 2,
+      "content": "媒体报道 OpenAI 推迟 IP…",
+      "date": "2026-06-27"
     },
     {
-      "id": "sig_2026-06-26_009",
-      "level": 1,
+      "id": "tag_2026-06-27_005",
+      "level": 2,
       "content": "OpenAI 联合博通发布推理芯片",
-      "summary": "OpenAI 携手博通推出定制芯片 Jalapeño，专为大模型推理优化，旨在降",
-      "source": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-      "date": "2026-06-26",
-      "signal_index": 0
+      "date": "2026-06-27"
     },
     {
       "id": "tag_2026-06-26_001",
@@ -113,32 +143,32 @@
       "date": "2026-06-26"
     },
     {
-      "id": "tag_2026-06-26_006",
-      "level": 2,
+      "id": "word_2026-06-26_006",
+      "level": 3,
       "content": "美国安局失去 Anthropic …",
       "date": "2026-06-26"
     },
     {
-      "id": "tag_2026-06-26_007",
-      "level": 2,
+      "id": "word_2026-06-26_007",
+      "level": 3,
       "content": "Anthropic 推出 Slac…",
       "date": "2026-06-26"
     },
     {
-      "id": "tag_2026-06-26_008",
-      "level": 2,
+      "id": "word_2026-06-26_008",
+      "level": 3,
       "content": "英伟达推工具包助建可信 AI 代理",
       "date": "2026-06-26"
     },
     {
-      "id": "tag_2026-06-26_009",
-      "level": 2,
+      "id": "word_2026-06-26_009",
+      "level": 3,
       "content": "GPT-5 协助解开免疫学三年谜题",
       "date": "2026-06-26"
     },
     {
-      "id": "tag_2026-06-25_001",
-      "level": 2,
+      "id": "word_2026-06-25_001",
+      "level": 3,
       "content": "GPT-5 助力免疫学突破",
       "date": "2026-06-25"
     },
@@ -200,36 +230,6 @@
       "id": "word_2026-06-24_002",
       "level": 3,
       "content": "xAI 升级 Grok 自主编码能力",
-      "date": "2026-06-24"
-    },
-    {
-      "id": "word_2026-06-24_003",
-      "level": 3,
-      "content": "Dify 曝跨租户数据漏洞",
-      "date": "2026-06-24"
-    },
-    {
-      "id": "word_2026-06-24_004",
-      "level": 3,
-      "content": "多智能体故障归因新法",
-      "date": "2026-06-24"
-    },
-    {
-      "id": "word_2026-06-24_005",
-      "level": 3,
-      "content": "SAP 谷歌云部署代理商业",
-      "date": "2026-06-24"
-    },
-    {
-      "id": "word_2026-06-24_006",
-      "level": 3,
-      "content": "OpenAI 发起修补地球计划",
-      "date": "2026-06-24"
-    },
-    {
-      "id": "word_2026-06-24_007",
-      "level": 3,
-      "content": "三星全球部署企业级 AI",
       "date": "2026-06-24"
     }
   ]
