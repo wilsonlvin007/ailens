@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-07-02",
+  "updated_at": "2026-07-03",
   "items": [
+    {
+      "id": "sig_2026-07-03_001",
+      "level": 1,
+      "content": "英伟达开放大规模 AI 算力生态",
+      "summary": "英伟达开放大规模 AI 算力，邀请合作伙伴共建基础设施，以满足从开发到推理的激增",
+      "source": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/",
+      "date": "2026-07-03",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-03_002",
+      "level": 1,
+      "content": "警惕 AI 数据融合带来的安全威胁",
+      "summary": "探讨多模态 AI 融合数十亿设备数据带来的风险，攻击者可能利用数字孪生武器化威胁",
+      "source": "https://semiengineering.com/defending-against-ai-enabled-data-fusion/",
+      "date": "2026-07-03",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-07-03_003",
+      "level": 1,
+      "content": "AI 数据中心与汽车行业共探能源难题",
+      "summary": "AI 数据中心与电动汽车行业在能源解决方案和电网兼容性方面面临共同挑战，双方正相",
+      "source": "https://semiengineering.com/ai-data-centers-and-auto-industry-converge-on-same-issues/",
+      "date": "2026-07-03",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-07-03_004",
+      "level": 1,
+      "content": "开源项目实现任意大模型视频理解",
+      "summary": "开源项目实现任意大模型观看视频功能，扩展了 LLM 的多模态交互边界。",
+      "source": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+      "date": "2026-07-03",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-03_005",
+      "level": 1,
+      "content": "GPU 光栅化加速计算光刻工艺",
+      "summary": "利用 GPU 光栅化技术加速计算光刻，解决纳米级半导体制造中的关键瓶颈问题。",
+      "source": "https://semiengineering.com/accelerating-computational-lithography-with-gpu-rasterization/",
+      "date": "2026-07-03",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-07-03_006",
+      "level": 1,
+      "content": "英伟达联手伙伴共建美国本土 AI 基建",
+      "summary": "英伟达联合伙伴投资美国制造、供应链及能源网，旨在构建支撑医疗、科研和工业领先的本",
+      "source": "https://blogs.nvidia.com/blog/nvidia-and-partners-build-in-america-for-america/",
+      "date": "2026-07-03",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-03_007",
+      "level": 1,
+      "content": "谷歌报告详述英国 AI 生产力战略",
+      "summary": "谷歌英国发布经济影响报告，提出通过普及 AI 技术培养先锋人才以提升国家生产力的",
+      "source": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
+      "date": "2026-07-03",
+      "signal_index": 6
+    },
     {
       "id": "sig_2026-07-02_001",
       "level": 1,
       "content": "Google 发布六月 AI 更新汇总",
       "summary": "Google 发布 2026 年 6 月 AI 更新，涵盖多项产品进展与技术落地",
       "source": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
-      "date": "2026-07-02",
-      "signal_index": 0
+      "date": "2026-07-03",
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-02_002",
@@ -16,71 +79,50 @@
       "content": "芯片组设计缺失可观测性层",
       "summary": "文章指出可观测性是 AI 时代芯片组设计缺失的关键层，需作为首要架构能力进行设计",
       "source": "https://semiengineering.com/observability-is-a-missing-layer-in-ai-era-chiplet-design/",
-      "date": "2026-07-02",
-      "signal_index": 2
+      "date": "2026-07-03",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-07-02_003",
-      "level": 1,
+      "id": "tag_2026-07-03_001",
+      "level": 2,
       "content": "NVIDIA 加大美国制造投资力度",
-      "summary": "NVIDIA 与合作伙伴加大美国制造投资，构建供应链与能源网格以支撑 AI 基础",
-      "source": "https://blogs.nvidia.com/blog/nvidia-and-partners-build-in-america-for-america/",
-      "date": "2026-07-02",
-      "signal_index": 3
+      "date": "2026-07-03"
     },
     {
-      "id": "sig_2026-07-02_004",
-      "level": 1,
-      "content": "Google 报告 AI 提升英国生产力",
-      "summary": "Google 英国发布经济影响报告，探讨如何通过 AI 技术提升国家生产力并培养",
-      "source": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
-      "date": "2026-07-02",
-      "signal_index": 4
+      "id": "tag_2026-07-03_002",
+      "level": 2,
+      "content": "Google 报告 AI 提升英国…",
+      "date": "2026-07-03"
     },
     {
-      "id": "sig_2026-07-02_005",
-      "level": 1,
+      "id": "tag_2026-07-03_003",
+      "level": 2,
       "content": "纽约举办 AI 教育应用峰会",
-      "summary": "Google 联合多方举办纽约 AI 教育峰会，汇聚教育与行业领袖共探课堂 AI",
-      "source": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit/",
-      "date": "2026-07-02",
-      "signal_index": 5
+      "date": "2026-07-03"
     },
     {
-      "id": "sig_2026-07-02_006",
-      "level": 1,
-      "content": "OpenAI 披露 ChatGPT 全球采用数据",
-      "summary": "OpenAI 数据显示 ChatGPT 全球采用率持续增长，用户探索更多功能并推",
-      "source": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-      "date": "2026-07-02",
-      "signal_index": 1
+      "id": "tag_2026-07-03_004",
+      "level": 2,
+      "content": "OpenAI 披露 ChatGPT…",
+      "date": "2026-07-03"
     },
     {
-      "id": "sig_2026-07-02_007",
-      "level": 1,
-      "content": "NVIDIA 解析低 Token 成本推理栈",
-      "summary": "NVIDIA 解析其推理软件栈如何通过软硬协同设计，实现每美元最低 token ",
-      "source": "https://blogs.nvidia.com/blog/inference-software-lowest-token-cost/",
-      "date": "2026-07-02",
-      "signal_index": 6
+      "id": "tag_2026-07-03_005",
+      "level": 2,
+      "content": "NVIDIA 解析低 Token …",
+      "date": "2026-07-03"
     },
     {
-      "id": "sig_2026-07-01_001",
-      "level": 1,
+      "id": "tag_2026-07-03_006",
+      "level": 2,
       "content": "微软警告智能体数据泄露新风险",
-      "summary": "微软发现攻击者可投毒 MCP 工具描述，诱导 AI 智能体在合规表象下静默泄露敏",
-      "source": "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
-      "date": "2026-07-02",
-      "signal_index": null
+      "date": "2026-07-03"
     },
     {
-      "id": "sig_2026-07-01_002",
-      "level": 1,
-      "content": "OpenAI 发布基因组学基准 GeneBench-Pro",
-      "summary": "OpenAI 推出 GeneBench-Pro，利用真实复杂数据集评估 AI 在",
-      "source": "https://openai.com/index/introducing-genebench-pro",
-      "date": "2026-07-02",
-      "signal_index": null
+      "id": "tag_2026-07-03_007",
+      "level": 2,
+      "content": "OpenAI 发布基因组学基准 G…",
+      "date": "2026-07-03"
     },
     {
       "id": "tag_2026-07-02_001",
@@ -101,44 +143,44 @@
       "date": "2026-07-02"
     },
     {
-      "id": "tag_2026-07-02_004",
-      "level": 2,
+      "id": "word_2026-07-02_004",
+      "level": 3,
       "content": "实现多智能体故障自动归因",
       "date": "2026-07-02"
     },
     {
-      "id": "tag_2026-07-02_005",
-      "level": 2,
+      "id": "word_2026-07-02_005",
+      "level": 3,
       "content": "Zluda 6 支持非 N 卡运行…",
       "date": "2026-07-02"
     },
     {
-      "id": "tag_2026-07-02_006",
-      "level": 2,
+      "id": "word_2026-07-02_006",
+      "level": 3,
       "content": "NVIDIA 推出生命科学智能体工…",
       "date": "2026-07-02"
     },
     {
-      "id": "tag_2026-07-02_007",
-      "level": 2,
+      "id": "word_2026-07-02_007",
+      "level": 3,
       "content": "OpenAI 数据显示 ChatG…",
       "date": "2026-07-02"
     },
     {
-      "id": "tag_2026-07-01_001",
-      "level": 2,
+      "id": "word_2026-07-01_001",
+      "level": 3,
       "content": "惠普深化与 OpenAI 合作",
       "date": "2026-07-01"
     },
     {
-      "id": "tag_2026-07-01_002",
-      "level": 2,
+      "id": "word_2026-07-01_002",
+      "level": 3,
       "content": "韩国万亿投资芯片机器人",
       "date": "2026-07-01"
     },
     {
-      "id": "tag_2026-07-01_003",
-      "level": 2,
+      "id": "word_2026-07-01_003",
+      "level": 3,
       "content": "英伟达开源药物发现工具包",
       "date": "2026-07-01"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "轻量级 Bash 工具封装 LLM…",
       "date": "2026-06-30"
-    },
-    {
-      "id": "word_2026-06-30_003",
-      "level": 3,
-      "content": "纯 C 语言从零构建 GPT-2 …",
-      "date": "2026-06-30"
-    },
-    {
-      "id": "word_2026-06-30_004",
-      "level": 3,
-      "content": "OpenAI 联手博通推定制推理芯片",
-      "date": "2026-06-30"
-    },
-    {
-      "id": "word_2026-06-30_005",
-      "level": 3,
-      "content": "OpenAI 研究智能体重塑工作流",
-      "date": "2026-06-30"
-    },
-    {
-      "id": "word_2026-06-30_006",
-      "level": 3,
-      "content": "OpenAI 发布受限 GPT-5…",
-      "date": "2026-06-30"
-    },
-    {
-      "id": "word_2026-06-30_007",
-      "level": 3,
-      "content": "OpenAI 博通共推推理芯片",
-      "date": "2026-06-30"
-    },
-    {
-      "id": "word_2026-06-30_008",
-      "level": 3,
-      "content": "DeepSeek 提出 DSpar…",
-      "date": "2026-06-30"
-    },
-    {
-      "id": "word_2026-06-29_001",
-      "level": 3,
-      "content": "英伟达助推可信专用 AI",
-      "date": "2026-06-29"
     }
   ]
 }
