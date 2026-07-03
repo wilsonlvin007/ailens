@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-07-03",
+  "updated_at": "2026-07-04",
   "items": [
+    {
+      "id": "sig_2026-07-04_001",
+      "level": 1,
+      "content": "OpenAI 推出基因领域基准 GeneBench-Pro",
+      "summary": "OpenAI 发布 GeneBench-Pro，专为基因组学研究设计的复杂现实数",
+      "source": "https://openai.com/index/introducing-genebench-pro",
+      "date": "2026-07-04",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-04_002",
+      "level": 1,
+      "content": "多智能体自动重构软件适配综合",
+      "summary": "卡内基梅隆与 UCLA 提出 AgRefactor，利用多智能体工作流自动重构软",
+      "source": "https://semiengineering.com/llm-agents-to-refactor-software-for-high-level-synthesis-carnegie-mellon-ucla/",
+      "date": "2026-07-04",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-07-04_003",
+      "level": 1,
+      "content": "Linux 内核曝高危提权漏洞 Bad Epoll",
+      "summary": "Linux 内核曝出 Bad Epoll 高危漏洞，允许普通用户提权至 root",
+      "source": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
+      "date": "2026-07-04",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-04_004",
+      "level": 1,
+      "content": "新型概率内存架构助力边缘智能",
+      "summary": "研究人员提出 p-MEM 概率内存架构，在原生内存带宽下采样，助力可信边缘智能发",
+      "source": "https://semiengineering.com/probabilistic-memory-architecture-that-bridges-the-gap-between-rng-sampling-and-memory-access-notre-dame-georgia-tech-villanova/",
+      "date": "2026-07-04",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-04_005",
+      "level": 1,
+      "content": "谷歌汇总六月最新 AI 技术进展",
+      "summary": "谷歌汇总 2026 年 6 月最新 AI 进展，涵盖多项产品更新与技术突破。",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
+      "date": "2026-07-04",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-07-04_006",
+      "level": 1,
+      "content": "NVIDIA 加速 AI 基础设施规模化部署",
+      "summary": "NVIDIA 开放大规模 AI 算力，邀请合作伙伴共建基础设施，满足从开发到推理",
+      "source": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/",
+      "date": "2026-07-04",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-07-04_007",
+      "level": 1,
+      "content": "NVIDIA 联合伙伴投资美国制造",
+      "summary": "NVIDIA 联合伙伴投资美国制造与供应链，构建支持医疗、科研和工业的 AI 基",
+      "source": "https://blogs.nvidia.com/blog/nvidia-and-partners-build-in-america-for-america/",
+      "date": "2026-07-04",
+      "signal_index": 6
+    },
     {
       "id": "sig_2026-07-03_001",
       "level": 1,
       "content": "英伟达开放大规模 AI 算力生态",
       "summary": "英伟达开放大规模 AI 算力，邀请合作伙伴共建基础设施，以满足从开发到推理的激增",
       "source": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/",
-      "date": "2026-07-03",
-      "signal_index": 0
+      "date": "2026-07-04",
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-03_002",
@@ -16,71 +79,50 @@
       "content": "警惕 AI 数据融合带来的安全威胁",
       "summary": "探讨多模态 AI 融合数十亿设备数据带来的风险，攻击者可能利用数字孪生武器化威胁",
       "source": "https://semiengineering.com/defending-against-ai-enabled-data-fusion/",
-      "date": "2026-07-03",
-      "signal_index": 1
+      "date": "2026-07-04",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-07-03_003",
-      "level": 1,
+      "id": "tag_2026-07-04_001",
+      "level": 2,
       "content": "AI 数据中心与汽车行业共探能源难题",
-      "summary": "AI 数据中心与电动汽车行业在能源解决方案和电网兼容性方面面临共同挑战，双方正相",
-      "source": "https://semiengineering.com/ai-data-centers-and-auto-industry-converge-on-same-issues/",
-      "date": "2026-07-03",
-      "signal_index": 2
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-03_004",
-      "level": 1,
+      "id": "tag_2026-07-04_002",
+      "level": 2,
       "content": "开源项目实现任意大模型视频理解",
-      "summary": "开源项目实现任意大模型观看视频功能，扩展了 LLM 的多模态交互边界。",
-      "source": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
-      "date": "2026-07-03",
-      "signal_index": 4
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-03_005",
-      "level": 1,
+      "id": "tag_2026-07-04_003",
+      "level": 2,
       "content": "GPU 光栅化加速计算光刻工艺",
-      "summary": "利用 GPU 光栅化技术加速计算光刻，解决纳米级半导体制造中的关键瓶颈问题。",
-      "source": "https://semiengineering.com/accelerating-computational-lithography-with-gpu-rasterization/",
-      "date": "2026-07-03",
-      "signal_index": 5
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-03_006",
-      "level": 1,
-      "content": "英伟达联手伙伴共建美国本土 AI 基建",
-      "summary": "英伟达联合伙伴投资美国制造、供应链及能源网，旨在构建支撑医疗、科研和工业领先的本",
-      "source": "https://blogs.nvidia.com/blog/nvidia-and-partners-build-in-america-for-america/",
-      "date": "2026-07-03",
-      "signal_index": 3
+      "id": "tag_2026-07-04_004",
+      "level": 2,
+      "content": "英伟达联手伙伴共建美国本土 AI …",
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-03_007",
-      "level": 1,
+      "id": "tag_2026-07-04_005",
+      "level": 2,
       "content": "谷歌报告详述英国 AI 生产力战略",
-      "summary": "谷歌英国发布经济影响报告，提出通过普及 AI 技术培养先锋人才以提升国家生产力的",
-      "source": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
-      "date": "2026-07-03",
-      "signal_index": 6
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-02_001",
-      "level": 1,
-      "content": "Google 发布六月 AI 更新汇总",
-      "summary": "Google 发布 2026 年 6 月 AI 更新，涵盖多项产品进展与技术落地",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
-      "date": "2026-07-03",
-      "signal_index": null
+      "id": "tag_2026-07-04_006",
+      "level": 2,
+      "content": "Google 发布六月 AI 更新…",
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-02_002",
-      "level": 1,
+      "id": "tag_2026-07-04_007",
+      "level": 2,
       "content": "芯片组设计缺失可观测性层",
-      "summary": "文章指出可观测性是 AI 时代芯片组设计缺失的关键层，需作为首要架构能力进行设计",
-      "source": "https://semiengineering.com/observability-is-a-missing-layer-in-ai-era-chiplet-design/",
-      "date": "2026-07-03",
-      "signal_index": null
+      "date": "2026-07-04"
     },
     {
       "id": "tag_2026-07-03_001",
@@ -101,44 +143,44 @@
       "date": "2026-07-03"
     },
     {
-      "id": "tag_2026-07-03_004",
-      "level": 2,
+      "id": "word_2026-07-03_004",
+      "level": 3,
       "content": "OpenAI 披露 ChatGPT…",
       "date": "2026-07-03"
     },
     {
-      "id": "tag_2026-07-03_005",
-      "level": 2,
+      "id": "word_2026-07-03_005",
+      "level": 3,
       "content": "NVIDIA 解析低 Token …",
       "date": "2026-07-03"
     },
     {
-      "id": "tag_2026-07-03_006",
-      "level": 2,
+      "id": "word_2026-07-03_006",
+      "level": 3,
       "content": "微软警告智能体数据泄露新风险",
       "date": "2026-07-03"
     },
     {
-      "id": "tag_2026-07-03_007",
-      "level": 2,
+      "id": "word_2026-07-03_007",
+      "level": 3,
       "content": "OpenAI 发布基因组学基准 G…",
       "date": "2026-07-03"
     },
     {
-      "id": "tag_2026-07-02_001",
-      "level": 2,
+      "id": "word_2026-07-02_001",
+      "level": 3,
       "content": "NVIDIA 推硬件自进化智能体框架",
       "date": "2026-07-02"
     },
     {
-      "id": "tag_2026-07-02_002",
-      "level": 2,
+      "id": "word_2026-07-02_002",
+      "level": 3,
       "content": "Meta 发布实时非侵入脑机接口",
       "date": "2026-07-02"
     },
     {
-      "id": "tag_2026-07-02_003",
-      "level": 2,
+      "id": "word_2026-07-02_003",
+      "level": 3,
       "content": "Langflow 漏洞被用于部署挖…",
       "date": "2026-07-02"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "OpenAI 分析欧盟就业影响",
       "date": "2026-07-01"
-    },
-    {
-      "id": "word_2026-07-01_005",
-      "level": 3,
-      "content": "EverOS 开源代理记忆运行时",
-      "date": "2026-07-01"
-    },
-    {
-      "id": "word_2026-07-01_006",
-      "level": 3,
-      "content": "恶意插件窃取搜索数据",
-      "date": "2026-07-01"
-    },
-    {
-      "id": "word_2026-07-01_007",
-      "level": 3,
-      "content": "定位多智能体故障",
-      "date": "2026-07-01"
-    },
-    {
-      "id": "word_2026-07-01_008",
-      "level": 3,
-      "content": "温网引入 IBM AI 直播工具",
-      "date": "2026-07-01"
-    },
-    {
-      "id": "word_2026-07-01_009",
-      "level": 3,
-      "content": "英伟达 AWS 合作规模化 AI …",
-      "date": "2026-07-01"
-    },
-    {
-      "id": "word_2026-06-30_001",
-      "level": 3,
-      "content": "GLM 5.2 网安基准超越 Cl…",
-      "date": "2026-06-30"
-    },
-    {
-      "id": "word_2026-06-30_002",
-      "level": 3,
-      "content": "轻量级 Bash 工具封装 LLM…",
-      "date": "2026-06-30"
     }
   ]
 }
