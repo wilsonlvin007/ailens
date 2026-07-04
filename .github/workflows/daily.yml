@@ -468,6 +468,9 @@ jobs:
               if deduped_items:
                   items_parsed = deduped_items
                   site_data['items'] = items_parsed
+                  # 去重后重建 summary（去重可能删掉了前 3 条里的内容）
+                  summaries = [it.get('summary','') or it.get('summary_cn','') for it in items_parsed[:3] if it.get('summary') or it.get('summary_cn')]
+                  site_data['summary'] = '；'.join(summaries) if summaries else ''
 
           # 6. 质检：出门前的最后检查
     
