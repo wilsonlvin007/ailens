@@ -4,11 +4,65 @@
     {
       "id": "sig_2026-07-04_001",
       "level": 1,
+      "content": "Mistral 开源数学推理模型 Leanstral",
+      "summary": "Mistral 发布开源模型 Leanstral 1.5，专攻 Lean 4 代",
+      "source": "https://www.marktechpost.com/2026/07/03/mistral-ai-releases-leanstral-1-5-an-apache-2-0-lean-4-code-agent-model-solving-587-of-672-putnambench-problems/",
+      "date": "2026-07-04",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-04_002",
+      "level": 1,
+      "content": "武田制药达成六亿 AI 制药合作",
+      "summary": "武田制药与英矽智能达成六亿美元战略合作，利用 AI 加速多个治疗领域的早期药物发",
+      "source": "https://www.artificialintelligence-news.com/news/takeda-insilico-ai-drug-discovery-deal/",
+      "date": "2026-07-04",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-07-04_003",
+      "level": 1,
+      "content": "NVIDIA BioNeMo 加速 Anthropic 科研",
+      "summary": "Anthropic 将 NVIDIA BioNeMo 集成至 Claude Sc",
+      "source": "https://www.artificialintelligence-news.com/news/nvidia-bionemo-accelerates-anthropic-claude-science/",
+      "date": "2026-07-04",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-07-04_004",
+      "level": 1,
+      "content": "Linux 内核曝高危漏洞 Bad Epoll",
+      "summary": "Linux 内核曝出 Bad Epoll 高危漏洞，允许普通用户获取根权限，影响",
+      "source": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
+      "date": "2026-07-04",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-04_005",
+      "level": 1,
+      "content": "开源本地 AI 浏览器代理 WebBrain",
+      "summary": "WebBrain 是一款开源本地优先的 AI 浏览器代理，支持在 Chrome ",
+      "source": "https://www.marktechpost.com/2026/07/02/meet-webbrain-an-open-source-local-first-ai-browser-agent-that-reads-pages-and-automates-tasks-in-chrome-and-firefox/",
+      "date": "2026-07-04",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-04_006",
+      "level": 1,
+      "content": "零售业规模化部署个性化 AI",
+      "summary": "零售行业通过优化 AI 基础设施，实现实时客户洞察与动态个性化交互系统的规模化部",
+      "source": "https://www.artificialintelligence-news.com/news/deploying-retail-ai-to-scale-personalisation-customer-insight/",
+      "date": "2026-07-04",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-07-04_001",
+      "level": 1,
       "content": "OpenAI 推出基因领域基准 GeneBench-Pro",
       "summary": "OpenAI 发布 GeneBench-Pro，专为基因组学研究设计的复杂现实数",
       "source": "https://openai.com/index/introducing-genebench-pro",
       "date": "2026-07-04",
-      "signal_index": 0
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-04_002",
@@ -17,7 +71,7 @@
       "summary": "卡内基梅隆与 UCLA 提出 AgRefactor，利用多智能体工作流自动重构软",
       "source": "https://semiengineering.com/llm-agents-to-refactor-software-for-high-level-synthesis-carnegie-mellon-ucla/",
       "date": "2026-07-04",
-      "signal_index": 2
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-04_003",
@@ -26,61 +80,43 @@
       "summary": "Linux 内核曝出 Bad Epoll 高危漏洞，允许普通用户提权至 root",
       "source": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
       "date": "2026-07-04",
-      "signal_index": 3
+      "signal_index": null
     },
     {
-      "id": "sig_2026-07-04_004",
-      "level": 1,
+      "id": "tag_2026-07-04_001",
+      "level": 2,
       "content": "新型概率内存架构助力边缘智能",
-      "summary": "研究人员提出 p-MEM 概率内存架构，在原生内存带宽下采样，助力可信边缘智能发",
-      "source": "https://semiengineering.com/probabilistic-memory-architecture-that-bridges-the-gap-between-rng-sampling-and-memory-access-notre-dame-georgia-tech-villanova/",
-      "date": "2026-07-04",
-      "signal_index": 4
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-04_005",
-      "level": 1,
+      "id": "tag_2026-07-04_002",
+      "level": 2,
       "content": "谷歌汇总六月最新 AI 技术进展",
-      "summary": "谷歌汇总 2026 年 6 月最新 AI 进展，涵盖多项产品更新与技术突破。",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
-      "date": "2026-07-04",
-      "signal_index": 5
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-04_006",
-      "level": 1,
-      "content": "NVIDIA 加速 AI 基础设施规模化部署",
-      "summary": "NVIDIA 开放大规模 AI 算力，邀请合作伙伴共建基础设施，满足从开发到推理",
-      "source": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/",
-      "date": "2026-07-04",
-      "signal_index": 1
+      "id": "tag_2026-07-04_003",
+      "level": 2,
+      "content": "NVIDIA 加速 AI 基础设施…",
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-04_007",
-      "level": 1,
+      "id": "tag_2026-07-04_004",
+      "level": 2,
       "content": "NVIDIA 联合伙伴投资美国制造",
-      "summary": "NVIDIA 联合伙伴投资美国制造与供应链，构建支持医疗、科研和工业的 AI 基",
-      "source": "https://blogs.nvidia.com/blog/nvidia-and-partners-build-in-america-for-america/",
-      "date": "2026-07-04",
-      "signal_index": 6
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-03_001",
-      "level": 1,
+      "id": "tag_2026-07-04_005",
+      "level": 2,
       "content": "英伟达开放大规模 AI 算力生态",
-      "summary": "英伟达开放大规模 AI 算力，邀请合作伙伴共建基础设施，以满足从开发到推理的激增",
-      "source": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/",
-      "date": "2026-07-04",
-      "signal_index": null
+      "date": "2026-07-04"
     },
     {
-      "id": "sig_2026-07-03_002",
-      "level": 1,
+      "id": "tag_2026-07-04_006",
+      "level": 2,
       "content": "警惕 AI 数据融合带来的安全威胁",
-      "summary": "探讨多模态 AI 融合数十亿设备数据带来的风险，攻击者可能利用数字孪生武器化威胁",
-      "source": "https://semiengineering.com/defending-against-ai-enabled-data-fusion/",
-      "date": "2026-07-04",
-      "signal_index": null
+      "date": "2026-07-04"
     },
     {
       "id": "tag_2026-07-04_001",
@@ -107,38 +143,38 @@
       "date": "2026-07-04"
     },
     {
-      "id": "tag_2026-07-04_005",
-      "level": 2,
+      "id": "word_2026-07-04_005",
+      "level": 3,
       "content": "谷歌报告详述英国 AI 生产力战略",
       "date": "2026-07-04"
     },
     {
-      "id": "tag_2026-07-04_006",
-      "level": 2,
+      "id": "word_2026-07-04_006",
+      "level": 3,
       "content": "Google 发布六月 AI 更新…",
       "date": "2026-07-04"
     },
     {
-      "id": "tag_2026-07-04_007",
-      "level": 2,
+      "id": "word_2026-07-04_007",
+      "level": 3,
       "content": "芯片组设计缺失可观测性层",
       "date": "2026-07-04"
     },
     {
-      "id": "tag_2026-07-03_001",
-      "level": 2,
+      "id": "word_2026-07-03_001",
+      "level": 3,
       "content": "NVIDIA 加大美国制造投资力度",
       "date": "2026-07-03"
     },
     {
-      "id": "tag_2026-07-03_002",
-      "level": 2,
+      "id": "word_2026-07-03_002",
+      "level": 3,
       "content": "Google 报告 AI 提升英国…",
       "date": "2026-07-03"
     },
     {
-      "id": "tag_2026-07-03_003",
-      "level": 2,
+      "id": "word_2026-07-03_003",
+      "level": 3,
       "content": "纽约举办 AI 教育应用峰会",
       "date": "2026-07-03"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "Zluda 6 支持非 N 卡运行…",
       "date": "2026-07-02"
-    },
-    {
-      "id": "word_2026-07-02_006",
-      "level": 3,
-      "content": "NVIDIA 推出生命科学智能体工…",
-      "date": "2026-07-02"
-    },
-    {
-      "id": "word_2026-07-02_007",
-      "level": 3,
-      "content": "OpenAI 数据显示 ChatG…",
-      "date": "2026-07-02"
-    },
-    {
-      "id": "word_2026-07-01_001",
-      "level": 3,
-      "content": "惠普深化与 OpenAI 合作",
-      "date": "2026-07-01"
-    },
-    {
-      "id": "word_2026-07-01_002",
-      "level": 3,
-      "content": "韩国万亿投资芯片机器人",
-      "date": "2026-07-01"
-    },
-    {
-      "id": "word_2026-07-01_003",
-      "level": 3,
-      "content": "英伟达开源药物发现工具包",
-      "date": "2026-07-01"
-    },
-    {
-      "id": "word_2026-07-01_004",
-      "level": 3,
-      "content": "OpenAI 分析欧盟就业影响",
-      "date": "2026-07-01"
     }
   ]
 }
