@@ -1,7 +1,7 @@
 {
   "date": "2026-07-04",
   "generated_at": "2026-07-04T09:38:49.350269+08:00",
-  "summary": "MIT 推出 SEAL 框架，利用强化学习让大模型自我编辑权重，迈向自进化新阶段。；Mistral 发布开源模型 Leanstral 1.5，专攻 Lean 4 代码与数学推理，在 PutnamBench 测试中表现卓越。；武田制药与英矽智能达成六亿美元战略合作，利用 AI 加速多个治疗领域的早期药物发现进程。",
+  "summary": "Mistral 发布开源模型 Leanstral 1.5，专攻 Lean 4 代码与数学推理，在 PutnamBench 测试中表现卓越。；武田制药与英矽智能达成六亿美元战略合作，利用 AI 加速多个治疗领域的早期药物发现进程。；Anthropic 将 NVIDIA BioNeMo 集成至 Claude Science，加速计算生命科学研究与数字代理交互。",
   "items": [
     {
       "id": "2026-07-04-002",
