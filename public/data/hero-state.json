@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-07-06",
+  "updated_at": "2026-07-07",
   "items": [
+    {
+      "id": "sig_2026-07-07_001",
+      "level": 1,
+      "content": "开放模型成 AI 科研核心驱动力",
+      "summary": "ICML 最新论文指出，开放的前沿模型与基础设施已成为推动现代 AI 科学研究的",
+      "source": "https://blogs.nvidia.com/blog/open-models-icml-2026/",
+      "date": "2026-07-07",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-07_002",
+      "level": 1,
+      "content": "数据中心 AI 增长面临瓶颈挑战",
+      "summary": "分析指出数据中心在支撑 AI 扩张时，正遭遇供电、散热及互联带宽等严峻的物理瓶颈",
+      "source": "https://semiengineering.com/data-center-ai-growth-faces-challenging-bottlenecks/",
+      "date": "2026-07-07",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-07-07_003",
+      "level": 1,
+      "content": "各国部署 AI 聚焦战略优先事项",
+      "summary": "探讨多国如何利用 AI 技术推进经济发展、数据主权及交通医疗等国家级战略优先事项",
+      "source": "https://blogs.nvidia.com/blog/nations-deploy-ai-strategic-priorities/",
+      "date": "2026-07-07",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-07-07_004",
+      "level": 1,
+      "content": "谷歌汇总六月 AI 产品与技术更新",
+      "summary": "谷歌官方汇总了 2026 年 6 月期间发布的各项 AI 产品功能更新及底层技术",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
+      "date": "2026-07-07",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-07_005",
+      "level": 1,
+      "content": "谷歌报告详述 AI 助推英国生产力",
+      "summary": "谷歌英国发布经济影响报告，阐述利用 AI 技术提升国家整体生产力与培养创新人才的",
+      "source": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
+      "date": "2026-07-07",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-07_006",
+      "level": 1,
+      "content": "半导体硬件层研究取得新动态",
+      "summary": "简述利用神经网络预测半导体属性及铁电薄膜材料等在硬件层面的最新研究突破。",
+      "source": "https://semiengineering.com/research-bits-july-6/",
+      "date": "2026-07-07",
+      "signal_index": 5
+    },
     {
       "id": "sig_2026-07-06_001",
       "level": 1,
       "content": "美团开源 1.6T 参数 LongCat 模型",
       "summary": "美团发布 1.6 万亿参数开源 MoE 模型，原生支持百万上下文，基于国产芯片训",
       "source": "https://www.marktechpost.com/2026/07/05/meituan-releases-longcat-2-0-a-1-6t-parameter-open-moe-model-with-native-1m-context-and-longcat-sparse-attention/",
-      "date": "2026-07-06",
-      "signal_index": 0
+      "date": "2026-07-07",
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-06_002",
@@ -16,8 +70,8 @@
       "content": "LlamaIndex 发布法律知识库应用",
       "summary": "LlamaIndex 推出 legal-kb 参考应用，为智能体提供文件系统式文",
       "source": "https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools/",
-      "date": "2026-07-06",
-      "signal_index": 1
+      "date": "2026-07-07",
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-06_003",
@@ -25,62 +79,38 @@
       "content": "2026 开源 PDF 转 JSON 模型指南",
       "summary": "指南介绍 2026 年开源文档提取模型，解决企业 PDF 数据转化为结构化 JS",
       "source": "https://www.marktechpost.com/2026/07/04/structured-pdf-to-json-a-guide-to-open-source-extraction-models-in-2026/",
-      "date": "2026-07-06",
-      "signal_index": 2
+      "date": "2026-07-07",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-07-06_004",
-      "level": 1,
+      "id": "tag_2026-07-07_001",
+      "level": 2,
       "content": "谷歌报告探讨英国 AI 生产力",
-      "summary": "谷歌英国发布报告，探讨如何通过 AI 赋能技术提升国家生产力并培养先锋人才。",
-      "source": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trblazers/",
-      "date": "2026-07-06",
-      "signal_index": 3
+      "date": "2026-07-07"
     },
     {
-      "id": "sig_2026-07-06_001",
-      "level": 1,
-      "content": "OpenAI 推出基因领域基准 GeneBench",
-      "summary": "OpenAI 发布 GeneBench-Pro，首个针对基因组学和生物科研复杂真",
-      "source": "https://openai.com/index/introducing-genebench-pro",
-      "date": "2026-07-06",
-      "signal_index": null
+      "id": "tag_2026-07-07_003",
+      "level": 2,
+      "content": "高校提出 AgRefactor 自…",
+      "date": "2026-07-07"
     },
     {
-      "id": "sig_2026-07-06_002",
-      "level": 1,
-      "content": "高校提出 AgRefactor 自动重构代码",
-      "summary": "卡内基梅隆与 UCLA 提出 AgRefactor，利用多智能体工作流自动重构软",
-      "source": "https://semiengineering.com/llm-agents-to-refactor-software-for-high-level-synthesis-carnegie-mellon-ucla/",
-      "date": "2026-07-06",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-07-06_003",
-      "level": 1,
+      "id": "tag_2026-07-07_004",
+      "level": 2,
       "content": "多国高校联合提出概率内存架构",
-      "summary": "多国高校联合提出 p-MEM 概率内存架构，在原生内存带宽下采样，助力可信边缘智",
-      "source": "https://semiengineering.com/probabilistic-memory-architecture-that-bridges-the-gap-between-rng-sampling-and-memory-access-notre-dame-georgia-tech-villanova/",
-      "date": "2026-07-06",
-      "signal_index": null
+      "date": "2026-07-07"
     },
     {
-      "id": "sig_2026-07-05_001",
-      "level": 1,
-      "content": "Anthropic 发布科学多智能体平台",
-      "summary": "Anthropic 推出 Claude Science 测试版，专为基因组学等科",
-      "source": "https://www.marktechpost.com/2026/07/04/anthropic-launches-claude-science-beta/",
-      "date": "2026-07-06",
-      "signal_index": null
+      "id": "tag_2026-07-07_005",
+      "level": 2,
+      "content": "Anthropic 发布科学多智能…",
+      "date": "2026-07-07"
     },
     {
-      "id": "sig_2026-07-05_002",
-      "level": 1,
+      "id": "tag_2026-07-07_006",
+      "level": 2,
       "content": "字节英伟达突破机器人导航",
-      "summary": "字节跳动与英伟达在机器人领域取得进展，分别推出 Astra 架构与 ASPIRE",
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-07-06",
-      "signal_index": null
+      "date": "2026-07-07"
     },
     {
       "id": "tag_2026-07-06_001",
@@ -107,38 +137,38 @@
       "date": "2026-07-06"
     },
     {
-      "id": "tag_2026-07-06_002",
-      "level": 2,
+      "id": "word_2026-07-06_002",
+      "level": 3,
       "content": "Mistral 开源数学代码模型",
       "date": "2026-07-06"
     },
     {
-      "id": "tag_2026-07-06_003",
-      "level": 2,
+      "id": "word_2026-07-06_003",
+      "level": 3,
       "content": "NVIDIA 加速 Anthrop…",
       "date": "2026-07-06"
     },
     {
-      "id": "tag_2026-07-06_004",
-      "level": 2,
+      "id": "word_2026-07-06_004",
+      "level": 3,
       "content": "WebBrain 开源本地浏览器代理",
       "date": "2026-07-06"
     },
     {
-      "id": "tag_2026-07-05_001",
-      "level": 2,
+      "id": "word_2026-07-05_001",
+      "level": 3,
       "content": "Claude 预览版伴生漏洞激增",
       "date": "2026-07-05"
     },
     {
-      "id": "tag_2026-07-05_002",
-      "level": 2,
+      "id": "word_2026-07-05_002",
+      "level": 3,
       "content": "OpenAI 揭示 ChatGPT…",
       "date": "2026-07-05"
     },
     {
-      "id": "tag_2026-07-05_003",
-      "level": 2,
+      "id": "word_2026-07-05_003",
+      "level": 3,
       "content": "零售 AI 优化个性化基础设施",
       "date": "2026-07-05"
     },
@@ -194,42 +224,6 @@
       "id": "word_2026-07-04_007",
       "level": 3,
       "content": "Linux 内核曝高危提权漏洞 B…",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_001",
-      "level": 3,
-      "content": "新型概率内存架构助力边缘智能",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_002",
-      "level": 3,
-      "content": "谷歌汇总六月最新 AI 技术进展",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_003",
-      "level": 3,
-      "content": "NVIDIA 加速 AI 基础设施…",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_004",
-      "level": 3,
-      "content": "NVIDIA 联合伙伴投资美国制造",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_005",
-      "level": 3,
-      "content": "英伟达开放大规模 AI 算力生态",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_006",
-      "level": 3,
-      "content": "警惕 AI 数据融合带来的安全威胁",
       "date": "2026-07-04"
     }
   ]
