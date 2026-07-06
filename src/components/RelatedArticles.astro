@@ -1,0 +1,91 @@
+---
+import type { RelatedArticle } from '../lib/data';
+import { CATEGORIES, type Category } from '../data/categories';
+import { formatWeekday } from '../lib/utils';
+
+interface Props {
+  articles: RelatedArticle[];
+}
+
+const { articles } = Astro.props;
+if (!articles.length) return null;
+---
+
+<section class="related">
+  <h2 class="related-title">相关推荐</h2>
+  <div class="related-grid">
+    {articles.map(({ date, item }) => {
+      const cat = item.category as Category;
+      const catInfo = CATEGORIES[cat];
+      return (
+        <a href={`/${date}#signal-0`} class="related-card">
+          <span class="related-category" style={`color: ${catInfo?.color}`}>
+            {catInfo?.icon} {catInfo?.label}
+          </span>
+          <span class="related-item-title">{item.title}</span>
+          <span class="related-date">{formatWeekday(date)} · {item.source_name}</span>
+        </a>
+      );
+    })}
+  </div>
+</section>
+
+<style>
+  .related {
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .related-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+  }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.75rem;
+  }
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .related-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  .related-category {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .related-item-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .related-date {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 640px) {
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

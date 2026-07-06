@@ -2,7 +2,8 @@
 import Base from '../layouts/Base.astro';
 import Signals from '../components/Signals.astro';
 import DeepDive from '../components/DeepDive.astro';
-import { getDailyData, getAllDates } from '../lib/data';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import { getDailyData, getAllDates, getRelatedArticles } from '../lib/data';
 import { formatWeekday } from '../lib/utils';
 
 export function getStaticPaths() {
@@ -19,6 +20,8 @@ const currentIdx = allDates.indexOf(date!);
 const prevDate = currentIdx > 0 ? allDates[currentIdx - 1] : null;
 const nextDate = currentIdx < allDates.length - 1 ? allDates[currentIdx + 1] : null;
 
+const relatedArticles = getRelatedArticles(date!, 4);
+
 if (!data) {
   return Astro.redirect('/');
 }
@@ -29,6 +32,7 @@ if (!data) {
   {data.deep_dive && (
     <DeepDive topic={data.deep_dive.topic} content={data.deep_dive.content} truncated />
   )}
+  <RelatedArticles articles={relatedArticles} />
   <nav class="date-nav">
     <a href="/" class="back-link">← 返回最新</a>
     <div class="date-nav-links">
