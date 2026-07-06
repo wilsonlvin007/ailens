@@ -4,11 +4,47 @@
     {
       "id": "sig_2026-07-06_001",
       "level": 1,
+      "content": "美团开源 1.6T 参数 LongCat 模型",
+      "summary": "美团发布 1.6 万亿参数开源 MoE 模型，原生支持百万上下文，基于国产芯片训",
+      "source": "https://www.marktechpost.com/2026/07/05/meituan-releases-longcat-2-0-a-1-6t-parameter-open-moe-model-with-native-1m-context-and-longcat-sparse-attention/",
+      "date": "2026-07-06",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-06_002",
+      "level": 1,
+      "content": "LlamaIndex 发布法律知识库应用",
+      "summary": "LlamaIndex 推出 legal-kb 参考应用，为智能体提供文件系统式文",
+      "source": "https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools/",
+      "date": "2026-07-06",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-07-06_003",
+      "level": 1,
+      "content": "2026 开源 PDF 转 JSON 模型指南",
+      "summary": "指南介绍 2026 年开源文档提取模型，解决企业 PDF 数据转化为结构化 JS",
+      "source": "https://www.marktechpost.com/2026/07/04/structured-pdf-to-json-a-guide-to-open-source-extraction-models-in-2026/",
+      "date": "2026-07-06",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-07-06_004",
+      "level": 1,
+      "content": "谷歌报告探讨英国 AI 生产力",
+      "summary": "谷歌英国发布报告，探讨如何通过 AI 赋能技术提升国家生产力并培养先锋人才。",
+      "source": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trblazers/",
+      "date": "2026-07-06",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-06_001",
+      "level": 1,
       "content": "OpenAI 推出基因领域基准 GeneBench",
       "summary": "OpenAI 发布 GeneBench-Pro，首个针对基因组学和生物科研复杂真",
       "source": "https://openai.com/index/introducing-genebench-pro",
       "date": "2026-07-06",
-      "signal_index": 0
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-06_002",
@@ -17,7 +53,7 @@
       "summary": "卡内基梅隆与 UCLA 提出 AgRefactor，利用多智能体工作流自动重构软",
       "source": "https://semiengineering.com/llm-agents-to-refactor-software-for-high-level-synthesis-carnegie-mellon-ucla/",
       "date": "2026-07-06",
-      "signal_index": 1
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-06_003",
@@ -26,7 +62,7 @@
       "summary": "多国高校联合提出 p-MEM 概率内存架构，在原生内存带宽下采样，助力可信边缘智",
       "source": "https://semiengineering.com/probabilistic-memory-architecture-that-bridges-the-gap-between-rng-sampling-and-memory-access-notre-dame-georgia-tech-villanova/",
       "date": "2026-07-06",
-      "signal_index": 2
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-05_001",
@@ -47,31 +83,22 @@
       "signal_index": null
     },
     {
-      "id": "sig_2026-07-05_003",
-      "level": 1,
+      "id": "tag_2026-07-06_001",
+      "level": 2,
       "content": "英伟达推 Horizon 代码智能体",
-      "summary": "英伟达推出 Horizon 智能体，在 RTL 基准测试中达成 100% 完成率",
-      "source": "https://www.marktechpost.com/2026/07/04/nvidia-horizon-a-hands-free-agent-that-evolves-git-worktrees-and-hits-100-rtl-benchmark-completion/",
-      "date": "2026-07-06",
-      "signal_index": null
+      "date": "2026-07-06"
     },
     {
-      "id": "sig_2026-07-05_004",
-      "level": 1,
+      "id": "tag_2026-07-06_002",
+      "level": 2,
       "content": "武田制药六亿合作英矽智能",
-      "summary": "武田制药与英矽智能达成 6 亿美元合作，利用 AI 加速多个治疗领域的早期药物发",
-      "source": "https://www.artificialintelligence-news.com/news/takeda-insilico-ai-drug-discovery-deal/",
-      "date": "2026-07-06",
-      "signal_index": null
+      "date": "2026-07-06"
     },
     {
-      "id": "sig_2026-07-05_005",
-      "level": 1,
+      "id": "tag_2026-07-06_003",
+      "level": 2,
       "content": "零售 AI 规模化个性推荐",
-      "summary": "零售行业部署 AI 基础设施，通过实时数据管道优化个性化推荐与客户洞察系统。",
-      "source": "https://www.artificialintelligence-news.com/news/deploying-retail-ai-to-scale-personalisation-customer-insight/",
-      "date": "2026-07-06",
-      "signal_index": null
+      "date": "2026-07-06"
     },
     {
       "id": "tag_2026-07-06_001",
@@ -116,20 +143,20 @@
       "date": "2026-07-05"
     },
     {
-      "id": "tag_2026-07-05_004",
-      "level": 2,
+      "id": "word_2026-07-05_004",
+      "level": 3,
       "content": "Mistral 开源数学推理模型 …",
       "date": "2026-07-05"
     },
     {
-      "id": "tag_2026-07-05_005",
-      "level": 2,
+      "id": "word_2026-07-05_005",
+      "level": 3,
       "content": "武田制药达成六亿 AI 制药合作",
       "date": "2026-07-05"
     },
     {
-      "id": "tag_2026-07-04_001",
-      "level": 2,
+      "id": "word_2026-07-04_001",
+      "level": 3,
       "content": "NVIDIA BioNeMo 加速…",
       "date": "2026-07-04"
     },
@@ -203,24 +230,6 @@
       "id": "word_2026-07-04_006",
       "level": 3,
       "content": "警惕 AI 数据融合带来的安全威胁",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_001",
-      "level": 3,
-      "content": "AI 数据中心与汽车行业共探能源难题",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_002",
-      "level": 3,
-      "content": "开源项目实现任意大模型视频理解",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_003",
-      "level": 3,
-      "content": "GPU 光栅化加速计算光刻工艺",
       "date": "2026-07-04"
     }
   ]
