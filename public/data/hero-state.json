@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-07-07",
+  "updated_at": "2026-07-08",
   "items": [
     {
-      "id": "sig_2026-07-07_001",
+      "id": "sig_2026-07-08_001",
       "level": 1,
-      "content": "开放模型成 AI 科研核心驱动力",
-      "summary": "ICML 最新论文指出，开放的前沿模型与基础设施已成为推动现代 AI 科学研究的",
-      "source": "https://blogs.nvidia.com/blog/open-models-icml-2026/",
-      "date": "2026-07-07",
+      "content": "腾讯开源 Hy3 混合专家模型",
+      "summary": "腾讯开源 Hy3 模型，总参数 2950 亿，激活 210 亿，支持 256K ",
+      "source": "https://www.marktechpost.com/2026/07/06/tencent-releases-hy3-open-295b-moe-model/",
+      "date": "2026-07-08",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-07-07_002",
+      "id": "sig_2026-07-08_002",
       "level": 1,
-      "content": "数据中心 AI 增长面临瓶颈挑战",
-      "summary": "分析指出数据中心在支撑 AI 扩张时，正遭遇供电、散热及互联带宽等严峻的物理瓶颈",
-      "source": "https://semiengineering.com/data-center-ai-growth-faces-challenging-bottlenecks/",
-      "date": "2026-07-07",
+      "content": "英矽智能 AI 新药进入三期临床",
+      "summary": "英矽智能研发的 AI 发现药物进入特发性肺纤维化三期临床，验证了 AI 制药全流",
+      "source": "https://www.artificialintelligence-news.com/news/insilico-medicine-advances-ai-drug-for-ipf-to-phase-iii/",
+      "date": "2026-07-08",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-07-07_003",
+      "id": "sig_2026-07-08_003",
       "level": 1,
-      "content": "各国部署 AI 聚焦战略优先事项",
-      "summary": "探讨多国如何利用 AI 技术推进经济发展、数据主权及交通医疗等国家级战略优先事项",
-      "source": "https://blogs.nvidia.com/blog/nations-deploy-ai-strategic-priorities/",
-      "date": "2026-07-07",
+      "content": "OpenAI 发布低延迟实时语音模型",
+      "summary": "OpenAI 推出 GPT-Realtime-2.1 系列，专为低延迟语音代理优",
+      "source": "https://www.marktechpost.com/2026/07/06/openai-gpt-realtime-2-1-mini-reasoning-realtime-api/",
+      "date": "2026-07-08",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-07-07_004",
+      "id": "sig_2026-07-08_004",
       "level": 1,
-      "content": "谷歌汇总六月 AI 产品与技术更新",
-      "summary": "谷歌官方汇总了 2026 年 6 月期间发布的各项 AI 产品功能更新及底层技术",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/",
-      "date": "2026-07-07",
+      "content": "Liquid AI 开源解决推理死循环方法",
+      "summary": "Liquid AI 开源 Antidoom 方法，利用最终令牌偏好优化消除推理模",
+      "source": "https://www.marktechpost.com/2026/07/07/liquid-ai-antidoom-doom-loops-ftpo/",
+      "date": "2026-07-08",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-07-07_005",
+      "id": "sig_2026-07-08_005",
       "level": 1,
-      "content": "谷歌报告详述 AI 助推英国生产力",
-      "summary": "谷歌英国发布经济影响报告，阐述利用 AI 技术提升国家整体生产力与培养创新人才的",
-      "source": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
-      "date": "2026-07-07",
+      "content": "谷歌扩展 Gemini 托管代理功能",
+      "summary": "谷歌升级 Gemini API 托管代理，支持后台任务与远程 MCP，助力开发者",
+      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+      "date": "2026-07-08",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-07-07_006",
+      "id": "sig_2026-07-08_006",
       "level": 1,
-      "content": "半导体硬件层研究取得新动态",
-      "summary": "简述利用神经网络预测半导体属性及铁电薄膜材料等在硬件层面的最新研究突破。",
-      "source": "https://semiengineering.com/research-bits-july-6/",
-      "date": "2026-07-07",
+      "content": "英伟达推出 Vera CPU 赋能代理 AI",
+      "summary": "英伟达发布 Vera CPU，强调大规模单线程性能，专为满足代理式 AI 时代的",
+      "source": "https://blogs.nvidia.com/blog/nvidia-vera-max-single-threaded-cpu-at-scale/",
+      "date": "2026-07-08",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-07-06_001",
+      "id": "sig_2026-07-08_007",
       "level": 1,
-      "content": "美团开源 1.6T 参数 LongCat 模型",
-      "summary": "美团发布 1.6 万亿参数开源 MoE 模型，原生支持百万上下文，基于国产芯片训",
-      "source": "https://www.marktechpost.com/2026/07/05/meituan-releases-longcat-2-0-a-1-6t-parameter-open-moe-model-with-native-1m-context-and-longcat-sparse-attention/",
-      "date": "2026-07-07",
-      "signal_index": null
+      "content": "谷歌 Dialogflow CX 曝严重安全漏洞",
+      "summary": "谷歌 Dialogflow CX 发现高危漏洞，攻击者可劫持聊天机器人窃取数据，",
+      "source": "https://thehackernews.com/2026/07/rogue-agent-flaw-could-have-let.html",
+      "date": "2026-07-08",
+      "signal_index": 6
     },
     {
-      "id": "sig_2026-07-06_002",
+      "id": "sig_2026-07-08_008",
       "level": 1,
-      "content": "LlamaIndex 发布法律知识库应用",
-      "summary": "LlamaIndex 推出 legal-kb 参考应用，为智能体提供文件系统式文",
-      "source": "https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools/",
-      "date": "2026-07-07",
-      "signal_index": null
+      "content": "快消巨头利用 AI 加速产品研发",
+      "summary": "欧莱雅、雀巢等巨头利用 AI 挖掘成分新用途，大幅缩短产品研发周期，提升上市速度",
+      "source": "https://www.artificialintelligence-news.com/news/ai-product-development-loreal-mondelez-nestle/",
+      "date": "2026-07-08",
+      "signal_index": 7
     },
     {
-      "id": "sig_2026-07-06_003",
+      "id": "sig_2026-07-08_009",
       "level": 1,
-      "content": "2026 开源 PDF 转 JSON 模型指南",
-      "summary": "指南介绍 2026 年开源文档提取模型，解决企业 PDF 数据转化为结构化 JS",
-      "source": "https://www.marktechpost.com/2026/07/04/structured-pdf-to-json-a-guide-to-open-source-extraction-models-in-2026/",
-      "date": "2026-07-07",
-      "signal_index": null
+      "content": "解析中国 AI 伴侣监管新规意图",
+      "summary": "文章深度分析中国 AI 伴侣新规，探讨生成式 AI 在情感交互中的伦理边界与监管",
+      "source": "https://www.artificialintelligence-news.com/news/china-ai-companion-rules/",
+      "date": "2026-07-08",
+      "signal_index": 8
+    },
+    {
+      "id": "tag_2026-07-08_001",
+      "level": 2,
+      "content": "开放模型成 AI 科研核心驱动力",
+      "date": "2026-07-08"
+    },
+    {
+      "id": "tag_2026-07-08_002",
+      "level": 2,
+      "content": "数据中心 AI 增长面临瓶颈挑战",
+      "date": "2026-07-08"
+    },
+    {
+      "id": "tag_2026-07-08_003",
+      "level": 2,
+      "content": "各国部署 AI 聚焦战略优先事项",
+      "date": "2026-07-08"
+    },
+    {
+      "id": "tag_2026-07-08_004",
+      "level": 2,
+      "content": "谷歌汇总六月 AI 产品与技术更新",
+      "date": "2026-07-08"
+    },
+    {
+      "id": "tag_2026-07-08_005",
+      "level": 2,
+      "content": "谷歌报告详述 AI 助推英国生产力",
+      "date": "2026-07-08"
+    },
+    {
+      "id": "tag_2026-07-08_006",
+      "level": 2,
+      "content": "半导体硬件层研究取得新动态",
+      "date": "2026-07-08"
+    },
+    {
+      "id": "tag_2026-07-08_007",
+      "level": 2,
+      "content": "美团开源 1.6T 参数 Long…",
+      "date": "2026-07-08"
+    },
+    {
+      "id": "tag_2026-07-08_008",
+      "level": 2,
+      "content": "LlamaIndex 发布法律知识…",
+      "date": "2026-07-08"
+    },
+    {
+      "id": "tag_2026-07-08_009",
+      "level": 2,
+      "content": "2026 开源 PDF 转 JSO…",
+      "date": "2026-07-08"
     },
     {
       "id": "tag_2026-07-07_001",
@@ -89,50 +143,50 @@
       "date": "2026-07-07"
     },
     {
-      "id": "tag_2026-07-07_003",
-      "level": 2,
+      "id": "word_2026-07-07_003",
+      "level": 3,
       "content": "高校提出 AgRefactor 自…",
       "date": "2026-07-07"
     },
     {
-      "id": "tag_2026-07-07_004",
-      "level": 2,
+      "id": "word_2026-07-07_004",
+      "level": 3,
       "content": "多国高校联合提出概率内存架构",
       "date": "2026-07-07"
     },
     {
-      "id": "tag_2026-07-07_005",
-      "level": 2,
+      "id": "word_2026-07-07_005",
+      "level": 3,
       "content": "Anthropic 发布科学多智能…",
       "date": "2026-07-07"
     },
     {
-      "id": "tag_2026-07-07_006",
-      "level": 2,
+      "id": "word_2026-07-07_006",
+      "level": 3,
       "content": "字节英伟达突破机器人导航",
       "date": "2026-07-07"
     },
     {
-      "id": "tag_2026-07-06_001",
-      "level": 2,
+      "id": "word_2026-07-06_001",
+      "level": 3,
       "content": "英伟达推 Horizon 代码智能体",
       "date": "2026-07-06"
     },
     {
-      "id": "tag_2026-07-06_002",
-      "level": 2,
+      "id": "word_2026-07-06_002",
+      "level": 3,
       "content": "武田制药六亿合作英矽智能",
       "date": "2026-07-06"
     },
     {
-      "id": "tag_2026-07-06_003",
-      "level": 2,
+      "id": "word_2026-07-06_003",
+      "level": 3,
       "content": "零售 AI 规模化个性推荐",
       "date": "2026-07-06"
     },
     {
-      "id": "tag_2026-07-06_001",
-      "level": 2,
+      "id": "word_2026-07-06_001",
+      "level": 3,
       "content": "武田制药签约六亿 AI 药研大单",
       "date": "2026-07-06"
     },
@@ -177,54 +231,6 @@
       "level": 3,
       "content": "Mistral 开源数学推理模型 …",
       "date": "2026-07-05"
-    },
-    {
-      "id": "word_2026-07-05_005",
-      "level": 3,
-      "content": "武田制药达成六亿 AI 制药合作",
-      "date": "2026-07-05"
-    },
-    {
-      "id": "word_2026-07-04_001",
-      "level": 3,
-      "content": "NVIDIA BioNeMo 加速…",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_002",
-      "level": 3,
-      "content": "Linux 内核曝高危漏洞 Bad…",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_003",
-      "level": 3,
-      "content": "开源本地 AI 浏览器代理 Web…",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_004",
-      "level": 3,
-      "content": "零售业规模化部署个性化 AI",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_005",
-      "level": 3,
-      "content": "OpenAI 推出基因领域基准 G…",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_006",
-      "level": 3,
-      "content": "多智能体自动重构软件适配综合",
-      "date": "2026-07-04"
-    },
-    {
-      "id": "word_2026-07-04_007",
-      "level": 3,
-      "content": "Linux 内核曝高危提权漏洞 B…",
-      "date": "2026-07-04"
     }
   ]
 }
