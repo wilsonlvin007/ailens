@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-07-09",
+  "updated_at": "2026-07-10",
   "items": [
     {
-      "id": "sig_2026-07-09_001",
+      "id": "sig_2026-07-10_001",
       "level": 1,
-      "content": "OpenAI 发布全双工语音模型",
-      "summary": "OpenAI 推出 GPT-Live 系列，支持实时双向语音交互，并将复杂推理任",
-      "source": "https://www.marktechpost.com/2026/07/08/openai-releases-gpt-live-and-gpt-live-1-mini-full-duplex-voice-models-that-delegate-deeper-reasoning-to-gpt-5-5/",
-      "date": "2026-07-09",
+      "content": "GPT-5.6 成微软首选模型",
+      "summary": "GPT-5.6 正式成为微软 365 Copilot 首选模型，显著提升办公套件",
+      "source": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+      "date": "2026-07-10",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-07-09_002",
+      "id": "sig_2026-07-10_002",
       "level": 1,
-      "content": "OpenAI 警示代码评估基准偏差",
-      "summary": "OpenAI 指出 SWE-Bench Pro 等热门代码基准存在噪声，呼吁行业",
-      "source": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
-      "date": "2026-07-09",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-07-09_003",
-      "level": 1,
-      "content": "新型攻击诱导 AI 安装恶意软件",
-      "summary": "研究发现“幻觉 squatting\"攻击，利用 AI 编码助手的幻觉特性诱导其下",
-      "source": "https://thehackernews.com/2026/07/new-hallusquatting-attack-could-trick.html",
-      "date": "2026-07-09",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-07-09_004",
-      "level": 1,
-      "content": "OpenAI 阐述政府合作安全原则",
-      "summary": "OpenAI 公布与政府及国安部门合作准则，强调民主问责、透明性及公共安全优先。",
-      "source": "https://openai.com/index/government-national-security-partnerships",
-      "date": "2026-07-09",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-07-09_005",
-      "level": 1,
-      "content": "NVIDIA Nemotron 结合 LangChain 提效",
-      "summary": "NVIDIA Nemotron 3 Ultra 集成 LangChain 深度代",
-      "source": "https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack/",
-      "date": "2026-07-09",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-07-09_006",
-      "level": 1,
-      "content": "AI 编码代理频繁触发安全警报",
-      "summary": "Sophos 研究发现，AI 编码代理的操作行为模式类似黑客，常误触终端安全检测",
-      "source": "https://thehackernews.com/2026/07/ai-coding-agents-found-triggering.html",
-      "date": "2026-07-09",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-07-09_007",
-      "level": 1,
-      "content": "Google AI Studio 支持导入 GitHub",
-      "summary": "Google AI Studio 新增 GitHub 导入功能，可将现有代码仓库",
-      "source": "https://www.marktechpost.com/2026/07/08/google-ai-studio-adds-import-from-github-to-build-mode/",
-      "date": "2026-07-09",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-07-09_008",
-      "level": 1,
-      "content": "英矽智能 AI 新药迈入三期临床",
-      "summary": "英矽智能研发的特发性肺纤维化药物进入三期临床，验证了 AI 制药全流程的可行性。",
-      "source": "https://www.artificialintelligence-news.com/news/insilico-medicine-advances-ai-drug-for-ipf-to-phase-iii/",
-      "date": "2026-07-09",
+      "content": "ChatGPT 升级全能工作伙伴",
+      "summary": "ChatGPT Work 升级为可跨应用执行任务的智能代理，支持长时间项目协作。",
+      "source": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+      "date": "2026-07-10",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-07-08_001",
+      "id": "sig_2026-07-10_003",
       "level": 1,
+      "content": "NVIDIA 发布 Vera 专用 CPU",
+      "summary": "NVIDIA 推出专为代理 AI 设计的 Vera CPU，强调大规模单线程性能",
+      "source": "https://blogs.nvidia.com/blog/nvidia-vera-max-single-threaded-cpu-at-scale/",
+      "date": "2026-07-10",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-10_004",
+      "level": 1,
+      "content": "解析生产级 EDA 代理架构",
+      "summary": "文章解析构建可用于芯片设计的生产级 EDA AI 代理所需的关键架构决策。",
+      "source": "https://semiengineering.com/the-architecture-decisions-behind-a-production-ready-eda-ai-agent/",
+      "date": "2026-07-10",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-10_005",
+      "level": 1,
+      "content": "LPDDR 内存扩展至边缘 AI",
+      "summary": "LPDDR 内存正扩展至边缘 AI 平台，满足设备端实时推理的低功耗需求。",
+      "source": "https://semiengineering.com/the-expansion-of-lpddr-into-edge-ai-platforms/",
+      "date": "2026-07-10",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-07-10_006",
+      "level": 1,
+      "content": "AI 重塑半导体 IP 生态",
+      "summary": "AI 正在重塑半导体 IP 的创建、验证与管理方式，推动行业范式转变。",
+      "source": "https://semiengineering.com/ai-is-rewriting-the-ip-playbook/",
+      "date": "2026-07-10",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-07-10_007",
+      "level": 1,
+      "content": "Meta 复用旧内存降低成本",
+      "summary": "Meta 通过定制 CXL 桥接芯片复用旧服务器内存，大幅降低新数据中心建设成本",
+      "source": "https://www.theregister.com/systems/2026/06/29/zuck-saves-meta-bucks-by-reusing-memory-from-old-servers-with-a-custom-cxl-asic/5263483",
+      "date": "2026-07-10",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-07-10_008",
+      "level": 1,
+      "content": "谷歌举办纽约 AI 教育峰会",
+      "summary": "谷歌联合教育界与产业领袖在纽约举办 AI 教育峰会，探讨课堂 AI 应用未来。",
+      "source": "https://blog.google/products-and-platforms/products/education/nyc-ai-summit/",
+      "date": "2026-07-10",
+      "signal_index": 8
+    },
+    {
+      "id": "sig_2026-07-10_009",
+      "level": 1,
+      "content": "NVIDIA 优化开源模型性能",
+      "summary": "NVIDIA Nemotron 3 Ultra 结合 LangChain 实现开",
+      "source": "https://blogs.nvidia.com/blog/nemotron-langchain-agents-open-stack/",
+      "date": "2026-07-10",
+      "signal_index": 2
+    },
+    {
+      "id": "tag_2026-07-10_001",
+      "level": 2,
+      "content": "OpenAI 发布全双工语音模型",
+      "date": "2026-07-10"
+    },
+    {
+      "id": "tag_2026-07-10_002",
+      "level": 2,
+      "content": "OpenAI 警示代码评估基准偏差",
+      "date": "2026-07-10"
+    },
+    {
+      "id": "tag_2026-07-10_003",
+      "level": 2,
+      "content": "新型攻击诱导 AI 安装恶意软件",
+      "date": "2026-07-10"
+    },
+    {
+      "id": "tag_2026-07-10_004",
+      "level": 2,
+      "content": "OpenAI 阐述政府合作安全原则",
+      "date": "2026-07-10"
+    },
+    {
+      "id": "tag_2026-07-10_005",
+      "level": 2,
+      "content": "NVIDIA Nemotron 结…",
+      "date": "2026-07-10"
+    },
+    {
+      "id": "tag_2026-07-10_006",
+      "level": 2,
+      "content": "AI 编码代理频繁触发安全警报",
+      "date": "2026-07-10"
+    },
+    {
+      "id": "tag_2026-07-10_007",
+      "level": 2,
+      "content": "Google AI Studio …",
+      "date": "2026-07-10"
+    },
+    {
+      "id": "tag_2026-07-10_008",
+      "level": 2,
+      "content": "英矽智能 AI 新药迈入三期临床",
+      "date": "2026-07-10"
+    },
+    {
+      "id": "tag_2026-07-10_009",
+      "level": 2,
       "content": "腾讯开源 Hy3 混合专家模型",
-      "summary": "腾讯开源 Hy3 模型，总参数 2950 亿，激活 210 亿，支持 256K ",
-      "source": "https://www.marktechpost.com/2026/07/06/tencent-releases-hy3-open-295b-moe-model/",
-      "date": "2026-07-09",
-      "signal_index": null
+      "date": "2026-07-10"
     },
     {
       "id": "tag_2026-07-09_001",
@@ -89,56 +143,56 @@
       "date": "2026-07-09"
     },
     {
-      "id": "tag_2026-07-09_002",
-      "level": 2,
+      "id": "word_2026-07-09_002",
+      "level": 3,
       "content": "OpenAI 发布低延迟实时语音模型",
       "date": "2026-07-09"
     },
     {
-      "id": "tag_2026-07-09_003",
-      "level": 2,
+      "id": "word_2026-07-09_003",
+      "level": 3,
       "content": "Liquid AI 开源解决推理死…",
       "date": "2026-07-09"
     },
     {
-      "id": "tag_2026-07-09_004",
-      "level": 2,
+      "id": "word_2026-07-09_004",
+      "level": 3,
       "content": "谷歌扩展 Gemini 托管代理功能",
       "date": "2026-07-09"
     },
     {
-      "id": "tag_2026-07-09_005",
-      "level": 2,
+      "id": "word_2026-07-09_005",
+      "level": 3,
       "content": "英伟达推出 Vera CPU 赋能…",
       "date": "2026-07-09"
     },
     {
-      "id": "tag_2026-07-09_006",
-      "level": 2,
+      "id": "word_2026-07-09_006",
+      "level": 3,
       "content": "谷歌 Dialogflow CX …",
       "date": "2026-07-09"
     },
     {
-      "id": "tag_2026-07-09_007",
-      "level": 2,
+      "id": "word_2026-07-09_007",
+      "level": 3,
       "content": "快消巨头利用 AI 加速产品研发",
       "date": "2026-07-09"
     },
     {
-      "id": "tag_2026-07-09_008",
-      "level": 2,
+      "id": "word_2026-07-09_008",
+      "level": 3,
       "content": "解析中国 AI 伴侣监管新规意图",
       "date": "2026-07-09"
     },
     {
-      "id": "tag_2026-07-08_001",
-      "level": 2,
+      "id": "word_2026-07-08_001",
+      "level": 3,
       "content": "开放模型成 AI 科研核心驱动力",
       "date": "2026-07-08"
     },
     {
-      "id": "tag_2026-07-08_002",
-      "level": 2,
+      "id": "word_2026-07-08_002",
+      "level": 3,
       "content": "数据中心 AI 增长面临瓶颈挑战",
       "date": "2026-07-08"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "LlamaIndex 发布法律知识…",
       "date": "2026-07-08"
-    },
-    {
-      "id": "word_2026-07-08_009",
-      "level": 3,
-      "content": "2026 开源 PDF 转 JSO…",
-      "date": "2026-07-08"
-    },
-    {
-      "id": "word_2026-07-07_001",
-      "level": 3,
-      "content": "谷歌报告探讨英国 AI 生产力",
-      "date": "2026-07-07"
-    },
-    {
-      "id": "word_2026-07-07_003",
-      "level": 3,
-      "content": "高校提出 AgRefactor 自…",
-      "date": "2026-07-07"
-    },
-    {
-      "id": "word_2026-07-07_004",
-      "level": 3,
-      "content": "多国高校联合提出概率内存架构",
-      "date": "2026-07-07"
-    },
-    {
-      "id": "word_2026-07-07_005",
-      "level": 3,
-      "content": "Anthropic 发布科学多智能…",
-      "date": "2026-07-07"
-    },
-    {
-      "id": "word_2026-07-07_006",
-      "level": 3,
-      "content": "字节英伟达突破机器人导航",
-      "date": "2026-07-07"
-    },
-    {
-      "id": "word_2026-07-06_001",
-      "level": 3,
-      "content": "英伟达推 Horizon 代码智能体",
-      "date": "2026-07-06"
-    },
-    {
-      "id": "word_2026-07-06_002",
-      "level": 3,
-      "content": "武田制药六亿合作英矽智能",
-      "date": "2026-07-06"
-    },
-    {
-      "id": "word_2026-07-06_003",
-      "level": 3,
-      "content": "零售 AI 规模化个性推荐",
-      "date": "2026-07-06"
     }
   ]
 }
