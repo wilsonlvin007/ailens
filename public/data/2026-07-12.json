@@ -36,22 +36,6 @@
       "collected_at": "2026-07-12T06:00:00+08:00"
     },
     {
-      "id": "2026-07-12-005",
-      "title": "字节跳动推出机器人导航架构",
-      "category": "hardware",
-      "importance": 4,
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "source_name": "Synced Review",
-      "summary": "字节跳动推出 Astra 双模型架构，革命性提升机器人在复杂室内环境的自主导航能力。",
-      "analysis": "Astra 架构采用双模型协同策略，有效平衡了全局路径规划与局部避障的实时性需求。在动态变化的室内环境中，这种设计显著提升了机器人的响应速度与安全性。字节跳动将其在推荐算法上的并发处理经验迁移至机器人领域，展现了跨域技术融合的巨大潜力。该成果有望加速服务机器人在商业综合体及家庭场景的大规模落地，解决最后几米的配送难题。",
-      "tags": [
-        "机器人",
-        "字节跳动",
-        "自主导航"
-      ],
-      "collected_at": "2026-07-12T06:00:00+08:00"
-    },
-    {
       "id": "2026-07-12-006",
       "title": "德国电信携手 OpenAI 转型",
       "category": "application",

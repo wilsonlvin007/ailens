@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-07-11",
+  "updated_at": "2026-07-12",
   "items": [
+    {
+      "id": "sig_2026-07-12_001",
+      "level": 1,
+      "content": "GPT-5.6 集成微软办公套件",
+      "summary": "GPT-5.6 成为微软 365 Copilot 首选模型，全面增强 Word、",
+      "source": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+      "date": "2026-07-12",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-12_002",
+      "level": 1,
+      "content": "蚂蚁集团发布原生物理 AI 模型",
+      "summary": "蚂蚁集团发布原生物理 AI 模型 LingBot-VA 2.0，具备前瞻推理能力",
+      "source": "https://www.marktechpost.com/2026/07/11/ant-groups-robbyant-unveils-lingbot-va-2-0/",
+      "date": "2026-07-12",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-07-12_003",
+      "level": 1,
+      "content": "字节跳动推出机器人导航架构",
+      "summary": "字节跳动推出 Astra 双模型架构，革命性提升机器人在复杂室内环境的自主导航能",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-07-12",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-07-12_004",
+      "level": 1,
+      "content": "高校研究多 Agent 系统失败归因",
+      "summary": "宾州州立与杜克大学研究多 Agent 系统失败归因机制，自动定位任务失效根源。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-07-12",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-12_005",
+      "level": 1,
+      "content": "英伟达 CEO 谈 Token 预算标准",
+      "summary": "英伟达 CEO 提出工程师价值新标准：AI Token 消耗应低于年薪一半，引发",
+      "source": "https://www.artificialintelligence-news.com/news/shrink-token-budget-not-team/",
+      "date": "2026-07-12",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-07-12_006",
+      "level": 1,
+      "content": "反思过度依赖大模型现象",
+      "summary": "文章反思过度依赖 LLM 解决所有问题的现象，呼吁保留人类专业判断与深度思考。",
+      "source": "https://blog.yaelwrites.com/stop-telling-me-to-ask-an-llm/",
+      "date": "2026-07-12",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-07-12_007",
+      "level": 1,
+      "content": "德国电信携手 OpenAI 转型",
+      "summary": "德国电信携手 OpenAI 转型 AI 原生运营商，重塑客服、员工流程及网络运营",
+      "source": "https://openai.com/index/deutsche-telekom",
+      "date": "2026-07-12",
+      "signal_index": 3
+    },
     {
       "id": "sig_2026-07-11_001",
       "level": 1,
       "content": "苹果起诉 OpenAI 窃密",
       "summary": "苹果指控 OpenAI 前员工窃取商业机密，引发行业对人才流动与知识产权保护的深",
       "source": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
-      "date": "2026-07-11",
-      "signal_index": 0
+      "date": "2026-07-12",
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-11_002",
@@ -16,71 +79,50 @@
       "content": "GPT-5.6 证明数学猜想",
       "summary": "GPT-5.6 Sol Ultra 成功证明“圈双覆盖猜想”，标志 AI 在抽象",
       "source": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
-      "date": "2026-07-11",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-07-11_003",
-      "level": 1,
-      "content": "德国电信重构 AI 运营",
-      "summary": "德国电信携手 OpenAI 打造原生 AI 运营商，重构客服、运维及未来语音交互",
-      "source": "https://openai.com/index/deutsche-telekom",
-      "date": "2026-07-11",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-07-11_004",
-      "level": 1,
-      "content": "AWS GraphRAG 加速药研",
-      "summary": "AWS GraphRAG 部署将药物研发周期缩短 87%，通过知识图谱整合私有数",
-      "source": "https://www.artificialintelligence-news.com/news/aws-graphrag-deployment-cuts-drug-research-cycles-by-87/",
-      "date": "2026-07-11",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-07-11_005",
-      "level": 1,
-      "content": "谷歌发布 SensorFM 模型",
-      "summary": "谷歌发布 SensorFM 健康基础模型，基于万亿分钟传感器数据预训练，革新可穿",
-      "source": "https://www.marktechpost.com/2026/07/10/google-research-introduces-sensorfm-a-wearable-health-foundation-model-pretrained-on-one-trillion-minutes-of-sensor-data/",
-      "date": "2026-07-11",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-07-11_006",
-      "level": 1,
-      "content": "NHS 拟用 AI 筛查子宫癌",
-      "summary": "英国 NHS 医院拟采用 AI 血液检测筛查子宫癌，有望减少每年数万例侵入性检查",
-      "source": "https://www.artificialintelligence-news.com/news/nhs-ai-blood-test-womb-cancer-checks/",
-      "date": "2026-07-11",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-07-11_007",
-      "level": 1,
-      "content": "Kyutai 开源音乐转录模型",
-      "summary": "Kyutai 开源 MuScriptor 模型，可将多乐器混合音频高精度转录为 ",
-      "source": "https://www.marktechpost.com/2026/07/10/kyutai-releases-muscriptor-an-open-weight-decoder-only-transformer-for-multi-instrument-music-transcription-to-midi/",
-      "date": "2026-07-11",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-07-11_008",
-      "level": 1,
-      "content": "构建低成本数据科学代理",
-      "summary": "教程展示如何基于 DeepAnalyze-8B 构建低成本自主数据科学代理，支持",
-      "source": "https://www.marktechpost.com/2026/07/10/how-to-build-a-t4-friendly-autonomous-data-science-agent-with-deepanalyze-8b-sandboxed-code-execution-and-iterative-analysis/",
-      "date": "2026-07-11",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-07-10_001",
-      "level": 1,
-      "content": "GPT-5.6 成微软首选模型",
-      "summary": "GPT-5.6 正式成为微软 365 Copilot 首选模型，显著提升办公套件",
-      "source": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
-      "date": "2026-07-11",
+      "date": "2026-07-12",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-07-12_001",
+      "level": 2,
+      "content": "德国电信重构 AI 运营",
+      "date": "2026-07-12"
+    },
+    {
+      "id": "tag_2026-07-12_002",
+      "level": 2,
+      "content": "AWS GraphRAG 加速药研",
+      "date": "2026-07-12"
+    },
+    {
+      "id": "tag_2026-07-12_003",
+      "level": 2,
+      "content": "谷歌发布 SensorFM 模型",
+      "date": "2026-07-12"
+    },
+    {
+      "id": "tag_2026-07-12_004",
+      "level": 2,
+      "content": "NHS 拟用 AI 筛查子宫癌",
+      "date": "2026-07-12"
+    },
+    {
+      "id": "tag_2026-07-12_005",
+      "level": 2,
+      "content": "Kyutai 开源音乐转录模型",
+      "date": "2026-07-12"
+    },
+    {
+      "id": "tag_2026-07-12_006",
+      "level": 2,
+      "content": "构建低成本数据科学代理",
+      "date": "2026-07-12"
+    },
+    {
+      "id": "tag_2026-07-12_007",
+      "level": 2,
+      "content": "GPT-5.6 成微软首选模型",
+      "date": "2026-07-12"
     },
     {
       "id": "tag_2026-07-11_001",
@@ -101,44 +143,44 @@
       "date": "2026-07-11"
     },
     {
-      "id": "tag_2026-07-11_004",
-      "level": 2,
+      "id": "word_2026-07-11_004",
+      "level": 3,
       "content": "LPDDR 内存扩展至边缘 AI",
       "date": "2026-07-11"
     },
     {
-      "id": "tag_2026-07-11_005",
-      "level": 2,
+      "id": "word_2026-07-11_005",
+      "level": 3,
       "content": "AI 重塑半导体 IP 生态",
       "date": "2026-07-11"
     },
     {
-      "id": "tag_2026-07-11_006",
-      "level": 2,
+      "id": "word_2026-07-11_006",
+      "level": 3,
       "content": "Meta 复用旧内存降低成本",
       "date": "2026-07-11"
     },
     {
-      "id": "tag_2026-07-11_007",
-      "level": 2,
+      "id": "word_2026-07-11_007",
+      "level": 3,
       "content": "谷歌举办纽约 AI 教育峰会",
       "date": "2026-07-11"
     },
     {
-      "id": "tag_2026-07-11_008",
-      "level": 2,
+      "id": "word_2026-07-11_008",
+      "level": 3,
       "content": "NVIDIA 优化开源模型性能",
       "date": "2026-07-11"
     },
     {
-      "id": "tag_2026-07-10_001",
-      "level": 2,
+      "id": "word_2026-07-10_001",
+      "level": 3,
       "content": "OpenAI 发布全双工语音模型",
       "date": "2026-07-10"
     },
     {
-      "id": "tag_2026-07-10_002",
-      "level": 2,
+      "id": "word_2026-07-10_002",
+      "level": 3,
       "content": "OpenAI 警示代码评估基准偏差",
       "date": "2026-07-10"
     },
@@ -188,48 +230,6 @@
       "id": "word_2026-07-09_001",
       "level": 3,
       "content": "英矽智能 AI 新药进入三期临床",
-      "date": "2026-07-09"
-    },
-    {
-      "id": "word_2026-07-09_002",
-      "level": 3,
-      "content": "OpenAI 发布低延迟实时语音模型",
-      "date": "2026-07-09"
-    },
-    {
-      "id": "word_2026-07-09_003",
-      "level": 3,
-      "content": "Liquid AI 开源解决推理死…",
-      "date": "2026-07-09"
-    },
-    {
-      "id": "word_2026-07-09_004",
-      "level": 3,
-      "content": "谷歌扩展 Gemini 托管代理功能",
-      "date": "2026-07-09"
-    },
-    {
-      "id": "word_2026-07-09_005",
-      "level": 3,
-      "content": "英伟达推出 Vera CPU 赋能…",
-      "date": "2026-07-09"
-    },
-    {
-      "id": "word_2026-07-09_006",
-      "level": 3,
-      "content": "谷歌 Dialogflow CX …",
-      "date": "2026-07-09"
-    },
-    {
-      "id": "word_2026-07-09_007",
-      "level": 3,
-      "content": "快消巨头利用 AI 加速产品研发",
-      "date": "2026-07-09"
-    },
-    {
-      "id": "word_2026-07-09_008",
-      "level": 3,
-      "content": "解析中国 AI 伴侣监管新规意图",
       "date": "2026-07-09"
     }
   ]
