@@ -4,17 +4,6 @@
   "summary": "MIT 推出 SEAL 框架，利用强化学习使大语言模型能够自我编辑和更新权重，迈向自进化 AI。；Mira Murati 团队发表文章，从技术角度论证基于可定制权重的以人为本 AI 及去中心化对齐的重要性。；德国电信利用 OpenAI 技术改造客户服务与网络运营，转型为原生 AI 电信运营商。",
   "items": [
     {
-      "id": "2026-07-13-003",
-      "title": "MIT 推出自进化 AI 框架 SEAL",
-      "category": "technology",
-      "importance": 4,
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "source_name": "Synced Review",
-      "summary": "MIT 推出 SEAL 框架，利用强化学习使大语言模型能够自我编辑和更新权重，迈向自进化 AI。",
-      "analysis": "SEAL 框架的提出触及了 AI 发展的圣杯：自我进化。传统模型依赖人类收集数据并进行离线训练，迭代周期长且成本高。SEAL 允许模型通过强化学习直接调整自身权重，实现了在线自我修正与能力增长。若该技术能解决稳定性与灾难性遗忘问题，将彻底改变模型开发范式，使 AI 系统具备类似生物的适应性，能够实时应对未知环境，是通往通用人工智能（AGI）的重要理论突破。",
-      "collected_at": "2026-07-13T06:00:00+08:00"
-    },
-    {
       "id": "2026-07-13-006",
       "title": "Mira Murati 倡导以人为本 AI",
       "category": "thought",
