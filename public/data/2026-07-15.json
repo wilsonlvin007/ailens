@@ -68,22 +68,6 @@
       "collected_at": "2026-07-15T06:00:00+08:00"
     },
     {
-      "id": "2026-07-15-007",
-      "title": "多智能体系统失败归因研究",
-      "category": "technology",
-      "importance": 3,
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "source_name": "Synced Review",
-      "summary": "宾州州立与杜克大学提出自动化方法，精准定位多智能体系统中导致任务失败的具体代理及时机。",
-      "analysis": "多智能体协作是通往 AGI 的必经之路，但其“黑盒”特性使得故障排查极其困难。该研究提出的自动化归因方法，如同为复杂的智能体网络安装了“黑匣子”，能精准定位是哪个代理在哪个环节出错。这对于构建高可靠性的工业级多智能体系统至关重要，能显著降低调试成本，提升系统鲁棒性。长远看，这是多智能体系统从实验室走向大规模商用的必要基础设施，为后续的责任界定和系统优化提供了科学依据。",
-      "tags": [
-        "多智能体",
-        "故障归因",
-        "学术研究"
-      ],
-      "collected_at": "2026-07-15T06:00:00+08:00"
-    },
-    {
       "id": "2026-07-15-008",
       "title": "Chrome 版 Claude 存数据泄露漏洞",
       "category": "thought",
