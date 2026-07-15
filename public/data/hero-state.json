@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "items": [
     {
-      "id": "sig_2026-07-15_001",
+      "id": "sig_2026-07-16_001",
       "level": 1,
-      "content": "OpenAI 发布智能体投资指南",
-      "summary": "OpenAI 发布指南，指导企业通过衡量单位美元产出和扩展高价值工作流来管理智能",
-      "source": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-      "date": "2026-07-15",
+      "content": "OpenAI 倡导反向联邦主义治理",
+      "summary": "OpenAI 提出“反向联邦主义”方案，主张由州级法律先行试点，逐步构建国家级 ",
+      "source": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+      "date": "2026-07-16",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-07-15_002",
+      "id": "sig_2026-07-16_002",
       "level": 1,
-      "content": "英伟达推 Nemotron 可信开放模型",
-      "summary": "英伟达探讨 Nemotron 开放模型如何助企业和国家构建可控、可信且可定制的专",
-      "source": "https://blogs.nvidia.com/blog/nemotron-open-models-ai-trust-control-customize/",
-      "date": "2026-07-15",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-07-15_003",
-      "level": 1,
-      "content": "每瓦性能成 AI 基建终极指标",
-      "summary": "文章指出每瓦性能是衡量 AI 基础设施效率的终极指标，直接决定算力工厂的盈利与可",
-      "source": "https://blogs.nvidia.com/blog/performance-per-watt-ai-infrastructure-efficiency/",
-      "date": "2026-07-15",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-07-15_004",
-      "level": 1,
-      "content": "多智能体系统失败归因研究",
-      "summary": "宾州州立与杜克大学提出自动化方法，精准定位多智能体系统中导致任务失败的具体代理及",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-07-15",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-07-15_005",
-      "level": 1,
-      "content": "Chrome 版 Claude 存数据泄露漏洞",
-      "summary": "研究发现 Chrome 版 Claude 存在漏洞，恶意扩展程序可触发其读取用户",
-      "source": "https://thehackernews.com/2026/07/claude-for-chrome-flaw-lets-other.html",
-      "date": "2026-07-15",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-07-15_006",
-      "level": 1,
-      "content": "边缘设备定制 NPU 运行 AI 模型",
-      "summary": "探讨如何在边缘设备上定制 NPU 以运行 AI 模型，同时保持系统的灵活性与能效",
-      "source": "https://semiengineering.com/ai-models-on-the-edge/",
-      "date": "2026-07-15",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-07-15_007",
-      "level": 1,
-      "content": "字节跳动开源机器人导航架构",
-      "summary": "字节跳动发布 Astra 双模型架构，专为复杂室内环境下自主机器人导航设计，提升",
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-07-15",
+      "content": "Google 发布 LiteRT.js 浏览器推理",
+      "summary": "Google 推出 LiteRT.js，支持浏览器通过 WebGPU 直接运行 ",
+      "source": "https://www.marktechpost.com/2026/07/15/google-releases-litert-js-a-javascript-binding-of-litert-that-runs-tflite-models-in-browsers-via-webgpu/",
+      "date": "2026-07-16",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-07-14_001",
+      "id": "sig_2026-07-16_003",
       "level": 1,
-      "content": "MIT 发布自进化 AI 框架 SEAL",
-      "summary": "MIT 推出 SEAL 框架，利用强化学习使大模型能自我编辑和更新权重，迈向自进",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-07-15",
-      "signal_index": null
+      "content": "Soofi 开源德英双语混合 MoE 模型",
+      "summary": "Soofi 联盟开源混合 Mamba-Transformer 架构模型，针对德英",
+      "source": "https://www.marktechpost.com/2026/07/15/soofi-consortium-releases-soofi-s-30b-a3b-an-open-hybrid-mamba-transformer-moe-foundation-model-for-german-and-english/",
+      "date": "2026-07-16",
+      "signal_index": 2
     },
     {
-      "id": "sig_2026-07-14_002",
+      "id": "sig_2026-07-16_004",
       "level": 1,
+      "content": "Gemini API 扩展托管 Agent 功能",
+      "summary": "Google 升级 Gemini API，新增后台任务与远程 MCP 支持，助力",
+      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+      "date": "2026-07-16",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-16_005",
+      "level": 1,
+      "content": "诺基亚联合英伟达推 AI-RAN 平台",
+      "summary": "诺基亚携手英伟达推出首个 AI-RAN 平台，利用 GPU 加速大幅提升无线频谱",
+      "source": "https://www.artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia/",
+      "date": "2026-07-16",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-16_006",
+      "level": 1,
+      "content": "Cloudflare 强制 AI 爬虫获取授权",
+      "summary": "Cloudflare 宣布九月起默认拦截未授权 AI 爬虫，确立智能体访问网络资",
+      "source": "https://www.artificialintelligence-news.com/news/ai-agent-crawlers-cloudflare-rules/",
+      "date": "2026-07-16",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-07-16_007",
+      "level": 1,
+      "content": "AWS 合作推出医院合规 AI 方案",
+      "summary": "AWS 联合 Bluesight 推出 Prism AI 层，协助医院药房自动化",
+      "source": "https://www.artificialintelligence-news.com/news/aws-and-bluesight-build-ai-for-hospital-340b-compliance/",
+      "date": "2026-07-16",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-07-16_008",
+      "level": 1,
+      "content": "新型物联网僵尸网络疑似 AI 生成",
+      "summary": "研究发现 TuxBot v3 僵尸网络疑似由大模型辅助开发，标志 AI 技术被恶",
+      "source": "https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-llm.html",
+      "date": "2026-07-16",
+      "signal_index": 9
+    },
+    {
+      "id": "sig_2026-07-16_009",
+      "level": 1,
+      "content": "OpenAI 指导智能体时代投资管理",
+      "summary": "OpenAI 发布指南，建议企业以单位美元产出衡量 AI 价值，聚焦高价值工作流",
+      "source": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+      "date": "2026-07-16",
+      "signal_index": 5
+    },
+    {
+      "id": "tag_2026-07-16_001",
+      "level": 2,
+      "content": "OpenAI 发布智能体投资指南",
+      "date": "2026-07-16"
+    },
+    {
+      "id": "tag_2026-07-16_002",
+      "level": 2,
+      "content": "英伟达推 Nemotron 可信开…",
+      "date": "2026-07-16"
+    },
+    {
+      "id": "tag_2026-07-16_003",
+      "level": 2,
+      "content": "每瓦性能成 AI 基建终极指标",
+      "date": "2026-07-16"
+    },
+    {
+      "id": "tag_2026-07-16_004",
+      "level": 2,
+      "content": "多智能体系统失败归因研究",
+      "date": "2026-07-16"
+    },
+    {
+      "id": "tag_2026-07-16_005",
+      "level": 2,
+      "content": "Chrome 版 Claude 存…",
+      "date": "2026-07-16"
+    },
+    {
+      "id": "tag_2026-07-16_006",
+      "level": 2,
+      "content": "边缘设备定制 NPU 运行 AI …",
+      "date": "2026-07-16"
+    },
+    {
+      "id": "tag_2026-07-16_007",
+      "level": 2,
+      "content": "字节跳动开源机器人导航架构",
+      "date": "2026-07-16"
+    },
+    {
+      "id": "tag_2026-07-16_008",
+      "level": 2,
+      "content": "MIT 发布自进化 AI 框架 S…",
+      "date": "2026-07-16"
+    },
+    {
+      "id": "tag_2026-07-16_009",
+      "level": 2,
       "content": "SK 海力士推 LLM 推理新架构",
-      "summary": "SK 海力士提出 StreamDQ 架构，在自定义 HBM 中实现近存反量化，加",
-      "source": "https://semiengineering.com/near-memory-dequantization-architecture-in-custom-hbm-for-llm-inference-sk-hynix/",
-      "date": "2026-07-15",
-      "signal_index": null
+      "date": "2026-07-16"
     },
     {
       "id": "tag_2026-07-15_001",
@@ -89,56 +143,56 @@
       "date": "2026-07-15"
     },
     {
-      "id": "tag_2026-07-15_002",
-      "level": 2,
+      "id": "word_2026-07-15_002",
+      "level": 3,
       "content": "NVIDIA 推出 Vera CP…",
       "date": "2026-07-15"
     },
     {
-      "id": "tag_2026-07-15_003",
-      "level": 2,
+      "id": "word_2026-07-15_003",
+      "level": 3,
       "content": "二季度 AI 初创融资超六十亿",
       "date": "2026-07-15"
     },
     {
-      "id": "tag_2026-07-15_004",
-      "level": 2,
+      "id": "word_2026-07-15_004",
+      "level": 3,
       "content": "GeForce NOW 部署 RT…",
       "date": "2026-07-15"
     },
     {
-      "id": "tag_2026-07-15_005",
-      "level": 2,
+      "id": "word_2026-07-15_005",
+      "level": 3,
       "content": "MIT 推出自进化 AI 框架 S…",
       "date": "2026-07-15"
     },
     {
-      "id": "tag_2026-07-15_006",
-      "level": 2,
+      "id": "word_2026-07-15_006",
+      "level": 3,
       "content": "Mira Murati 倡导以人为…",
       "date": "2026-07-15"
     },
     {
-      "id": "tag_2026-07-15_007",
-      "level": 2,
+      "id": "word_2026-07-15_007",
+      "level": 3,
       "content": "英伟达升级多伦多云游戏服务器",
       "date": "2026-07-15"
     },
     {
-      "id": "tag_2026-07-14_001",
-      "level": 2,
+      "id": "word_2026-07-14_001",
+      "level": 3,
       "content": "德国电信转型原生 AI 运营商",
       "date": "2026-07-14"
     },
     {
-      "id": "tag_2026-07-14_002",
-      "level": 2,
+      "id": "word_2026-07-14_002",
+      "level": 3,
       "content": "GPT-5.6 集成微软办公套件",
       "date": "2026-07-14"
     },
     {
-      "id": "tag_2026-07-14_003",
-      "level": 2,
+      "id": "word_2026-07-14_003",
+      "level": 3,
       "content": "蚂蚁集团发布原生物理 AI 模型",
       "date": "2026-07-14"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "苹果起诉 OpenAI 窃密",
       "date": "2026-07-13"
-    },
-    {
-      "id": "word_2026-07-13_004",
-      "level": 3,
-      "content": "GPT-5.6 证明数学猜想",
-      "date": "2026-07-13"
-    },
-    {
-      "id": "word_2026-07-12_001",
-      "level": 3,
-      "content": "德国电信重构 AI 运营",
-      "date": "2026-07-12"
-    },
-    {
-      "id": "word_2026-07-12_002",
-      "level": 3,
-      "content": "AWS GraphRAG 加速药研",
-      "date": "2026-07-12"
-    },
-    {
-      "id": "word_2026-07-12_003",
-      "level": 3,
-      "content": "谷歌发布 SensorFM 模型",
-      "date": "2026-07-12"
-    },
-    {
-      "id": "word_2026-07-12_004",
-      "level": 3,
-      "content": "NHS 拟用 AI 筛查子宫癌",
-      "date": "2026-07-12"
-    },
-    {
-      "id": "word_2026-07-12_005",
-      "level": 3,
-      "content": "Kyutai 开源音乐转录模型",
-      "date": "2026-07-12"
-    },
-    {
-      "id": "word_2026-07-12_006",
-      "level": 3,
-      "content": "构建低成本数据科学代理",
-      "date": "2026-07-12"
-    },
-    {
-      "id": "word_2026-07-12_007",
-      "level": 3,
-      "content": "GPT-5.6 成微软首选模型",
-      "date": "2026-07-12"
-    },
-    {
-      "id": "word_2026-07-11_001",
-      "level": 3,
-      "content": "ChatGPT 升级全能工作伙伴",
-      "date": "2026-07-11"
     }
   ]
 }
