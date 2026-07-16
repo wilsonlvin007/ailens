@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "items": [
     {
-      "id": "sig_2026-07-16_001",
+      "id": "sig_2026-07-17_001",
       "level": 1,
-      "content": "OpenAI 倡导反向联邦主义治理",
-      "summary": "OpenAI 提出“反向联邦主义”方案，主张由州级法律先行试点，逐步构建国家级 ",
-      "source": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
-      "date": "2026-07-16",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-07-16_002",
-      "level": 1,
-      "content": "Google 发布 LiteRT.js 浏览器推理",
-      "summary": "Google 推出 LiteRT.js，支持浏览器通过 WebGPU 直接运行 ",
-      "source": "https://www.marktechpost.com/2026/07/15/google-releases-litert-js-a-javascript-binding-of-litert-that-runs-tflite-models-in-browsers-via-webgpu/",
-      "date": "2026-07-16",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-07-16_003",
-      "level": 1,
-      "content": "Soofi 开源德英双语混合 MoE 模型",
-      "summary": "Soofi 联盟开源混合 Mamba-Transformer 架构模型，针对德英",
-      "source": "https://www.marktechpost.com/2026/07/15/soofi-consortium-releases-soofi-s-30b-a3b-an-open-hybrid-mamba-transformer-moe-foundation-model-for-german-and-english/",
-      "date": "2026-07-16",
+      "content": "OpenAI 披露自动化红队模型 GPT-Red",
+      "summary": "OpenAI 公开内部自动化红队模型 GPT-Red，其在提示注入测试中表现远超",
+      "source": "https://www.marktechpost.com/2026/07/16/openai-details-gpt-red-an-internal-automated-red-teaming-model-that-beat-human-red-teamers-84-to-13-on-prompt-injection/",
+      "date": "2026-07-17",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-07-16_004",
+      "id": "sig_2026-07-17_002",
       "level": 1,
-      "content": "Gemini API 扩展托管 Agent 功能",
-      "summary": "Google 升级 Gemini API，新增后台任务与远程 MCP 支持，助力",
-      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
-      "date": "2026-07-16",
+      "content": "Neko Health 获七亿美元融资",
+      "summary": "Neko Health 融资 7 亿美元，计划利用 AI 全身扫描技术在美国扩展",
+      "source": "https://www.artificialintelligence-news.com/news/neko-health-700m-ai-body-scans-us/",
+      "date": "2026-07-17",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-07-16_005",
+      "id": "sig_2026-07-17_003",
       "level": 1,
-      "content": "诺基亚联合英伟达推 AI-RAN 平台",
-      "summary": "诺基亚携手英伟达推出首个 AI-RAN 平台，利用 GPU 加速大幅提升无线频谱",
-      "source": "https://www.artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia/",
-      "date": "2026-07-16",
+      "content": "Thinking Machines 开源 Inkling 模型",
+      "summary": "Thinking Machines 发布首个开源权重基础模型 Inkling，采",
+      "source": "https://news.smol.ai/issues/26-07-15-thinky-inkling/",
+      "date": "2026-07-17",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-17_004",
+      "level": 1,
+      "content": "DeepMind 推进生物弹性计划",
+      "summary": "Google DeepMind 联手 Isomorphic Labs 推进生物弹",
+      "source": "https://www.artificialintelligence-news.com/news/examining-google-deepmind-ai-bioresilience-push/",
+      "date": "2026-07-17",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-07-16_006",
+      "id": "sig_2026-07-17_005",
       "level": 1,
-      "content": "Cloudflare 强制 AI 爬虫获取授权",
-      "summary": "Cloudflare 宣布九月起默认拦截未授权 AI 爬虫，确立智能体访问网络资",
-      "source": "https://www.artificialintelligence-news.com/news/ai-agent-crawlers-cloudflare-rules/",
-      "date": "2026-07-16",
+      "content": "SpaceXAI 开源 Grok Build 工具链",
+      "summary": "SpaceXAI 开源 Grok Build 的 Rust 代理框架及工具层，但",
+      "source": "https://www.marktechpost.com/2026/07/15/spacexai-open-sources-grok-build-the-rust-agent-harness-tui-tui-and-tool-layer-behind-its-coding-cli/",
+      "date": "2026-07-17",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-07-16_007",
+      "id": "sig_2026-07-17_006",
       "level": 1,
-      "content": "AWS 合作推出医院合规 AI 方案",
-      "summary": "AWS 联合 Bluesight 推出 Prism AI 层，协助医院药房自动化",
-      "source": "https://www.artificialintelligence-news.com/news/aws-and-bluesight-build-ai-for-hospital-340b-compliance/",
-      "date": "2026-07-16",
+      "content": "Cars24 借 OpenAI 重塑客服体验",
+      "summary": "Cars24 利用 OpenAI 语音和聊天代理处理百万级对话，显著挽回流失潜在",
+      "source": "https://openai.com/index/cars24",
+      "date": "2026-07-17",
       "signal_index": 7
     },
     {
-      "id": "sig_2026-07-16_008",
+      "id": "sig_2026-07-17_007",
       "level": 1,
-      "content": "新型物联网僵尸网络疑似 AI 生成",
-      "summary": "研究发现 TuxBot v3 僵尸网络疑似由大模型辅助开发，标志 AI 技术被恶",
-      "source": "https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-llm.html",
-      "date": "2026-07-16",
-      "signal_index": 9
+      "content": "学者探索多智能体失败归因",
+      "summary": "宾州州立与杜克大学研究者探索多智能体系统任务失败的自动归因方法。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-07-17",
+      "signal_index": 8
     },
     {
-      "id": "sig_2026-07-16_009",
+      "id": "sig_2026-07-17_008",
       "level": 1,
-      "content": "OpenAI 指导智能体时代投资管理",
-      "summary": "OpenAI 发布指南，建议企业以单位美元产出衡量 AI 价值，聚焦高价值工作流",
-      "source": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-      "date": "2026-07-16",
+      "content": "OpenAI 推出 GPT-5.6 系列模型",
+      "summary": "OpenAI 发布 GPT-5.6 系列（Sol/Terra/Luna），集成至",
+      "source": "https://news.smol.ai/issues/26-07-09-gpt-56/",
+      "date": "2026-07-17",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-07-17_009",
+      "level": 1,
+      "content": "诺基亚推基于英伟达 AI-RAN 平台",
+      "summary": "诺基亚推出基于 NVIDIA 技术的 AI-RAN 平台，旨在提升现有频谱的网络",
+      "source": "https://www.artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia/",
+      "date": "2026-07-17",
       "signal_index": 5
+    },
+    {
+      "id": "tag_2026-07-17_001",
+      "level": 2,
+      "content": "OpenAI 倡导反向联邦主义治理",
+      "date": "2026-07-17"
+    },
+    {
+      "id": "tag_2026-07-17_002",
+      "level": 2,
+      "content": "Google 发布 LiteRT.…",
+      "date": "2026-07-17"
+    },
+    {
+      "id": "tag_2026-07-17_003",
+      "level": 2,
+      "content": "Soofi 开源德英双语混合 Mo…",
+      "date": "2026-07-17"
+    },
+    {
+      "id": "tag_2026-07-17_004",
+      "level": 2,
+      "content": "Gemini API 扩展托管 A…",
+      "date": "2026-07-17"
+    },
+    {
+      "id": "tag_2026-07-17_005",
+      "level": 2,
+      "content": "诺基亚联合英伟达推 AI-RAN …",
+      "date": "2026-07-17"
+    },
+    {
+      "id": "tag_2026-07-17_006",
+      "level": 2,
+      "content": "Cloudflare 强制 AI …",
+      "date": "2026-07-17"
+    },
+    {
+      "id": "tag_2026-07-17_007",
+      "level": 2,
+      "content": "AWS 合作推出医院合规 AI 方案",
+      "date": "2026-07-17"
+    },
+    {
+      "id": "tag_2026-07-17_008",
+      "level": 2,
+      "content": "新型物联网僵尸网络疑似 AI 生成",
+      "date": "2026-07-17"
+    },
+    {
+      "id": "tag_2026-07-17_009",
+      "level": 2,
+      "content": "OpenAI 指导智能体时代投资管理",
+      "date": "2026-07-17"
     },
     {
       "id": "tag_2026-07-16_001",
@@ -89,56 +143,56 @@
       "date": "2026-07-16"
     },
     {
-      "id": "tag_2026-07-16_002",
-      "level": 2,
+      "id": "word_2026-07-16_002",
+      "level": 3,
       "content": "英伟达推 Nemotron 可信开…",
       "date": "2026-07-16"
     },
     {
-      "id": "tag_2026-07-16_003",
-      "level": 2,
+      "id": "word_2026-07-16_003",
+      "level": 3,
       "content": "每瓦性能成 AI 基建终极指标",
       "date": "2026-07-16"
     },
     {
-      "id": "tag_2026-07-16_004",
-      "level": 2,
+      "id": "word_2026-07-16_004",
+      "level": 3,
       "content": "多智能体系统失败归因研究",
       "date": "2026-07-16"
     },
     {
-      "id": "tag_2026-07-16_005",
-      "level": 2,
+      "id": "word_2026-07-16_005",
+      "level": 3,
       "content": "Chrome 版 Claude 存…",
       "date": "2026-07-16"
     },
     {
-      "id": "tag_2026-07-16_006",
-      "level": 2,
+      "id": "word_2026-07-16_006",
+      "level": 3,
       "content": "边缘设备定制 NPU 运行 AI …",
       "date": "2026-07-16"
     },
     {
-      "id": "tag_2026-07-16_007",
-      "level": 2,
+      "id": "word_2026-07-16_007",
+      "level": 3,
       "content": "字节跳动开源机器人导航架构",
       "date": "2026-07-16"
     },
     {
-      "id": "tag_2026-07-16_008",
-      "level": 2,
+      "id": "word_2026-07-16_008",
+      "level": 3,
       "content": "MIT 发布自进化 AI 框架 S…",
       "date": "2026-07-16"
     },
     {
-      "id": "tag_2026-07-16_009",
-      "level": 2,
+      "id": "word_2026-07-16_009",
+      "level": 3,
       "content": "SK 海力士推 LLM 推理新架构",
       "date": "2026-07-16"
     },
     {
-      "id": "tag_2026-07-15_001",
-      "level": 2,
+      "id": "word_2026-07-15_001",
+      "level": 3,
       "content": "字节跳动发布 Astra 导航架构",
       "date": "2026-07-15"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "英伟达升级多伦多云游戏服务器",
       "date": "2026-07-15"
-    },
-    {
-      "id": "word_2026-07-14_001",
-      "level": 3,
-      "content": "德国电信转型原生 AI 运营商",
-      "date": "2026-07-14"
-    },
-    {
-      "id": "word_2026-07-14_002",
-      "level": 3,
-      "content": "GPT-5.6 集成微软办公套件",
-      "date": "2026-07-14"
-    },
-    {
-      "id": "word_2026-07-14_003",
-      "level": 3,
-      "content": "蚂蚁集团发布原生物理 AI 模型",
-      "date": "2026-07-14"
-    },
-    {
-      "id": "word_2026-07-14_004",
-      "level": 3,
-      "content": "字节跳动推出机器人导航架构",
-      "date": "2026-07-14"
-    },
-    {
-      "id": "word_2026-07-14_005",
-      "level": 3,
-      "content": "高校研究多 Agent 系统失败归因",
-      "date": "2026-07-14"
-    },
-    {
-      "id": "word_2026-07-14_006",
-      "level": 3,
-      "content": "英伟达 CEO 谈 Token 预…",
-      "date": "2026-07-14"
-    },
-    {
-      "id": "word_2026-07-13_001",
-      "level": 3,
-      "content": "反思过度依赖大模型现象",
-      "date": "2026-07-13"
-    },
-    {
-      "id": "word_2026-07-13_002",
-      "level": 3,
-      "content": "德国电信携手 OpenAI 转型",
-      "date": "2026-07-13"
-    },
-    {
-      "id": "word_2026-07-13_003",
-      "level": 3,
-      "content": "苹果起诉 OpenAI 窃密",
-      "date": "2026-07-13"
     }
   ]
 }
