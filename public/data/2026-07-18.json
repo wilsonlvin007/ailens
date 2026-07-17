@@ -36,22 +36,6 @@
       "collected_at": "2026-07-18T06:00:00+08:00"
     },
     {
-      "id": "2026-07-18-003",
-      "title": "MIT 提出 AI 自我进化框架",
-      "category": "technology",
-      "importance": 4,
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "source_name": "Synced Review",
-      "summary": "MIT 研发 SEAL 框架，利用强化学习让大模型自我编辑权重，推动 AI 自主进化能力提升。",
-      "analysis": "SEAL 框架的提出触及了 AI 发展的终极命题之一：自我改进。传统模型迭代依赖人工数据清洗和重训练，周期长且成本高。SEAL 允许模型通过强化学习直接调整自身权重，实现了从“被动学习”到“主动进化”的范式转变。虽然目前仍处于早期研究阶段，但其潜力巨大，可能导致模型能力的指数级增长。然而，这也引发了对对齐问题的深层担忧：若缺乏严格约束，自我进化的 AI 可能偏离人类价值观。这一成果将为未来可控 AGI 的研究提供关键实验床。",
-      "tags": [
-        "自我进化",
-        "强化学习",
-        "前沿研究"
-      ],
-      "collected_at": "2026-07-18T06:00:00+08:00"
-    },
-    {
       "id": "2026-07-18-004",
       "title": "OpenAI 推出 AI 投资记分卡",
       "category": "thought",

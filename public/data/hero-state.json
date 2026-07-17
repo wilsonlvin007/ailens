@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "items": [
     {
-      "id": "sig_2026-07-17_001",
+      "id": "sig_2026-07-18_001",
       "level": 1,
-      "content": "OpenAI 披露自动化红队模型 GPT-Red",
-      "summary": "OpenAI 公开内部自动化红队模型 GPT-Red，其在提示注入测试中表现远超",
-      "source": "https://www.marktechpost.com/2026/07/16/openai-details-gpt-red-an-internal-automated-red-teaming-model-that-beat-human-red-teamers-84-to-13-on-prompt-injection/",
-      "date": "2026-07-17",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-07-17_002",
-      "level": 1,
-      "content": "Neko Health 获七亿美元融资",
-      "summary": "Neko Health 融资 7 亿美元，计划利用 AI 全身扫描技术在美国扩展",
-      "source": "https://www.artificialintelligence-news.com/news/neko-health-700m-ai-body-scans-us/",
-      "date": "2026-07-17",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-07-17_003",
-      "level": 1,
-      "content": "Thinking Machines 开源 Inkling 模型",
-      "summary": "Thinking Machines 发布首个开源权重基础模型 Inkling，采",
-      "source": "https://news.smol.ai/issues/26-07-15-thinky-inkling/",
-      "date": "2026-07-17",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-07-17_004",
-      "level": 1,
-      "content": "DeepMind 推进生物弹性计划",
-      "summary": "Google DeepMind 联手 Isomorphic Labs 推进生物弹",
-      "source": "https://www.artificialintelligence-news.com/news/examining-google-deepmind-ai-bioresilience-push/",
-      "date": "2026-07-17",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-07-17_005",
-      "level": 1,
-      "content": "SpaceXAI 开源 Grok Build 工具链",
-      "summary": "SpaceXAI 开源 Grok Build 的 Rust 代理框架及工具层，但",
-      "source": "https://www.marktechpost.com/2026/07/15/spacexai-open-sources-grok-build-the-rust-agent-harness-tui-tui-and-tool-layer-behind-its-coding-cli/",
-      "date": "2026-07-17",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-07-17_006",
-      "level": 1,
-      "content": "Cars24 借 OpenAI 重塑客服体验",
-      "summary": "Cars24 利用 OpenAI 语音和聊天代理处理百万级对话，显著挽回流失潜在",
-      "source": "https://openai.com/index/cars24",
-      "date": "2026-07-17",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-07-17_007",
-      "level": 1,
-      "content": "学者探索多智能体失败归因",
-      "summary": "宾州州立与杜克大学研究者探索多智能体系统任务失败的自动归因方法。",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-07-17",
-      "signal_index": 8
-    },
-    {
-      "id": "sig_2026-07-17_008",
-      "level": 1,
-      "content": "OpenAI 推出 GPT-5.6 系列模型",
-      "summary": "OpenAI 发布 GPT-5.6 系列（Sol/Terra/Luna），集成至",
-      "source": "https://news.smol.ai/issues/26-07-09-gpt-56/",
-      "date": "2026-07-17",
+      "content": "英伟达嵌入模型登顶 RTEB",
+      "summary": "NVIDIA 开源 Nemotron 3 Embed 系列，其中 8B 版本在 ",
+      "source": "https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb/",
+      "date": "2026-07-18",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-07-17_009",
+      "id": "sig_2026-07-18_002",
       "level": 1,
-      "content": "诺基亚推基于英伟达 AI-RAN 平台",
-      "summary": "诺基亚推出基于 NVIDIA 技术的 AI-RAN 平台，旨在提升现有频谱的网络",
-      "source": "https://www.artificialintelligence-news.com/news/nokia-ai-ran-platform-nvidia/",
-      "date": "2026-07-17",
+      "content": "MIT 提出 AI 自我进化框架",
+      "summary": "MIT 研发 SEAL 框架，利用强化学习让大模型自我编辑权重，推动 AI 自主",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-07-18",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-07-18_003",
+      "level": 1,
+      "content": "OpenAI 推出 AI 投资记分卡",
+      "summary": "OpenAI CFO 发布 AI 记分卡，通过有用工作、任务成本等指标量化 AI",
+      "source": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "date": "2026-07-18",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-18_004",
+      "level": 1,
+      "content": "月之暗面开源 Kimi K3 模型",
+      "summary": "Moonshot AI 开源 Kimi K3，具备 2.8T 参数与百万级上下文",
+      "source": "https://news.smol.ai/issues/26-07-16-kimi-k30/",
+      "date": "2026-07-18",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-18_005",
+      "level": 1,
+      "content": "Bunkerhill 融资优化医疗代理",
+      "summary": "Bunkerhill Health 获 5500 万美元 B 轮融资，用于扩展 ",
+      "source": "https://www.artificialintelligence-news.com/news/bunkerhill-raises-55m-scale-agentic-ai-health-systems/",
+      "date": "2026-07-18",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-18_006",
+      "level": 1,
+      "content": "Zyphra 开源可变长脑电模型",
+      "summary": "Zyphra 开源 ZUNA1.1 脑电基础模型，支持 0.5 至 30 秒可变",
+      "source": "https://www.marktechpost.com/2026/07/17/zyphra-releases-zuna1-1-an-apache-2-0-eeg-foundation-model-with-variable-length-inputs-from-0-5-to-30-seconds/",
+      "date": "2026-07-18",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-07-18_007",
+      "level": 1,
+      "content": "英伟达新架构优化后训练",
+      "summary": "NVIDIA 介绍 Vera Rubin 架构，通过极致协同设计降低每 toke",
+      "source": "https://blogs.nvidia.com/blog/nvidia-vera-rubin-post-training-intelligence-per-dollar/",
+      "date": "2026-07-18",
+      "signal_index": 8
+    },
+    {
+      "id": "sig_2026-07-18_008",
+      "level": 1,
+      "content": "字节双模型架构赋能机器人",
+      "summary": "字节跳动发布 Astra 双模型架构，革新复杂室内环境下的自主机器人导航技术，提",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-07-18",
+      "signal_index": 9
+    },
+    {
+      "id": "sig_2026-07-18_009",
+      "level": 1,
+      "content": "DeepMind 升级生物弹性计划",
+      "summary": "Google DeepMind 更新生物弹性计划，建立多项合作以遏制 AI 在生",
+      "source": "https://www.artificialintelligence-news.com/news/examining-google-deepmind-ai-bioresilience-push/",
+      "date": "2026-07-18",
       "signal_index": 5
+    },
+    {
+      "id": "tag_2026-07-18_001",
+      "level": 2,
+      "content": "OpenAI 披露自动化红队模型 …",
+      "date": "2026-07-18"
+    },
+    {
+      "id": "tag_2026-07-18_002",
+      "level": 2,
+      "content": "Neko Health 获七亿美元…",
+      "date": "2026-07-18"
+    },
+    {
+      "id": "tag_2026-07-18_003",
+      "level": 2,
+      "content": "Thinking Machines…",
+      "date": "2026-07-18"
+    },
+    {
+      "id": "tag_2026-07-18_004",
+      "level": 2,
+      "content": "DeepMind 推进生物弹性计划",
+      "date": "2026-07-18"
+    },
+    {
+      "id": "tag_2026-07-18_005",
+      "level": 2,
+      "content": "SpaceXAI 开源 Grok …",
+      "date": "2026-07-18"
+    },
+    {
+      "id": "tag_2026-07-18_006",
+      "level": 2,
+      "content": "Cars24 借 OpenAI 重…",
+      "date": "2026-07-18"
+    },
+    {
+      "id": "tag_2026-07-18_007",
+      "level": 2,
+      "content": "学者探索多智能体失败归因",
+      "date": "2026-07-18"
+    },
+    {
+      "id": "tag_2026-07-18_008",
+      "level": 2,
+      "content": "OpenAI 推出 GPT-5.6…",
+      "date": "2026-07-18"
+    },
+    {
+      "id": "tag_2026-07-18_009",
+      "level": 2,
+      "content": "诺基亚推基于英伟达 AI-RAN …",
+      "date": "2026-07-18"
     },
     {
       "id": "tag_2026-07-17_001",
@@ -89,56 +143,56 @@
       "date": "2026-07-17"
     },
     {
-      "id": "tag_2026-07-17_002",
-      "level": 2,
+      "id": "word_2026-07-17_002",
+      "level": 3,
       "content": "Google 发布 LiteRT.…",
       "date": "2026-07-17"
     },
     {
-      "id": "tag_2026-07-17_003",
-      "level": 2,
+      "id": "word_2026-07-17_003",
+      "level": 3,
       "content": "Soofi 开源德英双语混合 Mo…",
       "date": "2026-07-17"
     },
     {
-      "id": "tag_2026-07-17_004",
-      "level": 2,
+      "id": "word_2026-07-17_004",
+      "level": 3,
       "content": "Gemini API 扩展托管 A…",
       "date": "2026-07-17"
     },
     {
-      "id": "tag_2026-07-17_005",
-      "level": 2,
+      "id": "word_2026-07-17_005",
+      "level": 3,
       "content": "诺基亚联合英伟达推 AI-RAN …",
       "date": "2026-07-17"
     },
     {
-      "id": "tag_2026-07-17_006",
-      "level": 2,
+      "id": "word_2026-07-17_006",
+      "level": 3,
       "content": "Cloudflare 强制 AI …",
       "date": "2026-07-17"
     },
     {
-      "id": "tag_2026-07-17_007",
-      "level": 2,
+      "id": "word_2026-07-17_007",
+      "level": 3,
       "content": "AWS 合作推出医院合规 AI 方案",
       "date": "2026-07-17"
     },
     {
-      "id": "tag_2026-07-17_008",
-      "level": 2,
+      "id": "word_2026-07-17_008",
+      "level": 3,
       "content": "新型物联网僵尸网络疑似 AI 生成",
       "date": "2026-07-17"
     },
     {
-      "id": "tag_2026-07-17_009",
-      "level": 2,
+      "id": "word_2026-07-17_009",
+      "level": 3,
       "content": "OpenAI 指导智能体时代投资管理",
       "date": "2026-07-17"
     },
     {
-      "id": "tag_2026-07-16_001",
-      "level": 2,
+      "id": "word_2026-07-16_001",
+      "level": 3,
       "content": "OpenAI 发布智能体投资指南",
       "date": "2026-07-16"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "字节跳动开源机器人导航架构",
       "date": "2026-07-16"
-    },
-    {
-      "id": "word_2026-07-16_008",
-      "level": 3,
-      "content": "MIT 发布自进化 AI 框架 S…",
-      "date": "2026-07-16"
-    },
-    {
-      "id": "word_2026-07-16_009",
-      "level": 3,
-      "content": "SK 海力士推 LLM 推理新架构",
-      "date": "2026-07-16"
-    },
-    {
-      "id": "word_2026-07-15_001",
-      "level": 3,
-      "content": "字节跳动发布 Astra 导航架构",
-      "date": "2026-07-15"
-    },
-    {
-      "id": "word_2026-07-15_002",
-      "level": 3,
-      "content": "NVIDIA 推出 Vera CP…",
-      "date": "2026-07-15"
-    },
-    {
-      "id": "word_2026-07-15_003",
-      "level": 3,
-      "content": "二季度 AI 初创融资超六十亿",
-      "date": "2026-07-15"
-    },
-    {
-      "id": "word_2026-07-15_004",
-      "level": 3,
-      "content": "GeForce NOW 部署 RT…",
-      "date": "2026-07-15"
-    },
-    {
-      "id": "word_2026-07-15_005",
-      "level": 3,
-      "content": "MIT 推出自进化 AI 框架 S…",
-      "date": "2026-07-15"
-    },
-    {
-      "id": "word_2026-07-15_006",
-      "level": 3,
-      "content": "Mira Murati 倡导以人为…",
-      "date": "2026-07-15"
-    },
-    {
-      "id": "word_2026-07-15_007",
-      "level": 3,
-      "content": "英伟达升级多伦多云游戏服务器",
-      "date": "2026-07-15"
     }
   ]
 }
