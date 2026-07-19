@@ -100,22 +100,6 @@
       "collected_at": "2026-07-20T06:00:00+08:00"
     },
     {
-      "id": "2026-07-20-013",
-      "title": "多智能体系统故障归因研究",
-      "category": "technology",
-      "importance": 3,
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "source_name": "Synced Review",
-      "summary": "宾州州立与杜克大学研究者提出自动化方法，定位多智能体系统中导致任务失败的具体代理。",
-      "analysis": "随着多智能体系统（Multi-Agent Systems）日益复杂，故障排查成为制约其可靠性的瓶颈。该研究提出的自动化故障归因方法，能够精准定位导致任务失败的具体代理节点，这对于构建可解释、可信赖的协作系统至关重要。它为多智能体系统的调试和维护提供了科学工具，有助于推动从实验性 demo 向工业级稳定系统的跨越，是 Agent 工程化进程中不可或缺的一环。",
-      "tags": [
-        "多智能体",
-        "可解释性",
-        "学术研究"
-      ],
-      "collected_at": "2026-07-20T06:00:00+08:00"
-    },
-    {
       "id": "2026-07-20-014",
       "title": "行业焦点转向效率栈优化",
       "category": "thought",

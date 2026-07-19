@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-07-19",
+  "updated_at": "2026-07-20",
   "items": [
+    {
+      "id": "sig_2026-07-20_001",
+      "level": 1,
+      "content": "阿里预览 2.4 万亿参数模型",
+      "summary": "阿里预览 2.4 万亿参数多模态 MoE 模型 Qwen3.8-Max，紧随月之",
+      "source": "https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/",
+      "date": "2026-07-20",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-20_002",
+      "level": 1,
+      "content": "Feyn AI 发布先查库 SQL 模型",
+      "summary": "Feyn AI 发布 SQRL 系列模型，通过先探查数据库再生成查询，在 BIR",
+      "source": "https://www.marktechpost.com/2026/07/19/feyn-ai-releases-sqrl-a-text-to-sql-model-family-that-inspects-the-database-before-writing-query/",
+      "date": "2026-07-20",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-07-20_003",
+      "level": 1,
+      "content": "OpenAI 完善青少年安全机制",
+      "summary": "OpenAI 阐述为青少年提供安全 AI 访问的重要性，推出适龄保护、家长控制及",
+      "source": "https://openai.com/index/why-teens-deserve-access-safe-ai",
+      "date": "2026-07-20",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-07-20_004",
+      "level": 1,
+      "content": "谷歌搜索升级应用连接功能",
+      "summary": "谷歌搜索 AI 模式升级，支持用户安全链接并与常用应用直接交互，提升服务整合体验",
+      "source": "https://blog.google/products-and-platforms/products/search/connected-apps/",
+      "date": "2026-07-20",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-20_005",
+      "level": 1,
+      "content": "多智能体系统故障归因研究",
+      "summary": "宾州州立与杜克大学研究者提出自动化方法，定位多智能体系统中导致任务失败的具体代理",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-07-20",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-07-20_006",
+      "level": 1,
+      "content": "Google Vids 集成个人化身功能",
+      "summary": "Google Vids 集成 Gemini Omni 和个人化身功能，大幅简化视",
+      "source": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
+      "date": "2026-07-20",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-07-20_007",
+      "level": 1,
+      "content": "OpenAI 提出 AI 时代记分卡",
+      "summary": "OpenAI CFO 提出 AI 时代记分卡，从有用工作、任务成本、可靠性和算力",
+      "source": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "date": "2026-07-20",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-20_008",
+      "level": 1,
+      "content": "行业焦点转向效率栈优化",
+      "summary": "Moonshot Kimi K3 发布引发对中国开源模型重估，行业焦点从算力护城",
+      "source": "https://news.smol.ai/issues/26-07-17-not-much/",
+      "date": "2026-07-20",
+      "signal_index": 7
+    },
     {
       "id": "sig_2026-07-19_001",
       "level": 1,
       "content": "NVIDIA DeepStream 9.1 赋能视觉智能体",
       "summary": "NVIDIA 发布 DeepStream 9.1，集成 13 种智能体技能及多视",
       "source": "https://www.marktechpost.com/2026/07/18/nvidia-released-deepstream-9-1-bringing-agentic-ai-to-vision-ai-with-13-skills-and-multi-view-3d-tracking/",
-      "date": "2026-07-19",
-      "signal_index": 1
+      "date": "2026-07-20",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-07-19_002",
-      "level": 1,
+      "id": "tag_2026-07-20_001",
+      "level": 2,
       "content": "GPT-5.6 攻克凸优化三十年难题",
-      "summary": "GPT-5.6 借助提示词工程解决凸优化领域遗留三十年的数学难题，展现非凡推理突",
-      "source": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
-      "date": "2026-07-19",
-      "signal_index": 2
+      "date": "2026-07-20"
     },
     {
-      "id": "sig_2026-07-19_003",
-      "level": 1,
-      "content": "月之暗面 Kimi K3 刷新国产模型高度",
-      "summary": "月之暗面发布 Kimi K3，在编码与长程任务表现卓越，标志中国开源模型逼近前沿",
-      "source": "https://news.smol.ai/issues/26-07-17-not-much/",
-      "date": "2026-07-19",
-      "signal_index": 0
+      "id": "tag_2026-07-20_002",
+      "level": 2,
+      "content": "月之暗面 Kimi K3 刷新国产…",
+      "date": "2026-07-20"
     },
     {
-      "id": "sig_2026-07-19_004",
-      "level": 1,
-      "content": "OpenAI 阐述青少年安全访问 AI 策略",
-      "summary": "OpenAI 详述通过年龄保护、家长控制及专家合作，为青少年群体提供安全有益的 ",
-      "source": "https://openai.com/index/why-teens-deserve-access-safe-ai/",
-      "date": "2026-07-19",
-      "signal_index": 5
+      "id": "tag_2026-07-20_003",
+      "level": 2,
+      "content": "OpenAI 阐述青少年安全访问 …",
+      "date": "2026-07-20"
     },
     {
-      "id": "sig_2026-07-19_005",
-      "level": 1,
-      "content": "字节跳动 Astra 架构提升机器人导航",
-      "summary": "字节跳动推出 Astra 双模型架构，显著提升机器人在复杂室内环境中的自主导航与",
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-07-19",
-      "signal_index": 3
+      "id": "tag_2026-07-20_004",
+      "level": 2,
+      "content": "字节跳动 Astra 架构提升机器…",
+      "date": "2026-07-20"
     },
     {
-      "id": "sig_2026-07-19_006",
-      "level": 1,
-      "content": "OpenAI 发布 AI 投资回报率记分卡",
-      "summary": "OpenAI CFO 提出 AI 时代记分卡，从工作效用、成本及可靠性维度量化衡",
-      "source": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "date": "2026-07-19",
-      "signal_index": 4
+      "id": "tag_2026-07-20_005",
+      "level": 2,
+      "content": "OpenAI 发布 AI 投资回报…",
+      "date": "2026-07-20"
     },
     {
-      "id": "sig_2026-07-18_001",
-      "level": 1,
+      "id": "tag_2026-07-20_006",
+      "level": 2,
       "content": "英伟达嵌入模型登顶 RTEB",
-      "summary": "NVIDIA 开源 Nemotron 3 Embed 系列，其中 8B 版本在 ",
-      "source": "https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb/",
-      "date": "2026-07-19",
-      "signal_index": null
+      "date": "2026-07-20"
     },
     {
-      "id": "sig_2026-07-18_002",
-      "level": 1,
+      "id": "tag_2026-07-20_007",
+      "level": 2,
       "content": "MIT 提出 AI 自我进化框架",
-      "summary": "MIT 研发 SEAL 框架，利用强化学习让大模型自我编辑权重，推动 AI 自主",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-07-19",
-      "signal_index": null
+      "date": "2026-07-20"
     },
     {
-      "id": "sig_2026-07-18_003",
-      "level": 1,
+      "id": "tag_2026-07-20_008",
+      "level": 2,
       "content": "OpenAI 推出 AI 投资记分卡",
-      "summary": "OpenAI CFO 发布 AI 记分卡，通过有用工作、任务成本等指标量化 AI",
-      "source": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "date": "2026-07-19",
-      "signal_index": null
+      "date": "2026-07-20"
     },
     {
       "id": "tag_2026-07-19_001",
@@ -95,50 +143,50 @@
       "date": "2026-07-19"
     },
     {
-      "id": "tag_2026-07-19_003",
-      "level": 2,
+      "id": "word_2026-07-19_003",
+      "level": 3,
       "content": "Zyphra 开源可变长脑电模型",
       "date": "2026-07-19"
     },
     {
-      "id": "tag_2026-07-19_004",
-      "level": 2,
+      "id": "word_2026-07-19_004",
+      "level": 3,
       "content": "英伟达新架构优化后训练",
       "date": "2026-07-19"
     },
     {
-      "id": "tag_2026-07-19_005",
-      "level": 2,
+      "id": "word_2026-07-19_005",
+      "level": 3,
       "content": "字节双模型架构赋能机器人",
       "date": "2026-07-19"
     },
     {
-      "id": "tag_2026-07-19_006",
-      "level": 2,
+      "id": "word_2026-07-19_006",
+      "level": 3,
       "content": "DeepMind 升级生物弹性计划",
       "date": "2026-07-19"
     },
     {
-      "id": "tag_2026-07-18_001",
-      "level": 2,
+      "id": "word_2026-07-18_001",
+      "level": 3,
       "content": "OpenAI 披露自动化红队模型 …",
       "date": "2026-07-18"
     },
     {
-      "id": "tag_2026-07-18_002",
-      "level": 2,
+      "id": "word_2026-07-18_002",
+      "level": 3,
       "content": "Neko Health 获七亿美元…",
       "date": "2026-07-18"
     },
     {
-      "id": "tag_2026-07-18_003",
-      "level": 2,
+      "id": "word_2026-07-18_003",
+      "level": 3,
       "content": "Thinking Machines…",
       "date": "2026-07-18"
     },
     {
-      "id": "tag_2026-07-18_004",
-      "level": 2,
+      "id": "word_2026-07-18_004",
+      "level": 3,
       "content": "DeepMind 推进生物弹性计划",
       "date": "2026-07-18"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "Google 发布 LiteRT.…",
       "date": "2026-07-17"
-    },
-    {
-      "id": "word_2026-07-17_003",
-      "level": 3,
-      "content": "Soofi 开源德英双语混合 Mo…",
-      "date": "2026-07-17"
-    },
-    {
-      "id": "word_2026-07-17_004",
-      "level": 3,
-      "content": "Gemini API 扩展托管 A…",
-      "date": "2026-07-17"
-    },
-    {
-      "id": "word_2026-07-17_005",
-      "level": 3,
-      "content": "诺基亚联合英伟达推 AI-RAN …",
-      "date": "2026-07-17"
-    },
-    {
-      "id": "word_2026-07-17_006",
-      "level": 3,
-      "content": "Cloudflare 强制 AI …",
-      "date": "2026-07-17"
-    },
-    {
-      "id": "word_2026-07-17_007",
-      "level": 3,
-      "content": "AWS 合作推出医院合规 AI 方案",
-      "date": "2026-07-17"
-    },
-    {
-      "id": "word_2026-07-17_008",
-      "level": 3,
-      "content": "新型物联网僵尸网络疑似 AI 生成",
-      "date": "2026-07-17"
-    },
-    {
-      "id": "word_2026-07-17_009",
-      "level": 3,
-      "content": "OpenAI 指导智能体时代投资管理",
-      "date": "2026-07-17"
-    },
-    {
-      "id": "word_2026-07-16_001",
-      "level": 3,
-      "content": "OpenAI 发布智能体投资指南",
-      "date": "2026-07-16"
     }
   ]
 }
