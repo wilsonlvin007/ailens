@@ -84,22 +84,6 @@
       "collected_at": "2026-07-22T06:00:00+08:00"
     },
     {
-      "id": "2026-07-22-008",
-      "title": "多智能体系统故障归因研究",
-      "category": "technology",
-      "importance": 3,
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "source_name": "Synced Review",
-      "summary": "宾州州立与杜克大学研究多智能体系统故障归因，提出自动定位任务失败原因的新方法。",
-      "analysis": "随着多智能体系统（Multi-Agent Systems）在复杂任务中的应用增多，故障排查成为制约其可靠性的瓶颈。PSU 和杜克大学的研究提出了一种自动归因方法，能够精准定位导致任务失败的特定智能体及其行为时刻。这一成果极大提升了多智能体系统的可解释性和调试效率，是构建高可靠性自治系统的基础设施。对于开发者和研究者而言，这意味着可以更放心地部署大规模协作智能体，而不必陷入黑盒调试的泥潭，推动了从单体智能向群体智能的稳健过渡。",
-      "tags": [
-        "多智能体",
-        "故障归因",
-        "学术研究"
-      ],
-      "collected_at": "2026-07-22T06:00:00+08:00"
-    },
-    {
       "id": "2026-07-22-009",
       "title": "AWS Kiro IDE 存在严重漏洞",
       "category": "thought",

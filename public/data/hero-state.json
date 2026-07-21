@@ -1,86 +1,131 @@
 {
-  "updated_at": "2026-07-21",
+  "updated_at": "2026-07-22",
   "items": [
     {
-      "id": "sig_2026-07-21_001",
+      "id": "sig_2026-07-22_001",
       "level": 1,
-      "content": "OpenAI 发布长程模型安全指南",
-      "summary": "OpenAI 分享长程 AI 部署经验，揭示新风险并提出迭代防护策略。",
-      "source": "https://openai.com/index/safety-alignment-long-horizon-models",
-      "date": "2026-07-21",
+      "content": "Google 推出网络安全模型 Gemini",
+      "summary": "Google DeepMind 发布专用 AI 模型 Gemini 3.5 Fl",
+      "source": "https://thehackernews.com/2026/07/google-launches-gemini-35-flash-cyber.html",
+      "date": "2026-07-22",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-07-21_002",
+      "id": "sig_2026-07-22_002",
       "level": 1,
-      "content": "美公共卫生机构测试主流 AI 模型",
-      "summary": "美国公共卫生机构联合 OpenAI 等测试生成式 AI，旨在提升各地服务能力。",
-      "source": "https://www.artificialintelligence-news.com/news/openai-anthropic-public-health-ai/",
-      "date": "2026-07-21",
+      "content": "OpenAI 启动小企业专项计划",
+      "summary": "OpenAI 推出小企业专项计划，帮助创业者利用 ChatGPT Work 提升",
+      "source": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "date": "2026-07-22",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-07-21_003",
+      "id": "sig_2026-07-22_003",
       "level": 1,
-      "content": "阿里通义发布多语言 TTS 新品",
-      "summary": "阿里通义实验室发布 Qwen-Audio-3.0-TTS，支持 16 种语言及实",
-      "source": "https://www.marktechpost.com/2026/07/20/alibabas-tongyi-lab-releases-qwen-audio-3-0-tts-a-hosted-text-to-speech-model-in-flash-and-plus-tiers-across-16-languages/",
-      "date": "2026-07-21",
+      "content": "OpenAI 披露模型评估安全事件",
+      "summary": "OpenAI 与 Hugging Face 联合披露模型评估期间的安全事件，揭示",
+      "source": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "date": "2026-07-22",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-07-21_004",
+      "id": "sig_2026-07-22_004",
       "level": 1,
-      "content": "社区微调出 657MB 本地推理模型",
-      "summary": "开发者基于 Claude 轨迹微调 MiniCPM5，推出仅 657MB 具可见",
-      "source": "https://www.marktechpost.com/2026/07/19/someone-fine-tuned-openbmbs-minicpm5-1b-on-claude-fable-5-traces-to-ship-a-657mb-local-thinking-model/",
-      "date": "2026-07-21",
+      "content": "NVIDIA Vera Rubin 架构量产加速",
+      "summary": "NVIDIA Vera Rubin 架构量产加速，显著提升能效比，为合作伙伴提供",
+      "source": "https://blogs.nvidia.com/blog/vera-rubin/",
+      "date": "2026-07-22",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-07-21_005",
+      "id": "sig_2026-07-22_005",
       "level": 1,
-      "content": "2026 单卡 24GB 本地大模型横评",
-      "summary": "评测对比六款可在单张 24GB 显卡运行的高效开源大模型及适用场景。",
-      "source": "https://www.marktechpost.com/2026/07/19/best-local-llms-you-can-run-on-a-single-24gb-gpu-in-2026-qwen-gemma-mistral-deepseek-compared/",
-      "date": "2026-07-21",
+      "content": "纬创在美建厂生产 NVIDIA 芯片",
+      "summary": "纬创在德州沃斯堡开设首家美国工厂，专门生产支撑顶级 AI 系统的 NVIDIA ",
+      "source": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas/",
+      "date": "2026-07-22",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-07-21_006",
+      "id": "sig_2026-07-22_007",
       "level": 1,
-      "content": "Bunkerhill 获融资扩展医疗代理 AI",
-      "summary": "Bunkerhill Health 获 5500 万美元融资，用于扩展其医疗代理",
-      "source": "https://www.artificialintelligence-news.com/news/bunkerhill-raises-55m-scale-agentic-ai-health-systems/",
-      "date": "2026-07-21",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-07-21_007",
-      "level": 1,
-      "content": "FakeGit 活动借 GitHub 传播恶意软件",
-      "summary": "发现 FakeGit 攻击活动，利用 7600 个伪装成 AI 技能的 GitH",
-      "source": "https://thehackernews.com/2026/07/fakegit-campaign-uses-7600-github.html",
-      "date": "2026-07-21",
+      "content": "AWS Kiro IDE 存在严重漏洞",
+      "summary": "AWS 编程 IDE Kiro 存在严重漏洞，恶意网页可重写其配置并在开发者机器",
+      "source": "https://thehackernews.com/2026/07/aws-kiro-flaw-let-poisoned-web-page.html",
+      "date": "2026-07-22",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-07-20_001",
+      "id": "sig_2026-07-22_008",
       "level": 1,
-      "content": "阿里预览 2.4 万亿参数模型",
-      "summary": "阿里预览 2.4 万亿参数多模态 MoE 模型 Qwen3.8-Max，紧随月之",
-      "source": "https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/",
-      "date": "2026-07-21",
-      "signal_index": null
+      "content": "新成员加入 OpenAI 董事会",
+      "summary": "David Vélez 和 Robin Vince 加入 OpenAI 董事会，",
+      "source": "https://openai.com/index/david-velez-robin-velez-robin-vince-join-openai-boards",
+      "date": "2026-07-22",
+      "signal_index": 7
     },
     {
-      "id": "sig_2026-07-20_002",
+      "id": "sig_2026-07-22_009",
       "level": 1,
-      "content": "Feyn AI 发布先查库 SQL 模型",
-      "summary": "Feyn AI 发布 SQRL 系列模型，通过先探查数据库再生成查询，在 BIR",
-      "source": "https://www.marktechpost.com/2026/07/19/feyn-ai-releases-sqrl-a-text-to-sql-model-family-that-inspects-the-database-before-writing-query/",
-      "date": "2026-07-21",
-      "signal_index": null
+      "content": "NVIDIA 推出 Spectrum-6 网络设备",
+      "summary": "NVIDIA 推出 Spectrum-6 网络设备，专为 Vera Rubin ",
+      "source": "https://blogs.nvidia.com/blog/nvidia-spectrum-six-arrives-in-gigascale-ai-factories/",
+      "date": "2026-07-22",
+      "signal_index": 8
+    },
+    {
+      "id": "tag_2026-07-22_001",
+      "level": 2,
+      "content": "OpenAI 发布长程模型安全指南",
+      "date": "2026-07-22"
+    },
+    {
+      "id": "tag_2026-07-22_002",
+      "level": 2,
+      "content": "美公共卫生机构测试主流 AI 模型",
+      "date": "2026-07-22"
+    },
+    {
+      "id": "tag_2026-07-22_003",
+      "level": 2,
+      "content": "阿里通义发布多语言 TTS 新品",
+      "date": "2026-07-22"
+    },
+    {
+      "id": "tag_2026-07-22_004",
+      "level": 2,
+      "content": "社区微调出 657MB 本地推理模型",
+      "date": "2026-07-22"
+    },
+    {
+      "id": "tag_2026-07-22_005",
+      "level": 2,
+      "content": "2026 单卡 24GB 本地大模…",
+      "date": "2026-07-22"
+    },
+    {
+      "id": "tag_2026-07-22_006",
+      "level": 2,
+      "content": "Bunkerhill 获融资扩展医…",
+      "date": "2026-07-22"
+    },
+    {
+      "id": "tag_2026-07-22_007",
+      "level": 2,
+      "content": "FakeGit 活动借 GitHu…",
+      "date": "2026-07-22"
+    },
+    {
+      "id": "tag_2026-07-22_008",
+      "level": 2,
+      "content": "阿里预览 2.4 万亿参数模型",
+      "date": "2026-07-22"
+    },
+    {
+      "id": "tag_2026-07-22_009",
+      "level": 2,
+      "content": "Feyn AI 发布先查库 SQL…",
+      "date": "2026-07-22"
     },
     {
       "id": "tag_2026-07-21_001",
@@ -89,56 +134,56 @@
       "date": "2026-07-21"
     },
     {
-      "id": "tag_2026-07-21_002",
-      "level": 2,
+      "id": "word_2026-07-21_002",
+      "level": 3,
       "content": "谷歌搜索升级应用连接功能",
       "date": "2026-07-21"
     },
     {
-      "id": "tag_2026-07-21_003",
-      "level": 2,
+      "id": "word_2026-07-21_003",
+      "level": 3,
       "content": "多智能体系统故障归因研究",
       "date": "2026-07-21"
     },
     {
-      "id": "tag_2026-07-21_004",
-      "level": 2,
+      "id": "word_2026-07-21_004",
+      "level": 3,
       "content": "Google Vids 集成个人化…",
       "date": "2026-07-21"
     },
     {
-      "id": "tag_2026-07-21_005",
-      "level": 2,
+      "id": "word_2026-07-21_005",
+      "level": 3,
       "content": "OpenAI 提出 AI 时代记分卡",
       "date": "2026-07-21"
     },
     {
-      "id": "tag_2026-07-21_006",
-      "level": 2,
+      "id": "word_2026-07-21_006",
+      "level": 3,
       "content": "行业焦点转向效率栈优化",
       "date": "2026-07-21"
     },
     {
-      "id": "tag_2026-07-21_007",
-      "level": 2,
+      "id": "word_2026-07-21_007",
+      "level": 3,
       "content": "NVIDIA DeepStream…",
       "date": "2026-07-21"
     },
     {
-      "id": "tag_2026-07-20_001",
-      "level": 2,
+      "id": "word_2026-07-20_001",
+      "level": 3,
       "content": "GPT-5.6 攻克凸优化三十年难题",
       "date": "2026-07-20"
     },
     {
-      "id": "tag_2026-07-20_002",
-      "level": 2,
+      "id": "word_2026-07-20_002",
+      "level": 3,
       "content": "月之暗面 Kimi K3 刷新国产…",
       "date": "2026-07-20"
     },
     {
-      "id": "tag_2026-07-20_003",
-      "level": 2,
+      "id": "word_2026-07-20_003",
+      "level": 3,
       "content": "OpenAI 阐述青少年安全访问 …",
       "date": "2026-07-20"
     },
@@ -177,60 +222,6 @@
       "level": 3,
       "content": "月之暗面开源 Kimi K3 模型",
       "date": "2026-07-19"
-    },
-    {
-      "id": "word_2026-07-19_002",
-      "level": 3,
-      "content": "Bunkerhill 融资优化医疗…",
-      "date": "2026-07-19"
-    },
-    {
-      "id": "word_2026-07-19_003",
-      "level": 3,
-      "content": "Zyphra 开源可变长脑电模型",
-      "date": "2026-07-19"
-    },
-    {
-      "id": "word_2026-07-19_004",
-      "level": 3,
-      "content": "英伟达新架构优化后训练",
-      "date": "2026-07-19"
-    },
-    {
-      "id": "word_2026-07-19_005",
-      "level": 3,
-      "content": "字节双模型架构赋能机器人",
-      "date": "2026-07-19"
-    },
-    {
-      "id": "word_2026-07-19_006",
-      "level": 3,
-      "content": "DeepMind 升级生物弹性计划",
-      "date": "2026-07-19"
-    },
-    {
-      "id": "word_2026-07-18_001",
-      "level": 3,
-      "content": "OpenAI 披露自动化红队模型 …",
-      "date": "2026-07-18"
-    },
-    {
-      "id": "word_2026-07-18_002",
-      "level": 3,
-      "content": "Neko Health 获七亿美元…",
-      "date": "2026-07-18"
-    },
-    {
-      "id": "word_2026-07-18_003",
-      "level": 3,
-      "content": "Thinking Machines…",
-      "date": "2026-07-18"
-    },
-    {
-      "id": "word_2026-07-18_004",
-      "level": 3,
-      "content": "DeepMind 推进生物弹性计划",
-      "date": "2026-07-18"
     }
   ]
 }
