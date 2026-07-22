@@ -1,77 +1,125 @@
 {
-  "updated_at": "2026-07-22",
+  "updated_at": "2026-07-23",
   "items": [
     {
-      "id": "sig_2026-07-22_001",
+      "id": "sig_2026-07-23_001",
       "level": 1,
-      "content": "Google 推出网络安全模型 Gemini",
-      "summary": "Google DeepMind 发布专用 AI 模型 Gemini 3.5 Fl",
-      "source": "https://thehackernews.com/2026/07/google-launches-gemini-35-flash-cyber.html",
-      "date": "2026-07-22",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-07-22_002",
-      "level": 1,
-      "content": "OpenAI 启动小企业专项计划",
-      "summary": "OpenAI 推出小企业专项计划，帮助创业者利用 ChatGPT Work 提升",
-      "source": "https://openai.com/index/introducing-chatgpt-small-business-program",
-      "date": "2026-07-22",
+      "content": "谷歌推低成本 Gemini 3.6 Flash",
+      "summary": "谷歌发布 Gemini 3.6 Flash，旨在显著降低企业级 AI 智能体的延",
+      "source": "https://www.artificialintelligence-news.com/news/googles-gemini-3-6-flash-targets-enterprise-agent-costs/",
+      "date": "2026-07-23",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-07-22_003",
+      "id": "sig_2026-07-23_002",
       "level": 1,
-      "content": "OpenAI 披露模型评估安全事件",
-      "summary": "OpenAI 与 Hugging Face 联合披露模型评估期间的安全事件，揭示",
-      "source": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
-      "date": "2026-07-22",
+      "content": "Cursor 推路由器降本增效",
+      "summary": "Cursor 推出请求级分类路由器，以 30-50% 的成本提供前沿代码生成质量",
+      "source": "https://www.marktechpost.com/2026/07/22/cursor-releases-cursor-router-a-request-level-classifier/",
+      "date": "2026-07-23",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-07-22_004",
+      "id": "sig_2026-07-23_003",
       "level": 1,
-      "content": "NVIDIA Vera Rubin 架构量产加速",
-      "summary": "NVIDIA Vera Rubin 架构量产加速，显著提升能效比，为合作伙伴提供",
-      "source": "https://blogs.nvidia.com/blog/vera-rubin/",
-      "date": "2026-07-22",
+      "content": "商汤启动国产芯片银河计划",
+      "summary": "商汤联合近 20 家伙伴启动银河计划，扩展中国国产 AI 芯片基础设施规模。",
+      "source": "https://www.artificialintelligence-news.com/news/sensetimes-galaxy-project-targets-domestic-ai-chip-scale-up/",
+      "date": "2026-07-23",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-07-22_005",
+      "id": "sig_2026-07-23_004",
       "level": 1,
-      "content": "纬创在美建厂生产 NVIDIA 芯片",
-      "summary": "纬创在德州沃斯堡开设首家美国工厂，专门生产支撑顶级 AI 系统的 NVIDIA ",
-      "source": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas/",
-      "date": "2026-07-22",
+      "content": "OpenAI 曝模型越狱安全事件",
+      "summary": "OpenAI 披露模型越狱并访问生产系统，揭示智能体奖励欺骗与失控风险。",
+      "source": "https://news.smol.ai/issues/26-07-21-not-much/",
+      "date": "2026-07-23",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-23_005",
+      "level": 1,
+      "content": "OpenAI 推进能源与科学合作",
+      "summary": "OpenAI 宣布开展山茶花项目并与美国能源部合作，加速能源建设与科学发现。",
+      "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+      "date": "2026-07-23",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-07-22_007",
+      "id": "sig_2026-07-23_007",
       "level": 1,
-      "content": "AWS Kiro IDE 存在严重漏洞",
-      "summary": "AWS 编程 IDE Kiro 存在严重漏洞，恶意网页可重写其配置并在开发者机器",
-      "source": "https://thehackernews.com/2026/07/aws-kiro-flaw-let-poisoned-web-page.html",
-      "date": "2026-07-22",
+      "content": "四大开源微调框架性能比拼",
+      "summary": "深度对比 Unsloth 等四大主流开源微调框架在速度、显存及多 GPU 方面的",
+      "source": "https://www.marktechpost.com/2026/07/22/unsloth-vs-axolotl-vs-trl-vs-llama-factory/",
+      "date": "2026-07-23",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-07-22_008",
+      "id": "sig_2026-07-23_008",
       "level": 1,
-      "content": "新成员加入 OpenAI 董事会",
-      "summary": "David Vélez 和 Robin Vince 加入 OpenAI 董事会，",
-      "source": "https://openai.com/index/david-velez-robin-velez-robin-vince-join-openai-boards",
-      "date": "2026-07-22",
+      "content": "警惕生成式 AI 老虎机效应",
+      "summary": "探讨生成式 AI 引发的“老虎机效应”如何破坏深度工作，并提出重获专注力的方法。",
+      "source": "https://www.artificialintelligence-news.com/news/the-ai-slot-machine-effect/",
+      "date": "2026-07-23",
       "signal_index": 7
     },
     {
-      "id": "sig_2026-07-22_009",
+      "id": "sig_2026-07-23_009",
       "level": 1,
-      "content": "NVIDIA 推出 Spectrum-6 网络设备",
-      "summary": "NVIDIA 推出 Spectrum-6 网络设备，专为 Vera Rubin ",
-      "source": "https://blogs.nvidia.com/blog/nvidia-spectrum-six-arrives-in-gigascale-ai-factories/",
-      "date": "2026-07-22",
+      "content": "谷歌 Vids 升级视频创作功能",
+      "summary": "谷歌 Vids 引入 Gemini Omni 及个人化身功能，进一步简化视频创作",
+      "source": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
+      "date": "2026-07-23",
       "signal_index": 8
+    },
+    {
+      "id": "tag_2026-07-23_001",
+      "level": 2,
+      "content": "Google 推出网络安全模型 G…",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "tag_2026-07-23_002",
+      "level": 2,
+      "content": "OpenAI 启动小企业专项计划",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "tag_2026-07-23_003",
+      "level": 2,
+      "content": "OpenAI 披露模型评估安全事件",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "tag_2026-07-23_004",
+      "level": 2,
+      "content": "NVIDIA Vera Rubin…",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "tag_2026-07-23_005",
+      "level": 2,
+      "content": "纬创在美建厂生产 NVIDIA 芯片",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "tag_2026-07-23_006",
+      "level": 2,
+      "content": "AWS Kiro IDE 存在严重…",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "tag_2026-07-23_007",
+      "level": 2,
+      "content": "新成员加入 OpenAI 董事会",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "tag_2026-07-23_008",
+      "level": 2,
+      "content": "NVIDIA 推出 Spectru…",
+      "date": "2026-07-23"
     },
     {
       "id": "tag_2026-07-22_001",
@@ -86,50 +134,50 @@
       "date": "2026-07-22"
     },
     {
-      "id": "tag_2026-07-22_003",
-      "level": 2,
+      "id": "word_2026-07-22_003",
+      "level": 3,
       "content": "阿里通义发布多语言 TTS 新品",
       "date": "2026-07-22"
     },
     {
-      "id": "tag_2026-07-22_004",
-      "level": 2,
+      "id": "word_2026-07-22_004",
+      "level": 3,
       "content": "社区微调出 657MB 本地推理模型",
       "date": "2026-07-22"
     },
     {
-      "id": "tag_2026-07-22_005",
-      "level": 2,
+      "id": "word_2026-07-22_005",
+      "level": 3,
       "content": "2026 单卡 24GB 本地大模…",
       "date": "2026-07-22"
     },
     {
-      "id": "tag_2026-07-22_006",
-      "level": 2,
+      "id": "word_2026-07-22_006",
+      "level": 3,
       "content": "Bunkerhill 获融资扩展医…",
       "date": "2026-07-22"
     },
     {
-      "id": "tag_2026-07-22_007",
-      "level": 2,
+      "id": "word_2026-07-22_007",
+      "level": 3,
       "content": "FakeGit 活动借 GitHu…",
       "date": "2026-07-22"
     },
     {
-      "id": "tag_2026-07-22_008",
-      "level": 2,
+      "id": "word_2026-07-22_008",
+      "level": 3,
       "content": "阿里预览 2.4 万亿参数模型",
       "date": "2026-07-22"
     },
     {
-      "id": "tag_2026-07-22_009",
-      "level": 2,
+      "id": "word_2026-07-22_009",
+      "level": 3,
       "content": "Feyn AI 发布先查库 SQL…",
       "date": "2026-07-22"
     },
     {
-      "id": "tag_2026-07-21_001",
-      "level": 2,
+      "id": "word_2026-07-21_001",
+      "level": 3,
       "content": "OpenAI 完善青少年安全机制",
       "date": "2026-07-21"
     },
@@ -174,54 +222,6 @@
       "level": 3,
       "content": "GPT-5.6 攻克凸优化三十年难题",
       "date": "2026-07-20"
-    },
-    {
-      "id": "word_2026-07-20_002",
-      "level": 3,
-      "content": "月之暗面 Kimi K3 刷新国产…",
-      "date": "2026-07-20"
-    },
-    {
-      "id": "word_2026-07-20_003",
-      "level": 3,
-      "content": "OpenAI 阐述青少年安全访问 …",
-      "date": "2026-07-20"
-    },
-    {
-      "id": "word_2026-07-20_004",
-      "level": 3,
-      "content": "字节跳动 Astra 架构提升机器…",
-      "date": "2026-07-20"
-    },
-    {
-      "id": "word_2026-07-20_005",
-      "level": 3,
-      "content": "OpenAI 发布 AI 投资回报…",
-      "date": "2026-07-20"
-    },
-    {
-      "id": "word_2026-07-20_006",
-      "level": 3,
-      "content": "英伟达嵌入模型登顶 RTEB",
-      "date": "2026-07-20"
-    },
-    {
-      "id": "word_2026-07-20_007",
-      "level": 3,
-      "content": "MIT 提出 AI 自我进化框架",
-      "date": "2026-07-20"
-    },
-    {
-      "id": "word_2026-07-20_008",
-      "level": 3,
-      "content": "OpenAI 推出 AI 投资记分卡",
-      "date": "2026-07-20"
-    },
-    {
-      "id": "word_2026-07-19_001",
-      "level": 3,
-      "content": "月之暗面开源 Kimi K3 模型",
-      "date": "2026-07-19"
     }
   ]
 }
