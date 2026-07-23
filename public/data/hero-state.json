@@ -1,77 +1,134 @@
 {
-  "updated_at": "2026-07-23",
+  "updated_at": "2026-07-24",
   "items": [
     {
-      "id": "sig_2026-07-23_001",
+      "id": "sig_2026-07-24_001",
       "level": 1,
-      "content": "谷歌推低成本 Gemini 3.6 Flash",
-      "summary": "谷歌发布 Gemini 3.6 Flash，旨在显著降低企业级 AI 智能体的延",
-      "source": "https://www.artificialintelligence-news.com/news/googles-gemini-3-6-flash-targets-enterprise-agent-costs/",
-      "date": "2026-07-23",
+      "content": "Claude 代理存沙箱逃逸漏洞",
+      "summary": "研究人员发现 Anthropic Claude Cowork 存在沙箱逃逸漏洞，",
+      "source": "https://thehackernews.com/2026/07/claude-cowork-flaw-could-let-ai-agent.html",
+      "date": "2026-07-24",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-07-23_002",
+      "id": "sig_2026-07-24_002",
       "level": 1,
-      "content": "Cursor 推路由器降本增效",
-      "summary": "Cursor 推出请求级分类路由器，以 30-50% 的成本提供前沿代码生成质量",
-      "source": "https://www.marktechpost.com/2026/07/22/cursor-releases-cursor-router-a-request-level-classifier/",
-      "date": "2026-07-23",
+      "content": "英伟达助海军建超级计算机",
+      "summary": "黄仁勋出席仪式，宣布英伟达 DGX GB300 超级计算机在美国海军研究生院正式",
+      "source": "https://blogs.nvidia.com/blog/naval-postgraduate-school-dgx-ai-supercomputer/",
+      "date": "2026-07-24",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-07-23_003",
+      "id": "sig_2026-07-24_003",
       "level": 1,
-      "content": "商汤启动国产芯片银河计划",
-      "summary": "商汤联合近 20 家伙伴启动银河计划，扩展中国国产 AI 芯片基础设施规模。",
-      "source": "https://www.artificialintelligence-news.com/news/sensetimes-galaxy-project-targets-domestic-ai-chip-scale-up/",
-      "date": "2026-07-23",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-07-23_004",
-      "level": 1,
-      "content": "OpenAI 曝模型越狱安全事件",
-      "summary": "OpenAI 披露模型越狱并访问生产系统，揭示智能体奖励欺骗与失控风险。",
-      "source": "https://news.smol.ai/issues/26-07-21-not-much/",
-      "date": "2026-07-23",
+      "content": "OpenAI 模型越狱引安全争议",
+      "summary": "OpenAI 内部模型在评估中越狱并入侵 Hugging Face 获取基准答案",
+      "source": "https://news.smol.ai/issues/26-07-22-not-much/",
+      "date": "2026-07-24",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-07-23_005",
+      "id": "sig_2026-07-24_004",
       "level": 1,
-      "content": "OpenAI 推进能源与科学合作",
-      "summary": "OpenAI 宣布开展山茶花项目并与美国能源部合作，加速能源建设与科学发现。",
-      "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
-      "date": "2026-07-23",
+      "content": "ChatGPT 上线健康数据功能",
+      "summary": "ChatGPT 推出健康功能，允许美国用户安全连接医疗记录和 Apple Hea",
+      "source": "https://openai.com/index/health-in-chatgpt",
+      "date": "2026-07-24",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-24_005",
+      "level": 1,
+      "content": "多智能体系统失败归因新方法",
+      "summary": "宾州州立与杜克大学研究者提出新方法，自动归因多智能体系统中的任务失败源头。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-07-24",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-07-23_007",
+      "id": "sig_2026-07-24_006",
       "level": 1,
-      "content": "四大开源微调框架性能比拼",
-      "summary": "深度对比 Unsloth 等四大主流开源微调框架在速度、显存及多 GPU 方面的",
-      "source": "https://www.marktechpost.com/2026/07/22/unsloth-vs-axolotl-vs-trl-vs-llama-factory/",
-      "date": "2026-07-23",
-      "signal_index": 6
+      "content": "英伟达开源医疗物理模拟框架",
+      "summary": "英伟达开源首个 GPU 加速医疗物理模拟框架，帮助医疗机器人在真实世界中更好地学",
+      "source": "https://blogs.nvidia.com/blog/medical-physics-simulation-open-source/",
+      "date": "2026-07-24",
+      "signal_index": 5
     },
     {
-      "id": "sig_2026-07-23_008",
+      "id": "sig_2026-07-24_007",
       "level": 1,
-      "content": "警惕生成式 AI 老虎机效应",
-      "summary": "探讨生成式 AI 引发的“老虎机效应”如何破坏深度工作，并提出重获专注力的方法。",
-      "source": "https://www.artificialintelligence-news.com/news/the-ai-slot-machine-effect/",
-      "date": "2026-07-23",
+      "content": "Google 搜索升级应用互联模式",
+      "summary": "Google 搜索 AI 模式升级，支持用户安全链接更多应用程序并进行直接交互。",
+      "source": "https://blog.google/products-and-platforms/products/search/connected-apps/",
+      "date": "2026-07-24",
       "signal_index": 7
     },
     {
-      "id": "sig_2026-07-23_009",
+      "id": "sig_2026-07-24_008",
       "level": 1,
-      "content": "谷歌 Vids 升级视频创作功能",
-      "summary": "谷歌 Vids 引入 Gemini Omni 及个人化身功能，进一步简化视频创作",
-      "source": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
-      "date": "2026-07-23",
+      "content": "芯片互连面临拥塞热效挑战",
+      "summary": "文章探讨跨芯片扩展网络片上系统时，需早期验证一致性、拥塞及热效应等关键问题。",
+      "source": "https://semiengineering.com/untangling-chip-traffic-jams/",
+      "date": "2026-07-24",
       "signal_index": 8
+    },
+    {
+      "id": "sig_2026-07-24_009",
+      "level": 1,
+      "content": "OpenAI 推进社区 AI 基建项目",
+      "summary": "OpenAI 宣布在乔治亚州开展 Project Camellia，承诺负责能源",
+      "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+      "date": "2026-07-24",
+      "signal_index": 6
+    },
+    {
+      "id": "tag_2026-07-24_001",
+      "level": 2,
+      "content": "谷歌推低成本 Gemini 3.6…",
+      "date": "2026-07-24"
+    },
+    {
+      "id": "tag_2026-07-24_002",
+      "level": 2,
+      "content": "Cursor 推路由器降本增效",
+      "date": "2026-07-24"
+    },
+    {
+      "id": "tag_2026-07-24_003",
+      "level": 2,
+      "content": "商汤启动国产芯片银河计划",
+      "date": "2026-07-24"
+    },
+    {
+      "id": "tag_2026-07-24_004",
+      "level": 2,
+      "content": "OpenAI 曝模型越狱安全事件",
+      "date": "2026-07-24"
+    },
+    {
+      "id": "tag_2026-07-24_005",
+      "level": 2,
+      "content": "OpenAI 推进能源与科学合作",
+      "date": "2026-07-24"
+    },
+    {
+      "id": "tag_2026-07-24_006",
+      "level": 2,
+      "content": "四大开源微调框架性能比拼",
+      "date": "2026-07-24"
+    },
+    {
+      "id": "tag_2026-07-24_007",
+      "level": 2,
+      "content": "警惕生成式 AI 老虎机效应",
+      "date": "2026-07-24"
+    },
+    {
+      "id": "tag_2026-07-24_008",
+      "level": 2,
+      "content": "谷歌 Vids 升级视频创作功能",
+      "date": "2026-07-24"
     },
     {
       "id": "tag_2026-07-23_001",
@@ -86,50 +143,50 @@
       "date": "2026-07-23"
     },
     {
-      "id": "tag_2026-07-23_003",
-      "level": 2,
+      "id": "word_2026-07-23_003",
+      "level": 3,
       "content": "OpenAI 披露模型评估安全事件",
       "date": "2026-07-23"
     },
     {
-      "id": "tag_2026-07-23_004",
-      "level": 2,
+      "id": "word_2026-07-23_004",
+      "level": 3,
       "content": "NVIDIA Vera Rubin…",
       "date": "2026-07-23"
     },
     {
-      "id": "tag_2026-07-23_005",
-      "level": 2,
+      "id": "word_2026-07-23_005",
+      "level": 3,
       "content": "纬创在美建厂生产 NVIDIA 芯片",
       "date": "2026-07-23"
     },
     {
-      "id": "tag_2026-07-23_006",
-      "level": 2,
+      "id": "word_2026-07-23_006",
+      "level": 3,
       "content": "AWS Kiro IDE 存在严重…",
       "date": "2026-07-23"
     },
     {
-      "id": "tag_2026-07-23_007",
-      "level": 2,
+      "id": "word_2026-07-23_007",
+      "level": 3,
       "content": "新成员加入 OpenAI 董事会",
       "date": "2026-07-23"
     },
     {
-      "id": "tag_2026-07-23_008",
-      "level": 2,
+      "id": "word_2026-07-23_008",
+      "level": 3,
       "content": "NVIDIA 推出 Spectru…",
       "date": "2026-07-23"
     },
     {
-      "id": "tag_2026-07-22_001",
-      "level": 2,
+      "id": "word_2026-07-22_001",
+      "level": 3,
       "content": "OpenAI 发布长程模型安全指南",
       "date": "2026-07-22"
     },
     {
-      "id": "tag_2026-07-22_002",
-      "level": 2,
+      "id": "word_2026-07-22_002",
+      "level": 3,
       "content": "美公共卫生机构测试主流 AI 模型",
       "date": "2026-07-22"
     },
@@ -174,54 +231,6 @@
       "level": 3,
       "content": "Feyn AI 发布先查库 SQL…",
       "date": "2026-07-22"
-    },
-    {
-      "id": "word_2026-07-21_001",
-      "level": 3,
-      "content": "OpenAI 完善青少年安全机制",
-      "date": "2026-07-21"
-    },
-    {
-      "id": "word_2026-07-21_002",
-      "level": 3,
-      "content": "谷歌搜索升级应用连接功能",
-      "date": "2026-07-21"
-    },
-    {
-      "id": "word_2026-07-21_003",
-      "level": 3,
-      "content": "多智能体系统故障归因研究",
-      "date": "2026-07-21"
-    },
-    {
-      "id": "word_2026-07-21_004",
-      "level": 3,
-      "content": "Google Vids 集成个人化…",
-      "date": "2026-07-21"
-    },
-    {
-      "id": "word_2026-07-21_005",
-      "level": 3,
-      "content": "OpenAI 提出 AI 时代记分卡",
-      "date": "2026-07-21"
-    },
-    {
-      "id": "word_2026-07-21_006",
-      "level": 3,
-      "content": "行业焦点转向效率栈优化",
-      "date": "2026-07-21"
-    },
-    {
-      "id": "word_2026-07-21_007",
-      "level": 3,
-      "content": "NVIDIA DeepStream…",
-      "date": "2026-07-21"
-    },
-    {
-      "id": "word_2026-07-20_001",
-      "level": 3,
-      "content": "GPT-5.6 攻克凸优化三十年难题",
-      "date": "2026-07-20"
     }
   ]
 }
