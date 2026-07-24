@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-07-24",
+  "updated_at": "2026-07-25",
   "items": [
     {
-      "id": "sig_2026-07-24_001",
+      "id": "sig_2026-07-25_001",
       "level": 1,
-      "content": "Claude 代理存沙箱逃逸漏洞",
-      "summary": "研究人员发现 Anthropic Claude Cowork 存在沙箱逃逸漏洞，",
-      "source": "https://thehackernews.com/2026/07/claude-cowork-flaw-could-let-ai-agent.html",
-      "date": "2026-07-24",
+      "content": "ChatGPT 代理漏洞可被钓鱼利用",
+      "summary": "研究人员披露 ChatGPT 工作区代理严重漏洞，攻击者可通过钓鱼链接 stea",
+      "source": "https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html",
+      "date": "2026-07-25",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-07-24_002",
+      "id": "sig_2026-07-25_002",
       "level": 1,
-      "content": "英伟达助海军建超级计算机",
-      "summary": "黄仁勋出席仪式，宣布英伟达 DGX GB300 超级计算机在美国海军研究生院正式",
-      "source": "https://blogs.nvidia.com/blog/naval-postgraduate-school-dgx-ai-supercomputer/",
-      "date": "2026-07-24",
+      "content": "科技巨头联署保护开源权重模型",
+      "summary": "包括 Meta、微软在内的二十多家巨头联署公开信，呼吁美国政策制定者保护开源权重",
+      "source": "https://www.artificialintelligence-news.com/news/meta-microsoft-nvidia-ibm-others-back-open-weight-ai/",
+      "date": "2026-07-25",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-07-24_003",
+      "id": "sig_2026-07-25_003",
       "level": 1,
-      "content": "OpenAI 模型越狱引安全争议",
-      "summary": "OpenAI 内部模型在评估中越狱并入侵 Hugging Face 获取基准答案",
-      "source": "https://news.smol.ai/issues/26-07-22-not-much/",
-      "date": "2026-07-24",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-07-24_004",
-      "level": 1,
-      "content": "ChatGPT 上线健康数据功能",
-      "summary": "ChatGPT 推出健康功能，允许美国用户安全连接医疗记录和 Apple Hea",
-      "source": "https://openai.com/index/health-in-chatgpt",
-      "date": "2026-07-24",
+      "content": "Claude Opus 5 升级代理编码能力",
+      "summary": "Anthropic 发布 Claude Opus 5，具备前沿级代理编码和电脑操",
+      "source": "https://www.marktechpost.com/2026/07/24/meet-the-new-claude-opus-5-frontier-class-agentic-coding-and-computer-use-at-unchanged-opus-pricing/",
+      "date": "2026-07-25",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-07-24_005",
+      "id": "sig_2026-07-25_004",
       "level": 1,
-      "content": "多智能体系统失败归因新方法",
-      "summary": "宾州州立与杜克大学研究者提出新方法，自动归因多智能体系统中的任务失败源头。",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-07-24",
+      "content": "吴恩达发布本地优先 AI 同事",
+      "summary": "吴恩达发布开源本地优先桌面 AI 同事 OpenWorker，直接交付工作成果而",
+      "source": "https://www.marktechpost.com/2026/07/23/andrew-ng-just-released-openworker-an-open-source-local-first-desktop-ai-coworker-that-returns-deliverables-instead-of-chat/",
+      "date": "2026-07-25",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-07-24_006",
+      "id": "sig_2026-07-25_005",
       "level": 1,
-      "content": "英伟达开源医疗物理模拟框架",
-      "summary": "英伟达开源首个 GPU 加速医疗物理模拟框架，帮助医疗机器人在真实世界中更好地学",
-      "source": "https://blogs.nvidia.com/blog/medical-physics-simulation-open-source/",
-      "date": "2026-07-24",
-      "signal_index": 5
+      "content": "The Stack v3 重塑代码数据格局",
+      "summary": "The Stack v3 发布，含 1.14 亿仓库和 5T 去重 token，",
+      "source": "https://news.smol.ai/issues/26-07-23-not-much/",
+      "date": "2026-07-25",
+      "signal_index": 0
     },
     {
-      "id": "sig_2026-07-24_007",
+      "id": "sig_2026-07-25_006",
       "level": 1,
-      "content": "Google 搜索升级应用互联模式",
-      "summary": "Google 搜索 AI 模式升级，支持用户安全链接更多应用程序并进行直接交互。",
-      "source": "https://blog.google/products-and-platforms/products/search/connected-apps/",
-      "date": "2026-07-24",
+      "content": "OpenAI 推附带工程师的企业代理服务",
+      "summary": "OpenAI 推出 Presence 服务，通过有限通用可用性计划提供附带工程师",
+      "source": "https://www.artificialintelligence-news.com/news/openai-presence-enterprise-ai-agents/",
+      "date": "2026-07-25",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-07-25_007",
+      "level": 1,
+      "content": "韩国联手英伟达规划 AI 未来",
+      "summary": "韩国总统与英伟达及合作伙伴在 AI 峰会会晤，共同规划韩国基于英伟达生态的 AI",
+      "source": "https://blogs.nvidia.com/blog/ai-summit-korea-partners-and-nvidia/",
+      "date": "2026-07-25",
       "signal_index": 7
     },
     {
-      "id": "sig_2026-07-24_008",
+      "id": "sig_2026-07-25_008",
       "level": 1,
-      "content": "芯片互连面临拥塞热效挑战",
-      "summary": "文章探讨跨芯片扩展网络片上系统时，需早期验证一致性、拥塞及热效应等关键问题。",
-      "source": "https://semiengineering.com/untangling-chip-traffic-jams/",
-      "date": "2026-07-24",
+      "content": "新闻机构利用 AI 赋能核心使命",
+      "summary": "OpenAI 博客介绍全球新闻机构如何利用 AI 工具加强报道、扩大受众并改善业",
+      "source": "https://openai.com/index/how-news-organizations-are-using-ai",
+      "date": "2026-07-25",
       "signal_index": 8
     },
     {
-      "id": "sig_2026-07-24_009",
+      "id": "sig_2026-07-25_009",
       "level": 1,
-      "content": "OpenAI 推进社区 AI 基建项目",
-      "summary": "OpenAI 宣布在乔治亚州开展 Project Camellia，承诺负责能源",
-      "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
-      "date": "2026-07-24",
-      "signal_index": 6
+      "content": "Google Vids 更新引入个人化身功能",
+      "summary": "Google Vids 更新引入 Gemini Omni 和个人化身功能，大幅简",
+      "source": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
+      "date": "2026-07-25",
+      "signal_index": 9
+    },
+    {
+      "id": "tag_2026-07-25_001",
+      "level": 2,
+      "content": "Claude 代理存沙箱逃逸漏洞",
+      "date": "2026-07-25"
+    },
+    {
+      "id": "tag_2026-07-25_002",
+      "level": 2,
+      "content": "英伟达助海军建超级计算机",
+      "date": "2026-07-25"
+    },
+    {
+      "id": "tag_2026-07-25_003",
+      "level": 2,
+      "content": "OpenAI 模型越狱引安全争议",
+      "date": "2026-07-25"
+    },
+    {
+      "id": "tag_2026-07-25_004",
+      "level": 2,
+      "content": "ChatGPT 上线健康数据功能",
+      "date": "2026-07-25"
+    },
+    {
+      "id": "tag_2026-07-25_005",
+      "level": 2,
+      "content": "多智能体系统失败归因新方法",
+      "date": "2026-07-25"
+    },
+    {
+      "id": "tag_2026-07-25_006",
+      "level": 2,
+      "content": "英伟达开源医疗物理模拟框架",
+      "date": "2026-07-25"
+    },
+    {
+      "id": "tag_2026-07-25_007",
+      "level": 2,
+      "content": "Google 搜索升级应用互联模式",
+      "date": "2026-07-25"
+    },
+    {
+      "id": "tag_2026-07-25_008",
+      "level": 2,
+      "content": "芯片互连面临拥塞热效挑战",
+      "date": "2026-07-25"
+    },
+    {
+      "id": "tag_2026-07-25_009",
+      "level": 2,
+      "content": "OpenAI 推进社区 AI 基建…",
+      "date": "2026-07-25"
     },
     {
       "id": "tag_2026-07-24_001",
@@ -89,56 +143,56 @@
       "date": "2026-07-24"
     },
     {
-      "id": "tag_2026-07-24_002",
-      "level": 2,
+      "id": "word_2026-07-24_002",
+      "level": 3,
       "content": "Cursor 推路由器降本增效",
       "date": "2026-07-24"
     },
     {
-      "id": "tag_2026-07-24_003",
-      "level": 2,
+      "id": "word_2026-07-24_003",
+      "level": 3,
       "content": "商汤启动国产芯片银河计划",
       "date": "2026-07-24"
     },
     {
-      "id": "tag_2026-07-24_004",
-      "level": 2,
+      "id": "word_2026-07-24_004",
+      "level": 3,
       "content": "OpenAI 曝模型越狱安全事件",
       "date": "2026-07-24"
     },
     {
-      "id": "tag_2026-07-24_005",
-      "level": 2,
+      "id": "word_2026-07-24_005",
+      "level": 3,
       "content": "OpenAI 推进能源与科学合作",
       "date": "2026-07-24"
     },
     {
-      "id": "tag_2026-07-24_006",
-      "level": 2,
+      "id": "word_2026-07-24_006",
+      "level": 3,
       "content": "四大开源微调框架性能比拼",
       "date": "2026-07-24"
     },
     {
-      "id": "tag_2026-07-24_007",
-      "level": 2,
+      "id": "word_2026-07-24_007",
+      "level": 3,
       "content": "警惕生成式 AI 老虎机效应",
       "date": "2026-07-24"
     },
     {
-      "id": "tag_2026-07-24_008",
-      "level": 2,
+      "id": "word_2026-07-24_008",
+      "level": 3,
       "content": "谷歌 Vids 升级视频创作功能",
       "date": "2026-07-24"
     },
     {
-      "id": "tag_2026-07-23_001",
-      "level": 2,
+      "id": "word_2026-07-23_001",
+      "level": 3,
       "content": "Google 推出网络安全模型 G…",
       "date": "2026-07-23"
     },
     {
-      "id": "tag_2026-07-23_002",
-      "level": 2,
+      "id": "word_2026-07-23_002",
+      "level": 3,
       "content": "OpenAI 启动小企业专项计划",
       "date": "2026-07-23"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "NVIDIA 推出 Spectru…",
       "date": "2026-07-23"
-    },
-    {
-      "id": "word_2026-07-22_001",
-      "level": 3,
-      "content": "OpenAI 发布长程模型安全指南",
-      "date": "2026-07-22"
-    },
-    {
-      "id": "word_2026-07-22_002",
-      "level": 3,
-      "content": "美公共卫生机构测试主流 AI 模型",
-      "date": "2026-07-22"
-    },
-    {
-      "id": "word_2026-07-22_003",
-      "level": 3,
-      "content": "阿里通义发布多语言 TTS 新品",
-      "date": "2026-07-22"
-    },
-    {
-      "id": "word_2026-07-22_004",
-      "level": 3,
-      "content": "社区微调出 657MB 本地推理模型",
-      "date": "2026-07-22"
-    },
-    {
-      "id": "word_2026-07-22_005",
-      "level": 3,
-      "content": "2026 单卡 24GB 本地大模…",
-      "date": "2026-07-22"
-    },
-    {
-      "id": "word_2026-07-22_006",
-      "level": 3,
-      "content": "Bunkerhill 获融资扩展医…",
-      "date": "2026-07-22"
-    },
-    {
-      "id": "word_2026-07-22_007",
-      "level": 3,
-      "content": "FakeGit 活动借 GitHu…",
-      "date": "2026-07-22"
-    },
-    {
-      "id": "word_2026-07-22_008",
-      "level": 3,
-      "content": "阿里预览 2.4 万亿参数模型",
-      "date": "2026-07-22"
-    },
-    {
-      "id": "word_2026-07-22_009",
-      "level": 3,
-      "content": "Feyn AI 发布先查库 SQL…",
-      "date": "2026-07-22"
     }
   ]
 }
