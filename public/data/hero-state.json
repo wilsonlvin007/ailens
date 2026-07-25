@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-07-25",
+  "updated_at": "2026-07-26",
   "items": [
+    {
+      "id": "sig_2026-07-26_001",
+      "level": 1,
+      "content": "OpenAI 接入个人健康档案",
+      "summary": "OpenAI 为 ChatGPT 新增健康功能，支持连接苹果健康数据与医疗记录，",
+      "source": "https://www.artificialintelligence-news.com/news/openai-pushes-chatgpt-into-patient-health-records/",
+      "date": "2026-07-26",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-26_002",
+      "level": 1,
+      "content": "字节跳动发布机器人导航架构",
+      "summary": "字节跳动推出 Astra 双模型架构，旨在革新复杂室内环境下的自主机器人导航技术",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-07-26",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-07-26_003",
+      "level": 1,
+      "content": "Open Dreamer 复现世界模型",
+      "summary": "研究团队开源 Open Dreamer，基于 JAX/Flax 复现 Dream",
+      "source": "https://www.marktechpost.com/2026/07/25/meet-open-dreamer-a-jax-flax-reproduction-of-the-dreamer-4-world-model-pipeline-with-the-full-training_recipe-published/",
+      "date": "2026-07-26",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-26_004",
+      "level": 1,
+      "content": "Claude 5 上下文工程新规则",
+      "summary": "Anthropic 发布针对 Claude 5 代模型的上下文工程新规则，优化长",
+      "source": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+      "date": "2026-07-26",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-07-26_005",
+      "level": 1,
+      "content": "科技巨头联署支持开源权重",
+      "summary": "Meta、微软等二十余家巨头联署公开信，呼吁政策制定者保护开源权重 AI 模型的",
+      "source": "https://www.artificialintelligence-news.com/news/meta-microsoft-nvidia-ibm-others-back-open-weight-ai/",
+      "date": "2026-07-26",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-07-26_006",
+      "level": 1,
+      "content": "OpenAI 推工程师伴随式服务",
+      "summary": "OpenAI 推出 Presence 服务，以“工程师伴随”模式向企业交付定制化",
+      "source": "https://www.artificialintelligence-news.com/news/openai-presence-enterprise-ai-agents/",
+      "date": "2026-07-26",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-26_007",
+      "level": 1,
+      "content": "最大开源代码数据集发布",
+      "summary": "最大开源代码数据集 The Stack v3 发布，含 114TB 原始数据，推",
+      "source": "https://news.smol.ai/issues/26-07-23-not-much/",
+      "date": "2026-07-26",
+      "signal_index": 6
+    },
     {
       "id": "sig_2026-07-25_001",
       "level": 1,
       "content": "ChatGPT 代理漏洞可被钓鱼利用",
       "summary": "研究人员披露 ChatGPT 工作区代理严重漏洞，攻击者可通过钓鱼链接 stea",
       "source": "https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html",
-      "date": "2026-07-25",
-      "signal_index": 1
+      "date": "2026-07-26",
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-25_002",
@@ -16,71 +79,50 @@
       "content": "科技巨头联署保护开源权重模型",
       "summary": "包括 Meta、微软在内的二十多家巨头联署公开信，呼吁美国政策制定者保护开源权重",
       "source": "https://www.artificialintelligence-news.com/news/meta-microsoft-nvidia-ibm-others-back-open-weight-ai/",
-      "date": "2026-07-25",
-      "signal_index": 2
+      "date": "2026-07-26",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-07-25_003",
-      "level": 1,
-      "content": "Claude Opus 5 升级代理编码能力",
-      "summary": "Anthropic 发布 Claude Opus 5，具备前沿级代理编码和电脑操",
-      "source": "https://www.marktechpost.com/2026/07/24/meet-the-new-claude-opus-5-frontier-class-agentic-coding-and-computer-use-at-unchanged-opus-pricing/",
-      "date": "2026-07-25",
-      "signal_index": 3
+      "id": "tag_2026-07-26_001",
+      "level": 2,
+      "content": "Claude Opus 5 升级代…",
+      "date": "2026-07-26"
     },
     {
-      "id": "sig_2026-07-25_004",
-      "level": 1,
+      "id": "tag_2026-07-26_002",
+      "level": 2,
       "content": "吴恩达发布本地优先 AI 同事",
-      "summary": "吴恩达发布开源本地优先桌面 AI 同事 OpenWorker，直接交付工作成果而",
-      "source": "https://www.marktechpost.com/2026/07/23/andrew-ng-just-released-openworker-an-open-source-local-first-desktop-ai-coworker-that-returns-deliverables-instead-of-chat/",
-      "date": "2026-07-25",
-      "signal_index": 4
+      "date": "2026-07-26"
     },
     {
-      "id": "sig_2026-07-25_005",
-      "level": 1,
-      "content": "The Stack v3 重塑代码数据格局",
-      "summary": "The Stack v3 发布，含 1.14 亿仓库和 5T 去重 token，",
-      "source": "https://news.smol.ai/issues/26-07-23-not-much/",
-      "date": "2026-07-25",
-      "signal_index": 0
+      "id": "tag_2026-07-26_003",
+      "level": 2,
+      "content": "The Stack v3 重塑代码…",
+      "date": "2026-07-26"
     },
     {
-      "id": "sig_2026-07-25_006",
-      "level": 1,
-      "content": "OpenAI 推附带工程师的企业代理服务",
-      "summary": "OpenAI 推出 Presence 服务，通过有限通用可用性计划提供附带工程师",
-      "source": "https://www.artificialintelligence-news.com/news/openai-presence-enterprise-ai-agents/",
-      "date": "2026-07-25",
-      "signal_index": 6
+      "id": "tag_2026-07-26_004",
+      "level": 2,
+      "content": "OpenAI 推附带工程师的企业代…",
+      "date": "2026-07-26"
     },
     {
-      "id": "sig_2026-07-25_007",
-      "level": 1,
+      "id": "tag_2026-07-26_005",
+      "level": 2,
       "content": "韩国联手英伟达规划 AI 未来",
-      "summary": "韩国总统与英伟达及合作伙伴在 AI 峰会会晤，共同规划韩国基于英伟达生态的 AI",
-      "source": "https://blogs.nvidia.com/blog/ai-summit-korea-partners-and-nvidia/",
-      "date": "2026-07-25",
-      "signal_index": 7
+      "date": "2026-07-26"
     },
     {
-      "id": "sig_2026-07-25_008",
-      "level": 1,
+      "id": "tag_2026-07-26_006",
+      "level": 2,
       "content": "新闻机构利用 AI 赋能核心使命",
-      "summary": "OpenAI 博客介绍全球新闻机构如何利用 AI 工具加强报道、扩大受众并改善业",
-      "source": "https://openai.com/index/how-news-organizations-are-using-ai",
-      "date": "2026-07-25",
-      "signal_index": 8
+      "date": "2026-07-26"
     },
     {
-      "id": "sig_2026-07-25_009",
-      "level": 1,
-      "content": "Google Vids 更新引入个人化身功能",
-      "summary": "Google Vids 更新引入 Gemini Omni 和个人化身功能，大幅简",
-      "source": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-personal-avatars/",
-      "date": "2026-07-25",
-      "signal_index": 9
+      "id": "tag_2026-07-26_007",
+      "level": 2,
+      "content": "Google Vids 更新引入个…",
+      "date": "2026-07-26"
     },
     {
       "id": "tag_2026-07-25_001",
@@ -101,44 +143,44 @@
       "date": "2026-07-25"
     },
     {
-      "id": "tag_2026-07-25_004",
-      "level": 2,
+      "id": "word_2026-07-25_004",
+      "level": 3,
       "content": "ChatGPT 上线健康数据功能",
       "date": "2026-07-25"
     },
     {
-      "id": "tag_2026-07-25_005",
-      "level": 2,
+      "id": "word_2026-07-25_005",
+      "level": 3,
       "content": "多智能体系统失败归因新方法",
       "date": "2026-07-25"
     },
     {
-      "id": "tag_2026-07-25_006",
-      "level": 2,
+      "id": "word_2026-07-25_006",
+      "level": 3,
       "content": "英伟达开源医疗物理模拟框架",
       "date": "2026-07-25"
     },
     {
-      "id": "tag_2026-07-25_007",
-      "level": 2,
+      "id": "word_2026-07-25_007",
+      "level": 3,
       "content": "Google 搜索升级应用互联模式",
       "date": "2026-07-25"
     },
     {
-      "id": "tag_2026-07-25_008",
-      "level": 2,
+      "id": "word_2026-07-25_008",
+      "level": 3,
       "content": "芯片互连面临拥塞热效挑战",
       "date": "2026-07-25"
     },
     {
-      "id": "tag_2026-07-25_009",
-      "level": 2,
+      "id": "word_2026-07-25_009",
+      "level": 3,
       "content": "OpenAI 推进社区 AI 基建…",
       "date": "2026-07-25"
     },
     {
-      "id": "tag_2026-07-24_001",
-      "level": 2,
+      "id": "word_2026-07-24_001",
+      "level": 3,
       "content": "谷歌推低成本 Gemini 3.6…",
       "date": "2026-07-24"
     },
@@ -188,48 +230,6 @@
       "id": "word_2026-07-23_001",
       "level": 3,
       "content": "Google 推出网络安全模型 G…",
-      "date": "2026-07-23"
-    },
-    {
-      "id": "word_2026-07-23_002",
-      "level": 3,
-      "content": "OpenAI 启动小企业专项计划",
-      "date": "2026-07-23"
-    },
-    {
-      "id": "word_2026-07-23_003",
-      "level": 3,
-      "content": "OpenAI 披露模型评估安全事件",
-      "date": "2026-07-23"
-    },
-    {
-      "id": "word_2026-07-23_004",
-      "level": 3,
-      "content": "NVIDIA Vera Rubin…",
-      "date": "2026-07-23"
-    },
-    {
-      "id": "word_2026-07-23_005",
-      "level": 3,
-      "content": "纬创在美建厂生产 NVIDIA 芯片",
-      "date": "2026-07-23"
-    },
-    {
-      "id": "word_2026-07-23_006",
-      "level": 3,
-      "content": "AWS Kiro IDE 存在严重…",
-      "date": "2026-07-23"
-    },
-    {
-      "id": "word_2026-07-23_007",
-      "level": 3,
-      "content": "新成员加入 OpenAI 董事会",
-      "date": "2026-07-23"
-    },
-    {
-      "id": "word_2026-07-23_008",
-      "level": 3,
-      "content": "NVIDIA 推出 Spectru…",
       "date": "2026-07-23"
     }
   ]
