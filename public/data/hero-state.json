@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-07-27",
+  "updated_at": "2026-07-28",
   "items": [
+    {
+      "id": "sig_2026-07-28_001",
+      "level": 1,
+      "content": "NVIDIA 牵头成立安全联盟",
+      "summary": "NVIDIA 联合 36 家机构成立开放安全 AI 联盟，并开源 NOOA 框架",
+      "source": "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html",
+      "date": "2026-07-28",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-07-28_002",
+      "level": 1,
+      "content": "月之暗面开源 AgentENV 系统",
+      "summary": "月之暗面开源 AgentENV 分布式系统，支持基于微虚拟机的智能体强化学习训练",
+      "source": "https://www.marktechpost.com/2026/07/27/kimi-ai-and-kvcache-ai-open-sources-agentenv/",
+      "date": "2026-07-28",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-07-28_003",
+      "level": 1,
+      "content": "美国 AI 投资重塑经济格局",
+      "summary": "科技巨头数千亿美元投入 AI 基础设施，美国 AI 投资热潮正深刻重塑宏观经济格",
+      "source": "https://www.artificialintelligence-news.com/news/americas-ai-investment-boom-is-reshaping-the-economy/",
+      "date": "2026-07-28",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-07-28_004",
+      "level": 1,
+      "content": "OpenAI 研究显示 AI 扩展工作边界",
+      "summary": "OpenAI 新研究显示 AI 正扩展员工工作任务边界，ChatGPT 用户开始",
+      "source": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+      "date": "2026-07-28",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-07-28_005",
+      "level": 1,
+      "content": "AI 缩短中国药物研发周期",
+      "summary": "英矽智能结合 AI 与实验室研究，将中国部分药物候选物研发周期缩短至约一年甚至九",
+      "source": "https://www.artificialintelligence-news.com/news/ai-drug-discovery-china/",
+      "date": "2026-07-28",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-07-28_006",
+      "level": 1,
+      "content": "Perplexity 发布终端搜索工具",
+      "summary": "Perplexity 发布 pplx 命令行工具，将搜索 API 集成至终端，专",
+      "source": "https://www.marktechpost.com/2026/07/27/perplexity-releases-pplx/",
+      "date": "2026-07-28",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-07-28_007",
+      "level": 1,
+      "content": "OpenAI 建设佐治亚州数据中心",
+      "summary": "OpenAI 宣布在佐治亚州建设 Project Camellia，承诺负责任能",
+      "source": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+      "date": "2026-07-28",
+      "signal_index": 6
+    },
     {
       "id": "sig_2026-07-27_001",
       "level": 1,
       "content": "Black Forest Labs 推出 FLUX 3",
       "summary": "Black Forest Labs 发布 FLUX 3，首个单架构统一处理多模态",
       "source": "https://www.marktechpost.com/2026/07/26/black-forest-labs-releases-flux-3-a-multimodal-flow-model-for-image-video-audio-and-robot-action-prediction/",
-      "date": "2026-07-27",
-      "signal_index": 0
+      "date": "2026-07-28",
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-27_002",
@@ -16,71 +79,50 @@
       "content": "OpenAI 将健康数据接入 ChatGPT",
       "summary": "OpenAI 在美推出 ChatGPT 健康功能，支持连接医疗记录与 Apple",
       "source": "https://openai.com/index/health-in-chatgpt",
-      "date": "2026-07-27",
-      "signal_index": 1
+      "date": "2026-07-28",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-07-27_003",
-      "level": 1,
-      "content": "MIT 提出 SEAL 自改进 AI 框架",
-      "summary": "MIT 推出 SEAL 框架，利用强化学习让大模型自我编辑权重，迈向自改进新阶段",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-07-27",
-      "signal_index": 2
+      "id": "tag_2026-07-28_001",
+      "level": 2,
+      "content": "MIT 提出 SEAL 自改进 A…",
+      "date": "2026-07-28"
     },
     {
-      "id": "sig_2026-07-27_004",
-      "level": 1,
-      "content": "快手发布 KAT-Coder-V2.5",
-      "summary": "快手团队发布 KAT-Coder-V2.5，在十万加可验证环境中训练，突破代理编",
-      "source": "https://www.marktechpost.com/2026/07/26/kwaikat-team-releases-kat-coder-v2-5-an-agentic-coding-model-trained-on-100000-verifiable-repository-environments/",
-      "date": "2026-07-27",
-      "signal_index": 3
+      "id": "tag_2026-07-28_002",
+      "level": 2,
+      "content": "快手发布 KAT-Coder-V2…",
+      "date": "2026-07-28"
     },
     {
-      "id": "sig_2026-07-27_005",
-      "level": 1,
-      "content": "Induction Labs 发布 Photon-1",
-      "summary": "Induction Labs 发布 Photon-1，无需动作标签即可从原始视频",
-      "source": "https://www.marktechpost.com/2026/07/26/induction-labs-photon-1-simulates-desktops-plays-checkers-and-models-billiard-physics-from-one-pretraining-run/",
-      "date": "2026-07-27",
-      "signal_index": 4
+      "id": "tag_2026-07-28_003",
+      "level": 2,
+      "content": "Induction Labs 发布…",
+      "date": "2026-07-28"
     },
     {
-      "id": "sig_2026-07-26_001",
-      "level": 1,
+      "id": "tag_2026-07-28_004",
+      "level": 2,
       "content": "OpenAI 接入个人健康档案",
-      "summary": "OpenAI 为 ChatGPT 新增健康功能，支持连接苹果健康数据与医疗记录，",
-      "source": "https://www.artificialintelligence-news.com/news/openai-pushes-chatgpt-into-patient-health-records/",
-      "date": "2026-07-27",
-      "signal_index": null
+      "date": "2026-07-28"
     },
     {
-      "id": "sig_2026-07-26_002",
-      "level": 1,
+      "id": "tag_2026-07-28_005",
+      "level": 2,
       "content": "字节跳动发布机器人导航架构",
-      "summary": "字节跳动推出 Astra 双模型架构，旨在革新复杂室内环境下的自主机器人导航技术",
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-07-27",
-      "signal_index": null
+      "date": "2026-07-28"
     },
     {
-      "id": "sig_2026-07-26_003",
-      "level": 1,
-      "content": "Open Dreamer 复现世界模型",
-      "summary": "研究团队开源 Open Dreamer，基于 JAX/Flax 复现 Dream",
-      "source": "https://www.marktechpost.com/2026/07/25/meet-open-dreamer-a-jax-flax-reproduction-of-the-dreamer-4-world-model-pipeline-with-the-full-training_recipe-published/",
-      "date": "2026-07-27",
-      "signal_index": null
+      "id": "tag_2026-07-28_006",
+      "level": 2,
+      "content": "Open Dreamer 复现世界…",
+      "date": "2026-07-28"
     },
     {
-      "id": "sig_2026-07-26_004",
-      "level": 1,
+      "id": "tag_2026-07-28_007",
+      "level": 2,
       "content": "Claude 5 上下文工程新规则",
-      "summary": "Anthropic 发布针对 Claude 5 代模型的上下文工程新规则，优化长",
-      "source": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
-      "date": "2026-07-27",
-      "signal_index": null
+      "date": "2026-07-28"
     },
     {
       "id": "tag_2026-07-27_001",
@@ -101,44 +143,44 @@
       "date": "2026-07-27"
     },
     {
-      "id": "tag_2026-07-27_004",
-      "level": 2,
+      "id": "word_2026-07-27_004",
+      "level": 3,
       "content": "ChatGPT 代理漏洞可被钓鱼利用",
       "date": "2026-07-27"
     },
     {
-      "id": "tag_2026-07-27_005",
-      "level": 2,
+      "id": "word_2026-07-27_005",
+      "level": 3,
       "content": "科技巨头联署保护开源权重模型",
       "date": "2026-07-27"
     },
     {
-      "id": "tag_2026-07-26_001",
-      "level": 2,
+      "id": "word_2026-07-26_001",
+      "level": 3,
       "content": "Claude Opus 5 升级代…",
       "date": "2026-07-26"
     },
     {
-      "id": "tag_2026-07-26_002",
-      "level": 2,
+      "id": "word_2026-07-26_002",
+      "level": 3,
       "content": "吴恩达发布本地优先 AI 同事",
       "date": "2026-07-26"
     },
     {
-      "id": "tag_2026-07-26_003",
-      "level": 2,
+      "id": "word_2026-07-26_003",
+      "level": 3,
       "content": "The Stack v3 重塑代码…",
       "date": "2026-07-26"
     },
     {
-      "id": "tag_2026-07-26_004",
-      "level": 2,
+      "id": "word_2026-07-26_004",
+      "level": 3,
       "content": "OpenAI 推附带工程师的企业代…",
       "date": "2026-07-26"
     },
     {
-      "id": "tag_2026-07-26_005",
-      "level": 2,
+      "id": "word_2026-07-26_005",
+      "level": 3,
       "content": "韩国联手英伟达规划 AI 未来",
       "date": "2026-07-26"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "英伟达开源医疗物理模拟框架",
       "date": "2026-07-25"
-    },
-    {
-      "id": "word_2026-07-25_007",
-      "level": 3,
-      "content": "Google 搜索升级应用互联模式",
-      "date": "2026-07-25"
-    },
-    {
-      "id": "word_2026-07-25_008",
-      "level": 3,
-      "content": "芯片互连面临拥塞热效挑战",
-      "date": "2026-07-25"
-    },
-    {
-      "id": "word_2026-07-25_009",
-      "level": 3,
-      "content": "OpenAI 推进社区 AI 基建…",
-      "date": "2026-07-25"
-    },
-    {
-      "id": "word_2026-07-24_001",
-      "level": 3,
-      "content": "谷歌推低成本 Gemini 3.6…",
-      "date": "2026-07-24"
-    },
-    {
-      "id": "word_2026-07-24_002",
-      "level": 3,
-      "content": "Cursor 推路由器降本增效",
-      "date": "2026-07-24"
-    },
-    {
-      "id": "word_2026-07-24_003",
-      "level": 3,
-      "content": "商汤启动国产芯片银河计划",
-      "date": "2026-07-24"
-    },
-    {
-      "id": "word_2026-07-24_004",
-      "level": 3,
-      "content": "OpenAI 曝模型越狱安全事件",
-      "date": "2026-07-24"
     }
   ]
 }
