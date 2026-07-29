@@ -1,1 +1,1 @@
-{"date":"2026-07-06","boost_categories":[],"boost_sources":[],"note":"Traffic still at ~8 PV/day. No category/source dominance detected. Baidu SEO signal near zero — sitemap/robots.txt verification recommended. Conservative strategy maintained."}
+{"date":"2026-07-30","boost_categories":["application"],"boost_sources":["MarkTechPost","AI News"],"note":"百度统计Token失效(7/14过期, Day 20+), 无法获取PV/停留数据。基于内容分类分布: application占57.1%明显高于其他, technology从高点回落至14.3%。MarkTechPost+AI News各2篇为最大信源。建议明日增加application类采集权重, 补足technology缺口, 增补1-2个新信源提升多样性。"}
