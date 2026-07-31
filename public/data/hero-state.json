@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-07-31",
+  "updated_at": "2026-08-01",
   "items": [
+    {
+      "id": "sig_2026-08-01_001",
+      "level": 1,
+      "content": "OpenAI 降价并推新层级",
+      "summary": "OpenAI 大幅下调 GPT-5.6 Luna 价格，推出低延迟 Sol Fa",
+      "source": "https://news.smol.ai/issues/26-07-30-not-much/",
+      "date": "2026-08-01",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-08-01_002",
+      "level": 1,
+      "content": "DeepSeek 升级 Flash 新版",
+      "summary": "DeepSeek 发布 V4-Flash 新版，经重训练显著提升智能体协作与代码",
+      "source": "https://www.marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains/",
+      "date": "2026-08-01",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-08-01_003",
+      "level": 1,
+      "content": "多智能体故障归因研究",
+      "summary": "宾州州立与杜克大学提出新方法，自动化定位多智能体系统中的故障源头与发生时机。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-08-01",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-01_004",
+      "level": 1,
+      "content": "OpenAI 对齐欧盟 AI 法案",
+      "summary": "OpenAI 调整安全实践以符合欧盟《人工智能法案》准则，推动全球负责任治理进程",
+      "source": "https://www.artificialintelligence-news.com/news/openai-aligns-safety-practices-with-eu-ai-act-gpai-code/",
+      "date": "2026-08-01",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-08-01_005",
+      "level": 1,
+      "content": "Manifest 弃用自研路由方案",
+      "summary": "Manifest 团队反思行业趋势，宣布弃用自研 LLM 路由方案，探讨技术演进",
+      "source": "https://manifest.build/blog/why-we-deprecated-our-llm-router/",
+      "date": "2026-08-01",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-08-01_006",
+      "level": 1,
+      "content": "扎克伯格阐述个人超智战略",
+      "summary": "扎克伯格撰文主张超级智能应普及至个人，反对仅由少数机构垄断，阐述 Meta 新战",
+      "source": "https://www.artificialintelligence-news.com/news/zuckerberg-details-meta-personal-ai-superintelligence-strategy/",
+      "date": "2026-08-01",
+      "signal_index": 3
+    },
     {
       "id": "sig_2026-07-31_001",
       "level": 1,
       "content": "DeepMind 发布三款物理 AI 模型",
       "summary": "Google DeepMind 推出 Gemini Robotics 2，包含三",
       "source": "https://www.marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration/",
-      "date": "2026-07-31",
-      "signal_index": 0
+      "date": "2026-08-01",
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-31_002",
@@ -16,8 +70,8 @@
       "content": "OpenAI 证实编码代理加速科研",
       "summary": "OpenAI 实地报告显示，编码代理在八个科学计算项目中显著缩短软件构建时间，大",
       "source": "https://www.artificialintelligence-news.com/news/openai-report-coding-agents-faster-science-software-builds/",
-      "date": "2026-07-31",
-      "signal_index": 1
+      "date": "2026-08-01",
+      "signal_index": null
     },
     {
       "id": "sig_2026-07-31_003",
@@ -25,62 +79,44 @@
       "content": "MIT 推出自改进 AI 框架 SEAL",
       "summary": "MIT 研发 SEAL 框架，利用强化学习让大模型自我编辑权重，迈出自改进 AI",
       "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-07-31",
-      "signal_index": 2
+      "date": "2026-08-01",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-07-31_004",
-      "level": 1,
-      "content": "腾讯开源 AngelSpec 推测解码框架",
-      "summary": "腾讯开源 AngelSpec，支持多种架构的推测解码草稿模型训练，显著提升大模型",
-      "source": "https://www.marktechpost.com/2026/07/30/tencent-open-sources-angelspec-a-unified-training-framework-for-mtp-and-block-parallel-speculative-decoding-on-hy3-models/",
-      "date": "2026-07-31",
-      "signal_index": 3
+      "id": "tag_2026-08-01_001",
+      "level": 2,
+      "content": "腾讯开源 AngelSpec 推测…",
+      "date": "2026-08-01"
     },
     {
-      "id": "sig_2026-07-31_005",
-      "level": 1,
-      "content": "Token Saver 大幅降低 PDF 处理成本",
-      "summary": "开源工具 Token Saver 利用本地混合 RAG 技术，将 Claude ",
-      "source": "https://www.marktechpost.com/2026/07/30/token-saver-an-open-source-mcp-extension-using-local-hybrid-rag/",
-      "date": "2026-07-31",
-      "signal_index": 4
+      "id": "tag_2026-08-01_002",
+      "level": 2,
+      "content": "Token Saver 大幅降低 …",
+      "date": "2026-08-01"
     },
     {
-      "id": "sig_2026-07-31_006",
-      "level": 1,
+      "id": "tag_2026-08-01_003",
+      "level": 2,
       "content": "扎克伯格阐述 Meta 个人超智战略",
-      "summary": "扎克伯格发文强调超级智能应惠及个体，主张去中心化发展路径，但未披露具体产品细节。",
-      "source": "https://www.artificialintelligence-news.com/news/zuckerberg-details-meta-personal-ai-superintelligence-strategy/",
-      "date": "2026-07-31",
-      "signal_index": 5
+      "date": "2026-08-01"
     },
     {
-      "id": "sig_2026-07-31_007",
-      "level": 1,
-      "content": "OpenAI 推 GPT-5.6 低价部署方案",
-      "summary": "OpenAI 推出 GPT-5.6 的 Luna 与 Terra 低价方案，旨在",
-      "source": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
-      "date": "2026-07-31",
-      "signal_index": 6
+      "id": "tag_2026-08-01_004",
+      "level": 2,
+      "content": "OpenAI 推 GPT-5.6 …",
+      "date": "2026-08-01"
     },
     {
-      "id": "sig_2026-07-30_001",
-      "level": 1,
+      "id": "tag_2026-08-01_005",
+      "level": 2,
       "content": "高危漏洞威胁 AI 代理安全",
-      "summary": "Ruflo MCP 发现严重漏洞，允许未授权攻击者执行命令并污染 AI 记忆，凸",
-      "source": "https://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html",
-      "date": "2026-07-31",
-      "signal_index": null
+      "date": "2026-08-01"
     },
     {
-      "id": "sig_2026-07-30_002",
-      "level": 1,
-      "content": "OpenAI 优化 GPT-5.6 推理效率",
-      "summary": "OpenAI 通过调整两个 API 设置，使 GPT-5.6 在 ARC-AGI",
-      "source": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
-      "date": "2026-07-31",
-      "signal_index": null
+      "id": "tag_2026-08-01_006",
+      "level": 2,
+      "content": "OpenAI 优化 GPT-5.6…",
+      "date": "2026-08-01"
     },
     {
       "id": "tag_2026-07-31_001",
@@ -107,38 +143,38 @@
       "date": "2026-07-31"
     },
     {
-      "id": "tag_2026-07-31_005",
-      "level": 2,
+      "id": "word_2026-07-31_005",
+      "level": 3,
       "content": "辨析三种 AI 工程范式",
       "date": "2026-07-31"
     },
     {
-      "id": "tag_2026-07-31_006",
-      "level": 2,
+      "id": "word_2026-07-31_006",
+      "level": 3,
       "content": "OpenAI 拓展科研计算场景",
       "date": "2026-07-31"
     },
     {
-      "id": "tag_2026-07-31_007",
-      "level": 2,
+      "id": "word_2026-07-31_007",
+      "level": 3,
       "content": "ChatGPT 新增医疗健康功能",
       "date": "2026-07-31"
     },
     {
-      "id": "tag_2026-07-30_001",
-      "level": 2,
+      "id": "word_2026-07-30_001",
+      "level": 3,
       "content": "业界组建开放安全 AI 联盟",
       "date": "2026-07-30"
     },
     {
-      "id": "tag_2026-07-30_002",
-      "level": 2,
+      "id": "word_2026-07-30_002",
+      "level": 3,
       "content": "NVIDIA 利用 Vera CP…",
       "date": "2026-07-30"
     },
     {
-      "id": "tag_2026-07-30_003",
-      "level": 2,
+      "id": "word_2026-07-30_003",
+      "level": 3,
       "content": "Claude 辅助发现密码学弱点",
       "date": "2026-07-30"
     },
@@ -194,42 +230,6 @@
       "id": "word_2026-07-29_003",
       "level": 3,
       "content": "Guardoc Health 用 …",
-      "date": "2026-07-29"
-    },
-    {
-      "id": "word_2026-07-29_004",
-      "level": 3,
-      "content": "亚美尼亚押注算力主权战略",
-      "date": "2026-07-29"
-    },
-    {
-      "id": "word_2026-07-29_005",
-      "level": 3,
-      "content": "OpenAI 研究 AI 扩展工作…",
-      "date": "2026-07-29"
-    },
-    {
-      "id": "word_2026-07-29_006",
-      "level": 3,
-      "content": "NVIDIA 牵头成立安全联盟",
-      "date": "2026-07-29"
-    },
-    {
-      "id": "word_2026-07-29_007",
-      "level": 3,
-      "content": "月之暗面开源 AgentENV 系统",
-      "date": "2026-07-29"
-    },
-    {
-      "id": "word_2026-07-29_001",
-      "level": 3,
-      "content": "美国 AI 投资重塑经济格局",
-      "date": "2026-07-29"
-    },
-    {
-      "id": "word_2026-07-29_002",
-      "level": 3,
-      "content": "OpenAI 研究显示 AI 扩展…",
       "date": "2026-07-29"
     }
   ]
