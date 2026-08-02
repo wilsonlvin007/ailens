@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-08-02",
+  "updated_at": "2026-08-03",
   "items": [
+    {
+      "id": "sig_2026-08-03_001",
+      "level": 1,
+      "content": "MIT 提出 AI 自我进化框架",
+      "summary": "MIT 研发 SEAL 框架，利用强化学习使大模型自主更新权重，迈出 AI 自我",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-08-03",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-03_002",
+      "level": 1,
+      "content": "OpenAI 深化欧洲安全治理",
+      "summary": "OpenAI 公布欧洲安全实践方案，强调透明与溯源，以配合欧盟 AI 法案推动负",
+      "source": "https://openai.com/index/advancing-responsible-ai-across-europe",
+      "date": "2026-08-03",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-03_003",
+      "level": 1,
+      "content": "谷歌升级 Gemini 代理功能",
+      "summary": "谷歌扩展 Gemini API 托管代理功能，引入新模型支持与钩子机制，助力开发",
+      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+      "date": "2026-08-03",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-08-03_004",
+      "level": 1,
+      "content": "计算集群技术走向商业化",
+      "summary": "计算集群技术走出国家实验室，为缺乏尖端芯片的组织提供扩展高性能计算的新途径。",
+      "source": "https://semiengineering.com/compute-clusters-break-out-of-national-labs-to-scale-ai/",
+      "date": "2026-08-03",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-08-03_005",
+      "level": 1,
+      "content": "NVIDIA Jetson 赋能边缘 AI",
+      "summary": "NVIDIA Jetson 系列以紧凑设计提供强大算力，支持开发者在任何场景下灵",
+      "source": "https://blogs.nvidia.com/blog/build-ai-with-nvidia-jetson/",
+      "date": "2026-08-03",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-08-03_006",
+      "level": 1,
+      "content": "OpenAI 展望普惠智能未来",
+      "summary": "OpenAI 分享全栈方法论，致力于让先进 AI 更具能力、更实惠且应用更广泛，",
+      "source": "https://openai.com/index/building-abundant-intelligence",
+      "date": "2026-08-03",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-08-03_007",
+      "level": 1,
+      "content": "OpenAI 攻克多项数学难题",
+      "summary": "OpenAI 宣布在几何与密码学等基础科学领域取得突破，展示 AI 解决长期未解",
+      "source": "https://openai.com/index/ten-advances-in-mathematics",
+      "date": "2026-08-03",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-08-03_008",
+      "level": 1,
+      "content": "DeepSeek 发布高性价比新模型",
+      "summary": "DeepSeek 推出 V4-Flash API，成本降低六成且性能逼近顶尖模型",
+      "source": "https://news.smol.ai/issues/26-07-31-not-much/",
+      "date": "2026-08-03",
+      "signal_index": 1
+    },
     {
       "id": "sig_2026-08-02_001",
       "level": 1,
       "content": "AMD 开源 Instella-MoE 模型",
       "summary": "AMD 发布完全开源的 MoE 模型，总参 16B 激活仅 2.8B，公开全阶段",
       "source": "https://www.marktechpost.com/2026/08/01/amd-instella-moe-16b-a3b-fully-open-mixture-of-experts-llm/",
-      "date": "2026-08-02",
-      "signal_index": 1
+      "date": "2026-08-03",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-08-02_002",
-      "level": 1,
+      "id": "tag_2026-08-03_001",
+      "level": 2,
       "content": "OpenAI 公布数学领域十项突破",
-      "summary": "OpenAI 展示其在几何、密码学及复杂性理论等长期数学难题上的最新攻关成果。",
-      "source": "https://openai.com/index/ten-advances-in-mathematics",
-      "date": "2026-08-02",
-      "signal_index": 2
+      "date": "2026-08-03"
     },
     {
-      "id": "sig_2026-08-02_003",
-      "level": 1,
-      "content": "DeepSeek 发布 V4-Flash 模型",
-      "summary": "DeepSeek 推出 V4-Flash API，成本降六成且性能逼近 GPT-",
-      "source": "https://news.smol.ai/issues/26-07-31-not-much/",
-      "date": "2026-08-02",
-      "signal_index": 0
+      "id": "tag_2026-08-03_002",
+      "level": 2,
+      "content": "DeepSeek 发布 V4-Fl…",
+      "date": "2026-08-03"
     },
     {
-      "id": "sig_2026-08-02_004",
-      "level": 1,
-      "content": "Supabase 开源代码智能体评估基准",
-      "summary": "Supabase 发布开源评估框架，基于真实任务对主流编程智能体进行量化打分。",
-      "source": "https://www.marktechpost.com/2026/08/01/supabase-releases-evals-an-open-source-benchmark-that-scores-claude-code-codex-and-opencode-on-real-supabase-tasks/",
-      "date": "2026-08-02",
-      "signal_index": 3
+      "id": "tag_2026-08-03_003",
+      "level": 2,
+      "content": "Supabase 开源代码智能体评…",
+      "date": "2026-08-03"
     },
     {
-      "id": "sig_2026-08-02_005",
-      "level": 1,
-      "content": "NVIDIA 引擎加速 Transformer 训练",
-      "summary": "教程解析如何利用 NVIDIA Transformer Engine 的融合内核",
-      "source": "https://www.marktechpost.com/2026/08/01/accelerating-transformer-training-with-nvidia-transformer-engine-fused-kernels-bf16-fp8-and-gpu-benchmarking/",
-      "date": "2026-08-02",
-      "signal_index": 5
+      "id": "tag_2026-08-03_004",
+      "level": 2,
+      "content": "NVIDIA 引擎加速 Trans…",
+      "date": "2026-08-03"
     },
     {
-      "id": "sig_2026-08-02_006",
-      "level": 1,
-      "content": "AI 重塑企业 Linux VPS 安全",
-      "summary": "文章探讨 AI 技术如何协助中小企业提升 Linux 虚拟专用服务器的网络安全防",
-      "source": "https://www.artificialintelligence-news.com/news/how-ai-is-changing-linux-vps-security-for-businesses/",
-      "date": "2026-08-02",
-      "signal_index": 6
+      "id": "tag_2026-08-03_005",
+      "level": 2,
+      "content": "AI 重塑企业 Linux VPS…",
+      "date": "2026-08-03"
     },
     {
-      "id": "sig_2026-08-02_007",
-      "level": 1,
+      "id": "tag_2026-08-03_006",
+      "level": 2,
       "content": "高校研究多智能体系统故障归因",
-      "summary": "宾州州立与杜克大学提出自动化方法，精准识别多智能体系统中导致任务失败的节点。",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-08-02",
-      "signal_index": 4
+      "date": "2026-08-03"
     },
     {
-      "id": "sig_2026-08-01_001",
-      "level": 1,
+      "id": "tag_2026-08-03_007",
+      "level": 2,
       "content": "OpenAI 降价并推新层级",
-      "summary": "OpenAI 大幅下调 GPT-5.6 Luna 价格，推出低延迟 Sol Fa",
-      "source": "https://news.smol.ai/issues/26-07-30-not-much/",
-      "date": "2026-08-02",
-      "signal_index": null
+      "date": "2026-08-03"
     },
     {
-      "id": "sig_2026-08-01_002",
-      "level": 1,
-      "content": "DeepSeek 升级 Flash 新版",
-      "summary": "DeepSeek 发布 V4-Flash 新版，经重训练显著提升智能体协作与代码",
-      "source": "https://www.marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains/",
-      "date": "2026-08-02",
-      "signal_index": null
+      "id": "tag_2026-08-03_008",
+      "level": 2,
+      "content": "DeepSeek 升级 Flash…",
+      "date": "2026-08-03"
     },
     {
       "id": "tag_2026-08-02_001",
@@ -95,50 +143,50 @@
       "date": "2026-08-02"
     },
     {
-      "id": "tag_2026-08-02_003",
-      "level": 2,
+      "id": "word_2026-08-02_003",
+      "level": 3,
       "content": "Manifest 弃用自研路由方案",
       "date": "2026-08-02"
     },
     {
-      "id": "tag_2026-08-02_004",
-      "level": 2,
+      "id": "word_2026-08-02_004",
+      "level": 3,
       "content": "扎克伯格阐述个人超智战略",
       "date": "2026-08-02"
     },
     {
-      "id": "tag_2026-08-02_005",
-      "level": 2,
+      "id": "word_2026-08-02_005",
+      "level": 3,
       "content": "DeepMind 发布三款物理 A…",
       "date": "2026-08-02"
     },
     {
-      "id": "tag_2026-08-02_006",
-      "level": 2,
+      "id": "word_2026-08-02_006",
+      "level": 3,
       "content": "OpenAI 证实编码代理加速科研",
       "date": "2026-08-02"
     },
     {
-      "id": "tag_2026-08-02_007",
-      "level": 2,
+      "id": "word_2026-08-02_007",
+      "level": 3,
       "content": "MIT 推出自改进 AI 框架 S…",
       "date": "2026-08-02"
     },
     {
-      "id": "tag_2026-08-01_001",
-      "level": 2,
+      "id": "word_2026-08-01_001",
+      "level": 3,
       "content": "腾讯开源 AngelSpec 推测…",
       "date": "2026-08-01"
     },
     {
-      "id": "tag_2026-08-01_002",
-      "level": 2,
+      "id": "word_2026-08-01_002",
+      "level": 3,
       "content": "Token Saver 大幅降低 …",
       "date": "2026-08-01"
     },
     {
-      "id": "tag_2026-08-01_003",
-      "level": 2,
+      "id": "word_2026-08-01_003",
+      "level": 3,
       "content": "扎克伯格阐述 Meta 个人超智战略",
       "date": "2026-08-01"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "亚马逊 Nova 优化医疗文档",
       "date": "2026-07-31"
-    },
-    {
-      "id": "word_2026-07-31_005",
-      "level": 3,
-      "content": "辨析三种 AI 工程范式",
-      "date": "2026-07-31"
-    },
-    {
-      "id": "word_2026-07-31_006",
-      "level": 3,
-      "content": "OpenAI 拓展科研计算场景",
-      "date": "2026-07-31"
-    },
-    {
-      "id": "word_2026-07-31_007",
-      "level": 3,
-      "content": "ChatGPT 新增医疗健康功能",
-      "date": "2026-07-31"
-    },
-    {
-      "id": "word_2026-07-30_001",
-      "level": 3,
-      "content": "业界组建开放安全 AI 联盟",
-      "date": "2026-07-30"
-    },
-    {
-      "id": "word_2026-07-30_002",
-      "level": 3,
-      "content": "NVIDIA 利用 Vera CP…",
-      "date": "2026-07-30"
-    },
-    {
-      "id": "word_2026-07-30_003",
-      "level": 3,
-      "content": "Claude 辅助发现密码学弱点",
-      "date": "2026-07-30"
-    },
-    {
-      "id": "word_2026-07-30_004",
-      "level": 3,
-      "content": "OpenAI 研究 AI 重塑工作…",
-      "date": "2026-07-30"
-    },
-    {
-      "id": "word_2026-07-30_005",
-      "level": 3,
-      "content": "Claude 破解后量子加密方案",
-      "date": "2026-07-30"
     }
   ]
 }

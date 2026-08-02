@@ -36,22 +36,6 @@
       "collected_at": "2026-08-03T06:00:00+08:00"
     },
     {
-      "id": "2026-08-03-003",
-      "title": "MIT 提出 AI 自我进化框架",
-      "category": "technology",
-      "importance": 4,
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "source_name": "Synced Review",
-      "summary": "MIT 研发 SEAL 框架，利用强化学习使大模型自主更新权重，迈出 AI 自我进化的重要一步。",
-      "analysis": "SEAL 框架的核心在于打破了传统模型训练后权重固定的局限，赋予模型在线自我修正与进化的能力。这一机制若成熟，将彻底改变模型迭代周期，从“离线训练 - 部署”转变为“持续自适应”。然而，自主修改权重也带来了不可控风险，如目标漂移或安全对齐失效。这不仅是技术飞跃，更是对 AI 安全治理的巨大挑战。未来研究需在提升进化效率与确保行为可控之间寻找平衡，防止出现无法干预的“黑盒”进化体。",
-      "tags": [
-        "强化学习",
-        "自我进化",
-        "AI 安全"
-      ],
-      "collected_at": "2026-08-03T06:00:00+08:00"
-    },
-    {
       "id": "2026-08-03-004",
       "title": "OpenAI 深化欧洲安全治理",
       "category": "thought",
