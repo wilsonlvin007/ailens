@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-08-05",
   "items": [
     {
-      "id": "sig_2026-08-04_001",
+      "id": "sig_2026-08-05_001",
       "level": 1,
-      "content": "阿里发布 Qwen3.8-Max 模型",
-      "summary": "阿里通义千问发布 Qwen3.8-Max，拥有 2.4 万亿参数，支持百万级上下",
-      "source": "https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/",
-      "date": "2026-08-04",
+      "content": "OpenAI 详解第三方安全评估",
+      "summary": "OpenAI 详解第三方网络安全评估事件，提出新保障措施以强化模型测试与安全。",
+      "source": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "date": "2026-08-05",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-08-04_002",
+      "id": "sig_2026-08-05_002",
       "level": 1,
-      "content": "OpenAI 推出实时语音 GPT-Live",
-      "summary": "OpenAI 推出 GPT-Live，利用无轮次语音模型实现低延迟、连续的实时语",
-      "source": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
-      "date": "2026-08-04",
+      "content": "OpenAI 正式回应苹果诉讼",
+      "summary": "OpenAI 正式回应苹果无端诉讼，澄清员工相关指控并公开事件沟通记录。",
+      "source": "https://openai.com/index/apple-is-getting-this-wrong",
+      "date": "2026-08-05",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-08-04_003",
+      "id": "sig_2026-08-05_003",
       "level": 1,
-      "content": "欧盟 AI 法案透明度条款生效",
-      "summary": "欧盟 AI 法案第 50 条生效，规定生成式 AI 提供商必须向用户披露内容由 ",
-      "source": "https://www.artificialintelligence-news.com/news/eu-ai-act-article-50-transparency-rules-enter-force/",
-      "date": "2026-08-04",
+      "content": "Cursor 开源 MoK 训练内核",
+      "summary": "Cursor 开源 MoK 混合专家训练内核，在 GB300 集群上比基线快 2",
+      "source": "https://www.marktechpost.com/2026/08/04/cursor-open-sources-mixture-of-kittens-mok-a-deterministic-moe-training-megakernel-for-gb300-nvl72-racks/",
+      "date": "2026-08-05",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-08-04_004",
+      "id": "sig_2026-08-05_004",
       "level": 1,
-      "content": "GSK 合作利用 AI 加速药研",
-      "summary": "GSK 与 Relation Therapeutics 合作，利用 AI 分析大",
-      "source": "https://www.artificialintelligence-news.com/news/gsk-relation-therapeutics-ai-drug-discovery-biological-data/",
-      "date": "2026-08-04",
+      "content": "英伟达开放自动驾驶模型商用",
+      "summary": "英伟达开放 Alpamayo 2 Super 模型商用，专为解决自动驾驶长尾场景",
+      "source": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/",
+      "date": "2026-08-05",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-08-04_005",
+      "id": "sig_2026-08-05_005",
       "level": 1,
-      "content": "生产环境 AI 代理安全指南",
-      "summary": "文章提出保护生产环境中 AI 代理和 LLM 应用的安全框架，涵盖攻击面映射及配",
-      "source": "https://www.marktechpost.com/2026/08/03/how-to-secure-ai-agents-mcp-servers-and-llm-apps-in-production/",
-      "date": "2026-08-04",
+      "content": "PixelRAG 突破视觉文档检索",
+      "summary": "PixelRAG 系统将文档视为图像进行端到端索引，突破传统文本解析限制提升检索",
+      "source": "https://www.marktechpost.com/2026/08/04/pixel-native-rag-a-practical-guide-to-visual-document-indexing/",
+      "date": "2026-08-05",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-08-04_006",
+      "id": "sig_2026-08-05_006",
       "level": 1,
-      "content": "Moonshot 推出多模态评估基准",
-      "summary": "介绍 PerceptionBench 多模态评估工作流，测试视觉模型在 OCR、",
-      "source": "https://www.marktechpost.com/2026/08/03/evaluating-multimodal-vision-models-with-moonshot-perceptionbench-using-robust-data-loading-and-automated-judging/",
-      "date": "2026-08-04",
+      "content": "npm 蠕虫病毒威胁 AI 供应链",
+      "summary": "npm 蠕虫病毒污染数百个包并植入恶意钩子，严重威胁 AI 开发供应链安全。",
+      "source": "https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html",
+      "date": "2026-08-05",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-08-03_001",
+      "id": "sig_2026-08-05_007",
       "level": 1,
+      "content": "多智能体系统自动故障归因",
+      "summary": "宾州州立与杜克大学研究多智能体系统自动故障归因，提升协作系统可靠性。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-08-05",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-08-05_008",
+      "level": 1,
+      "content": "OpenAI 推教育插件赋能师生",
+      "summary": "OpenAI 推出教育插件，赋能 K-12 及高校师生利用 ChatGPT 和 ",
+      "source": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+      "date": "2026-08-05",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-08-05_009",
+      "level": 1,
+      "content": "英伟达警示 AI 存储新需求",
+      "summary": "英伟达指出 AI 对存储架构提出新需求，需高效安全方案以支撑海量数据与上下文窗口",
+      "source": "https://blogs.nvidia.com/blog/ai-storage-fms/",
+      "date": "2026-08-05",
+      "signal_index": 8
+    },
+    {
+      "id": "tag_2026-08-05_001",
+      "level": 2,
+      "content": "阿里发布 Qwen3.8-Max …",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "tag_2026-08-05_002",
+      "level": 2,
+      "content": "OpenAI 推出实时语音 GPT…",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "tag_2026-08-05_003",
+      "level": 2,
+      "content": "欧盟 AI 法案透明度条款生效",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "tag_2026-08-05_004",
+      "level": 2,
+      "content": "GSK 合作利用 AI 加速药研",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "tag_2026-08-05_005",
+      "level": 2,
+      "content": "生产环境 AI 代理安全指南",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "tag_2026-08-05_006",
+      "level": 2,
+      "content": "Moonshot 推出多模态评估基准",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "tag_2026-08-05_007",
+      "level": 2,
       "content": "MIT 提出 AI 自我进化框架",
-      "summary": "MIT 研发 SEAL 框架，利用强化学习使大模型自主更新权重，迈出 AI 自我",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-08-04",
-      "signal_index": null
+      "date": "2026-08-05"
     },
     {
-      "id": "sig_2026-08-03_002",
-      "level": 1,
+      "id": "tag_2026-08-05_008",
+      "level": 2,
       "content": "OpenAI 深化欧洲安全治理",
-      "summary": "OpenAI 公布欧洲安全实践方案，强调透明与溯源，以配合欧盟 AI 法案推动负",
-      "source": "https://openai.com/index/advancing-responsible-ai-across-europe",
-      "date": "2026-08-04",
-      "signal_index": null
+      "date": "2026-08-05"
     },
     {
-      "id": "sig_2026-08-03_003",
-      "level": 1,
+      "id": "tag_2026-08-05_009",
+      "level": 2,
       "content": "谷歌升级 Gemini 代理功能",
-      "summary": "谷歌扩展 Gemini API 托管代理功能，引入新模型支持与钩子机制，助力开发",
-      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
-      "date": "2026-08-04",
-      "signal_index": null
+      "date": "2026-08-05"
     },
     {
       "id": "tag_2026-08-04_001",
@@ -89,56 +143,56 @@
       "date": "2026-08-04"
     },
     {
-      "id": "tag_2026-08-04_002",
-      "level": 2,
+      "id": "word_2026-08-04_002",
+      "level": 3,
       "content": "NVIDIA Jetson 赋能边…",
       "date": "2026-08-04"
     },
     {
-      "id": "tag_2026-08-04_003",
-      "level": 2,
+      "id": "word_2026-08-04_003",
+      "level": 3,
       "content": "OpenAI 展望普惠智能未来",
       "date": "2026-08-04"
     },
     {
-      "id": "tag_2026-08-04_004",
-      "level": 2,
+      "id": "word_2026-08-04_004",
+      "level": 3,
       "content": "OpenAI 攻克多项数学难题",
       "date": "2026-08-04"
     },
     {
-      "id": "tag_2026-08-04_005",
-      "level": 2,
+      "id": "word_2026-08-04_005",
+      "level": 3,
       "content": "DeepSeek 发布高性价比新模型",
       "date": "2026-08-04"
     },
     {
-      "id": "tag_2026-08-04_006",
-      "level": 2,
+      "id": "word_2026-08-04_006",
+      "level": 3,
       "content": "AMD 开源 Instella-M…",
       "date": "2026-08-04"
     },
     {
-      "id": "tag_2026-08-03_001",
-      "level": 2,
+      "id": "word_2026-08-03_001",
+      "level": 3,
       "content": "OpenAI 公布数学领域十项突破",
       "date": "2026-08-03"
     },
     {
-      "id": "tag_2026-08-03_002",
-      "level": 2,
+      "id": "word_2026-08-03_002",
+      "level": 3,
       "content": "DeepSeek 发布 V4-Fl…",
       "date": "2026-08-03"
     },
     {
-      "id": "tag_2026-08-03_003",
-      "level": 2,
+      "id": "word_2026-08-03_003",
+      "level": 3,
       "content": "Supabase 开源代码智能体评…",
       "date": "2026-08-03"
     },
     {
-      "id": "tag_2026-08-03_004",
-      "level": 2,
+      "id": "word_2026-08-03_004",
+      "level": 3,
       "content": "NVIDIA 引擎加速 Trans…",
       "date": "2026-08-03"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "OpenAI 对齐欧盟 AI 法案",
       "date": "2026-08-02"
-    },
-    {
-      "id": "word_2026-08-02_003",
-      "level": 3,
-      "content": "Manifest 弃用自研路由方案",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "word_2026-08-02_004",
-      "level": 3,
-      "content": "扎克伯格阐述个人超智战略",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "word_2026-08-02_005",
-      "level": 3,
-      "content": "DeepMind 发布三款物理 A…",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "word_2026-08-02_006",
-      "level": 3,
-      "content": "OpenAI 证实编码代理加速科研",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "word_2026-08-02_007",
-      "level": 3,
-      "content": "MIT 推出自改进 AI 框架 S…",
-      "date": "2026-08-02"
-    },
-    {
-      "id": "word_2026-08-01_001",
-      "level": 3,
-      "content": "腾讯开源 AngelSpec 推测…",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "word_2026-08-01_002",
-      "level": 3,
-      "content": "Token Saver 大幅降低 …",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "word_2026-08-01_003",
-      "level": 3,
-      "content": "扎克伯格阐述 Meta 个人超智战略",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "word_2026-08-01_004",
-      "level": 3,
-      "content": "OpenAI 推 GPT-5.6 …",
-      "date": "2026-08-01"
     }
   ]
 }
