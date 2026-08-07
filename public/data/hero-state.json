@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-07",
   "items": [
+    {
+      "id": "sig_2026-08-07_001",
+      "level": 1,
+      "content": "OpenAI 升级 GPT-5.6 并开放免费访问",
+      "summary": "OpenAI 升级 ChatGPT 中的 GPT-5.6 Sol 模型，提升准确",
+      "source": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "date": "2026-08-07",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-08-07_002",
+      "level": 1,
+      "content": "Cloudflare 发布无状态浏览器 Kitesurf",
+      "summary": "Cloudflare 发布专为 AI 代理设计的无状态浏览器 Kitesurf，",
+      "source": "https://www.marktechpost.com/2026/08/06/cloudflare-introduces-kitesurf-an-agent-first-web-browser-that-runs-entirely-in-v8-isolates-on-cloudflare-workers/",
+      "date": "2026-08-07",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-07_003",
+      "level": 1,
+      "content": "Prime Intellect 开源递归代理架构",
+      "summary": "Prime Intellect 开源 Prime Agent，基于递归语言模型架",
+      "source": "https://www.marktechpost.com/2026/08/06/prime-intellect-releases-prime-agent/",
+      "date": "2026-08-07",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-07_004",
+      "level": 1,
+      "content": "Google 扩展 Gemini API 代理功能",
+      "summary": "Google 扩展 Gemini API 托管代理功能，新增 3.6 Flash",
+      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+      "date": "2026-08-07",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-08-07_005",
+      "level": 1,
+      "content": "OpenAI 联手 APA 关注青少年心理健康",
+      "summary": "OpenAI 与美国心理学会合作，推进负责任 AI 使用的循证指南，重点关注青少",
+      "source": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+      "date": "2026-08-07",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-08-07_006",
+      "level": 1,
+      "content": "新型攻击可绕过 CPU 频谱防御",
+      "summary": "研究人员发现新型中断注入攻击，可绕过 Intel 和 AMD CPU 上的 Sp",
+      "source": "https://thehackernews.com/2026/08/new-interrupt-injection-attack-can.html",
+      "date": "2026-08-07",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-08-07_007",
+      "level": 1,
+      "content": "DeepMind 高层重组聚焦 Gemini",
+      "summary": "Google DeepMind 领导层重组，Demis Hassabis 转任主",
+      "source": "https://news.smol.ai/issues/26-08-05-gdm-reset/",
+      "date": "2026-08-07",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-08-07_008",
+      "level": 1,
+      "content": "NVIDIA 倡导开放生态系统推动物理 AI",
+      "summary": "NVIDIA 联合多家机构签署公开信，主张通过开放生态系统而非单一模型来衡量 A",
+      "source": "https://blogs.nvidia.com/blog/open-world-models-physical-ai/",
+      "date": "2026-08-07",
+      "signal_index": 7
+    },
     {
       "id": "sig_2026-08-06_001",
       "level": 1,
       "content": "低成本模型超越 GPT-5.6",
       "summary": "研究显示低成本开源模型在检索任务上以百分之一成本超越 GPT-5.6 Sol，效",
       "source": "https://neon.com/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency",
-      "date": "2026-08-06",
-      "signal_index": 2
+      "date": "2026-08-07",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-08-06_002",
-      "level": 1,
+      "id": "tag_2026-08-07_001",
+      "level": 2,
       "content": "OpenAI 捣毁跨国诈骗网络",
-      "summary": "OpenAI 协助捣毁利用 ChatGPT 进行诈骗的柬埔寨网络，展示 AI 反",
-      "source": "https://thehackernews.com/2026/08/openai-disrupts-poipet-scam-network.html",
-      "date": "2026-08-06",
-      "signal_index": 3
+      "date": "2026-08-07"
     },
     {
-      "id": "sig_2026-08-06_003",
-      "level": 1,
+      "id": "tag_2026-08-07_002",
+      "level": 2,
       "content": "非法服务窃取用户提示词",
-      "summary": "发现非法服务 Poison Claude 兜售打折访问权，运营商可窃取用户所有提",
-      "source": "https://thehackernews.com/2026/08/poison-claude-sells-discounted-claude.html",
-      "date": "2026-08-06",
-      "signal_index": 4
+      "date": "2026-08-07"
     },
     {
-      "id": "sig_2026-08-06_004",
-      "level": 1,
+      "id": "tag_2026-08-07_003",
+      "level": 2,
       "content": "Mistral 发布端侧安全模型",
-      "summary": "Mistral AI 发布 30 亿参数开源安全模型 Shieldstral，专",
-      "source": "https://news.smol.ai/issues/26-08-04-not-much/",
-      "date": "2026-08-06",
-      "signal_index": 1
+      "date": "2026-08-07"
     },
     {
-      "id": "sig_2026-08-06_005",
-      "level": 1,
+      "id": "tag_2026-08-07_004",
+      "level": 2,
       "content": "英伟达推出自动驾驶新模型",
-      "summary": "英伟达开源 Alpamayo 2 Super 模型，专攻自动驾驶长尾场景推理难题",
-      "source": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/",
-      "date": "2026-08-06",
-      "signal_index": 0
+      "date": "2026-08-07"
     },
     {
-      "id": "sig_2026-08-06_006",
-      "level": 1,
+      "id": "tag_2026-08-07_005",
+      "level": 2,
       "content": "英伟达加入全美 AI 枢纽计划",
-      "summary": "NVIDIA 加入 NSF 区域 AI 枢纽计划，推动全美先进计算设施与 AI ",
-      "source": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program/",
-      "date": "2026-08-06",
-      "signal_index": 5
+      "date": "2026-08-07"
     },
     {
-      "id": "sig_2026-08-05_001",
-      "level": 1,
+      "id": "tag_2026-08-07_006",
+      "level": 2,
       "content": "OpenAI 详解第三方安全评估",
-      "summary": "OpenAI 详解第三方网络安全评估事件，提出新保障措施以强化模型测试与安全。",
-      "source": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
-      "date": "2026-08-06",
-      "signal_index": null
+      "date": "2026-08-07"
     },
     {
-      "id": "sig_2026-08-05_002",
-      "level": 1,
+      "id": "tag_2026-08-07_007",
+      "level": 2,
       "content": "OpenAI 正式回应苹果诉讼",
-      "summary": "OpenAI 正式回应苹果无端诉讼，澄清员工相关指控并公开事件沟通记录。",
-      "source": "https://openai.com/index/apple-is-getting-this-wrong",
-      "date": "2026-08-06",
-      "signal_index": null
+      "date": "2026-08-07"
     },
     {
-      "id": "sig_2026-08-05_003",
-      "level": 1,
+      "id": "tag_2026-08-07_008",
+      "level": 2,
       "content": "Cursor 开源 MoK 训练内核",
-      "summary": "Cursor 开源 MoK 混合专家训练内核，在 GB300 集群上比基线快 2",
-      "source": "https://www.marktechpost.com/2026/08/04/cursor-open-sources-mixture-of-kittens-mok-a-deterministic-moe-training-megakernel-for-gb300-nvl72-racks/",
-      "date": "2026-08-06",
-      "signal_index": null
+      "date": "2026-08-07"
     },
     {
       "id": "tag_2026-08-06_001",
@@ -95,50 +143,50 @@
       "date": "2026-08-06"
     },
     {
-      "id": "tag_2026-08-06_003",
-      "level": 2,
+      "id": "word_2026-08-06_003",
+      "level": 3,
       "content": "npm 蠕虫病毒威胁 AI 供应链",
       "date": "2026-08-06"
     },
     {
-      "id": "tag_2026-08-06_004",
-      "level": 2,
+      "id": "word_2026-08-06_004",
+      "level": 3,
       "content": "多智能体系统自动故障归因",
       "date": "2026-08-06"
     },
     {
-      "id": "tag_2026-08-06_005",
-      "level": 2,
+      "id": "word_2026-08-06_005",
+      "level": 3,
       "content": "OpenAI 推教育插件赋能师生",
       "date": "2026-08-06"
     },
     {
-      "id": "tag_2026-08-06_006",
-      "level": 2,
+      "id": "word_2026-08-06_006",
+      "level": 3,
       "content": "英伟达警示 AI 存储新需求",
       "date": "2026-08-06"
     },
     {
-      "id": "tag_2026-08-05_001",
-      "level": 2,
+      "id": "word_2026-08-05_001",
+      "level": 3,
       "content": "阿里发布 Qwen3.8-Max …",
       "date": "2026-08-05"
     },
     {
-      "id": "tag_2026-08-05_002",
-      "level": 2,
+      "id": "word_2026-08-05_002",
+      "level": 3,
       "content": "OpenAI 推出实时语音 GPT…",
       "date": "2026-08-05"
     },
     {
-      "id": "tag_2026-08-05_003",
-      "level": 2,
+      "id": "word_2026-08-05_003",
+      "level": 3,
       "content": "欧盟 AI 法案透明度条款生效",
       "date": "2026-08-05"
     },
     {
-      "id": "tag_2026-08-05_004",
-      "level": 2,
+      "id": "word_2026-08-05_004",
+      "level": 3,
       "content": "GSK 合作利用 AI 加速药研",
       "date": "2026-08-05"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "NVIDIA Jetson 赋能边…",
       "date": "2026-08-04"
-    },
-    {
-      "id": "word_2026-08-04_003",
-      "level": 3,
-      "content": "OpenAI 展望普惠智能未来",
-      "date": "2026-08-04"
-    },
-    {
-      "id": "word_2026-08-04_004",
-      "level": 3,
-      "content": "OpenAI 攻克多项数学难题",
-      "date": "2026-08-04"
-    },
-    {
-      "id": "word_2026-08-04_005",
-      "level": 3,
-      "content": "DeepSeek 发布高性价比新模型",
-      "date": "2026-08-04"
-    },
-    {
-      "id": "word_2026-08-04_006",
-      "level": 3,
-      "content": "AMD 开源 Instella-M…",
-      "date": "2026-08-04"
-    },
-    {
-      "id": "word_2026-08-03_001",
-      "level": 3,
-      "content": "OpenAI 公布数学领域十项突破",
-      "date": "2026-08-03"
-    },
-    {
-      "id": "word_2026-08-03_002",
-      "level": 3,
-      "content": "DeepSeek 发布 V4-Fl…",
-      "date": "2026-08-03"
-    },
-    {
-      "id": "word_2026-08-03_003",
-      "level": 3,
-      "content": "Supabase 开源代码智能体评…",
-      "date": "2026-08-03"
-    },
-    {
-      "id": "word_2026-08-03_004",
-      "level": 3,
-      "content": "NVIDIA 引擎加速 Trans…",
-      "date": "2026-08-03"
     }
   ]
 }
