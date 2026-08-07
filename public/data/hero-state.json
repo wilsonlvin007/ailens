@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-08-07",
+  "updated_at": "2026-08-08",
   "items": [
+    {
+      "id": "sig_2026-08-08_001",
+      "level": 1,
+      "content": "阿里探索开源模型分成模式",
+      "summary": "阿里拟对 Qwen 开源模型商业用户实行收入分成，探索开源大模型新商业模式。",
+      "source": "https://www.artificialintelligence-news.com/news/alibaba-qwen-open-source-ai-revenue-sharing/",
+      "date": "2026-08-08",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-08-08_002",
+      "level": 1,
+      "content": "Meta 发布低成本高性能模型",
+      "summary": "Meta 推出 Muse Spark 1.2，以竞品十分之一成本实现 STEM ",
+      "source": "https://news.smol.ai/issues/26-08-06-not-much/",
+      "date": "2026-08-08",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-08-08_003",
+      "level": 1,
+      "content": "OpenAI 加强 Astra 网络安全评估",
+      "summary": "OpenAI 公布 Astra 模型网络安全评估结果，并加强相关安全防护措施。",
+      "source": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "date": "2026-08-08",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-08_004",
+      "level": 1,
+      "content": "腾讯云开源团队级 Agent 记忆库",
+      "summary": "腾讯云开源 Agent 记忆库 v2.0，为团队协作型 AI 编程智能体提供统一",
+      "source": "https://www.marktechpost.com/2026/08/07/tencent-cloud-open-sources-tencentdb-agent-memory-v2-0/",
+      "date": "2026-08-08",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-08_005",
+      "level": 1,
+      "content": "斯坦福 AI 生成新型噬菌体",
+      "summary": "斯坦福利用 Evo 2 生成新型噬菌体，实验显示其对大肠杆菌具有强杀灭活性。",
+      "source": "https://www.artificialintelligence-news.com/news/stanford-evo-2-ai-model-generates-phages-against-e-coli/",
+      "date": "2026-08-08",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-08-08_006",
+      "level": 1,
+      "content": "ChatGPT 升级模型并开放免费权益",
+      "summary": "ChatGPT 升级 GPT-5.6 Sol 准确性，并向免费用户开放 GPT-",
+      "source": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "date": "2026-08-08",
+      "signal_index": 5
+    },
     {
       "id": "sig_2026-08-07_001",
       "level": 1,
       "content": "OpenAI 升级 GPT-5.6 并开放免费访问",
       "summary": "OpenAI 升级 ChatGPT 中的 GPT-5.6 Sol 模型，提升准确",
       "source": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
-      "date": "2026-08-07",
-      "signal_index": 1
+      "date": "2026-08-08",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-07_002",
@@ -16,8 +70,8 @@
       "content": "Cloudflare 发布无状态浏览器 Kitesurf",
       "summary": "Cloudflare 发布专为 AI 代理设计的无状态浏览器 Kitesurf，",
       "source": "https://www.marktechpost.com/2026/08/06/cloudflare-introduces-kitesurf-an-agent-first-web-browser-that-runs-entirely-in-v8-isolates-on-cloudflare-workers/",
-      "date": "2026-08-07",
-      "signal_index": 2
+      "date": "2026-08-08",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-07_003",
@@ -25,62 +79,44 @@
       "content": "Prime Intellect 开源递归代理架构",
       "summary": "Prime Intellect 开源 Prime Agent，基于递归语言模型架",
       "source": "https://www.marktechpost.com/2026/08/06/prime-intellect-releases-prime-agent/",
-      "date": "2026-08-07",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-08-07_004",
-      "level": 1,
-      "content": "Google 扩展 Gemini API 代理功能",
-      "summary": "Google 扩展 Gemini API 托管代理功能，新增 3.6 Flash",
-      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
-      "date": "2026-08-07",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-08-07_005",
-      "level": 1,
-      "content": "OpenAI 联手 APA 关注青少年心理健康",
-      "summary": "OpenAI 与美国心理学会合作，推进负责任 AI 使用的循证指南，重点关注青少",
-      "source": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
-      "date": "2026-08-07",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-08-07_006",
-      "level": 1,
-      "content": "新型攻击可绕过 CPU 频谱防御",
-      "summary": "研究人员发现新型中断注入攻击，可绕过 Intel 和 AMD CPU 上的 Sp",
-      "source": "https://thehackernews.com/2026/08/new-interrupt-injection-attack-can.html",
-      "date": "2026-08-07",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-08-07_007",
-      "level": 1,
-      "content": "DeepMind 高层重组聚焦 Gemini",
-      "summary": "Google DeepMind 领导层重组，Demis Hassabis 转任主",
-      "source": "https://news.smol.ai/issues/26-08-05-gdm-reset/",
-      "date": "2026-08-07",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-08-07_008",
-      "level": 1,
-      "content": "NVIDIA 倡导开放生态系统推动物理 AI",
-      "summary": "NVIDIA 联合多家机构签署公开信，主张通过开放生态系统而非单一模型来衡量 A",
-      "source": "https://blogs.nvidia.com/blog/open-world-models-physical-ai/",
-      "date": "2026-08-07",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-08-06_001",
-      "level": 1,
-      "content": "低成本模型超越 GPT-5.6",
-      "summary": "研究显示低成本开源模型在检索任务上以百分之一成本超越 GPT-5.6 Sol，效",
-      "source": "https://neon.com/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency",
-      "date": "2026-08-07",
+      "date": "2026-08-08",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-08-08_001",
+      "level": 2,
+      "content": "Google 扩展 Gemini …",
+      "date": "2026-08-08"
+    },
+    {
+      "id": "tag_2026-08-08_002",
+      "level": 2,
+      "content": "OpenAI 联手 APA 关注青…",
+      "date": "2026-08-08"
+    },
+    {
+      "id": "tag_2026-08-08_003",
+      "level": 2,
+      "content": "新型攻击可绕过 CPU 频谱防御",
+      "date": "2026-08-08"
+    },
+    {
+      "id": "tag_2026-08-08_004",
+      "level": 2,
+      "content": "DeepMind 高层重组聚焦 G…",
+      "date": "2026-08-08"
+    },
+    {
+      "id": "tag_2026-08-08_005",
+      "level": 2,
+      "content": "NVIDIA 倡导开放生态系统推动…",
+      "date": "2026-08-08"
+    },
+    {
+      "id": "tag_2026-08-08_006",
+      "level": 2,
+      "content": "低成本模型超越 GPT-5.6",
+      "date": "2026-08-08"
     },
     {
       "id": "tag_2026-08-07_001",
@@ -107,38 +143,38 @@
       "date": "2026-08-07"
     },
     {
-      "id": "tag_2026-08-07_005",
-      "level": 2,
+      "id": "word_2026-08-07_005",
+      "level": 3,
       "content": "英伟达加入全美 AI 枢纽计划",
       "date": "2026-08-07"
     },
     {
-      "id": "tag_2026-08-07_006",
-      "level": 2,
+      "id": "word_2026-08-07_006",
+      "level": 3,
       "content": "OpenAI 详解第三方安全评估",
       "date": "2026-08-07"
     },
     {
-      "id": "tag_2026-08-07_007",
-      "level": 2,
+      "id": "word_2026-08-07_007",
+      "level": 3,
       "content": "OpenAI 正式回应苹果诉讼",
       "date": "2026-08-07"
     },
     {
-      "id": "tag_2026-08-07_008",
-      "level": 2,
+      "id": "word_2026-08-07_008",
+      "level": 3,
       "content": "Cursor 开源 MoK 训练内核",
       "date": "2026-08-07"
     },
     {
-      "id": "tag_2026-08-06_001",
-      "level": 2,
+      "id": "word_2026-08-06_001",
+      "level": 3,
       "content": "英伟达开放自动驾驶模型商用",
       "date": "2026-08-06"
     },
     {
-      "id": "tag_2026-08-06_002",
-      "level": 2,
+      "id": "word_2026-08-06_002",
+      "level": 3,
       "content": "PixelRAG 突破视觉文档检索",
       "date": "2026-08-06"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "生产环境 AI 代理安全指南",
       "date": "2026-08-05"
-    },
-    {
-      "id": "word_2026-08-05_006",
-      "level": 3,
-      "content": "Moonshot 推出多模态评估基准",
-      "date": "2026-08-05"
-    },
-    {
-      "id": "word_2026-08-05_007",
-      "level": 3,
-      "content": "MIT 提出 AI 自我进化框架",
-      "date": "2026-08-05"
-    },
-    {
-      "id": "word_2026-08-05_008",
-      "level": 3,
-      "content": "OpenAI 深化欧洲安全治理",
-      "date": "2026-08-05"
-    },
-    {
-      "id": "word_2026-08-05_009",
-      "level": 3,
-      "content": "谷歌升级 Gemini 代理功能",
-      "date": "2026-08-05"
-    },
-    {
-      "id": "word_2026-08-04_001",
-      "level": 3,
-      "content": "计算集群技术走向商业化",
-      "date": "2026-08-04"
-    },
-    {
-      "id": "word_2026-08-04_002",
-      "level": 3,
-      "content": "NVIDIA Jetson 赋能边…",
-      "date": "2026-08-04"
     }
   ]
 }
