@@ -1,14 +1,50 @@
 {
-  "updated_at": "2026-08-09",
+  "updated_at": "2026-08-10",
   "items": [
+    {
+      "id": "sig_2026-08-10_001",
+      "level": 1,
+      "content": "斯坦福 AI 合成抗菌噬菌体",
+      "summary": "斯坦福利用 Evo 2 生成式 AI 合成噬菌体，实验显示其对大肠杆菌具有强杀灭",
+      "source": "https://www.artificialintelligence-news.com/news/stanford-evo-2-ai-model-generates-phages-against-e-coli/",
+      "date": "2026-08-10",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-08-10_002",
+      "level": 1,
+      "content": "阿里拟推行开源分成模式",
+      "summary": "据报道，阿里计划对商用 Qwen 开源模型用户引入收入分成机制，改变开源商业模式",
+      "source": "https://www.artificialintelligence-news.com/news/alibaba-qwen-open-source-ai-revenue-sharing/",
+      "date": "2026-08-10",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-10_003",
+      "level": 1,
+      "content": "主流 LLM 观测平台横评",
+      "summary": "2026 年主流 LLM 可观测性与评估平台横向对比，涵盖追踪深度、评估能力及定",
+      "source": "https://www.marktechpost.com/2026/08/09/top-llm-observability-and-evaluation-platforms-in-2026-langfuse-langsmith-braintrust-arize-and-more-compared/",
+      "date": "2026-08-10",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-10_004",
+      "level": 1,
+      "content": "OpenAI 暂停 Astra 研发",
+      "summary": "因安全风险，OpenAI 将 Astra 模型状态升为“关键”并暂停部分研发，强",
+      "source": "https://news.smol.ai/issues/26-08-07-not-much/",
+      "date": "2026-08-10",
+      "signal_index": 0
+    },
     {
       "id": "sig_2026-08-09_001",
       "level": 1,
       "content": "Pokee AI 发布边界内代理模型",
       "summary": "Pokee AI 发布 28B 参数模型，支持 1000 万 token 上下文",
       "source": "https://www.marktechpost.com/2026/08/08/pokee-ai-releases-pokee-isaac-28b-a-10m-token-context-agentic-model-built-to-run-inside-the-customer-boundary/",
-      "date": "2026-08-09",
-      "signal_index": 1
+      "date": "2026-08-10",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-09_002",
@@ -16,8 +52,8 @@
       "content": "Firebird 建成独联体最大 AI 工厂",
       "summary": "Firebird 在亚美尼亚建成独联体地区最大 AI 工厂，采用 NVIDIA ",
       "source": "https://blogs.nvidia.com/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx/",
-      "date": "2026-08-09",
-      "signal_index": 2
+      "date": "2026-08-10",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-09_003",
@@ -25,8 +61,8 @@
       "content": "Atlassian Rovo 曝数据泄露漏洞",
       "summary": "Atlassian Rovo 助手存在漏洞，可被诱导泄露 Jira 和 Conf",
       "source": "https://thehackernews.com/2026/08/atlassian-rovo-can-be-tricked-into.html",
-      "date": "2026-08-09",
-      "signal_index": 3
+      "date": "2026-08-10",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-09_004",
@@ -34,8 +70,8 @@
       "content": "OpenAI 升级 Astra 安全管控",
       "summary": "OpenAI 将 Astra 模型网络安全等级升至“危急”，暂停部分活动以加强代",
       "source": "https://news.smol.ai/issues/26-08-07-not-much/",
-      "date": "2026-08-09",
-      "signal_index": 0
+      "date": "2026-08-10",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-09_005",
@@ -43,44 +79,32 @@
       "content": "开源项目 Shepherd 优化代理管理",
       "summary": "开源项目 Shepherd 允许元代理对任意代理运行进行分叉、重放和回滚，解决长",
       "source": "https://www.marktechpost.com/2026/08/08/meet-shepherd-an-open-source-python-substrate-that-lets-meta-agents-fork-replay-and-revert-any-agent-run/",
-      "date": "2026-08-09",
-      "signal_index": 4
+      "date": "2026-08-10",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-08-09_006",
-      "level": 1,
+      "id": "tag_2026-08-10_001",
+      "level": 2,
       "content": "HSP 集团落地税务咨询 AI",
-      "summary": "HSP GRUPPE 利用 ChatGPT Enterprise 提升税务咨询效",
-      "source": "https://openai.com/index/hsp-gruppe",
-      "date": "2026-08-09",
-      "signal_index": 5
+      "date": "2026-08-10"
     },
     {
-      "id": "sig_2026-08-08_001",
-      "level": 1,
+      "id": "tag_2026-08-10_002",
+      "level": 2,
       "content": "阿里探索开源模型分成模式",
-      "summary": "阿里拟对 Qwen 开源模型商业用户实行收入分成，探索开源大模型新商业模式。",
-      "source": "https://www.artificialintelligence-news.com/news/alibaba-qwen-open-source-ai-revenue-sharing/",
-      "date": "2026-08-09",
-      "signal_index": null
+      "date": "2026-08-10"
     },
     {
-      "id": "sig_2026-08-08_002",
-      "level": 1,
+      "id": "tag_2026-08-10_003",
+      "level": 2,
       "content": "Meta 发布低成本高性能模型",
-      "summary": "Meta 推出 Muse Spark 1.2，以竞品十分之一成本实现 STEM ",
-      "source": "https://news.smol.ai/issues/26-08-06-not-much/",
-      "date": "2026-08-09",
-      "signal_index": null
+      "date": "2026-08-10"
     },
     {
-      "id": "sig_2026-08-08_003",
-      "level": 1,
-      "content": "OpenAI 加强 Astra 网络安全评估",
-      "summary": "OpenAI 公布 Astra 模型网络安全评估结果，并加强相关安全防护措施。",
-      "source": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
-      "date": "2026-08-09",
-      "signal_index": null
+      "id": "tag_2026-08-10_004",
+      "level": 2,
+      "content": "OpenAI 加强 Astra 网…",
+      "date": "2026-08-10"
     },
     {
       "id": "tag_2026-08-09_001",
@@ -119,26 +143,26 @@
       "date": "2026-08-09"
     },
     {
-      "id": "tag_2026-08-08_001",
-      "level": 2,
+      "id": "word_2026-08-08_001",
+      "level": 3,
       "content": "Google 扩展 Gemini …",
       "date": "2026-08-08"
     },
     {
-      "id": "tag_2026-08-08_002",
-      "level": 2,
+      "id": "word_2026-08-08_002",
+      "level": 3,
       "content": "OpenAI 联手 APA 关注青…",
       "date": "2026-08-08"
     },
     {
-      "id": "tag_2026-08-08_003",
-      "level": 2,
+      "id": "word_2026-08-08_003",
+      "level": 3,
       "content": "新型攻击可绕过 CPU 频谱防御",
       "date": "2026-08-08"
     },
     {
-      "id": "tag_2026-08-08_004",
-      "level": 2,
+      "id": "word_2026-08-08_004",
+      "level": 3,
       "content": "DeepMind 高层重组聚焦 G…",
       "date": "2026-08-08"
     },
@@ -206,30 +230,6 @@
       "id": "word_2026-08-06_001",
       "level": 3,
       "content": "英伟达开放自动驾驶模型商用",
-      "date": "2026-08-06"
-    },
-    {
-      "id": "word_2026-08-06_002",
-      "level": 3,
-      "content": "PixelRAG 突破视觉文档检索",
-      "date": "2026-08-06"
-    },
-    {
-      "id": "word_2026-08-06_003",
-      "level": 3,
-      "content": "npm 蠕虫病毒威胁 AI 供应链",
-      "date": "2026-08-06"
-    },
-    {
-      "id": "word_2026-08-06_004",
-      "level": 3,
-      "content": "多智能体系统自动故障归因",
-      "date": "2026-08-06"
-    },
-    {
-      "id": "word_2026-08-06_005",
-      "level": 3,
-      "content": "OpenAI 推教育插件赋能师生",
       "date": "2026-08-06"
     }
   ]
