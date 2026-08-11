@@ -116,22 +116,6 @@
       "collected_at": "2026-08-12T06:00:00+08:00"
     },
     {
-      "id": "2026-08-12-010",
-      "title": "多智能体系统故障自动归因研究",
-      "category": "technology",
-      "importance": 3,
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duck-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "source_name": "Synced Review",
-      "summary": "宾州州立与杜克大学提出新方法，可自动定位多智能体系统中导致任务失败的具体代理与时机。",
-      "analysis": "随着多智能体系统（Multi-Agent Systems）复杂度提升，故障排查成为制约其可靠性的瓶颈。该研究提出的自动归因方法，如同为分布式 AI 系统安装了“黑匣子”，能精准定位是哪个代理在哪个环节出错。这对于构建高可信度的工业级 AI 应用至关重要，因为它解决了责任界定难题，使得系统调试从“盲人摸象”变为“精确手术”。这项技术若广泛应用，将大幅降低多智能体协作系统的维护成本，加速其在金融交易、自动化运维等高风险领域的规模化部署。",
-      "tags": [
-        "多智能体",
-        "故障归因",
-        "学术研究"
-      ],
-      "collected_at": "2026-08-12T06:00:00+08:00"
-    },
-    {
       "id": "2026-08-12-011",
       "title": "webAI 发布本地形式逻辑模型 TwIL-LM",
       "category": "technology",

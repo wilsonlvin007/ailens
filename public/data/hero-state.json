@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-08-11",
+  "updated_at": "2026-08-12",
   "items": [
     {
-      "id": "sig_2026-08-11_001",
+      "id": "sig_2026-08-12_001",
       "level": 1,
-      "content": "Meta 开源本地代理模型",
-      "summary": "Meta 开源 300 亿参数代理模型 Muse Glimmer，可在单张消费级",
-      "source": "https://www.marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer/",
-      "date": "2026-08-11",
+      "content": "Meta 发布本地代理模型 Muse Glimmer",
+      "summary": "Meta 推出 30B 参数开源模型 Muse Glimmer，专为消费级 GP",
+      "source": "https://www.artificialintelligence-news.com/news/meta-muse-glimmer-local-ai-agents-consumer-gpus/",
+      "date": "2026-08-12",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-08-11_002",
+      "id": "sig_2026-08-12_002",
       "level": 1,
-      "content": "字节推出原生音视频模型",
-      "summary": "字节推出 SeedRealtime，原生支持音视频全双工交互，实现看、听、说一体",
-      "source": "https://www.marktechpost.com/2026/08/09/bytedance-seed-introduces-seedrealtime-a-native-audio-visual-full-duplex-llm-that-watches-listens-and-speaks-in-one-model/",
-      "date": "2026-08-11",
+      "content": "OpenAI 测试 ChatGPT 广告功能",
+      "summary": "OpenAI 启动 ChatGPT 广告测试，旨在通过商业化反哺免费服务，同时强",
+      "source": "https://openai.com/index/testing-ads-in-chatgpt",
+      "date": "2026-08-12",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-08-11_003",
+      "id": "sig_2026-08-12_003",
       "level": 1,
-      "content": "GPT-5.6 Sol 自动化财务工作流",
-      "summary": "Model ML 利用 GPT-5.6 Sol 自动化完成从研究分析到生成可编辑",
-      "source": "https://openai.com/index/model-ml",
-      "date": "2026-08-11",
+      "content": "OpenAI 网络安全模型登陆 AWS",
+      "summary": "OpenAI 与 AWS 深化合作，通过 Amazon Bedrock 提供 D",
+      "source": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+      "date": "2026-08-12",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-08-11_004",
+      "id": "sig_2026-08-12_004",
       "level": 1,
-      "content": "OpenAI 构建 AI 原生财务职能",
-      "summary": "OpenAI CFO 分享构建 AI 原生财务职能的五大经验，涵盖自动预测、控制",
-      "source": "https://openai.com/index/building-an-ai-native-finance-function",
-      "date": "2026-08-11",
+      "content": "Google 医疗 AI 实现实时视频问诊",
+      "summary": "Google 医疗 AI 系统 AMIE 在模拟研究中首次展示实时临床视频问诊能",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+      "date": "2026-08-12",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-08-11_005",
+      "id": "sig_2026-08-12_005",
       "level": 1,
-      "content": "西门子强调物理 AI 需人类掌控",
-      "summary": "西门子指出物理 AI 虽能加速千倍设计模拟，但在安全关键部件审批上仍需人类最终掌",
-      "source": "https://www.artificialintelligence-news.com/news/siemens-physics-ai-simulation-human-oversight/",
-      "date": "2026-08-11",
+      "content": "诺和诺德携手 AWS 加速药物发现",
+      "summary": "诺和诺德与 AWS 合作引入代理式 AI，加速靶点识别与治疗设计，重塑药物研发全",
+      "source": "https://www.artificialintelligence-news.com/news/novo-nordisk-ai-drug-discovery-aws/",
+      "date": "2026-08-12",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-08-11_006",
+      "id": "sig_2026-08-12_006",
       "level": 1,
-      "content": "AI 加速代码产出的安全挑战",
-      "summary": "AI 使代码产出激增百倍，但安全团队仍需在人工速度下审查漏洞与管理风险，挑战巨大",
-      "source": "https://thehackernews.com/2026/08/shipping-1050-more-code-watch-this.html",
-      "date": "2026-08-11",
+      "content": "LTX-2.5 开启本地视频生成时代",
+      "summary": "开源世界模型 LTX-2.5 发布，支持在本地 NVIDIA 硬件运行原生多镜头",
+      "source": "https://www.marktechpost.com/2026/08/11/the-video-production-stack-now-fits-on-one-desk-ltx-2-5-launches-as-nvidia-accelerated-open-weights-world-model/",
+      "date": "2026-08-12",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-08-10_001",
+      "id": "sig_2026-08-12_007",
       "level": 1,
+      "content": "MIT 提出大模型自我改进框架 SEAL",
+      "summary": "MIT 研发 SEAL 框架，利用强化学习使大语言模型能自我编辑权重，迈出自改进",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-08-12",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-08-12_008",
+      "level": 1,
+      "content": "多智能体系统故障自动归因研究",
+      "summary": "宾州州立与杜克大学提出新方法，可自动定位多智能体系统中导致任务失败的具体代理与时",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duck-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-08-12",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-08-12_009",
+      "level": 1,
+      "content": "webAI 发布本地形式逻辑模型 TwIL-LM",
+      "summary": "webAI 发布 TwIL-LM 系列模型，可在本地硬件将自然语言转化为一阶逻辑",
+      "source": "https://www.marktechpost.com/2026/08/10/webai-releases-twil-lm-a-1-7b-and-3b-formal-logic-model-family-for-autoformalization-on-local-hardware/",
+      "date": "2026-08-12",
+      "signal_index": 8
+    },
+    {
+      "id": "tag_2026-08-12_001",
+      "level": 2,
+      "content": "Meta 开源本地代理模型",
+      "date": "2026-08-12"
+    },
+    {
+      "id": "tag_2026-08-12_002",
+      "level": 2,
+      "content": "字节推出原生音视频模型",
+      "date": "2026-08-12"
+    },
+    {
+      "id": "tag_2026-08-12_003",
+      "level": 2,
+      "content": "GPT-5.6 Sol 自动化财务…",
+      "date": "2026-08-12"
+    },
+    {
+      "id": "tag_2026-08-12_004",
+      "level": 2,
+      "content": "OpenAI 构建 AI 原生财务…",
+      "date": "2026-08-12"
+    },
+    {
+      "id": "tag_2026-08-12_005",
+      "level": 2,
+      "content": "西门子强调物理 AI 需人类掌控",
+      "date": "2026-08-12"
+    },
+    {
+      "id": "tag_2026-08-12_006",
+      "level": 2,
+      "content": "AI 加速代码产出的安全挑战",
+      "date": "2026-08-12"
+    },
+    {
+      "id": "tag_2026-08-12_007",
+      "level": 2,
       "content": "斯坦福 AI 合成抗菌噬菌体",
-      "summary": "斯坦福利用 Evo 2 生成式 AI 合成噬菌体，实验显示其对大肠杆菌具有强杀灭",
-      "source": "https://www.artificialintelligence-news.com/news/stanford-evo-2-ai-model-generates-phages-against-e-coli/",
-      "date": "2026-08-11",
-      "signal_index": null
+      "date": "2026-08-12"
     },
     {
-      "id": "sig_2026-08-10_002",
-      "level": 1,
+      "id": "tag_2026-08-12_008",
+      "level": 2,
       "content": "阿里拟推行开源分成模式",
-      "summary": "据报道，阿里计划对商用 Qwen 开源模型用户引入收入分成机制，改变开源商业模式",
-      "source": "https://www.artificialintelligence-news.com/news/alibaba-qwen-open-source-ai-revenue-sharing/",
-      "date": "2026-08-11",
-      "signal_index": null
+      "date": "2026-08-12"
     },
     {
-      "id": "sig_2026-08-10_003",
-      "level": 1,
+      "id": "tag_2026-08-12_009",
+      "level": 2,
       "content": "主流 LLM 观测平台横评",
-      "summary": "2026 年主流 LLM 可观测性与评估平台横向对比，涵盖追踪深度、评估能力及定",
-      "source": "https://www.marktechpost.com/2026/08/09/top-llm-observability-and-evaluation-platforms-in-2026-langfuse-langsmith-braintrust-arize-and-more-compared/",
-      "date": "2026-08-11",
-      "signal_index": null
+      "date": "2026-08-12"
     },
     {
       "id": "tag_2026-08-11_001",
@@ -89,56 +143,56 @@
       "date": "2026-08-11"
     },
     {
-      "id": "tag_2026-08-11_002",
-      "level": 2,
+      "id": "word_2026-08-11_002",
+      "level": 3,
       "content": "Pokee AI 发布边界内代理模型",
       "date": "2026-08-11"
     },
     {
-      "id": "tag_2026-08-11_003",
-      "level": 2,
+      "id": "word_2026-08-11_003",
+      "level": 3,
       "content": "Firebird 建成独联体最大 …",
       "date": "2026-08-11"
     },
     {
-      "id": "tag_2026-08-11_004",
-      "level": 2,
+      "id": "word_2026-08-11_004",
+      "level": 3,
       "content": "Atlassian Rovo 曝数…",
       "date": "2026-08-11"
     },
     {
-      "id": "tag_2026-08-11_005",
-      "level": 2,
+      "id": "word_2026-08-11_005",
+      "level": 3,
       "content": "OpenAI 升级 Astra 安…",
       "date": "2026-08-11"
     },
     {
-      "id": "tag_2026-08-11_006",
-      "level": 2,
+      "id": "word_2026-08-11_006",
+      "level": 3,
       "content": "开源项目 Shepherd 优化代…",
       "date": "2026-08-11"
     },
     {
-      "id": "tag_2026-08-10_001",
-      "level": 2,
+      "id": "word_2026-08-10_001",
+      "level": 3,
       "content": "HSP 集团落地税务咨询 AI",
       "date": "2026-08-10"
     },
     {
-      "id": "tag_2026-08-10_002",
-      "level": 2,
+      "id": "word_2026-08-10_002",
+      "level": 3,
       "content": "阿里探索开源模型分成模式",
       "date": "2026-08-10"
     },
     {
-      "id": "tag_2026-08-10_003",
-      "level": 2,
+      "id": "word_2026-08-10_003",
+      "level": 3,
       "content": "Meta 发布低成本高性能模型",
       "date": "2026-08-10"
     },
     {
-      "id": "tag_2026-08-10_004",
-      "level": 2,
+      "id": "word_2026-08-10_004",
+      "level": 3,
       "content": "OpenAI 加强 Astra 网…",
       "date": "2026-08-10"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "Prime Intellect 开…",
       "date": "2026-08-09"
-    },
-    {
-      "id": "word_2026-08-08_001",
-      "level": 3,
-      "content": "Google 扩展 Gemini …",
-      "date": "2026-08-08"
-    },
-    {
-      "id": "word_2026-08-08_002",
-      "level": 3,
-      "content": "OpenAI 联手 APA 关注青…",
-      "date": "2026-08-08"
-    },
-    {
-      "id": "word_2026-08-08_003",
-      "level": 3,
-      "content": "新型攻击可绕过 CPU 频谱防御",
-      "date": "2026-08-08"
-    },
-    {
-      "id": "word_2026-08-08_004",
-      "level": 3,
-      "content": "DeepMind 高层重组聚焦 G…",
-      "date": "2026-08-08"
-    },
-    {
-      "id": "word_2026-08-08_005",
-      "level": 3,
-      "content": "NVIDIA 倡导开放生态系统推动…",
-      "date": "2026-08-08"
-    },
-    {
-      "id": "word_2026-08-08_006",
-      "level": 3,
-      "content": "低成本模型超越 GPT-5.6",
-      "date": "2026-08-08"
-    },
-    {
-      "id": "word_2026-08-07_001",
-      "level": 3,
-      "content": "OpenAI 捣毁跨国诈骗网络",
-      "date": "2026-08-07"
-    },
-    {
-      "id": "word_2026-08-07_002",
-      "level": 3,
-      "content": "非法服务窃取用户提示词",
-      "date": "2026-08-07"
-    },
-    {
-      "id": "word_2026-08-07_003",
-      "level": 3,
-      "content": "Mistral 发布端侧安全模型",
-      "date": "2026-08-07"
     }
   ]
 }
