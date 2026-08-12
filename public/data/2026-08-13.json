@@ -89,23 +89,6 @@
       "collected_at": "2026-08-13T06:00:00+08:00"
     },
     {
-      "id": "2026-08-13-011",
-      "title": "多智能体系统故障自动归因研究",
-      "category": "technology",
-      "importance": 2,
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "source_name": "Synced Review",
-      "summary": "宾州州立和杜克大学研究者提出新方法，可自动定位多智能体协作系统中的任务失败原因。",
-      "analysis": "随着多智能体系统（Multi-Agent Systems）在复杂任务中的应用增多，系统的可解释性和调试难度成为瓶颈。当任务失败时，往往难以确定是哪个智能体的决策失误或通信故障导致了整体崩溃。该研究提出的自动归因方法，如同为多智能体系统安装了“黑匣子”，能快速定位责任主体。这对于构建高可靠性的工业级 Agent 系统至关重要，能显著降低开发维护成本，增强人类对自主协作系统的信任，是推动 Agent 从实验走向落地的关键基础设施技术。",
-      "tags": [
-        "多智能体系统",
-        "故障归因",
-        "可解释性",
-        "学术研究"
-      ],
-      "collected_at": "2026-08-13T06:00:00+08:00"
-    },
-    {
       "id": "2026-08-13-012",
       "title": "小米发布视频对象移除评估新指标",
       "category": "technology",

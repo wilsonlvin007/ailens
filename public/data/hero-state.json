@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-08-12",
+  "updated_at": "2026-08-13",
   "items": [
+    {
+      "id": "sig_2026-08-13_001",
+      "level": 1,
+      "content": "主流大模型 API 存在推理泄露漏洞",
+      "summary": "研究发现 OpenAI 等厂商 API 存在漏洞，弱模型可诱导强模型泄露内部推理",
+      "source": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
+      "date": "2026-08-13",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-08-13_002",
+      "level": 1,
+      "content": "NVIDIA 发布开源 MoE 模型及路由系统",
+      "summary": "NVIDIA 推出 30B 参数开源 MoE 模型 Nemotron 3.5 L",
+      "source": "https://www.marktechpost.com/2026/08/11/nvidia-ai-releases-nemotron-3-5-lightning-and-nemo-switchyard/",
+      "date": "2026-08-13",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-13_003",
+      "level": 1,
+      "content": "AllenAI 发布高效后训练框架 Tulu 3",
+      "summary": "AllenAI 推出 Open Instruct 框架，集成多种后训练方法，支持",
+      "source": "https://www.marktechpost.com/2026/08/12/allenai-open-instruct-tulu-3-post-training-with-sft-dpo-rlvr-grpo-and-verifier-based-evaluation/",
+      "date": "2026-08-13",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-13_004",
+      "level": 1,
+      "content": "多智能体系统故障自动归因研究",
+      "summary": "宾州州立和杜克大学研究者提出新方法，可自动定位多智能体协作系统中的任务失败原因。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-08-13",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-08-13_005",
+      "level": 1,
+      "content": "小米发布视频对象移除评估新指标",
+      "summary": "小米推出 PROVE 指标体系，通过感知对齐更准确评估视频对象移除模型的性能。",
+      "source": "https://www.marktechpost.com/2026/08/11/xiaomis-milm-plus-releases-prove-perception-aligned-object-remove-metrics-rc-s-and-rc-t-with-a-real-world-video-benchmark/",
+      "date": "2026-08-13",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-08-13_006",
+      "level": 1,
+      "content": "Meta 发布开源多模态模型 Muse Glimmer",
+      "summary": "Meta 推出专为本地代理优化的开源多模态模型 Muse Glimmer，支持量",
+      "source": "https://news.smol.ai/issues/26-08-10-not-much/",
+      "date": "2026-08-13",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-08-13_007",
+      "level": 1,
+      "content": "诺和诺德联手 AWS 用 AI 加速制药",
+      "summary": "诺和诺德与 AWS 合作，将代理式 AI 引入药物发现流程，涵盖靶点识别与治疗设",
+      "source": "https://www.artificialintelligence-news.com/news/novo-nordisk-ai-drug-discovery-aws/",
+      "date": "2026-08-13",
+      "signal_index": 4
+    },
     {
       "id": "sig_2026-08-12_001",
       "level": 1,
       "content": "Meta 发布本地代理模型 Muse Glimmer",
       "summary": "Meta 推出 30B 参数开源模型 Muse Glimmer，专为消费级 GP",
       "source": "https://www.artificialintelligence-news.com/news/meta-muse-glimmer-local-ai-agents-consumer-gpus/",
-      "date": "2026-08-12",
-      "signal_index": 0
+      "date": "2026-08-13",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-12_002",
@@ -16,71 +79,44 @@
       "content": "OpenAI 测试 ChatGPT 广告功能",
       "summary": "OpenAI 启动 ChatGPT 广告测试，旨在通过商业化反哺免费服务，同时强",
       "source": "https://openai.com/index/testing-ads-in-chatgpt",
-      "date": "2026-08-12",
-      "signal_index": 1
+      "date": "2026-08-13",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-08-12_003",
-      "level": 1,
-      "content": "OpenAI 网络安全模型登陆 AWS",
-      "summary": "OpenAI 与 AWS 深化合作，通过 Amazon Bedrock 提供 D",
-      "source": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
-      "date": "2026-08-12",
-      "signal_index": 2
+      "id": "tag_2026-08-13_001",
+      "level": 2,
+      "content": "OpenAI 网络安全模型登陆 A…",
+      "date": "2026-08-13"
     },
     {
-      "id": "sig_2026-08-12_004",
-      "level": 1,
-      "content": "Google 医疗 AI 实现实时视频问诊",
-      "summary": "Google 医疗 AI 系统 AMIE 在模拟研究中首次展示实时临床视频问诊能",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
-      "date": "2026-08-12",
-      "signal_index": 3
+      "id": "tag_2026-08-13_002",
+      "level": 2,
+      "content": "Google 医疗 AI 实现实时…",
+      "date": "2026-08-13"
     },
     {
-      "id": "sig_2026-08-12_005",
-      "level": 1,
+      "id": "tag_2026-08-13_003",
+      "level": 2,
       "content": "诺和诺德携手 AWS 加速药物发现",
-      "summary": "诺和诺德与 AWS 合作引入代理式 AI，加速靶点识别与治疗设计，重塑药物研发全",
-      "source": "https://www.artificialintelligence-news.com/news/novo-nordisk-ai-drug-discovery-aws/",
-      "date": "2026-08-12",
-      "signal_index": 4
+      "date": "2026-08-13"
     },
     {
-      "id": "sig_2026-08-12_006",
-      "level": 1,
+      "id": "tag_2026-08-13_004",
+      "level": 2,
       "content": "LTX-2.5 开启本地视频生成时代",
-      "summary": "开源世界模型 LTX-2.5 发布，支持在本地 NVIDIA 硬件运行原生多镜头",
-      "source": "https://www.marktechpost.com/2026/08/11/the-video-production-stack-now-fits-on-one-desk-ltx-2-5-launches-as-nvidia-accelerated-open-weights-world-model/",
-      "date": "2026-08-12",
-      "signal_index": 5
+      "date": "2026-08-13"
     },
     {
-      "id": "sig_2026-08-12_007",
-      "level": 1,
-      "content": "MIT 提出大模型自我改进框架 SEAL",
-      "summary": "MIT 研发 SEAL 框架，利用强化学习使大语言模型能自我编辑权重，迈出自改进",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-08-12",
-      "signal_index": 6
+      "id": "tag_2026-08-13_005",
+      "level": 2,
+      "content": "MIT 提出大模型自我改进框架 S…",
+      "date": "2026-08-13"
     },
     {
-      "id": "sig_2026-08-12_008",
-      "level": 1,
-      "content": "多智能体系统故障自动归因研究",
-      "summary": "宾州州立与杜克大学提出新方法，可自动定位多智能体系统中导致任务失败的具体代理与时",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duck-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-08-12",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-08-12_009",
-      "level": 1,
-      "content": "webAI 发布本地形式逻辑模型 TwIL-LM",
-      "summary": "webAI 发布 TwIL-LM 系列模型，可在本地硬件将自然语言转化为一阶逻辑",
-      "source": "https://www.marktechpost.com/2026/08/10/webai-releases-twil-lm-a-1-7b-and-3b-formal-logic-model-family-for-autoformalization-on-local-hardware/",
-      "date": "2026-08-12",
-      "signal_index": 8
+      "id": "tag_2026-08-13_006",
+      "level": 2,
+      "content": "webAI 发布本地形式逻辑模型 …",
+      "date": "2026-08-13"
     },
     {
       "id": "tag_2026-08-12_001",
@@ -107,38 +143,38 @@
       "date": "2026-08-12"
     },
     {
-      "id": "tag_2026-08-12_005",
-      "level": 2,
+      "id": "word_2026-08-12_005",
+      "level": 3,
       "content": "西门子强调物理 AI 需人类掌控",
       "date": "2026-08-12"
     },
     {
-      "id": "tag_2026-08-12_006",
-      "level": 2,
+      "id": "word_2026-08-12_006",
+      "level": 3,
       "content": "AI 加速代码产出的安全挑战",
       "date": "2026-08-12"
     },
     {
-      "id": "tag_2026-08-12_007",
-      "level": 2,
+      "id": "word_2026-08-12_007",
+      "level": 3,
       "content": "斯坦福 AI 合成抗菌噬菌体",
       "date": "2026-08-12"
     },
     {
-      "id": "tag_2026-08-12_008",
-      "level": 2,
+      "id": "word_2026-08-12_008",
+      "level": 3,
       "content": "阿里拟推行开源分成模式",
       "date": "2026-08-12"
     },
     {
-      "id": "tag_2026-08-12_009",
-      "level": 2,
+      "id": "word_2026-08-12_009",
+      "level": 3,
       "content": "主流 LLM 观测平台横评",
       "date": "2026-08-12"
     },
     {
-      "id": "tag_2026-08-11_001",
-      "level": 2,
+      "id": "word_2026-08-11_001",
+      "level": 3,
       "content": "OpenAI 暂停 Astra 研发",
       "date": "2026-08-11"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "OpenAI 加强 Astra 网…",
       "date": "2026-08-10"
-    },
-    {
-      "id": "word_2026-08-09_001",
-      "level": 3,
-      "content": "腾讯云开源团队级 Agent 记忆库",
-      "date": "2026-08-09"
-    },
-    {
-      "id": "word_2026-08-09_002",
-      "level": 3,
-      "content": "斯坦福 AI 生成新型噬菌体",
-      "date": "2026-08-09"
-    },
-    {
-      "id": "word_2026-08-09_003",
-      "level": 3,
-      "content": "ChatGPT 升级模型并开放免费…",
-      "date": "2026-08-09"
-    },
-    {
-      "id": "word_2026-08-09_004",
-      "level": 3,
-      "content": "OpenAI 升级 GPT-5.6…",
-      "date": "2026-08-09"
-    },
-    {
-      "id": "word_2026-08-09_005",
-      "level": 3,
-      "content": "Cloudflare 发布无状态浏…",
-      "date": "2026-08-09"
-    },
-    {
-      "id": "word_2026-08-09_006",
-      "level": 3,
-      "content": "Prime Intellect 开…",
-      "date": "2026-08-09"
     }
   ]
 }
