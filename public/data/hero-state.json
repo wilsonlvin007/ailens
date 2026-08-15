@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-08-15",
+  "updated_at": "2026-08-16",
   "items": [
+    {
+      "id": "sig_2026-08-16_001",
+      "level": 1,
+      "content": "MIT 提出自进化 AI 框架 SEAL",
+      "summary": "MIT 提出 SEAL 框架，利用强化学习让大模型自主编辑更新权重，迈向自进化 ",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-08-16",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-08-16_002",
+      "level": 1,
+      "content": "Z.ai 发布免重训升级模型 GLM-5.3",
+      "summary": "Z.ai 发布 GLM-5.3，无需重训基座模型，仅通过扩展后训练显著提升编码及",
+      "source": "https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/",
+      "date": "2026-08-16",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-08-16_003",
+      "level": 1,
+      "content": "开源 Needle 2 模型极致轻量化",
+      "summary": "Cactus Compute 开源 Needle 2，仅 4500 万参数即可在",
+      "source": "https://www.marktechpost.com/2026/08/13/cactus-compute-needle-2-45m-parameter-tool-calling-model/",
+      "date": "2026-08-16",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-08-16_004",
+      "level": 1,
+      "content": "谷歌健康教练接入雅培血糖数据",
+      "summary": "谷歌与雅培合作，将连续血糖监测数据接入 Gemini 健康教练，增强个人健康管理",
+      "source": "https://www.artificialintelligence-news.com/news/google-ai-health-coach-abbott-glucose-data/",
+      "date": "2026-08-16",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-16_005",
+      "level": 1,
+      "content": "三星研发穿戴设备生物信号模型",
+      "summary": "三星研发两款 AI 基础模型，通过分析智能手表采集的生物信号数据优化健康监测服务",
+      "source": "https://www.artificialintelligence-news.com/news/samsung-health-ai-models-analyse-wearable-biosignal-data/",
+      "date": "2026-08-16",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-16_006",
+      "level": 1,
+      "content": "Okta 提出降低 Agent 成本方案",
+      "summary": "Okta 提出基于身份范围的 MCP 工具列表方案，有效降低 AI 智能体调用的",
+      "source": "https://www.artificialintelligence-news.com/news/okta-targets-ai-agent-token-costs-with-mcp-scoping/",
+      "date": "2026-08-16",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-08-16_007",
+      "level": 1,
+      "content": "谷歌 AMIE 展示实时视频问诊",
+      "summary": "谷歌医疗 AI 系统 AMIE 在模拟环境中首次展示实时临床视频问诊能力，推动医",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+      "date": "2026-08-16",
+      "signal_index": 1
+    },
     {
       "id": "sig_2026-08-15_001",
       "level": 1,
       "content": "谷歌 AMIE 展示视频问诊能力",
       "summary": "谷歌医疗 AI 系统 AMIE 在模拟环境中展示实时临床视频咨询能力。",
       "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
-      "date": "2026-08-15",
-      "signal_index": 1
+      "date": "2026-08-16",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-15_002",
@@ -16,71 +79,44 @@
       "content": "英伟达印尼建首个大学 AI 中心",
       "summary": "英伟达与合作伙伴在印尼成立首个大学 AI 技术中心，旨在培养本地 AI 人才。",
       "source": "https://blogs.nvidia.com/blog/ugm-indosat-nvidia-ai-technology-center/",
-      "date": "2026-08-15",
-      "signal_index": 2
+      "date": "2026-08-16",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-08-15_003",
-      "level": 1,
+      "id": "tag_2026-08-16_001",
+      "level": 2,
       "content": "行业热议兆瓦级机架架构",
-      "summary": "行业探讨是否应将更多算力 cram 进单机柜，还是重新思考数据中心架构。",
-      "source": "https://semiengineering.com/the-1-megawatt-rack-debate/",
-      "date": "2026-08-15",
-      "signal_index": 3
+      "date": "2026-08-16"
     },
     {
-      "id": "sig_2026-08-15_004",
-      "level": 1,
-      "content": "谷歌极速发布 Gemini 3.7 Flash",
-      "summary": "谷歌三周内迭代发布 Gemini 3.7 Flash，编码能力显著提升，价格降低",
-      "source": "https://news.smol.ai/issues/26-08-13-not-much/",
-      "date": "2026-08-15",
-      "signal_index": 0
+      "id": "tag_2026-08-16_002",
+      "level": 2,
+      "content": "谷歌极速发布 Gemini 3.7…",
+      "date": "2026-08-16"
     },
     {
-      "id": "sig_2026-08-15_005",
-      "level": 1,
+      "id": "tag_2026-08-16_003",
+      "level": 2,
       "content": "OpenAI 任命新首席营收官",
-      "summary": "OpenAI 任命 Dali Rajic 为首席营收官，领导全球营收组织以帮助企",
-      "source": "https://openai.com/index/dali-rajic-chief-revenue-officer",
-      "date": "2026-08-15",
-      "signal_index": 4
+      "date": "2026-08-16"
     },
     {
-      "id": "sig_2026-08-15_006",
-      "level": 1,
-      "content": "GeForce NOW 原生支持 Linux",
-      "summary": "GeForce NOW 原生 Linux 应用结束测试，并优化云端帧生成技术，提",
-      "source": "https://blogs.nvidia.com/blog/geforce-now-thursday-linux-native-app/",
-      "date": "2026-08-15",
-      "signal_index": 5
+      "id": "tag_2026-08-16_004",
+      "level": 2,
+      "content": "GeForce NOW 原生支持 …",
+      "date": "2026-08-16"
     },
     {
-      "id": "sig_2026-08-14_001",
-      "level": 1,
-      "content": "OpenAI 发布 GPT-5.6 极速模式",
-      "summary": "OpenAI 联合 Cerebras 推出 GPT-5.6 极速模式，推理速度提",
-      "source": "https://openai.com/index/previewing-ultrafast",
-      "date": "2026-08-15",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-08-14_002",
-      "level": 1,
+      "id": "tag_2026-08-16_006",
+      "level": 2,
       "content": "英伟达推动算力资产金融化",
-      "summary": "英伟达联手金融机构建立融资平台，动员超五千亿美元资本，将 AI 算力转化为可投资",
-      "source": "https://blogs.nvidia.com/blog/nvidia-ai-factory-compute/",
-      "date": "2026-08-15",
-      "signal_index": null
+      "date": "2026-08-16"
     },
     {
-      "id": "sig_2026-08-14_003",
-      "level": 1,
-      "content": "OpenAI 发布 GPT-5.6 开发指南",
-      "summary": "OpenAI 发布指南，指导开发者利用 GPT-5.6 和新 API 构建高效低",
-      "source": "https://openai.com/index/builders-guide-to-gpt-5-6",
-      "date": "2026-08-15",
-      "signal_index": null
+      "id": "tag_2026-08-16_007",
+      "level": 2,
+      "content": "OpenAI 发布 GPT-5.6…",
+      "date": "2026-08-16"
     },
     {
       "id": "tag_2026-08-15_001",
@@ -101,44 +137,44 @@
       "date": "2026-08-15"
     },
     {
-      "id": "tag_2026-08-15_004",
-      "level": 2,
+      "id": "word_2026-08-15_004",
+      "level": 3,
       "content": "主流大模型 API 存在推理泄露漏洞",
       "date": "2026-08-15"
     },
     {
-      "id": "tag_2026-08-15_005",
-      "level": 2,
+      "id": "word_2026-08-15_005",
+      "level": 3,
       "content": "NVIDIA 发布开源 MoE 模…",
       "date": "2026-08-15"
     },
     {
-      "id": "tag_2026-08-15_006",
-      "level": 2,
+      "id": "word_2026-08-15_006",
+      "level": 3,
       "content": "AllenAI 发布高效后训练框架…",
       "date": "2026-08-15"
     },
     {
-      "id": "tag_2026-08-14_001",
-      "level": 2,
+      "id": "word_2026-08-14_001",
+      "level": 3,
       "content": "多智能体系统故障自动归因研究",
       "date": "2026-08-14"
     },
     {
-      "id": "tag_2026-08-14_002",
-      "level": 2,
+      "id": "word_2026-08-14_002",
+      "level": 3,
       "content": "小米发布视频对象移除评估新指标",
       "date": "2026-08-14"
     },
     {
-      "id": "tag_2026-08-14_003",
-      "level": 2,
+      "id": "word_2026-08-14_003",
+      "level": 3,
       "content": "Meta 发布开源多模态模型 Mu…",
       "date": "2026-08-14"
     },
     {
-      "id": "tag_2026-08-14_004",
-      "level": 2,
+      "id": "word_2026-08-14_004",
+      "level": 3,
       "content": "诺和诺德联手 AWS 用 AI 加…",
       "date": "2026-08-14"
     },
@@ -189,48 +225,6 @@
       "level": 3,
       "content": "webAI 发布本地形式逻辑模型 …",
       "date": "2026-08-13"
-    },
-    {
-      "id": "word_2026-08-12_001",
-      "level": 3,
-      "content": "Meta 开源本地代理模型",
-      "date": "2026-08-12"
-    },
-    {
-      "id": "word_2026-08-12_002",
-      "level": 3,
-      "content": "字节推出原生音视频模型",
-      "date": "2026-08-12"
-    },
-    {
-      "id": "word_2026-08-12_003",
-      "level": 3,
-      "content": "GPT-5.6 Sol 自动化财务…",
-      "date": "2026-08-12"
-    },
-    {
-      "id": "word_2026-08-12_004",
-      "level": 3,
-      "content": "OpenAI 构建 AI 原生财务…",
-      "date": "2026-08-12"
-    },
-    {
-      "id": "word_2026-08-12_005",
-      "level": 3,
-      "content": "西门子强调物理 AI 需人类掌控",
-      "date": "2026-08-12"
-    },
-    {
-      "id": "word_2026-08-12_006",
-      "level": 3,
-      "content": "AI 加速代码产出的安全挑战",
-      "date": "2026-08-12"
-    },
-    {
-      "id": "word_2026-08-12_007",
-      "level": 3,
-      "content": "斯坦福 AI 合成抗菌噬菌体",
-      "date": "2026-08-12"
     }
   ]
 }
