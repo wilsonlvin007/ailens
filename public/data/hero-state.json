@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-08-17",
+  "updated_at": "2026-08-18",
   "items": [
+    {
+      "id": "sig_2026-08-18_001",
+      "level": 1,
+      "content": "OpenAI 聚焦安全与政策",
+      "summary": "OpenAI 探讨 AI 重塑网络安全格局，并资助多项研究以探索智能时代的社会政",
+      "source": "https://openai.com/index/the-defenders-window",
+      "date": "2026-08-18",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-08-18_002",
+      "level": 1,
+      "content": "谷歌医疗 AI 实现视频问诊",
+      "summary": "谷歌医疗 AI 系统 AMIE 在模拟研究中成功展示实时临床视频咨询与交互能力。",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+      "date": "2026-08-18",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-18_003",
+      "level": 1,
+      "content": "英伟达强调智算基建安全",
+      "summary": "英伟达指出 AI 工厂是智能时代核心基建，需重点保障其物理安全与资源供给。",
+      "source": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence/",
+      "date": "2026-08-18",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-18_004",
+      "level": 1,
+      "content": "800VDC 优化 AI 电源设计",
+      "summary": "行业探讨采用 800VDC 技术，解决 AI 集群从电网到芯片的全链路供电瓶颈。",
+      "source": "https://semiengineering.com/800vdc-pushes-ai-power-design-from-grid-to-gate/",
+      "date": "2026-08-18",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-08-18_005",
+      "level": 1,
+      "content": "谷歌 AI 赋能足球观赛体验",
+      "summary": "谷歌 Gemini 与 Pixel 携手全球足球俱乐部，利用 AI 技术创新球迷",
+      "source": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
+      "date": "2026-08-18",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-08-18_006",
+      "level": 1,
+      "content": "谷歌表格新增 AI 画布功能",
+      "summary": "谷歌推出 Sheets canvas 功能，允许用户通过自然语言提示将表格数据转",
+      "source": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
+      "date": "2026-08-18",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-08-18_007",
+      "level": 1,
+      "content": "Z.ai 与阿里发布新模型",
+      "summary": "Z.ai 推出代码安全模型 GLM-5.3，阿里开源原生多模态大模型 Qwen3",
+      "source": "https://news.smol.ai/issues/26-08-14-cursor-xai/",
+      "date": "2026-08-18",
+      "signal_index": 0
+    },
     {
       "id": "sig_2026-08-17_001",
       "level": 1,
       "content": "Cactus Compute 发布轻量工具模型 Needle 2",
       "summary": "Cactus Compute 发布 Needle 2，仅 4500 万参数即可在",
       "source": "https://www.marktechpost.com/2026/08/13/cactus-compute-needle-2-45m-parameter-tool-calling-model/",
-      "date": "2026-08-17",
-      "signal_index": 0
+      "date": "2026-08-18",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-17_002",
@@ -16,71 +79,50 @@
       "content": "三星研发健康 AI 基座模型",
       "summary": "三星研发两款健康 AI 基座模型，分析智能手表采集的心率、睡眠等生物信号数据。",
       "source": "https://www.artificialintelligence-news.com/news/samsung-health-ai-models-analyse-wearable-biosignal-data/",
-      "date": "2026-08-17",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-08-16_001",
-      "level": 1,
-      "content": "MIT 提出自进化 AI 框架 SEAL",
-      "summary": "MIT 提出 SEAL 框架，利用强化学习让大模型自主编辑更新权重，迈向自进化 ",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-08-17",
+      "date": "2026-08-18",
       "signal_index": null
     },
     {
-      "id": "sig_2026-08-16_002",
-      "level": 1,
-      "content": "Z.ai 发布免重训升级模型 GLM-5.3",
-      "summary": "Z.ai 发布 GLM-5.3，无需重训基座模型，仅通过扩展后训练显著提升编码及",
-      "source": "https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks/",
-      "date": "2026-08-17",
-      "signal_index": null
+      "id": "tag_2026-08-18_001",
+      "level": 2,
+      "content": "MIT 提出自进化 AI 框架 S…",
+      "date": "2026-08-18"
     },
     {
-      "id": "sig_2026-08-16_003",
-      "level": 1,
-      "content": "开源 Needle 2 模型极致轻量化",
-      "summary": "Cactus Compute 开源 Needle 2，仅 4500 万参数即可在",
-      "source": "https://www.marktechpost.com/2026/08/13/cactus-compute-needle-2-45m-parameter-tool-calling-model/",
-      "date": "2026-08-17",
-      "signal_index": null
+      "id": "tag_2026-08-18_002",
+      "level": 2,
+      "content": "Z.ai 发布免重训升级模型 GL…",
+      "date": "2026-08-18"
     },
     {
-      "id": "sig_2026-08-16_004",
-      "level": 1,
+      "id": "tag_2026-08-18_003",
+      "level": 2,
+      "content": "开源 Needle 2 模型极致轻…",
+      "date": "2026-08-18"
+    },
+    {
+      "id": "tag_2026-08-18_004",
+      "level": 2,
       "content": "谷歌健康教练接入雅培血糖数据",
-      "summary": "谷歌与雅培合作，将连续血糖监测数据接入 Gemini 健康教练，增强个人健康管理",
-      "source": "https://www.artificialintelligence-news.com/news/google-ai-health-coach-abbott-glucose-data/",
-      "date": "2026-08-17",
-      "signal_index": null
+      "date": "2026-08-18"
     },
     {
-      "id": "sig_2026-08-16_005",
-      "level": 1,
+      "id": "tag_2026-08-18_005",
+      "level": 2,
       "content": "三星研发穿戴设备生物信号模型",
-      "summary": "三星研发两款 AI 基础模型，通过分析智能手表采集的生物信号数据优化健康监测服务",
-      "source": "https://www.artificialintelligence-news.com/news/samsung-health-ai-models-analyse-wearable-biosignal-data/",
-      "date": "2026-08-17",
-      "signal_index": null
+      "date": "2026-08-18"
     },
     {
-      "id": "sig_2026-08-16_006",
-      "level": 1,
-      "content": "Okta 提出降低 Agent 成本方案",
-      "summary": "Okta 提出基于身份范围的 MCP 工具列表方案，有效降低 AI 智能体调用的",
-      "source": "https://www.artificialintelligence-news.com/news/okta-targets-ai-agent-token-costs-with-mcp-scoping/",
-      "date": "2026-08-17",
-      "signal_index": null
+      "id": "tag_2026-08-18_006",
+      "level": 2,
+      "content": "Okta 提出降低 Agent 成…",
+      "date": "2026-08-18"
     },
     {
-      "id": "sig_2026-08-16_007",
-      "level": 1,
+      "id": "tag_2026-08-18_007",
+      "level": 2,
       "content": "谷歌 AMIE 展示实时视频问诊",
-      "summary": "谷歌医疗 AI 系统 AMIE 在模拟环境中首次展示实时临床视频问诊能力，推动医",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
-      "date": "2026-08-17",
-      "signal_index": null
+      "date": "2026-08-18"
     },
     {
       "id": "tag_2026-08-17_001",
@@ -101,44 +143,44 @@
       "date": "2026-08-16"
     },
     {
-      "id": "tag_2026-08-16_002",
-      "level": 2,
+      "id": "word_2026-08-16_002",
+      "level": 3,
       "content": "谷歌极速发布 Gemini 3.7…",
       "date": "2026-08-16"
     },
     {
-      "id": "tag_2026-08-16_003",
-      "level": 2,
+      "id": "word_2026-08-16_003",
+      "level": 3,
       "content": "OpenAI 任命新首席营收官",
       "date": "2026-08-16"
     },
     {
-      "id": "tag_2026-08-16_004",
-      "level": 2,
+      "id": "word_2026-08-16_004",
+      "level": 3,
       "content": "GeForce NOW 原生支持 …",
       "date": "2026-08-16"
     },
     {
-      "id": "tag_2026-08-16_006",
-      "level": 2,
+      "id": "word_2026-08-16_006",
+      "level": 3,
       "content": "英伟达推动算力资产金融化",
       "date": "2026-08-16"
     },
     {
-      "id": "tag_2026-08-16_007",
-      "level": 2,
+      "id": "word_2026-08-16_007",
+      "level": 3,
       "content": "OpenAI 发布 GPT-5.6…",
       "date": "2026-08-16"
     },
     {
-      "id": "tag_2026-08-15_001",
-      "level": 2,
+      "id": "word_2026-08-15_001",
+      "level": 3,
       "content": "光互连重塑数据中心扩展方式",
       "date": "2026-08-15"
     },
     {
-      "id": "tag_2026-08-15_002",
-      "level": 2,
+      "id": "word_2026-08-15_002",
+      "level": 3,
       "content": "xAI 与阿里竞逐超大参数模型",
       "date": "2026-08-15"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "诺和诺德联手 AWS 用 AI 加…",
       "date": "2026-08-14"
-    },
-    {
-      "id": "word_2026-08-14_005",
-      "level": 3,
-      "content": "Meta 发布本地代理模型 Mus…",
-      "date": "2026-08-14"
-    },
-    {
-      "id": "word_2026-08-14_006",
-      "level": 3,
-      "content": "OpenAI 测试 ChatGPT…",
-      "date": "2026-08-14"
-    },
-    {
-      "id": "word_2026-08-13_001",
-      "level": 3,
-      "content": "OpenAI 网络安全模型登陆 A…",
-      "date": "2026-08-13"
-    },
-    {
-      "id": "word_2026-08-13_002",
-      "level": 3,
-      "content": "Google 医疗 AI 实现实时…",
-      "date": "2026-08-13"
-    },
-    {
-      "id": "word_2026-08-13_003",
-      "level": 3,
-      "content": "诺和诺德携手 AWS 加速药物发现",
-      "date": "2026-08-13"
-    },
-    {
-      "id": "word_2026-08-13_004",
-      "level": 3,
-      "content": "LTX-2.5 开启本地视频生成时代",
-      "date": "2026-08-13"
-    },
-    {
-      "id": "word_2026-08-13_005",
-      "level": 3,
-      "content": "MIT 提出大模型自我改进框架 S…",
-      "date": "2026-08-13"
     }
   ]
 }
