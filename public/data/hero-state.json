@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-08-19",
+  "updated_at": "2026-08-20",
   "items": [
     {
-      "id": "sig_2026-08-19_001",
+      "id": "sig_2026-08-20_001",
       "level": 1,
-      "content": "OpenAI 强化国家安全民主监督",
-      "summary": "OpenAI 发起新倡议，提供工具培训以加强国家安全领域 AI 的民主监督及政府",
-      "source": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
-      "date": "2026-08-19",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-08-19_002",
-      "level": 1,
-      "content": "OpenAI 调控网络关键能力模型节奏",
-      "summary": "OpenAI 公布新防护措施，强化前沿模型监控，指导网络关键能力时代的开发节奏。",
-      "source": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-      "date": "2026-08-19",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-08-19_003",
-      "level": 1,
-      "content": "微软 Copilot 存一键窃数高危漏洞",
-      "summary": "微软 Copilot Personal 曝严重漏洞，攻击者仅需一次点击即可窃取连",
-      "source": "https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html",
-      "date": "2026-08-19",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-08-19_004",
-      "level": 1,
-      "content": "MLflow 漏洞致云凭证大规模泄露",
-      "summary": "开源 AI 平台 MLflow 存在严重 SSRF 漏洞，正被恶意利用窃取云凭证",
-      "source": "https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html",
-      "date": "2026-08-19",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-08-19_005",
-      "level": 1,
-      "content": "英伟达推 TensorRT 模型连接预览版",
-      "summary": "英伟达发布 TensorRT Model Connect 预览版，仅需两条命令即",
-      "source": "https://www.marktechpost.com/2026/08/18/nvidia-releases-tensorrt-model-connect-in-public-preview-hugging-face-checkpoint-to-native-c-inference-in-twocommands/",
-      "date": "2026-08-19",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-08-19_006",
-      "level": 1,
-      "content": "MIT 推出 SEAL 自进化 AI 框架",
-      "summary": "MIT 推出 SEAL 框架，利用强化学习使大语言模型能够自我编辑和更新权重，迈",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-08-19",
-      "signal_index": 11
-    },
-    {
-      "id": "sig_2026-08-19_007",
-      "level": 1,
-      "content": "OpenAI 布局吉瓦级算力基建",
-      "summary": "OpenAI 承诺部署超 4GW 英伟达算力及建设 8GW 数据中心，加速能源与",
-      "source": "https://news.smol.ai/issues/26-08-17-not-much/",
-      "date": "2026-08-19",
+      "content": "OpenAI 暂停前沿 RL 训练",
+      "summary": "OpenAI 暂停前沿强化学习训练两周，全面审查安全对齐机制，确立安全优先于扩展",
+      "source": "https://thehackernews.com/2026/08/openai-pauses-frontier-rl-training-as.html",
+      "date": "2026-08-20",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-08-19_008",
+      "id": "sig_2026-08-20_002",
       "level": 1,
-      "content": "OpenAI 总裁呼吁加速企业 AI 防御",
-      "summary": "OpenAI 总裁警告企业需加速部署 AI 防御措施，引用近期事件强调提升安全实",
-      "source": "https://www.artificialintelligence-news.com/news/openai-president-urges-enterprises-hasten-ai-security-defences/",
-      "date": "2026-08-19",
+      "content": "OpenAI 推行零数据保留",
+      "summary": "OpenAI 为合格 API 客户实施零数据保留政策，并预览私有安全处理功能以强",
+      "source": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+      "date": "2026-08-20",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-08-20_003",
+      "level": 1,
+      "content": "AI 算力走向异构集群",
+      "summary": "文章指出未来 AI 算力将依赖 CPU、GPU、NPU 及定制加速器组成的异构集",
+      "source": "https://semiengineering.com/the-future-of-ai-compute-wont-run-on-on-one-kind-of-chip/",
+      "date": "2026-08-20",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-20_004",
+      "level": 1,
+      "content": "多智能体失败自动归因",
+      "summary": "宾州州立与杜克大学研究者提出多智能体系统任务失败的自动归因方法，提升协作调试效率",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-08-20",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-20_005",
+      "level": 1,
+      "content": "Cloudflare 遭 Spectre 攻击",
+      "summary": "研究人员披露针对 Cloudflare Workers 的远程 Spectre ",
+      "source": "https://thehackernews.com/2026/08/cloudflare-workers-spectre-side-channel-attack-leaks-jwt.html",
+      "date": "2026-08-20",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-08-20_006",
+      "level": 1,
+      "content": "Replit 推免费 GPT 编码模式",
+      "summary": "Replit 集成 GPT-5.6 Luna 推出免费模式，让用户无需担心 To",
+      "source": "https://openai.com/index/replit",
+      "date": "2026-08-20",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-08-19_009",
+      "id": "sig_2026-08-20_007",
       "level": 1,
-      "content": "Alvys 推货运 TMS 自动化 AI 代理",
-      "summary": "货运软件商 Alvys 推出 Foundry 平台，利用 AI 代理在运输管理系",
-      "source": "https://www.artificialintelligence-news.com/news/alvys-ai-agents-freight-tms/",
-      "date": "2026-08-19",
+      "content": "Google 推出 Sheets Canvas",
+      "summary": "Google 推出 Sheets Canvas，允许用户通过自然语言提示将表格数",
+      "source": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/",
+      "date": "2026-08-20",
       "signal_index": 6
+    },
+    {
+      "id": "sig_2026-08-20_008",
+      "level": 1,
+      "content": "Gemini 携手足球俱乐部",
+      "summary": "Google Gemini 与 Pixel 联合五家全球足球俱乐部，利用 AI ",
+      "source": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
+      "date": "2026-08-20",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-08-20_009",
+      "level": 1,
+      "content": "英伟达强调 AI 基建安全",
+      "summary": "英伟达强调 AI 工厂作为智能时代核心基础设施，需全栈资源保障算力安全转化为智能",
+      "source": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence/",
+      "date": "2026-08-20",
+      "signal_index": 8
+    },
+    {
+      "id": "tag_2026-08-20_001",
+      "level": 2,
+      "content": "OpenAI 强化国家安全民主监督",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "tag_2026-08-20_002",
+      "level": 2,
+      "content": "OpenAI 调控网络关键能力模型…",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "tag_2026-08-20_003",
+      "level": 2,
+      "content": "微软 Copilot 存一键窃数高…",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "tag_2026-08-20_004",
+      "level": 2,
+      "content": "MLflow 漏洞致云凭证大规模泄露",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "tag_2026-08-20_005",
+      "level": 2,
+      "content": "英伟达推 TensorRT 模型连…",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "tag_2026-08-20_006",
+      "level": 2,
+      "content": "MIT 推出 SEAL 自进化 A…",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "tag_2026-08-20_007",
+      "level": 2,
+      "content": "OpenAI 布局吉瓦级算力基建",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "tag_2026-08-20_008",
+      "level": 2,
+      "content": "OpenAI 总裁呼吁加速企业 A…",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "tag_2026-08-20_009",
+      "level": 2,
+      "content": "Alvys 推货运 TMS 自动化…",
+      "date": "2026-08-20"
     },
     {
       "id": "tag_2026-08-19_001",
@@ -89,56 +143,56 @@
       "date": "2026-08-19"
     },
     {
-      "id": "tag_2026-08-19_002",
-      "level": 2,
+      "id": "word_2026-08-19_002",
+      "level": 3,
       "content": "谷歌医疗 AI 实现视频问诊",
       "date": "2026-08-19"
     },
     {
-      "id": "tag_2026-08-19_003",
-      "level": 2,
+      "id": "word_2026-08-19_003",
+      "level": 3,
       "content": "英伟达强调智算基建安全",
       "date": "2026-08-19"
     },
     {
-      "id": "tag_2026-08-19_004",
-      "level": 2,
+      "id": "word_2026-08-19_004",
+      "level": 3,
       "content": "800VDC 优化 AI 电源设计",
       "date": "2026-08-19"
     },
     {
-      "id": "tag_2026-08-19_005",
-      "level": 2,
+      "id": "word_2026-08-19_005",
+      "level": 3,
       "content": "谷歌 AI 赋能足球观赛体验",
       "date": "2026-08-19"
     },
     {
-      "id": "tag_2026-08-19_006",
-      "level": 2,
+      "id": "word_2026-08-19_006",
+      "level": 3,
       "content": "谷歌表格新增 AI 画布功能",
       "date": "2026-08-19"
     },
     {
-      "id": "tag_2026-08-19_007",
-      "level": 2,
+      "id": "word_2026-08-19_007",
+      "level": 3,
       "content": "Z.ai 与阿里发布新模型",
       "date": "2026-08-19"
     },
     {
-      "id": "tag_2026-08-19_008",
-      "level": 2,
+      "id": "word_2026-08-19_008",
+      "level": 3,
       "content": "Cactus Compute 发布…",
       "date": "2026-08-19"
     },
     {
-      "id": "tag_2026-08-19_009",
-      "level": 2,
+      "id": "word_2026-08-19_009",
+      "level": 3,
       "content": "三星研发健康 AI 基座模型",
       "date": "2026-08-19"
     },
     {
-      "id": "tag_2026-08-18_001",
-      "level": 2,
+      "id": "word_2026-08-18_001",
+      "level": 3,
       "content": "MIT 提出自进化 AI 框架 S…",
       "date": "2026-08-18"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "谷歌 AMIE 展示实时视频问诊",
       "date": "2026-08-18"
-    },
-    {
-      "id": "word_2026-08-17_001",
-      "level": 3,
-      "content": "谷歌 AMIE 展示视频问诊能力",
-      "date": "2026-08-17"
-    },
-    {
-      "id": "word_2026-08-17_002",
-      "level": 3,
-      "content": "英伟达印尼建首个大学 AI 中心",
-      "date": "2026-08-17"
-    },
-    {
-      "id": "word_2026-08-16_001",
-      "level": 3,
-      "content": "行业热议兆瓦级机架架构",
-      "date": "2026-08-16"
-    },
-    {
-      "id": "word_2026-08-16_002",
-      "level": 3,
-      "content": "谷歌极速发布 Gemini 3.7…",
-      "date": "2026-08-16"
-    },
-    {
-      "id": "word_2026-08-16_003",
-      "level": 3,
-      "content": "OpenAI 任命新首席营收官",
-      "date": "2026-08-16"
-    },
-    {
-      "id": "word_2026-08-16_004",
-      "level": 3,
-      "content": "GeForce NOW 原生支持 …",
-      "date": "2026-08-16"
-    },
-    {
-      "id": "word_2026-08-16_006",
-      "level": 3,
-      "content": "英伟达推动算力资产金融化",
-      "date": "2026-08-16"
-    },
-    {
-      "id": "word_2026-08-16_007",
-      "level": 3,
-      "content": "OpenAI 发布 GPT-5.6…",
-      "date": "2026-08-16"
-    },
-    {
-      "id": "word_2026-08-15_001",
-      "level": 3,
-      "content": "光互连重塑数据中心扩展方式",
-      "date": "2026-08-15"
     }
   ]
 }
