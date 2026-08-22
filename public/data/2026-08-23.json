@@ -68,22 +68,6 @@
       "collected_at": "2026-08-23T06:00:00+08:00"
     },
     {
-      "id": "2026-08-23-008",
-      "title": "字节跳动推出 Astra 导航架构",
-      "category": "application",
-      "importance": 3,
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "source_name": "Synced Review",
-      "summary": "字节跳动发布 Astra 双模型架构，显著提升机器人在复杂室内环境下的自主导航与避障能力。",
-      "analysis": "Astra 架构的双模型设计巧妙平衡了全局规划与局部反应的矛盾。大模型负责语义理解与长程路径规划，小模型专注高频传感器数据处理与即时避障，这种分工有效解决了单一模型在实时性与推理深度上的取舍难题。字节跳动将此技术应用于机器人领域，显示出其从内容分发向实体智能延伸的战略意图。在具身智能爆发的前夜，此类能适应非结构化环境的导航方案，将是物流、家政等服务机器人规模化落地的核心瓶颈突破点。",
-      "tags": [
-        "字节跳动",
-        "机器人导航",
-        "具身智能"
-      ],
-      "collected_at": "2026-08-23T06:00:00+08:00"
-    },
-    {
       "id": "2026-08-23-010",
       "title": "AI 工具助推 JavaScript 流行",
       "category": "application",

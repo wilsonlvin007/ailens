@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-08-22",
+  "updated_at": "2026-08-23",
   "items": [
+    {
+      "id": "sig_2026-08-23_001",
+      "level": 1,
+      "content": "OpenAI 推零数据保留政策",
+      "summary": "OpenAI 重申对合格 API 客户实行零数据保留，并预览私有安全处理功能以增",
+      "source": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+      "date": "2026-08-23",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-08-23_002",
+      "level": 1,
+      "content": "代理框架工程优于模型选型",
+      "summary": "研究指出代理框架的工程实现比模型选择更关键，优化执行循环可显著提升编码代理排名。",
+      "source": "https://www.marktechpost.com/2026/08/22/decoding-ais-open-source-course-maps-three-ways-to-run-an-agent-loop-and-the-provider economics-behind-each/",
+      "date": "2026-08-23",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-23_003",
+      "level": 1,
+      "content": "字节跳动推出 Astra 导航架构",
+      "summary": "字节跳动发布 Astra 双模型架构，显著提升机器人在复杂室内环境下的自主导航与",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-08-23",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-08-23_004",
+      "level": 1,
+      "content": "AI 工具助推 JavaScript 流行",
+      "summary": "数据显示，AI 编码工具的普及推动 TypeScript 在 2025 年 8 ",
+      "source": "https://www.artificialintelligence-news.com/news/how-ai-coding-tools-are-contributing-to-the-popularity-of-javascript/",
+      "date": "2026-08-23",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-08-23_005",
+      "level": 1,
+      "content": "本地大模型体验不佳探因",
+      "summary": "技术社区深入探讨了本地部署大语言模型在实际体验中表现不如云端预期的多重技术原因。",
+      "source": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+      "date": "2026-08-23",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-08-23_006",
+      "level": 1,
+      "content": "Claude Code 疑似降低努力度",
+      "summary": "用户反馈显示，Anthropic 似乎正在对 Claude Code 进行降低单",
+      "source": "https://twitter.com/argofowl/status/2091150597374537729",
+      "date": "2026-08-23",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-08-23_007",
+      "level": 1,
+      "content": "神秘模型 Ox Alpha 崛起",
+      "summary": "神秘模型 Ox Alpha 展现卓越编码与代理能力，业界推测其为智谱 GLM 系",
+      "source": "https://news.smol.ai/issues/26-08-21-not-much/",
+      "date": "2026-08-23",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-23_008",
+      "level": 1,
+      "content": "OpenAI 发布 AI 未来展望",
+      "summary": "OpenAI 推出新博客，深入探讨变革性 AI 对权力结构、治理模式及个人自由的",
+      "source": "https://openai.com/index/introducing-ai-futures",
+      "date": "2026-08-23",
+      "signal_index": 0
+    },
     {
       "id": "sig_2026-08-22_001",
       "level": 1,
       "content": "OpenAI 推出 AI 未来博客",
       "summary": "OpenAI 开设新博客，深入探讨变革性 AI 对社会权力、治理及个人自由的重塑",
       "source": "https://openai.com/index/introducing-ai-futures",
-      "date": "2026-08-22",
-      "signal_index": 0
+      "date": "2026-08-23",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-08-22_002",
-      "level": 1,
+      "id": "tag_2026-08-23_001",
+      "level": 2,
       "content": "npm 包现 AI 辅助后门",
-      "summary": "发现 14 个被篡改 npm 包，利用 AI 辅助命令控制机制投递名为 RedC",
-      "source": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
-      "date": "2026-08-22",
-      "signal_index": 1
+      "date": "2026-08-23"
     },
     {
-      "id": "sig_2026-08-22_003",
-      "level": 1,
+      "id": "tag_2026-08-23_002",
+      "level": 2,
       "content": "Stampli 提效产品发布",
-      "summary": "Stampli 利用 Codex 和 ChatGPT Work 将产品发布周期从",
-      "source": "https://openai.com/index/stampli",
-      "date": "2026-08-22",
-      "signal_index": 2
+      "date": "2026-08-23"
     },
     {
-      "id": "sig_2026-08-22_004",
-      "level": 1,
+      "id": "tag_2026-08-23_003",
+      "level": 2,
       "content": "NVIDIA 阐述 AI 工厂概念",
-      "summary": "NVIDIA 阐述\"AI 工厂\"概念，强调先进芯片、封装及内存等全栈资源对构建智",
-      "source": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence/",
-      "date": "2026-08-22",
-      "signal_index": 4
+      "date": "2026-08-23"
     },
     {
-      "id": "sig_2026-08-22_005",
-      "level": 1,
+      "id": "tag_2026-08-23_004",
+      "level": 2,
       "content": "谷歌 Gemini 助力球迷体验",
-      "summary": "谷歌 Gemini 与 Pixel 携手五家全球足球俱乐部，利用 AI 技术提升",
-      "source": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
-      "date": "2026-08-22",
-      "signal_index": 3
+      "date": "2026-08-23"
     },
     {
-      "id": "sig_2026-08-22_006",
-      "level": 1,
+      "id": "tag_2026-08-23_005",
+      "level": 2,
       "content": "芯片行业周报综述",
-      "summary": "芯片行业周报涵盖 Micron 新实验室、AI 芯片价格波动及人形机器人就绪差距",
-      "source": "https://semiengineering.com/chip-industry-week-in-review-152/",
-      "date": "2026-08-22",
-      "signal_index": 5
+      "date": "2026-08-23"
     },
     {
-      "id": "sig_2026-08-21_001",
-      "level": 1,
-      "content": "Stripe 收购模型路由平台 OpenRouter",
-      "summary": "Stripe 收购 OpenRouter，旨在增强 AI 计费与模型动态选择能力",
-      "source": "https://www.artificialintelligence-news.com/news/stripe-openrouter-acquisition-ai-model-routing/",
-      "date": "2026-08-22",
-      "signal_index": null
+      "id": "tag_2026-08-23_006",
+      "level": 2,
+      "content": "Stripe 收购模型路由平台 O…",
+      "date": "2026-08-23"
     },
     {
-      "id": "sig_2026-08-21_002",
-      "level": 1,
+      "id": "tag_2026-08-23_007",
+      "level": 2,
       "content": "亚马逊无人机配送扩至五百城",
-      "summary": "亚马逊计划年底将 Prime Air 无人机配送服务扩展至美国近五百城市。",
-      "source": "https://www.artificialintelligence-news.com/news/amazons-prime-air-autonomous-drones-to-reach-500-us-cities/",
-      "date": "2026-08-22",
-      "signal_index": null
+      "date": "2026-08-23"
     },
     {
-      "id": "sig_2026-08-21_003",
-      "level": 1,
+      "id": "tag_2026-08-23_008",
+      "level": 2,
       "content": "Ornith-1.5 开源模型发布",
-      "summary": "Ornith-1.5 开源模型家族发布，展示多规模变体及自我改进能力。",
-      "source": "https://news.smol.ai/issues/26-08-19-not-much/",
-      "date": "2026-08-22",
-      "signal_index": null
+      "date": "2026-08-23"
     },
     {
       "id": "tag_2026-08-22_001",
@@ -95,50 +143,50 @@
       "date": "2026-08-22"
     },
     {
-      "id": "tag_2026-08-22_003",
-      "level": 2,
+      "id": "word_2026-08-22_003",
+      "level": 3,
       "content": "OpenAI 推行零数据保留",
       "date": "2026-08-22"
     },
     {
-      "id": "tag_2026-08-22_004",
-      "level": 2,
+      "id": "word_2026-08-22_004",
+      "level": 3,
       "content": "AI 算力走向异构集群",
       "date": "2026-08-22"
     },
     {
-      "id": "tag_2026-08-22_005",
-      "level": 2,
+      "id": "word_2026-08-22_005",
+      "level": 3,
       "content": "多智能体失败自动归因",
       "date": "2026-08-22"
     },
     {
-      "id": "tag_2026-08-22_006",
-      "level": 2,
+      "id": "word_2026-08-22_006",
+      "level": 3,
       "content": "Cloudflare 遭 Spec…",
       "date": "2026-08-22"
     },
     {
-      "id": "tag_2026-08-21_001",
-      "level": 2,
+      "id": "word_2026-08-21_001",
+      "level": 3,
       "content": "Replit 推免费 GPT 编码…",
       "date": "2026-08-21"
     },
     {
-      "id": "tag_2026-08-21_002",
-      "level": 2,
+      "id": "word_2026-08-21_002",
+      "level": 3,
       "content": "Google 推出 Sheets …",
       "date": "2026-08-21"
     },
     {
-      "id": "tag_2026-08-21_003",
-      "level": 2,
+      "id": "word_2026-08-21_003",
+      "level": 3,
       "content": "Gemini 携手足球俱乐部",
       "date": "2026-08-21"
     },
     {
-      "id": "tag_2026-08-21_004",
-      "level": 2,
+      "id": "word_2026-08-21_004",
+      "level": 3,
       "content": "英伟达强调 AI 基建安全",
       "date": "2026-08-21"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "OpenAI 布局吉瓦级算力基建",
       "date": "2026-08-20"
-    },
-    {
-      "id": "word_2026-08-20_008",
-      "level": 3,
-      "content": "OpenAI 总裁呼吁加速企业 A…",
-      "date": "2026-08-20"
-    },
-    {
-      "id": "word_2026-08-20_009",
-      "level": 3,
-      "content": "Alvys 推货运 TMS 自动化…",
-      "date": "2026-08-20"
-    },
-    {
-      "id": "word_2026-08-19_001",
-      "level": 3,
-      "content": "OpenAI 聚焦安全与政策",
-      "date": "2026-08-19"
-    },
-    {
-      "id": "word_2026-08-19_002",
-      "level": 3,
-      "content": "谷歌医疗 AI 实现视频问诊",
-      "date": "2026-08-19"
-    },
-    {
-      "id": "word_2026-08-19_003",
-      "level": 3,
-      "content": "英伟达强调智算基建安全",
-      "date": "2026-08-19"
-    },
-    {
-      "id": "word_2026-08-19_004",
-      "level": 3,
-      "content": "800VDC 优化 AI 电源设计",
-      "date": "2026-08-19"
-    },
-    {
-      "id": "word_2026-08-19_005",
-      "level": 3,
-      "content": "谷歌 AI 赋能足球观赛体验",
-      "date": "2026-08-19"
-    },
-    {
-      "id": "word_2026-08-19_006",
-      "level": 3,
-      "content": "谷歌表格新增 AI 画布功能",
-      "date": "2026-08-19"
     }
   ]
 }
