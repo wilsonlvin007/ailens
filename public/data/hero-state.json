@@ -1,14 +1,59 @@
 {
-  "updated_at": "2026-08-23",
+  "updated_at": "2026-08-24",
   "items": [
+    {
+      "id": "sig_2026-08-24_001",
+      "level": 1,
+      "content": "FreeToken 实现单卡运行千亿模型",
+      "summary": "FreeToken 引擎优化缓存策略，实现在单张工作站 GPU 上运行 7530",
+      "source": "https://www.marktechpost.com/2026/08/23/meet-freetoken-an-edge-native-moe-serving-engine-that-runs-753b-glm-5-2-on-a-single-workstation-gpu/",
+      "date": "2026-08-24",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-08-24_002",
+      "level": 1,
+      "content": "Harvey 推出法律代理模型 Tenet",
+      "summary": "Harvey 推出基于 Kimi K3 微调的法律代理模型 Tenet，大幅提升",
+      "source": "https://www.marktechpost.com/2026/08/23/harvey-tenet-post-trained-kimi-k3-legal-agent-model/",
+      "date": "2026-08-24",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-08-24_003",
+      "level": 1,
+      "content": "deepDoctection 构建文档智能流水线",
+      "summary": "教程展示利用 deepDoctection 构建端到端文档智能流水线，支持布局分",
+      "source": "https://www.marktechpost.com/2026/08/23/building-an-end-to-end-document-intelligence-pipeline-with-deepdoctection/",
+      "date": "2026-08-24",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-24_004",
+      "level": 1,
+      "content": "OpenAI 开设博客探讨 AI 未来影响",
+      "summary": "OpenAI 推出新博客 AI Futures，深入探讨变革性 AI 对权力、治",
+      "source": "https://openai.com/index/introducing-ai-futures",
+      "date": "2026-08-24",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-24_005",
+      "level": 1,
+      "content": "OpenAI 重申前沿模型零数据保留",
+      "summary": "OpenAI 重申前沿模型零数据保留政策，并预览隐私安全处理技术以平衡安全与隐私",
+      "source": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+      "date": "2026-08-24",
+      "signal_index": 4
+    },
     {
       "id": "sig_2026-08-23_001",
       "level": 1,
       "content": "OpenAI 推零数据保留政策",
       "summary": "OpenAI 重申对合格 API 客户实行零数据保留，并预览私有安全处理功能以增",
       "source": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
-      "date": "2026-08-23",
-      "signal_index": 1
+      "date": "2026-08-24",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-23_002",
@@ -16,8 +61,8 @@
       "content": "代理框架工程优于模型选型",
       "summary": "研究指出代理框架的工程实现比模型选择更关键，优化执行循环可显著提升编码代理排名。",
       "source": "https://www.marktechpost.com/2026/08/22/decoding-ais-open-source-course-maps-three-ways-to-run-an-agent-loop-and-the-provider economics-behind-each/",
-      "date": "2026-08-23",
-      "signal_index": 3
+      "date": "2026-08-24",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-23_003",
@@ -25,8 +70,8 @@
       "content": "字节跳动推出 Astra 导航架构",
       "summary": "字节跳动发布 Astra 双模型架构，显著提升机器人在复杂室内环境下的自主导航与",
       "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-08-23",
-      "signal_index": 4
+      "date": "2026-08-24",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-23_004",
@@ -34,53 +79,38 @@
       "content": "AI 工具助推 JavaScript 流行",
       "summary": "数据显示，AI 编码工具的普及推动 TypeScript 在 2025 年 8 ",
       "source": "https://www.artificialintelligence-news.com/news/how-ai-coding-tools-are-contributing-to-the-popularity-of-javascript/",
-      "date": "2026-08-23",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-08-23_005",
-      "level": 1,
-      "content": "本地大模型体验不佳探因",
-      "summary": "技术社区深入探讨了本地部署大语言模型在实际体验中表现不如云端预期的多重技术原因。",
-      "source": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
-      "date": "2026-08-23",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-08-23_006",
-      "level": 1,
-      "content": "Claude Code 疑似降低努力度",
-      "summary": "用户反馈显示，Anthropic 似乎正在对 Claude Code 进行降低单",
-      "source": "https://twitter.com/argofowl/status/2091150597374537729",
-      "date": "2026-08-23",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-08-23_007",
-      "level": 1,
-      "content": "神秘模型 Ox Alpha 崛起",
-      "summary": "神秘模型 Ox Alpha 展现卓越编码与代理能力，业界推测其为智谱 GLM 系",
-      "source": "https://news.smol.ai/issues/26-08-21-not-much/",
-      "date": "2026-08-23",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-08-23_008",
-      "level": 1,
-      "content": "OpenAI 发布 AI 未来展望",
-      "summary": "OpenAI 推出新博客，深入探讨变革性 AI 对权力结构、治理模式及个人自由的",
-      "source": "https://openai.com/index/introducing-ai-futures",
-      "date": "2026-08-23",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-08-22_001",
-      "level": 1,
-      "content": "OpenAI 推出 AI 未来博客",
-      "summary": "OpenAI 开设新博客，深入探讨变革性 AI 对社会权力、治理及个人自由的重塑",
-      "source": "https://openai.com/index/introducing-ai-futures",
-      "date": "2026-08-23",
+      "date": "2026-08-24",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-08-24_001",
+      "level": 2,
+      "content": "本地大模型体验不佳探因",
+      "date": "2026-08-24"
+    },
+    {
+      "id": "tag_2026-08-24_002",
+      "level": 2,
+      "content": "Claude Code 疑似降低努…",
+      "date": "2026-08-24"
+    },
+    {
+      "id": "tag_2026-08-24_003",
+      "level": 2,
+      "content": "神秘模型 Ox Alpha 崛起",
+      "date": "2026-08-24"
+    },
+    {
+      "id": "tag_2026-08-24_004",
+      "level": 2,
+      "content": "OpenAI 发布 AI 未来展望",
+      "date": "2026-08-24"
+    },
+    {
+      "id": "tag_2026-08-24_005",
+      "level": 2,
+      "content": "OpenAI 推出 AI 未来博客",
+      "date": "2026-08-24"
     },
     {
       "id": "tag_2026-08-23_001",
@@ -113,32 +143,32 @@
       "date": "2026-08-23"
     },
     {
-      "id": "tag_2026-08-23_006",
-      "level": 2,
+      "id": "word_2026-08-23_006",
+      "level": 3,
       "content": "Stripe 收购模型路由平台 O…",
       "date": "2026-08-23"
     },
     {
-      "id": "tag_2026-08-23_007",
-      "level": 2,
+      "id": "word_2026-08-23_007",
+      "level": 3,
       "content": "亚马逊无人机配送扩至五百城",
       "date": "2026-08-23"
     },
     {
-      "id": "tag_2026-08-23_008",
-      "level": 2,
+      "id": "word_2026-08-23_008",
+      "level": 3,
       "content": "Ornith-1.5 开源模型发布",
       "date": "2026-08-23"
     },
     {
-      "id": "tag_2026-08-22_001",
-      "level": 2,
+      "id": "word_2026-08-22_001",
+      "level": 3,
       "content": "OpenAI 推出零数据保留政策",
       "date": "2026-08-22"
     },
     {
-      "id": "tag_2026-08-22_002",
-      "level": 2,
+      "id": "word_2026-08-22_002",
+      "level": 3,
       "content": "OpenAI 暂停前沿 RL 训练",
       "date": "2026-08-22"
     },
@@ -200,36 +230,6 @@
       "id": "word_2026-08-20_002",
       "level": 3,
       "content": "OpenAI 调控网络关键能力模型…",
-      "date": "2026-08-20"
-    },
-    {
-      "id": "word_2026-08-20_003",
-      "level": 3,
-      "content": "微软 Copilot 存一键窃数高…",
-      "date": "2026-08-20"
-    },
-    {
-      "id": "word_2026-08-20_004",
-      "level": 3,
-      "content": "MLflow 漏洞致云凭证大规模泄露",
-      "date": "2026-08-20"
-    },
-    {
-      "id": "word_2026-08-20_005",
-      "level": 3,
-      "content": "英伟达推 TensorRT 模型连…",
-      "date": "2026-08-20"
-    },
-    {
-      "id": "word_2026-08-20_006",
-      "level": 3,
-      "content": "MIT 推出 SEAL 自进化 A…",
-      "date": "2026-08-20"
-    },
-    {
-      "id": "word_2026-08-20_007",
-      "level": 3,
-      "content": "OpenAI 布局吉瓦级算力基建",
       "date": "2026-08-20"
     }
   ]
