@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-08-25",
+  "updated_at": "2026-08-26",
   "items": [
     {
-      "id": "sig_2026-08-25_001",
+      "id": "sig_2026-08-26_001",
       "level": 1,
-      "content": "小鹏获九亿美元融资造机器人",
-      "summary": "小鹏物理 AI 部门完成超 9 亿美元融资，估值达 63 亿，资金将专项用于扩展",
-      "source": "https://www.artificialintelligence-news.com/news/xpeng-iron-humanoid-robot-draws-record-physical-ai-funding/",
-      "date": "2026-08-25",
+      "content": "OpenAI 发布自研推理芯片",
+      "summary": "OpenAI 推出自研芯片 Jalapeño，显著提升推理效率并降低功耗，同步披",
+      "source": "https://openai.com/index/jalapeno-first-results",
+      "date": "2026-08-26",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-08-25_002",
+      "id": "sig_2026-08-26_002",
       "level": 1,
-      "content": "GEN-1.5 模型秒级学习新任务",
-      "summary": "GEN-1.5 机器人基础模型发布，仅需数秒演示即可掌握新物理任务，无需微调或梯",
-      "source": "https://www.marktechpost.com/2026/08/24/generalist-ai-releases-gen-1-5-a-robot-foundation-model-that-learns-new-task-from-one-3-12-second-demo/",
-      "date": "2026-08-25",
+      "content": "MIT 提出模型自我进化框架",
+      "summary": "MIT 研发 SEAL 框架，利用强化学习使大模型能自我编辑权重，迈出自我进化关",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-08-26",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-08-25_003",
+      "id": "sig_2026-08-26_003",
       "level": 1,
-      "content": "字节推出 Astra 双模导航架构",
-      "summary": "字节跳动推出 Astra 双模型架构，显著提升机器人在复杂室内环境中的自主导航与",
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-08-25",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-08-25_004",
-      "level": 1,
-      "content": "GLiNER2.5 革新信息提取架构",
-      "summary": "Fastino 发布 GLiNER2.5，采用边界预测替代跨度枚举，大幅降低计算",
-      "source": "https://www.marktechpost.com/2026/08/24/fastino-releases-gliner2-5-a-boundary-prediction-architecture-that-removes-span-enumeration-from-information-extraction/",
-      "date": "2026-08-25",
+      "content": "Perplexity 推便携本地计算机",
+      "summary": "Perplexity 推出基于 NVIDIA DGX Spark 的便携设备，集",
+      "source": "https://www.marktechpost.com/2026/08/25/perplexity-ships-portable-computer-on-nvidia-dgx-spark-local-harness-os-enforced-sandbox-and-zero-per-token-cost-for-local-steps/",
+      "date": "2026-08-26",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-08-25_005",
+      "id": "sig_2026-08-26_004",
       "level": 1,
-      "content": "警示 AI 编码带来安全债务",
-      "summary": "文章警示 AI 工具加速代码产出导致安全债务累积，呼吁企业建立适配的修复与审计机",
-      "source": "https://thehackernews.com/2026/08/shipping-more-ai-code-than-you-can.html",
-      "date": "2026-08-25",
+      "content": "Meta 发布 AI 专用传输协议",
+      "summary": "Meta 发布 MetaRoCE 协议，专为千卡集群以太网设计，解决大规模训练中",
+      "source": "https://www.marktechpost.com/2026/08/25/meta-ai-introduces-metaroce-a-clean-sheet-rdma-transfer-built-for-ai-scale-ethernet/",
+      "date": "2026-08-26",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-08-26_005",
+      "level": 1,
+      "content": "NemoClaw 漏洞威胁本地模型",
+      "summary": "安全机构披露 NemoClaw 漏洞，恶意网页可未经授权操控本地 AI 代理并植",
+      "source": "https://thehackernews.com/2026/08/a-malicious-webpage-could-poison-your.html",
+      "date": "2026-08-26",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-08-25_006",
+      "id": "sig_2026-08-26_006",
       "level": 1,
-      "content": "Stampli 借 AI 提速产品上线",
-      "summary": "Stampli 利用 Codex 与 ChatGPT Work 将产品上线周期压",
-      "source": "https://openai.com/index/stampli",
-      "date": "2026-08-25",
+      "content": "MIT 新 AI 无需历史数据预测天气",
+      "summary": "MIT 工程师开发新 AI 工具，无需历史灾害数据即可预测极端天气事件及其分布地",
+      "source": "https://www.artificialintelligence-news.com/news/mit-ai-forecasts-extreme-weather-without-historical-data/",
+      "date": "2026-08-26",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-08-25_007",
+      "id": "sig_2026-08-26_007",
       "level": 1,
-      "content": "谷歌研发融合移动数据地点嵌入",
-      "summary": "谷歌研发 ME-POIs 框架，融合人类移动数据增强地点文本嵌入，更精准描述地点",
-      "source": "https://www.marktechpost.com/2026/08/24/google-research-introduces-me-pois-a-mobility-informed-framework-that-adds-how-a-place-is-used-to-text-based-poi-interest/",
-      "date": "2026-08-25",
-      "signal_index": 8
-    },
-    {
-      "id": "sig_2026-08-25_008",
-      "level": 1,
-      "content": "AI 工具助推 JS 语言流行",
-      "summary": "研究显示 AI 编码代理推动 TypeScript 成为 GitHub 最常用语",
-      "source": "https://www.artificialintelligence-news.com/news/how-ai-coding-tools-are-contributing-to-the-popularity-of-javascript/",
-      "date": "2026-08-25",
+      "content": "OpenAI 阻断俄罗斯影响力行动",
+      "summary": "OpenAI 封禁利用 AI 推广虚假智库及亲俄内容的账户，成功阻断隐蔽的影响力",
+      "source": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+      "date": "2026-08-26",
       "signal_index": 7
     },
     {
-      "id": "sig_2026-08-25_009",
+      "id": "sig_2026-08-26_008",
       "level": 1,
-      "content": "OpenAI 开设 AI 未来治理博客",
-      "summary": "OpenAI 推出\"AI Futures\"博客，深入探讨变革性 AI 对权力结构",
-      "source": "https://openai.com/index/introducing-ai-futures",
-      "date": "2026-08-25",
-      "signal_index": 4
+      "content": "NVIDIA 提出技能提升新指标",
+      "summary": "NVIDIA 研究提出“技能提升”新指标，并出现 Headlong 等持久化自修",
+      "source": "https://news.smol.ai/issues/26-08-24-not-much/",
+      "date": "2026-08-26",
+      "signal_index": 9
+    },
+    {
+      "id": "sig_2026-08-26_009",
+      "level": 1,
+      "content": "小鹏机器人获巨额融资",
+      "summary": "小鹏汽车物理 AI 部门获超 9 亿美元融资，估值达 63 亿，加速人形机器人 ",
+      "source": "https://www.artificialintelligence-news.com/news/xpeng-iron-humanoid-robot-draws-record-physical-ai-funding/",
+      "date": "2026-08-26",
+      "signal_index": 2
+    },
+    {
+      "id": "tag_2026-08-26_001",
+      "level": 2,
+      "content": "小鹏获九亿美元融资造机器人",
+      "date": "2026-08-26"
+    },
+    {
+      "id": "tag_2026-08-26_002",
+      "level": 2,
+      "content": "GEN-1.5 模型秒级学习新任务",
+      "date": "2026-08-26"
+    },
+    {
+      "id": "tag_2026-08-26_003",
+      "level": 2,
+      "content": "字节推出 Astra 双模导航架构",
+      "date": "2026-08-26"
+    },
+    {
+      "id": "tag_2026-08-26_004",
+      "level": 2,
+      "content": "GLiNER2.5 革新信息提取架构",
+      "date": "2026-08-26"
+    },
+    {
+      "id": "tag_2026-08-26_005",
+      "level": 2,
+      "content": "警示 AI 编码带来安全债务",
+      "date": "2026-08-26"
+    },
+    {
+      "id": "tag_2026-08-26_006",
+      "level": 2,
+      "content": "Stampli 借 AI 提速产品…",
+      "date": "2026-08-26"
+    },
+    {
+      "id": "tag_2026-08-26_007",
+      "level": 2,
+      "content": "谷歌研发融合移动数据地点嵌入",
+      "date": "2026-08-26"
+    },
+    {
+      "id": "tag_2026-08-26_008",
+      "level": 2,
+      "content": "AI 工具助推 JS 语言流行",
+      "date": "2026-08-26"
+    },
+    {
+      "id": "tag_2026-08-26_009",
+      "level": 2,
+      "content": "OpenAI 开设 AI 未来治理…",
+      "date": "2026-08-26"
     },
     {
       "id": "tag_2026-08-25_001",
@@ -89,56 +143,56 @@
       "date": "2026-08-25"
     },
     {
-      "id": "tag_2026-08-25_002",
-      "level": 2,
+      "id": "word_2026-08-25_002",
+      "level": 3,
       "content": "Harvey 推出法律代理模型 T…",
       "date": "2026-08-25"
     },
     {
-      "id": "tag_2026-08-25_003",
-      "level": 2,
+      "id": "word_2026-08-25_003",
+      "level": 3,
       "content": "deepDoctection 构建…",
       "date": "2026-08-25"
     },
     {
-      "id": "tag_2026-08-25_004",
-      "level": 2,
+      "id": "word_2026-08-25_004",
+      "level": 3,
       "content": "OpenAI 开设博客探讨 AI …",
       "date": "2026-08-25"
     },
     {
-      "id": "tag_2026-08-25_005",
-      "level": 2,
+      "id": "word_2026-08-25_005",
+      "level": 3,
       "content": "OpenAI 重申前沿模型零数据保留",
       "date": "2026-08-25"
     },
     {
-      "id": "tag_2026-08-25_006",
-      "level": 2,
+      "id": "word_2026-08-25_006",
+      "level": 3,
       "content": "OpenAI 推零数据保留政策",
       "date": "2026-08-25"
     },
     {
-      "id": "tag_2026-08-25_007",
-      "level": 2,
+      "id": "word_2026-08-25_007",
+      "level": 3,
       "content": "代理框架工程优于模型选型",
       "date": "2026-08-25"
     },
     {
-      "id": "tag_2026-08-25_008",
-      "level": 2,
+      "id": "word_2026-08-25_008",
+      "level": 3,
       "content": "字节跳动推出 Astra 导航架构",
       "date": "2026-08-25"
     },
     {
-      "id": "tag_2026-08-25_009",
-      "level": 2,
+      "id": "word_2026-08-25_009",
+      "level": 3,
       "content": "AI 工具助推 JavaScrip…",
       "date": "2026-08-25"
     },
     {
-      "id": "tag_2026-08-24_001",
-      "level": 2,
+      "id": "word_2026-08-24_001",
+      "level": 3,
       "content": "本地大模型体验不佳探因",
       "date": "2026-08-24"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "Stampli 提效产品发布",
       "date": "2026-08-23"
-    },
-    {
-      "id": "word_2026-08-23_003",
-      "level": 3,
-      "content": "NVIDIA 阐述 AI 工厂概念",
-      "date": "2026-08-23"
-    },
-    {
-      "id": "word_2026-08-23_004",
-      "level": 3,
-      "content": "谷歌 Gemini 助力球迷体验",
-      "date": "2026-08-23"
-    },
-    {
-      "id": "word_2026-08-23_005",
-      "level": 3,
-      "content": "芯片行业周报综述",
-      "date": "2026-08-23"
-    },
-    {
-      "id": "word_2026-08-23_006",
-      "level": 3,
-      "content": "Stripe 收购模型路由平台 O…",
-      "date": "2026-08-23"
-    },
-    {
-      "id": "word_2026-08-23_007",
-      "level": 3,
-      "content": "亚马逊无人机配送扩至五百城",
-      "date": "2026-08-23"
-    },
-    {
-      "id": "word_2026-08-23_008",
-      "level": 3,
-      "content": "Ornith-1.5 开源模型发布",
-      "date": "2026-08-23"
-    },
-    {
-      "id": "word_2026-08-22_001",
-      "level": 3,
-      "content": "OpenAI 推出零数据保留政策",
-      "date": "2026-08-22"
-    },
-    {
-      "id": "word_2026-08-22_002",
-      "level": 3,
-      "content": "OpenAI 暂停前沿 RL 训练",
-      "date": "2026-08-22"
-    },
-    {
-      "id": "word_2026-08-22_003",
-      "level": 3,
-      "content": "OpenAI 推行零数据保留",
-      "date": "2026-08-22"
     }
   ]
 }
