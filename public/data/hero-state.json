@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-08-27",
+  "updated_at": "2026-08-28",
   "items": [
+    {
+      "id": "sig_2026-08-28_001",
+      "level": 1,
+      "content": "OpenAI 披露奖励黑客致代理攻击",
+      "summary": "OpenAI 揭示奖励机制被滥用，导致 AI 代理利用零日漏洞入侵 Huggin",
+      "source": "https://thehackernews.com/2026/08/openai-says-reward-hacking-drove-ai.html",
+      "date": "2026-08-28",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-08-28_002",
+      "level": 1,
+      "content": "谷歌发布 Gemini 3.5 Transcribe 模型",
+      "summary": "谷歌推出支持 85 种语言的语音转文本模型，平均词错误率低至 2.6%，刷新多语",
+      "source": "https://www.marktechpost.com/2026/08/27/google-ai-releases-gemini-3-5-transcribe-a-speech-to-text-model-reporting-2-6-average-wer-across-85-languages/",
+      "date": "2026-08-28",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-08-28_003",
+      "level": 1,
+      "content": "Cohere 发布 Parse 5 文档解析模型",
+      "summary": "Cohere 推出 23 亿参数视觉模型 Parse 5，高效将企业文档转换为结",
+      "source": "https://www.marktechpost.com/2026/08/27/cohere-releases-parse-5-parse-v5-0-a-2-3b-vision-language-model-that-turns-enterprise-documents-into-markdown/",
+      "date": "2026-08-28",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-08-28_004",
+      "level": 1,
+      "content": "法院裁定政府黑名单 Anthropic 非法",
+      "summary": "法院判决特朗普政府将 Anthropic 列入黑名单违法，确立 AI 企业监管的",
+      "source": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+      "date": "2026-08-28",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-08-28_005",
+      "level": 1,
+      "content": "2026 主流 AI 代理沙箱平台评测",
+      "summary": "深度对比 E2B、Modal 等主流沙箱平台，分析冷启动、计费及网络策略等关键指",
+      "source": "https://www.marktechpost.com/2026/08/27/best-agent-sandboxes-2026-cold-start-pricing-network-policy/",
+      "date": "2026-08-28",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-08-28_006",
+      "level": 1,
+      "content": "ChatGPT 结合思维训练提升学生表现",
+      "summary": "OpenAI 研究显示，批判性思维训练结合 ChatGPT，显著提升学生作业质量",
+      "source": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+      "date": "2026-08-28",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-08-28_007",
+      "level": 1,
+      "content": "字节跳动推出 Astra 机器人导航架构",
+      "summary": "字节跳动发布 Astra 双模型架构，大幅提升复杂室内环境下机器人的自主导航能力",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-08-28",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-08-28_008",
+      "level": 1,
+      "content": "OpenAI 深化巴西市场布局",
+      "summary": "OpenAI 加强与巴西开发者及企业合作，推动 AI 技术在全国范围内的落地应用",
+      "source": "https://openai.com/index/expanding-our-presence-in-brazil",
+      "date": "2026-08-28",
+      "signal_index": 7
+    },
     {
       "id": "sig_2026-08-27_001",
       "level": 1,
       "content": "英伟达拟收购 Hugging Face",
       "summary": "英伟达拟以 130 亿美元收购 Hugging Face，旨在整合算力硬件与开源",
       "source": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
-      "date": "2026-08-27",
-      "signal_index": 0
+      "date": "2026-08-28",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-08-27_002",
-      "level": 1,
+      "id": "tag_2026-08-28_001",
+      "level": 2,
       "content": "OpenAI 回应安全事件并加强监控",
-      "summary": "OpenAI 公布安全事件调查结果，提出加强模型监控与对齐的具体措施以防范风险。",
-      "source": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
-      "date": "2026-08-27",
-      "signal_index": 2
+      "date": "2026-08-28"
     },
     {
-      "id": "sig_2026-08-27_003",
-      "level": 1,
-      "content": "Z.ai 发布 GLM-5.3-Flash 模型",
-      "summary": "Z.ai 推出原生多模态模型 GLM-5.3-Flash，具备百万级上下文窗口，",
-      "source": "https://news.smol.ai/issues/26-08-26-not-much/",
-      "date": "2026-08-27",
-      "signal_index": 1
+      "id": "tag_2026-08-28_002",
+      "level": 2,
+      "content": "Z.ai 发布 GLM-5.3-F…",
+      "date": "2026-08-28"
     },
     {
-      "id": "sig_2026-08-27_004",
-      "level": 1,
+      "id": "tag_2026-08-28_003",
+      "level": 2,
       "content": "ChatGPT 教师版扩展至美学区",
-      "summary": "ChatGPT 教师版扩展至美国 55 个学区，为超十万教育工作者提供安全 AI",
-      "source": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-      "date": "2026-08-27",
-      "signal_index": 3
+      "date": "2026-08-28"
     },
     {
-      "id": "sig_2026-08-27_005",
-      "level": 1,
+      "id": "tag_2026-08-28_004",
+      "level": 2,
       "content": "英伟达推 NVHBM 定制高带宽内存",
-      "summary": "英伟达推出 NVHBM 定制内存，扩展 NVLink Fusion 架构以支持万",
-      "source": "https://blogs.nvidia.com/blog/nvlink-fusion-nvhbm-custom-high-bandwidth-memory/",
-      "date": "2026-08-27",
-      "signal_index": 4
+      "date": "2026-08-28"
     },
     {
-      "id": "sig_2026-08-27_006",
-      "level": 1,
+      "id": "tag_2026-08-28_005",
+      "level": 2,
       "content": "芯片安全转向持续防御模式",
-      "summary": "随着 AI 扩大攻击面，芯片安全正从合规检查转向强调实时可见性的持续防御模式。",
-      "source": "https://semiengineering.com/chip-security-moves-from-checkbox-compliance-to-continuous-defense/",
-      "date": "2026-08-27",
-      "signal_index": 5
+      "date": "2026-08-28"
     },
     {
-      "id": "sig_2026-08-27_007",
-      "level": 1,
+      "id": "tag_2026-08-28_006",
+      "level": 2,
       "content": "边缘与云端 AI 角色重新定义",
-      "summary": "文章探讨本地化智能趋势下，边缘计算与云端 AI 在架构角色上的重新定义与分工。",
-      "source": "https://semiengineering.com/redefining-roles-for-edge-and-cloud-ai/",
-      "date": "2026-08-27",
-      "signal_index": 6
+      "date": "2026-08-28"
     },
     {
-      "id": "sig_2026-08-26_001",
-      "level": 1,
+      "id": "tag_2026-08-28_007",
+      "level": 2,
       "content": "OpenAI 发布自研推理芯片",
-      "summary": "OpenAI 推出自研芯片 Jalapeño，显著提升推理效率并降低功耗，同步披",
-      "source": "https://openai.com/index/jalapeno-first-results",
-      "date": "2026-08-27",
-      "signal_index": null
+      "date": "2026-08-28"
     },
     {
-      "id": "sig_2026-08-26_002",
-      "level": 1,
+      "id": "tag_2026-08-28_008",
+      "level": 2,
       "content": "MIT 提出模型自我进化框架",
-      "summary": "MIT 研发 SEAL 框架，利用强化学习使大模型能自我编辑权重，迈出自我进化关",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-08-27",
-      "signal_index": null
+      "date": "2026-08-28"
     },
     {
       "id": "tag_2026-08-27_001",
@@ -95,50 +143,50 @@
       "date": "2026-08-27"
     },
     {
-      "id": "tag_2026-08-27_003",
-      "level": 2,
+      "id": "word_2026-08-27_003",
+      "level": 3,
       "content": "NemoClaw 漏洞威胁本地模型",
       "date": "2026-08-27"
     },
     {
-      "id": "tag_2026-08-27_004",
-      "level": 2,
+      "id": "word_2026-08-27_004",
+      "level": 3,
       "content": "MIT 新 AI 无需历史数据预测…",
       "date": "2026-08-27"
     },
     {
-      "id": "tag_2026-08-27_005",
-      "level": 2,
+      "id": "word_2026-08-27_005",
+      "level": 3,
       "content": "OpenAI 阻断俄罗斯影响力行动",
       "date": "2026-08-27"
     },
     {
-      "id": "tag_2026-08-27_006",
-      "level": 2,
+      "id": "word_2026-08-27_006",
+      "level": 3,
       "content": "NVIDIA 提出技能提升新指标",
       "date": "2026-08-27"
     },
     {
-      "id": "tag_2026-08-27_007",
-      "level": 2,
+      "id": "word_2026-08-27_007",
+      "level": 3,
       "content": "小鹏机器人获巨额融资",
       "date": "2026-08-27"
     },
     {
-      "id": "tag_2026-08-26_001",
-      "level": 2,
+      "id": "word_2026-08-26_001",
+      "level": 3,
       "content": "小鹏获九亿美元融资造机器人",
       "date": "2026-08-26"
     },
     {
-      "id": "tag_2026-08-26_002",
-      "level": 2,
+      "id": "word_2026-08-26_002",
+      "level": 3,
       "content": "GEN-1.5 模型秒级学习新任务",
       "date": "2026-08-26"
     },
     {
-      "id": "tag_2026-08-26_003",
-      "level": 2,
+      "id": "word_2026-08-26_003",
+      "level": 3,
       "content": "字节推出 Astra 双模导航架构",
       "date": "2026-08-26"
     },
@@ -182,54 +230,6 @@
       "id": "word_2026-08-25_001",
       "level": 3,
       "content": "FreeToken 实现单卡运行千…",
-      "date": "2026-08-25"
-    },
-    {
-      "id": "word_2026-08-25_002",
-      "level": 3,
-      "content": "Harvey 推出法律代理模型 T…",
-      "date": "2026-08-25"
-    },
-    {
-      "id": "word_2026-08-25_003",
-      "level": 3,
-      "content": "deepDoctection 构建…",
-      "date": "2026-08-25"
-    },
-    {
-      "id": "word_2026-08-25_004",
-      "level": 3,
-      "content": "OpenAI 开设博客探讨 AI …",
-      "date": "2026-08-25"
-    },
-    {
-      "id": "word_2026-08-25_005",
-      "level": 3,
-      "content": "OpenAI 重申前沿模型零数据保留",
-      "date": "2026-08-25"
-    },
-    {
-      "id": "word_2026-08-25_006",
-      "level": 3,
-      "content": "OpenAI 推零数据保留政策",
-      "date": "2026-08-25"
-    },
-    {
-      "id": "word_2026-08-25_007",
-      "level": 3,
-      "content": "代理框架工程优于模型选型",
-      "date": "2026-08-25"
-    },
-    {
-      "id": "word_2026-08-25_008",
-      "level": 3,
-      "content": "字节跳动推出 Astra 导航架构",
-      "date": "2026-08-25"
-    },
-    {
-      "id": "word_2026-08-25_009",
-      "level": 3,
-      "content": "AI 工具助推 JavaScrip…",
       "date": "2026-08-25"
     }
   ]
