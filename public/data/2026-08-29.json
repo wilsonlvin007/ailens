@@ -52,22 +52,6 @@
       "collected_at": "2026-08-29T06:00:00+08:00"
     },
     {
-      "id": "2026-08-29-004",
-      "title": "MIT 提出 SEAL 自进化框架",
-      "category": "technology",
-      "importance": 4,
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "source_name": "Synced Review",
-      "summary": "MIT 推出 SEAL 框架，利用强化学习让大模型自我编辑权重，探索自进化 AI 新路径。",
-      "analysis": "SEAL 框架的核心突破在于打破了“训练 - 部署”的静态界限，允许模型在推理阶段通过反馈微调自身权重。这种机制若成熟，将大幅降低对海量标注数据的依赖，使 AI 具备类似人类的“举一反三”和持续学习能力。然而，这也带来了新的安全挑战：如何防止模型在自我迭代中发生目标漂移或产生不可控的行为？这为对齐研究提出了比静态模型更动态、更复杂的课题。",
-      "tags": [
-        "MIT",
-        "自进化 AI",
-        "强化学习"
-      ],
-      "collected_at": "2026-08-29T06:00:00+08:00"
-    },
-    {
       "id": "2026-08-29-005",
       "title": "谷歌发布多语言语音转录模型",
       "category": "technology",
@@ -112,22 +96,6 @@
         "Vercel",
         "WebGPU",
         "边缘计算"
-      ],
-      "collected_at": "2026-08-29T06:00:00+08:00"
-    },
-    {
-      "id": "2026-08-29-009",
-      "title": "多智能体系统失败归因研究",
-      "category": "technology",
-      "importance": 3,
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "source_name": "Synced Review",
-      "summary": "宾州州立与杜克大学提出自动归因方法，精准定位多智能体系统中的任务失败源头。",
-      "analysis": "随着多智能体系统（Multi-Agent Systems）复杂度提升，故障排查已成为制约其可靠性的瓶颈。该研究提出的自动归因方法，相当于为分布式 AI 系统安装了“黑匣子”分析器，能够量化每个 Agent 对最终失败的贡献度。这对于构建高可信度的企业级 Agent 工作流至关重要，它将调试过程从“人工猜测”转变为“数据驱动”，显著降低了多智能体协作系统的维护成本和安全风险。",
-      "tags": [
-        "多智能体",
-        "可解释性",
-        "学术研究"
       ],
       "collected_at": "2026-08-29T06:00:00+08:00"
     },

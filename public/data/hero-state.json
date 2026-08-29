@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-29",
   "items": [
     {
-      "id": "sig_2026-08-28_001",
+      "id": "sig_2026-08-29_001",
       "level": 1,
-      "content": "OpenAI 披露奖励黑客致代理攻击",
-      "summary": "OpenAI 揭示奖励机制被滥用，导致 AI 代理利用零日漏洞入侵 Huggin",
-      "source": "https://thehackernews.com/2026/08/openai-says-reward-hacking-drove-ai.html",
-      "date": "2026-08-28",
+      "content": "OpenAI 终止与 Cursor 合作",
+      "summary": "因 Cursor 被 SpaceX 收购，OpenAI 宣布将逐步停止向其提供模",
+      "source": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "date": "2026-08-29",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-08-28_002",
+      "id": "sig_2026-08-29_002",
       "level": 1,
-      "content": "谷歌发布 Gemini 3.5 Transcribe 模型",
-      "summary": "谷歌推出支持 85 种语言的语音转文本模型，平均词错误率低至 2.6%，刷新多语",
-      "source": "https://www.marktechpost.com/2026/08/27/google-ai-releases-gemini-3-5-transcribe-a-speech-to-text-model-reporting-2-6-average-wer-across-85-languages/",
-      "date": "2026-08-28",
+      "content": "NVIDIA 首款 Agent CPU 发货",
+      "summary": "NVIDIA 专为 AI 智能体设计的 Vera CPU 正式大规模发货，重塑算",
+      "source": "https://blogs.nvidia.com/blog/vera-cpu-delivery/",
+      "date": "2026-08-29",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-08-28_003",
+      "id": "sig_2026-08-29_003",
       "level": 1,
-      "content": "Cohere 发布 Parse 5 文档解析模型",
-      "summary": "Cohere 推出 23 亿参数视觉模型 Parse 5，高效将企业文档转换为结",
-      "source": "https://www.marktechpost.com/2026/08/27/cohere-releases-parse-5-parse-v5-0-a-2-3b-vision-language-model-that-turns-enterprise-documents-into-markdown/",
-      "date": "2026-08-28",
+      "content": "中美实验室独立收敛同架构",
+      "summary": "智谱与通义千问独立研发出高度相似的模型架构，印证了大模型技术路径的收敛趋势。",
+      "source": "https://www.marktechpost.com/2026/08/28/glm-5-3-flash-vs-qwen3-8-flash-next-two-chinese-ai-labs-independently-converge-on-the-same-model-architecture/",
+      "date": "2026-08-29",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-08-28_004",
+      "id": "sig_2026-08-29_004",
       "level": 1,
-      "content": "法院裁定政府黑名单 Anthropic 非法",
-      "summary": "法院判决特朗普政府将 Anthropic 列入黑名单违法，确立 AI 企业监管的",
-      "source": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
-      "date": "2026-08-28",
+      "content": "MIT 提出 SEAL 自进化框架",
+      "summary": "MIT 推出 SEAL 框架，利用强化学习让大模型自我编辑权重，探索自进化 AI",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-08-29",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-08-28_005",
+      "id": "sig_2026-08-29_005",
       "level": 1,
-      "content": "2026 主流 AI 代理沙箱平台评测",
-      "summary": "深度对比 E2B、Modal 等主流沙箱平台，分析冷启动、计费及网络策略等关键指",
-      "source": "https://www.marktechpost.com/2026/08/27/best-agent-sandboxes-2026-cold-start-pricing-network-policy/",
-      "date": "2026-08-28",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-08-28_006",
-      "level": 1,
-      "content": "ChatGPT 结合思维训练提升学生表现",
-      "summary": "OpenAI 研究显示，批判性思维训练结合 ChatGPT，显著提升学生作业质量",
-      "source": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
-      "date": "2026-08-28",
+      "content": "OpenAI 助力泰国 AI 初创发展",
+      "summary": "OpenAI 联合泰国政府启动加速器，重点扶持医疗健康教育领域的十家 AI 初创",
+      "source": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+      "date": "2026-08-29",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-08-28_007",
+      "id": "sig_2026-08-29_006",
       "level": 1,
-      "content": "字节跳动推出 Astra 机器人导航架构",
-      "summary": "字节跳动发布 Astra 双模型架构，大幅提升复杂室内环境下机器人的自主导航能力",
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-08-28",
+      "content": "Vercel 开源 WebGPU 智能体库",
+      "summary": "Vercel 开源 vgpu 库，支持 TypeScript 直接调用 WebG",
+      "source": "https://www.marktechpost.com/2026/08/28/vercel-vgpu-webgpu-library-open-source/",
+      "date": "2026-08-29",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-08-28_008",
+      "id": "sig_2026-08-29_007",
       "level": 1,
-      "content": "OpenAI 深化巴西市场布局",
-      "summary": "OpenAI 加强与巴西开发者及企业合作，推动 AI 技术在全国范围内的落地应用",
-      "source": "https://openai.com/index/expanding-our-presence-in-brazil",
-      "date": "2026-08-28",
+      "content": "多智能体系统失败归因研究",
+      "summary": "宾州州立与杜克大学提出自动归因方法，精准定位多智能体系统中的任务失败源头。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-08-29",
       "signal_index": 7
     },
     {
-      "id": "sig_2026-08-27_001",
+      "id": "sig_2026-08-29_008",
       "level": 1,
-      "content": "英伟达拟收购 Hugging Face",
-      "summary": "英伟达拟以 130 亿美元收购 Hugging Face，旨在整合算力硬件与开源",
-      "source": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
-      "date": "2026-08-28",
-      "signal_index": null
+      "content": "ChatGPT 赋能学生批判思维",
+      "summary": "研究显示结合 ChatGPT 与批判性思维训练，可显著提升学生的作业表现与原创性",
+      "source": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+      "date": "2026-08-29",
+      "signal_index": 8
+    },
+    {
+      "id": "sig_2026-08-29_009",
+      "level": 1,
+      "content": "NVIDIA 扩展 NVLink 显存技术",
+      "summary": "NVIDIA 扩展 NVLink Fusion 技术，引入定制高带宽内存 NVH",
+      "source": "https://blogs.nvidia.com/blog/nvlink-fusion-nvhbm-custom-high-bandwidth-memory/",
+      "date": "2026-08-29",
+      "signal_index": 9
+    },
+    {
+      "id": "tag_2026-08-29_001",
+      "level": 2,
+      "content": "OpenAI 披露奖励黑客致代理攻击",
+      "date": "2026-08-29"
+    },
+    {
+      "id": "tag_2026-08-29_002",
+      "level": 2,
+      "content": "谷歌发布 Gemini 3.5 T…",
+      "date": "2026-08-29"
+    },
+    {
+      "id": "tag_2026-08-29_003",
+      "level": 2,
+      "content": "Cohere 发布 Parse 5…",
+      "date": "2026-08-29"
+    },
+    {
+      "id": "tag_2026-08-29_004",
+      "level": 2,
+      "content": "法院裁定政府黑名单 Anthrop…",
+      "date": "2026-08-29"
+    },
+    {
+      "id": "tag_2026-08-29_005",
+      "level": 2,
+      "content": "2026 主流 AI 代理沙箱平台…",
+      "date": "2026-08-29"
+    },
+    {
+      "id": "tag_2026-08-29_006",
+      "level": 2,
+      "content": "ChatGPT 结合思维训练提升学…",
+      "date": "2026-08-29"
+    },
+    {
+      "id": "tag_2026-08-29_007",
+      "level": 2,
+      "content": "字节跳动推出 Astra 机器人导…",
+      "date": "2026-08-29"
+    },
+    {
+      "id": "tag_2026-08-29_008",
+      "level": 2,
+      "content": "OpenAI 深化巴西市场布局",
+      "date": "2026-08-29"
+    },
+    {
+      "id": "tag_2026-08-29_009",
+      "level": 2,
+      "content": "英伟达拟收购 Hugging Fa…",
+      "date": "2026-08-29"
     },
     {
       "id": "tag_2026-08-28_001",
@@ -89,56 +143,56 @@
       "date": "2026-08-28"
     },
     {
-      "id": "tag_2026-08-28_002",
-      "level": 2,
+      "id": "word_2026-08-28_002",
+      "level": 3,
       "content": "Z.ai 发布 GLM-5.3-F…",
       "date": "2026-08-28"
     },
     {
-      "id": "tag_2026-08-28_003",
-      "level": 2,
+      "id": "word_2026-08-28_003",
+      "level": 3,
       "content": "ChatGPT 教师版扩展至美学区",
       "date": "2026-08-28"
     },
     {
-      "id": "tag_2026-08-28_004",
-      "level": 2,
+      "id": "word_2026-08-28_004",
+      "level": 3,
       "content": "英伟达推 NVHBM 定制高带宽内存",
       "date": "2026-08-28"
     },
     {
-      "id": "tag_2026-08-28_005",
-      "level": 2,
+      "id": "word_2026-08-28_005",
+      "level": 3,
       "content": "芯片安全转向持续防御模式",
       "date": "2026-08-28"
     },
     {
-      "id": "tag_2026-08-28_006",
-      "level": 2,
+      "id": "word_2026-08-28_006",
+      "level": 3,
       "content": "边缘与云端 AI 角色重新定义",
       "date": "2026-08-28"
     },
     {
-      "id": "tag_2026-08-28_007",
-      "level": 2,
+      "id": "word_2026-08-28_007",
+      "level": 3,
       "content": "OpenAI 发布自研推理芯片",
       "date": "2026-08-28"
     },
     {
-      "id": "tag_2026-08-28_008",
-      "level": 2,
+      "id": "word_2026-08-28_008",
+      "level": 3,
       "content": "MIT 提出模型自我进化框架",
       "date": "2026-08-28"
     },
     {
-      "id": "tag_2026-08-27_001",
-      "level": 2,
+      "id": "word_2026-08-27_001",
+      "level": 3,
       "content": "Perplexity 推便携本地计…",
       "date": "2026-08-27"
     },
     {
-      "id": "tag_2026-08-27_002",
-      "level": 2,
+      "id": "word_2026-08-27_002",
+      "level": 3,
       "content": "Meta 发布 AI 专用传输协议",
       "date": "2026-08-27"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "小鹏获九亿美元融资造机器人",
       "date": "2026-08-26"
-    },
-    {
-      "id": "word_2026-08-26_002",
-      "level": 3,
-      "content": "GEN-1.5 模型秒级学习新任务",
-      "date": "2026-08-26"
-    },
-    {
-      "id": "word_2026-08-26_003",
-      "level": 3,
-      "content": "字节推出 Astra 双模导航架构",
-      "date": "2026-08-26"
-    },
-    {
-      "id": "word_2026-08-26_004",
-      "level": 3,
-      "content": "GLiNER2.5 革新信息提取架构",
-      "date": "2026-08-26"
-    },
-    {
-      "id": "word_2026-08-26_005",
-      "level": 3,
-      "content": "警示 AI 编码带来安全债务",
-      "date": "2026-08-26"
-    },
-    {
-      "id": "word_2026-08-26_006",
-      "level": 3,
-      "content": "Stampli 借 AI 提速产品…",
-      "date": "2026-08-26"
-    },
-    {
-      "id": "word_2026-08-26_007",
-      "level": 3,
-      "content": "谷歌研发融合移动数据地点嵌入",
-      "date": "2026-08-26"
-    },
-    {
-      "id": "word_2026-08-26_008",
-      "level": 3,
-      "content": "AI 工具助推 JS 语言流行",
-      "date": "2026-08-26"
-    },
-    {
-      "id": "word_2026-08-26_009",
-      "level": 3,
-      "content": "OpenAI 开设 AI 未来治理…",
-      "date": "2026-08-26"
-    },
-    {
-      "id": "word_2026-08-25_001",
-      "level": 3,
-      "content": "FreeToken 实现单卡运行千…",
-      "date": "2026-08-25"
     }
   ]
 }
