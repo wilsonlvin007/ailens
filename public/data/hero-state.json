@@ -1,14 +1,59 @@
 {
-  "updated_at": "2026-08-31",
+  "updated_at": "2026-09-01",
   "items": [
+    {
+      "id": "sig_2026-09-01_001",
+      "level": 1,
+      "content": "谷歌发布多变量时序模型",
+      "summary": "谷歌推出 TimesFM-3，首个支持多变量预测的零样本时序基础模型，单次前向即",
+      "source": "https://www.marktechpost.com/2026/08/31/google-ai-releases-timesfm-3-a-330m-parameter-zero-shot-foundation-model-for-multivariate-time-series-forecasting/",
+      "date": "2026-09-01",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-09-01_002",
+      "level": 1,
+      "content": "开源动态搜索基准测试",
+      "summary": "Keenable AI 开源 NEEDLE 基准，通过每小时重建查询集防止搜索智",
+      "source": "https://www.marktechpost.com/2026/08/31/keenable-ai-open-sources-needle-a-live-search-benchmark-that-rebuilds-its-query-set-every-hour/",
+      "date": "2026-09-01",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-09-01_003",
+      "level": 1,
+      "content": "OpenClaw 发布二点零版本",
+      "summary": "OpenClaw 发布 2.0 版，优化模型设置引导与控制界面启动速度，增强网关",
+      "source": "https://www.marktechpost.com/2026/08/30/openclaw-releases-openclaw-2-0-guided-model-setup-575-ms-control-ui-startup-and-one-trust-boundary-per-gateway/",
+      "date": "2026-09-01",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-09-01_004",
+      "level": 1,
+      "content": "英伟达披露循环融资模式",
+      "summary": "英伟达向 AI 实验室注资近五百亿美元并获回购承诺，揭示其支撑芯片需求的商业闭环",
+      "source": "https://www.artificialintelligence-news.com/news/nvidia-circular-financing-ai-labs/",
+      "date": "2026-09-01",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-09-01_005",
+      "level": 1,
+      "content": "英伟达推新边缘计算芯片",
+      "summary": "英伟达推出 Jetson Orin Nano 2，旨在让无人机和机器人等边缘设备",
+      "source": "https://www.artificialintelligence-news.com/news/nvidia-jetson-orin-nano-2-physical-ai-to-drones-and-robots/",
+      "date": "2026-09-01",
+      "signal_index": 2
+    },
     {
       "id": "sig_2026-08-31_001",
       "level": 1,
       "content": "英伟达注资构建融资闭环",
       "summary": "英伟达向 AI 实验室注资近五百亿美元，揭示芯片厂商深度绑定下游需求的行业新生态",
       "source": "https://www.artificialintelligence-news.com/news/nvidia-circular-financing-ai-labs/",
-      "date": "2026-08-31",
-      "signal_index": 0
+      "date": "2026-09-01",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-31_002",
@@ -16,8 +61,8 @@
       "content": "Anthropic 发布物理操作标准",
       "summary": "Anthropic 推出 MHS 标准预览，规范 AI 智能体安全操作物理设备流",
       "source": "https://www.marktechpost.com/2026/08/29/anthropic-opens-a-research-preview-of-the-model-hardware-standard-mhs-a-shared-specification-for-ai-agents-to-safely-operate-physical-devices/",
-      "date": "2026-08-31",
-      "signal_index": 1
+      "date": "2026-09-01",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-31_003",
@@ -25,8 +70,8 @@
       "content": "Gatik 获两亿融资扩货运",
       "summary": "自动驾驶货运公司 Gatik 完成两亿美元 D 轮融资，计划扩展北美无人驾驶干线",
       "source": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight/",
-      "date": "2026-08-31",
-      "signal_index": 3
+      "date": "2026-09-01",
+      "signal_index": null
     },
     {
       "id": "sig_2026-08-31_004",
@@ -34,53 +79,38 @@
       "content": "英伟达新品赋能边缘机器人",
       "summary": "英伟达发布 Jetson Orin Nano 2，专为无人机和机器人设计的边缘板",
       "source": "https://www.artificialintelligence-news.com/news/nvidia-jetson-orin-nano-2-physical-ai-to-drones-and-robots/",
-      "date": "2026-08-31",
-      "signal_index": 4
+      "date": "2026-09-01",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-08-31_005",
-      "level": 1,
+      "id": "tag_2026-09-01_001",
+      "level": 2,
       "content": "谷歌推出自适应训练环境",
-      "summary": "谷歌发布 EnvHarness，将静态基准转化为自适应训练环境，显著提升智能体策",
-      "source": "https://www.marktechpost.com/2026/08/30/google-ai-introduces-envharness-a-programmable-layer-that-turns-static-agent-environments-into-adaptive-training-worlds/",
-      "date": "2026-08-31",
-      "signal_index": 5
+      "date": "2026-09-01"
     },
     {
-      "id": "sig_2026-08-31_006",
-      "level": 1,
+      "id": "tag_2026-09-01_002",
+      "level": 2,
       "content": "多智能体失败归因新方法",
-      "summary": "宾州州立与杜克大学提出自动归因方法，精准定位多智能体协作系统中的任务失败源头。",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-08-31",
-      "signal_index": 6
+      "date": "2026-09-01"
     },
     {
-      "id": "sig_2026-08-31_007",
-      "level": 1,
+      "id": "tag_2026-09-01_003",
+      "level": 2,
       "content": "实时语音 API 延迟新基准",
-      "summary": "新基准测试聚焦语音和实时智能体 API 的首字延迟，强调低延迟对用户体验的决定性",
-      "source": "https://www.marktechpost.com/2026/08/30/lowest-latency-inference-apis-for-voice-and-realtime-agents-a-time-to-first-token-ttft-first-benchmark/",
-      "date": "2026-08-31",
-      "signal_index": 7
+      "date": "2026-09-01"
     },
     {
-      "id": "sig_2026-08-31_008",
-      "level": 1,
-      "content": "OpenAI 终止 Cursor 合作",
-      "summary": "OpenAI 宣布因 Cursor 被 SpaceX 收购而终止模型供应合同，引",
-      "source": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
-      "date": "2026-08-31",
-      "signal_index": 8
+      "id": "tag_2026-09-01_004",
+      "level": 2,
+      "content": "OpenAI 终止 Cursor …",
+      "date": "2026-09-01"
     },
     {
-      "id": "sig_2026-08-31_009",
-      "level": 1,
+      "id": "tag_2026-09-01_005",
+      "level": 2,
       "content": "Z.ai 发布百万上下文模型",
-      "summary": "Z.ai 推出 GLM-5.3-Flash 多模态模型，具备百万级上下文窗口，性",
-      "source": "https://news.smol.ai/issues/26-08-26-not-much/",
-      "date": "2026-08-31",
-      "signal_index": 2
+      "date": "2026-09-01"
     },
     {
       "id": "tag_2026-08-31_001",
@@ -113,32 +143,32 @@
       "date": "2026-08-31"
     },
     {
-      "id": "tag_2026-08-31_006",
-      "level": 2,
+      "id": "word_2026-08-31_006",
+      "level": 3,
       "content": "Vercel 开源 WebGPU …",
       "date": "2026-08-31"
     },
     {
-      "id": "tag_2026-08-31_007",
-      "level": 2,
+      "id": "word_2026-08-31_007",
+      "level": 3,
       "content": "多智能体系统失败归因研究",
       "date": "2026-08-31"
     },
     {
-      "id": "tag_2026-08-31_008",
-      "level": 2,
+      "id": "word_2026-08-31_008",
+      "level": 3,
       "content": "ChatGPT 赋能学生批判思维",
       "date": "2026-08-31"
     },
     {
-      "id": "tag_2026-08-31_009",
-      "level": 2,
+      "id": "word_2026-08-31_009",
+      "level": 3,
       "content": "NVIDIA 扩展 NVLink …",
       "date": "2026-08-31"
     },
     {
-      "id": "tag_2026-08-29_001",
-      "level": 2,
+      "id": "word_2026-08-29_001",
+      "level": 3,
       "content": "OpenAI 披露奖励黑客致代理攻击",
       "date": "2026-08-29"
     },
@@ -200,36 +230,6 @@
       "id": "word_2026-08-28_002",
       "level": 3,
       "content": "Z.ai 发布 GLM-5.3-F…",
-      "date": "2026-08-28"
-    },
-    {
-      "id": "word_2026-08-28_003",
-      "level": 3,
-      "content": "ChatGPT 教师版扩展至美学区",
-      "date": "2026-08-28"
-    },
-    {
-      "id": "word_2026-08-28_004",
-      "level": 3,
-      "content": "英伟达推 NVHBM 定制高带宽内存",
-      "date": "2026-08-28"
-    },
-    {
-      "id": "word_2026-08-28_005",
-      "level": 3,
-      "content": "芯片安全转向持续防御模式",
-      "date": "2026-08-28"
-    },
-    {
-      "id": "word_2026-08-28_006",
-      "level": 3,
-      "content": "边缘与云端 AI 角色重新定义",
-      "date": "2026-08-28"
-    },
-    {
-      "id": "word_2026-08-28_007",
-      "level": 3,
-      "content": "OpenAI 发布自研推理芯片",
       "date": "2026-08-28"
     }
   ]
