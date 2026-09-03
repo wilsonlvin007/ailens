@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-03",
   "items": [
+    {
+      "id": "sig_2026-09-03_001",
+      "level": 1,
+      "content": "三大巨头联合推出网络安全防御计划",
+      "summary": "Google、Anthropic 与 OpenAI 联合推出网络安全专用 AI ",
+      "source": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html",
+      "date": "2026-09-03",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-09-03_002",
+      "level": 1,
+      "content": "OpenAI 宣布 Astra 模型具备关键网安能力",
+      "summary": "OpenAI 宣布 Astra 模型达到关键网络安全能力阈值，并在发布前实施了更",
+      "source": "https://openai.com/index/path-to-astra",
+      "date": "2026-09-03",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-09-03_003",
+      "level": 1,
+      "content": "Google 发布专为网安优化的 Gemini 系列",
+      "summary": "Google 发布 Gemini 3.8 Flash 系列，包含专为网络安全任务",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "date": "2026-09-03",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-09-03_004",
+      "level": 1,
+      "content": "NVIDIA 首款智能体专用 CPU 正式出货",
+      "summary": "NVIDIA 首款专为 AI 智能体设计的 CPU\"Vera\"正式大规模出货，标",
+      "source": "https://blogs.nvidia.com/blog/vera-cpu-delivery/",
+      "date": "2026-09-03",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-09-03_005",
+      "level": 1,
+      "content": "恶意 Git 配置可诱导 AI 执行攻击代码",
+      "summary": "研究发现恶意 Git 配置可诱导多种 AI 编程助手执行攻击者代码，暴露了智能体",
+      "source": "https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html",
+      "date": "2026-09-03",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-09-03_006",
+      "level": 1,
+      "content": "ChatGPT 助 ATV 巡回赛效率提升十倍",
+      "summary": "ATV 巡回赛利用 ChatGPT Work 将营销和库存网站搭建时间从 3 天",
+      "source": "https://openai.com/index/atv-big-air-tour",
+      "date": "2026-09-03",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-09-03_007",
+      "level": 1,
+      "content": "MIT 提出 SEAL 框架推动 AI 自我进化",
+      "summary": "MIT 提出 SEAL 框架，使大语言模型能通过强化学习自我编辑和更新权重，迈向",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-09-03",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-09-03_008",
+      "level": 1,
+      "content": "Google 推出 Workspace 图像编辑工具 Pics",
+      "summary": "Google 基于 Nano Banana 模型推出 Pics 工具，为 Wor",
+      "source": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
+      "date": "2026-09-03",
+      "signal_index": 7
+    },
     {
       "id": "sig_2026-09-02_001",
       "level": 1,
       "content": "ChatGPT 接入医疗数据",
       "summary": "ChatGPT 支持连接电子健康记录，助力医生安全访问患者语境及医学数据。",
       "source": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
-      "date": "2026-09-02",
-      "signal_index": 0
+      "date": "2026-09-03",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-09-02_002",
-      "level": 1,
-      "content": "NVIDIA 联手 CrowdStrike 防御",
-      "summary": "NVIDIA 与 CrowdStrike 合作推出 SafeMind，以自动化智",
-      "source": "https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026/",
-      "date": "2026-09-02",
-      "signal_index": 1
+      "id": "tag_2026-09-03_001",
+      "level": 2,
+      "content": "NVIDIA 联手 CrowdSt…",
+      "date": "2026-09-03"
     },
     {
-      "id": "sig_2026-09-02_003",
-      "level": 1,
+      "id": "tag_2026-09-03_002",
+      "level": 2,
       "content": "OpenAI 解析原生工作流",
-      "summary": "OpenAI 剖析 Basis 等公司如何利用 AI 智能体重塑入职及管理等工作",
-      "source": "https://openai.com/index/ai-native-company-workflows",
-      "date": "2026-09-02",
-      "signal_index": 2
+      "date": "2026-09-03"
     },
     {
-      "id": "sig_2026-09-02_004",
-      "level": 1,
-      "content": "Anthropic 更新 Claude 系列",
-      "summary": "Anthropic 发布 Claude Fable 5.1 与 Mythos 5",
-      "source": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "date": "2026-09-02",
-      "signal_index": 5
+      "id": "tag_2026-09-03_003",
+      "level": 2,
+      "content": "Anthropic 更新 Clau…",
+      "date": "2026-09-03"
     },
     {
-      "id": "sig_2026-09-02_005",
-      "level": 1,
+      "id": "tag_2026-09-03_004",
+      "level": 2,
       "content": "谷歌推出 Pics 图像工具",
-      "summary": "谷歌基于 Nano Banana 模型推出 Google Pics，简化 Wor",
-      "source": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
-      "date": "2026-09-02",
-      "signal_index": 6
+      "date": "2026-09-03"
     },
     {
-      "id": "sig_2026-09-02_006",
-      "level": 1,
-      "content": "Meta Muse Code 结束测试",
-      "summary": "Meta 的 Muse Code 结束测试，推 SDK 及订阅计划，支持自定义智",
-      "source": "https://news.smol.ai/issues/26-08-31-not-much/",
-      "date": "2026-09-02",
-      "signal_index": 3
+      "id": "tag_2026-09-03_005",
+      "level": 2,
+      "content": "Meta Muse Code 结束…",
+      "date": "2026-09-03"
     },
     {
-      "id": "sig_2026-09-02_007",
-      "level": 1,
+      "id": "tag_2026-09-03_006",
+      "level": 2,
       "content": "DeepSeek 开源视觉模型",
-      "summary": "DeepSeek 开源 V4 Flash Vision 权重，视觉处理能力比肩主",
-      "source": "https://news.smol.ai/issues/26-08-31-not-much/",
-      "date": "2026-09-02",
-      "signal_index": 4
+      "date": "2026-09-03"
     },
     {
-      "id": "sig_2026-09-01_001",
-      "level": 1,
+      "id": "tag_2026-09-03_007",
+      "level": 2,
       "content": "谷歌发布多变量时序模型",
-      "summary": "谷歌推出 TimesFM-3，首个支持多变量预测的零样本时序基础模型，单次前向即",
-      "source": "https://www.marktechpost.com/2026/08/31/google-ai-releases-timesfm-3-a-330m-parameter-zero-shot-foundation-model-for-multivariate-time-series-forecasting/",
-      "date": "2026-09-02",
-      "signal_index": null
+      "date": "2026-09-03"
     },
     {
-      "id": "sig_2026-09-01_002",
-      "level": 1,
+      "id": "tag_2026-09-03_008",
+      "level": 2,
       "content": "开源动态搜索基准测试",
-      "summary": "Keenable AI 开源 NEEDLE 基准，通过每小时重建查询集防止搜索智",
-      "source": "https://www.marktechpost.com/2026/08/31/keenable-ai-open-sources-needle-a-live-search-benchmark-that-rebuilds-its-query-set-every-hour/",
-      "date": "2026-09-02",
-      "signal_index": null
+      "date": "2026-09-03"
     },
     {
       "id": "tag_2026-09-02_001",
@@ -95,50 +143,50 @@
       "date": "2026-09-02"
     },
     {
-      "id": "tag_2026-09-02_003",
-      "level": 2,
+      "id": "word_2026-09-02_003",
+      "level": 3,
       "content": "英伟达推新边缘计算芯片",
       "date": "2026-09-02"
     },
     {
-      "id": "tag_2026-09-02_004",
-      "level": 2,
+      "id": "word_2026-09-02_004",
+      "level": 3,
       "content": "英伟达注资构建融资闭环",
       "date": "2026-09-02"
     },
     {
-      "id": "tag_2026-09-02_005",
-      "level": 2,
+      "id": "word_2026-09-02_005",
+      "level": 3,
       "content": "Anthropic 发布物理操作标准",
       "date": "2026-09-02"
     },
     {
-      "id": "tag_2026-09-02_006",
-      "level": 2,
+      "id": "word_2026-09-02_006",
+      "level": 3,
       "content": "Gatik 获两亿融资扩货运",
       "date": "2026-09-02"
     },
     {
-      "id": "tag_2026-09-02_007",
-      "level": 2,
+      "id": "word_2026-09-02_007",
+      "level": 3,
       "content": "英伟达新品赋能边缘机器人",
       "date": "2026-09-02"
     },
     {
-      "id": "tag_2026-09-01_001",
-      "level": 2,
+      "id": "word_2026-09-01_001",
+      "level": 3,
       "content": "谷歌推出自适应训练环境",
       "date": "2026-09-01"
     },
     {
-      "id": "tag_2026-09-01_002",
-      "level": 2,
+      "id": "word_2026-09-01_002",
+      "level": 3,
       "content": "多智能体失败归因新方法",
       "date": "2026-09-01"
     },
     {
-      "id": "tag_2026-09-01_003",
-      "level": 2,
+      "id": "word_2026-09-01_003",
+      "level": 3,
       "content": "实时语音 API 延迟新基准",
       "date": "2026-09-01"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "OpenAI 助力泰国 AI 初创…",
       "date": "2026-08-31"
-    },
-    {
-      "id": "word_2026-08-31_006",
-      "level": 3,
-      "content": "Vercel 开源 WebGPU …",
-      "date": "2026-08-31"
-    },
-    {
-      "id": "word_2026-08-31_007",
-      "level": 3,
-      "content": "多智能体系统失败归因研究",
-      "date": "2026-08-31"
-    },
-    {
-      "id": "word_2026-08-31_008",
-      "level": 3,
-      "content": "ChatGPT 赋能学生批判思维",
-      "date": "2026-08-31"
-    },
-    {
-      "id": "word_2026-08-31_009",
-      "level": 3,
-      "content": "NVIDIA 扩展 NVLink …",
-      "date": "2026-08-31"
-    },
-    {
-      "id": "word_2026-08-29_001",
-      "level": 3,
-      "content": "OpenAI 披露奖励黑客致代理攻击",
-      "date": "2026-08-29"
-    },
-    {
-      "id": "word_2026-08-29_002",
-      "level": 3,
-      "content": "谷歌发布 Gemini 3.5 T…",
-      "date": "2026-08-29"
-    },
-    {
-      "id": "word_2026-08-29_003",
-      "level": 3,
-      "content": "Cohere 发布 Parse 5…",
-      "date": "2026-08-29"
-    },
-    {
-      "id": "word_2026-08-29_004",
-      "level": 3,
-      "content": "法院裁定政府黑名单 Anthrop…",
-      "date": "2026-08-29"
     }
   ]
 }
