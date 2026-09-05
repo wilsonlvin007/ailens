@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-09-05",
+  "updated_at": "2026-09-06",
   "items": [
     {
-      "id": "sig_2026-09-05_001",
+      "id": "sig_2026-09-06_001",
       "level": 1,
-      "content": "DeepMind 推出 WeatherNext 3 预报",
-      "summary": "DeepMind 发布 WeatherNext 3，利用观测数据实现每小时更新的",
-      "source": "https://www.marktechpost.com/2026/09/03/google-deepminds-weathernext-3-trains-on-station-observations-to-deliver-5-km-global-forecasts-refreshed-every-hour/",
-      "date": "2026-09-05",
+      "content": "OpenAI 投十亿护网安",
+      "summary": "OpenAI 承诺投入 10 亿美元，为关键基础设施提供前沿网络 AI 防御工具",
+      "source": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "date": "2026-09-06",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-09-05_002",
+      "id": "sig_2026-09-06_002",
       "level": 1,
-      "content": "Anthropic 开源商业代理蓝图",
-      "summary": "Anthropic 开源商业代理蓝图，为零售、旅游等行业提供购物助手开发参考架构",
-      "source": "https://www.marktechpost.com/2026/09/03/anthropic-released-claude-commerce-agents-an-apache-2-0-blueprint-for-shopping-and-merchant-agents-across-retail-travel-telecom-and-entertainment/",
-      "date": "2026-09-05",
+      "content": "GitHub 推多模型编排",
+      "summary": "GitHub 推出 HydraFusion 项目，将工作流选择视为优化问题，实现",
+      "source": "https://www.marktechpost.com/2026/09/05/github-introduces-project-hydrafusion-runtime-multi-model-orchestration-that-builds-a-workflow-per-coding-task-in-copilot-cli/",
+      "date": "2026-09-06",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-09-05_003",
+      "id": "sig_2026-09-06_003",
       "level": 1,
-      "content": "M&T 银行全面部署企业 AI",
-      "summary": "M&T 银行向 1.5 万名员工部署 AI 助手，涵盖客服、代码生成及风险管理，",
-      "source": "https://www.artificialintelligence-news.com/news/mt-bank-enterprise-ai-15000-employees/",
-      "date": "2026-09-05",
+      "content": "Playco 借 GPT-6 提效",
+      "summary": "游戏公司 Playco 利用 GPT-6 Astra 原型开发效率提升 50%，",
+      "source": "https://openai.com/index/playco-game-prototyping-with-astra",
+      "date": "2026-09-06",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-09-05_004",
+      "id": "sig_2026-09-06_004",
       "level": 1,
-      "content": "OneRail 用英伟达 AI 优配送",
-      "summary": "OneRail 利用英伟达 AI 技术优化最后一公里配送，实时决策最佳物流方案，",
-      "source": "https://www.artificialintelligence-news.com/news/ai-last-mile-delivery-optimisation/",
-      "date": "2026-09-05",
+      "content": "Legora 智审财务文件",
+      "summary": "Legora 使用 GPT-6 Astra 几分钟内审查 41 份文件并发现所有",
+      "source": "https://openai.com/index/legora-financial-statement-review-with-astra",
+      "date": "2026-09-06",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-09-05_005",
+      "id": "sig_2026-09-06_005",
       "level": 1,
-      "content": "研究解析多智能体故障归因",
-      "summary": "研究提出多智能体系统自动故障归因方法，解析任务失败原因，提升协作系统可靠性。",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-09-05",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-09-05_006",
-      "level": 1,
-      "content": "英伟达 IFA 推本地 AI 加速",
-      "summary": "英伟达在 IFA 2026 推出本地 AI 加速方案及 RTX Spark PC",
-      "source": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
-      "date": "2026-09-05",
+      "content": "NVIDIA DLSS5 助游戏",
+      "summary": "NVIDIA 宣布 DLSS 5 技术应用于 NBA 2K27，带来更逼真的光照",
+      "source": "https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list/",
+      "date": "2026-09-06",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-09-04_001",
+      "id": "sig_2026-09-06_006",
       "level": 1,
-      "content": "OpenAI 投入十亿防御网络攻击",
-      "summary": "OpenAI 承诺投入 10 亿美元，利用前沿 AI 技术保护关键基础设施免受网",
-      "source": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "date": "2026-09-05",
-      "signal_index": null
+      "content": "字节发机器人导航",
+      "summary": "字节跳动发布 Astra 双模型架构，旨在革新复杂室内环境下的自主机器人导航能力",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-09-06",
+      "signal_index": 6
     },
     {
-      "id": "sig_2026-09-04_002",
+      "id": "sig_2026-09-06_007",
       "level": 1,
-      "content": "英伟达微软推本地 AI 加速方案",
-      "summary": "英伟达联合微软推出本地 AI 加速方案及新款 RTX Spark PC，优化端侧",
+      "content": "Adaption 自动生成数据",
+      "summary": "Adaption Labs 推出新工具，仅需任务描述即可生成结构化训练数据集，无",
+      "source": "https://www.marktechpost.com/2026/09/04/datasets-invent-api-training-data-without-labeling-adaptive-data-autoscientist/",
+      "date": "2026-09-06",
+      "signal_index": 8
+    },
+    {
+      "id": "sig_2026-09-06_008",
+      "level": 1,
+      "content": "Hermes 一键布本地模",
+      "summary": "Nous Research 在 Hermes Desktop 中实现一键本地模型",
+      "source": "https://www.marktechpost.com/2026/09/05/nous-research-hermes-desktop-one-click-local-model-setup/",
+      "date": "2026-09-06",
+      "signal_index": 10
+    },
+    {
+      "id": "sig_2026-09-06_009",
+      "level": 1,
+      "content": "英伟达推本地 AI 电脑",
+      "summary": "NVIDIA 在 IFA 2026 联合微软推进本地 AI，推出新款 RTX S",
       "source": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
-      "date": "2026-09-05",
-      "signal_index": null
+      "date": "2026-09-06",
+      "signal_index": 5
     },
     {
-      "id": "sig_2026-09-04_003",
-      "level": 1,
+      "id": "tag_2026-09-06_001",
+      "level": 2,
+      "content": "DeepMind 推出 Weath…",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "tag_2026-09-06_002",
+      "level": 2,
+      "content": "Anthropic 开源商业代理蓝图",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "tag_2026-09-06_003",
+      "level": 2,
+      "content": "M&T 银行全面部署企业 AI",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "tag_2026-09-06_004",
+      "level": 2,
+      "content": "OneRail 用英伟达 AI 优…",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "tag_2026-09-06_005",
+      "level": 2,
+      "content": "解析多智能体故障归因",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "tag_2026-09-06_006",
+      "level": 2,
+      "content": "英伟达 IFA 推本地 AI 加速",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "tag_2026-09-06_007",
+      "level": 2,
+      "content": "OpenAI 投入十亿防御网络攻击",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "tag_2026-09-06_008",
+      "level": 2,
+      "content": "英伟达微软推本地 AI 加速方案",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "tag_2026-09-06_009",
+      "level": 2,
       "content": "谷歌启动 Fairwind 网安计划",
-      "summary": "谷歌启动 Fairwind 计划，向政府及伙伴开放高级网络防御工具以应对威胁。",
-      "source": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
-      "date": "2026-09-05",
-      "signal_index": null
+      "date": "2026-09-06"
     },
     {
       "id": "tag_2026-09-05_001",
@@ -89,56 +143,56 @@
       "date": "2026-09-05"
     },
     {
-      "id": "tag_2026-09-05_002",
-      "level": 2,
+      "id": "word_2026-09-05_002",
+      "level": 3,
       "content": "Playco 用 Astra 减半…",
       "date": "2026-09-05"
     },
     {
-      "id": "tag_2026-09-05_003",
-      "level": 2,
+      "id": "word_2026-09-05_003",
+      "level": 3,
       "content": "工程决策迈向 AI 驱动优化",
       "date": "2026-09-05"
     },
     {
-      "id": "tag_2026-09-05_004",
-      "level": 2,
+      "id": "word_2026-09-05_004",
+      "level": 3,
       "content": "三大巨头联合推出网络安全防御计划",
       "date": "2026-09-05"
     },
     {
-      "id": "tag_2026-09-05_005",
-      "level": 2,
+      "id": "word_2026-09-05_005",
+      "level": 3,
       "content": "OpenAI 宣布 Astra 模…",
       "date": "2026-09-05"
     },
     {
-      "id": "tag_2026-09-05_006",
-      "level": 2,
+      "id": "word_2026-09-05_006",
+      "level": 3,
       "content": "Google 发布专为网安优化的 …",
       "date": "2026-09-05"
     },
     {
-      "id": "tag_2026-09-04_001",
-      "level": 2,
+      "id": "word_2026-09-04_001",
+      "level": 3,
       "content": "NVIDIA 首款智能体专用 CP…",
       "date": "2026-09-04"
     },
     {
-      "id": "tag_2026-09-04_002",
-      "level": 2,
+      "id": "word_2026-09-04_002",
+      "level": 3,
       "content": "恶意 Git 配置可诱导 AI 执…",
       "date": "2026-09-04"
     },
     {
-      "id": "tag_2026-09-04_003",
-      "level": 2,
+      "id": "word_2026-09-04_003",
+      "level": 3,
       "content": "ChatGPT 助 ATV 巡回赛…",
       "date": "2026-09-04"
     },
     {
-      "id": "tag_2026-09-04_004",
-      "level": 2,
+      "id": "word_2026-09-04_004",
+      "level": 3,
       "content": "MIT 提出 SEAL 框架推动 …",
       "date": "2026-09-04"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "谷歌推出 Pics 图像工具",
       "date": "2026-09-03"
-    },
-    {
-      "id": "word_2026-09-03_005",
-      "level": 3,
-      "content": "Meta Muse Code 结束…",
-      "date": "2026-09-03"
-    },
-    {
-      "id": "word_2026-09-03_006",
-      "level": 3,
-      "content": "DeepSeek 开源视觉模型",
-      "date": "2026-09-03"
-    },
-    {
-      "id": "word_2026-09-03_007",
-      "level": 3,
-      "content": "谷歌发布多变量时序模型",
-      "date": "2026-09-03"
-    },
-    {
-      "id": "word_2026-09-03_008",
-      "level": 3,
-      "content": "开源动态搜索基准测试",
-      "date": "2026-09-03"
-    },
-    {
-      "id": "word_2026-09-02_001",
-      "level": 3,
-      "content": "OpenClaw 发布二点零版本",
-      "date": "2026-09-02"
-    },
-    {
-      "id": "word_2026-09-02_002",
-      "level": 3,
-      "content": "英伟达披露循环融资模式",
-      "date": "2026-09-02"
-    },
-    {
-      "id": "word_2026-09-02_003",
-      "level": 3,
-      "content": "英伟达推新边缘计算芯片",
-      "date": "2026-09-02"
-    },
-    {
-      "id": "word_2026-09-02_004",
-      "level": 3,
-      "content": "英伟达注资构建融资闭环",
-      "date": "2026-09-02"
-    },
-    {
-      "id": "word_2026-09-02_005",
-      "level": 3,
-      "content": "Anthropic 发布物理操作标准",
-      "date": "2026-09-02"
     }
   ]
 }
