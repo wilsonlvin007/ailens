@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-09-06",
+  "updated_at": "2026-09-07",
   "items": [
+    {
+      "id": "sig_2026-09-07_001",
+      "level": 1,
+      "content": "OpenAI 警示异质思维对齐",
+      "summary": "OpenAI 研究员撰文反思超级智能的“异质思维”特性，呼吁加强国际协调以应对严",
+      "source": "https://openai.com/index/an-alien-mind",
+      "date": "2026-09-07",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-09-07_002",
+      "level": 1,
+      "content": "OpenAI 披露智能体加速研究",
+      "summary": "OpenAI 内部数据显示，编码智能体显著重塑科研流程，大幅提升实验速度与复杂任",
+      "source": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "date": "2026-09-07",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-09-07_003",
+      "level": 1,
+      "content": "谷歌推政府网络防御计划",
+      "summary": "谷歌启动 Fairwind 计划，向政府及可信伙伴提供受限访问的 AI 网络防御",
+      "source": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+      "date": "2026-09-07",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-09-07_004",
+      "level": 1,
+      "content": "片外内存加密需完整性",
+      "summary": "文章指出航空航天等关键系统中，片外内存加密必须引入完整性保护，以应对日益复杂的数",
+      "source": "https://semiengineering.com/protecting-mission-critical-data-beyond-the-soc-why-inline-memory-encryption-needs-integrity/",
+      "date": "2026-09-07",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-09-07_005",
+      "level": 1,
+      "content": "OpenAI 启动十亿防御计划",
+      "summary": "OpenAI 推出“黎明计划”，投入 10 亿美元利用前沿 AI 技术保护关键基",
+      "source": "https://openai.com/index/daybreak-for-frontline-defenders",
+      "date": "2026-09-07",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-09-07_006",
+      "level": 1,
+      "content": "英伟达微软共建本地 AI",
+      "summary": "英伟达联合微软在 IFA 推出 RTX Spark PC 等新工具，旨在加速边缘",
+      "source": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
+      "date": "2026-09-07",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-09-07_007",
+      "level": 1,
+      "content": "字节跳动发布导航双模型",
+      "summary": "字节跳动推出 Astra 双模型架构，专为解决复杂室内环境下自主机器人的高精度导",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-09-07",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-09-07_008",
+      "level": 1,
+      "content": "多智能体故障自动归因",
+      "summary": "宾州州立与杜克大学提出新方法，可自动定位多智能体协作系统中的任务失败源头，提升系",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-09-07",
+      "signal_index": 5
+    },
     {
       "id": "sig_2026-09-06_001",
       "level": 1,
       "content": "OpenAI 投十亿护网安",
       "summary": "OpenAI 承诺投入 10 亿美元，为关键基础设施提供前沿网络 AI 防御工具",
       "source": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "date": "2026-09-06",
-      "signal_index": 0
+      "date": "2026-09-07",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-09-06_002",
-      "level": 1,
+      "id": "tag_2026-09-07_001",
+      "level": 2,
       "content": "GitHub 推多模型编排",
-      "summary": "GitHub 推出 HydraFusion 项目，将工作流选择视为优化问题，实现",
-      "source": "https://www.marktechpost.com/2026/09/05/github-introduces-project-hydrafusion-runtime-multi-model-orchestration-that-builds-a-workflow-per-coding-task-in-copilot-cli/",
-      "date": "2026-09-06",
-      "signal_index": 1
+      "date": "2026-09-07"
     },
     {
-      "id": "sig_2026-09-06_003",
-      "level": 1,
+      "id": "tag_2026-09-07_002",
+      "level": 2,
       "content": "Playco 借 GPT-6 提效",
-      "summary": "游戏公司 Playco 利用 GPT-6 Astra 原型开发效率提升 50%，",
-      "source": "https://openai.com/index/playco-game-prototyping-with-astra",
-      "date": "2026-09-06",
-      "signal_index": 2
+      "date": "2026-09-07"
     },
     {
-      "id": "sig_2026-09-06_004",
-      "level": 1,
+      "id": "tag_2026-09-07_003",
+      "level": 2,
       "content": "Legora 智审财务文件",
-      "summary": "Legora 使用 GPT-6 Astra 几分钟内审查 41 份文件并发现所有",
-      "source": "https://openai.com/index/legora-financial-statement-review-with-astra",
-      "date": "2026-09-06",
-      "signal_index": 3
+      "date": "2026-09-07"
     },
     {
-      "id": "sig_2026-09-06_005",
-      "level": 1,
+      "id": "tag_2026-09-07_004",
+      "level": 2,
       "content": "NVIDIA DLSS5 助游戏",
-      "summary": "NVIDIA 宣布 DLSS 5 技术应用于 NBA 2K27，带来更逼真的光照",
-      "source": "https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list/",
-      "date": "2026-09-06",
-      "signal_index": 4
+      "date": "2026-09-07"
     },
     {
-      "id": "sig_2026-09-06_006",
-      "level": 1,
+      "id": "tag_2026-09-07_005",
+      "level": 2,
       "content": "字节发机器人导航",
-      "summary": "字节跳动发布 Astra 双模型架构，旨在革新复杂室内环境下的自主机器人导航能力",
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-09-06",
-      "signal_index": 6
+      "date": "2026-09-07"
     },
     {
-      "id": "sig_2026-09-06_007",
-      "level": 1,
+      "id": "tag_2026-09-07_006",
+      "level": 2,
       "content": "Adaption 自动生成数据",
-      "summary": "Adaption Labs 推出新工具，仅需任务描述即可生成结构化训练数据集，无",
-      "source": "https://www.marktechpost.com/2026/09/04/datasets-invent-api-training-data-without-labeling-adaptive-data-autoscientist/",
-      "date": "2026-09-06",
-      "signal_index": 8
+      "date": "2026-09-07"
     },
     {
-      "id": "sig_2026-09-06_008",
-      "level": 1,
+      "id": "tag_2026-09-07_007",
+      "level": 2,
       "content": "Hermes 一键布本地模",
-      "summary": "Nous Research 在 Hermes Desktop 中实现一键本地模型",
-      "source": "https://www.marktechpost.com/2026/09/05/nous-research-hermes-desktop-one-click-local-model-setup/",
-      "date": "2026-09-06",
-      "signal_index": 10
+      "date": "2026-09-07"
     },
     {
-      "id": "sig_2026-09-06_009",
-      "level": 1,
+      "id": "tag_2026-09-07_008",
+      "level": 2,
       "content": "英伟达推本地 AI 电脑",
-      "summary": "NVIDIA 在 IFA 2026 联合微软推进本地 AI，推出新款 RTX S",
-      "source": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
-      "date": "2026-09-06",
-      "signal_index": 5
+      "date": "2026-09-07"
     },
     {
       "id": "tag_2026-09-06_001",
@@ -95,50 +143,50 @@
       "date": "2026-09-06"
     },
     {
-      "id": "tag_2026-09-06_003",
-      "level": 2,
+      "id": "word_2026-09-06_003",
+      "level": 3,
       "content": "M&T 银行全面部署企业 AI",
       "date": "2026-09-06"
     },
     {
-      "id": "tag_2026-09-06_004",
-      "level": 2,
+      "id": "word_2026-09-06_004",
+      "level": 3,
       "content": "OneRail 用英伟达 AI 优…",
       "date": "2026-09-06"
     },
     {
-      "id": "tag_2026-09-06_005",
-      "level": 2,
+      "id": "word_2026-09-06_005",
+      "level": 3,
       "content": "解析多智能体故障归因",
       "date": "2026-09-06"
     },
     {
-      "id": "tag_2026-09-06_006",
-      "level": 2,
+      "id": "word_2026-09-06_006",
+      "level": 3,
       "content": "英伟达 IFA 推本地 AI 加速",
       "date": "2026-09-06"
     },
     {
-      "id": "tag_2026-09-06_007",
-      "level": 2,
+      "id": "word_2026-09-06_007",
+      "level": 3,
       "content": "OpenAI 投入十亿防御网络攻击",
       "date": "2026-09-06"
     },
     {
-      "id": "tag_2026-09-06_008",
-      "level": 2,
+      "id": "word_2026-09-06_008",
+      "level": 3,
       "content": "英伟达微软推本地 AI 加速方案",
       "date": "2026-09-06"
     },
     {
-      "id": "tag_2026-09-06_009",
-      "level": 2,
+      "id": "word_2026-09-06_009",
+      "level": 3,
       "content": "谷歌启动 Fairwind 网安计划",
       "date": "2026-09-06"
     },
     {
-      "id": "tag_2026-09-05_001",
-      "level": 2,
+      "id": "word_2026-09-05_001",
+      "level": 3,
       "content": "Legora 借 Astra 提效…",
       "date": "2026-09-05"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "恶意 Git 配置可诱导 AI 执…",
       "date": "2026-09-04"
-    },
-    {
-      "id": "word_2026-09-04_003",
-      "level": 3,
-      "content": "ChatGPT 助 ATV 巡回赛…",
-      "date": "2026-09-04"
-    },
-    {
-      "id": "word_2026-09-04_004",
-      "level": 3,
-      "content": "MIT 提出 SEAL 框架推动 …",
-      "date": "2026-09-04"
-    },
-    {
-      "id": "word_2026-09-04_005",
-      "level": 3,
-      "content": "Google 推出 Workspa…",
-      "date": "2026-09-04"
-    },
-    {
-      "id": "word_2026-09-04_006",
-      "level": 3,
-      "content": "ChatGPT 接入医疗数据",
-      "date": "2026-09-04"
-    },
-    {
-      "id": "word_2026-09-03_001",
-      "level": 3,
-      "content": "NVIDIA 联手 CrowdSt…",
-      "date": "2026-09-03"
-    },
-    {
-      "id": "word_2026-09-03_002",
-      "level": 3,
-      "content": "OpenAI 解析原生工作流",
-      "date": "2026-09-03"
-    },
-    {
-      "id": "word_2026-09-03_003",
-      "level": 3,
-      "content": "Anthropic 更新 Clau…",
-      "date": "2026-09-03"
-    },
-    {
-      "id": "word_2026-09-03_004",
-      "level": 3,
-      "content": "谷歌推出 Pics 图像工具",
-      "date": "2026-09-03"
     }
   ]
 }
