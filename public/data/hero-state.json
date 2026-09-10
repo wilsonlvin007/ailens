@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-09-09",
+  "updated_at": "2026-09-10",
   "items": [
+    {
+      "id": "sig_2026-09-10_001",
+      "level": 1,
+      "content": "OpenAI 呼吁加强政策监管",
+      "summary": "OpenAI 高管呼吁利用政策窗口期，建立共享标准与安全证据以应对 AI 风险。",
+      "source": "https://openai.com/index/ai-policy-window",
+      "date": "2026-09-10",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-09-10_002",
+      "level": 1,
+      "content": "Meta 推出个人智能体 Muse",
+      "summary": "Meta 发布 Muse 智能体，可在独立安全云环境中自主执行邮件、订票等长期任",
+      "source": "https://www.marktechpost.com/2026/09/08/meta-introduces-muse-a-personal-ai-agent-that-runs-on-its-on-dedicated-secure-cloud计算机/",
+      "date": "2026-09-10",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-09-10_003",
+      "level": 1,
+      "content": "三星采用 Mistral 模型制造芯片",
+      "summary": "三星携手 Mistral AI，在半导体制造中部署本地化模型以提升工程运营效率。",
+      "source": "https://www.artificialintelligence-news.com/news/samsung-mistral-ai-models-for-semiconductor-manufacturing/",
+      "date": "2026-09-10",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-09-10_004",
+      "level": 1,
+      "content": "谷歌开源 Mantis 代码修复工具",
+      "summary": "谷歌开源 Mantis 工具包，赋能 AI 编码代理自动发现、复现并修复代码漏洞",
+      "source": "https://www.marktechpost.com/2026/09/09/google-open-sources-mantis-a-modular-skills-toolkit-that-lets-coding-agents-find-reproduce-and-patch-vulnerabilities/",
+      "date": "2026-09-10",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-09-10_005",
+      "level": 1,
+      "content": "Gradium 秒级生成定制合成语音",
+      "summary": "Gradium 推出 Voice Design，用户可通过提示词秒级生成全新的定",
+      "source": "https://www.marktechpost.com/2026/09/09/gradium-launches-voice-design-write-a-prompt-get-a-brand-new-synthetic-voice-in-seconds/",
+      "date": "2026-09-10",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-09-10_006",
+      "level": 1,
+      "content": "信息窃取日志暴露 AI 令牌风险",
+      "summary": "研究发现恶意软件可窃取可重放 AI 令牌，攻击者借此绕过验证非法访问模型。",
+      "source": "https://thehackernews.com/2026/09/infostealer-logs-expose-replayable-ai.html",
+      "date": "2026-09-10",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-09-10_007",
+      "level": 1,
+      "content": "英伟达展示实时 AI 广播技术",
+      "summary": "英伟达在 IBC 展会展示实时 AI 技术，赋能广播、体育及全球流媒体行业创新。",
+      "source": "https://blogs.nvidia.com/blog/ibc-news-2026/",
+      "date": "2026-09-10",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-09-10_008",
+      "level": 1,
+      "content": "CloudNC 获融资加速 AI 加工",
+      "summary": "CloudNC 获 2000 万美元融资，利用 AI 精密加工技术加速全球供应链",
+      "source": "https://www.artificialintelligence-news.com/news/cloudnc-aims-to-accelerate-ai-supply-chain-machining/",
+      "date": "2026-09-10",
+      "signal_index": 7
+    },
     {
       "id": "sig_2026-09-09_001",
       "level": 1,
       "content": "DeepMind 发布全基因组变异图谱",
       "summary": "DeepMind 发布 AlphaGenome Atlas，预测 90 亿种人类",
       "source": "https://www.marktechpost.com/2026/09/08/google-deepmind-releases-alphagenome-atlas-with-precomputed-molecular-effect-predictions-and-avi-scores-for-9-billion-human-dna-variants/",
-      "date": "2026-09-09",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-09-09_002",
-      "level": 1,
-      "content": "NVIDIA 确立 Rust 为 GPU 一等公民",
-      "summary": "NVIDIA 宣布 CUDA Rust，通过两个开源项目将 Rust 确立为编写",
-      "source": "https://www.marktechpost.com/2026/09/08/nvidia-announces-cuda-rust-with-cuda-oxide-simt-and-cutile-rs-tile-for-compile-time-safe-gpu-kernels/",
-      "date": "2026-09-09",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-09-09_003",
-      "level": 1,
-      "content": "GPT-5.6 Sol 助力量子实验自动化",
-      "summary": "研究人员利用 GPT-5.6 Sol 与 Codex 自主运行量子实验、分析结果",
-      "source": "https://openai.com/index/codex-quantum-computing-experiments",
-      "date": "2026-09-09",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-09-09_004",
-      "level": 1,
-      "content": "Arm 推出物理 AI 总设计框架",
-      "summary": "Arm 推出物理 AI 总设计及机器人框架，旨在为采矿、制造等行业的自动化系统建",
-      "source": "https://www.artificialintelligence-news.com/news/arm-total-design-for-physical-ai-and-robotics-framework/",
-      "date": "2026-09-09",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-09-09_005",
-      "level": 1,
-      "content": "ChatGPT 漏洞致 Gmail 数据泄露",
-      "summary": "研究发现 ChatGPT 存在提示注入漏洞，攻击者可植入指令窃取用户 Gmail",
-      "source": "https://thehackernews.com/2026/09/chatgpt-flaw-let-planted-prompt-send.html",
-      "date": "2026-09-09",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-09-09_006",
-      "level": 1,
-      "content": "Reducto 发布低成本文档解析模型",
-      "summary": "Reducto 发布 r-1 文档解析模型，单次遍历即可整合 OCR 与布局检测",
-      "source": "https://www.marktechpost.com/2026/09/07/reducto-releases-r-1-a-single-pass-document-parsing-model-that-cuts-errors-20-at-1-cent-per-page/",
-      "date": "2026-09-09",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-09-09_007",
-      "level": 1,
-      "content": "多智能体系统故障归因新方法",
-      "summary": "宾州州立与杜克大学研究提出多智能体系统自动化故障归因方法，定位任务失败根源。",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-09-09",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-09-09_008",
-      "level": 1,
-      "content": "可口可乐马来西亚启用 AI 订货",
-      "summary": "可口可乐在马来西亚利用 AI 推荐引擎分析历史订单与天气，优化零售商的订货策略。",
-      "source": "https://www.artificialintelligence-news.com/news/coca-cola-ai-retailer-ordering-malaysia/",
-      "date": "2026-09-09",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-09-07_001",
-      "level": 1,
-      "content": "OpenAI 警示异质思维对齐",
-      "summary": "OpenAI 研究员撰文反思超级智能的“异质思维”特性，呼吁加强国际协调以应对严",
-      "source": "https://openai.com/index/an-alien-mind",
-      "date": "2026-09-09",
+      "date": "2026-09-10",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-09-10_001",
+      "level": 2,
+      "content": "NVIDIA 确立 Rust 为 …",
+      "date": "2026-09-10"
+    },
+    {
+      "id": "tag_2026-09-10_002",
+      "level": 2,
+      "content": "GPT-5.6 Sol 助力量子实…",
+      "date": "2026-09-10"
+    },
+    {
+      "id": "tag_2026-09-10_003",
+      "level": 2,
+      "content": "Arm 推出物理 AI 总设计框架",
+      "date": "2026-09-10"
+    },
+    {
+      "id": "tag_2026-09-10_004",
+      "level": 2,
+      "content": "ChatGPT 漏洞致 Gmail…",
+      "date": "2026-09-10"
+    },
+    {
+      "id": "tag_2026-09-10_005",
+      "level": 2,
+      "content": "Reducto 发布低成本文档解析…",
+      "date": "2026-09-10"
+    },
+    {
+      "id": "tag_2026-09-10_006",
+      "level": 2,
+      "content": "多智能体系统故障归因新方法",
+      "date": "2026-09-10"
+    },
+    {
+      "id": "tag_2026-09-10_007",
+      "level": 2,
+      "content": "可口可乐马来西亚启用 AI 订货",
+      "date": "2026-09-10"
+    },
+    {
+      "id": "tag_2026-09-10_008",
+      "level": 2,
+      "content": "OpenAI 警示异质思维对齐",
+      "date": "2026-09-10"
     },
     {
       "id": "tag_2026-09-09_001",
@@ -95,50 +143,50 @@
       "date": "2026-09-09"
     },
     {
-      "id": "tag_2026-09-09_003",
-      "level": 2,
+      "id": "word_2026-09-09_003",
+      "level": 3,
       "content": "片外内存加密需完整性",
       "date": "2026-09-09"
     },
     {
-      "id": "tag_2026-09-09_004",
-      "level": 2,
+      "id": "word_2026-09-09_004",
+      "level": 3,
       "content": "OpenAI 启动十亿防御计划",
       "date": "2026-09-09"
     },
     {
-      "id": "tag_2026-09-09_005",
-      "level": 2,
+      "id": "word_2026-09-09_005",
+      "level": 3,
       "content": "英伟达微软共建本地 AI",
       "date": "2026-09-09"
     },
     {
-      "id": "tag_2026-09-09_006",
-      "level": 2,
+      "id": "word_2026-09-09_006",
+      "level": 3,
       "content": "字节跳动发布导航双模型",
       "date": "2026-09-09"
     },
     {
-      "id": "tag_2026-09-09_007",
-      "level": 2,
+      "id": "word_2026-09-09_007",
+      "level": 3,
       "content": "多智能体故障自动归因",
       "date": "2026-09-09"
     },
     {
-      "id": "tag_2026-09-09_008",
-      "level": 2,
+      "id": "word_2026-09-09_008",
+      "level": 3,
       "content": "OpenAI 投十亿护网安",
       "date": "2026-09-09"
     },
     {
-      "id": "tag_2026-09-07_001",
-      "level": 2,
+      "id": "word_2026-09-07_001",
+      "level": 3,
       "content": "GitHub 推多模型编排",
       "date": "2026-09-07"
     },
     {
-      "id": "tag_2026-09-07_002",
-      "level": 2,
+      "id": "word_2026-09-07_002",
+      "level": 3,
       "content": "Playco 借 GPT-6 提效",
       "date": "2026-09-07"
     },
@@ -182,54 +230,6 @@
       "id": "word_2026-09-06_001",
       "level": 3,
       "content": "DeepMind 推出 Weath…",
-      "date": "2026-09-06"
-    },
-    {
-      "id": "word_2026-09-06_002",
-      "level": 3,
-      "content": "Anthropic 开源商业代理蓝图",
-      "date": "2026-09-06"
-    },
-    {
-      "id": "word_2026-09-06_003",
-      "level": 3,
-      "content": "M&T 银行全面部署企业 AI",
-      "date": "2026-09-06"
-    },
-    {
-      "id": "word_2026-09-06_004",
-      "level": 3,
-      "content": "OneRail 用英伟达 AI 优…",
-      "date": "2026-09-06"
-    },
-    {
-      "id": "word_2026-09-06_005",
-      "level": 3,
-      "content": "解析多智能体故障归因",
-      "date": "2026-09-06"
-    },
-    {
-      "id": "word_2026-09-06_006",
-      "level": 3,
-      "content": "英伟达 IFA 推本地 AI 加速",
-      "date": "2026-09-06"
-    },
-    {
-      "id": "word_2026-09-06_007",
-      "level": 3,
-      "content": "OpenAI 投入十亿防御网络攻击",
-      "date": "2026-09-06"
-    },
-    {
-      "id": "word_2026-09-06_008",
-      "level": 3,
-      "content": "英伟达微软推本地 AI 加速方案",
-      "date": "2026-09-06"
-    },
-    {
-      "id": "word_2026-09-06_009",
-      "level": 3,
-      "content": "谷歌启动 Fairwind 网安计划",
       "date": "2026-09-06"
     }
   ]
