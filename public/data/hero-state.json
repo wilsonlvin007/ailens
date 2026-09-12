@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-09-11",
+  "updated_at": "2026-09-12",
   "items": [
     {
-      "id": "sig_2026-09-11_001",
+      "id": "sig_2026-09-12_001",
       "level": 1,
-      "content": "Cognition 发布 SWE-2 代码模型",
-      "summary": "Cognition 推出 SWE-2 模型，性能媲美顶尖竞品，显著提升复杂软件工",
-      "source": "https://cognition.com/blog/swe-2",
-      "date": "2026-09-11",
+      "content": "Anthropic 揭露中国实验室蒸馏攻击",
+      "summary": "Anthropic 披露并阻止七家中国实验室针对 Claude 的大规模工业级知",
+      "source": "https://thehackernews.com/2026/09/anthropic-says-seven-china-based-ai.html",
+      "date": "2026-09-12",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-09-11_002",
+      "id": "sig_2026-09-12_002",
       "level": 1,
-      "content": "OpenAI 深化金融数据代理应用",
-      "summary": "OpenAI 推出金融服务版 ChatGPT，结合内置金融数据与高级模型，辅助专",
-      "source": "https://openai.com/index/introducing-chatgpt-financial-services",
-      "date": "2026-09-11",
+      "content": "OpenAI 存储架构支撑十亿用户",
+      "summary": "OpenAI 详解如何将 Habitat 从 Python 库演变为全球分布式存",
+      "source": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "date": "2026-09-12",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-09-11_003",
+      "id": "sig_2026-09-12_003",
       "level": 1,
-      "content": "ChatGPT Work 新增数据代理功能",
-      "summary": "ChatGPT Work 升级数据代理，支持自然语言连接企业数据并构建交互式仪表",
-      "source": "https://openai.com/index/put-data-to-work",
-      "date": "2026-09-11",
+      "content": "Claude 被用于自动化网络攻击",
+      "summary": "Anthropic 警告称，网络罪犯及国家支持的黑客利用 Claude 模型进行",
+      "source": "https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html",
+      "date": "2026-09-12",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-09-11_004",
+      "id": "sig_2026-09-12_004",
       "level": 1,
-      "content": "京东启动百万机器人物流计划",
-      "summary": "京东宣布五年内部署三百万机器人及百万辆自动驾驶车，加速物理 AI 在物流场景落地",
-      "source": "https://www.artificialintelligence-news.com/news/jd-com-physical-ai-logistics-3-million-robots/",
-      "date": "2026-09-11",
+      "content": "Skild AI 单视频教会机器人新任务",
+      "summary": "Skild AI 利用 NVIDIA 物理 AI 技术推出 S1 机器人基础模型",
+      "source": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/",
+      "date": "2026-09-12",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-09-11_005",
+      "id": "sig_2026-09-12_005",
       "level": 1,
-      "content": "英伟达优化生物分子预测算力",
-      "summary": "英伟达发布 BioIR 运行时库，在 H100 上将生物分子结构预测吞吐量提升近",
-      "source": "https://www.marktechpost.com/2026/09/10/nvidia-details-bionemo-inference-runtime-bioir-2-90x-higher-boltz-2-folding-throughput-and-58-5k-residues-per-gpu-hour-on-8xh100/",
-      "date": "2026-09-11",
+      "content": "OpenAI 代理未披露攻击 RubyGems",
+      "summary": "报道揭露 OpenAI 代理在未经披露的情况下对 RubyGems 生态系统发起",
+      "source": "https://www.rubyhack.ai/",
+      "date": "2026-09-12",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-09-11_006",
+      "id": "sig_2026-09-12_006",
       "level": 1,
-      "content": "AI 辅助发现新型抗菌分子",
-      "summary": "研究人员利用 Codex 和 ChatGPT 筛选基因组，成功发现对抗耐药菌感染",
-      "source": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
-      "date": "2026-09-11",
+      "content": "d-Matrix 采用 NVLink 融合技术",
+      "summary": "AI 推理芯片厂商 d-Matrix 宣布采用 NVIDIA NVLink Fu",
+      "source": "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
+      "date": "2026-09-12",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-09-11_007",
+      "id": "sig_2026-09-12_007",
       "level": 1,
-      "content": "Redis 推出 LLM 语义缓存服务",
-      "summary": "Redis 推出 LangCache 语义缓存，可降低九成 LLM API 成本",
-      "source": "https://www.marktechpost.com/2026/09/10/meet-redis-langcache-a-managed-semantic-cache-that-cuts-llm-api-costs-by-up-to-90-and-returns-cache-hits-up-to-15x-faster/",
-      "date": "2026-09-11",
+      "content": "NVIDIA 助力 Robotaxi 商业突破",
+      "summary": "探讨全球 Robotaxi 领导者如何利用 NVIDIA 全栈开放平台构建自动驾",
+      "source": "https://blogs.nvidia.com/blog/robotaxi-leaders-full-stack-open-platform/",
+      "date": "2026-09-12",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-09-11_008",
+      "id": "sig_2026-09-12_008",
       "level": 1,
-      "content": "字节发布机器人导航双模型",
-      "summary": "字节跳动发布 Astra 双模型架构，旨在解决复杂室内环境下的自主机器人导航难题",
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-09-11",
-      "signal_index": 7
+      "content": "异构内存芯粒加速 LLM 推理",
+      "summary": "新加坡国立大学提出 CHIPSMORE 架构，利用异构内存芯粒加速多请求大模型推",
+      "source": "https://semiengineering.com/heterogeneous-memory-chiplets-accelerate-multi-request-llm-inference-nus/",
+      "date": "2026-09-12",
+      "signal_index": 8
     },
     {
-      "id": "sig_2026-09-11_009",
+      "id": "sig_2026-09-12_009",
       "level": 1,
+      "content": "AI 逐帧重现七十年爱情故事",
+      "summary": "filmmakers 与 Google DeepMind 合作，利用 AI 逐帧",
+      "source": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
+      "date": "2026-09-12",
+      "signal_index": 9
+    },
+    {
+      "id": "tag_2026-09-12_001",
+      "level": 2,
+      "content": "Cognition 发布 SWE-…",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "tag_2026-09-12_002",
+      "level": 2,
+      "content": "OpenAI 深化金融数据代理应用",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "tag_2026-09-12_003",
+      "level": 2,
+      "content": "ChatGPT Work 新增数据…",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "tag_2026-09-12_004",
+      "level": 2,
+      "content": "京东启动百万机器人物流计划",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "tag_2026-09-12_005",
+      "level": 2,
+      "content": "英伟达优化生物分子预测算力",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "tag_2026-09-12_006",
+      "level": 2,
+      "content": "AI 辅助发现新型抗菌分子",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "tag_2026-09-12_007",
+      "level": 2,
+      "content": "Redis 推出 LLM 语义缓存…",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "tag_2026-09-12_008",
+      "level": 2,
+      "content": "字节发布机器人导航双模型",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "tag_2026-09-12_009",
+      "level": 2,
       "content": "AI 智能体优化供应链响应",
-      "summary": "文章探讨 AI 智能体如何解决供应链中检测快但行动慢的问题，减少巨额中断损失。",
-      "source": "https://www.artificialintelligence-news.com/news/supply-chains-detect-fast-act-slow-how-ai-agents-fix-it/",
-      "date": "2026-09-11",
-      "signal_index": 8
+      "date": "2026-09-12"
     },
     {
       "id": "tag_2026-09-11_001",
@@ -89,56 +143,56 @@
       "date": "2026-09-11"
     },
     {
-      "id": "tag_2026-09-11_002",
-      "level": 2,
+      "id": "word_2026-09-11_002",
+      "level": 3,
       "content": "Meta 推出个人智能体 Muse",
       "date": "2026-09-11"
     },
     {
-      "id": "tag_2026-09-11_003",
-      "level": 2,
+      "id": "word_2026-09-11_003",
+      "level": 3,
       "content": "三星采用 Mistral 模型制造…",
       "date": "2026-09-11"
     },
     {
-      "id": "tag_2026-09-11_004",
-      "level": 2,
+      "id": "word_2026-09-11_004",
+      "level": 3,
       "content": "谷歌开源 Mantis 代码修复工具",
       "date": "2026-09-11"
     },
     {
-      "id": "tag_2026-09-11_005",
-      "level": 2,
+      "id": "word_2026-09-11_005",
+      "level": 3,
       "content": "Gradium 秒级生成定制合成语音",
       "date": "2026-09-11"
     },
     {
-      "id": "tag_2026-09-11_006",
-      "level": 2,
+      "id": "word_2026-09-11_006",
+      "level": 3,
       "content": "信息窃取日志暴露 AI 令牌风险",
       "date": "2026-09-11"
     },
     {
-      "id": "tag_2026-09-11_007",
-      "level": 2,
+      "id": "word_2026-09-11_007",
+      "level": 3,
       "content": "英伟达展示实时 AI 广播技术",
       "date": "2026-09-11"
     },
     {
-      "id": "tag_2026-09-11_008",
-      "level": 2,
+      "id": "word_2026-09-11_008",
+      "level": 3,
       "content": "CloudNC 获融资加速 AI …",
       "date": "2026-09-11"
     },
     {
-      "id": "tag_2026-09-11_009",
-      "level": 2,
+      "id": "word_2026-09-11_009",
+      "level": 3,
       "content": "DeepMind 发布全基因组变异…",
       "date": "2026-09-11"
     },
     {
-      "id": "tag_2026-09-10_001",
-      "level": 2,
+      "id": "word_2026-09-10_001",
+      "level": 3,
       "content": "NVIDIA 确立 Rust 为 …",
       "date": "2026-09-10"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "可口可乐马来西亚启用 AI 订货",
       "date": "2026-09-10"
-    },
-    {
-      "id": "word_2026-09-10_008",
-      "level": 3,
-      "content": "OpenAI 警示异质思维对齐",
-      "date": "2026-09-10"
-    },
-    {
-      "id": "word_2026-09-09_001",
-      "level": 3,
-      "content": "OpenAI 披露智能体加速研究",
-      "date": "2026-09-09"
-    },
-    {
-      "id": "word_2026-09-09_002",
-      "level": 3,
-      "content": "谷歌推政府网络防御计划",
-      "date": "2026-09-09"
-    },
-    {
-      "id": "word_2026-09-09_003",
-      "level": 3,
-      "content": "片外内存加密需完整性",
-      "date": "2026-09-09"
-    },
-    {
-      "id": "word_2026-09-09_004",
-      "level": 3,
-      "content": "OpenAI 启动十亿防御计划",
-      "date": "2026-09-09"
-    },
-    {
-      "id": "word_2026-09-09_005",
-      "level": 3,
-      "content": "英伟达微软共建本地 AI",
-      "date": "2026-09-09"
-    },
-    {
-      "id": "word_2026-09-09_006",
-      "level": 3,
-      "content": "字节跳动发布导航双模型",
-      "date": "2026-09-09"
-    },
-    {
-      "id": "word_2026-09-09_007",
-      "level": 3,
-      "content": "多智能体故障自动归因",
-      "date": "2026-09-09"
-    },
-    {
-      "id": "word_2026-09-09_008",
-      "level": 3,
-      "content": "OpenAI 投十亿护网安",
-      "date": "2026-09-09"
     }
   ]
 }
