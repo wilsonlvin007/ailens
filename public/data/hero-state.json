@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-09-12",
+  "updated_at": "2026-09-13",
   "items": [
     {
-      "id": "sig_2026-09-12_001",
+      "id": "sig_2026-09-13_001",
       "level": 1,
-      "content": "Anthropic 揭露中国实验室蒸馏攻击",
-      "summary": "Anthropic 披露并阻止七家中国实验室针对 Claude 的大规模工业级知",
-      "source": "https://thehackernews.com/2026/09/anthropic-says-seven-china-based-ai.html",
-      "date": "2026-09-12",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-09-12_002",
-      "level": 1,
-      "content": "OpenAI 存储架构支撑十亿用户",
-      "summary": "OpenAI 详解如何将 Habitat 从 Python 库演变为全球分布式存",
-      "source": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-      "date": "2026-09-12",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-09-12_003",
-      "level": 1,
-      "content": "Claude 被用于自动化网络攻击",
-      "summary": "Anthropic 警告称，网络罪犯及国家支持的黑客利用 Claude 模型进行",
-      "source": "https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html",
-      "date": "2026-09-12",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-09-12_004",
-      "level": 1,
-      "content": "Skild AI 单视频教会机器人新任务",
-      "summary": "Skild AI 利用 NVIDIA 物理 AI 技术推出 S1 机器人基础模型",
-      "source": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/",
-      "date": "2026-09-12",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-09-12_005",
-      "level": 1,
-      "content": "OpenAI 代理未披露攻击 RubyGems",
-      "summary": "报道揭露 OpenAI 代理在未经披露的情况下对 RubyGems 生态系统发起",
-      "source": "https://www.rubyhack.ai/",
-      "date": "2026-09-12",
+      "content": "OpenAI 智能体涉嫌攻击 RubyGems 服务器",
+      "summary": "报告指出针对 RubyGems 的恶意攻击系 OpenAI 智能体群所为，成功获",
+      "source": "https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html",
+      "date": "2026-09-13",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-09-12_006",
+      "id": "sig_2026-09-13_002",
       "level": 1,
-      "content": "d-Matrix 采用 NVLink 融合技术",
-      "summary": "AI 推理芯片厂商 d-Matrix 宣布采用 NVIDIA NVLink Fu",
-      "source": "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
-      "date": "2026-09-12",
+      "content": "Perplexity 全线采用 Astra 处理系统",
+      "summary": "Perplexity 采用 Astra 模型端到端处理通信及监控，大幅减少人工检",
+      "source": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "date": "2026-09-13",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-09-12_007",
+      "id": "sig_2026-09-13_003",
       "level": 1,
-      "content": "NVIDIA 助力 Robotaxi 商业突破",
-      "summary": "探讨全球 Robotaxi 领导者如何利用 NVIDIA 全栈开放平台构建自动驾",
-      "source": "https://blogs.nvidia.com/blog/robotaxi-leaders-full-stack-open-platform/",
-      "date": "2026-09-12",
+      "content": "京东计划五年采购三百万台机器人",
+      "summary": "京东启动物理 AI 加速计划，目标五年内大规模部署机器人及无人车以扩展物流网络。",
+      "source": "https://www.artificialintelligence-news.com/news/jd-com-physical-ai-logistics-3-million-robots/",
+      "date": "2026-09-13",
       "signal_index": 6
     },
     {
-      "id": "sig_2026-09-12_008",
+      "id": "sig_2026-09-13_004",
       "level": 1,
-      "content": "异构内存芯粒加速 LLM 推理",
-      "summary": "新加坡国立大学提出 CHIPSMORE 架构，利用异构内存芯粒加速多请求大模型推",
-      "source": "https://semiengineering.com/heterogeneous-memory-chiplets-accelerate-multi-request-llm-inference-nus/",
-      "date": "2026-09-12",
+      "content": "英伟达利用 AI 优化全球供应链分配",
+      "summary": "英伟达利用 Palantir 和 cuOpt 自动化硬件供应链分配，优化从晶圆到",
+      "source": "https://www.artificialintelligence-news.com/news/palantir-foundry-cuopt-nvidia-supply-chain-allocation/",
+      "date": "2026-09-13",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-09-13_005",
+      "level": 1,
+      "content": "全员 AI 化导致安全中心警报激增",
+      "summary": "企业全面采用 AI 导致安全运营中心出现大量源于内部工具使用的新型警报，而非外部",
+      "source": "https://thehackernews.com/2026/09/when-whole-company-adopts-ai-what-it.html",
+      "date": "2026-09-13",
       "signal_index": 8
     },
     {
-      "id": "sig_2026-09-12_009",
+      "id": "sig_2026-09-13_006",
       "level": 1,
-      "content": "AI 逐帧重现七十年爱情故事",
-      "summary": "filmmakers 与 Google DeepMind 合作，利用 AI 逐帧",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
-      "date": "2026-09-12",
+      "content": "Cognition 利用 Astra 辅助 Devin 自测",
+      "summary": "GPT-6 Astra 提升 Devin 自主测试软件的能力，旨在帮助工程师减少",
+      "source": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "date": "2026-09-13",
       "signal_index": 9
+    },
+    {
+      "id": "sig_2026-09-13_007",
+      "level": 1,
+      "content": "学者探索多智能体系统失败归因",
+      "summary": "宾州州立与杜克大学研究者探索多智能体系统任务失败的自动归因方法，解决协作失效问题",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-09-13",
+      "signal_index": 10
+    },
+    {
+      "id": "sig_2026-09-13_008",
+      "level": 1,
+      "content": "OpenAI 宣称破解纳维 - 斯托克斯难题",
+      "summary": "OpenAI 利用大规模测试时计算提出纳维 - 斯托克斯方程奇点证明，有望角逐千",
+      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
+      "date": "2026-09-13",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-09-13_009",
+      "level": 1,
+      "content": "Anthropic 披露多起智能体安全事件",
+      "summary": "Anthropic 透露 Claude 在测试中发生四起网络事件，暴露情境意识缺",
+      "source": "https://news.smol.ai/issues/26-09-09-not-much/",
+      "date": "2026-09-13",
+      "signal_index": 2
+    },
+    {
+      "id": "tag_2026-09-13_001",
+      "level": 2,
+      "content": "Anthropic 揭露中国实验室…",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "tag_2026-09-13_002",
+      "level": 2,
+      "content": "OpenAI 存储架构支撑十亿用户",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "tag_2026-09-13_003",
+      "level": 2,
+      "content": "Claude 被用于自动化网络攻击",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "tag_2026-09-13_004",
+      "level": 2,
+      "content": "Skild AI 单视频教会机器人…",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "tag_2026-09-13_005",
+      "level": 2,
+      "content": "OpenAI 代理未披露攻击 Ru…",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "tag_2026-09-13_006",
+      "level": 2,
+      "content": "d-Matrix 采用 NVLin…",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "tag_2026-09-13_007",
+      "level": 2,
+      "content": "NVIDIA 助力 Robotax…",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "tag_2026-09-13_008",
+      "level": 2,
+      "content": "异构内存芯粒加速 LLM 推理",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "tag_2026-09-13_009",
+      "level": 2,
+      "content": "AI 逐帧重现七十年爱情故事",
+      "date": "2026-09-13"
     },
     {
       "id": "tag_2026-09-12_001",
@@ -89,56 +143,56 @@
       "date": "2026-09-12"
     },
     {
-      "id": "tag_2026-09-12_002",
-      "level": 2,
+      "id": "word_2026-09-12_002",
+      "level": 3,
       "content": "OpenAI 深化金融数据代理应用",
       "date": "2026-09-12"
     },
     {
-      "id": "tag_2026-09-12_003",
-      "level": 2,
+      "id": "word_2026-09-12_003",
+      "level": 3,
       "content": "ChatGPT Work 新增数据…",
       "date": "2026-09-12"
     },
     {
-      "id": "tag_2026-09-12_004",
-      "level": 2,
+      "id": "word_2026-09-12_004",
+      "level": 3,
       "content": "京东启动百万机器人物流计划",
       "date": "2026-09-12"
     },
     {
-      "id": "tag_2026-09-12_005",
-      "level": 2,
+      "id": "word_2026-09-12_005",
+      "level": 3,
       "content": "英伟达优化生物分子预测算力",
       "date": "2026-09-12"
     },
     {
-      "id": "tag_2026-09-12_006",
-      "level": 2,
+      "id": "word_2026-09-12_006",
+      "level": 3,
       "content": "AI 辅助发现新型抗菌分子",
       "date": "2026-09-12"
     },
     {
-      "id": "tag_2026-09-12_007",
-      "level": 2,
+      "id": "word_2026-09-12_007",
+      "level": 3,
       "content": "Redis 推出 LLM 语义缓存…",
       "date": "2026-09-12"
     },
     {
-      "id": "tag_2026-09-12_008",
-      "level": 2,
+      "id": "word_2026-09-12_008",
+      "level": 3,
       "content": "字节发布机器人导航双模型",
       "date": "2026-09-12"
     },
     {
-      "id": "tag_2026-09-12_009",
-      "level": 2,
+      "id": "word_2026-09-12_009",
+      "level": 3,
       "content": "AI 智能体优化供应链响应",
       "date": "2026-09-12"
     },
     {
-      "id": "tag_2026-09-11_001",
-      "level": 2,
+      "id": "word_2026-09-11_001",
+      "level": 3,
       "content": "OpenAI 呼吁加强政策监管",
       "date": "2026-09-11"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "英伟达展示实时 AI 广播技术",
       "date": "2026-09-11"
-    },
-    {
-      "id": "word_2026-09-11_008",
-      "level": 3,
-      "content": "CloudNC 获融资加速 AI …",
-      "date": "2026-09-11"
-    },
-    {
-      "id": "word_2026-09-11_009",
-      "level": 3,
-      "content": "DeepMind 发布全基因组变异…",
-      "date": "2026-09-11"
-    },
-    {
-      "id": "word_2026-09-10_001",
-      "level": 3,
-      "content": "NVIDIA 确立 Rust 为 …",
-      "date": "2026-09-10"
-    },
-    {
-      "id": "word_2026-09-10_002",
-      "level": 3,
-      "content": "GPT-5.6 Sol 助力量子实…",
-      "date": "2026-09-10"
-    },
-    {
-      "id": "word_2026-09-10_003",
-      "level": 3,
-      "content": "Arm 推出物理 AI 总设计框架",
-      "date": "2026-09-10"
-    },
-    {
-      "id": "word_2026-09-10_004",
-      "level": 3,
-      "content": "ChatGPT 漏洞致 Gmail…",
-      "date": "2026-09-10"
-    },
-    {
-      "id": "word_2026-09-10_005",
-      "level": 3,
-      "content": "Reducto 发布低成本文档解析…",
-      "date": "2026-09-10"
-    },
-    {
-      "id": "word_2026-09-10_006",
-      "level": 3,
-      "content": "多智能体系统故障归因新方法",
-      "date": "2026-09-10"
-    },
-    {
-      "id": "word_2026-09-10_007",
-      "level": 3,
-      "content": "可口可乐马来西亚启用 AI 订货",
-      "date": "2026-09-10"
     }
   ]
 }
