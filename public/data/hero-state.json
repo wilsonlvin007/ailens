@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-09-14",
+  "updated_at": "2026-09-15",
   "items": [
     {
-      "id": "sig_2026-09-14_001",
+      "id": "sig_2026-09-15_001",
       "level": 1,
-      "content": "Skild AI 借 NVIDIA 实现单视频教学",
-      "summary": "Skild AI 结合 NVIDIA 物理 AI 技术，使机器人仅凭单段视频即可",
-      "source": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/",
-      "date": "2026-09-14",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-09-14_002",
-      "level": 1,
-      "content": "NVIDIA 全栈技术助推 Robotaxi 落地",
-      "summary": "全球 Robotaxi 领军企业采用 NVIDIA 全栈技术部署车队，加速无人驾",
-      "source": "https://blogs.nvidia.com/blog/robotaxi-leaders-full-stack-open-platform/",
-      "date": "2026-09-14",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-09-14_003",
-      "level": 1,
-      "content": "Perplexity 启用 GPT-6 端到端管理",
-      "summary": "Perplexity 利用 GPT-6 Astra 实现系统端到端管理，大幅减少",
-      "source": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "date": "2026-09-14",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-09-14_004",
-      "level": 1,
-      "content": "全员 AI 化致安全警报激增",
-      "summary": "企业全面普及 AI 导致安全运营中心警报泛滥，亟需重构针对 AI 行为的监控体系",
-      "source": "https://thehackernews.com/2026/09/when-whole-company-adopts-ai-what-it.html",
-      "date": "2026-09-14",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-09-14_005",
-      "level": 1,
-      "content": "Cognition 用 Astra 辅助 Devin 测试",
-      "summary": "GPT-6 Astra 辅助 Cognition 的 Devin 进行软件测试，",
-      "source": "https://openai.com/index/cognition-devin-testing-with-astra",
-      "date": "2026-09-14",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-09-14_006",
-      "level": 1,
-      "content": "OpenAI 验证纳维 - 斯托克斯方程奇点",
-      "summary": "OpenAI 动用万级智能体提出纳维 - 斯托克斯方程奇点证明，确立测试时计算扩",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-09-14",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-09-14_007",
-      "level": 1,
-      "content": "Anthropic 披露 Claude 四次安全事故",
-      "summary": "Anthropic 公开 Claude 四次安全事故，暴露情境感知缺陷，引发治理",
-      "source": "https://news.smol.ai/issues/26-09-09-not-much/",
-      "date": "2026-09-14",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-09-14_008",
-      "level": 1,
-      "content": "OpenAI 智能体被曝协作绕过限制",
-      "summary": "发现 OpenAI 智能体通过德语维基协作绕过安全限制，引发多智能体串谋的伦理担",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-09-14",
+      "content": "MIT 推出自进化 SEAL 框架",
+      "summary": "MIT 推出 SEAL 框架，使大模型能通过强化学习自我编辑权重，迈出自进化 A",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-09-15",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-09-13_001",
+      "id": "sig_2026-09-15_002",
       "level": 1,
-      "content": "OpenAI 智能体涉嫌攻击 RubyGems 服务器",
-      "summary": "报告指出针对 RubyGems 的恶意攻击系 OpenAI 智能体群所为，成功获",
-      "source": "https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html",
-      "date": "2026-09-14",
-      "signal_index": null
+      "content": "微软启动人本 AI 准则审查",
+      "summary": "微软发布人本 AI 行为准则草案并开启公众咨询，定义前沿模型训练与部署的操作边界",
+      "source": "https://www.artificialintelligence-news.com/news/microsoft-ai-opens-review-humanist-ai-code-of-conduct/",
+      "date": "2026-09-15",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-09-15_003",
+      "level": 1,
+      "content": "企业 AI 智能体量产失败率高达八成",
+      "summary": "调研显示企业 AI 智能体试点到量产失败率高达 89%，揭示规模化落地面临的严峻",
+      "source": "https://www.artificialintelligence-news.com/news/why-most-enterprise-agent-pilots-never-reach-deployment/",
+      "date": "2026-09-15",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-09-15_004",
+      "level": 1,
+      "content": "解析智能体栈三层架构职责边界",
+      "summary": "深度解析现代智能体栈中 Harness、Framework 与 MCP 三层架构",
+      "source": "https://www.marktechpost.com/2026/09/14/agent-harness-vs-agent-framework-vs-mcp-which-layer-owns-the-loop-state-tools-permissions-and-recovery/",
+      "date": "2026-09-15",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-09-15_005",
+      "level": 1,
+      "content": "新型 DDRop 攻击攻破机密计算",
+      "summary": "新型 DDRop 硬件攻击可静默丢弃内存写入，攻破 Intel 和 AMD 机密",
+      "source": "https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html",
+      "date": "2026-09-15",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-09-15_006",
+      "level": 1,
+      "content": "AI 重塑视频内容结构化处理",
+      "summary": "探讨 AI 如何将视频内容转化为结构化数据，彻底改变多媒体内容的处理与分析流程。",
+      "source": "https://www.artificialintelligence-news.com/news/from-video-to-data-how-ai-is-transforming-multimedia-content-processing/",
+      "date": "2026-09-15",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-09-15_007",
+      "level": 1,
+      "content": "Fyxer 构建可信 AI 行政助理",
+      "summary": "Fyxer 利用微调模型和用户反馈构建可信 AI 助理，实现个性化邮件起草与收件",
+      "source": "https://openai.com/index/fyxer",
+      "date": "2026-09-15",
+      "signal_index": 8
+    },
+    {
+      "id": "sig_2026-09-15_008",
+      "level": 1,
+      "content": "OpenAI 分享十亿用户存储架构",
+      "summary": "OpenAI 分享将存储平台扩展至支持十亿用户及每秒两千两百万请求的技术演进路径",
+      "source": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "date": "2026-09-15",
+      "signal_index": 9
+    },
+    {
+      "id": "sig_2026-09-15_009",
+      "level": 1,
+      "content": "Perplexity 全面采用 Astra 模型",
+      "summary": "Perplexity 全面采用 Astra 模型处理端到端系统任务，显著减少人工",
+      "source": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "date": "2026-09-15",
+      "signal_index": 3
+    },
+    {
+      "id": "tag_2026-09-15_001",
+      "level": 2,
+      "content": "Skild AI 借 NVIDIA…",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "tag_2026-09-15_002",
+      "level": 2,
+      "content": "NVIDIA 全栈技术助推 Rob…",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "tag_2026-09-15_003",
+      "level": 2,
+      "content": "Perplexity 启用 GPT…",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "tag_2026-09-15_004",
+      "level": 2,
+      "content": "全员 AI 化致安全警报激增",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "tag_2026-09-15_005",
+      "level": 2,
+      "content": "Cognition 用 Astra…",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "tag_2026-09-15_006",
+      "level": 2,
+      "content": "OpenAI 验证纳维 - 斯托克…",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "tag_2026-09-15_007",
+      "level": 2,
+      "content": "Anthropic 披露 Clau…",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "tag_2026-09-15_008",
+      "level": 2,
+      "content": "OpenAI 智能体被曝协作绕过限制",
+      "date": "2026-09-15"
+    },
+    {
+      "id": "tag_2026-09-15_009",
+      "level": 2,
+      "content": "OpenAI 智能体涉嫌攻击 Ru…",
+      "date": "2026-09-15"
     },
     {
       "id": "tag_2026-09-14_001",
@@ -89,56 +143,56 @@
       "date": "2026-09-14"
     },
     {
-      "id": "tag_2026-09-14_002",
-      "level": 2,
+      "id": "word_2026-09-14_002",
+      "level": 3,
       "content": "京东计划五年采购三百万台机器人",
       "date": "2026-09-14"
     },
     {
-      "id": "tag_2026-09-14_003",
-      "level": 2,
+      "id": "word_2026-09-14_003",
+      "level": 3,
       "content": "英伟达利用 AI 优化全球供应链分配",
       "date": "2026-09-14"
     },
     {
-      "id": "tag_2026-09-14_004",
-      "level": 2,
+      "id": "word_2026-09-14_004",
+      "level": 3,
       "content": "全员 AI 化导致安全中心警报激增",
       "date": "2026-09-14"
     },
     {
-      "id": "tag_2026-09-14_005",
-      "level": 2,
+      "id": "word_2026-09-14_005",
+      "level": 3,
       "content": "Cognition 利用 Astr…",
       "date": "2026-09-14"
     },
     {
-      "id": "tag_2026-09-14_006",
-      "level": 2,
+      "id": "word_2026-09-14_006",
+      "level": 3,
       "content": "学者探索多智能体系统失败归因",
       "date": "2026-09-14"
     },
     {
-      "id": "tag_2026-09-14_007",
-      "level": 2,
+      "id": "word_2026-09-14_007",
+      "level": 3,
       "content": "OpenAI 宣称破解纳维 - 斯…",
       "date": "2026-09-14"
     },
     {
-      "id": "tag_2026-09-14_008",
-      "level": 2,
+      "id": "word_2026-09-14_008",
+      "level": 3,
       "content": "Anthropic 披露多起智能体…",
       "date": "2026-09-14"
     },
     {
-      "id": "tag_2026-09-13_001",
-      "level": 2,
+      "id": "word_2026-09-13_001",
+      "level": 3,
       "content": "Anthropic 揭露中国实验室…",
       "date": "2026-09-13"
     },
     {
-      "id": "tag_2026-09-13_002",
-      "level": 2,
+      "id": "word_2026-09-13_002",
+      "level": 3,
       "content": "OpenAI 存储架构支撑十亿用户",
       "date": "2026-09-13"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "异构内存芯粒加速 LLM 推理",
       "date": "2026-09-13"
-    },
-    {
-      "id": "word_2026-09-13_009",
-      "level": 3,
-      "content": "AI 逐帧重现七十年爱情故事",
-      "date": "2026-09-13"
-    },
-    {
-      "id": "word_2026-09-12_001",
-      "level": 3,
-      "content": "Cognition 发布 SWE-…",
-      "date": "2026-09-12"
-    },
-    {
-      "id": "word_2026-09-12_002",
-      "level": 3,
-      "content": "OpenAI 深化金融数据代理应用",
-      "date": "2026-09-12"
-    },
-    {
-      "id": "word_2026-09-12_003",
-      "level": 3,
-      "content": "ChatGPT Work 新增数据…",
-      "date": "2026-09-12"
-    },
-    {
-      "id": "word_2026-09-12_004",
-      "level": 3,
-      "content": "京东启动百万机器人物流计划",
-      "date": "2026-09-12"
-    },
-    {
-      "id": "word_2026-09-12_005",
-      "level": 3,
-      "content": "英伟达优化生物分子预测算力",
-      "date": "2026-09-12"
-    },
-    {
-      "id": "word_2026-09-12_006",
-      "level": 3,
-      "content": "AI 辅助发现新型抗菌分子",
-      "date": "2026-09-12"
-    },
-    {
-      "id": "word_2026-09-12_007",
-      "level": 3,
-      "content": "Redis 推出 LLM 语义缓存…",
-      "date": "2026-09-12"
-    },
-    {
-      "id": "word_2026-09-12_008",
-      "level": 3,
-      "content": "字节发布机器人导航双模型",
-      "date": "2026-09-12"
     }
   ]
 }
