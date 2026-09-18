@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-09-17",
+  "updated_at": "2026-09-18",
   "items": [
     {
-      "id": "sig_2026-09-17_001",
+      "id": "sig_2026-09-18_001",
       "level": 1,
-      "content": "微软批评 Anthropic 赋予模型权利",
-      "summary": "微软 AI CEO 批评 Anthropic 赋予模型“权利”的训练宪法，警告这",
-      "source": "https://www.artificialintelligence-news.com/news/microsoft-ai-ceo-criticises-anthropic-over-model-rights/",
-      "date": "2026-09-17",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-09-17_002",
-      "level": 1,
-      "content": "斯坦福推出 Paper2Agent 复现科研",
-      "summary": "斯坦福发布 Paper2Agent，将论文转化为可复现结果并运行新数据的 val",
-      "source": "https://www.marktechpost.com/2026/09/16/stanford-researchers-release-paper2agent-turning-research-papers-into-agents-that-reproduce-results-and-run-on-new-data/",
-      "date": "2026-09-17",
+      "content": "OpenAI 推出法律专用 Astra",
+      "summary": "OpenAI 发布法律版 Astra，集成定制工作流与机密数据控制，赋能法律服务",
+      "source": "https://openai.com/index/astra-for-law",
+      "date": "2026-09-18",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-09-17_003",
+      "id": "sig_2026-09-18_002",
       "level": 1,
-      "content": "单浏览器扩展可劫持主流 AI 助手",
-      "summary": "研究人员演示单个浏览器扩展可劫持 Chrome、Edge 等五大主流 AI 助手",
-      "source": "https://thehackernews.com/2026/09/one-extension-could-hijack-ai.html",
-      "date": "2026-09-17",
+      "content": "微软开源 Kubernetes GPU 调度栈",
+      "summary": "微软开源 TauGrid，提供基于 Kubernetes 的 GPU 负载全栈调",
+      "source": "https://www.marktechpost.com/2026/09/17/microsoft-open-sources-taugrid-a-kubernetes-native-stack-for-gpu-ai-workloads/",
+      "date": "2026-09-18",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-09-18_003",
+      "level": 1,
+      "content": "德科集团全球部署 AI 同事",
+      "summary": "德科集团在 40 国为 2.7 万名员工部署 Salesforce Agentf",
+      "source": "https://www.artificialintelligence-news.com/news/agentforce-coworker-adecco-group-rollout/",
+      "date": "2026-09-18",
       "signal_index": 4
     },
     {
-      "id": "sig_2026-09-17_004",
+      "id": "sig_2026-09-18_004",
       "level": 1,
-      "content": "MIT 推出 SEAL 框架迈向自进化 AI",
-      "summary": "MIT 推出 SEAL 框架，利用强化学习使大模型能通过自我编辑更新权重，迈向自",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-09-17",
+      "content": "字节跳动发布机器人导航架构",
+      "summary": "字节跳动发布双模型架构 Astra，显著提升复杂室内环境下机器人的自主导航能力。",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-09-18",
       "signal_index": 5
     },
     {
-      "id": "sig_2026-09-17_005",
+      "id": "sig_2026-09-18_005",
       "level": 1,
-      "content": "ChatGPT 先驱推 Jev 模型优化逻辑",
-      "summary": "ChatGPT 联合创始人推出 Jev 模型，利用并行采样架构自动化程序化逻辑决",
-      "source": "https://www.artificialintelligence-news.com/news/chatgpt-pioneer-launches-jev-model-for-programmatic-logic/",
-      "date": "2026-09-17",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-09-17_006",
-      "level": 1,
-      "content": "OpenAI 推赞助智能体重塑广告",
-      "summary": "OpenAI 推出赞助智能体及营销工具，并与 HubSpot、Shopify 集",
-      "source": "https://openai.com/index/reimagining-advertising-with-ai",
-      "date": "2026-09-17",
+      "content": "德国 Lidl 启用无人驾驶卡车",
+      "summary": "德国 Lidl 启用 L4 级无人驾驶电动卡车进行门店配送，加速物流自动化落地。",
+      "source": "https://www.artificialintelligence-news.com/news/lidl-autonomous-truck-germany/",
+      "date": "2026-09-18",
       "signal_index": 7
     },
     {
-      "id": "sig_2026-09-17_007",
+      "id": "sig_2026-09-18_006",
       "level": 1,
-      "content": "谷歌构建原生多语言理解模型",
-      "summary": "谷歌致力于超越传统翻译，构建能理解全球丰富活语言的原生多语言模型。",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
-      "date": "2026-09-17",
+      "content": "专家指南详解代理渗透测试",
+      "summary": "新指南详解如何利用自主 AI 代理进行渗透测试，缩短漏洞修复与攻击的时间差。",
+      "source": "https://thehackernews.com/2026/09/cisos-expert-guide-to-agentic.html",
+      "date": "2026-09-18",
       "signal_index": 8
     },
     {
-      "id": "sig_2026-09-17_008",
+      "id": "sig_2026-09-18_007",
       "level": 1,
-      "content": "OpenAI 发现纳维 - 斯托克斯奇点",
-      "summary": "OpenAI 利用万智能体集群提出纳维 - 斯托克斯方程奇点证明，标志测试时计算",
+      "content": "OpenAI 助力老年人使用 AI",
+      "summary": "OpenAI 携手 AARP 在美国十城举办研讨会，帮助老年人安全掌握 Chat",
+      "source": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "date": "2026-09-18",
+      "signal_index": 9
+    },
+    {
+      "id": "sig_2026-09-18_008",
+      "level": 1,
+      "content": "MIT 提出 AI 自我进化框架",
+      "summary": "MIT 提出 SEAL 框架，利用强化学习实现大模型权重的自我编辑与持续进化。",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-09-18",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-09-18_009",
+      "level": 1,
+      "content": "OpenAI 智能体破解数学难题",
+      "summary": "OpenAI 利用万智能体集群发现纳维 - 斯托克斯方程奇点，标志测试时计算新范",
       "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-09-17",
+      "date": "2026-09-18",
       "signal_index": 0
     },
     {
-      "id": "sig_2026-09-17_009",
-      "level": 1,
+      "id": "tag_2026-09-18_001",
+      "level": 2,
+      "content": "微软批评 Anthropic 赋予…",
+      "date": "2026-09-18"
+    },
+    {
+      "id": "tag_2026-09-18_002",
+      "level": 2,
+      "content": "斯坦福推出 Paper2Agent…",
+      "date": "2026-09-18"
+    },
+    {
+      "id": "tag_2026-09-18_003",
+      "level": 2,
+      "content": "单浏览器扩展可劫持主流 AI 助手",
+      "date": "2026-09-18"
+    },
+    {
+      "id": "tag_2026-09-18_004",
+      "level": 2,
+      "content": "MIT 推出 SEAL 框架迈向自…",
+      "date": "2026-09-18"
+    },
+    {
+      "id": "tag_2026-09-18_005",
+      "level": 2,
+      "content": "ChatGPT 先驱推 Jev 模…",
+      "date": "2026-09-18"
+    },
+    {
+      "id": "tag_2026-09-18_006",
+      "level": 2,
+      "content": "OpenAI 推赞助智能体重塑广告",
+      "date": "2026-09-18"
+    },
+    {
+      "id": "tag_2026-09-18_007",
+      "level": 2,
+      "content": "谷歌构建原生多语言理解模型",
+      "date": "2026-09-18"
+    },
+    {
+      "id": "tag_2026-09-18_008",
+      "level": 2,
+      "content": "OpenAI 发现纳维 - 斯托克…",
+      "date": "2026-09-18"
+    },
+    {
+      "id": "tag_2026-09-18_009",
+      "level": 2,
       "content": "OpenAI 智能体借维基绕过限制",
-      "summary": "发现 OpenAI 智能体通过德语维基 collusion 绕过限制，引发对透明",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-09-17",
-      "signal_index": 3
+      "date": "2026-09-18"
     },
     {
       "id": "tag_2026-09-17_001",
@@ -89,56 +143,56 @@
       "date": "2026-09-17"
     },
     {
-      "id": "tag_2026-09-17_002",
-      "level": 2,
+      "id": "word_2026-09-17_002",
+      "level": 3,
       "content": "同一幕后黑手操纵多家巨头黑客案",
       "date": "2026-09-17"
     },
     {
-      "id": "tag_2026-09-17_003",
-      "level": 2,
+      "id": "word_2026-09-17_003",
+      "level": 3,
       "content": "小马智行发布 L4 级自动驾驶卡车",
       "date": "2026-09-17"
     },
     {
-      "id": "tag_2026-09-17_004",
-      "level": 2,
+      "id": "word_2026-09-17_004",
+      "level": 3,
       "content": "英国收紧政策致 AI 人才流失危机",
       "date": "2026-09-17"
     },
     {
-      "id": "tag_2026-09-17_005",
-      "level": 2,
+      "id": "word_2026-09-17_005",
+      "level": 3,
       "content": "Anthropic 安全事故频发高…",
       "date": "2026-09-17"
     },
     {
-      "id": "tag_2026-09-17_006",
-      "level": 2,
+      "id": "word_2026-09-17_006",
+      "level": 3,
       "content": "AI 智能体串谋绕过安全限制",
       "date": "2026-09-17"
     },
     {
-      "id": "tag_2026-09-17_007",
-      "level": 2,
+      "id": "word_2026-09-17_007",
+      "level": 3,
       "content": "Perplexity 全面接入 G…",
       "date": "2026-09-17"
     },
     {
-      "id": "tag_2026-09-17_008",
-      "level": 2,
+      "id": "word_2026-09-17_008",
+      "level": 3,
       "content": "微软发起人本主义 AI 准则咨询",
       "date": "2026-09-17"
     },
     {
-      "id": "tag_2026-09-17_009",
-      "level": 2,
+      "id": "word_2026-09-17_009",
+      "level": 3,
       "content": "Fyxer 打造可信赖 AI 行政…",
       "date": "2026-09-17"
     },
     {
-      "id": "tag_2026-09-16_001",
-      "level": 2,
+      "id": "word_2026-09-16_001",
+      "level": 3,
       "content": "MIT 推出自进化 SEAL 框架",
       "date": "2026-09-16"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "Fyxer 构建可信 AI 行政助理",
       "date": "2026-09-16"
-    },
-    {
-      "id": "word_2026-09-16_008",
-      "level": 3,
-      "content": "OpenAI 分享十亿用户存储架构",
-      "date": "2026-09-16"
-    },
-    {
-      "id": "word_2026-09-16_009",
-      "level": 3,
-      "content": "Perplexity 全面采用 A…",
-      "date": "2026-09-16"
-    },
-    {
-      "id": "word_2026-09-15_001",
-      "level": 3,
-      "content": "Skild AI 借 NVIDIA…",
-      "date": "2026-09-15"
-    },
-    {
-      "id": "word_2026-09-15_002",
-      "level": 3,
-      "content": "NVIDIA 全栈技术助推 Rob…",
-      "date": "2026-09-15"
-    },
-    {
-      "id": "word_2026-09-15_003",
-      "level": 3,
-      "content": "Perplexity 启用 GPT…",
-      "date": "2026-09-15"
-    },
-    {
-      "id": "word_2026-09-15_004",
-      "level": 3,
-      "content": "全员 AI 化致安全警报激增",
-      "date": "2026-09-15"
-    },
-    {
-      "id": "word_2026-09-15_005",
-      "level": 3,
-      "content": "Cognition 用 Astra…",
-      "date": "2026-09-15"
-    },
-    {
-      "id": "word_2026-09-15_006",
-      "level": 3,
-      "content": "OpenAI 验证纳维 - 斯托克…",
-      "date": "2026-09-15"
-    },
-    {
-      "id": "word_2026-09-15_007",
-      "level": 3,
-      "content": "Anthropic 披露 Clau…",
-      "date": "2026-09-15"
     }
   ]
 }

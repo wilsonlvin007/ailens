@@ -84,38 +84,6 @@
       "collected_at": "2026-09-18T06:00:00+08:00"
     },
     {
-      "id": "2026-09-18-009",
-      "title": "字节跳动发布机器人导航架构",
-      "category": "hardware",
-      "importance": 3,
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "source_name": "Synced Review",
-      "summary": "字节跳动发布双模型架构 Astra，显著提升复杂室内环境下机器人的自主导航能力。",
-      "analysis": "字节跳动在机器人领域的进展表明，互联网大厂正试图将其在算法和数据上的优势延伸至物理世界。双模型架构巧妙平衡了全局规划与局部反应的需求，解决了长期困扰移动机器人的动态环境适应难题。这一技术若能在物流、家庭服务等场景大规模落地，将加速具身智能的商业化进程。这也意味着未来的竞争将不再局限于屏幕内的内容分发，而是扩展到对物理空间智能化的争夺。",
-      "tags": [
-        "机器人技术",
-        "自动驾驶",
-        "具身智能"
-      ],
-      "collected_at": "2026-09-18T06:00:00+08:00"
-    },
-    {
-      "id": "2026-09-18-010",
-      "title": "MIT 提出 AI 自我进化框架",
-      "category": "technology",
-      "importance": 3,
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "source_name": "Synced Review",
-      "summary": "MIT 提出 SEAL 框架，利用强化学习实现大模型权重的自我编辑与持续进化。",
-      "analysis": "SEAL 框架的提出触及了 AI 发展的圣杯：自我改进。传统模型训练依赖海量静态数据和昂贵算力，而 SEAL 尝试让模型通过强化学习动态调整自身权重，实现持续进化。虽然目前仍处于早期阶段，但这为摆脱数据枯竭困境提供了新思路。如果该技术路径可行，未来 AI 系统将具备类似生物的适应能力，能够根据实时反馈不断优化，这将彻底改变模型迭代的生命周期和维护模式。",
-      "tags": [
-        "学术研究",
-        "强化学习",
-        "自我进化"
-      ],
-      "collected_at": "2026-09-18T06:00:00+08:00"
-    },
-    {
       "id": "2026-09-18-011",
       "title": "德国 Lidl 启用无人驾驶卡车",
       "category": "application",
