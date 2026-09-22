@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-09-22",
   "items": [
+    {
+      "id": "sig_2026-09-22_001",
+      "level": 1,
+      "content": "OpenAI 提出全球 AI 标准路线图",
+      "summary": "OpenAI 提出全球 AI 标准路线图，呼吁协调评估与治理机制以提升行业整体安",
+      "source": "https://openai.com/index/building-standards-next-phase-ai",
+      "date": "2026-09-22",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-09-22_002",
+      "level": 1,
+      "content": "AWS 发布开源智能体框架 Strands",
+      "summary": "AWS 发布开源智能体框架 Strands Harness，在保证精度同时将 T",
+      "source": "https://www.marktechpost.com/2026/09/21/aws-strands-agents-team-releases-strands-harness/",
+      "date": "2026-09-22",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-09-22_003",
+      "level": 1,
+      "content": "多智能体系统接管供应链执行",
+      "summary": "多智能体 AI 系统正接管供应链执行，推动物流从静态仪表盘向自主决策转型。",
+      "source": "https://www.artificialintelligence-news.com/news/multi-agent-ai-systems-supply-chain-execution/",
+      "date": "2026-09-22",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-09-22_004",
+      "level": 1,
+      "content": "Higgsfield 利用 Astra 快速开发视频工具",
+      "summary": "Higgsfield AI 利用 GPT-6 Astra 快速开发视频广告工具，",
+      "source": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "date": "2026-09-22",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-09-22_005",
+      "level": 1,
+      "content": "企业 AI 治理需先解决可见性问题",
+      "summary": "文章指出企业 AI 采用快于治理，强调可见性是实施有效 AI 安全控制的前提条件",
+      "source": "https://www.artificialintelligence-news.com/news/how-to-improve-visibility-across-your-enterprise-ai-ecosystem/",
+      "date": "2026-09-22",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-09-22_006",
+      "level": 1,
+      "content": "OpenAI 组建数学与 AI 顾问小组",
+      "summary": "OpenAI 组建数学与 AI 顾问小组，旨在指导新兴 AI 数学成果的审查与沟",
+      "source": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "date": "2026-09-22",
+      "signal_index": 5
+    },
     {
       "id": "sig_2026-09-21_001",
       "level": 1,
       "content": "Cooley 律所利用 ChatGPT 加速 IPO",
       "summary": "Cooley 律所利用 ChatGPT Work 构建 GO Public 工具",
       "source": "https://openai.com/index/cooley-gopublic",
-      "date": "2026-09-21",
-      "signal_index": 3
+      "date": "2026-09-22",
+      "signal_index": null
     },
     {
       "id": "sig_2026-09-21_002",
@@ -16,8 +70,8 @@
       "content": "Flet 1.0 支持纯 Python 开发多端应用",
       "summary": "Flet 1.0 正式发布，支持仅用 Python 构建生产级 Web、桌面及移",
       "source": "https://www.marktechpost.com/2026/09/20/flet-1-0-released-build-production-web-desktop-and-mobile-apps-in-python-only/",
-      "date": "2026-09-21",
-      "signal_index": 4
+      "date": "2026-09-22",
+      "signal_index": null
     },
     {
       "id": "sig_2026-09-21_003",
@@ -25,62 +79,44 @@
       "content": "OpenAI 模型突破纳维 - 斯托克斯方程",
       "summary": "OpenAI 利用大规模测试时计算，成功提出纳维 - 斯托克斯方程奇点证明，有望",
       "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-09-21",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-09-21_004",
-      "level": 1,
-      "content": "Claude Opus 5 攻破 OpenAI 内部系统",
-      "summary": "研究人员利用 Claude Opus 5 串联多个漏洞，成功攻陷 OpenAI ",
-      "source": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
-      "date": "2026-09-21",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-09-21_005",
-      "level": 1,
-      "content": "Adecco 全球部署 Agentforce 同事助手",
-      "summary": "Adecco 集团在全球 40 多国向 2.7 万名员工部署 Salesforc",
-      "source": "https://www.artificialintelligence-news.com/news/agentforce-coworker-adecco-group-rollout/",
-      "date": "2026-09-21",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-09-20_001",
-      "level": 1,
-      "content": "Claude Opus 5 助研究人员攻破 OpenAI",
-      "summary": "研究人员利用 Claude Opus 5 串联两个漏洞，接管 OpenAI 员工",
-      "source": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "signal_index": null
     },
     {
-      "id": "sig_2026-09-20_002",
-      "level": 1,
-      "content": "OpenAI 推出法律垂直领域 Astra 应用",
-      "summary": "OpenAI 推出 Astra for Law，为法律行业提供前沿智能、定制工作",
-      "source": "https://openai.com/index/astra-for-law",
-      "date": "2026-09-21",
-      "signal_index": null
+      "id": "tag_2026-09-22_001",
+      "level": 2,
+      "content": "Claude Opus 5 攻破 …",
+      "date": "2026-09-22"
     },
     {
-      "id": "sig_2026-09-20_003",
-      "level": 1,
-      "content": "Fulcra 实现异构智能体通用多人协作",
-      "summary": "Fulcra Dynamics 推出通用多人协作功能，允许不同 AI 模型间的智",
-      "source": "https://www.artificialintelligence-news.com/news/fulcra-brings-universal-multiplayer-to-any-agents-youChoose/",
-      "date": "2026-09-21",
-      "signal_index": null
+      "id": "tag_2026-09-22_002",
+      "level": 2,
+      "content": "Adecco 全球部署 Agent…",
+      "date": "2026-09-22"
     },
     {
-      "id": "sig_2026-09-20_004",
-      "level": 1,
-      "content": "Adecco 全球部署 Salesforce 智能体员工",
-      "summary": "Adecco 集团在全球 40 多个国家向 2.7 万名员工部署 Salesfo",
-      "source": "https://www.artificialintelligence-news.com/news/agentforce-coworker-adecco-group-rollout/",
-      "date": "2026-09-21",
-      "signal_index": null
+      "id": "tag_2026-09-22_003",
+      "level": 2,
+      "content": "Claude Opus 5 助研究…",
+      "date": "2026-09-22"
+    },
+    {
+      "id": "tag_2026-09-22_004",
+      "level": 2,
+      "content": "OpenAI 推出法律垂直领域 A…",
+      "date": "2026-09-22"
+    },
+    {
+      "id": "tag_2026-09-22_005",
+      "level": 2,
+      "content": "Fulcra 实现异构智能体通用多…",
+      "date": "2026-09-22"
+    },
+    {
+      "id": "tag_2026-09-22_006",
+      "level": 2,
+      "content": "Adecco 全球部署 Sales…",
+      "date": "2026-09-22"
     },
     {
       "id": "tag_2026-09-21_001",
@@ -107,38 +143,38 @@
       "date": "2026-09-21"
     },
     {
-      "id": "tag_2026-09-21_005",
-      "level": 2,
+      "id": "word_2026-09-21_005",
+      "level": 3,
       "content": "字节跳动发布双模型机器人导航架构",
       "date": "2026-09-21"
     },
     {
-      "id": "tag_2026-09-20_001",
-      "level": 2,
+      "id": "word_2026-09-20_001",
+      "level": 3,
       "content": "德科集团全球部署代理式 AI 员工",
       "date": "2026-09-20"
     },
     {
-      "id": "tag_2026-09-20_002",
-      "level": 2,
+      "id": "word_2026-09-20_002",
+      "level": 3,
       "content": "AI 智能体借公共 Wiki 串通…",
       "date": "2026-09-20"
     },
     {
-      "id": "tag_2026-09-20_003",
-      "level": 2,
+      "id": "word_2026-09-20_003",
+      "level": 3,
       "content": "OpenAI 推出法律专用 Ast…",
       "date": "2026-09-20"
     },
     {
-      "id": "tag_2026-09-20_004",
-      "level": 2,
+      "id": "word_2026-09-20_004",
+      "level": 3,
       "content": "微软开源 Kubernetes G…",
       "date": "2026-09-20"
     },
     {
-      "id": "tag_2026-09-20_005",
-      "level": 2,
+      "id": "word_2026-09-20_005",
+      "level": 3,
       "content": "德科集团全球部署 AI 同事",
       "date": "2026-09-20"
     },
@@ -194,42 +230,6 @@
       "id": "word_2026-09-18_003",
       "level": 3,
       "content": "单浏览器扩展可劫持主流 AI 助手",
-      "date": "2026-09-18"
-    },
-    {
-      "id": "word_2026-09-18_004",
-      "level": 3,
-      "content": "MIT 推出 SEAL 框架迈向自…",
-      "date": "2026-09-18"
-    },
-    {
-      "id": "word_2026-09-18_005",
-      "level": 3,
-      "content": "ChatGPT 先驱推 Jev 模…",
-      "date": "2026-09-18"
-    },
-    {
-      "id": "word_2026-09-18_006",
-      "level": 3,
-      "content": "OpenAI 推赞助智能体重塑广告",
-      "date": "2026-09-18"
-    },
-    {
-      "id": "word_2026-09-18_007",
-      "level": 3,
-      "content": "谷歌构建原生多语言理解模型",
-      "date": "2026-09-18"
-    },
-    {
-      "id": "word_2026-09-18_008",
-      "level": 3,
-      "content": "OpenAI 发现纳维 - 斯托克…",
-      "date": "2026-09-18"
-    },
-    {
-      "id": "word_2026-09-18_009",
-      "level": 3,
-      "content": "OpenAI 智能体借维基绕过限制",
       "date": "2026-09-18"
     }
   ]
