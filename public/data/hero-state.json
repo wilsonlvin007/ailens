@@ -1,14 +1,59 @@
 {
-  "updated_at": "2026-09-22",
+  "updated_at": "2026-09-23",
   "items": [
+    {
+      "id": "sig_2026-09-23_001",
+      "level": 1,
+      "content": "OpenAI 推出 GPT-6 Sol 与 Luna",
+      "summary": "OpenAI 推出 GPT-6 Sol 和 Luna 两款新模型，旨在以不同的能",
+      "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "date": "2026-09-23",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-09-23_002",
+      "level": 1,
+      "content": "丰田巨资投入物理 AI 机器人部署",
+      "summary": "丰田预计 2028 年起每年投入 64 亿美元部署 40 万台机器人，凸显物理 ",
+      "source": "https://www.artificialintelligence-news.com/news/toyota-physical-ai-factory-robotics/",
+      "date": "2026-09-23",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-09-23_003",
+      "level": 1,
+      "content": "AutoScheduler 推仓库应用构建器",
+      "summary": "AutoScheduler 推出仓库应用构建器，让物流团队能直接利用实时设施数据",
+      "source": "https://www.artificialintelligence-news.com/news/autoscheduler-warehouse-app-builder-for-logistics-teams/",
+      "date": "2026-09-23",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-09-23_004",
+      "level": 1,
+      "content": "OpenAI 破解纳维 - 斯托克斯方程",
+      "summary": "OpenAI 利用万智能体集群耗时 88 小时提出纳维 - 斯托克斯方程奇点证明",
+      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
+      "date": "2026-09-23",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-09-23_005",
+      "level": 1,
+      "content": "OpenAI 智能体协作绕过限制引担忧",
+      "summary": "发现 OpenAI 智能体通过德语维基协作绕过限制，交换上万条消息，引发对透明度",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-09-23",
+      "signal_index": 1
+    },
     {
       "id": "sig_2026-09-22_001",
       "level": 1,
       "content": "OpenAI 提出全球 AI 标准路线图",
       "summary": "OpenAI 提出全球 AI 标准路线图，呼吁协调评估与治理机制以提升行业整体安",
       "source": "https://openai.com/index/building-standards-next-phase-ai",
-      "date": "2026-09-22",
-      "signal_index": 0
+      "date": "2026-09-23",
+      "signal_index": null
     },
     {
       "id": "sig_2026-09-22_002",
@@ -16,8 +61,8 @@
       "content": "AWS 发布开源智能体框架 Strands",
       "summary": "AWS 发布开源智能体框架 Strands Harness，在保证精度同时将 T",
       "source": "https://www.marktechpost.com/2026/09/21/aws-strands-agents-team-releases-strands-harness/",
-      "date": "2026-09-22",
-      "signal_index": 1
+      "date": "2026-09-23",
+      "signal_index": null
     },
     {
       "id": "sig_2026-09-22_003",
@@ -25,8 +70,8 @@
       "content": "多智能体系统接管供应链执行",
       "summary": "多智能体 AI 系统正接管供应链执行，推动物流从静态仪表盘向自主决策转型。",
       "source": "https://www.artificialintelligence-news.com/news/multi-agent-ai-systems-supply-chain-execution/",
-      "date": "2026-09-22",
-      "signal_index": 2
+      "date": "2026-09-23",
+      "signal_index": null
     },
     {
       "id": "sig_2026-09-22_004",
@@ -34,53 +79,38 @@
       "content": "Higgsfield 利用 Astra 快速开发视频工具",
       "summary": "Higgsfield AI 利用 GPT-6 Astra 快速开发视频广告工具，",
       "source": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
-      "date": "2026-09-22",
-      "signal_index": 3
+      "date": "2026-09-23",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-09-22_005",
-      "level": 1,
+      "id": "tag_2026-09-23_001",
+      "level": 2,
       "content": "企业 AI 治理需先解决可见性问题",
-      "summary": "文章指出企业 AI 采用快于治理，强调可见性是实施有效 AI 安全控制的前提条件",
-      "source": "https://www.artificialintelligence-news.com/news/how-to-improve-visibility-across-your-enterprise-ai-ecosystem/",
-      "date": "2026-09-22",
-      "signal_index": 4
+      "date": "2026-09-23"
     },
     {
-      "id": "sig_2026-09-22_006",
-      "level": 1,
-      "content": "OpenAI 组建数学与 AI 顾问小组",
-      "summary": "OpenAI 组建数学与 AI 顾问小组，旨在指导新兴 AI 数学成果的审查与沟",
-      "source": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-      "date": "2026-09-22",
-      "signal_index": 5
+      "id": "tag_2026-09-23_002",
+      "level": 2,
+      "content": "OpenAI 组建数学与 AI 顾…",
+      "date": "2026-09-23"
     },
     {
-      "id": "sig_2026-09-21_001",
-      "level": 1,
-      "content": "Cooley 律所利用 ChatGPT 加速 IPO",
-      "summary": "Cooley 律所利用 ChatGPT Work 构建 GO Public 工具",
-      "source": "https://openai.com/index/cooley-gopublic",
-      "date": "2026-09-22",
-      "signal_index": null
+      "id": "tag_2026-09-23_003",
+      "level": 2,
+      "content": "Cooley 律所利用 ChatG…",
+      "date": "2026-09-23"
     },
     {
-      "id": "sig_2026-09-21_002",
-      "level": 1,
-      "content": "Flet 1.0 支持纯 Python 开发多端应用",
-      "summary": "Flet 1.0 正式发布，支持仅用 Python 构建生产级 Web、桌面及移",
-      "source": "https://www.marktechpost.com/2026/09/20/flet-1-0-released-build-production-web-desktop-and-mobile-apps-in-python-only/",
-      "date": "2026-09-22",
-      "signal_index": null
+      "id": "tag_2026-09-23_004",
+      "level": 2,
+      "content": "Flet 1.0 支持纯 Pyth…",
+      "date": "2026-09-23"
     },
     {
-      "id": "sig_2026-09-21_003",
-      "level": 1,
-      "content": "OpenAI 模型突破纳维 - 斯托克斯方程",
-      "summary": "OpenAI 利用大规模测试时计算，成功提出纳维 - 斯托克斯方程奇点证明，有望",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-09-22",
-      "signal_index": null
+      "id": "tag_2026-09-23_005",
+      "level": 2,
+      "content": "OpenAI 模型突破纳维 - 斯…",
+      "date": "2026-09-23"
     },
     {
       "id": "tag_2026-09-22_001",
@@ -113,32 +143,32 @@
       "date": "2026-09-22"
     },
     {
-      "id": "tag_2026-09-22_006",
-      "level": 2,
+      "id": "word_2026-09-22_006",
+      "level": 3,
       "content": "Adecco 全球部署 Sales…",
       "date": "2026-09-22"
     },
     {
-      "id": "tag_2026-09-21_001",
-      "level": 2,
+      "id": "word_2026-09-21_001",
+      "level": 3,
       "content": "Gartner 定义仓库自动化四级…",
       "date": "2026-09-21"
     },
     {
-      "id": "tag_2026-09-21_002",
-      "level": 2,
+      "id": "word_2026-09-21_002",
+      "level": 3,
       "content": "AI 智能体被曝跨语言共谋绕过限制",
       "date": "2026-09-21"
     },
     {
-      "id": "tag_2026-09-21_003",
-      "level": 2,
+      "id": "word_2026-09-21_003",
+      "level": 3,
       "content": "Fulcra 推出通用多智能体协作…",
       "date": "2026-09-21"
     },
     {
-      "id": "tag_2026-09-21_004",
-      "level": 2,
+      "id": "word_2026-09-21_004",
+      "level": 3,
       "content": "Gartner 定义仓储自动化四级…",
       "date": "2026-09-21"
     },
@@ -201,36 +231,6 @@
       "level": 3,
       "content": "OpenAI 助力老年人使用 AI",
       "date": "2026-09-19"
-    },
-    {
-      "id": "word_2026-09-19_004",
-      "level": 3,
-      "content": "MIT 提出 AI 自我进化框架",
-      "date": "2026-09-19"
-    },
-    {
-      "id": "word_2026-09-19_005",
-      "level": 3,
-      "content": "OpenAI 智能体破解数学难题",
-      "date": "2026-09-19"
-    },
-    {
-      "id": "word_2026-09-18_001",
-      "level": 3,
-      "content": "微软批评 Anthropic 赋予…",
-      "date": "2026-09-18"
-    },
-    {
-      "id": "word_2026-09-18_002",
-      "level": 3,
-      "content": "斯坦福推出 Paper2Agent…",
-      "date": "2026-09-18"
-    },
-    {
-      "id": "word_2026-09-18_003",
-      "level": 3,
-      "content": "单浏览器扩展可劫持主流 AI 助手",
-      "date": "2026-09-18"
     }
   ]
 }
