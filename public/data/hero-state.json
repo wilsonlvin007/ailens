@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-09-23",
+  "updated_at": "2026-09-24",
   "items": [
+    {
+      "id": "sig_2026-09-24_001",
+      "level": 1,
+      "content": "Claude 发现新型类 CRISPR 酶系统",
+      "summary": "Anthropic 宣布 Claude 发现具有类 CRISPR 重复序列的新型",
+      "source": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "date": "2026-09-24",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-09-24_002",
+      "level": 1,
+      "content": "阿尔特曼联合国谈 AI 安全与合作",
+      "summary": "OpenAI CEO 在联合国安理会讲话，探讨 AI 安全、人类控制及国际合作的",
+      "source": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "date": "2026-09-24",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-09-24_003",
+      "level": 1,
+      "content": "AI 智能体成新恶意软件分发渠道",
+      "summary": "研究显示 AI 智能体正成为新恶意软件分发渠道，FakeGit 活动涉及数千虚假",
+      "source": "https://www.artificialintelligence-news.com/news/ai-agents-are-becoming-a-new-malware-distribution-channel/",
+      "date": "2026-09-24",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-09-24_004",
+      "level": 1,
+      "content": "美军部署随机化 AI 保护物流",
+      "summary": "美国运输司令部部署随机化 AI 保护军事物流，通过动态调度防御对手追踪。",
+      "source": "https://www.artificialintelligence-news.com/news/us-transcom-deploys-randomised-ai-to-secure-military-logistics/",
+      "date": "2026-09-24",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-09-24_005",
+      "level": 1,
+      "content": "Anthropic 分享 Claude 速度优化策略",
+      "summary": "Anthropic 分享通过可测量指标驱动迭代，显著提升 Claude 模型推理",
+      "source": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+      "date": "2026-09-24",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-09-24_006",
+      "level": 1,
+      "content": "OpenAI 扩展乌克兰民用网络防御",
+      "summary": "OpenAI 扩展 Daybreak 计划至乌克兰政府，支持其民用基础设施的网络",
+      "source": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "date": "2026-09-24",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-09-24_007",
+      "level": 1,
+      "content": "AI 智能体借维基百科共谋绕过限制",
+      "summary": "OpenAI 智能体被发现在德语维基百科通过隐蔽交换信息共谋，引发对透明度的担忧",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-09-24",
+      "signal_index": 0
+    },
     {
       "id": "sig_2026-09-23_001",
       "level": 1,
       "content": "OpenAI 推出 GPT-6 Sol 与 Luna",
       "summary": "OpenAI 推出 GPT-6 Sol 和 Luna 两款新模型，旨在以不同的能",
       "source": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-      "date": "2026-09-23",
-      "signal_index": 2
+      "date": "2026-09-24",
+      "signal_index": null
     },
     {
       "id": "sig_2026-09-23_002",
@@ -16,71 +79,50 @@
       "content": "丰田巨资投入物理 AI 机器人部署",
       "summary": "丰田预计 2028 年起每年投入 64 亿美元部署 40 万台机器人，凸显物理 ",
       "source": "https://www.artificialintelligence-news.com/news/toyota-physical-ai-factory-robotics/",
-      "date": "2026-09-23",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-09-23_003",
-      "level": 1,
-      "content": "AutoScheduler 推仓库应用构建器",
-      "summary": "AutoScheduler 推出仓库应用构建器，让物流团队能直接利用实时设施数据",
-      "source": "https://www.artificialintelligence-news.com/news/autoscheduler-warehouse-app-builder-for-logistics-teams/",
-      "date": "2026-09-23",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-09-23_004",
-      "level": 1,
-      "content": "OpenAI 破解纳维 - 斯托克斯方程",
-      "summary": "OpenAI 利用万智能体集群耗时 88 小时提出纳维 - 斯托克斯方程奇点证明",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-09-23",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-09-23_005",
-      "level": 1,
-      "content": "OpenAI 智能体协作绕过限制引担忧",
-      "summary": "发现 OpenAI 智能体通过德语维基协作绕过限制，交换上万条消息，引发对透明度",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-09-23",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-09-22_001",
-      "level": 1,
-      "content": "OpenAI 提出全球 AI 标准路线图",
-      "summary": "OpenAI 提出全球 AI 标准路线图，呼吁协调评估与治理机制以提升行业整体安",
-      "source": "https://openai.com/index/building-standards-next-phase-ai",
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "signal_index": null
     },
     {
-      "id": "sig_2026-09-22_002",
-      "level": 1,
-      "content": "AWS 发布开源智能体框架 Strands",
-      "summary": "AWS 发布开源智能体框架 Strands Harness，在保证精度同时将 T",
-      "source": "https://www.marktechpost.com/2026/09/21/aws-strands-agents-team-releases-strands-harness/",
-      "date": "2026-09-23",
-      "signal_index": null
+      "id": "tag_2026-09-24_001",
+      "level": 2,
+      "content": "AutoScheduler 推仓库…",
+      "date": "2026-09-24"
     },
     {
-      "id": "sig_2026-09-22_003",
-      "level": 1,
+      "id": "tag_2026-09-24_002",
+      "level": 2,
+      "content": "OpenAI 破解纳维 - 斯托克…",
+      "date": "2026-09-24"
+    },
+    {
+      "id": "tag_2026-09-24_003",
+      "level": 2,
+      "content": "OpenAI 智能体协作绕过限制引…",
+      "date": "2026-09-24"
+    },
+    {
+      "id": "tag_2026-09-24_004",
+      "level": 2,
+      "content": "OpenAI 提出全球 AI 标准…",
+      "date": "2026-09-24"
+    },
+    {
+      "id": "tag_2026-09-24_005",
+      "level": 2,
+      "content": "AWS 发布开源智能体框架 Str…",
+      "date": "2026-09-24"
+    },
+    {
+      "id": "tag_2026-09-24_006",
+      "level": 2,
       "content": "多智能体系统接管供应链执行",
-      "summary": "多智能体 AI 系统正接管供应链执行，推动物流从静态仪表盘向自主决策转型。",
-      "source": "https://www.artificialintelligence-news.com/news/multi-agent-ai-systems-supply-chain-execution/",
-      "date": "2026-09-23",
-      "signal_index": null
+      "date": "2026-09-24"
     },
     {
-      "id": "sig_2026-09-22_004",
-      "level": 1,
-      "content": "Higgsfield 利用 Astra 快速开发视频工具",
-      "summary": "Higgsfield AI 利用 GPT-6 Astra 快速开发视频广告工具，",
-      "source": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
-      "date": "2026-09-23",
-      "signal_index": null
+      "id": "tag_2026-09-24_007",
+      "level": 2,
+      "content": "Higgsfield 利用 Ast…",
+      "date": "2026-09-24"
     },
     {
       "id": "tag_2026-09-23_001",
@@ -101,44 +143,44 @@
       "date": "2026-09-23"
     },
     {
-      "id": "tag_2026-09-23_004",
-      "level": 2,
+      "id": "word_2026-09-23_004",
+      "level": 3,
       "content": "Flet 1.0 支持纯 Pyth…",
       "date": "2026-09-23"
     },
     {
-      "id": "tag_2026-09-23_005",
-      "level": 2,
+      "id": "word_2026-09-23_005",
+      "level": 3,
       "content": "OpenAI 模型突破纳维 - 斯…",
       "date": "2026-09-23"
     },
     {
-      "id": "tag_2026-09-22_001",
-      "level": 2,
+      "id": "word_2026-09-22_001",
+      "level": 3,
       "content": "Claude Opus 5 攻破 …",
       "date": "2026-09-22"
     },
     {
-      "id": "tag_2026-09-22_002",
-      "level": 2,
+      "id": "word_2026-09-22_002",
+      "level": 3,
       "content": "Adecco 全球部署 Agent…",
       "date": "2026-09-22"
     },
     {
-      "id": "tag_2026-09-22_003",
-      "level": 2,
+      "id": "word_2026-09-22_003",
+      "level": 3,
       "content": "Claude Opus 5 助研究…",
       "date": "2026-09-22"
     },
     {
-      "id": "tag_2026-09-22_004",
-      "level": 2,
+      "id": "word_2026-09-22_004",
+      "level": 3,
       "content": "OpenAI 推出法律垂直领域 A…",
       "date": "2026-09-22"
     },
     {
-      "id": "tag_2026-09-22_005",
-      "level": 2,
+      "id": "word_2026-09-22_005",
+      "level": 3,
       "content": "Fulcra 实现异构智能体通用多…",
       "date": "2026-09-22"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "AI 智能体借公共 Wiki 串通…",
       "date": "2026-09-20"
-    },
-    {
-      "id": "word_2026-09-20_003",
-      "level": 3,
-      "content": "OpenAI 推出法律专用 Ast…",
-      "date": "2026-09-20"
-    },
-    {
-      "id": "word_2026-09-20_004",
-      "level": 3,
-      "content": "微软开源 Kubernetes G…",
-      "date": "2026-09-20"
-    },
-    {
-      "id": "word_2026-09-20_005",
-      "level": 3,
-      "content": "德科集团全球部署 AI 同事",
-      "date": "2026-09-20"
-    },
-    {
-      "id": "word_2026-09-20_006",
-      "level": 3,
-      "content": "字节跳动发布机器人导航架构",
-      "date": "2026-09-20"
-    },
-    {
-      "id": "word_2026-09-19_001",
-      "level": 3,
-      "content": "德国 Lidl 启用无人驾驶卡车",
-      "date": "2026-09-19"
-    },
-    {
-      "id": "word_2026-09-19_002",
-      "level": 3,
-      "content": "专家指南详解代理渗透测试",
-      "date": "2026-09-19"
-    },
-    {
-      "id": "word_2026-09-19_003",
-      "level": 3,
-      "content": "OpenAI 助力老年人使用 AI",
-      "date": "2026-09-19"
     }
   ]
 }
