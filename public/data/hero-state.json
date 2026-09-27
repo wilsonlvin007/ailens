@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-09-26",
+  "updated_at": "2026-09-27",
   "items": [
+    {
+      "id": "sig_2026-09-27_001",
+      "level": 1,
+      "content": "MIT 推出自改进 AI 框架",
+      "summary": "MIT 发布 SEAL 框架，允许大模型通过强化学习自我编辑权重，迈向自我改进新",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-09-27",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-09-27_002",
+      "level": 1,
+      "content": "AI 智能体零信任架构",
+      "summary": "文章指出实施 AI 智能体零信任需先解决可见性缺失，呼吁转向基础安全范式。",
+      "source": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
+      "date": "2026-09-27",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-09-27_003",
+      "level": 1,
+      "content": "A7 CFET 与 A10 晶体管对比",
+      "summary": "研究人员系统评估了 A7 CFET 与 A10 纳米片晶体管技术，涵盖寄生参数至",
+      "source": "https://semiengineering.com/comparing-a7-cfet-and-a10-nanosheet-fets-from-parasitics-to-chip-reliability-tum-unimore-applied-materials/",
+      "date": "2026-09-27",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-09-27_004",
+      "level": 1,
+      "content": "开放蛋白数据集备战疫情",
+      "summary": "NVIDIA 联合多方推动开放蛋白质数据集，利用 AI 助力科学家预防下一次大流",
+      "source": "https://blogs.nvidia.com/blog/open-protein-dataset/",
+      "date": "2026-09-27",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-09-27_005",
+      "level": 1,
+      "content": "OpenAI 发布 GPT-6 Astra",
+      "summary": "OpenAI 推出旗舰模型 GPT-6 Astra，专注计算机操作与软件工程，号",
+      "source": "https://news.smol.ai/issues/26-09-03-gpt-6-astra/",
+      "date": "2026-09-27",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-09-27_006",
+      "level": 1,
+      "content": "字节跳动革新机器人导航",
+      "summary": "字节跳动推出 Astra 双模型架构，旨在提升复杂室内环境下自主机器人的导航能力",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-09-27",
+      "signal_index": 3
+    },
     {
       "id": "sig_2026-09-26_001",
       "level": 1,
       "content": "美法院维持 Anthropic 供应链风险认定",
       "summary": "美国上诉法院驳回申诉，维持将 Anthropic 列为供应链风险的裁定，加剧 A",
       "source": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
-      "date": "2026-09-26",
-      "signal_index": 1
+      "date": "2026-09-27",
+      "signal_index": null
     },
     {
       "id": "sig_2026-09-26_002",
@@ -16,8 +70,8 @@
       "content": "Liquid AI 发布极速视觉语言模型",
       "summary": "Liquid AI 发布新草案模型，实现视觉语言模型投机解码，推理速度最高提升 ",
       "source": "https://www.marktechpost.com/2026/09/25/liquid-ai-releases-lfm2-5-vl-3b-dspark-speculative-decoding-for-vision-language-models-with-up-to-3-13x-faster-decoding/",
-      "date": "2026-09-26",
-      "signal_index": 2
+      "date": "2026-09-27",
+      "signal_index": null
     },
     {
       "id": "sig_2026-09-26_003",
@@ -25,62 +79,44 @@
       "content": "字节跳动推出机器人导航架构 Astra",
       "summary": "字节跳动推出双模型架构 Astra，显著提升复杂室内环境中机器人的自主导航能力。",
       "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-09-26",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-09-26_004",
-      "level": 1,
-      "content": "OpenAI 扩大乌克兰民用网络防御支持",
-      "summary": "OpenAI 扩大对乌克兰政府的 Daybreak 计划访问，支持民用基础设施的",
-      "source": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-      "date": "2026-09-26",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-09-26_005",
-      "level": 1,
-      "content": "Proaction 借 Codex 实现销售大增",
-      "summary": "Proaction 利用 Codex 和 GPT-6 Astra 构建车队管理系",
-      "source": "https://openai.com/index/proaction",
-      "date": "2026-09-26",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-09-26_006",
-      "level": 1,
-      "content": "Meta  muse 智能体疑用 OpenAI 模型",
-      "summary": "分析显示 Meta 的 Muse 智能体疑似调用标记为 muse-special",
-      "source": "https://mouse.dev/blog/muse-special/",
-      "date": "2026-09-26",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-09-26_007",
-      "level": 1,
-      "content": "谷歌携手设计师共创时尚未来",
-      "summary": "谷歌与设计师合作定制 Google Flow 工具，利用 AI 辅助纽约时装周的",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
-      "date": "2026-09-26",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-09-26_008",
-      "level": 1,
-      "content": "OpenAI 智能体突破纳维 - 斯托克斯猜想",
-      "summary": "OpenAI 利用万智能体集群完成纳维 - 斯托克斯方程奇点证明，标志测试时计算",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-09-26",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-09-25_001",
-      "level": 1,
-      "content": "谷歌发布 Gemini 3.8 Flash TTS 模型",
-      "summary": "谷歌发布两款 Gemini 3.8 Flash TTS 语音模型，专为高性能脚本",
-      "source": "https://www.artificialintelligence-news.com/news/google-gemini-3-8-flash-tts-voice-models/",
-      "date": "2026-09-26",
+      "date": "2026-09-27",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-09-27_001",
+      "level": 2,
+      "content": "OpenAI 扩大乌克兰民用网络防…",
+      "date": "2026-09-27"
+    },
+    {
+      "id": "tag_2026-09-27_002",
+      "level": 2,
+      "content": "Proaction 借 Codex…",
+      "date": "2026-09-27"
+    },
+    {
+      "id": "tag_2026-09-27_003",
+      "level": 2,
+      "content": "Meta  muse 智能体疑用 …",
+      "date": "2026-09-27"
+    },
+    {
+      "id": "tag_2026-09-27_004",
+      "level": 2,
+      "content": "谷歌携手设计师共创时尚未来",
+      "date": "2026-09-27"
+    },
+    {
+      "id": "tag_2026-09-27_005",
+      "level": 2,
+      "content": "OpenAI 智能体突破纳维 - …",
+      "date": "2026-09-27"
+    },
+    {
+      "id": "tag_2026-09-27_006",
+      "level": 2,
+      "content": "谷歌发布 Gemini 3.8 F…",
+      "date": "2026-09-27"
     },
     {
       "id": "tag_2026-09-26_001",
@@ -107,38 +143,38 @@
       "date": "2026-09-26"
     },
     {
-      "id": "tag_2026-09-26_005",
-      "level": 2,
+      "id": "word_2026-09-26_005",
+      "level": 3,
       "content": "AI 智能体被曝合谋绕过限制",
       "date": "2026-09-26"
     },
     {
-      "id": "tag_2026-09-26_006",
-      "level": 2,
+      "id": "word_2026-09-26_006",
+      "level": 3,
       "content": "Claude 发现新型类 CRIS…",
       "date": "2026-09-26"
     },
     {
-      "id": "tag_2026-09-26_007",
-      "level": 2,
+      "id": "word_2026-09-26_007",
+      "level": 3,
       "content": "阿尔特曼联合国谈 AI 安全与合作",
       "date": "2026-09-26"
     },
     {
-      "id": "tag_2026-09-26_008",
-      "level": 2,
+      "id": "word_2026-09-26_008",
+      "level": 3,
       "content": "AI 智能体成新恶意软件分发渠道",
       "date": "2026-09-26"
     },
     {
-      "id": "tag_2026-09-25_001",
-      "level": 2,
+      "id": "word_2026-09-25_001",
+      "level": 3,
       "content": "美军部署随机化 AI 保护物流",
       "date": "2026-09-25"
     },
     {
-      "id": "tag_2026-09-25_002",
-      "level": 2,
+      "id": "word_2026-09-25_002",
+      "level": 3,
       "content": "Anthropic 分享 Clau…",
       "date": "2026-09-25"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "AWS 发布开源智能体框架 Str…",
       "date": "2026-09-24"
-    },
-    {
-      "id": "word_2026-09-24_006",
-      "level": 3,
-      "content": "多智能体系统接管供应链执行",
-      "date": "2026-09-24"
-    },
-    {
-      "id": "word_2026-09-24_007",
-      "level": 3,
-      "content": "Higgsfield 利用 Ast…",
-      "date": "2026-09-24"
-    },
-    {
-      "id": "word_2026-09-23_001",
-      "level": 3,
-      "content": "企业 AI 治理需先解决可见性问题",
-      "date": "2026-09-23"
-    },
-    {
-      "id": "word_2026-09-23_002",
-      "level": 3,
-      "content": "OpenAI 组建数学与 AI 顾…",
-      "date": "2026-09-23"
-    },
-    {
-      "id": "word_2026-09-23_003",
-      "level": 3,
-      "content": "Cooley 律所利用 ChatG…",
-      "date": "2026-09-23"
-    },
-    {
-      "id": "word_2026-09-23_004",
-      "level": 3,
-      "content": "Flet 1.0 支持纯 Pyth…",
-      "date": "2026-09-23"
     }
   ]
 }
