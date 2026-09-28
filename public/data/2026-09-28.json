@@ -4,22 +4,6 @@
   "summary": "MIT 推出 SEAL 框架，利用强化学习使大模型能自我编辑和更新权重，迈向自进化 AI 新阶段。；OpenAI 学院成立两周年，致力于向更多社区普及 AI 技能并扩大教育影响力。",
   "items": [
     {
-      "id": "2026-09-28-004",
-      "title": "MIT 推出 SEAL 自进化 AI 框架",
-      "category": "technology",
-      "importance": 4,
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "source_name": "Synced Review",
-      "summary": "MIT 推出 SEAL 框架，利用强化学习使大模型能自我编辑和更新权重，迈向自进化 AI 新阶段。",
-      "analysis": "SEAL 框架的提出触及了 AI 发展的圣杯：自我改进。传统模型训练是静态的，而 SEAL 允许模型在推理过程中动态调整权重，这打破了训练与推理的界限。若该技术成熟，AI 将具备类似生物的适应性，能针对特定任务实时优化自身结构。然而，这也带来了前所未有的可控性挑战：一个能修改自身代码的 AI，其行为边界将难以预测。这将是继大模型爆发后，学术界对“机器意识”与“自主演化”最接近的一次实质探索。",
-      "tags": [
-        "自进化 AI",
-        "MIT",
-        "强化学习"
-      ],
-      "collected_at": "2026-09-28T06:00:00+08:00"
-    },
-    {
       "id": "2026-09-28-009",
       "title": "OpenAI 学院成立两周年回顾",
       "category": "application",
