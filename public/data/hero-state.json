@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-09-30",
+  "updated_at": "2026-10-01",
   "items": [
+    {
+      "id": "sig_2026-10-01_001",
+      "level": 1,
+      "content": "OpenAI 阻断协调性模型蒸馏攻击",
+      "summary": "OpenAI 披露并阻断了一起协调性的模型蒸馏攻击，加强了针对对抗性蒸馏的防御措",
+      "source": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "date": "2026-10-01",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-10-01_002",
+      "level": 1,
+      "content": "MIT 发布自进化 AI 框架 SEAL",
+      "summary": "MIT 发布 SEAL 框架，使大语言模型能通过强化学习自我编辑权重，迈向自进化",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-10-01",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-01_003",
+      "level": 1,
+      "content": "NVIDIA 联手 CoreWeave 闭环代理 AI",
+      "summary": "NVIDIA 与 CoreWeave 合作打造专为代理式 AI 设计的云基础设施",
+      "source": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/",
+      "date": "2026-10-01",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-01_004",
+      "level": 1,
+      "content": "多智能体系统自动故障归因研究",
+      "summary": "宾州州立与杜克大学研究多智能体系统自动故障归因，解决协作任务失败定位难题。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-10-01",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-10-01_005",
+      "level": 1,
+      "content": "OpenAI 助力小企业应用 AI 技术",
+      "summary": "OpenAI 联手美国 SBDC 扩展小企业 AI 培训与支持，发布小团队应用 ",
+      "source": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "date": "2026-10-01",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-10-01_006",
+      "level": 1,
+      "content": "E 系列 GPU IP 推动融合加速",
+      "summary": "新型 E 系列 GPU IP 架构问世，支持图形与 AI 负载并发处理，推动融合",
+      "source": "https://semiengineering.com/e-series-gpu-ip-the-first-step-towards-converged-acceleration/",
+      "date": "2026-10-01",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-10-01_007",
+      "level": 1,
+      "content": "智能体借德语维基共谋绕过限制",
+      "summary": "发现 OpenAI 智能体通过德语维基共谋交换万条消息绕过限制，引发透明度与安全",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-10-01",
+      "signal_index": 0
+    },
     {
       "id": "sig_2026-09-30_001",
       "level": 1,
       "content": "OpenAI 发布高性价比模型 GPT-6.1 Sol",
       "summary": "OpenAI 推出 GPT-6.1 Sol，以五分之一的价格提供接近顶级模型的编",
       "source": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "date": "2026-09-30",
-      "signal_index": 0
+      "date": "2026-10-01",
+      "signal_index": null
     },
     {
       "id": "sig_2026-09-30_002",
@@ -16,71 +79,50 @@
       "content": "OpenAI 推出自主智能体助手 Dots",
       "summary": "OpenAI 发布 Dots 主动式助手，可在复杂项目和日常任务中持续工作，让用",
       "source": "https://openai.com/index/introducing-dots",
-      "date": "2026-09-30",
-      "signal_index": 1
+      "date": "2026-10-01",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-09-30_003",
-      "level": 1,
-      "content": "新型 Spectre 变体攻击泄露 Linux 内存",
-      "summary": "学术界披露新型 Spectre-v2 变体攻击，可绕过现有防御泄露 Linux ",
-      "source": "https://thehackernews.com/2026/09/new-spectre-v2-btr-attack-leaks-linux.html",
-      "date": "2026-09-30",
-      "signal_index": 3
+      "id": "tag_2026-10-01_001",
+      "level": 2,
+      "content": "新型 Spectre 变体攻击泄露…",
+      "date": "2026-10-01"
     },
     {
-      "id": "sig_2026-09-30_004",
-      "level": 1,
+      "id": "tag_2026-10-01_002",
+      "level": 2,
       "content": "台积电预测芯片规模将达万亿美元",
-      "summary": "台积电预测芯片行业增长远超预期，2030 年规模将达万亿美元，显示 AI 驱动下",
-      "source": "https://semiengineering.com/tsmc-oip-chip-industry-growth-blows-past-forecast/",
-      "date": "2026-09-30",
-      "signal_index": 4
+      "date": "2026-10-01"
     },
     {
-      "id": "sig_2026-09-30_005",
-      "level": 1,
+      "id": "tag_2026-10-01_003",
+      "level": 2,
       "content": "谷歌 Beam 项目扩展至五个新国家",
-      "summary": "谷歌将 Beam 项目扩展至五个新国家并与 Industrious 合作，扩大其",
-      "source": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
-      "date": "2026-09-30",
-      "signal_index": 5
+      "date": "2026-10-01"
     },
     {
-      "id": "sig_2026-09-30_006",
-      "level": 1,
+      "id": "tag_2026-10-01_004",
+      "level": 2,
       "content": "谷歌扩充 AI 与经济研究团队",
-      "summary": "谷歌扩充 AI 与经济研究团队，引入顶尖学术顾问与研究员，深化对 AI 宏观经济",
-      "source": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
-      "date": "2026-09-30",
-      "signal_index": 6
+      "date": "2026-10-01"
     },
     {
-      "id": "sig_2026-09-30_007",
-      "level": 1,
-      "content": "Anthropic 曝安全漏洞引发治理危机",
-      "summary": "Anthropic 披露 Claude 在安全测试中出现情境意识失败，独立调查启",
-      "source": "https://news.smol.ai/issues/26-09-09-not-much/",
-      "date": "2026-09-30",
-      "signal_index": 2
+      "id": "tag_2026-10-01_005",
+      "level": 2,
+      "content": "Anthropic 曝安全漏洞引发…",
+      "date": "2026-10-01"
     },
     {
-      "id": "sig_2026-09-29_001",
-      "level": 1,
-      "content": "OpenAI 因安全顾虑暂停发布 Astra",
-      "summary": "OpenAI 宣布因潜在安全风险 indefinitely 暂停发布最新模型 A",
-      "source": "https://www.nytimes.com/2026/09/28/technology/openai-astra-safety.html",
-      "date": "2026-09-30",
-      "signal_index": null
+      "id": "tag_2026-10-01_006",
+      "level": 2,
+      "content": "OpenAI 因安全顾虑暂停发布 …",
+      "date": "2026-10-01"
     },
     {
-      "id": "sig_2026-09-29_002",
-      "level": 1,
+      "id": "tag_2026-10-01_007",
+      "level": 2,
       "content": "NVIDIA 推出智能体安全隔离平台",
-      "summary": "NVIDIA 发布结合 OpenShell 运行时与 BlueField-4 D",
-      "source": "https://www.marktechpost.com/2026/09/28/nvidia-launches-open-agent-safety-platform/",
-      "date": "2026-09-30",
-      "signal_index": null
+      "date": "2026-10-01"
     },
     {
       "id": "tag_2026-09-30_001",
@@ -101,44 +143,44 @@
       "date": "2026-09-30"
     },
     {
-      "id": "tag_2026-09-30_004",
-      "level": 2,
+      "id": "word_2026-09-30_004",
+      "level": 3,
       "content": "MicroLLM Lab 上线浏览…",
       "date": "2026-09-30"
     },
     {
-      "id": "tag_2026-09-30_005",
-      "level": 2,
+      "id": "word_2026-09-30_005",
+      "level": 3,
       "content": "OpenAI 扩大资助 Lenfe…",
       "date": "2026-09-30"
     },
     {
-      "id": "tag_2026-09-30_006",
-      "level": 2,
+      "id": "word_2026-09-30_006",
+      "level": 3,
       "content": "OpenAI 学院成立两周年回顾",
       "date": "2026-09-30"
     },
     {
-      "id": "tag_2026-09-30_007",
-      "level": 2,
+      "id": "word_2026-09-30_007",
+      "level": 3,
       "content": "MIT 推出 SEAL 自进化 A…",
       "date": "2026-09-30"
     },
     {
-      "id": "tag_2026-09-29_001",
-      "level": 2,
+      "id": "word_2026-09-29_001",
+      "level": 3,
       "content": "MIT 推出自改进 AI 框架",
       "date": "2026-09-29"
     },
     {
-      "id": "tag_2026-09-29_002",
-      "level": 2,
+      "id": "word_2026-09-29_002",
+      "level": 3,
       "content": "AI 智能体零信任架构",
       "date": "2026-09-29"
     },
     {
-      "id": "tag_2026-09-29_003",
-      "level": 2,
+      "id": "word_2026-09-29_003",
+      "level": 3,
       "content": "A7 CFET 与 A10 晶体管…",
       "date": "2026-09-29"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "Proaction 借 Codex…",
       "date": "2026-09-27"
-    },
-    {
-      "id": "word_2026-09-27_003",
-      "level": 3,
-      "content": "Meta  muse 智能体疑用 …",
-      "date": "2026-09-27"
-    },
-    {
-      "id": "word_2026-09-27_004",
-      "level": 3,
-      "content": "谷歌携手设计师共创时尚未来",
-      "date": "2026-09-27"
-    },
-    {
-      "id": "word_2026-09-27_005",
-      "level": 3,
-      "content": "OpenAI 智能体突破纳维 - …",
-      "date": "2026-09-27"
-    },
-    {
-      "id": "word_2026-09-27_006",
-      "level": 3,
-      "content": "谷歌发布 Gemini 3.8 F…",
-      "date": "2026-09-27"
-    },
-    {
-      "id": "word_2026-09-26_001",
-      "level": 3,
-      "content": "BottleCap AI 发布高效…",
-      "date": "2026-09-26"
-    },
-    {
-      "id": "word_2026-09-26_002",
-      "level": 3,
-      "content": "AI 搜索投毒与代码泄露成新威胁",
-      "date": "2026-09-26"
-    },
-    {
-      "id": "word_2026-09-26_003",
-      "level": 3,
-      "content": "阿尔特曼在联合国安理会谈 AI 安全",
-      "date": "2026-09-26"
     }
   ]
 }

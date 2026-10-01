@@ -36,22 +36,6 @@
       "collected_at": "2026-10-01T06:00:00+08:00"
     },
     {
-      "id": "2026-10-01-006",
-      "title": "MIT 发布自进化 AI 框架 SEAL",
-      "category": "technology",
-      "importance": 4,
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "source_name": "Synced Review",
-      "summary": "MIT 发布 SEAL 框架，使大语言模型能通过强化学习自我编辑权重，迈向自进化 AI。",
-      "analysis": "SEAL 框架的核心突破在于允许模型直接修改自身权重，打破了传统“训练 - 冻结 - 推理”的静态模式。通过强化学习引导的自我编辑，AI 能在部署后持续适应新任务或修正错误，这是通向终身学习系统的关键一步。然而，这也带来了“模型漂移”和不可解释性增加的风险。若无法有效约束自我进化的方向，可能导致模型偏离初始对齐目标，因此可控的自进化机制将是下一阶段研究焦点。",
-      "tags": [
-        "自进化 AI",
-        "强化学习",
-        "终身学习"
-      ],
-      "collected_at": "2026-10-01T06:00:00+08:00"
-    },
-    {
       "id": "2026-10-01-007",
       "title": "NVIDIA 联手 CoreWeave 闭环代理 AI",
       "category": "hardware",
