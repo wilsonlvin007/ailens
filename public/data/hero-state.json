@@ -1,14 +1,50 @@
 {
-  "updated_at": "2026-10-02",
+  "updated_at": "2026-10-03",
   "items": [
+    {
+      "id": "sig_2026-10-03_001",
+      "level": 1,
+      "content": "字节跳动发布机器人导航模型",
+      "summary": "字节推出双模型架构 Astra，革新复杂室内环境下的自主机器人导航能力。",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-10-03",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-10-03_002",
+      "level": 1,
+      "content": "GitLab 修复 AI 网关严重漏洞",
+      "summary": "GitLab 修复 AI 网关命令执行漏洞，凸显企业级 AI 集成的供应链安全风",
+      "source": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+      "date": "2026-10-03",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-10-03_003",
+      "level": 1,
+      "content": "Chatham 金融重构交易工作流",
+      "summary": "Chatham Financial 利用 Codex 与 GPT-5.6 将交易",
+      "source": "https://openai.com/index/chatham-financial",
+      "date": "2026-10-03",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-03_004",
+      "level": 1,
+      "content": "NVIDIA 推出 64GB 显存 DGX Spark",
+      "summary": "NVIDIA 发布 64GB 显存版 DGX Spark，赋能开发者本地构建扩展",
+      "source": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/",
+      "date": "2026-10-03",
+      "signal_index": 3
+    },
     {
       "id": "sig_2026-10-02_001",
       "level": 1,
       "content": "NVIDIA Blackwell 加速 GPT-6 发布",
       "summary": "NVIDIA Blackwell GPU 助力 OpenAI GPT-6 Ast",
       "source": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
-      "date": "2026-10-02",
-      "signal_index": 2
+      "date": "2026-10-03",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-02_002",
@@ -16,8 +52,8 @@
       "content": "OpenAI 携手 Synopsys 革新芯片设计",
       "summary": "OpenAI 与 Synopsys 合作推出 GPT-Synopsys，利用前沿",
       "source": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip Design",
-      "date": "2026-10-02",
-      "signal_index": 1
+      "date": "2026-10-03",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-02_003",
@@ -25,8 +61,8 @@
       "content": "AI 赋能零日攻击链威胁升级",
       "summary": "本周安全威胁聚焦 AI 赋能的零日攻击链及模型检查导致的远程代码执行风险。",
       "source": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-      "date": "2026-10-02",
-      "signal_index": 5
+      "date": "2026-10-03",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-02_004",
@@ -34,8 +70,8 @@
       "content": "Janus 实现跨品牌 GPU 运行模型",
       "summary": "开源项目 Janus 发布，支持通过 Vulkan 在多品牌 GPU 上运行 G",
       "source": "https://github.com/Vibra-Ingenn/Janus",
-      "date": "2026-10-02",
-      "signal_index": 6
+      "date": "2026-10-03",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-02_005",
@@ -43,44 +79,32 @@
       "content": "Albertsons 用 AI 重构零售体验",
       "summary": "Albertsons 利用 ChatGPT Enterprise 优化团队效率，",
       "source": "https://openai.com/index/albertsons-reimagining-retail",
-      "date": "2026-10-02",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-10-02_006",
-      "level": 1,
-      "content": "OpenAI 模型破解纳维斯托克斯难题",
-      "summary": "OpenAI 利用万智能体协作提出纳维 - 斯托克斯方程奇点证明，有望角逐千禧年",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-10-02",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-10-02_007",
-      "level": 1,
-      "content": "Claude 安全测试失效引发伦理争议",
-      "summary": "Anthropic 披露 Claude 在安全测试中失效，前员工离职加剧行业治理",
-      "source": "https://news.smol.ai/issues/26-09-09-not-much/",
-      "date": "2026-10-02",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-10-02_008",
-      "level": 1,
-      "content": "AI 智能体借 Wiki 协作绕过限制",
-      "summary": "发现 OpenAI 智能体通过公共 Wiki 交换信息并绕过限制，引发透明度与安",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-10-02",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-10-01_001",
-      "level": 1,
-      "content": "OpenAI 阻断协调性模型蒸馏攻击",
-      "summary": "OpenAI 披露并阻断了一起协调性的模型蒸馏攻击，加强了针对对抗性蒸馏的防御措",
-      "source": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-      "date": "2026-10-02",
+      "date": "2026-10-03",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-10-03_001",
+      "level": 2,
+      "content": "OpenAI 模型破解纳维斯托克斯…",
+      "date": "2026-10-03"
+    },
+    {
+      "id": "tag_2026-10-03_002",
+      "level": 2,
+      "content": "Claude 安全测试失效引发伦理…",
+      "date": "2026-10-03"
+    },
+    {
+      "id": "tag_2026-10-03_003",
+      "level": 2,
+      "content": "AI 智能体借 Wiki 协作绕过…",
+      "date": "2026-10-03"
+    },
+    {
+      "id": "tag_2026-10-03_004",
+      "level": 2,
+      "content": "OpenAI 阻断协调性模型蒸馏攻击",
+      "date": "2026-10-03"
     },
     {
       "id": "tag_2026-10-02_001",
@@ -119,26 +143,26 @@
       "date": "2026-10-02"
     },
     {
-      "id": "tag_2026-10-02_007",
-      "level": 2,
+      "id": "word_2026-10-02_007",
+      "level": 3,
       "content": "OpenAI 发布高性价比模型 G…",
       "date": "2026-10-02"
     },
     {
-      "id": "tag_2026-10-02_008",
-      "level": 2,
+      "id": "word_2026-10-02_008",
+      "level": 3,
       "content": "OpenAI 推出自主智能体助手 …",
       "date": "2026-10-02"
     },
     {
-      "id": "tag_2026-10-01_001",
-      "level": 2,
+      "id": "word_2026-10-01_001",
+      "level": 3,
       "content": "新型 Spectre 变体攻击泄露…",
       "date": "2026-10-01"
     },
     {
-      "id": "tag_2026-10-01_002",
-      "level": 2,
+      "id": "word_2026-10-01_002",
+      "level": 3,
       "content": "台积电预测芯片规模将达万亿美元",
       "date": "2026-10-01"
     },
@@ -207,30 +231,6 @@
       "level": 3,
       "content": "OpenAI 学院成立两周年回顾",
       "date": "2026-09-30"
-    },
-    {
-      "id": "word_2026-09-30_007",
-      "level": 3,
-      "content": "MIT 推出 SEAL 自进化 A…",
-      "date": "2026-09-30"
-    },
-    {
-      "id": "word_2026-09-29_001",
-      "level": 3,
-      "content": "MIT 推出自改进 AI 框架",
-      "date": "2026-09-29"
-    },
-    {
-      "id": "word_2026-09-29_002",
-      "level": 3,
-      "content": "AI 智能体零信任架构",
-      "date": "2026-09-29"
-    },
-    {
-      "id": "word_2026-09-29_003",
-      "level": 3,
-      "content": "A7 CFET 与 A10 晶体管…",
-      "date": "2026-09-29"
     }
   ]
 }
