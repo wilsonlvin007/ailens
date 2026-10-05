@@ -4,22 +4,6 @@
   "summary": "MIT 推出 SEAL 框架，使大语言模型能通过强化学习自我编辑和更新权重，迈向自进化 AI 的重要一步。；与中国相关的黑客组织 TA419 发起钓鱼攻击，专门针对美国智库及高校的 AI 政策专家，引发行业安全担忧。；深度评测主流前沿模型，指出 Astra 擅长电脑操作，Argon 精通法律金融，Sol 在代码代理方面性价比最高。",
   "items": [
     {
-      "id": "2026-10-05-003",
-      "title": "MIT 推出自进化 AI 框架 SEAL",
-      "category": "technology",
-      "importance": 4,
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "source_name": "Synced Review",
-      "summary": "MIT 推出 SEAL 框架，使大语言模型能通过强化学习自我编辑和更新权重，迈向自进化 AI 的重要一步。",
-      "analysis": "MIT 推出的 SEAL 框架触及了 AI 发展的核心敏感区：自我改进。传统模型训练依赖静态数据集和人工迭代，而 SEAL 允许模型通过强化学习直接编辑自身权重，实现了闭环的自我进化。这一机制若成熟，将极大加速模型迭代速度，降低对海量标注数据的依赖。然而，这也引发了深刻的失控风险担忧——当 AI 能够自主修改底层逻辑时，如何确保其目标函数不发生漂移（Goal Drift）？这是通往强人工智能道路上必须跨越的伦理与技术双重门槛。",
-      "tags": [
-        "自进化 AI",
-        "强化学习",
-        "MIT"
-      ],
-      "collected_at": "2026-10-05T06:00:00+08:00"
-    },
-    {
       "id": "2026-10-05-004",
       "title": "地缘黑客瞄准美国 AI 政策专家",
       "category": "thought",
