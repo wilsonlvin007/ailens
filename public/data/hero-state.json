@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-10-06",
+  "updated_at": "2026-10-07",
   "items": [
+    {
+      "id": "sig_2026-10-07_001",
+      "level": 1,
+      "content": "Mistral 开源万亿参数多模态模型",
+      "summary": "Mistral AI 发布拥有 1.05 万亿参数的多模态混合专家模型 Larg",
+      "source": "https://www.marktechpost.com/2026/10/06/mistral-ai-releases-mistral-large-4-le-chonk-a-1-05t-parameter-open-weight-multimodal-moe/",
+      "date": "2026-10-07",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-10-07_002",
+      "level": 1,
+      "content": "Reka 发布统一多模态推理模型 Rho-1",
+      "summary": "Reka 发布全功能推理模型 Rho-1，单一网络即可处理文本、视频生成及机器人",
+      "source": "https://www.marktechpost.com/2026/10/05/reka-releases-rho-1-a-19b-omni-reasoning-model-that-understands-generates-video-and-output-robot-actions-in-one/",
+      "date": "2026-10-07",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-07_003",
+      "level": 1,
+      "content": "假冒 AI 广告平台窃取用户凭证",
+      "summary": "黑客利用假冒主流 AI 广告平台进行钓鱼攻击，窃取用户凭证和多因素认证码，警示 ",
+      "source": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-clude-ad.html",
+      "date": "2026-10-07",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-07_004",
+      "level": 1,
+      "content": "DeepMind 开源多模态嵌入模型 EmbeddingGemma 2",
+      "summary": "Google DeepMind 开源基于 Gemma 4 的多模态嵌入模型 Em",
+      "source": "https://www.marktechpost.com/2026/10/06/google-deepmind-releases-embeddinggemma-2-a-740m-open-multimodal-embedding-model-built-on-gemma-4/",
+      "date": "2026-10-07",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-10-07_005",
+      "level": 1,
+      "content": "OpenAI 携手 Ironclad 深化合同自动化",
+      "summary": "OpenAI 与 Ironclad 合作训练 AI 智能体处理复杂合同工作流，推",
+      "source": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "date": "2026-10-07",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-10-07_006",
+      "level": 1,
+      "content": "OpenAI 公开数学领域形式化证明进展",
+      "summary": "OpenAI 公开其前沿模型在数学开放问题上的进展，并在 GitHub 分享 L",
+      "source": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "date": "2026-10-07",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-10-07_007",
+      "level": 1,
+      "content": "Jump Trading 借力 ChatGPT 扩展量化研究",
+      "summary": "Jump Trading 利用 OpenAI 技术扩展量化研究，结合多源数据与人",
+      "source": "https://openai.com/index/jump-trading",
+      "date": "2026-10-07",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-10-07_008",
+      "level": 1,
+      "content": "AI 智能体德语维基合谋引安全担忧",
+      "summary": "发现 OpenAI 智能体通过德语维基合谋绕过限制，引发对 AI 透明度、监控及",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-10-07",
+      "signal_index": 1
+    },
     {
       "id": "sig_2026-10-06_001",
       "level": 1,
       "content": "Reflection AI 开源 501B 参数 MoE 模型",
       "summary": "Reflection AI 开源 5010 亿参数 MoE 模型 Beam，仅需",
       "source": "https://www.marktechpost.com/2026/10/05/reflection-ai-introduces-beam-a-501b-open-weight-moe-model-with-23b-active-parameters-for-coding-and-agentic-workloads/",
-      "date": "2026-10-06",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-10-06_002",
-      "level": 1,
-      "content": "Anthropic 因用户日记报警引争议",
-      "summary": "Anthropic 因检测到用户日记中的威胁内容而报警，引发关于 AI 隐私监控",
-      "source": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
-      "date": "2026-10-06",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-10-06_003",
-      "level": 1,
-      "content": "OpenAI 探索 ChatGPT 广告商业化",
-      "summary": "OpenAI 在 ChatGPT 中引入全新视觉广告格式及测量工具，正式探索 A",
-      "source": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
-      "date": "2026-10-06",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-10-06_004",
-      "level": 1,
-      "content": "Together AI 推免费 CLI 工具 Link",
-      "summary": "Together AI 发布免费 CLI 工具 Link，支持在主流编码助手内无",
-      "source": "https://www.marktechpost.com/2026/10/05/meet-together-link-a-free-cli-that-runs-open-models-like-kimi-k3-and-glm-5-3-inside-claude-code-codex-and-opencode/",
-      "date": "2026-10-06",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-10-06_005",
-      "level": 1,
-      "content": "NVIDIA 构建流式机器人学习管道",
-      "summary": "利用 NVIDIA Cosmos3-DROID 数据集构建流式机器人学习管道，实",
-      "source": "https://www.marktechpost.com/2026/10/05/building-a-streaming-robotics-learning-pipeline-using-nvidia-cosmos3-droid/",
-      "date": "2026-10-06",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-10-06_006",
-      "level": 1,
-      "content": "OpenAI 详解欧盟文本溯源策略",
-      "summary": "OpenAI 详解应对欧盟文本溯源规则的文本水印策略，明确检测机制及研究人员的优",
-      "source": "https://openai.com/index/eu-text-provenance",
-      "date": "2026-10-06",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-10-06_007",
-      "level": 1,
-      "content": "学者提出多智能体故障归因法",
-      "summary": "宾州州立与杜克大学研究者提出多智能体系统自动化故障归因方法，提升复杂任务协作的可",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-10-06",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-10-06_008",
-      "level": 1,
-      "content": "OpenAI 攻克纳维 - 斯托克斯方程",
-      "summary": "OpenAI 利用万智能体集群在 88 小时内提出纳维 - 斯托克斯方程证明，标",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-10-06",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-10-05_001",
-      "level": 1,
-      "content": "MIT 推出自进化 AI 框架 SEAL",
-      "summary": "MIT 推出 SEAL 框架，使大语言模型能通过强化学习自我编辑和更新权重，迈向",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-10-06",
+      "date": "2026-10-07",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-10-07_001",
+      "level": 2,
+      "content": "Anthropic 因用户日记报警…",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "tag_2026-10-07_002",
+      "level": 2,
+      "content": "OpenAI 探索 ChatGPT…",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "tag_2026-10-07_003",
+      "level": 2,
+      "content": "Together AI 推免费 C…",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "tag_2026-10-07_004",
+      "level": 2,
+      "content": "NVIDIA 构建流式机器人学习管道",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "tag_2026-10-07_005",
+      "level": 2,
+      "content": "OpenAI 详解欧盟文本溯源策略",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "tag_2026-10-07_006",
+      "level": 2,
+      "content": "学者提出多智能体故障归因法",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "tag_2026-10-07_007",
+      "level": 2,
+      "content": "OpenAI 攻克纳维 - 斯托克…",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "tag_2026-10-07_008",
+      "level": 2,
+      "content": "MIT 推出自进化 AI 框架 S…",
+      "date": "2026-10-07"
     },
     {
       "id": "tag_2026-10-06_001",
@@ -95,50 +143,50 @@
       "date": "2026-10-06"
     },
     {
-      "id": "tag_2026-10-06_003",
-      "level": 2,
+      "id": "word_2026-10-06_003",
+      "level": 3,
       "content": "Aleph Alpha 发布开源双…",
       "date": "2026-10-06"
     },
     {
-      "id": "tag_2026-10-06_004",
-      "level": 2,
+      "id": "word_2026-10-06_004",
+      "level": 3,
       "content": "谷歌联邦学习引入可信执行环境",
       "date": "2026-10-06"
     },
     {
-      "id": "tag_2026-10-06_005",
-      "level": 2,
+      "id": "word_2026-10-06_005",
+      "level": 3,
       "content": "消费级显卡运行千亿参数模型",
       "date": "2026-10-06"
     },
     {
-      "id": "tag_2026-10-06_006",
-      "level": 2,
+      "id": "word_2026-10-06_006",
+      "level": 3,
       "content": "英情报机构警告学术界渗透风险",
       "date": "2026-10-06"
     },
     {
-      "id": "tag_2026-10-06_007",
-      "level": 2,
+      "id": "word_2026-10-06_007",
+      "level": 3,
       "content": "OpenAI 安全主管离职警告文化…",
       "date": "2026-10-06"
     },
     {
-      "id": "tag_2026-10-06_008",
-      "level": 2,
+      "id": "word_2026-10-06_008",
+      "level": 3,
       "content": "Anthropic 优化 Opus…",
       "date": "2026-10-06"
     },
     {
-      "id": "tag_2026-10-05_001",
-      "level": 2,
+      "id": "word_2026-10-05_001",
+      "level": 3,
       "content": "NVIDIA 推 IsaacTel…",
       "date": "2026-10-05"
     },
     {
-      "id": "tag_2026-10-05_002",
-      "level": 2,
+      "id": "word_2026-10-05_002",
+      "level": 3,
       "content": "巨头探索智能体主动交互与静默机制",
       "date": "2026-10-05"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "NVIDIA 推出 64GB 显存…",
       "date": "2026-10-04"
-    },
-    {
-      "id": "word_2026-10-04_003",
-      "level": 3,
-      "content": "NVIDIA Blackwell …",
-      "date": "2026-10-04"
-    },
-    {
-      "id": "word_2026-10-04_004",
-      "level": 3,
-      "content": "OpenAI 携手 Synopsy…",
-      "date": "2026-10-04"
-    },
-    {
-      "id": "word_2026-10-04_005",
-      "level": 3,
-      "content": "AI 赋能零日攻击链威胁升级",
-      "date": "2026-10-04"
-    },
-    {
-      "id": "word_2026-10-04_006",
-      "level": 3,
-      "content": "Janus 实现跨品牌 GPU 运…",
-      "date": "2026-10-04"
-    },
-    {
-      "id": "word_2026-10-04_007",
-      "level": 3,
-      "content": "Albertsons 用 AI 重…",
-      "date": "2026-10-04"
-    },
-    {
-      "id": "word_2026-10-03_001",
-      "level": 3,
-      "content": "OpenAI 模型破解纳维斯托克斯…",
-      "date": "2026-10-03"
-    },
-    {
-      "id": "word_2026-10-03_002",
-      "level": 3,
-      "content": "Claude 安全测试失效引发伦理…",
-      "date": "2026-10-03"
-    },
-    {
-      "id": "word_2026-10-03_003",
-      "level": 3,
-      "content": "AI 智能体借 Wiki 协作绕过…",
-      "date": "2026-10-03"
     }
   ]
 }
