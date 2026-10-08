@@ -116,22 +116,6 @@
       "collected_at": "2026-10-08T06:00:00+08:00"
     },
     {
-      "id": "2026-10-08-012",
-      "title": "多智能体系统故障自动归因研究",
-      "category": "technology",
-      "importance": 2,
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "source_name": "Synced Review",
-      "summary": "研究提出多智能体系统故障自动归因方法，助力诊断协作任务失败原因。",
-      "analysis": "随着多智能体系统日益复杂，定位故障源头成为运维难题。该研究提出的自动归因方法，如同为分布式 AI 系统安装了“黑匣子”，能够精准识别是哪个智能体或哪次交互导致了任务失败。这对于构建高可靠的企业级多智能体应用至关重要，能大幅缩短调试周期，提升系统鲁棒性，是多智能体工程化落地不可或缺的基础设施技术。",
-      "tags": [
-        "多智能体",
-        "故障诊断",
-        "系统工程"
-      ],
-      "collected_at": "2026-10-08T06:00:00+08:00"
-    },
-    {
       "id": "2026-10-08-013",
       "title": "丽笙酒店集团接入 ChatGPT",
       "category": "application",
