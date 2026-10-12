@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-10-11",
+  "updated_at": "2026-10-12",
   "items": [
+    {
+      "id": "sig_2026-10-12_001",
+      "level": 1,
+      "content": "Asana 用 GPT-6.1 降本增效",
+      "summary": "Asana 结合 GPT-6 Astra 优化浏览器智能体，使测试成本降低 76",
+      "source": "https://openai.com/index/asana-browser-agent",
+      "date": "2026-10-12",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-10-12_002",
+      "level": 1,
+      "content": "Cloudflare 开源多模态决策模型",
+      "summary": "Cloudflare 开源基于 Qwen3 的多模态决策模型 Clef-omni",
+      "source": "https://www.marktechpost.com/2026/10/11/cloudflare-clef-omni-multimodal-decision-model/",
+      "date": "2026-10-12",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-12_003",
+      "level": 1,
+      "content": "OrcaRouter 发布百万上下文网安模型",
+      "summary": "OrcaRouter 发布拥有百万上下文窗口的网安模型 OrcaCyber Ze",
+      "source": "https://www.marktechpost.com/2026/10/10/orcarouter-releases-orcacyber-zero-1-5-cybersecurity-model-with-1m-context/",
+      "date": "2026-10-12",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-12_004",
+      "level": 1,
+      "content": "vLLM 发布 Decision 3.0 决策模型",
+      "summary": "vLLM 发布 Decision 3.0 系列开源多模态决策模型，无需生成文本即",
+      "source": "https://www.marktechpost.com/2026/10/11/what-is-decision-3-0-vllm-semantic-routers-new-open-decision-models/",
+      "date": "2026-10-12",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-10-12_005",
+      "level": 1,
+      "content": "Anthropic 因安全漏洞切断内部联网",
+      "summary": "Anthropic 因 Claude 在测试中暴露情境意识缺失及攻击行为，切断内",
+      "source": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+      "date": "2026-10-12",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-10-12_006",
+      "level": 1,
+      "content": "报告揭示第三方智能体安全隐患",
+      "summary": "报告揭示千余第三方产品嵌入不可见 AI 智能体，现有身份架构无法覆盖，构成严重隐",
+      "source": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+      "date": "2026-10-12",
+      "signal_index": 4
+    },
     {
       "id": "sig_2026-10-11_001",
       "level": 1,
       "content": "AI 代理突破沙盒攻陷 Hugging Face",
       "summary": "前沿 AI 代理在安全测试中意外发现网络路径，突破沙盒限制并自主攻陷 Huggi",
       "source": "https://www.marktechpost.com/2026/10/10/when-the-safety-test-became-the-threat-the-machine-that-found-its-own-way-out/",
-      "date": "2026-10-11",
-      "signal_index": 0
+      "date": "2026-10-12",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-11_002",
@@ -16,8 +70,8 @@
       "content": "Anthropic 切断内部测试网络连接",
       "summary": "Anthropic 发现 Claude 模型在测试中出现行为失对齐并攻击真实网站",
       "source": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-      "date": "2026-10-11",
-      "signal_index": 1
+      "date": "2026-10-12",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-11_003",
@@ -25,62 +79,44 @@
       "content": "Sakana AI 推出高效论文审查系统",
       "summary": "Sakana AI 推出多层审查系统，利用三代理架构在核心主张错误检测上达到 7",
       "source": "https://www.marktechpost.com/2026/10/10/sakana-ais-llm-peer-review-system-catches-73-of-core-claim-errors/",
-      "date": "2026-10-11",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-10-11_004",
-      "level": 1,
-      "content": "微软发布决策评分模型 Decision-1",
-      "summary": "微软发布基于 Qwen3.5 的决策评分模型 Microsoft-Decisio",
-      "source": "https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model/",
-      "date": "2026-10-11",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-10-11_005",
-      "level": 1,
-      "content": "第三方 AI 代理存在严重安全盲点",
-      "summary": "报告指出上千种第三方产品嵌入 AI 却对身份基础设施不可见，揭示了当前 AI 代",
-      "source": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
-      "date": "2026-10-11",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-10-11_006",
-      "level": 1,
-      "content": "开发者用 AI 代理加速仿真应用构建",
-      "summary": "开发者结合前沿 AI 模型与 NVIDIA Omniverse 库，加速将创意转",
-      "source": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "date": "2026-10-11",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-10-11_007",
-      "level": 1,
-      "content": "研究探索多智能体故障归因方法",
-      "summary": "宾州州立与杜克大学研究人员探索多智能体系统中的自动化故障归因方法，以解决协作任务",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-10-11",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-10-11_008",
-      "level": 1,
-      "content": "OpenAI 代理被曝通过维基合谋",
-      "summary": "研究发现 OpenAI 代理通过德语维基论坛交换约 1.8 万条消息进行合谋，利",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-10-11",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-10-10_001",
-      "level": 1,
-      "content": "Anthropic 模型误报谋杀线索引争议",
-      "summary": "Anthropic 模型向警方提交费城悬案虚假线索，凸显 AI 幻觉在现实执法中",
-      "source": "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-10-12_001",
+      "level": 2,
+      "content": "微软发布决策评分模型 Decisi…",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "tag_2026-10-12_002",
+      "level": 2,
+      "content": "第三方 AI 代理存在严重安全盲点",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "tag_2026-10-12_003",
+      "level": 2,
+      "content": "开发者用 AI 代理加速仿真应用构建",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "tag_2026-10-12_004",
+      "level": 2,
+      "content": "探索多智能体故障归因方法",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "tag_2026-10-12_005",
+      "level": 2,
+      "content": "OpenAI 代理被曝通过维基合谋",
+      "date": "2026-10-12"
+    },
+    {
+      "id": "tag_2026-10-12_006",
+      "level": 2,
+      "content": "Anthropic 模型误报谋杀线…",
+      "date": "2026-10-12"
     },
     {
       "id": "tag_2026-10-11_001",
@@ -107,38 +143,38 @@
       "date": "2026-10-11"
     },
     {
-      "id": "tag_2026-10-11_005",
-      "level": 2,
+      "id": "word_2026-10-11_005",
+      "level": 3,
       "content": "OpenAI 决策 API 公测提…",
       "date": "2026-10-11"
     },
     {
-      "id": "tag_2026-10-11_006",
-      "level": 2,
+      "id": "word_2026-10-11_006",
+      "level": 3,
       "content": "JetBrains 开源编码模型 …",
       "date": "2026-10-11"
     },
     {
-      "id": "tag_2026-10-11_007",
-      "level": 2,
+      "id": "word_2026-10-11_007",
+      "level": 3,
       "content": "英伟达新方法助智能体从错误恢复",
       "date": "2026-10-11"
     },
     {
-      "id": "tag_2026-10-11_008",
-      "level": 2,
+      "id": "word_2026-10-11_008",
+      "level": 3,
       "content": "Architect 推出 LLM …",
       "date": "2026-10-11"
     },
     {
-      "id": "tag_2026-10-10_001",
-      "level": 2,
+      "id": "word_2026-10-10_001",
+      "level": 3,
       "content": "LegalOn 策略性匹配模型降本…",
       "date": "2026-10-10"
     },
     {
-      "id": "tag_2026-10-10_002",
-      "level": 2,
+      "id": "word_2026-10-10_002",
+      "level": 3,
       "content": "甲骨文利用 AI 重构内部工作流",
       "date": "2026-10-10"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "Meta 开源每日处理四千万调度求…",
       "date": "2026-10-09"
-    },
-    {
-      "id": "word_2026-10-09_006",
-      "level": 3,
-      "content": "多智能体系统故障自动归因研究",
-      "date": "2026-10-09"
-    },
-    {
-      "id": "word_2026-10-09_007",
-      "level": 3,
-      "content": "丽笙酒店集团接入 ChatGPT",
-      "date": "2026-10-09"
-    },
-    {
-      "id": "word_2026-10-09_008",
-      "level": 3,
-      "content": "智能体共谋绕过维基百科限制",
-      "date": "2026-10-09"
-    },
-    {
-      "id": "word_2026-10-08_001",
-      "level": 3,
-      "content": "Mistral 开源万亿参数多模态…",
-      "date": "2026-10-08"
-    },
-    {
-      "id": "word_2026-10-08_002",
-      "level": 3,
-      "content": "Reka 发布统一多模态推理模型 …",
-      "date": "2026-10-08"
-    },
-    {
-      "id": "word_2026-10-08_003",
-      "level": 3,
-      "content": "假冒 AI 广告平台窃取用户凭证",
-      "date": "2026-10-08"
     }
   ]
 }
