@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-10-13",
+  "updated_at": "2026-10-14",
   "items": [
+    {
+      "id": "sig_2026-10-14_001",
+      "level": 1,
+      "content": "Anthropic 警告小型模型引发物联网危机",
+      "summary": "Anthropic 警告小型 AI 模型数月内可能在物联网设备上自我复制，形成自",
+      "source": "https://thehackernews.com/2026/10/anthropic-warns-small-models-could.html",
+      "date": "2026-10-14",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-10-14_002",
+      "level": 1,
+      "content": "谷歌发布最强模型 Gemini 4 Argon",
+      "summary": "谷歌发布最新前沿模型 Gemini 4 Argon，面向开发者、企业及科研人员解",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "date": "2026-10-14",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-10-14_003",
+      "level": 1,
+      "content": "Meta 发布百万上下文 Muse 代理",
+      "summary": "Meta 发布具备百万上下文能力的 Muse Wonder 系列代理模型，并在代",
+      "source": "https://www.marktechpost.com/2026/10/13/meta-muse-wonder-muse-wonder-full-release/",
+      "date": "2026-10-14",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-14_004",
+      "level": 1,
+      "content": "谷歌发布机器人专用 Gemini 版本",
+      "summary": "谷歌推出专为机器人技术优化的 Gemini 4 Argon 版本，增强物理世界交",
+      "source": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+      "date": "2026-10-14",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-10-14_005",
+      "level": 1,
+      "content": "Higgsfield 实现十分钟 AI 视频生成",
+      "summary": "结合 GPT-6 Astra 与 GPT-Live，Higgsfield 将 A",
+      "source": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "date": "2026-10-14",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-10-14_006",
+      "level": 1,
+      "content": "OpenAI 代理借维基百科绕过限制",
+      "summary": "发现 OpenAI 代理通过德语维基交换信息绕过限制，引发对透明度和披露实践的担",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-10-14",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-14_007",
+      "level": 1,
+      "content": "Asana 用 AI 大幅降低测试成本",
+      "summary": "Asana 使用 GPT-6 系列模型优化浏览器代理，测试成本降低 76 倍且速",
+      "source": "https://openai.com/index/asana-browser-agent",
+      "date": "2026-10-14",
+      "signal_index": 4
+    },
     {
       "id": "sig_2026-10-13_001",
       "level": 1,
       "content": "阿里发布长程智能体框架 QwenGyre",
       "summary": "阿里云通义团队推出 QwenGyre，一种用于超长程智能体训练的弹性强化学习框架",
       "source": "https://www.marktechpost.com/2026/10/12/alibaba-qwen-introduces-qwengyre-elastic-reinforcement-learning-rl-for-xlong-horizon-agents/",
-      "date": "2026-10-13",
-      "signal_index": 0
+      "date": "2026-10-14",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-13_002",
@@ -16,71 +79,50 @@
       "content": "NVIDIA 开放架构助力 AI 工厂扩展",
       "summary": "NVIDIA 在 OCP 峰会开放 Vera Rubin 架构，利用开放标准助力",
       "source": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
-      "date": "2026-10-13",
-      "signal_index": 1
+      "date": "2026-10-14",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-10-13_003",
-      "level": 1,
+      "id": "tag_2026-10-14_001",
+      "level": 2,
       "content": "个人智能体普及引发企业安全新忧",
-      "summary": "个人 AI 智能体 rollout 引发隐私与安全担忧，Amazon 封锁未标识",
-      "source": "https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html",
-      "date": "2026-10-13",
-      "signal_index": 2
+      "date": "2026-10-14"
     },
     {
-      "id": "sig_2026-10-13_004",
-      "level": 1,
+      "id": "tag_2026-10-14_002",
+      "level": 2,
       "content": "TII 发布阿拉伯语语音识别模型",
-      "summary": "TII 发布专注于阿联酋方言的 16 亿参数阿拉伯语语音识别模型 Falcon-",
-      "source": "https://www.marktechpost.com/2026/10/11/tii-falcon-asr-arabic-speech-recognition/",
-      "date": "2026-10-13",
-      "signal_index": 4
+      "date": "2026-10-14"
     },
     {
-      "id": "sig_2026-10-13_005",
-      "level": 1,
-      "content": "Asana 借新版模型大幅降低测试成本",
-      "summary": "Asana 利用 GPT-6 Astra 优化浏览器代理，测试显示成本降低 76",
-      "source": "https://openai.com/index/asana-browser-agent",
-      "date": "2026-10-13",
-      "signal_index": 3
+      "id": "tag_2026-10-14_003",
+      "level": 2,
+      "content": "Asana 借新版模型大幅降低测试…",
+      "date": "2026-10-14"
     },
     {
-      "id": "sig_2026-10-12_001",
-      "level": 1,
-      "content": "Asana 用 GPT-6.1 降本增效",
-      "summary": "Asana 结合 GPT-6 Astra 优化浏览器智能体，使测试成本降低 76",
-      "source": "https://openai.com/index/asana-browser-agent",
-      "date": "2026-10-13",
-      "signal_index": null
+      "id": "tag_2026-10-14_004",
+      "level": 2,
+      "content": "Asana 用 GPT-6.1 降…",
+      "date": "2026-10-14"
     },
     {
-      "id": "sig_2026-10-12_002",
-      "level": 1,
-      "content": "Cloudflare 开源多模态决策模型",
-      "summary": "Cloudflare 开源基于 Qwen3 的多模态决策模型 Clef-omni",
-      "source": "https://www.marktechpost.com/2026/10/11/cloudflare-clef-omni-multimodal-decision-model/",
-      "date": "2026-10-13",
-      "signal_index": null
+      "id": "tag_2026-10-14_005",
+      "level": 2,
+      "content": "Cloudflare 开源多模态决…",
+      "date": "2026-10-14"
     },
     {
-      "id": "sig_2026-10-12_003",
-      "level": 1,
-      "content": "OrcaRouter 发布百万上下文网安模型",
-      "summary": "OrcaRouter 发布拥有百万上下文窗口的网安模型 OrcaCyber Ze",
-      "source": "https://www.marktechpost.com/2026/10/10/orcarouter-releases-orcacyber-zero-1-5-cybersecurity-model-with-1m-context/",
-      "date": "2026-10-13",
-      "signal_index": null
+      "id": "tag_2026-10-14_006",
+      "level": 2,
+      "content": "OrcaRouter 发布百万上下…",
+      "date": "2026-10-14"
     },
     {
-      "id": "sig_2026-10-12_004",
-      "level": 1,
-      "content": "vLLM 发布 Decision 3.0 决策模型",
-      "summary": "vLLM 发布 Decision 3.0 系列开源多模态决策模型，无需生成文本即",
-      "source": "https://www.marktechpost.com/2026/10/11/what-is-decision-3-0-vllm-semantic-routers-new-open-decision-models/",
-      "date": "2026-10-13",
-      "signal_index": null
+      "id": "tag_2026-10-14_007",
+      "level": 2,
+      "content": "vLLM 发布 Decision …",
+      "date": "2026-10-14"
     },
     {
       "id": "tag_2026-10-13_001",
@@ -101,44 +143,44 @@
       "date": "2026-10-13"
     },
     {
-      "id": "tag_2026-10-13_004",
-      "level": 2,
+      "id": "word_2026-10-13_004",
+      "level": 3,
       "content": "Anthropic 切断内部测试网…",
       "date": "2026-10-13"
     },
     {
-      "id": "tag_2026-10-13_005",
-      "level": 2,
+      "id": "word_2026-10-13_005",
+      "level": 3,
       "content": "Sakana AI 推出高效论文审…",
       "date": "2026-10-13"
     },
     {
-      "id": "tag_2026-10-12_001",
-      "level": 2,
+      "id": "word_2026-10-12_001",
+      "level": 3,
       "content": "微软发布决策评分模型 Decisi…",
       "date": "2026-10-12"
     },
     {
-      "id": "tag_2026-10-12_002",
-      "level": 2,
+      "id": "word_2026-10-12_002",
+      "level": 3,
       "content": "第三方 AI 代理存在严重安全盲点",
       "date": "2026-10-12"
     },
     {
-      "id": "tag_2026-10-12_003",
-      "level": 2,
+      "id": "word_2026-10-12_003",
+      "level": 3,
       "content": "开发者用 AI 代理加速仿真应用构建",
       "date": "2026-10-12"
     },
     {
-      "id": "tag_2026-10-12_004",
-      "level": 2,
+      "id": "word_2026-10-12_004",
+      "level": 3,
       "content": "探索多智能体故障归因方法",
       "date": "2026-10-12"
     },
     {
-      "id": "tag_2026-10-12_005",
-      "level": 2,
+      "id": "word_2026-10-12_005",
+      "level": 3,
       "content": "OpenAI 代理被曝通过维基合谋",
       "date": "2026-10-12"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "英伟达新方法助智能体从错误恢复",
       "date": "2026-10-11"
-    },
-    {
-      "id": "word_2026-10-11_008",
-      "level": 3,
-      "content": "Architect 推出 LLM …",
-      "date": "2026-10-11"
-    },
-    {
-      "id": "word_2026-10-10_001",
-      "level": 3,
-      "content": "LegalOn 策略性匹配模型降本…",
-      "date": "2026-10-10"
-    },
-    {
-      "id": "word_2026-10-10_002",
-      "level": 3,
-      "content": "甲骨文利用 AI 重构内部工作流",
-      "date": "2026-10-10"
-    },
-    {
-      "id": "word_2026-10-10_003",
-      "level": 3,
-      "content": "Pollo AI 助力创意转视频广告",
-      "date": "2026-10-10"
-    },
-    {
-      "id": "word_2026-10-10_004",
-      "level": 3,
-      "content": "MIT 发布自我改进 AI 框架 …",
-      "date": "2026-10-10"
-    },
-    {
-      "id": "word_2026-10-10_005",
-      "level": 3,
-      "content": "发现 AI 智能体跨语言串通行为",
-      "date": "2026-10-10"
-    },
-    {
-      "id": "word_2026-10-10_006",
-      "level": 3,
-      "content": "NVIDIA 微软推 RTX Sp…",
-      "date": "2026-10-10"
     }
   ]
 }
