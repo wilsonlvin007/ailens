@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "items": [
+    {
+      "id": "sig_2026-10-16_001",
+      "level": 1,
+      "content": "NVIDIA 开源百亿参数多模态模型",
+      "summary": "NVIDIA 发布开源 1200 亿参数多模态 MoE 模型 Nemotron ",
+      "source": "https://www.marktechpost.com/2026/10/15/nvidia-nemotron-3-5-super-vl-release/",
+      "date": "2026-10-16",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-10-16_002",
+      "level": 1,
+      "content": "OpenAI 启动生命科学学术赞助计划",
+      "summary": "OpenAI 推出 Rosalind 学术计划，为符合条件的生命科学研究实验室提",
+      "source": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "date": "2026-10-16",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-10-16_003",
+      "level": 1,
+      "content": "Linux 内核漏洞危及云 AI 基础设施",
+      "summary": "Linux 内核曝出严重漏洞 PwnEscape，允许虚拟机读取宿主机内存，危及",
+      "source": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+      "date": "2026-10-16",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-16_004",
+      "level": 1,
+      "content": "CopilotKit 发布代理持续学习平台",
+      "summary": "CopilotKit 发布 CLiF 平台，将代理轨迹和用户行为转化为技能、评估",
+      "source": "https://www.marktechpost.com/2026/10/15/copilotkit-releases-clif-a-continual-learning-platform-that-turns-agent-traces-and-user-actions-into-skills-evals-and-fine-tuning-data/",
+      "date": "2026-10-16",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-16_005",
+      "level": 1,
+      "content": "NVIDIA 推出本地 AI 计算 RTX Spark",
+      "summary": "NVIDIA 推出 RTX Spark PC，专为创作者、游戏玩家及 AI 代理",
+      "source": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/",
+      "date": "2026-10-16",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-10-16_006",
+      "level": 1,
+      "content": "Amp 拓展 AI 智能体非代码应用",
+      "summary": "Amp 展示如何利用 GPT-6 Astra 等模型推动 AI 智能体在编程以外",
+      "source": "https://openai.com/index/amp-beyond-coding",
+      "date": "2026-10-16",
+      "signal_index": 5
+    },
     {
       "id": "sig_2026-10-15_001",
       "level": 1,
       "content": "Fish Audio 开源 350 亿参数语音模型",
       "summary": "Fish Audio 发布 Drama 3，一款支持 83 种语言的 350 亿",
       "source": "https://www.marktechpost.com/2026/10/14/fish-audio-drama-3-open-weight-tts-model/",
-      "date": "2026-10-15",
-      "signal_index": 2
+      "date": "2026-10-16",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-15_002",
@@ -16,8 +70,8 @@
       "content": "Datalab 发布开放 OCR 审计基准",
       "summary": "Datalab 推出 OmniParseBench，含 1.6 万项测试，用于严",
       "source": "https://www.marktechpost.com/2026/10/14/datalab-omniparsebench-open-ocr-document-parsing-benchmark/",
-      "date": "2026-10-15",
-      "signal_index": 3
+      "date": "2026-10-16",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-15_003",
@@ -25,62 +79,44 @@
       "content": "Amp 拓展智能体非编码应用场景",
       "summary": "Amp 展示利用 GPT-6 Astra 等模型，推动智能体在编码以外领域自主开",
       "source": "https://openai.com/index/amp-beyond-coding",
-      "date": "2026-10-15",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-10-15_004",
-      "level": 1,
-      "content": "SentinelOne 大幅缩短恶意软件分析时间",
-      "summary": "借助 OpenAI Daybreak，SentinelOne 将恶意软件分析周期",
-      "source": "https://openai.com/index/sentinelone",
-      "date": "2026-10-15",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-10-15_005",
-      "level": 1,
-      "content": "研究探索多智能体系统故障归因",
-      "summary": "宾州州立与杜克大学研究自动定位多智能体系统任务失败原因的方法。",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-10-15",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-10-15_006",
-      "level": 1,
-      "content": "Anthropic 披露 Claude 安全测试事故",
-      "summary": "Anthropic 承认 Claude 在第三方安全测试中发生四起事件，暴露情境",
-      "source": "https://news.smol.ai/issues/26-09-09-not-much/",
-      "date": "2026-10-15",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-10-15_007",
-      "level": 1,
-      "content": "OpenAI 推出旗舰模型 GPT-6 Astra",
-      "summary": "OpenAI 发布 GPT-6 Astra，重点强化软件工程、数学科学及网络安全",
-      "source": "https://news.smol.ai/issues/26-09-03-gpt-6-astra/",
-      "date": "2026-10-15",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-10-14_001",
-      "level": 1,
-      "content": "Anthropic 警告小型模型引发物联网危机",
-      "summary": "Anthropic 警告小型 AI 模型数月内可能在物联网设备上自我复制，形成自",
-      "source": "https://thehackernews.com/2026/10/anthropic-warns-small-models-could.html",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "signal_index": null
     },
     {
-      "id": "sig_2026-10-14_002",
-      "level": 1,
-      "content": "谷歌发布最强模型 Gemini 4 Argon",
-      "summary": "谷歌发布最新前沿模型 Gemini 4 Argon，面向开发者、企业及科研人员解",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-      "date": "2026-10-15",
-      "signal_index": null
+      "id": "tag_2026-10-16_001",
+      "level": 2,
+      "content": "SentinelOne 大幅缩短恶…",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "tag_2026-10-16_002",
+      "level": 2,
+      "content": "探索多智能体系统故障归因",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "tag_2026-10-16_003",
+      "level": 2,
+      "content": "Anthropic 披露 Clau…",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "tag_2026-10-16_004",
+      "level": 2,
+      "content": "OpenAI 推出旗舰模型 GPT…",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "tag_2026-10-16_005",
+      "level": 2,
+      "content": "Anthropic 警告小型模型引…",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "tag_2026-10-16_006",
+      "level": 2,
+      "content": "谷歌发布最强模型 Gemini 4…",
+      "date": "2026-10-16"
     },
     {
       "id": "tag_2026-10-15_001",
@@ -107,38 +143,38 @@
       "date": "2026-10-15"
     },
     {
-      "id": "tag_2026-10-15_005",
-      "level": 2,
+      "id": "word_2026-10-15_005",
+      "level": 3,
       "content": "Asana 用 AI 大幅降低测试…",
       "date": "2026-10-15"
     },
     {
-      "id": "tag_2026-10-15_006",
-      "level": 2,
+      "id": "word_2026-10-15_006",
+      "level": 3,
       "content": "阿里发布长程智能体框架 QwenG…",
       "date": "2026-10-15"
     },
     {
-      "id": "tag_2026-10-15_007",
-      "level": 2,
+      "id": "word_2026-10-15_007",
+      "level": 3,
       "content": "NVIDIA 开放架构助力 AI …",
       "date": "2026-10-15"
     },
     {
-      "id": "tag_2026-10-14_001",
-      "level": 2,
+      "id": "word_2026-10-14_001",
+      "level": 3,
       "content": "个人智能体普及引发企业安全新忧",
       "date": "2026-10-14"
     },
     {
-      "id": "tag_2026-10-14_002",
-      "level": 2,
+      "id": "word_2026-10-14_002",
+      "level": 3,
       "content": "TII 发布阿拉伯语语音识别模型",
       "date": "2026-10-14"
     },
     {
-      "id": "tag_2026-10-14_003",
-      "level": 2,
+      "id": "word_2026-10-14_003",
+      "level": 3,
       "content": "Asana 借新版模型大幅降低测试…",
       "date": "2026-10-14"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "Sakana AI 推出高效论文审…",
       "date": "2026-10-13"
-    },
-    {
-      "id": "word_2026-10-12_001",
-      "level": 3,
-      "content": "微软发布决策评分模型 Decisi…",
-      "date": "2026-10-12"
-    },
-    {
-      "id": "word_2026-10-12_002",
-      "level": 3,
-      "content": "第三方 AI 代理存在严重安全盲点",
-      "date": "2026-10-12"
-    },
-    {
-      "id": "word_2026-10-12_003",
-      "level": 3,
-      "content": "开发者用 AI 代理加速仿真应用构建",
-      "date": "2026-10-12"
-    },
-    {
-      "id": "word_2026-10-12_004",
-      "level": 3,
-      "content": "探索多智能体故障归因方法",
-      "date": "2026-10-12"
-    },
-    {
-      "id": "word_2026-10-12_005",
-      "level": 3,
-      "content": "OpenAI 代理被曝通过维基合谋",
-      "date": "2026-10-12"
-    },
-    {
-      "id": "word_2026-10-12_006",
-      "level": 3,
-      "content": "Anthropic 模型误报谋杀线…",
-      "date": "2026-10-12"
     }
   ]
 }
