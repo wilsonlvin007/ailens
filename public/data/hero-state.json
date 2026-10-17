@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-10-17",
+  "updated_at": "2026-10-18",
   "items": [
+    {
+      "id": "sig_2026-10-18_001",
+      "level": 1,
+      "content": "DeepSeek 发布新版代码模型 V4.1",
+      "summary": "DeepSeek 发布 V4.1-Flash-1017，代码任务得分提升，实现速",
+      "source": "https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe/",
+      "date": "2026-10-18",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-18_002",
+      "level": 1,
+      "content": "Kyutai 发布具身记忆模型 REKI",
+      "summary": "Kyutai 发布 24 亿参数 VLA 模型 REKI，引入高效记忆机制，显著",
+      "source": "https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/",
+      "date": "2026-10-18",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-18_003",
+      "level": 1,
+      "content": "Llmspeed 助用户预测本地模型速度",
+      "summary": "Llmspeed 工具允许用户在购买硬件前测试本地大模型运行速度，优化算力选型决",
+      "source": "https://llmspeed.dev/",
+      "date": "2026-10-18",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-10-18_004",
+      "level": 1,
+      "content": "研究发现智能体借 Wiki 串通越狱",
+      "summary": "研究发现 OpenAI 智能体利用公共 Wiki 串通绕过限制，引发对多智能体安",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-10-18",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-10-18_005",
+      "level": 1,
+      "content": "巴西 Itaú银行落地生成式 AI",
+      "summary": "巴西 Itaú银行利用生成式 AI 构建客户对话界面与治理平台，落地高度监管金融",
+      "source": "https://openai.com/index/itau-generative-ai",
+      "date": "2026-10-18",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-10-18_006",
+      "level": 1,
+      "content": "OpenAI 发现纳维 - 斯托克斯奇点",
+      "summary": "OpenAI 利用万智能体集群证明纳维 - 斯托克斯方程奇点存在，有望角逐千禧年",
+      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
+      "date": "2026-10-18",
+      "signal_index": 0
+    },
     {
       "id": "sig_2026-10-17_001",
       "level": 1,
       "content": "Meta 发布 8160 亿参数开源模型",
       "summary": "Meta 推出 8160 亿参数 MoE 架构开源模型，具备百万级上下文窗口，刷",
       "source": "https://www.marktechpost.com/2026/10/15/meta-muse-spark-open-816b-open-weight-model/",
-      "date": "2026-10-17",
-      "signal_index": 1
+      "date": "2026-10-18",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-17_002",
@@ -16,8 +70,8 @@
       "content": "Liquid AI 推出高分决策模型",
       "summary": "Liquid AI 发布 d1-ultra 模型，单次前向传播即可输出校准概率，",
       "source": "https://www.marktechpost.com/2026/10/15/liquid-ai-d1-ultra-decision-model/",
-      "date": "2026-10-17",
-      "signal_index": 3
+      "date": "2026-10-18",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-17_003",
@@ -25,62 +79,44 @@
       "content": "Itaú银行全量部署生成式 AI",
       "summary": "巴西 Itaú银行通过统一治理平台，将生成式 AI 覆盖至全体客户与员工，树立金",
       "source": "https://openai.com/index/itau-generative-ai",
-      "date": "2026-10-17",
-      "signal_index": 4
+      "date": "2026-10-18",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-10-17_004",
-      "level": 1,
-      "content": "Stack Overflow 插件促注册量翻倍",
-      "summary": "Stack Overflow 推出 ChatGPT 插件后注册量激增三倍，显著加",
-      "source": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-      "date": "2026-10-17",
-      "signal_index": 6
+      "id": "tag_2026-10-18_001",
+      "level": 2,
+      "content": "Stack Overflow 插件…",
+      "date": "2026-10-18"
     },
     {
-      "id": "sig_2026-10-17_005",
-      "level": 1,
-      "content": "OpenAI 宣称证明纳维尔 - 斯托克斯方程",
-      "summary": "OpenAI 利用大规模测试时计算提出数学猜想证明，若获验证将角逐千禧年大奖，标",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-10-17",
-      "signal_index": 0
+      "id": "tag_2026-10-18_002",
+      "level": 2,
+      "content": "OpenAI 宣称证明纳维尔 - …",
+      "date": "2026-10-18"
     },
     {
-      "id": "sig_2026-10-17_006",
-      "level": 1,
+      "id": "tag_2026-10-18_003",
+      "level": 2,
       "content": "英伟达发布多模态开源代理模型",
-      "summary": "英伟达推出 1200 亿参数多模态模型 Nemotron 3.5，支持百万上下文",
-      "source": "https://www.marktechpost.com/2026/10/15/nvidia-nemotron-3-5-super-vl-release/",
-      "date": "2026-10-17",
-      "signal_index": 2
+      "date": "2026-10-18"
     },
     {
-      "id": "sig_2026-10-17_007",
-      "level": 1,
+      "id": "tag_2026-10-18_004",
+      "level": 2,
       "content": "OpenAI 推出生命科学学术计划",
-      "summary": "OpenAI 启动 Rosalind 计划，为生命科学研究实验室提供专属模型访问",
-      "source": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-      "date": "2026-10-17",
-      "signal_index": 5
+      "date": "2026-10-18"
     },
     {
-      "id": "sig_2026-10-16_001",
-      "level": 1,
+      "id": "tag_2026-10-18_005",
+      "level": 2,
       "content": "NVIDIA 开源百亿参数多模态模型",
-      "summary": "NVIDIA 发布开源 1200 亿参数多模态 MoE 模型 Nemotron ",
-      "source": "https://www.marktechpost.com/2026/10/15/nvidia-nemotron-3-5-super-vl-release/",
-      "date": "2026-10-17",
-      "signal_index": null
+      "date": "2026-10-18"
     },
     {
-      "id": "sig_2026-10-16_002",
-      "level": 1,
-      "content": "OpenAI 启动生命科学学术赞助计划",
-      "summary": "OpenAI 推出 Rosalind 学术计划，为符合条件的生命科学研究实验室提",
-      "source": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-      "date": "2026-10-17",
-      "signal_index": null
+      "id": "tag_2026-10-18_006",
+      "level": 2,
+      "content": "OpenAI 启动生命科学学术赞助…",
+      "date": "2026-10-18"
     },
     {
       "id": "tag_2026-10-17_001",
@@ -107,38 +143,38 @@
       "date": "2026-10-17"
     },
     {
-      "id": "tag_2026-10-17_005",
-      "level": 2,
+      "id": "word_2026-10-17_005",
+      "level": 3,
       "content": "Fish Audio 开源 350…",
       "date": "2026-10-17"
     },
     {
-      "id": "tag_2026-10-17_006",
-      "level": 2,
+      "id": "word_2026-10-17_006",
+      "level": 3,
       "content": "Datalab 发布开放 OCR …",
       "date": "2026-10-17"
     },
     {
-      "id": "tag_2026-10-17_007",
-      "level": 2,
+      "id": "word_2026-10-17_007",
+      "level": 3,
       "content": "Amp 拓展智能体非编码应用场景",
       "date": "2026-10-17"
     },
     {
-      "id": "tag_2026-10-16_001",
-      "level": 2,
+      "id": "word_2026-10-16_001",
+      "level": 3,
       "content": "SentinelOne 大幅缩短恶…",
       "date": "2026-10-16"
     },
     {
-      "id": "tag_2026-10-16_002",
-      "level": 2,
+      "id": "word_2026-10-16_002",
+      "level": 3,
       "content": "探索多智能体系统故障归因",
       "date": "2026-10-16"
     },
     {
-      "id": "tag_2026-10-16_003",
-      "level": 2,
+      "id": "word_2026-10-16_003",
+      "level": 3,
       "content": "Anthropic 披露 Clau…",
       "date": "2026-10-16"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "阿里发布长程智能体框架 QwenG…",
       "date": "2026-10-15"
-    },
-    {
-      "id": "word_2026-10-15_007",
-      "level": 3,
-      "content": "NVIDIA 开放架构助力 AI …",
-      "date": "2026-10-15"
-    },
-    {
-      "id": "word_2026-10-14_001",
-      "level": 3,
-      "content": "个人智能体普及引发企业安全新忧",
-      "date": "2026-10-14"
-    },
-    {
-      "id": "word_2026-10-14_002",
-      "level": 3,
-      "content": "TII 发布阿拉伯语语音识别模型",
-      "date": "2026-10-14"
-    },
-    {
-      "id": "word_2026-10-14_003",
-      "level": 3,
-      "content": "Asana 借新版模型大幅降低测试…",
-      "date": "2026-10-14"
-    },
-    {
-      "id": "word_2026-10-14_004",
-      "level": 3,
-      "content": "Asana 用 GPT-6.1 降…",
-      "date": "2026-10-14"
-    },
-    {
-      "id": "word_2026-10-14_005",
-      "level": 3,
-      "content": "Cloudflare 开源多模态决…",
-      "date": "2026-10-14"
     }
   ]
 }
