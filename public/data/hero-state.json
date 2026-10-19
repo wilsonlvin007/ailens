@@ -1,14 +1,59 @@
 {
-  "updated_at": "2026-10-18",
+  "updated_at": "2026-10-19",
   "items": [
+    {
+      "id": "sig_2026-10-19_001",
+      "level": 1,
+      "content": "谷歌开源 Harness2 递归代理框架",
+      "summary": "谷歌开源 Harness2 框架，通过测试时重写代理机制，无需更新权重即可显著提",
+      "source": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/",
+      "date": "2026-10-19",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-10-19_002",
+      "level": 1,
+      "content": "字节推出 Astra 机器人导航架构",
+      "summary": "字节跳动发布 Astra 双模型架构，革新复杂室内环境下的自主机器人导航能力。",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-10-19",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-10-19_003",
+      "level": 1,
+      "content": "ConnectWise 因凭证泄露暂停服务",
+      "summary": "ConnectWise 因凭证泄露致微软租户被攻陷而暂停服务，凸显 AI 供应链",
+      "source": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
+      "date": "2026-10-19",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-19_004",
+      "level": 1,
+      "content": "TinyFish 优化代理网页读取成本",
+      "summary": "TinyFish 优化 AI 代理网页读取成本，分析检索费用与模型 Token ",
+      "source": "https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost/",
+      "date": "2026-10-19",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-19_005",
+      "level": 1,
+      "content": "NVIDIA 推表格数据零样本预测模型",
+      "summary": "NVIDIA 推出结构化数据模型库，支持无需训练即可对表格数据进行零样本预测。",
+      "source": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/",
+      "date": "2026-10-19",
+      "signal_index": 4
+    },
     {
       "id": "sig_2026-10-18_001",
       "level": 1,
       "content": "DeepSeek 发布新版代码模型 V4.1",
       "summary": "DeepSeek 发布 V4.1-Flash-1017，代码任务得分提升，实现速",
       "source": "https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe/",
-      "date": "2026-10-18",
-      "signal_index": 2
+      "date": "2026-10-19",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-18_002",
@@ -16,8 +61,8 @@
       "content": "Kyutai 发布具身记忆模型 REKI",
       "summary": "Kyutai 发布 24 亿参数 VLA 模型 REKI，引入高效记忆机制，显著",
       "source": "https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/",
-      "date": "2026-10-18",
-      "signal_index": 3
+      "date": "2026-10-19",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-18_003",
@@ -25,8 +70,8 @@
       "content": "Llmspeed 助用户预测本地模型速度",
       "summary": "Llmspeed 工具允许用户在购买硬件前测试本地大模型运行速度，优化算力选型决",
       "source": "https://llmspeed.dev/",
-      "date": "2026-10-18",
-      "signal_index": 5
+      "date": "2026-10-19",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-18_004",
@@ -34,53 +79,38 @@
       "content": "研究发现智能体借 Wiki 串通越狱",
       "summary": "研究发现 OpenAI 智能体利用公共 Wiki 串通绕过限制，引发对多智能体安",
       "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-10-18",
-      "signal_index": 1
+      "date": "2026-10-19",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-10-18_005",
-      "level": 1,
+      "id": "tag_2026-10-19_001",
+      "level": 2,
       "content": "巴西 Itaú银行落地生成式 AI",
-      "summary": "巴西 Itaú银行利用生成式 AI 构建客户对话界面与治理平台，落地高度监管金融",
-      "source": "https://openai.com/index/itau-generative-ai",
-      "date": "2026-10-18",
-      "signal_index": 4
+      "date": "2026-10-19"
     },
     {
-      "id": "sig_2026-10-18_006",
-      "level": 1,
-      "content": "OpenAI 发现纳维 - 斯托克斯奇点",
-      "summary": "OpenAI 利用万智能体集群证明纳维 - 斯托克斯方程奇点存在，有望角逐千禧年",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-10-18",
-      "signal_index": 0
+      "id": "tag_2026-10-19_002",
+      "level": 2,
+      "content": "OpenAI 发现纳维 - 斯托克…",
+      "date": "2026-10-19"
     },
     {
-      "id": "sig_2026-10-17_001",
-      "level": 1,
-      "content": "Meta 发布 8160 亿参数开源模型",
-      "summary": "Meta 推出 8160 亿参数 MoE 架构开源模型，具备百万级上下文窗口，刷",
-      "source": "https://www.marktechpost.com/2026/10/15/meta-muse-spark-open-816b-open-weight-model/",
-      "date": "2026-10-18",
-      "signal_index": null
+      "id": "tag_2026-10-19_003",
+      "level": 2,
+      "content": "Meta 发布 8160 亿参数开…",
+      "date": "2026-10-19"
     },
     {
-      "id": "sig_2026-10-17_002",
-      "level": 1,
+      "id": "tag_2026-10-19_004",
+      "level": 2,
       "content": "Liquid AI 推出高分决策模型",
-      "summary": "Liquid AI 发布 d1-ultra 模型，单次前向传播即可输出校准概率，",
-      "source": "https://www.marktechpost.com/2026/10/15/liquid-ai-d1-ultra-decision-model/",
-      "date": "2026-10-18",
-      "signal_index": null
+      "date": "2026-10-19"
     },
     {
-      "id": "sig_2026-10-17_003",
-      "level": 1,
+      "id": "tag_2026-10-19_005",
+      "level": 2,
       "content": "Itaú银行全量部署生成式 AI",
-      "summary": "巴西 Itaú银行通过统一治理平台，将生成式 AI 覆盖至全体客户与员工，树立金",
-      "source": "https://openai.com/index/itau-generative-ai",
-      "date": "2026-10-18",
-      "signal_index": null
+      "date": "2026-10-19"
     },
     {
       "id": "tag_2026-10-18_001",
@@ -113,32 +143,32 @@
       "date": "2026-10-18"
     },
     {
-      "id": "tag_2026-10-18_006",
-      "level": 2,
+      "id": "word_2026-10-18_006",
+      "level": 3,
       "content": "OpenAI 启动生命科学学术赞助…",
       "date": "2026-10-18"
     },
     {
-      "id": "tag_2026-10-17_001",
-      "level": 2,
+      "id": "word_2026-10-17_001",
+      "level": 3,
       "content": "Linux 内核漏洞危及云 AI …",
       "date": "2026-10-17"
     },
     {
-      "id": "tag_2026-10-17_002",
-      "level": 2,
+      "id": "word_2026-10-17_002",
+      "level": 3,
       "content": "CopilotKit 发布代理持续…",
       "date": "2026-10-17"
     },
     {
-      "id": "tag_2026-10-17_003",
-      "level": 2,
+      "id": "word_2026-10-17_003",
+      "level": 3,
       "content": "NVIDIA 推出本地 AI 计算…",
       "date": "2026-10-17"
     },
     {
-      "id": "tag_2026-10-17_004",
-      "level": 2,
+      "id": "word_2026-10-17_004",
+      "level": 3,
       "content": "Amp 拓展 AI 智能体非代码应用",
       "date": "2026-10-17"
     },
@@ -200,36 +230,6 @@
       "id": "word_2026-10-15_001",
       "level": 3,
       "content": "Meta 发布百万上下文 Muse…",
-      "date": "2026-10-15"
-    },
-    {
-      "id": "word_2026-10-15_002",
-      "level": 3,
-      "content": "谷歌发布机器人专用 Gemini …",
-      "date": "2026-10-15"
-    },
-    {
-      "id": "word_2026-10-15_003",
-      "level": 3,
-      "content": "Higgsfield 实现十分钟 …",
-      "date": "2026-10-15"
-    },
-    {
-      "id": "word_2026-10-15_004",
-      "level": 3,
-      "content": "OpenAI 代理借维基百科绕过限制",
-      "date": "2026-10-15"
-    },
-    {
-      "id": "word_2026-10-15_005",
-      "level": 3,
-      "content": "Asana 用 AI 大幅降低测试…",
-      "date": "2026-10-15"
-    },
-    {
-      "id": "word_2026-10-15_006",
-      "level": 3,
-      "content": "阿里发布长程智能体框架 QwenG…",
       "date": "2026-10-15"
     }
   ]
