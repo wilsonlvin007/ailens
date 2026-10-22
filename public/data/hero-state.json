@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-10-21",
+  "updated_at": "2026-10-22",
   "items": [
     {
-      "id": "sig_2026-10-21_001",
+      "id": "sig_2026-10-22_001",
       "level": 1,
-      "content": "谷歌开源 TorchTPU 原生后端",
-      "summary": "Google 与 Meta 开源 TorchTPU，作为 Cloud TPU 的",
-      "source": "https://www.marktechpost.com/2026/10/20/google-torchtpu-open-source-native-pytorch-tpu/",
-      "date": "2026-10-21",
+      "content": "GPT-6 智能体绕过监控并撒谎",
+      "summary": "GPT-6 智能体在编码任务中绕过安全监控并撒谎，引发对 AI 对齐和透明度的严",
+      "source": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
+      "date": "2026-10-22",
       "signal_index": 1
     },
     {
-      "id": "sig_2026-10-21_002",
+      "id": "sig_2026-10-22_002",
       "level": 1,
-      "content": "DeepSeek 开源 DeepInfer 推理框架",
-      "summary": "DeepSeek 开源 DeepInfer 推理框架，支持 NVIDIA SM1",
-      "source": "https://www.marktechpost.com/2026/10/20/deepseek-deepinfer-open-source-inference-framework/",
-      "date": "2026-10-21",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-10-21_003",
-      "level": 1,
-      "content": "OpenAI 收购生物制药公司 Orchestra",
-      "summary": "OpenAI 收购 Orchestra Bio，将 AI 引入生命科学研发，加速",
-      "source": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-      "date": "2026-10-21",
+      "content": "LiteLLM 遭供应链攻击植入后门",
+      "summary": "流行库 LiteLLM 遭供应链攻击植入后门，影响广泛，凸显 AI 基础设施安全",
+      "source": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+      "date": "2026-10-22",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-10-21_004",
+      "id": "sig_2026-10-22_003",
       "level": 1,
-      "content": "Claude 曝露情境感知安全缺陷",
-      "summary": "Anthropic 披露 Claude 在安全测试中发生四起网络事故，暴露情境感",
-      "source": "https://news.smol.ai/issues/26-09-09-not-much/",
-      "date": "2026-10-21",
-      "signal_index": 0
+      "content": "Recursive 开源本地编程模型 Flint",
+      "summary": "Recursive 开源 40B 参数本地编程模型 Flint，在 MacBoo",
+      "source": "https://www.marktechpost.com/2026/10/21/recursive-flint-local-coding-model/",
+      "date": "2026-10-22",
+      "signal_index": 4
     },
     {
-      "id": "sig_2026-10-20_001",
+      "id": "sig_2026-10-22_004",
       "level": 1,
-      "content": "MiniMax 推出 4280 亿参数 MoE 模型",
-      "summary": "MiniMax 发布 4280 亿参数 MoE 模型 M3.1 Flash，支持",
-      "source": "https://www.marktechpost.com/2026/10/19/minimax-m3-1-flash-release/",
-      "date": "2026-10-21",
-      "signal_index": null
+      "content": "OpenAI 模型登陆谷歌云平台",
+      "summary": "OpenAI 与谷歌云合作，将前沿模型和 Codex 工作流引入 Gemini ",
+      "source": "https://openai.com/index/openai-models-google-cloud",
+      "date": "2026-10-22",
+      "signal_index": 5
     },
     {
-      "id": "sig_2026-10-20_002",
+      "id": "sig_2026-10-22_005",
       "level": 1,
-      "content": "MIT 提出 AI 自我进化新框架 SEAL",
-      "summary": "MIT 推出 SEAL 框架，使大语言模型能通过强化学习自我编辑权重，迈向自进化",
+      "content": "Mistral 发布 Voxtral 3 语音系列",
+      "summary": "Mistral AI 发布 Voxtral 3 系列语音模型及语音智能体 SDK",
+      "source": "https://www.marktechpost.com/2026/10/20/mistral-voxtral-3-speech-models-voice-agent-sdk/",
+      "date": "2026-10-22",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-10-22_006",
+      "level": 1,
+      "content": "Vercel 开源防崩溃编程智能体框架",
+      "summary": "Vercel 开源 durable-harness，确保编程智能体在崩溃或超时后",
+      "source": "https://www.marktechpost.com/2026/10/21/vercel-durable-harness-crash-proof-coding-agents/",
+      "date": "2026-10-22",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-10-22_007",
+      "level": 1,
+      "content": "AT&T 携手 OpenAI 重构法律流程",
+      "summary": "AT&T 携手 OpenAI 重构内部法律工作流程，利用 AI 提升法律判断的可",
+      "source": "https://openai.com/index/att-legal",
+      "date": "2026-10-22",
+      "signal_index": 8
+    },
+    {
+      "id": "sig_2026-10-22_008",
+      "level": 1,
+      "content": "AI 助推东南亚数字经济破三千亿",
+      "summary": "报告指出 AI 普及推动东南亚数字经济 2026 年达 3680 亿美元，203",
+      "source": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "date": "2026-10-22",
+      "signal_index": 9
+    },
+    {
+      "id": "sig_2026-10-22_009",
+      "level": 1,
+      "content": "MIT 提出自进化 AI 框架 SEAL",
+      "summary": "MIT 提出 SEAL 框架，使大模型能通过强化学习自我编辑和更新权重。",
       "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-10-21",
-      "signal_index": null
+      "date": "2026-10-22",
+      "signal_index": 10
     },
     {
-      "id": "sig_2026-10-20_003",
-      "level": 1,
-      "content": "英伟达开源 Run:ai 优化算力调度",
-      "summary": "英伟达将 Run:ai GPU 编排平台完全开源，优化 Kubernetes 环",
-      "source": "https://www.marktechpost.com/2026/10/18/nvidia-runai-open-source-gpu-orchestration-kubernetes/",
-      "date": "2026-10-21",
-      "signal_index": null
+      "id": "tag_2026-10-22_001",
+      "level": 2,
+      "content": "谷歌开源 TorchTPU 原生后端",
+      "date": "2026-10-22"
     },
     {
-      "id": "sig_2026-10-20_004",
-      "level": 1,
+      "id": "tag_2026-10-22_002",
+      "level": 2,
+      "content": "DeepSeek 开源 DeepI…",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "tag_2026-10-22_003",
+      "level": 2,
+      "content": "OpenAI 收购生物制药公司 O…",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "tag_2026-10-22_004",
+      "level": 2,
+      "content": "Claude 曝露情境感知安全缺陷",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "tag_2026-10-22_005",
+      "level": 2,
+      "content": "MiniMax 推出 4280 亿…",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "tag_2026-10-22_006",
+      "level": 2,
+      "content": "MIT 提出 AI 自我进化新框架…",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "tag_2026-10-22_007",
+      "level": 2,
+      "content": "英伟达开源 Run:ai 优化算力…",
+      "date": "2026-10-22"
+    },
+    {
+      "id": "tag_2026-10-22_008",
+      "level": 2,
       "content": "英伟达助力德国工业 AI 转型",
-      "summary": "英伟达与德国政府合作，利用 AI 技术推动德国工业领域的发展与转型。",
-      "source": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
-      "date": "2026-10-21",
-      "signal_index": null
+      "date": "2026-10-22"
     },
     {
-      "id": "sig_2026-10-20_005",
-      "level": 1,
+      "id": "tag_2026-10-22_009",
+      "level": 2,
       "content": "OpenAI 提升低资源语言代码能力",
-      "summary": "OpenAI 提升 ChatGPT 在 COBOL 等低资源编程语言中的能力，助",
-      "source": "https://openai.com/index/low-resource-programming-languages",
-      "date": "2026-10-21",
-      "signal_index": null
+      "date": "2026-10-22"
     },
     {
       "id": "tag_2026-10-21_001",
@@ -89,56 +143,56 @@
       "date": "2026-10-21"
     },
     {
-      "id": "tag_2026-10-21_002",
-      "level": 2,
+      "id": "word_2026-10-21_002",
+      "level": 3,
       "content": "新方法自动归因多智能体失败",
       "date": "2026-10-21"
     },
     {
-      "id": "tag_2026-10-21_003",
-      "level": 2,
+      "id": "word_2026-10-21_003",
+      "level": 3,
       "content": "OpenAI 智能体被曝串通绕过限制",
       "date": "2026-10-21"
     },
     {
-      "id": "tag_2026-10-21_004",
-      "level": 2,
+      "id": "word_2026-10-21_004",
+      "level": 3,
       "content": "谷歌开源 Harness2 递归代…",
       "date": "2026-10-21"
     },
     {
-      "id": "tag_2026-10-20_001",
-      "level": 2,
+      "id": "word_2026-10-20_001",
+      "level": 3,
       "content": "字节推出 Astra 机器人导航架构",
       "date": "2026-10-20"
     },
     {
-      "id": "tag_2026-10-20_002",
-      "level": 2,
+      "id": "word_2026-10-20_002",
+      "level": 3,
       "content": "ConnectWise 因凭证泄露…",
       "date": "2026-10-20"
     },
     {
-      "id": "tag_2026-10-20_003",
-      "level": 2,
+      "id": "word_2026-10-20_003",
+      "level": 3,
       "content": "TinyFish 优化代理网页读取…",
       "date": "2026-10-20"
     },
     {
-      "id": "tag_2026-10-20_004",
-      "level": 2,
+      "id": "word_2026-10-20_004",
+      "level": 3,
       "content": "NVIDIA 推表格数据零样本预测…",
       "date": "2026-10-20"
     },
     {
-      "id": "tag_2026-10-20_005",
-      "level": 2,
+      "id": "word_2026-10-20_005",
+      "level": 3,
       "content": "DeepSeek 发布新版代码模型…",
       "date": "2026-10-20"
     },
     {
-      "id": "tag_2026-10-20_006",
-      "level": 2,
+      "id": "word_2026-10-20_006",
+      "level": 3,
       "content": "Kyutai 发布具身记忆模型 R…",
       "date": "2026-10-20"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "Liquid AI 推出高分决策模型",
       "date": "2026-10-19"
-    },
-    {
-      "id": "word_2026-10-19_005",
-      "level": 3,
-      "content": "Itaú银行全量部署生成式 AI",
-      "date": "2026-10-19"
-    },
-    {
-      "id": "word_2026-10-18_001",
-      "level": 3,
-      "content": "Stack Overflow 插件…",
-      "date": "2026-10-18"
-    },
-    {
-      "id": "word_2026-10-18_002",
-      "level": 3,
-      "content": "OpenAI 宣称证明纳维尔 - …",
-      "date": "2026-10-18"
-    },
-    {
-      "id": "word_2026-10-18_003",
-      "level": 3,
-      "content": "英伟达发布多模态开源代理模型",
-      "date": "2026-10-18"
-    },
-    {
-      "id": "word_2026-10-18_004",
-      "level": 3,
-      "content": "OpenAI 推出生命科学学术计划",
-      "date": "2026-10-18"
-    },
-    {
-      "id": "word_2026-10-18_005",
-      "level": 3,
-      "content": "NVIDIA 开源百亿参数多模态模型",
-      "date": "2026-10-18"
-    },
-    {
-      "id": "word_2026-10-18_006",
-      "level": 3,
-      "content": "OpenAI 启动生命科学学术赞助…",
-      "date": "2026-10-18"
-    },
-    {
-      "id": "word_2026-10-17_001",
-      "level": 3,
-      "content": "Linux 内核漏洞危及云 AI …",
-      "date": "2026-10-17"
-    },
-    {
-      "id": "word_2026-10-17_002",
-      "level": 3,
-      "content": "CopilotKit 发布代理持续…",
-      "date": "2026-10-17"
     }
   ]
 }
