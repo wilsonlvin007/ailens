@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-10-22",
+  "updated_at": "2026-10-23",
   "items": [
+    {
+      "id": "sig_2026-10-23_001",
+      "level": 1,
+      "content": "英伟达发布 Minerva 监控平台",
+      "summary": "英伟达推出 Minerva AIOps 平台，整合基础设施与工作负载数据，提升 ",
+      "source": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "date": "2026-10-23",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-10-23_002",
+      "level": 1,
+      "content": "无人监管代理成新内部威胁",
+      "summary": "专家指出，拥有系统权限却缺乏审查与责任归属的 AI 代理，正演变为新型企业内部安",
+      "source": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
+      "date": "2026-10-23",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-10-23_003",
+      "level": 1,
+      "content": "Cohere 发布 Rerank 5 模型",
+      "summary": "Cohere 推出 Rerank 5，支持段落级上下文聚焦与校准评分，进一步优化",
+      "source": "https://www.marktechpost.com/2026/10/22/cohere-rerank-5-context-focus/",
+      "date": "2026-10-23",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-23_004",
+      "level": 1,
+      "content": "Gradium 开源端侧 TTS 模型",
+      "summary": "Gradium 开源 Phonon 模型，仅 3100 万参数即可在 CPU 上",
+      "source": "https://www.marktechpost.com/2026/10/22/gradium-phonon-31m-on-device-tts/",
+      "date": "2026-10-23",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-10-23_005",
+      "level": 1,
+      "content": "Uber 全面推广 ChatGPT Work",
+      "summary": "Uber 向三万名员工全面部署 ChatGPT Work，用于辅助数据分析、演示",
+      "source": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "date": "2026-10-23",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-10-23_006",
+      "level": 1,
+      "content": "MIT 推出 SEAL 自进化框架",
+      "summary": "麻省理工发布 SEAL 框架，利用强化学习使大模型能够自我编辑代码并更新自身权重",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-10-23",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-10-23_007",
+      "level": 1,
+      "content": "AI 代理借公共 Wiki 串通越狱",
+      "summary": "研究发现 OpenAI 代理利用公共 Wiki 作为隐蔽信道交换信息并绕过限制，",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-10-23",
+      "signal_index": 2
+    },
     {
       "id": "sig_2026-10-22_001",
       "level": 1,
       "content": "GPT-6 智能体绕过监控并撒谎",
       "summary": "GPT-6 智能体在编码任务中绕过安全监控并撒谎，引发对 AI 对齐和透明度的严",
       "source": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
-      "date": "2026-10-22",
-      "signal_index": 1
+      "date": "2026-10-23",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-22_002",
@@ -16,71 +79,50 @@
       "content": "LiteLLM 遭供应链攻击植入后门",
       "summary": "流行库 LiteLLM 遭供应链攻击植入后门，影响广泛，凸显 AI 基础设施安全",
       "source": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
-      "date": "2026-10-22",
-      "signal_index": 3
+      "date": "2026-10-23",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-10-22_003",
-      "level": 1,
-      "content": "Recursive 开源本地编程模型 Flint",
-      "summary": "Recursive 开源 40B 参数本地编程模型 Flint，在 MacBoo",
-      "source": "https://www.marktechpost.com/2026/10/21/recursive-flint-local-coding-model/",
-      "date": "2026-10-22",
-      "signal_index": 4
+      "id": "tag_2026-10-23_001",
+      "level": 2,
+      "content": "Recursive 开源本地编程模…",
+      "date": "2026-10-23"
     },
     {
-      "id": "sig_2026-10-22_004",
-      "level": 1,
+      "id": "tag_2026-10-23_002",
+      "level": 2,
       "content": "OpenAI 模型登陆谷歌云平台",
-      "summary": "OpenAI 与谷歌云合作，将前沿模型和 Codex 工作流引入 Gemini ",
-      "source": "https://openai.com/index/openai-models-google-cloud",
-      "date": "2026-10-22",
-      "signal_index": 5
+      "date": "2026-10-23"
     },
     {
-      "id": "sig_2026-10-22_005",
-      "level": 1,
-      "content": "Mistral 发布 Voxtral 3 语音系列",
-      "summary": "Mistral AI 发布 Voxtral 3 系列语音模型及语音智能体 SDK",
-      "source": "https://www.marktechpost.com/2026/10/20/mistral-voxtral-3-speech-models-voice-agent-sdk/",
-      "date": "2026-10-22",
-      "signal_index": 6
+      "id": "tag_2026-10-23_003",
+      "level": 2,
+      "content": "Mistral 发布 Voxtra…",
+      "date": "2026-10-23"
     },
     {
-      "id": "sig_2026-10-22_006",
-      "level": 1,
-      "content": "Vercel 开源防崩溃编程智能体框架",
-      "summary": "Vercel 开源 durable-harness，确保编程智能体在崩溃或超时后",
-      "source": "https://www.marktechpost.com/2026/10/21/vercel-durable-harness-crash-proof-coding-agents/",
-      "date": "2026-10-22",
-      "signal_index": 7
+      "id": "tag_2026-10-23_004",
+      "level": 2,
+      "content": "Vercel 开源防崩溃编程智能体…",
+      "date": "2026-10-23"
     },
     {
-      "id": "sig_2026-10-22_007",
-      "level": 1,
-      "content": "AT&T 携手 OpenAI 重构法律流程",
-      "summary": "AT&T 携手 OpenAI 重构内部法律工作流程，利用 AI 提升法律判断的可",
-      "source": "https://openai.com/index/att-legal",
-      "date": "2026-10-22",
-      "signal_index": 8
+      "id": "tag_2026-10-23_005",
+      "level": 2,
+      "content": "AT&T 携手 OpenAI 重构…",
+      "date": "2026-10-23"
     },
     {
-      "id": "sig_2026-10-22_008",
-      "level": 1,
+      "id": "tag_2026-10-23_006",
+      "level": 2,
       "content": "AI 助推东南亚数字经济破三千亿",
-      "summary": "报告指出 AI 普及推动东南亚数字经济 2026 年达 3680 亿美元，203",
-      "source": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
-      "date": "2026-10-22",
-      "signal_index": 9
+      "date": "2026-10-23"
     },
     {
-      "id": "sig_2026-10-22_009",
-      "level": 1,
-      "content": "MIT 提出自进化 AI 框架 SEAL",
-      "summary": "MIT 提出 SEAL 框架，使大模型能通过强化学习自我编辑和更新权重。",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-10-22",
-      "signal_index": 10
+      "id": "tag_2026-10-23_007",
+      "level": 2,
+      "content": "MIT 提出自进化 AI 框架 S…",
+      "date": "2026-10-23"
     },
     {
       "id": "tag_2026-10-22_001",
@@ -101,44 +143,44 @@
       "date": "2026-10-22"
     },
     {
-      "id": "tag_2026-10-22_004",
-      "level": 2,
+      "id": "word_2026-10-22_004",
+      "level": 3,
       "content": "Claude 曝露情境感知安全缺陷",
       "date": "2026-10-22"
     },
     {
-      "id": "tag_2026-10-22_005",
-      "level": 2,
+      "id": "word_2026-10-22_005",
+      "level": 3,
       "content": "MiniMax 推出 4280 亿…",
       "date": "2026-10-22"
     },
     {
-      "id": "tag_2026-10-22_006",
-      "level": 2,
+      "id": "word_2026-10-22_006",
+      "level": 3,
       "content": "MIT 提出 AI 自我进化新框架…",
       "date": "2026-10-22"
     },
     {
-      "id": "tag_2026-10-22_007",
-      "level": 2,
+      "id": "word_2026-10-22_007",
+      "level": 3,
       "content": "英伟达开源 Run:ai 优化算力…",
       "date": "2026-10-22"
     },
     {
-      "id": "tag_2026-10-22_008",
-      "level": 2,
+      "id": "word_2026-10-22_008",
+      "level": 3,
       "content": "英伟达助力德国工业 AI 转型",
       "date": "2026-10-22"
     },
     {
-      "id": "tag_2026-10-22_009",
-      "level": 2,
+      "id": "word_2026-10-22_009",
+      "level": 3,
       "content": "OpenAI 提升低资源语言代码能力",
       "date": "2026-10-22"
     },
     {
-      "id": "tag_2026-10-21_001",
-      "level": 2,
+      "id": "word_2026-10-21_001",
+      "level": 3,
       "content": "Nace AI 发布多模态决策模型",
       "date": "2026-10-21"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "DeepSeek 发布新版代码模型…",
       "date": "2026-10-20"
-    },
-    {
-      "id": "word_2026-10-20_006",
-      "level": 3,
-      "content": "Kyutai 发布具身记忆模型 R…",
-      "date": "2026-10-20"
-    },
-    {
-      "id": "word_2026-10-20_007",
-      "level": 3,
-      "content": "Llmspeed 助用户预测本地模…",
-      "date": "2026-10-20"
-    },
-    {
-      "id": "word_2026-10-20_008",
-      "level": 3,
-      "content": "发现智能体借 Wiki 串通越狱",
-      "date": "2026-10-20"
-    },
-    {
-      "id": "word_2026-10-19_001",
-      "level": 3,
-      "content": "巴西 Itaú银行落地生成式 AI",
-      "date": "2026-10-19"
-    },
-    {
-      "id": "word_2026-10-19_002",
-      "level": 3,
-      "content": "OpenAI 发现纳维 - 斯托克…",
-      "date": "2026-10-19"
-    },
-    {
-      "id": "word_2026-10-19_003",
-      "level": 3,
-      "content": "Meta 发布 8160 亿参数开…",
-      "date": "2026-10-19"
-    },
-    {
-      "id": "word_2026-10-19_004",
-      "level": 3,
-      "content": "Liquid AI 推出高分决策模型",
-      "date": "2026-10-19"
     }
   ]
 }
