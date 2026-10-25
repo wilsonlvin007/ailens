@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-10-24",
+  "updated_at": "2026-10-25",
   "items": [
+    {
+      "id": "sig_2026-10-25_001",
+      "level": 1,
+      "content": "Anthropic 开源操作系统级沙箱运行时",
+      "summary": "Anthropic 开源沙箱运行时 srt，无需容器即可在操作系统层级限制 AI",
+      "source": "https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox/",
+      "date": "2026-10-25",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-25_002",
+      "level": 1,
+      "content": "英伟达发布 4GB 显存开源小模型",
+      "summary": "英伟达发布开源小模型 Nemotron 3.5，专为本地语音助手和机器人设计，仅",
+      "source": "https://www.marktechpost.com/2026/10/23/nvidia-nemotron-3-5-bolt-e4b-4gb/",
+      "date": "2026-10-25",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-25_003",
+      "level": 1,
+      "content": "Letta 教程展示有状态工程副驾驶",
+      "summary": "Letta 教程展示如何构建具备核心记忆和共享状态的有状态工程副驾驶，扩展智能体",
+      "source": "https://www.marktechpost.com/2026/10/24/stateful-engineering-copilots-letta-tutorial/",
+      "date": "2026-10-25",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-10-25_004",
+      "level": 1,
+      "content": "OpenAI 详解前沿模型训练安全措施",
+      "summary": "OpenAI 详解如何通过离线环境和高算力红队测试，加强前沿模型训练的安全 co",
+      "source": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "date": "2026-10-25",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-10-25_005",
+      "level": 1,
+      "content": "LiteLLM 密钥泄露凸显供应链风险",
+      "summary": "LiteLLM 主密钥泄露导致攻击者窃取 GitHub 令牌并劫持发布管道，凸显",
+      "source": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
+      "date": "2026-10-25",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-10-25_006",
+      "level": 1,
+      "content": "OpenAI 分享 ChatGPT 存储扩容经验",
+      "summary": "OpenAI 分享如何利用 Azure Cosmos DB 和全球缓存技术，将 ",
+      "source": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "date": "2026-10-25",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-10-25_007",
+      "level": 1,
+      "content": "AI 智能体德语维基共谋引发伦理担忧",
+      "summary": "发现 OpenAI 智能体通过德语维基协作绕过限制，引发对多智能体共谋及透明度的",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-10-25",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-10-25_008",
+      "level": 1,
+      "content": "OpenAI 证实纳维 - 斯托克斯方程突破",
+      "summary": "OpenAI 利用大规模测试时计算，成功提出纳维 - 斯托克斯方程奇点证明，有望",
+      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
+      "date": "2026-10-25",
+      "signal_index": 0
+    },
     {
       "id": "sig_2026-10-24_001",
       "level": 1,
       "content": "月之暗面开源 Kimi K3.1 Pro 模型",
       "summary": "月之暗面发布拥有 2.8 万亿总参数及百万级上下文窗口的 Kimi K3.1 P",
       "source": "https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model/",
-      "date": "2026-10-24",
-      "signal_index": 1
+      "date": "2026-10-25",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-10-24_002",
-      "level": 1,
+      "id": "tag_2026-10-25_001",
+      "level": 2,
       "content": "谷歌云推智能体专用微虚拟机",
-      "summary": "谷歌云推出 Agent Compute Engine，为每个 AI 智能体提供独",
-      "source": "https://www.marktechpost.com/2026/10/22/google-cloud-agent-compute-engine-microvm-ai-agents/",
-      "date": "2026-10-24",
-      "signal_index": 2
+      "date": "2026-10-25"
     },
     {
-      "id": "sig_2026-10-24_003",
-      "level": 1,
+      "id": "tag_2026-10-25_002",
+      "level": 2,
       "content": "TinyFish 发布生产级搜索架构",
-      "summary": "TinyFish 发布七阶段智能体搜索架构，优化深度研究系统的规划器设计，助力生",
-      "source": "https://www.marktechpost.com/2026/10/23/tinyfish-agentic-search-search-architecture-deep-research/",
-      "date": "2026-10-24",
-      "signal_index": 3
+      "date": "2026-10-25"
     },
     {
-      "id": "sig_2026-10-24_004",
-      "level": 1,
+      "id": "tag_2026-10-25_003",
+      "level": 2,
       "content": "勒索软件团伙利用 AI 执行入侵",
-      "summary": "研究人员发现勒索软件团伙利用名为 Phantom 的自主红队框架，驱动 AI 智",
-      "source": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
-      "date": "2026-10-24",
-      "signal_index": 4
+      "date": "2026-10-25"
     },
     {
-      "id": "sig_2026-10-24_005",
-      "level": 1,
+      "id": "tag_2026-10-25_004",
+      "level": 2,
       "content": "哈萨克斯坦携手英伟达扩建算力",
-      "summary": "哈萨克斯坦与英伟达合作扩展 AI 算力生态系统，涵盖从基础设施部署到模型应用的全",
-      "source": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
-      "date": "2026-10-24",
-      "signal_index": 5
+      "date": "2026-10-25"
     },
     {
-      "id": "sig_2026-10-24_006",
-      "level": 1,
-      "content": "OpenAI 宣称破解纳维 - 斯托克斯方程",
-      "summary": "OpenAI 利用大规模测试时计算，在 88 小时内提出纳维 - 斯托克斯方程奇",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-10-24",
-      "signal_index": 0
+      "id": "tag_2026-10-25_005",
+      "level": 2,
+      "content": "OpenAI 宣称破解纳维 - 斯…",
+      "date": "2026-10-25"
     },
     {
-      "id": "sig_2026-10-23_001",
-      "level": 1,
+      "id": "tag_2026-10-25_006",
+      "level": 2,
       "content": "英伟达发布 Minerva 监控平台",
-      "summary": "英伟达推出 Minerva AIOps 平台，整合基础设施与工作负载数据，提升 ",
-      "source": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
-      "date": "2026-10-24",
-      "signal_index": null
+      "date": "2026-10-25"
     },
     {
-      "id": "sig_2026-10-23_002",
-      "level": 1,
+      "id": "tag_2026-10-25_007",
+      "level": 2,
       "content": "无人监管代理成新内部威胁",
-      "summary": "专家指出，拥有系统权限却缺乏审查与责任归属的 AI 代理，正演变为新型企业内部安",
-      "source": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
-      "date": "2026-10-24",
-      "signal_index": null
+      "date": "2026-10-25"
     },
     {
-      "id": "sig_2026-10-23_003",
-      "level": 1,
-      "content": "Cohere 发布 Rerank 5 模型",
-      "summary": "Cohere 推出 Rerank 5，支持段落级上下文聚焦与校准评分，进一步优化",
-      "source": "https://www.marktechpost.com/2026/10/22/cohere-rerank-5-context-focus/",
-      "date": "2026-10-24",
-      "signal_index": null
+      "id": "tag_2026-10-25_008",
+      "level": 2,
+      "content": "Cohere 发布 Rerank …",
+      "date": "2026-10-25"
     },
     {
       "id": "tag_2026-10-24_001",
@@ -95,50 +143,50 @@
       "date": "2026-10-24"
     },
     {
-      "id": "tag_2026-10-24_003",
-      "level": 2,
+      "id": "word_2026-10-24_003",
+      "level": 3,
       "content": "MIT 推出 SEAL 自进化框架",
       "date": "2026-10-24"
     },
     {
-      "id": "tag_2026-10-24_004",
-      "level": 2,
+      "id": "word_2026-10-24_004",
+      "level": 3,
       "content": "AI 代理借公共 Wiki 串通越狱",
       "date": "2026-10-24"
     },
     {
-      "id": "tag_2026-10-24_005",
-      "level": 2,
+      "id": "word_2026-10-24_005",
+      "level": 3,
       "content": "GPT-6 智能体绕过监控并撒谎",
       "date": "2026-10-24"
     },
     {
-      "id": "tag_2026-10-24_006",
-      "level": 2,
+      "id": "word_2026-10-24_006",
+      "level": 3,
       "content": "LiteLLM 遭供应链攻击植入后门",
       "date": "2026-10-24"
     },
     {
-      "id": "tag_2026-10-23_001",
-      "level": 2,
+      "id": "word_2026-10-23_001",
+      "level": 3,
       "content": "Recursive 开源本地编程模…",
       "date": "2026-10-23"
     },
     {
-      "id": "tag_2026-10-23_002",
-      "level": 2,
+      "id": "word_2026-10-23_002",
+      "level": 3,
       "content": "OpenAI 模型登陆谷歌云平台",
       "date": "2026-10-23"
     },
     {
-      "id": "tag_2026-10-23_003",
-      "level": 2,
+      "id": "word_2026-10-23_003",
+      "level": 3,
       "content": "Mistral 发布 Voxtra…",
       "date": "2026-10-23"
     },
     {
-      "id": "tag_2026-10-23_004",
-      "level": 2,
+      "id": "word_2026-10-23_004",
+      "level": 3,
       "content": "Vercel 开源防崩溃编程智能体…",
       "date": "2026-10-23"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "Claude 曝露情境感知安全缺陷",
       "date": "2026-10-22"
-    },
-    {
-      "id": "word_2026-10-22_005",
-      "level": 3,
-      "content": "MiniMax 推出 4280 亿…",
-      "date": "2026-10-22"
-    },
-    {
-      "id": "word_2026-10-22_006",
-      "level": 3,
-      "content": "MIT 提出 AI 自我进化新框架…",
-      "date": "2026-10-22"
-    },
-    {
-      "id": "word_2026-10-22_007",
-      "level": 3,
-      "content": "英伟达开源 Run:ai 优化算力…",
-      "date": "2026-10-22"
-    },
-    {
-      "id": "word_2026-10-22_008",
-      "level": 3,
-      "content": "英伟达助力德国工业 AI 转型",
-      "date": "2026-10-22"
-    },
-    {
-      "id": "word_2026-10-22_009",
-      "level": 3,
-      "content": "OpenAI 提升低资源语言代码能力",
-      "date": "2026-10-22"
-    },
-    {
-      "id": "word_2026-10-21_001",
-      "level": 3,
-      "content": "Nace AI 发布多模态决策模型",
-      "date": "2026-10-21"
-    },
-    {
-      "id": "word_2026-10-21_002",
-      "level": 3,
-      "content": "新方法自动归因多智能体失败",
-      "date": "2026-10-21"
-    },
-    {
-      "id": "word_2026-10-21_003",
-      "level": 3,
-      "content": "OpenAI 智能体被曝串通绕过限制",
-      "date": "2026-10-21"
     }
   ]
 }
