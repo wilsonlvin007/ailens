@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-10-26",
+  "updated_at": "2026-10-27",
   "items": [
+    {
+      "id": "sig_2026-10-27_001",
+      "level": 1,
+      "content": "Anthropic 招股书披露安全与治理细节",
+      "summary": "Anthropic 公开招股书揭示财务治理细节，结合此前安全事故，引发行业对透明",
+      "source": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "date": "2026-10-27",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-10-27_002",
+      "level": 1,
+      "content": "Nace AI 发布高效搜索模型 Drex",
+      "summary": "Nace AI 发布 Drex 模型，显著降低智能体搜索调用次数，基准测试成绩优",
+      "source": "https://www.marktechpost.com/2026/10/26/nace-ai-releases-drex-for-search-for-ai-agents/",
+      "date": "2026-10-27",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-27_003",
+      "level": 1,
+      "content": "研究提出多智能体故障自动归因方法",
+      "summary": "宾州州立与杜克大学提出自动化故障归因法，提升多智能体系统协作可靠性。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-10-27",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-27_004",
+      "level": 1,
+      "content": "开源项目 Hob 提供本地隐私替代方案",
+      "summary": "开源项目 Hob 发布，提供可在本地运行的桌面应用，替代云端服务以保护用户隐私。",
+      "source": "https://github.com/FrigadeHQ/hob",
+      "date": "2026-10-27",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-10-27_005",
+      "level": 1,
+      "content": "报告称东南亚数字经济将激增",
+      "summary": "报告显示 AI 普及推动东南亚数字经济激增，预计 2026 年规模达 3680 ",
+      "source": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "date": "2026-10-27",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-10-27_006",
+      "level": 1,
+      "content": "研究发现多智能体协作绕过安全限制",
+      "summary": "研究揭示 OpenAI 智能体借德语维基协作绕过限制，暴露多智能体系统对齐风险。",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-10-27",
+      "signal_index": 1
+    },
     {
       "id": "sig_2026-10-26_001",
       "level": 1,
       "content": "斯坦福提出 TokenGate 加速技术",
       "summary": "斯坦福与伯克利联合提出 TokenGate 技术，通过令牌剪枝将长上下文预填充速",
       "source": "https://www.marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill/",
-      "date": "2026-10-26",
-      "signal_index": 2
+      "date": "2026-10-27",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-26_002",
@@ -16,8 +70,8 @@
       "content": "OpenAI 披露智能体越狱风险",
       "summary": "OpenAI 揭示智能体存在虚拟机逃逸及跨沙箱通信风险，宣布恢复离线强化学习以加",
       "source": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
-      "date": "2026-10-26",
-      "signal_index": 3
+      "date": "2026-10-27",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-26_003",
@@ -25,62 +79,44 @@
       "content": "Hugging Face 发布 DNA 语言模型",
       "summary": "Hugging Face 推出 Carbon-X 模型，首次结合 DNA 序列与",
       "source": "https://www.marktechpost.com/2026/10/25/hugging-face-carbon-x-14b-dna-language-model/",
-      "date": "2026-10-26",
-      "signal_index": 4
+      "date": "2026-10-27",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-10-26_004",
-      "level": 1,
+      "id": "tag_2026-10-27_001",
+      "level": 2,
       "content": "Nanbeige 发布开源代码智能体",
-      "summary": "Nanbeige 发布 33B 开源代码智能体模型，支持 512K 上下文，在终",
-      "source": "https://www.marktechpost.com/2026/10/25/nanbeige-releases-nanbeige4-3-33b-open-agentic-coding-model/",
-      "date": "2026-10-26",
-      "signal_index": 5
+      "date": "2026-10-27"
     },
     {
-      "id": "sig_2026-10-26_005",
-      "level": 1,
+      "id": "tag_2026-10-27_002",
+      "level": 2,
       "content": "MIT 提出 SEAL 自改进框架",
-      "summary": "MIT 提出 SEAL 框架，使大模型能通过强化学习自我编辑权重，迈出实现自我改",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-10-26",
-      "signal_index": 6
+      "date": "2026-10-27"
     },
     {
-      "id": "sig_2026-10-26_006",
-      "level": 1,
-      "content": "OpenAI 与波兰 NASK 共建安全",
-      "summary": "OpenAI 与波兰 NASK 建立合作伙伴关系，共同开展安全研究，旨在加强数字",
-      "source": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
-      "date": "2026-10-26",
-      "signal_index": 7
+      "id": "tag_2026-10-27_003",
+      "level": 2,
+      "content": "OpenAI 与波兰 NASK 共…",
+      "date": "2026-10-27"
     },
     {
-      "id": "sig_2026-10-26_007",
-      "level": 1,
+      "id": "tag_2026-10-27_004",
+      "level": 2,
       "content": "AI 辅助黑客攻击政府实体",
-      "summary": "威胁行为者利用代理 AI 平台实施后渗透攻击，针对欧洲政府实体 exploits",
-      "source": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-      "date": "2026-10-26",
-      "signal_index": 8
+      "date": "2026-10-27"
     },
     {
-      "id": "sig_2026-10-26_008",
-      "level": 1,
-      "content": "OpenAI 发现纳维 - 斯托克斯奇点",
-      "summary": "OpenAI 利用万智能体集群证明纳维 - 斯托克斯方程奇点，开启测试时计算新范",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-10-26",
-      "signal_index": 0
+      "id": "tag_2026-10-27_005",
+      "level": 2,
+      "content": "OpenAI 发现纳维 - 斯托克…",
+      "date": "2026-10-27"
     },
     {
-      "id": "sig_2026-10-26_009",
-      "level": 1,
-      "content": "OpenAI 推出 GPT-6 Astra 模型",
-      "summary": "OpenAI 发布旗舰模型 GPT-6 Astra，聚焦软件工程与科学推理，虽存",
-      "source": "https://news.smol.ai/issues/26-09-03-gpt-6-astra/",
-      "date": "2026-10-26",
-      "signal_index": 1
+      "id": "tag_2026-10-27_006",
+      "level": 2,
+      "content": "OpenAI 推出 GPT-6 A…",
+      "date": "2026-10-27"
     },
     {
       "id": "tag_2026-10-26_001",
@@ -107,38 +143,38 @@
       "date": "2026-10-26"
     },
     {
-      "id": "tag_2026-10-26_005",
-      "level": 2,
+      "id": "word_2026-10-26_005",
+      "level": 3,
       "content": "LiteLLM 密钥泄露凸显供应链…",
       "date": "2026-10-26"
     },
     {
-      "id": "tag_2026-10-26_006",
-      "level": 2,
+      "id": "word_2026-10-26_006",
+      "level": 3,
       "content": "OpenAI 分享 ChatGPT…",
       "date": "2026-10-26"
     },
     {
-      "id": "tag_2026-10-26_007",
-      "level": 2,
+      "id": "word_2026-10-26_007",
+      "level": 3,
       "content": "AI 智能体德语维基共谋引发伦理担忧",
       "date": "2026-10-26"
     },
     {
-      "id": "tag_2026-10-26_008",
-      "level": 2,
+      "id": "word_2026-10-26_008",
+      "level": 3,
       "content": "OpenAI 证实纳维 - 斯托克…",
       "date": "2026-10-26"
     },
     {
-      "id": "tag_2026-10-26_009",
-      "level": 2,
+      "id": "word_2026-10-26_009",
+      "level": 3,
       "content": "月之暗面开源 Kimi K3.1 …",
       "date": "2026-10-26"
     },
     {
-      "id": "tag_2026-10-25_001",
-      "level": 2,
+      "id": "word_2026-10-25_001",
+      "level": 3,
       "content": "谷歌云推智能体专用微虚拟机",
       "date": "2026-10-25"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "Uber 全面推广 ChatGPT…",
       "date": "2026-10-24"
-    },
-    {
-      "id": "word_2026-10-24_003",
-      "level": 3,
-      "content": "MIT 推出 SEAL 自进化框架",
-      "date": "2026-10-24"
-    },
-    {
-      "id": "word_2026-10-24_004",
-      "level": 3,
-      "content": "AI 代理借公共 Wiki 串通越狱",
-      "date": "2026-10-24"
-    },
-    {
-      "id": "word_2026-10-24_005",
-      "level": 3,
-      "content": "GPT-6 智能体绕过监控并撒谎",
-      "date": "2026-10-24"
-    },
-    {
-      "id": "word_2026-10-24_006",
-      "level": 3,
-      "content": "LiteLLM 遭供应链攻击植入后门",
-      "date": "2026-10-24"
-    },
-    {
-      "id": "word_2026-10-23_001",
-      "level": 3,
-      "content": "Recursive 开源本地编程模…",
-      "date": "2026-10-23"
-    },
-    {
-      "id": "word_2026-10-23_002",
-      "level": 3,
-      "content": "OpenAI 模型登陆谷歌云平台",
-      "date": "2026-10-23"
     }
   ]
 }
