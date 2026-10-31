@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-10-30",
+  "updated_at": "2026-10-31",
   "items": [
+    {
+      "id": "sig_2026-10-31_001",
+      "level": 1,
+      "content": "微软开源插件降低编码代理成本三成",
+      "summary": "微软与伯克利开源 TokenEconomizer 插件，无需修改代理即可降低编码",
+      "source": "https://www.marktechpost.com/2026/10/30/microsoft-tokeneconomizer-coding-agent-cost-control/",
+      "date": "2026-10-31",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-10-31_002",
+      "level": 1,
+      "content": "Samaya AI 发布低成本金融研究模型",
+      "summary": "Samaya AI 发布金融研究模型 Sterling，以极低成本在专业基准上超",
+      "source": "https://www.marktechpost.com/2026/10/30/samaya-sterling-post-trained-finance-research-model-frontierfinance/",
+      "date": "2026-10-31",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-10-31_003",
+      "level": 1,
+      "content": "OpenAI 承诺遵守网站 AI 训练偏好信号",
+      "summary": "OpenAI 承诺遵守 robots.txt 信号，允许网站运营商表达 AI 训",
+      "source": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "date": "2026-10-31",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-10-31_004",
+      "level": 1,
+      "content": "中国黑客利用 AI 框架攻击全球组织",
+      "summary": "发现中国黑客利用 AI 驱动的 ARTEX 框架针对全球高价值目标进行渗透测试攻",
+      "source": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+      "date": "2026-10-31",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-10-31_005",
+      "level": 1,
+      "content": "OpenAI 加强青少年保护与安全报告",
+      "summary": "OpenAI 加强 ChatGPT 暴力预防机制，发布社区安全报告并新增青少年保",
+      "source": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "date": "2026-10-31",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-10-31_006",
+      "level": 1,
+      "content": "OpenAI 借万智能体证明纳维 - 斯托克斯方程",
+      "summary": "OpenAI 利用万智能体集群完成纳维 - 斯托克斯方程奇点证明，标志测试时计算",
+      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
+      "date": "2026-10-31",
+      "signal_index": 0
+    },
     {
       "id": "sig_2026-10-30_001",
       "level": 1,
       "content": "OpenAI 更新模型规范确立核心价值观",
       "summary": "OpenAI 更新模型规范，确立五大核心价值观以指导 AI 判断力与人类代理权。",
       "source": "https://openai.com/index/updated-model-spec",
-      "date": "2026-10-30",
-      "signal_index": 1
+      "date": "2026-10-31",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-30_002",
@@ -16,8 +70,8 @@
       "content": "字节跳动推 Astra 架构革新机器人导航",
       "summary": "字节跳动推出 Astra 双模型架构，显著提升复杂室内环境下机器人自主导航能力。",
       "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-10-30",
-      "signal_index": 2
+      "date": "2026-10-31",
+      "signal_index": null
     },
     {
       "id": "sig_2026-10-30_003",
@@ -25,62 +79,44 @@
       "content": "Prime Intellect 发布高效融合 MoE 内核",
       "summary": "发布可训练融合 MoE 内核，将 Qwen3 MoE 训练步骤速度提升高达 34",
       "source": "https://www.marktechpost.com/2026/10/29/prime-intellect-prime-mega-moe-fused-moe-kernel-training/",
-      "date": "2026-10-30",
-      "signal_index": 3
+      "date": "2026-10-31",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-10-30_004",
-      "level": 1,
-      "content": "Baseten 发布超低成本决策模型 joey-1",
-      "summary": "发布 2B 参数决策模型 joey-1，返回校准概率而非文本，成本极低且延迟小。",
-      "source": "https://www.marktechpost.com/2026/10/29/baseten-joey-1-2b-decision-model/",
-      "date": "2026-10-30",
-      "signal_index": 4
+      "id": "tag_2026-10-31_001",
+      "level": 2,
+      "content": "Baseten 发布超低成本决策模…",
+      "date": "2026-10-31"
     },
     {
-      "id": "sig_2026-10-30_005",
-      "level": 1,
-      "content": "律所合作 OpenAI 开发交易尽职调查 AI",
-      "summary": "Ropes & Gray 律所与 OpenAI 合作开发 AI，辅助律师审查文档",
-      "source": "https://openai.com/index/ropes-gray-ai-diligence",
-      "date": "2026-10-30",
-      "signal_index": 5
+      "id": "tag_2026-10-31_002",
+      "level": 2,
+      "content": "律所合作 OpenAI 开发交易尽…",
+      "date": "2026-10-31"
     },
     {
-      "id": "sig_2026-10-30_006",
-      "level": 1,
+      "id": "tag_2026-10-31_003",
+      "level": 2,
       "content": "Claude 辅助设计食物过敏干扰剂",
-      "summary": "利用 Claude 辅助抗体设计，研发出针对食物过敏的 IgE 干扰剂，展示生物",
-      "source": "https://divergencelabs.com/publications/ige-preprint.pdf",
-      "date": "2026-10-30",
-      "signal_index": 6
+      "date": "2026-10-31"
     },
     {
-      "id": "sig_2026-10-30_007",
-      "level": 1,
-      "content": "OpenAI 宣称证明纳维 - 斯托克斯方程奇点",
-      "summary": "OpenAI 利用大规模测试时计算发现方程奇点，有望角逐千禧年大奖，震惊学界。",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-10-30",
-      "signal_index": 0
+      "id": "tag_2026-10-31_004",
+      "level": 2,
+      "content": "OpenAI 宣称证明纳维 - 斯…",
+      "date": "2026-10-31"
     },
     {
-      "id": "sig_2026-10-29_001",
-      "level": 1,
-      "content": "谷歌发布 Gemini 4 双旗舰模型",
-      "summary": "谷歌推出 Gemini 4 Argon 与 Carbon 双模型，分别面向通用高",
-      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-      "date": "2026-10-30",
-      "signal_index": null
+      "id": "tag_2026-10-31_005",
+      "level": 2,
+      "content": "谷歌发布 Gemini 4 双旗舰…",
+      "date": "2026-10-31"
     },
     {
-      "id": "sig_2026-10-29_002",
-      "level": 1,
+      "id": "tag_2026-10-31_006",
+      "level": 2,
       "content": "MiniMax 开源代码智能体栈",
-      "summary": "MiniMax 开源 MCode Stack，包含其代码团队日常使用的 17 项",
-      "source": "https://www.marktechpost.com/2026/10/28/minimax-open-sources-mcode-stack-agent-skills/",
-      "date": "2026-10-30",
-      "signal_index": null
+      "date": "2026-10-31"
     },
     {
       "id": "tag_2026-10-30_001",
@@ -107,38 +143,38 @@
       "date": "2026-10-30"
     },
     {
-      "id": "tag_2026-10-30_005",
-      "level": 2,
+      "id": "word_2026-10-30_005",
+      "level": 3,
       "content": "AI 智能体维基百科串通事件",
       "date": "2026-10-30"
     },
     {
-      "id": "tag_2026-10-30_006",
-      "level": 2,
+      "id": "word_2026-10-30_006",
+      "level": 3,
       "content": "Anthropic 招股书披露安全…",
       "date": "2026-10-30"
     },
     {
-      "id": "tag_2026-10-30_007",
-      "level": 2,
+      "id": "word_2026-10-30_007",
+      "level": 3,
       "content": "Nace AI 发布高效搜索模型 …",
       "date": "2026-10-30"
     },
     {
-      "id": "tag_2026-10-29_001",
-      "level": 2,
+      "id": "word_2026-10-29_001",
+      "level": 3,
       "content": "提出多智能体故障自动归因方法",
       "date": "2026-10-29"
     },
     {
-      "id": "tag_2026-10-29_002",
-      "level": 2,
+      "id": "word_2026-10-29_002",
+      "level": 3,
       "content": "开源项目 Hob 提供本地隐私替代…",
       "date": "2026-10-29"
     },
     {
-      "id": "tag_2026-10-29_003",
-      "level": 2,
+      "id": "word_2026-10-29_003",
+      "level": 3,
       "content": "报告称东南亚数字经济将激增",
       "date": "2026-10-29"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "OpenAI 发现纳维 - 斯托克…",
       "date": "2026-10-27"
-    },
-    {
-      "id": "word_2026-10-27_006",
-      "level": 3,
-      "content": "OpenAI 推出 GPT-6 A…",
-      "date": "2026-10-27"
-    },
-    {
-      "id": "word_2026-10-26_001",
-      "level": 3,
-      "content": "Anthropic 开源操作系统级…",
-      "date": "2026-10-26"
-    },
-    {
-      "id": "word_2026-10-26_002",
-      "level": 3,
-      "content": "英伟达发布 4GB 显存开源小模型",
-      "date": "2026-10-26"
-    },
-    {
-      "id": "word_2026-10-26_003",
-      "level": 3,
-      "content": "Letta 教程展示有状态工程副驾驶",
-      "date": "2026-10-26"
-    },
-    {
-      "id": "word_2026-10-26_004",
-      "level": 3,
-      "content": "OpenAI 详解前沿模型训练安全…",
-      "date": "2026-10-26"
-    },
-    {
-      "id": "word_2026-10-26_005",
-      "level": 3,
-      "content": "LiteLLM 密钥泄露凸显供应链…",
-      "date": "2026-10-26"
     }
   ]
 }

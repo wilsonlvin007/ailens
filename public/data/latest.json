@@ -1,84 +1,103 @@
 {
-  "date": "2026-10-30",
-  "generated_at": "2026-10-30T09:49:05.335699+08:00",
-  "summary": "OpenAI 利用大规模测试时计算发现方程奇点，有望角逐千禧年大奖，震惊学界。；OpenAI 更新模型规范，确立五大核心价值观以指导 AI 判断力与人类代理权。；字节跳动推出 Astra 双模型架构，显著提升复杂室内环境下机器人自主导航能力。",
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31T09:30:24.565269+08:00",
+  "summary": "OpenAI 利用万智能体集群完成纳维 - 斯托克斯方程奇点证明，标志测试时计算扩展新范式。；微软与伯克利开源 TokenEconomizer 插件，无需修改代理即可降低编码成本达 30.9%。；Samaya AI 发布金融研究模型 Sterling，以极低成本在专业基准上超越 Claude Fable 5.1。",
   "items": [
     {
-      "id": "2026-10-30-001",
-      "title": "OpenAI 宣称证明纳维 - 斯托克斯方程奇点",
+      "id": "2026-10-31-001",
+      "title": "OpenAI 借万智能体证明纳维 - 斯托克斯方程",
       "category": "technology",
       "importance": 5,
       "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
       "source_name": "AINews (smol.ai)",
-      "summary": "OpenAI 利用大规模测试时计算发现方程奇点，有望角逐千禧年大奖，震惊学界。",
-      "analysis": "若该成果经同行评审确认，将是 AI 从“模式匹配”迈向“科学发现”的里程碑。纳维 - 斯托克斯方程是流体力学基石，其解的存在性与光滑性属千禧年难题。OpenAI 此举表明，通过扩展测试时计算（Test-time Compute），大模型已具备辅助甚至主导复杂数学证明的能力。这不仅挑战了传统科研范式，更意味着 AI 在基础科学领域的价值将远超应用层，可能引发新一轮科研基础设施的投资热潮。",
-      "collected_at": "2026-10-30T06:00:00+08:00"
+      "summary": "OpenAI 利用万智能体集群完成纳维 - 斯托克斯方程奇点证明，标志测试时计算扩展新范式。",
+      "analysis": "此突破不仅是数学界的里程碑，更验证了“大规模测试时计算”范式的威力。传统 AI 依赖训练数据压缩知识，而 OpenAI 展示了通过动态调度海量智能体协同推理，可解决人类未解的复杂科学难题。这意味着未来科研将不再仅靠单一模型能力提升，而是转向构建能自主拆解、验证假设的智能体集群。若该证明获千禧年大奖确认，将彻底重塑科学发现流程，使 AI 从辅助工具进化为独立科研主体，推动流体力学及气候模拟等领域飞跃。",
+      "tags": [
+        "纳维 - 斯托克斯方程",
+        "智能体集群",
+        "科学发现"
+      ],
+      "collected_at": "2026-10-31T06:00:00+08:00"
     },
     {
-      "id": "2026-10-30-006",
-      "title": "OpenAI 更新模型规范确立核心价值观",
+      "id": "2026-10-31-005",
+      "title": "微软开源插件降低编码代理成本三成",
+      "category": "technology",
+      "importance": 4,
+      "source": "https://www.marktechpost.com/2026/10/30/microsoft-tokeneconomizer-coding-agent-cost-control/",
+      "source_name": "MarkTechPost",
+      "summary": "微软与伯克利开源 TokenEconomizer 插件，无需修改代理即可降低编码成本达 30.9%。",
+      "analysis": "TokenEconomizer 的问世直击 AI 编码代理规模化应用的核心痛点——成本失控。通过智能裁剪冗余 token 流而非重构模型架构，该插件实现了“即插即用”式降本，极大降低了企业部署门槛。30.9% 的成本节约看似 modest，但在高频调用场景下可转化为显著运营优势。更重要的是，它提出了一种新思路：优化推理过程比单纯追求模型压缩更具性价比。此举可能催生第三方优化工具生态，推动“模型 + 插件”成为标准交付形态。对开发者而言，这意味着能以更低代价构建复杂工作流，加速 AI 原生应用普及。",
+      "tags": [
+        "成本控制",
+        "编码代理",
+        "开源插件"
+      ],
+      "collected_at": "2026-10-31T06:00:00+08:00"
+    },
+    {
+      "id": "2026-10-31-006",
+      "title": "Samaya AI 发布低成本金融研究模型",
+      "category": "application",
+      "importance": 4,
+      "source": "https://www.marktechpost.com/2026/10/30/samaya-sterling-post-trained-finance-research-model-frontierfinance/",
+      "source_name": "MarkTechPost",
+      "summary": "Samaya AI 发布金融研究模型 Sterling，以极低成本在专业基准上超越 Claude Fable 5.1。",
+      "analysis": "Sterling 模型的诞生印证了“小而美”在垂直领域的可行性。仅 3B 激活参数却在金融研报理解、量化策略生成等任务上超越顶级通用模型，关键在于领域后训练与高质量数据清洗。这表明盲目堆砌参数并非唯一路径，精准数据工程+轻量化架构同样可实现性能突破。对金融机构而言，Sterling 提供了私有化部署的高性价比选项，规避数据泄露风险的同时保持竞争力。其成功或将激励更多初创公司聚焦行业专属模型，形成“通用底座 + 行业精调”的双层生态格局，打破大厂垄断局面。",
+      "tags": [
+        "金融 AI",
+        "小模型",
+        "领域专用"
+      ],
+      "collected_at": "2026-10-31T06:00:00+08:00"
+    },
+    {
+      "id": "2026-10-31-007",
+      "title": "OpenAI 承诺遵守网站 AI 训练偏好信号",
       "category": "thought",
       "importance": 3,
-      "source": "https://openai.com/index/updated-model-spec",
+      "source": "https://openai.com/index/helping-websites-express-ai-training-preferences",
       "source_name": "OpenAI Blog",
-      "summary": "OpenAI 更新模型规范，确立五大核心价值观以指导 AI 判断力与人类代理权。",
-      "analysis": "此次模型规范的更新不仅是技术文档的修订，更是 AI 伦理治理的制度化尝试。通过明确“人类代理权”和“意图忠诚度”等核心价值观，OpenAI 试图为模型在模糊地带的决策提供准绳。这在法律和责任归属日益重要的今天尤为关键。然而，如何将抽象的价值观转化为模型内部的硬约束，仍是巨大挑战。这一规范若能成功落地，将成为行业事实标准，影响后续所有大模型的开发准则。",
-      "collected_at": "2026-10-30T06:00:00+08:00"
+      "summary": "OpenAI 承诺遵守 robots.txt 信号，允许网站运营商表达 AI 训练偏好。",
+      "analysis": "OpenAI 此举是对版权争议的务实回应，将内容控制权部分归还给网站所有者。通过扩展 robots.txt 协议支持 AI 爬取指令，建立了透明化的数据采集协商机制。虽非强制性法律约束，但作为行业龙头的示范效应显著，可能促成事实标准。短期内或导致部分高质量数据源关闭访问，影响模型迭代速度；长期看却有助于构建可持续的数据生态，减少法律摩擦。这一让步反映了 AI 公司与内容创作者关系的重构：从“先斩后奏”转向“事前授权”，为未来数据 licensing 市场奠定基础。",
+      "tags": [
+        "数据版权",
+        "robots.txt",
+        "AI 伦理"
+      ],
+      "collected_at": "2026-10-31T06:00:00+08:00"
     },
     {
-      "id": "2026-10-30-009",
-      "title": "字节跳动推 Astra 架构革新机器人导航",
-      "category": "hardware",
-      "importance": 3,
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "source_name": "Synced Review",
-      "summary": "字节跳动推出 Astra 双模型架构，显著提升复杂室内环境下机器人自主导航能力。",
-      "analysis": "机器人落地的最大瓶颈往往不在硬件，而在复杂动态环境下的感知与决策。字节跳动的双模型架构巧妙地将全局规划与局部避障解耦，既保证了路径最优性，又提升了实时响应速度。这种架构设计思路为具身智能（Embodied AI）提供了新的范式，特别是在非结构化环境中。考虑到字节在视频理解上的积累，该技术在视觉导航方面的表现值得期待，可能加速服务机器人的商业化进程。",
-      "collected_at": "2026-10-30T06:00:00+08:00"
-    },
-    {
-      "id": "2026-10-30-010",
-      "title": "Prime Intellect 发布高效融合 MoE 内核",
-      "category": "technology",
-      "importance": 3,
-      "source": "https://www.marktechpost.com/2026/10/29/prime-intellect-prime-mega-moe-fused-moe-kernel-training/",
-      "source_name": "MarkTechPost",
-      "summary": "发布可训练融合 MoE 内核，将 Qwen3 MoE 训练步骤速度提升高达 34%。",
-      "analysis": "在大模型参数量激增的背景下，训练效率直接决定了研发成本和迭代速度。Prime Intellect 优化的融合 MoE 内核，通过减少内存访问开销和计算冗余，实现了显著的加速比。这对于开源社区尤为重要，使得中小团队也能负担得起大规模稀疏模型的训练。技术层面看，这表明硬件感知的软件优化仍是提升算力的关键途径，单纯依赖堆砌显卡的时代正在过去，软硬协同设计成为主流。",
-      "collected_at": "2026-10-30T06:00:00+08:00"
-    },
-    {
-      "id": "2026-10-30-011",
-      "title": "Baseten 发布超低成本决策模型 joey-1",
-      "category": "technology",
-      "importance": 2,
-      "source": "https://www.marktechpost.com/2026/10/29/baseten-joey-1-2b-decision-model/",
-      "source_name": "MarkTechPost",
-      "summary": "发布 2B 参数决策模型 joey-1，返回校准概率而非文本，成本极低且延迟小。",
-      "analysis": "joey-1 的出现反映了 AI 应用层的细分趋势：并非所有场景都需要生成式大模型。在许多分类、路由或风控场景中，直接输出概率分布的小模型更高效、更可控。其极低的成本和延迟使其非常适合嵌入到高并发业务流程中。这种“去文本化”的模型设计思路，提示开发者应根据实际需求选择工具，避免“大材小用”，从而构建更具性价比的 AI 系统架构。",
-      "collected_at": "2026-10-30T06:00:00+08:00"
-    },
-    {
-      "id": "2026-10-30-012",
-      "title": "律所合作 OpenAI 开发交易尽职调查 AI",
+      "id": "2026-10-31-008",
+      "title": "中国黑客利用 AI 框架攻击全球组织",
       "category": "application",
+      "importance": 3,
+      "source": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+      "source_name": "Hacker News",
+      "summary": "发现中国黑客利用 AI 驱动的 ARTEX 框架针对全球高价值目标进行渗透测试攻击。",
+      "analysis": "ARTEX 框架的出现标志着网络攻击进入智能化新阶段。该工具能自动识别系统漏洞、生成定制化钓鱼内容并动态调整攻击策略，大幅降低高级持续性威胁（APT）的技术门槛。值得注意的是，攻击者并非直接滥用公开模型，而是基于开源组件构建专用攻击链，显示黑产已形成成熟 AI 武器研发能力。这对防御方提出严峻挑战：传统规则引擎难以应对自适应攻击，必须引入对抗性 AI 进行实时响应。事件也凸显国际网络安全博弈升级，各国或将加强 AI 出口管制与威胁情报共享机制。",
+      "tags": [
+        "网络安全",
+        "AI 攻击",
+        "APT"
+      ],
+      "collected_at": "2026-10-31T06:00:00+08:00"
+    },
+    {
+      "id": "2026-10-31-012",
+      "title": "OpenAI 加强青少年保护与安全报告",
+      "category": "thought",
       "importance": 2,
-      "source": "https://openai.com/index/ropes-gray-ai-diligence",
+      "source": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
       "source_name": "OpenAI Blog",
-      "summary": "Ropes & Gray 律所与 OpenAI 合作开发 AI，辅助律师审查文档和完成尽职调查。",
-      "analysis": "法律行业的尽职调查通常耗时费力且容错率低，是 AI 落地的理想场景。此次合作表明，专业服务机构正从“观望”转向“深度定制”。通过将领域知识与大模型结合，不仅能大幅缩短交易周期，还能减少人为疏漏。这预示着垂直行业模型（Vertical LLMs）将成为下一阶段竞争焦点，通用模型提供商需加强与行业龙头的绑定，以获取高质量私有数据和场景反馈。",
-      "collected_at": "2026-10-30T06:00:00+08:00"
-    },
-    {
-      "id": "2026-10-30-013",
-      "title": "Claude 辅助设计食物过敏干扰剂",
-      "category": "application",
-      "importance": 2,
-      "source": "https://divergencelabs.com/publications/ige-preprint.pdf",
-      "source_name": "HN AI",
-      "summary": "利用 Claude 辅助抗体设计，研发出针对食物过敏的 IgE 干扰剂，展示生物医学潜力。",
-      "analysis": "AI for Science 正在从理论预测走向实际药物研发。利用大模型辅助抗体设计，大幅缩短了候选分子的筛选周期。针对食物过敏这一常见但棘手的问题，该成果展示了 AI 在解决具体 biomedical 难题上的实用价值。这表明，未来的新药研发将是“生物实验 +AI 计算”的双轮驱动模式。对于制药行业，尽早布局 AI 辅助研发平台，将是保持竞争力的关键所在。",
-      "collected_at": "2026-10-30T06:00:00+08:00"
+      "summary": "OpenAI 加强 ChatGPT 暴力预防机制，发布社区安全报告并新增青少年保护措施。",
+      "analysis": "OpenAI 此次更新聚焦未成年人保护，反映出社会对 AI 心理影响的关注度上升。新增的暴力内容过滤层与年龄验证机制，旨在阻断有害信息传播链条。发布详细安全报告则体现透明度承诺，便于外部监督。然而，技术手段无法根除所有风险，尤其面对刻意绕过限制的用户。真正的挑战在于如何在开放性与安全性间取得平衡：过度过滤可能抑制创造性表达，而宽松策略又易滋生滥用。此举或将推动行业建立统一的青少年保护标准，并促使教育机构开展 AI 素养课程，培养年轻一代的批判性使用能力。",
+      "tags": [
+        "青少年保护",
+        "内容安全",
+        "社会责任"
+      ],
+      "collected_at": "2026-10-31T06:00:00+08:00"
     }
   ]
 }
