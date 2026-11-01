@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-01",
+  "generated_at": "2026-11-01T08:56:01.352880+08:00",
+  "summary": "OpenAI 利用大规模测试时计算成功证明纳维 - 斯托克斯方程奇点存在，有望角逐千禧年大奖。；研究人员发现恶意 ChatGPT 分享链接可在用户会话中执行代码并读取私密对话，漏洞已报告。；Vercel Labs 开源 agent-desktop，让 AI 智能体通过读取系统无障碍树跨平台操作电脑。",
+  "items": [
+    {
+      "id": "2026-11-01-001",
+      "title": "OpenAI 证实纳维 - 斯托克斯猜想突破",
+      "category": "technology",
+      "importance": 5,
+      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
+      "source_name": "AINews (smol.ai)",
+      "summary": "OpenAI 利用大规模测试时计算成功证明纳维 - 斯托克斯方程奇点存在，有望角逐千禧年大奖。",
+      "analysis": "这一发现标志着 AI 从“语言模仿者”向“科学发现者”的根本性转变。传统上，流体力学中的纳维 - 斯托克斯方程奇点问题是数学界公认的难题，依赖人类直觉与推导。OpenAI 通过扩展测试时计算（Test-time Compute），让模型在推理阶段进行海量模拟与验证，从而找到了人类未曾察觉的数学结构。这不仅可能为 OpenAI 赢得第二个千禧年大奖，更证明了 AI 在基础科学领域的巨大潜力。未来，AI 或将加速物理、生物等领域的理论突破，重新定义科研范式，使“算力换真理”成为新的科研常态。",
+      "tags": [
+        "科学发现",
+        "数学突破",
+        "测试时计算"
+      ],
+      "collected_at": "2026-11-01T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-01-007",
+      "title": "ChatGPT 分享链接存代码执行漏洞",
+      "category": "application",
+      "importance": 3,
+      "source": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+      "source_name": "Hacker News",
+      "summary": "研究人员发现恶意 ChatGPT 分享链接可在用户会话中执行代码并读取私密对话，漏洞已报告。",
+      "analysis": "该漏洞暴露了生成式 AI 应用在交互设计上的深层安全隐患。分享功能本意为促进协作，却被攻击者利用为注入恶意负载的渠道。由于大模型会话往往包含大量敏感上下文信息，一旦链接被篡改，后果不仅是代码执行，更涉及隐私泄露。这提醒开发者，在构建 AI 应用时，必须将“提示词注入”和“上下文污染”纳入核心安全威胁模型。未来的 AI 安全架构需要从单纯的模型层防御，扩展到应用层、传输层及用户交互层的全链路防护。",
+      "tags": [
+        "网络安全",
+        "漏洞披露",
+        "隐私保护"
+      ],
+      "collected_at": "2026-11-01T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-01-008",
+      "title": "Vercel 开源跨平台智能体操作工具",
+      "category": "technology",
+      "importance": 3,
+      "source": "https://www.marktechpost.com/2026/10/31/vercel-labs-agent-desktop-computer-use/",
+      "source_name": "MarkTechPost",
+      "summary": "Vercel Labs 开源 agent-desktop，让 AI 智能体通过读取系统无障碍树跨平台操作电脑。",
+      "analysis": "agent-desktop 的开源标志着 AI 智能体从“云端对话”走向“本地执行”的关键一步。通过利用操作系统底层的无障碍辅助技术（Accessibility Tree），智能体能够像人类一样理解屏幕元素并进行精确操作，且无需针对特定应用进行硬编码。这种通用的交互接口极大地降低了智能体落地的门槛，使得跨平台自动化成为可能。对于开发者生态而言，这将催生一批基于本地操作的新型应用，但也引发了关于智能体权限管理和误操作风险的新一轮讨论。",
+      "tags": [
+        "智能体",
+        "开源项目",
+        "人机交互"
+      ],
+      "collected_at": "2026-11-01T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-01-009",
+      "title": "Factory 发布模型无关编码智能体",
+      "category": "application",
+      "importance": 3,
+      "source": "https://www.marktechpost.com/2026/10/31/factory-droid-1-0-frontier-harness/",
+      "source_name": "MarkTechPost",
+      "summary": "Factory 发布 Droid 1.0，一种模型无关的编码智能体框架，显著降低任务成本并提升效率。",
+      "analysis": "Droid 1.0 的核心价值在于其“模型无关”的架构设计。在当前大模型快速迭代、价格波动剧烈的背景下，将智能体逻辑与底层模型解耦是极具前瞻性的工程实践。这使得企业可以根据任务复杂度灵活切换不同性价比的模型，避免被供应商锁定。此外，该框架通过优化任务编排显著降低了 Token 消耗，解决了编码智能体规模化应用中的成本痛点。这预示着 AI 工程化正从“炫技”转向“务实”，成本控制与架构灵活性将成为企业选型的关键指标。",
+      "tags": [
+        "编码智能体",
+        "降本增效",
+        "工程架构"
+      ],
+      "collected_at": "2026-11-01T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-01-010",
+      "title": "微软插件降低编码智能体成本",
+      "category": "technology",
+      "importance": 3,
+      "source": "https://www.marktechpost.com/2026/10/30/microsoft-tokeneconomizer-coding-agent-cost-control/",
+      "source_name": "MarkTechPost",
+      "summary": "微软推出 TokenEconomizer 插件，通过学习历史会话将编码智能体的 Token 成本降低高达 30.9%。",
+      "analysis": "TokenEconomizer 的出现反映了 AI 应用进入深水区后的必然趋势：精细化运营。随着智能体处理任务的复杂度增加，Token 消耗呈指数级增长，直接制约了商业化落地。微软通过挖掘历史会话数据，智能压缩上下文或复用已有推理路径，实现了近 31% 的成本削减。这不仅是一项技术优化，更是一种新的经济模型探索。未来，类似的“中间件”将成为 AI 基础设施的标准配置，帮助企业在保持性能的同时，将边际成本控制在可接受范围内。",
+      "tags": [
+        "成本控制",
+        "微软",
+        "Token 优化"
+      ],
+      "collected_at": "2026-11-01T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-01-011",
+      "title": "OpenAI 遵守 robots.txt 训练偏好",
+      "category": "thought",
+      "importance": 3,
+      "source": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "source_name": "OpenAI Blog",
+      "summary": "OpenAI 宣布将遵守 robots.txt 信号，允许网站运营商表达其对 AI 训练数据的偏好。",
+      "analysis": "此举是 AI 巨头在版权与数据主权问题上做出的重要妥协。长期以来，爬虫抓取数据的合法性处于灰色地带，引发众多内容创作者的不满。OpenAI 主动拥抱 robots.txt 标准，赋予网站所有者拒绝被训练的权利，有助于缓解法律纠纷，构建更健康的互联网生态。这也标志着 AI 行业从“野蛮生长”转向“合规共生”。虽然短期内可能限制部分数据来源，但长期看，这将促使模型厂商更多地依赖授权数据和合成数据，推动数据市场的规范化发展。",
+      "tags": [
+        "数据版权",
+        "合规",
+        "robots.txt"
+      ],
+      "collected_at": "2026-11-01T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-01-014",
+      "title": "研究者探索多智能体失败归因",
+      "category": "technology",
+      "importance": 2,
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "source_name": "Synced Review",
+      "summary": "研究者探索多智能体系统任务失败的自动归因方法，以提升协作系统的可靠性与调试效率。",
+      "analysis": "多智能体系统的复杂性使得故障排查变得异常困难，往往难以确定是哪个环节导致了整体失败。PSU 和杜克大学的研究提出自动归因方法，相当于为多智能体系统安装了“黑匣子”分析器。这对于构建高可靠性的工业级 AI 系统至关重要，能够显著缩短调试周期，提升系统鲁棒性。随着多智能体协作在自动驾驶、供应链管理等关键领域的应用加深，此类可解释性和诊断工具将成为不可或缺的基础设施，推动 AI 系统从“实验品”走向“生产力”。",
+      "tags": [
+        "多智能体",
+        "可解释性",
+        "系统调试"
+      ],
+      "collected_at": "2026-11-01T06:00:00+08:00"
+    }
+  ]
+}
