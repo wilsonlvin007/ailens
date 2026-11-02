@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02T09:26:36.070540+08:00",
+  "summary": "MIT 推出 SEAL 框架，利用强化学习使大模型能自我编辑权重，迈向自进化 AI 关键一步。；Nace AI 开源 27B 多模态决策模型 Drex Max v1，可在 Apple Silicon 本地高效运行。；DeepSeek 开源路由 - 工作器编码智能体，将任务完成时间缩短近一半，提升并行开发效率。",
+  "items": [
+    {
+      "id": "2026-11-02-007",
+      "title": "Nace AI 开源本地运行决策模型",
+      "category": "technology",
+      "importance": 3,
+      "source": "https://www.marktechpost.com/2026/11/01/nace-ai-open-sources-drex-max-v1-local-inference/",
+      "source_name": "MarkTechPost",
+      "summary": "Nace AI 开源 27B 多模态决策模型 Drex Max v1，可在 Apple Silicon 本地高效运行。",
+      "analysis": "Drex Max v1 的开源代表了端侧 AI 的重要进展。27B 参数模型能在消费级硬件（Apple Silicon）上流畅运行，打破了高性能模型依赖云算力的垄断。这不仅降低了开发者的部署成本，更为隐私敏感型应用（如医疗、金融）提供了本地化解决方案。多模态决策能力的集成，使得终端设备能直接处理复杂感知任务，推动了物联网与 AI 的深度融合。这一趋势将重塑软件架构，促使更多推理逻辑从云端下沉至边缘端。",
+      "tags": [
+        "端侧 AI",
+        "开源模型",
+        "隐私计算"
+      ],
+      "collected_at": "2026-11-02T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-02-008",
+      "title": "DeepSeek 开源路由工作器编码智能体",
+      "category": "technology",
+      "importance": 3,
+      "source": "https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/",
+      "source_name": "MarkTechPost",
+      "summary": "DeepSeek 开源路由 - 工作器编码智能体，将任务完成时间缩短近一半，提升并行开发效率。",
+      "analysis": "DeepSeek 推出的路由 - 工作器架构展示了智能体协作在工程实践中的巨大价值。通过将任务拆解并由专用智能体并行处理，显著提升了编码效率。这种模式模仿了人类软件团队的分工协作，是 Agent 从单兵作战走向系统化集成的体现。开源此举有助于建立行业标准，降低企业构建自动化研发流水线的门槛。未来，软件开发可能演变为“人类架构师+AI 施工队”的新形态，彻底改变生产力结构。",
+      "tags": [
+        "编码智能体",
+        "并行计算",
+        "研发效率"
+      ],
+      "collected_at": "2026-11-02T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-02-009",
+      "title": "字节跳动推出机器人导航双模型",
+      "category": "hardware",
+      "importance": 3,
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "source_name": "Synced Review",
+      "summary": "字节跳动推出双模型架构 Astra，显著提升机器人在复杂室内环境中的自主导航能力。",
+      "analysis": "字节跳动在机器人领域的布局显示其不再局限于内容分发。Astra 双模型架构针对复杂室内环境优化，解决了传统导航在非结构化场景中的痛点。这表明具身智能（Embodied AI）正从实验室走向实际应用，特别是在物流、服务等高频场景。双模型设计可能分别处理全局规划与局部避障，平衡了计算效率与反应速度。随着算法成熟，机器人有望成为继手机之后的下一个通用智能终端载体。",
+      "tags": [
+        "具身智能",
+        "机器人",
+        "自主导航"
+      ],
+      "collected_at": "2026-11-02T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-02-012",
+      "title": "NVIDIA 利用 AI 搜索地外信号",
+      "category": "hardware",
+      "importance": 2,
+      "source": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signal/",
+      "source_name": "NVIDIA Blog",
+      "summary": "NVIDIA 利用 AI 智能体加速地外文明信号搜索，为天文学研究带来重大技术飞跃。",
+      "analysis": "将 AI 应用于 SETI（搜寻地外文明计划）展示了其在处理海量噪声数据方面的独特优势。传统算法难以在宇宙背景辐射中识别微弱的人造信号，而深度学习模型能捕捉非线性特征，大幅提高筛选效率。这不仅是天文学的技术升级，更是 AI 探索未知边界的象征。若真有发现，将彻底改变人类对自身在宇宙中位置的认知；即便无果，该技术也可迁移至其他信号处理领域，如地震预测或基因测序。",
+      "tags": [
+        "天文探索",
+        "信号处理",
+        "科学计算"
+      ],
+      "collected_at": "2026-11-02T06:00:00+08:00"
+    }
+  ]
+}
