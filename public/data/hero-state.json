@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-11-04",
+  "updated_at": "2026-11-05",
   "items": [
+    {
+      "id": "sig_2026-11-05_001",
+      "level": 1,
+      "content": "Ricursive 发布高性能开源模型",
+      "summary": "Ricursive AI 发布 65B 开源稠密模型 Ripple-65B，终端",
+      "source": "https://www.marktechpost.com/2026/11/04/ricursive-ripple-65b-preview-open-weight-model/",
+      "date": "2026-11-05",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-05_002",
+      "level": 1,
+      "content": "OpenAI 收购 Pierre 强化代码能力",
+      "summary": "OpenAI 宣布收购 Pierre Computer Company，旨在扩展",
+      "source": "https://openai.com/index/openai-to-acquire-pierre",
+      "date": "2026-11-05",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-11-05_003",
+      "level": 1,
+      "content": "AI 自主修复近千个内核漏洞",
+      "summary": "OpenAI 构建自主流水线，发现并修复 Linux 内核中 948 个本地提权",
+      "source": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+      "date": "2026-11-05",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-11-05_004",
+      "level": 1,
+      "content": "webAI 发布高分推理模型 TwIL",
+      "summary": "webAI 发布 TwIL-8B 推理模型，MATH-500 得分高达 98.2",
+      "source": "https://www.marktechpost.com/2026/11/04/webai-twil-8b-reasoning-model/",
+      "date": "2026-11-05",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-11-05_005",
+      "level": 1,
+      "content": "腾讯发布统一视觉语言模型",
+      "summary": "腾讯微信视觉团队发布 WeVisOne-VL 模型，统一处理检测、OCR、分割和",
+      "source": "https://www.marktechpost.com/2026/11/03/tencent-wevisone-vl-vision-language-model/",
+      "date": "2026-11-05",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-11-05_006",
+      "level": 1,
+      "content": "Codex 越狱工具包隐藏广告软件",
+      "summary": "研究人员发现 Codex 越狱工具包中隐藏提示词广告软件，可篡改 AI 指令插入",
+      "source": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+      "date": "2026-11-05",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-11-05_007",
+      "level": 1,
+      "content": "AI 加速半导体制造工艺优化",
+      "summary": "NVIDIA 报道 AI 正在改变半导体制造流程，帮助工程师更快分析工艺变化和缺",
+      "source": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+      "date": "2026-11-05",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-11-05_008",
+      "level": 1,
+      "content": "OpenAI 政府云部署网络安全模型",
+      "summary": "OpenAI 通过 Amazon Bedrock 在 AWS GovCloud ",
+      "source": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "date": "2026-11-05",
+      "signal_index": 7
+    },
     {
       "id": "sig_2026-11-04_001",
       "level": 1,
       "content": "Anthropic 开源 FlashProve 验证模型",
       "summary": "Anthropic 开源 FlashProve，利用 zkSNARK 技术在不泄",
       "source": "https://www.marktechpost.com/2026/11/03/anthropic-flashprove-provable-inference-zksnark/",
-      "date": "2026-11-04",
-      "signal_index": 1
+      "date": "2026-11-05",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-11-04_002",
-      "level": 1,
-      "content": "NVIDIA 优化 MoE 推理吞吐量提升四成",
-      "summary": "NVIDIA 展示三种优化方案，在单台 DGX Spark 上将蚂蚁集团 Lin",
-      "source": "https://www.marktechpost.com/2026/11/03/nvidia-dgx-spark-moe-inference-ling-3-0-flash/",
-      "date": "2026-11-04",
-      "signal_index": 2
+      "id": "tag_2026-11-05_001",
+      "level": 2,
+      "content": "NVIDIA 优化 MoE 推理吞…",
+      "date": "2026-11-05"
     },
     {
-      "id": "sig_2026-11-04_003",
-      "level": 1,
+      "id": "tag_2026-11-05_002",
+      "level": 2,
       "content": "币安披露 AI 辅助盗窃案细节",
-      "summary": "币安揭示 64.3 亿美元盗窃案细节，攻击者利用篡改的开发工具及 AI 辅助的社",
-      "source": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
-      "date": "2026-11-04",
-      "signal_index": 3
+      "date": "2026-11-05"
     },
     {
-      "id": "sig_2026-11-04_004",
-      "level": 1,
-      "content": "Soniox 升级语音识别优化智能体交互",
-      "summary": "Soniox 发布 STT v6，新增智能体文本输入与回声过滤功能，优化语音交互",
-      "source": "https://www.marktechpost.com/2026/11/03/soniox-stt-v6-agent-text-input-echo-cancellation/",
-      "date": "2026-11-04",
-      "signal_index": 4
+      "id": "tag_2026-11-05_003",
+      "level": 2,
+      "content": "Soniox 升级语音识别优化智能…",
+      "date": "2026-11-05"
     },
     {
-      "id": "sig_2026-11-04_005",
-      "level": 1,
-      "content": "OpenAI 加速物理世界工程设计流程",
-      "summary": "OpenAI 展示 ChatGPT 与 Codex 如何加速工程师在 CAD、P",
-      "source": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
-      "date": "2026-11-04",
-      "signal_index": 5
+      "id": "tag_2026-11-05_004",
+      "level": 2,
+      "content": "OpenAI 加速物理世界工程设计…",
+      "date": "2026-11-05"
     },
     {
-      "id": "sig_2026-11-04_006",
-      "level": 1,
-      "content": "AI 智能体借公共 Wiki 合谋引担忧",
-      "summary": "发现 OpenAI 智能体通过公共 Wiki 交换约 1.8 万条消息进行合谋，",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-11-04",
-      "signal_index": 0
+      "id": "tag_2026-11-05_005",
+      "level": 2,
+      "content": "AI 智能体借公共 Wiki 合谋…",
+      "date": "2026-11-05"
     },
     {
-      "id": "sig_2026-11-03_001",
-      "level": 1,
-      "content": "Deep Principle 开源千亿参数科学模型",
-      "summary": "Deep Principle 发布 7530 亿参数开源模型 Hydrogen-",
-      "source": "https://www.marktechpost.com/2026/11/02/deep-principle-hydrogen-1-0-open-weight-scientific-model/",
-      "date": "2026-11-04",
-      "signal_index": null
+      "id": "tag_2026-11-05_006",
+      "level": 2,
+      "content": "Deep Principle 开源…",
+      "date": "2026-11-05"
     },
     {
-      "id": "sig_2026-11-03_002",
-      "level": 1,
-      "content": "Zyphra AI 推出次二次方注意力机制",
-      "summary": "Zyphra AI 推出分层注意力机制 ZHA，以稀疏注意力实现次二次方复杂度，",
-      "source": "https://www.marktechpost.com/2026/11/02/zyphra-hierarchical-attention-zha-sparse-attention/",
-      "date": "2026-11-04",
-      "signal_index": null
+      "id": "tag_2026-11-05_007",
+      "level": 2,
+      "content": "Zyphra AI 推出次二次方注…",
+      "date": "2026-11-05"
     },
     {
-      "id": "sig_2026-11-03_003",
-      "level": 1,
-      "content": "Letter 公司发布增长工程编码智能体",
-      "summary": "Letter 公司发布 Letterpress-1 编码智能体，自动分析 Git",
-      "source": "https://www.marktechpost.com/2026/11/02/letter-letterpress-1-growth-engineering-coding-agent/",
-      "date": "2026-11-04",
-      "signal_index": null
+      "id": "tag_2026-11-05_008",
+      "level": 2,
+      "content": "Letter 公司发布增长工程编码…",
+      "date": "2026-11-05"
     },
     {
       "id": "tag_2026-11-04_001",
@@ -95,50 +143,50 @@
       "date": "2026-11-04"
     },
     {
-      "id": "tag_2026-11-04_003",
-      "level": 2,
+      "id": "word_2026-11-04_003",
+      "level": 3,
       "content": "舆论呼吁阻止 Anthropic …",
       "date": "2026-11-04"
     },
     {
-      "id": "tag_2026-11-04_004",
-      "level": 2,
+      "id": "word_2026-11-04_004",
+      "level": 3,
       "content": "Anthropic 安全事故引发治…",
       "date": "2026-11-04"
     },
     {
-      "id": "tag_2026-11-04_005",
-      "level": 2,
+      "id": "word_2026-11-04_005",
+      "level": 3,
       "content": "MIT 提出自进化 AI 框架 S…",
       "date": "2026-11-04"
     },
     {
-      "id": "tag_2026-11-04_006",
-      "level": 2,
+      "id": "word_2026-11-04_006",
+      "level": 3,
       "content": "Nace AI 开源本地运行决策模型",
       "date": "2026-11-04"
     },
     {
-      "id": "tag_2026-11-03_001",
-      "level": 2,
+      "id": "word_2026-11-03_001",
+      "level": 3,
       "content": "DeepSeek 开源路由工作器编…",
       "date": "2026-11-03"
     },
     {
-      "id": "tag_2026-11-03_002",
-      "level": 2,
+      "id": "word_2026-11-03_002",
+      "level": 3,
       "content": "字节跳动推出机器人导航双模型",
       "date": "2026-11-03"
     },
     {
-      "id": "tag_2026-11-03_003",
-      "level": 2,
+      "id": "word_2026-11-03_003",
+      "level": 3,
       "content": "NVIDIA 利用 AI 搜索地外…",
       "date": "2026-11-03"
     },
     {
-      "id": "tag_2026-11-03_004",
-      "level": 2,
+      "id": "word_2026-11-03_004",
+      "level": 3,
       "content": "ChatGPT 分享链接存代码执行…",
       "date": "2026-11-03"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "微软开源插件降低编码代理成本三成",
       "date": "2026-11-02"
-    },
-    {
-      "id": "word_2026-11-02_005",
-      "level": 3,
-      "content": "Samaya AI 发布低成本金融…",
-      "date": "2026-11-02"
-    },
-    {
-      "id": "word_2026-11-01_001",
-      "level": 3,
-      "content": "OpenAI 承诺遵守网站 AI …",
-      "date": "2026-11-01"
-    },
-    {
-      "id": "word_2026-11-01_002",
-      "level": 3,
-      "content": "中国黑客利用 AI 框架攻击全球组织",
-      "date": "2026-11-01"
-    },
-    {
-      "id": "word_2026-11-01_003",
-      "level": 3,
-      "content": "OpenAI 加强青少年保护与安全…",
-      "date": "2026-11-01"
-    },
-    {
-      "id": "word_2026-11-01_004",
-      "level": 3,
-      "content": "OpenAI 借万智能体证明纳维 …",
-      "date": "2026-11-01"
-    },
-    {
-      "id": "word_2026-11-01_005",
-      "level": 3,
-      "content": "OpenAI 更新模型规范确立核心…",
-      "date": "2026-11-01"
-    },
-    {
-      "id": "word_2026-11-01_006",
-      "level": 3,
-      "content": "字节跳动推 Astra 架构革新机…",
-      "date": "2026-11-01"
-    },
-    {
-      "id": "word_2026-11-01_007",
-      "level": 3,
-      "content": "Prime Intellect 发…",
-      "date": "2026-11-01"
     }
   ]
 }
