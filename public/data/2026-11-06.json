@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T10:11:40.859879+08:00",
+  "summary": "OpenAI 推出 GPT-6 Cyber，能在授权范围内自动发现漏洞并开发修复方案，重塑防御体系。；谷歌发布 Gemini Omni 1.2 Flash，支持原生 15 秒视频生成编辑，成本降低 30% 至每秒 0.07 美元。；百度发布 ERNIE 5.5 Flash Base，采用 2800 亿参数稀疏 MoE 架构，激活参数仅 140 亿，兼顾性能与效率。",
+  "items": [
+    {
+      "id": "2026-11-06-003",
+      "title": "OpenAI 推出专用网络安全模型",
+      "category": "application",
+      "importance": 4,
+      "source": "https://openai.com/index/introducing-gpt-6-cyber",
+      "source_name": "OpenAI Blog",
+      "summary": "OpenAI 推出 GPT-6 Cyber，能在授权范围内自动发现漏洞并开发修复方案，重塑防御体系。",
+      "analysis": "GPT-6 Cyber 的出现意味着网络安全进入“自动化对抗”时代。该模型不仅能识别漏洞，还能自主生成修复代码，极大地缩短了从发现到修补的时间窗口。这种“以攻促防”的自动化能力，将迫使企业重新构建安全运营流程，同时也引发了关于自动化攻击工具扩散的伦理担忧，凸显了在提升防御效率的同时加强监管控制的必要性。",
+      "tags": [
+        "网络安全",
+        "自动化",
+        "漏洞修复"
+      ],
+      "collected_at": "2026-11-06T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-06-004",
+      "title": "谷歌发布原生视频生成模型",
+      "category": "technology",
+      "importance": 4,
+      "source": "https://www.marktechpost.com/2026/11/05/google-gemini-omni-1-2-flash-15-second-video/",
+      "source_name": "MarkTechPost",
+      "summary": "谷歌发布 Gemini Omni 1.2 Flash，支持原生 15 秒视频生成编辑，成本降低 30% 至每秒 0.07 美元。",
+      "analysis": "Gemini Omni 1.2 Flash 的发布显著降低了高质量视频生成的门槛。原生支持编辑功能且大幅降价，标志着视频生成技术从“实验性玩具”走向“生产力工具”。这将加速短视频创作、广告营销及影视预演等领域的变革，促使内容创作模式从人工主导转向人机协作，同时也对版权保护和深度伪造检测提出了更严峻的挑战。",
+      "tags": [
+        "视频生成",
+        "多模态",
+        "成本控制"
+      ],
+      "collected_at": "2026-11-06T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-06-005",
+      "title": "百度发布稀疏架构大模型",
+      "category": "technology",
+      "importance": 4,
+      "source": "https://www.marktechpost.com/2026/11/05/baidu-ernie-5-5-flash-base-280b-moe/",
+      "source_name": "MarkTechPost",
+      "summary": "百度发布 ERNIE 5.5 Flash Base，采用 2800 亿参数稀疏 MoE 架构，激活参数仅 140 亿，兼顾性能与效率。",
+      "analysis": "ERNIE 5.5 Flash Base 展示了混合专家模型（MoE）在超大规模下的工程落地能力。通过稀疏激活机制，百度在保持千亿级参数知识容量的同时，将推理成本控制在百亿级水平。这种架构优化证明了在算力受限背景下，通过算法创新提升能效比是可行路径，为全球大模型厂商在追求规模效应与控制运营成本之间提供了重要的参考范式。",
+      "tags": [
+        "MoE 架构",
+        "大模型",
+        "推理优化"
+      ],
+      "collected_at": "2026-11-06T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-06-006",
+      "title": "Together AI 推出智能体驱动编译器",
+      "category": "technology",
+      "importance": 4,
+      "source": "https://www.marktechpost.com/2026/11/05/together-ai-together-compiler-continual-compilation-ai-inference/",
+      "source_name": "MarkTechPost",
+      "summary": "Together AI 推出智能体驱动编译器，通过持续优化推理前向过程，使吞吐量提升最高达 2.6 倍。",
+      "analysis": "Together Compiler 代表了推理基础设施的重大革新。利用智能体动态优化编译过程，打破了传统静态编译的性能瓶颈，实现了运行时自适应加速。这种“用 AI 优化 AI\"的思路，将显著提升大模型服务的经济性和响应速度，特别是在高并发场景下，为构建低成本、高效率的 AI 工厂提供了关键的技术支撑，是推理侧降本增效的重要里程碑。",
+      "tags": [
+        "编译器",
+        "推理加速",
+        "基础设施"
+      ],
+      "collected_at": "2026-11-06T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-06-010",
+      "title": "研究人员揭示 ChatGPT 数据窃取漏洞",
+      "category": "thought",
+      "importance": 3,
+      "source": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+      "source_name": "Hacker News",
+      "summary": "研究人员揭示已修复漏洞，可绕过 ChatGPT 封锁模式在无用户交互下窃取数据，凸显安全防护挑战。",
+      "analysis": "该漏洞的发现表明，即使是处于严格封锁模式的模型，仍存在被诱导泄露敏感信息的风险。无用户交互即可窃取数据的特性，使得自动化攻击成为可能，这对依赖大模型处理隐私数据的企业构成了直接威胁。虽然漏洞已修复，但它提醒开发者，安全是一个持续的过程而非一次性状态，必须采用纵深防御策略，结合输入过滤、输出审计和行为监控来构建更鲁棒的系统。",
+      "tags": [
+        "数据安全",
+        "漏洞分析",
+        "提示词注入"
+      ],
+      "collected_at": "2026-11-06T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-06-011",
+      "title": "NVIDIA 发布专为 AI 设计的 Vera CPU",
+      "category": "hardware",
+      "importance": 3,
+      "source": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+      "source_name": "NVIDIA Blog",
+      "summary": "NVIDIA 发布 Vera CPU，专为 AI 工厂设计，优化智能体在 GPU 推理与 CPU 执行间的切换，提升吞吐量。",
+      "analysis": "Vera CPU 的发布完善了 NVIDIA 的 AI 全栈硬件布局。针对智能体工作流中频繁的 CPU-GPU 切换痛点进行优化，显著提升了复杂任务的处理吞吐量。这表明硬件设计正从通用的计算加速转向适配特定的 AI 工作负载模式，特别是针对 Agent 架构的预处理和后处理环节。这种软硬协同优化的趋势，将进一步巩固 NVIDIA 在 AI 基础设施领域的垄断地位，并推动异构计算架构的演进。",
+      "tags": [
+        "硬件",
+        "CPU",
+        "AI 基础设施"
+      ],
+      "collected_at": "2026-11-06T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-06-012",
+      "title": "澳大利亚高校全面引入 AI 教学",
+      "category": "application",
+      "importance": 2,
+      "source": "https://openai.com/index/australian-universities-ai-native-gradrates",
+      "source_name": "OpenAI Blog",
+      "summary": "澳大利亚高校全面引入 ChatGPT 教学，致力于培养适应 AI 赋能工作环境的新一代毕业生。",
+      "analysis": "澳大利亚高校的教育改革标志着 AI 正式融入高等教育核心体系。从“禁止使用”转向“全面融合”，旨在培养具备 AI 协作能力的“原生”人才。这种范式转变将重新定义未来的核心竞争力，即不再是单纯的知识记忆，而是驾驭 AI 工具解决复杂问题的能力。这可能引发全球教育体系的连锁反应，促使课程设计、评估标准乃至学位认证机制进行根本性重构，以适应人机协作的新时代。",
+      "tags": [
+        "教育",
+        "人才培养",
+        "AI 应用"
+      ],
+      "collected_at": "2026-11-06T06:00:00+08:00"
+    }
+  ]
+}
