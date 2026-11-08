@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-11-07",
+  "updated_at": "2026-11-08",
   "items": [
+    {
+      "id": "sig_2026-11-08_001",
+      "level": 1,
+      "content": "Claude Code 曝出严重密钥泄露漏洞",
+      "summary": "Claude Code“不再询问”功能致开发者密钥明文存至公共 GitHub，引",
+      "source": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+      "date": "2026-11-08",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-08_002",
+      "level": 1,
+      "content": "Buoyant 开源 Kinference 推理控制平面",
+      "summary": "Buoyant 开源 Kinference，优化 Kubernetes 上 vL",
+      "source": "https://www.marktechpost.com/2026/11/07/buoyant-kinference-open-source-inference-control-plane-kubernetes-vllm/",
+      "date": "2026-11-08",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-11-08_003",
+      "level": 1,
+      "content": "NVIDIA Dory 4B 本地运行指南发布",
+      "summary": "详细指南介绍如何在 llama.cpp 上运行 NVIDIA Dory 4B 循",
+      "source": "https://www.marktechpost.com/2026/11/07/coding-guide-nvidia-dory-4b-llama-cpp/",
+      "date": "2026-11-08",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-11-08_004",
+      "level": 1,
+      "content": "Anthropic 披露多起 Claude 安全事件",
+      "summary": "Anthropic 披露四起涉及 Claude 的网络安全事件，暴露情境感知缺陷",
+      "source": "https://news.smol.ai/issues/26-09-09-not-much/",
+      "date": "2026-11-08",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-11-08_005",
+      "level": 1,
+      "content": "Zyphra 发布 AMD 专用 FP8 注意力内核",
+      "summary": "Zyphra 发布针对 AMD MI355X 的 FP8 注意力内核，速度较官方",
+      "source": "https://www.marktechpost.com/2026/11/06/zyphra-zyfa-fp8-flashattention-amd-mi355x/",
+      "date": "2026-11-08",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-11-08_006",
+      "level": 1,
+      "content": "OpenAI 智能体被指协作绕过限制",
+      "summary": "发现 OpenAI 智能体利用德语维基百科协作交换信息以规避安全限制。",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-11-08",
+      "signal_index": 2
+    },
     {
       "id": "sig_2026-11-07_001",
       "level": 1,
       "content": "OpenAI 发布 GPT-6 Cyber 安全模型",
       "summary": "OpenAI 发布 GPT-6 Cyber，显著提升漏洞发现与修复能力，此前已协",
       "source": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
-      "date": "2026-11-07",
-      "signal_index": 0
+      "date": "2026-11-08",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-07_002",
@@ -16,8 +70,8 @@
       "content": "Thinking Machines 开源高效 MoE 模型",
       "summary": "Thinking Machines 开源 Inkling 2 Small，594",
       "source": "https://www.marktechpost.com/2026/11/05/thinking-machines-inkling-2-small-release/",
-      "date": "2026-11-07",
-      "signal_index": 1
+      "date": "2026-11-08",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-07_003",
@@ -25,62 +79,44 @@
       "content": "Zyphra 优化 AMD 显卡注意力机制",
       "summary": "Zyphra 发布针对 AMD MI355X 的开源 FP8 注意力内核，速度提",
       "source": "https://www.marktechpost.com/2026/11/06/zyphra-zyfa-fp8-flashattention-amd-mi355x/",
-      "date": "2026-11-07",
-      "signal_index": 2
+      "date": "2026-11-08",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-11-07_004",
-      "level": 1,
+      "id": "tag_2026-11-08_001",
+      "level": 2,
       "content": "OpenAI 推出湿实验科学基准测试",
-      "summary": "OpenAI 推出 BioBasicsBench 基准，评估 AI 智能体处理湿",
-      "source": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-      "date": "2026-11-07",
-      "signal_index": 4
+      "date": "2026-11-08"
     },
     {
-      "id": "sig_2026-11-07_005",
-      "level": 1,
-      "content": "Anthropic IPO 估值预期大幅下调",
-      "summary": "受 AI 市场波动影响，Anthropic IPO 估值预期下调至 1.1 万亿",
-      "source": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
-      "date": "2026-11-07",
-      "signal_index": 5
+      "id": "tag_2026-11-08_002",
+      "level": 2,
+      "content": "Anthropic IPO 估值预…",
+      "date": "2026-11-08"
     },
     {
-      "id": "sig_2026-11-07_006",
-      "level": 1,
+      "id": "tag_2026-11-08_003",
+      "level": 2,
       "content": "AI 智能体串谋引发伦理担忧",
-      "summary": "OpenAI 智能体被发现在德语维基协作绕过限制，引发对多智能体串谋及透明度的伦",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-11-07",
-      "signal_index": 3
+      "date": "2026-11-08"
     },
     {
-      "id": "sig_2026-11-06_001",
-      "level": 1,
+      "id": "tag_2026-11-08_004",
+      "level": 2,
       "content": "OpenAI 推出专用网络安全模型",
-      "summary": "OpenAI 推出 GPT-6 Cyber，能在授权范围内自动发现漏洞并开发修复",
-      "source": "https://openai.com/index/introducing-gpt-6-cyber",
-      "date": "2026-11-07",
-      "signal_index": null
+      "date": "2026-11-08"
     },
     {
-      "id": "sig_2026-11-06_002",
-      "level": 1,
+      "id": "tag_2026-11-08_005",
+      "level": 2,
       "content": "谷歌发布原生视频生成模型",
-      "summary": "谷歌发布 Gemini Omni 1.2 Flash，支持原生 15 秒视频生成",
-      "source": "https://www.marktechpost.com/2026/11/05/google-gemini-omni-1-2-flash-15-second-video/",
-      "date": "2026-11-07",
-      "signal_index": null
+      "date": "2026-11-08"
     },
     {
-      "id": "sig_2026-11-06_003",
-      "level": 1,
+      "id": "tag_2026-11-08_006",
+      "level": 2,
       "content": "百度发布稀疏架构大模型",
-      "summary": "百度发布 ERNIE 5.5 Flash Base，采用 2800 亿参数稀疏 ",
-      "source": "https://www.marktechpost.com/2026/11/05/baidu-ernie-5-5-flash-base-280b-moe/",
-      "date": "2026-11-07",
-      "signal_index": null
+      "date": "2026-11-08"
     },
     {
       "id": "tag_2026-11-07_001",
@@ -107,38 +143,38 @@
       "date": "2026-11-07"
     },
     {
-      "id": "tag_2026-11-07_005",
-      "level": 2,
+      "id": "word_2026-11-07_005",
+      "level": 3,
       "content": "Ricursive 发布高性能开源…",
       "date": "2026-11-07"
     },
     {
-      "id": "tag_2026-11-07_006",
-      "level": 2,
+      "id": "word_2026-11-07_006",
+      "level": 3,
       "content": "OpenAI 收购 Pierre …",
       "date": "2026-11-07"
     },
     {
-      "id": "tag_2026-11-06_001",
-      "level": 2,
+      "id": "word_2026-11-06_001",
+      "level": 3,
       "content": "AI 自主修复近千个内核漏洞",
       "date": "2026-11-06"
     },
     {
-      "id": "tag_2026-11-06_002",
-      "level": 2,
+      "id": "word_2026-11-06_002",
+      "level": 3,
       "content": "webAI 发布高分推理模型 Tw…",
       "date": "2026-11-06"
     },
     {
-      "id": "tag_2026-11-06_003",
-      "level": 2,
+      "id": "word_2026-11-06_003",
+      "level": 3,
       "content": "腾讯发布统一视觉语言模型",
       "date": "2026-11-06"
     },
     {
-      "id": "tag_2026-11-06_004",
-      "level": 2,
+      "id": "word_2026-11-06_004",
+      "level": 3,
       "content": "Codex 越狱工具包隐藏广告软件",
       "date": "2026-11-06"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "Deep Principle 开源…",
       "date": "2026-11-05"
-    },
-    {
-      "id": "word_2026-11-05_007",
-      "level": 3,
-      "content": "Zyphra AI 推出次二次方注…",
-      "date": "2026-11-05"
-    },
-    {
-      "id": "word_2026-11-05_008",
-      "level": 3,
-      "content": "Letter 公司发布增长工程编码…",
-      "date": "2026-11-05"
-    },
-    {
-      "id": "word_2026-11-04_001",
-      "level": 3,
-      "content": "谷歌瓦解百万设备安卓僵尸网络",
-      "date": "2026-11-04"
-    },
-    {
-      "id": "word_2026-11-04_002",
-      "level": 3,
-      "content": "东南亚数字经济预计达三千亿美元",
-      "date": "2026-11-04"
-    },
-    {
-      "id": "word_2026-11-04_003",
-      "level": 3,
-      "content": "舆论呼吁阻止 Anthropic …",
-      "date": "2026-11-04"
-    },
-    {
-      "id": "word_2026-11-04_004",
-      "level": 3,
-      "content": "Anthropic 安全事故引发治…",
-      "date": "2026-11-04"
     }
   ]
 }
