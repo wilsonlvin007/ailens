@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T09:36:31.878871+08:00",
+  "summary": "Anthropic 的 Claude Code 因“不再询问”功能设计缺陷，导致大量敏感凭证泄露至公共仓库。；受近期安全漏洞影响，高盛决定从交易员和银行家手中撤回 Claude Code 的使用权限。；谷歌发布新插件，强制编码智能体在写代码前先起草规范并经过五轮零上下文审查。",
+  "items": [
+    {
+      "id": "2026-11-09-003",
+      "title": "Claude Code 功能缺陷致密钥泄露",
+      "category": "thought",
+      "importance": 4,
+      "source": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "source_name": "HN AI",
+      "summary": "Anthropic 的 Claude Code 因“不再询问”功能设计缺陷，导致大量敏感凭证泄露至公共仓库。",
+      "analysis": "此次泄露事件暴露了自主编码智能体在安全边界上的重大隐患。“不再询问”机制虽提升了效率，却牺牲了对敏感操作的必要人工干预，反映出当前 AI 代理在上下文理解与风险判断上的不足。这为行业敲响警钟：在追求自动化程度的同时，必须建立更严格的权限隔离与审计机制，否则企业级应用将面临不可控的数据安全风险。",
+      "tags": [
+        "信息安全",
+        "代码智能体",
+        "隐私泄露"
+      ],
+      "collected_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-09-004",
+      "title": "高盛因安全顾虑撤回 Claude Code",
+      "category": "application",
+      "importance": 4,
+      "source": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "source_name": "HN AI",
+      "summary": "受近期安全漏洞影响，高盛决定从交易员和银行家手中撤回 Claude Code 的使用权限。",
+      "analysis": "高盛作为金融巨头迅速撤回 AI 工具，凸显了高风险行业对数据安全的零容忍态度。这一举动不仅是针对单一产品的反应，更是对整个生成式 AI 在企业核心业务中落地速度的重新评估。它表明，在缺乏完善的安全合规框架前，AI 在金融等敏感领域的规模化应用将遭遇强力阻力，迫使厂商必须在安全架构上投入更多资源以重建信任。",
+      "tags": [
+        "金融科技",
+        "企业应用",
+        "风险控制"
+      ],
+      "collected_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-09-009",
+      "title": "谷歌推插件规范智能体编码流程",
+      "category": "technology",
+      "importance": 2,
+      "source": "https://www.marktechpost.com/2026/11/08/google-elephant-goldfish-model-plugin-spec-review-coding-agents/",
+      "source_name": "MarkTechPost",
+      "summary": "谷歌发布新插件，强制编码智能体在写代码前先起草规范并经过五轮零上下文审查。",
+      "analysis": "该插件体现了“规范优先”的工程理念在 AI 编程中的应用。通过强制引入多轮审查机制，谷歌试图抑制大模型常见的幻觉与逻辑跳跃，提升代码的鲁棒性。这种将人类软件工程最佳实践固化为模型约束的做法，虽可能牺牲部分生成速度，但对于构建高可靠性的大型系统至关重要，是 AI 编程从“玩具”走向“生产”的必要妥协。",
+      "tags": [
+        "代码质量",
+        "工程规范",
+        "开发工具"
+      ],
+      "collected_at": "2026-11-09T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-09-010",
+      "title": "研究者提出多智能体失败归因法",
+      "category": "technology",
+      "importance": 2,
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "source_name": "Synced Review",
+      "summary": "宾州州立与杜克大学研究者提出自动归因方法，精准定位多智能体系统中导致任务失败的节点。",
+      "analysis": "在多智能体协作日益复杂的背景下，故障定位已成为系统调试的瓶颈。该研究提出的自动归因方法，如同为黑盒系统安装了“行车记录仪”，能够精确追溯错误源头。这不仅大幅降低了多智能体系统的维护成本，也为优化智能体间的协作策略提供了数据支撑，是推动多智能体系统从学术研究走向工业级稳定运行的关键技术。",
+      "tags": [
+        "多智能体",
+        "系统调试",
+        "可解释性"
+      ],
+      "collected_at": "2026-11-09T06:00:00+08:00"
+    }
+  ]
+}
