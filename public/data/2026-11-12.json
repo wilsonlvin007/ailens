@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T10:49:24.894689+08:00",
+  "summary": "谷歌发布 Gemini Decisions API，以极低价格提供多模态数据校准与自动化决策服务。；DeepMind 推出 AlphaGenome 2，精准预测特定细胞类型的基因变异效应，助力新药研发。；字节跳动推出 Astra 双模型架构，显著提升机器人在复杂室内环境下的自主导航性能。",
+  "items": [
+    {
+      "id": "2026-11-12-003",
+      "title": "谷歌推出低成本 Gemini 决策 API",
+      "category": "application",
+      "importance": 4,
+      "source": "https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/",
+      "source_name": "MarkTechPost",
+      "summary": "谷歌发布 Gemini Decisions API，以极低价格提供多模态数据校准与自动化决策服务。",
+      "analysis": "谷歌此举旨在降低企业级 AI 决策门槛，将多模态理解能力转化为标准化的基础设施服务。每百万令牌仅 0.1 美元的定价策略极具侵略性，意在快速抢占自动化决策市场。支持文本、图像及音视频的全模态分析，使得该 API 能广泛应用于金融风控、医疗诊断及工业质检等场景。这不仅加剧了云厂商间的价格战，更推动了 AI 从“内容生成”向“行动执行”的范式转移。企业无需自建庞大模型团队，即可集成高精度决策能力，加速了 AI 在传统产业中的渗透率。",
+      "tags": [
+        "谷歌",
+        "API 经济",
+        "多模态"
+      ],
+      "collected_at": "2026-11-12T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-12-004",
+      "title": "DeepMind 发布 AlphaGenome 2",
+      "category": "technology",
+      "importance": 4,
+      "source": "https://www.marktechpost.com/2026/11/11/google-deepmind-alphagenome-2-cell-type-specific-variant-effects/",
+      "source_name": "MarkTechPost",
+      "summary": "DeepMind 推出 AlphaGenome 2，精准预测特定细胞类型的基因变异效应，助力新药研发。",
+      "analysis": "AlphaGenome 2 的问世标志着 AI for Science 在生物学领域进入精细化阶段。相较于前代模型，其核心突破在于能够区分不同细胞类型对同一基因变异的差异化反应，解决了长期困扰生物医学界的组织特异性难题。这将极大缩短罕见病致病机理的研究周期，并为个性化疗法提供关键依据。对于制药行业，这意味着靶点发现的成功率将显著提升，研发成本大幅降低。DeepMind 再次证明，结合深度学习与领域知识的专用模型，比通用大模型更能推动前沿科学突破。",
+      "tags": [
+        "生物计算",
+        "DeepMind",
+        "基因编辑"
+      ],
+      "collected_at": "2026-11-12T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-12-008",
+      "title": "字节跳动发布机器人导航双模型架构",
+      "category": "hardware",
+      "importance": 3,
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "source_name": "Synced Review",
+      "summary": "字节跳动推出 Astra 双模型架构，显著提升机器人在复杂室内环境下的自主导航性能。",
+      "analysis": "字节跳动在具身智能领域的布局显示出其从内容分发生态向硬科技延伸的战略意图。Astra 采用的双模型架构， likely 分离了全局路径规划与局部避障决策，有效平衡了长程推理与实时响应的需求。在复杂动态环境中，这种设计能显著减少碰撞率并提升通行效率。对于服务机器人和物流自动化行业，这意味着在非结构化场景（如繁忙的家庭或仓库）中的商业化落地成为可能。这也预示着互联网大厂正成为具身智能技术的重要推动者。",
+      "tags": [
+        "具身智能",
+        "机器人",
+        "字节跳动"
+      ],
+      "collected_at": "2026-11-12T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-12-009",
+      "title": "AI 渗透测试平台被用于窃取云凭证",
+      "category": "thought",
+      "importance": 3,
+      "source": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+      "source_name": "Hacker News",
+      "summary": "新型 AI 渗透测试工具 AntiFox 被黑客滥用窃取 AWS 凭证，凸显双刃剑效应。",
+      "analysis": "AntiFox 事件是 AI 武器化的典型缩影。原本用于提升网络防御效率的自动化渗透测试工具，因降低了攻击技术门槛而被黑产迅速挪用。这表明，当 AI 具备高级推理和行动能力时，其用途完全取决于操作者的意图，且恶意使用的传播速度往往快于防御措施的部署。对于云安全领域，传统的基于特征的检测已不足以应对 AI 驱动的自适应攻击。未来安全体系必须引入\"AI 对抗 AI\"的机制，并加强对高危 AI 工具的分发管控与使用审计。",
+      "tags": [
+        "网络安全",
+        "AI 滥用",
+        "云服务"
+      ],
+      "collected_at": "2026-11-12T06:00:00+08:00"
+    }
+  ]
+}

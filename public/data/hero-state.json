@@ -1,14 +1,50 @@
 {
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-12",
   "items": [
+    {
+      "id": "sig_2026-11-12_001",
+      "level": 1,
+      "content": "谷歌推出低成本 Gemini 决策 API",
+      "summary": "谷歌发布 Gemini Decisions API，以极低价格提供多模态数据校准",
+      "source": "https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/",
+      "date": "2026-11-12",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-12_002",
+      "level": 1,
+      "content": "DeepMind 发布 AlphaGenome 2",
+      "summary": "DeepMind 推出 AlphaGenome 2，精准预测特定细胞类型的基因变",
+      "source": "https://www.marktechpost.com/2026/11/11/google-deepmind-alphagenome-2-cell-type-specific-variant-effects/",
+      "date": "2026-11-12",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-11-12_003",
+      "level": 1,
+      "content": "字节跳动发布机器人导航双模型架构",
+      "summary": "字节跳动推出 Astra 双模型架构，显著提升机器人在复杂室内环境下的自主导航性",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "date": "2026-11-12",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-11-12_004",
+      "level": 1,
+      "content": "AI 渗透测试平台被用于窃取云凭证",
+      "summary": "新型 AI 渗透测试工具 AntiFox 被黑客滥用窃取 AWS 凭证，凸显双刃",
+      "source": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+      "date": "2026-11-12",
+      "signal_index": 3
+    },
     {
       "id": "sig_2026-11-11_001",
       "level": 1,
       "content": "MIT 提出自进化 AI 框架 SEAL",
       "summary": "MIT 推出 SEAL 框架，允许大模型通过强化学习自我编辑权重，迈出自进化 A",
       "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-11-11",
-      "signal_index": 1
+      "date": "2026-11-12",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-11_002",
@@ -16,8 +52,8 @@
       "content": "SGLang 漏洞致 NEAR AI 数据泄露",
       "summary": "SGLang 推理引擎遭远程代码执行攻击，导致 NEAR AI 服务器受损，多个",
       "source": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
-      "date": "2026-11-11",
-      "signal_index": 2
+      "date": "2026-11-12",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-11_003",
@@ -25,8 +61,8 @@
       "content": "谷歌云推出医疗版 Gemini",
       "summary": "谷歌云推出医疗版 Gemini，旨在统一临床数据并自动化工作流，减轻医护人员行政",
       "source": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
-      "date": "2026-11-11",
-      "signal_index": 3
+      "date": "2026-11-12",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-11_004",
@@ -34,8 +70,8 @@
       "content": "Meta 发布 e-means 聚类算法",
       "summary": "Meta FAIR 发布 e-means 算法，集成于 FAISS，以十倍少 e",
       "source": "https://www.marktechpost.com/2026/11/10/meta-fair-e-means-k-means-faiss/",
-      "date": "2026-11-11",
-      "signal_index": 4
+      "date": "2026-11-12",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-11_005",
@@ -43,44 +79,32 @@
       "content": "Anthropic 发布双版本 Claude 5.2",
       "summary": "Anthropic 发布双版本 Claude 5.2，同一模型配备不同安全防护级",
       "source": "https://www.marktechpost.com/2026/11/10/anthropic-claude-fable-5-2-mythos-5-2-release/",
-      "date": "2026-11-11",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-11-11_006",
-      "level": 1,
-      "content": "Zyphra 开源轻量语音合成模型",
-      "summary": "Zyphra 开源 ZONOS3-Mini 语音合成模型，仅激活 1 亿参数即可",
-      "source": "https://www.marktechpost.com/2026/11/10/zyphra-zonos3-mini-open-source-tts/",
-      "date": "2026-11-11",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-11-11_007",
-      "level": 1,
-      "content": "英伟达捐赠 OpenShell 深化开源",
-      "summary": "英伟达深化开源承诺，捐赠 OpenShell 并升级基础设施，以支撑大规模 AI",
-      "source": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
-      "date": "2026-11-11",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-11-11_008",
-      "level": 1,
-      "content": "OpenAI 证明纳维尔 - 斯托克斯方程奇点",
-      "summary": "OpenAI 利用万级智能体算力提出纳维尔 - 斯托克斯方程奇点证明，开创测试时",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-11-11",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-11-10_001",
-      "level": 1,
-      "content": "谷歌发布第八代双芯片 TPU",
-      "summary": "谷歌推出含双芯片封装及机密推理功能的第八代 TPU，预计 2027 年部署，强化",
-      "source": "https://www.marktechpost.com/2026/11/09/google-tpu-8i-max-tpu-8tx/",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-11-12_001",
+      "level": 2,
+      "content": "Zyphra 开源轻量语音合成模型",
+      "date": "2026-11-12"
+    },
+    {
+      "id": "tag_2026-11-12_002",
+      "level": 2,
+      "content": "英伟达捐赠 OpenShell 深…",
+      "date": "2026-11-12"
+    },
+    {
+      "id": "tag_2026-11-12_003",
+      "level": 2,
+      "content": "OpenAI 证明纳维尔 - 斯托…",
+      "date": "2026-11-12"
+    },
+    {
+      "id": "tag_2026-11-12_004",
+      "level": 2,
+      "content": "谷歌发布第八代双芯片 TPU",
+      "date": "2026-11-12"
     },
     {
       "id": "tag_2026-11-11_001",
@@ -119,26 +143,26 @@
       "date": "2026-11-11"
     },
     {
-      "id": "tag_2026-11-11_007",
-      "level": 2,
+      "id": "word_2026-11-11_007",
+      "level": 3,
       "content": "谷歌推插件规范智能体编码流程",
       "date": "2026-11-11"
     },
     {
-      "id": "tag_2026-11-11_008",
-      "level": 2,
+      "id": "word_2026-11-11_008",
+      "level": 3,
       "content": "者提出多智能体失败归因法",
       "date": "2026-11-11"
     },
     {
-      "id": "tag_2026-11-10_001",
-      "level": 2,
+      "id": "word_2026-11-10_001",
+      "level": 3,
       "content": "Claude Code 曝出严重密…",
       "date": "2026-11-10"
     },
     {
-      "id": "tag_2026-11-10_002",
-      "level": 2,
+      "id": "word_2026-11-10_002",
+      "level": 3,
       "content": "Buoyant 开源 Kinfer…",
       "date": "2026-11-10"
     },
@@ -207,30 +231,6 @@
       "level": 3,
       "content": "OpenAI 推出专用网络安全模型",
       "date": "2026-11-08"
-    },
-    {
-      "id": "word_2026-11-08_005",
-      "level": 3,
-      "content": "谷歌发布原生视频生成模型",
-      "date": "2026-11-08"
-    },
-    {
-      "id": "word_2026-11-08_006",
-      "level": 3,
-      "content": "百度发布稀疏架构大模型",
-      "date": "2026-11-08"
-    },
-    {
-      "id": "word_2026-11-07_001",
-      "level": 3,
-      "content": "Together AI 推出智能体…",
-      "date": "2026-11-07"
-    },
-    {
-      "id": "word_2026-11-07_002",
-      "level": 3,
-      "content": "人员揭示 ChatGPT 数据窃取…",
-      "date": "2026-11-07"
     }
   ]
 }

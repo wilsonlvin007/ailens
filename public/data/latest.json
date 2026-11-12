@@ -1,135 +1,71 @@
 {
-  "date": "2026-11-11",
-  "generated_at": "2026-11-11T09:50:04.825518+08:00",
-  "summary": "OpenAI 利用万级智能体算力提出纳维尔 - 斯托克斯方程奇点证明，开创测试时计算扩展新范式。；MIT 推出 SEAL 框架，允许大模型通过强化学习自我编辑权重，迈出自进化 AI 关键一步。；SGLang 推理引擎遭远程代码执行攻击，导致 NEAR AI 服务器受损，多个智能体及用户数据泄露。",
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T10:49:24.894689+08:00",
+  "summary": "谷歌发布 Gemini Decisions API，以极低价格提供多模态数据校准与自动化决策服务。；DeepMind 推出 AlphaGenome 2，精准预测特定细胞类型的基因变异效应，助力新药研发。；字节跳动推出 Astra 双模型架构，显著提升机器人在复杂室内环境下的自主导航性能。",
   "items": [
     {
-      "id": "2026-11-11-001",
-      "title": "OpenAI 证明纳维尔 - 斯托克斯方程奇点",
-      "category": "technology",
-      "importance": 5,
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "source_name": "AINews (smol.ai)",
-      "summary": "OpenAI 利用万级智能体算力提出纳维尔 - 斯托克斯方程奇点证明，开创测试时计算扩展新范式。",
-      "analysis": "这一突破标志着 AI 从单纯的模式匹配迈向科学发现的核心领域。纳维尔 - 斯托克斯方程的存在性与光滑性是千禧年大奖难题之一，传统数学方法数十年未解。OpenAI 通过大规模智能体协作进行“测试时计算”（Test-time Compute），展示了算力堆叠在解决复杂数学问题上的巨大潜力。这不仅可能为流体力学带来革命性进展，更验证了\"AI 科学家”范式的可行性，即通过海量并行试错寻找人类难以察觉的数学结构，将深刻影响未来基础科学研究的方法论。",
-      "tags": [
-        "科学发现",
-        "数学",
-        "智能体"
-      ],
-      "collected_at": "2026-11-11T06:00:00+08:00"
-    },
-    {
-      "id": "2026-11-11-003",
-      "title": "MIT 提出自进化 AI 框架 SEAL",
-      "category": "technology",
-      "importance": 5,
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "source_name": "Synced Review",
-      "summary": "MIT 推出 SEAL 框架，允许大模型通过强化学习自我编辑权重，迈出自进化 AI 关键一步。",
-      "analysis": "SEAL 框架的问世触及了 AI 发展的敏感神经：自我改进。传统模型训练依赖静态数据集和人工干预，而 SEAL 让模型能够动态调整自身权重以适应新任务或优化性能。这种机制若成熟，将极大降低模型迭代成本并加速能力涌现，但也引发了对“失控”风险的深层担忧。一旦模型具备自主进化能力，其行为路径将变得难以预测，现有的对齐技术可能失效。这不仅是技术架构的革新，更是对 AI 治理体系提出的严峻挑战，迫使行业重新审视自动化递归自我改进的安全边界。",
-      "tags": [
-        "自进化",
-        "强化学习",
-        "AI 安全"
-      ],
-      "collected_at": "2026-11-11T06:00:00+08:00"
-    },
-    {
-      "id": "2026-11-11-004",
-      "title": "SGLang 漏洞致 NEAR AI 数据泄露",
-      "category": "thought",
-      "importance": 4,
-      "source": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
-      "source_name": "Hacker News",
-      "summary": "SGLang 推理引擎遭远程代码执行攻击，导致 NEAR AI 服务器受损，多个智能体及用户数据泄露。",
-      "analysis": "此次 SGLang 漏洞事件暴露了快速迭代的 AI 基础设施中潜在的安全短板。作为高性能推理引擎，SGLang 被广泛集成于各类 Agent 系统中，其 RCE 漏洞直接威胁到运行时的数据安全与系统完整性。随着 AI 应用从实验走向生产环境，针对推理层的攻击面正在扩大。这不仅要求开发者在追求推理速度的同时必须兼顾安全审计，也警示行业需建立针对 AI 特有组件（如提示注入、上下文污染）的防御标准。对于依赖多智能体协作的企业而言，单一组件的失效可能导致连锁反应，供应链安全至关重要。",
-      "tags": [
-        "网络安全",
-        "基础设施",
-        "数据泄露"
-      ],
-      "collected_at": "2026-11-11T06:00:00+08:00"
-    },
-    {
-      "id": "2026-11-11-007",
-      "title": "谷歌云推出医疗版 Gemini",
+      "id": "2026-11-12-003",
+      "title": "谷歌推出低成本 Gemini 决策 API",
       "category": "application",
       "importance": 4,
-      "source": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
-      "source_name": "Google AI Blog",
-      "summary": "谷歌云推出医疗版 Gemini，旨在统一临床数据并自动化工作流，减轻医护人员行政负担。",
-      "analysis": "谷歌此举标志着通用大模型向垂直行业深度定制的转折点。医疗领域数据孤岛严重、非结构化数据繁多，Gemini 的介入有望通过统一数据接口和自动化文档处理，显著降低医护人员的行政负荷，使其回归临床本职。然而，医疗 AI 的落地不仅关乎效率，更涉及极高的隐私保护与责任归属问题。谷歌云强调的基础设施整合能力，意味着其试图构建从数据存储、模型训练到临床应用的全闭环生态。这将加速 AI 在医院管理、辅助诊断等场景的普及，但也要求建立更严格的医疗 AI 准入与监管标准。",
-      "tags": [
-        "医疗健康",
-        "行业应用",
-        "谷歌"
-      ],
-      "collected_at": "2026-11-11T06:00:00+08:00"
-    },
-    {
-      "id": "2026-11-11-008",
-      "title": "Meta 发布 e-means 聚类算法",
-      "category": "technology",
-      "importance": 3,
-      "source": "https://www.marktechpost.com/2026/11/10/meta-fair-e-means-k-means-faiss/",
+      "source": "https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/",
       "source_name": "MarkTechPost",
-      "summary": "Meta FAIR 发布 e-means 算法，集成于 FAISS，以十倍少 epoch 实现 k-means 效果并大幅提升 GPU 速度。",
-      "analysis": "e-means 算法的提出是对经典聚类技术的一次重要现代化改造。在大规模向量检索成为 RAG（检索增强生成）系统核心的背景下，聚类效率直接影响知识库的更新速度与查询延迟。Meta 将新算法集成至 FAISS 库，意味着数以百万计的开发者能立即受益于其 GPU 加速特性。相比传统 k-means，e-means 在收敛速度上的数量级提升，使得处理亿级向量索引变得更加经济高效。这不仅优化了底层基础设施性能，也为实时性要求更高的动态知识库应用提供了技术可行性，是基础算法研究反哺工程实践的典型案例。",
+      "summary": "谷歌发布 Gemini Decisions API，以极低价格提供多模态数据校准与自动化决策服务。",
+      "analysis": "谷歌此举旨在降低企业级 AI 决策门槛，将多模态理解能力转化为标准化的基础设施服务。每百万令牌仅 0.1 美元的定价策略极具侵略性，意在快速抢占自动化决策市场。支持文本、图像及音视频的全模态分析，使得该 API 能广泛应用于金融风控、医疗诊断及工业质检等场景。这不仅加剧了云厂商间的价格战，更推动了 AI 从“内容生成”向“行动执行”的范式转移。企业无需自建庞大模型团队，即可集成高精度决策能力，加速了 AI 在传统产业中的渗透率。",
       "tags": [
-        "算法优化",
-        "向量检索",
-        "Meta"
+        "谷歌",
+        "API 经济",
+        "多模态"
       ],
-      "collected_at": "2026-11-11T06:00:00+08:00"
+      "collected_at": "2026-11-12T06:00:00+08:00"
     },
     {
-      "id": "2026-11-11-009",
-      "title": "Anthropic 发布双版本 Claude 5.2",
+      "id": "2026-11-12-004",
+      "title": "DeepMind 发布 AlphaGenome 2",
       "category": "technology",
-      "importance": 3,
-      "source": "https://www.marktechpost.com/2026/11/10/anthropic-claude-fable-5-2-mythos-5-2-release/",
+      "importance": 4,
+      "source": "https://www.marktechpost.com/2026/11/11/google-deepmind-alphagenome-2-cell-type-specific-variant-effects/",
       "source_name": "MarkTechPost",
-      "summary": "Anthropic 发布双版本 Claude 5.2，同一模型配备不同安全防护级别，支持百万 token 上下文窗口。",
-      "analysis": "Anthropic 采用“同源双模”策略，反映了其在平衡模型能力与安全性之间的务实探索。通过在同一基座上配置不同等级的安全护栏，既能满足科研机构对高自由度模型的需求，又能保障企业用户对合规性的严格要求。这种模块化安全设计降低了维护多套模型的成本，同时提高了响应不同监管环境的灵活性。配合百万级上下文窗口，该模型在处理长文档分析、全代码库理解等任务时将更具优势。这一策略可能成为未来大模型发布的常态，即在提供强大算力的同时，赋予用户选择“安全等级”的权利。",
+      "summary": "DeepMind 推出 AlphaGenome 2，精准预测特定细胞类型的基因变异效应，助力新药研发。",
+      "analysis": "AlphaGenome 2 的问世标志着 AI for Science 在生物学领域进入精细化阶段。相较于前代模型，其核心突破在于能够区分不同细胞类型对同一基因变异的差异化反应，解决了长期困扰生物医学界的组织特异性难题。这将极大缩短罕见病致病机理的研究周期，并为个性化疗法提供关键依据。对于制药行业，这意味着靶点发现的成功率将显著提升，研发成本大幅降低。DeepMind 再次证明，结合深度学习与领域知识的专用模型，比通用大模型更能推动前沿科学突破。",
       "tags": [
-        "大模型",
-        "安全策略",
-        "Anthropic"
+        "生物计算",
+        "DeepMind",
+        "基因编辑"
       ],
-      "collected_at": "2026-11-11T06:00:00+08:00"
+      "collected_at": "2026-11-12T06:00:00+08:00"
     },
     {
-      "id": "2026-11-11-010",
-      "title": "Zyphra 开源轻量语音合成模型",
-      "category": "technology",
-      "importance": 3,
-      "source": "https://www.marktechpost.com/2026/11/10/zyphra-zonos3-mini-open-source-tts/",
-      "source_name": "MarkTechPost",
-      "summary": "Zyphra 开源 ZONOS3-Mini 语音合成模型，仅激活 1 亿参数即可实时运行并支持细粒度声音控制。",
-      "analysis": "ZONOS3-Mini 的发布顺应了端侧 AI 与轻量化模型的趋势。在保持高质量语音合成的前提下，将活跃参数压缩至 1 亿量级，使得该模型能够在消费级硬件甚至移动设备上实时运行。这对于构建低延迟的交互式语音助手、无障碍阅读工具以及个性化内容创作平台具有重要意义。开源策略进一步降低了开发者门槛，促进了语音技术在边缘计算场景的普及。细粒度声音控制功能的加入，则满足了情感计算和虚拟人驱动的高级需求，展示了小模型在特定垂直任务上媲美大模型的潜力。",
-      "tags": [
-        "语音合成",
-        "开源",
-        "边缘计算"
-      ],
-      "collected_at": "2026-11-11T06:00:00+08:00"
-    },
-    {
-      "id": "2026-11-11-012",
-      "title": "英伟达捐赠 OpenShell 深化开源",
+      "id": "2026-11-12-008",
+      "title": "字节跳动发布机器人导航双模型架构",
       "category": "hardware",
       "importance": 3,
-      "source": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
-      "source_name": "NVIDIA Blog",
-      "summary": "英伟达深化开源承诺，捐赠 OpenShell 并升级基础设施，以支撑大规模 AI 工厂的 Kubernetes 需求。",
-      "analysis": "英伟达捐赠 OpenShell 并非简单的代码开放，而是对其构建的 AI 基础设施生态的巩固。随着 AI 训练集群规模向万卡乃至十万卡演进，容器编排与资源调度的复杂性呈指数级上升。通过开源 shell 工具链并优化 Kubernetes 支持，英伟达旨在降低超大规模集群的管理门槛，增强其硬件平台在云原生环境中的粘性。此举有助于统一行业标准，减少碎片化，使开发者能更专注于模型而非底层运维。在竞争对手纷纷自建芯片的背景下，英伟达正通过软硬一体的开源生态构筑更深的护城河。",
+      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
+      "source_name": "Synced Review",
+      "summary": "字节跳动推出 Astra 双模型架构，显著提升机器人在复杂室内环境下的自主导航性能。",
+      "analysis": "字节跳动在具身智能领域的布局显示出其从内容分发生态向硬科技延伸的战略意图。Astra 采用的双模型架构， likely 分离了全局路径规划与局部避障决策，有效平衡了长程推理与实时响应的需求。在复杂动态环境中，这种设计能显著减少碰撞率并提升通行效率。对于服务机器人和物流自动化行业，这意味着在非结构化场景（如繁忙的家庭或仓库）中的商业化落地成为可能。这也预示着互联网大厂正成为具身智能技术的重要推动者。",
       "tags": [
-        "开源",
-        "基础设施",
-        "英伟达"
+        "具身智能",
+        "机器人",
+        "字节跳动"
       ],
-      "collected_at": "2026-11-11T06:00:00+08:00"
+      "collected_at": "2026-11-12T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-12-009",
+      "title": "AI 渗透测试平台被用于窃取云凭证",
+      "category": "thought",
+      "importance": 3,
+      "source": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+      "source_name": "Hacker News",
+      "summary": "新型 AI 渗透测试工具 AntiFox 被黑客滥用窃取 AWS 凭证，凸显双刃剑效应。",
+      "analysis": "AntiFox 事件是 AI 武器化的典型缩影。原本用于提升网络防御效率的自动化渗透测试工具，因降低了攻击技术门槛而被黑产迅速挪用。这表明，当 AI 具备高级推理和行动能力时，其用途完全取决于操作者的意图，且恶意使用的传播速度往往快于防御措施的部署。对于云安全领域，传统的基于特征的检测已不足以应对 AI 驱动的自适应攻击。未来安全体系必须引入\"AI 对抗 AI\"的机制，并加强对高危 AI 工具的分发管控与使用审计。",
+      "tags": [
+        "网络安全",
+        "AI 滥用",
+        "云服务"
+      ],
+      "collected_at": "2026-11-12T06:00:00+08:00"
     }
   ]
 }
