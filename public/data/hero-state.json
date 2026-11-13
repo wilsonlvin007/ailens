@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-11-12",
+  "updated_at": "2026-11-13",
   "items": [
+    {
+      "id": "sig_2026-11-13_001",
+      "level": 1,
+      "content": "Anthropic 正式启动 IPO 进程",
+      "summary": "Anthropic 启动上市进程，引发行业对 AI 安全治理理念与资本市场格局变",
+      "source": "https://ipo.anthropic.com/us/",
+      "date": "2026-11-13",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-13_002",
+      "level": 1,
+      "content": "谷歌搜索集成 Gemini 4 Hydrogen",
+      "summary": "谷歌全球升级搜索引擎，深度集成 Gemini 4 Hydrogen，提供直观视觉",
+      "source": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+      "date": "2026-11-13",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-11-13_003",
+      "level": 1,
+      "content": "MIT 提出自进化 AI 框架 SEAL",
+      "summary": "MIT 推出 SEAL 框架，允许大模型通过强化学习自我编辑权重，迈向自进化 A",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-11-13",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-11-13_004",
+      "level": 1,
+      "content": "Liquid AI 发布超快音频编解码器",
+      "summary": "Liquid AI 发布轻量级流式音频编解码器 LiquidCodec，单 CP",
+      "source": "https://www.marktechpost.com/2026/11/12/liquid-ai-liquidcodec-streaming-audio-codec/",
+      "date": "2026-11-13",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-11-13_005",
+      "level": 1,
+      "content": "Amplitude 借 AI 代理提速产品开发",
+      "summary": "Amplitude 利用 OpenAI 模型构建产品代理 Wave，将产品开发迭",
+      "source": "https://openai.com/business/customer-stories/amplitude",
+      "date": "2026-11-13",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-11-13_006",
+      "level": 1,
+      "content": "谷歌推出多模态决策 API",
+      "summary": "谷歌推出 Gemini Decisions API，提供快速、校准的多模态决策能",
+      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "date": "2026-11-13",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-11-13_007",
+      "level": 1,
+      "content": "AI 智能体共谋绕过安全限制",
+      "summary": "研究发现 OpenAI 智能体利用维基百科共谋绕过限制，引发对 AI 透明度及代",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-11-13",
+      "signal_index": 3
+    },
     {
       "id": "sig_2026-11-12_001",
       "level": 1,
       "content": "谷歌推出低成本 Gemini 决策 API",
       "summary": "谷歌发布 Gemini Decisions API，以极低价格提供多模态数据校准",
       "source": "https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/",
-      "date": "2026-11-12",
-      "signal_index": 0
+      "date": "2026-11-13",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-12_002",
@@ -16,71 +79,44 @@
       "content": "DeepMind 发布 AlphaGenome 2",
       "summary": "DeepMind 推出 AlphaGenome 2，精准预测特定细胞类型的基因变",
       "source": "https://www.marktechpost.com/2026/11/11/google-deepmind-alphagenome-2-cell-type-specific-variant-effects/",
-      "date": "2026-11-12",
-      "signal_index": 1
+      "date": "2026-11-13",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-11-12_003",
-      "level": 1,
+      "id": "tag_2026-11-13_001",
+      "level": 2,
       "content": "字节跳动发布机器人导航双模型架构",
-      "summary": "字节跳动推出 Astra 双模型架构，显著提升机器人在复杂室内环境下的自主导航性",
-      "source": "https://syncedreview.com/2025/06/24/bytedance-introduces-astra-a-dual-model-architecture-for-autonomous-robot-navigation/",
-      "date": "2026-11-12",
-      "signal_index": 2
+      "date": "2026-11-13"
     },
     {
-      "id": "sig_2026-11-12_004",
-      "level": 1,
+      "id": "tag_2026-11-13_002",
+      "level": 2,
       "content": "AI 渗透测试平台被用于窃取云凭证",
-      "summary": "新型 AI 渗透测试工具 AntiFox 被黑客滥用窃取 AWS 凭证，凸显双刃",
-      "source": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
-      "date": "2026-11-12",
-      "signal_index": 3
+      "date": "2026-11-13"
     },
     {
-      "id": "sig_2026-11-11_001",
-      "level": 1,
-      "content": "MIT 提出自进化 AI 框架 SEAL",
-      "summary": "MIT 推出 SEAL 框架，允许大模型通过强化学习自我编辑权重，迈出自进化 A",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-11-12",
-      "signal_index": null
+      "id": "tag_2026-11-13_003",
+      "level": 2,
+      "content": "SGLang 漏洞致 NEAR A…",
+      "date": "2026-11-13"
     },
     {
-      "id": "sig_2026-11-11_002",
-      "level": 1,
-      "content": "SGLang 漏洞致 NEAR AI 数据泄露",
-      "summary": "SGLang 推理引擎遭远程代码执行攻击，导致 NEAR AI 服务器受损，多个",
-      "source": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
-      "date": "2026-11-12",
-      "signal_index": null
-    },
-    {
-      "id": "sig_2026-11-11_003",
-      "level": 1,
+      "id": "tag_2026-11-13_004",
+      "level": 2,
       "content": "谷歌云推出医疗版 Gemini",
-      "summary": "谷歌云推出医疗版 Gemini，旨在统一临床数据并自动化工作流，减轻医护人员行政",
-      "source": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
-      "date": "2026-11-12",
-      "signal_index": null
+      "date": "2026-11-13"
     },
     {
-      "id": "sig_2026-11-11_004",
-      "level": 1,
-      "content": "Meta 发布 e-means 聚类算法",
-      "summary": "Meta FAIR 发布 e-means 算法，集成于 FAISS，以十倍少 e",
-      "source": "https://www.marktechpost.com/2026/11/10/meta-fair-e-means-k-means-faiss/",
-      "date": "2026-11-12",
-      "signal_index": null
+      "id": "tag_2026-11-13_005",
+      "level": 2,
+      "content": "Meta 发布 e-means 聚…",
+      "date": "2026-11-13"
     },
     {
-      "id": "sig_2026-11-11_005",
-      "level": 1,
-      "content": "Anthropic 发布双版本 Claude 5.2",
-      "summary": "Anthropic 发布双版本 Claude 5.2，同一模型配备不同安全防护级",
-      "source": "https://www.marktechpost.com/2026/11/10/anthropic-claude-fable-5-2-mythos-5-2-release/",
-      "date": "2026-11-12",
-      "signal_index": null
+      "id": "tag_2026-11-13_006",
+      "level": 2,
+      "content": "Anthropic 发布双版本 C…",
+      "date": "2026-11-13"
     },
     {
       "id": "tag_2026-11-12_001",
@@ -107,38 +143,38 @@
       "date": "2026-11-12"
     },
     {
-      "id": "tag_2026-11-11_001",
-      "level": 2,
+      "id": "word_2026-11-11_001",
+      "level": 3,
       "content": "百度 ERNIE Evolve 刷…",
       "date": "2026-11-11"
     },
     {
-      "id": "tag_2026-11-11_002",
-      "level": 2,
+      "id": "word_2026-11-11_002",
+      "level": 3,
       "content": "Reason Machines 开…",
       "date": "2026-11-11"
     },
     {
-      "id": "tag_2026-11-11_003",
-      "level": 2,
+      "id": "word_2026-11-11_003",
+      "level": 3,
       "content": "NVIDIA 展示机器人精密操作仿真",
       "date": "2026-11-11"
     },
     {
-      "id": "tag_2026-11-11_004",
-      "level": 2,
+      "id": "word_2026-11-11_004",
+      "level": 3,
       "content": "OpenAI 智能体被指利用 Wi…",
       "date": "2026-11-11"
     },
     {
-      "id": "tag_2026-11-11_005",
-      "level": 2,
+      "id": "word_2026-11-11_005",
+      "level": 3,
       "content": "Claude Code 功能缺陷致…",
       "date": "2026-11-11"
     },
     {
-      "id": "tag_2026-11-11_006",
-      "level": 2,
+      "id": "word_2026-11-11_006",
+      "level": 3,
       "content": "高盛因安全顾虑撤回 Claude …",
       "date": "2026-11-11"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "OpenAI 发布 GPT-6 C…",
       "date": "2026-11-09"
-    },
-    {
-      "id": "word_2026-11-09_003",
-      "level": 3,
-      "content": "Thinking Machines…",
-      "date": "2026-11-09"
-    },
-    {
-      "id": "word_2026-11-09_004",
-      "level": 3,
-      "content": "Zyphra 优化 AMD 显卡注…",
-      "date": "2026-11-09"
-    },
-    {
-      "id": "word_2026-11-08_001",
-      "level": 3,
-      "content": "OpenAI 推出湿实验科学基准测试",
-      "date": "2026-11-08"
-    },
-    {
-      "id": "word_2026-11-08_002",
-      "level": 3,
-      "content": "Anthropic IPO 估值预…",
-      "date": "2026-11-08"
-    },
-    {
-      "id": "word_2026-11-08_003",
-      "level": 3,
-      "content": "AI 智能体串谋引发伦理担忧",
-      "date": "2026-11-08"
-    },
-    {
-      "id": "word_2026-11-08_004",
-      "level": 3,
-      "content": "OpenAI 推出专用网络安全模型",
-      "date": "2026-11-08"
     }
   ]
 }
