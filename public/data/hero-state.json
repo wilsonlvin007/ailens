@@ -1,86 +1,140 @@
 {
-  "updated_at": "2026-11-13",
+  "updated_at": "2026-11-14",
   "items": [
     {
-      "id": "sig_2026-11-13_001",
+      "id": "sig_2026-11-14_001",
       "level": 1,
-      "content": "Anthropic 正式启动 IPO 进程",
-      "summary": "Anthropic 启动上市进程，引发行业对 AI 安全治理理念与资本市场格局变",
-      "source": "https://ipo.anthropic.com/us/",
-      "date": "2026-11-13",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-11-13_002",
-      "level": 1,
-      "content": "谷歌搜索集成 Gemini 4 Hydrogen",
-      "summary": "谷歌全球升级搜索引擎，深度集成 Gemini 4 Hydrogen，提供直观视觉",
-      "source": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
-      "date": "2026-11-13",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-11-13_003",
-      "level": 1,
-      "content": "MIT 提出自进化 AI 框架 SEAL",
-      "summary": "MIT 推出 SEAL 框架，允许大模型通过强化学习自我编辑权重，迈向自进化 A",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-11-13",
+      "content": "新型攻击突破 AMD 虚拟机保护",
+      "summary": "新型 Mior 和 Skyfall 攻击可突破 AMD SEV-SNP 保护，恶",
+      "source": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+      "date": "2026-11-14",
       "signal_index": 2
     },
     {
-      "id": "sig_2026-11-13_004",
+      "id": "sig_2026-11-14_002",
       "level": 1,
-      "content": "Liquid AI 发布超快音频编解码器",
-      "summary": "Liquid AI 发布轻量级流式音频编解码器 LiquidCodec，单 CP",
-      "source": "https://www.marktechpost.com/2026/11/12/liquid-ai-liquidcodec-streaming-audio-codec/",
-      "date": "2026-11-13",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-11-13_005",
-      "level": 1,
-      "content": "Amplitude 借 AI 代理提速产品开发",
-      "summary": "Amplitude 利用 OpenAI 模型构建产品代理 Wave，将产品开发迭",
-      "source": "https://openai.com/business/customer-stories/amplitude",
-      "date": "2026-11-13",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-11-13_006",
-      "level": 1,
-      "content": "谷歌推出多模态决策 API",
-      "summary": "谷歌推出 Gemini Decisions API，提供快速、校准的多模态决策能",
-      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-      "date": "2026-11-13",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-11-13_007",
-      "level": 1,
-      "content": "AI 智能体共谋绕过安全限制",
-      "summary": "研究发现 OpenAI 智能体利用维基百科共谋绕过限制，引发对 AI 透明度及代",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-11-13",
+      "content": "朝鲜黑客利用深伪窃取四亿美元",
+      "summary": "FBI 证实朝鲜黑客利用深度伪造视频通话实施社会工程，18 个月内窃取超 4 亿",
+      "source": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+      "date": "2026-11-14",
       "signal_index": 3
     },
     {
-      "id": "sig_2026-11-12_001",
+      "id": "sig_2026-11-14_003",
       "level": 1,
-      "content": "谷歌推出低成本 Gemini 决策 API",
-      "summary": "谷歌发布 Gemini Decisions API，以极低价格提供多模态数据校准",
-      "source": "https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/",
-      "date": "2026-11-13",
-      "signal_index": null
+      "content": "Google 开源 TPU 缓存传输库",
+      "summary": "Google 开源 TPU Sync 库，优化跨设备 KV 缓存传输，大幅降低超",
+      "source": "https://www.marktechpost.com/2026/11/13/google-tpu-sync-kv-cache-transfer-library/",
+      "date": "2026-11-14",
+      "signal_index": 4
     },
     {
-      "id": "sig_2026-11-12_002",
+      "id": "sig_2026-11-14_004",
       "level": 1,
-      "content": "DeepMind 发布 AlphaGenome 2",
-      "summary": "DeepMind 推出 AlphaGenome 2，精准预测特定细胞类型的基因变",
-      "source": "https://www.marktechpost.com/2026/11/11/google-deepmind-alphagenome-2-cell-type-specific-variant-effects/",
-      "date": "2026-11-13",
-      "signal_index": null
+      "content": "Perplexity 发布开源决策模型",
+      "summary": "Perplexity 发布开源决策模型 Decider v1.3，新增定位功能，",
+      "source": "https://www.marktechpost.com/2026/11/13/perplexity-decider-v1-3-open-weight-decision-models-locate/",
+      "date": "2026-11-14",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-11-14_005",
+      "level": 1,
+      "content": "2026 AI 视频生成模型榜单更新",
+      "summary": "2026 年 AI 视频生成榜单更新，原生音频成标配，开源模型首次进入前三。",
+      "source": "https://www.marktechpost.com/2026/11/13/best-ai-video-generation-models-2026/",
+      "date": "2026-11-14",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-11-14_006",
+      "level": 1,
+      "content": "OpenAI 推出 ChatGPT 支付钱包",
+      "summary": "OpenAI 推出 ChatGPT Wallet，允许智能体在用户授权下安全完成",
+      "source": "https://openai.com/index/introducing-chatgpt-wallet",
+      "date": "2026-11-14",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-11-14_007",
+      "level": 1,
+      "content": "AI 辅助医疗团队提升护理效率",
+      "summary": "NVIDIA 展示 AI 如何辅助医疗团队匹配临床试验并支持放射科医生，提升患者",
+      "source": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
+      "date": "2026-11-14",
+      "signal_index": 8
+    },
+    {
+      "id": "sig_2026-11-14_008",
+      "level": 1,
+      "content": "OpenAI 发布旗舰模型 GPT-6",
+      "summary": "OpenAI 发布 GPT-6 Astra，聚焦软件工程与科学推理，能力显著跃升",
+      "source": "https://news.smol.ai/issues/26-09-03-gpt-6-astra/",
+      "date": "2026-11-14",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-14_009",
+      "level": 1,
+      "content": "智能体共谋绕过维基百科限制",
+      "summary": "发现 OpenAI 智能体通过维基百科共谋绕过限制，引发多智能体失控风险担忧。",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-11-14",
+      "signal_index": 1
+    },
+    {
+      "id": "tag_2026-11-14_001",
+      "level": 2,
+      "content": "Anthropic 正式启动 IP…",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "tag_2026-11-14_002",
+      "level": 2,
+      "content": "谷歌搜索集成 Gemini 4 H…",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "tag_2026-11-14_003",
+      "level": 2,
+      "content": "MIT 提出自进化 AI 框架 S…",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "tag_2026-11-14_004",
+      "level": 2,
+      "content": "Liquid AI 发布超快音频编…",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "tag_2026-11-14_005",
+      "level": 2,
+      "content": "Amplitude 借 AI 代理…",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "tag_2026-11-14_006",
+      "level": 2,
+      "content": "谷歌推出多模态决策 API",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "tag_2026-11-14_007",
+      "level": 2,
+      "content": "AI 智能体共谋绕过安全限制",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "tag_2026-11-14_008",
+      "level": 2,
+      "content": "谷歌推出低成本 Gemini 决策…",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "tag_2026-11-14_009",
+      "level": 2,
+      "content": "DeepMind 发布 Alpha…",
+      "date": "2026-11-14"
     },
     {
       "id": "tag_2026-11-13_001",
@@ -89,56 +143,56 @@
       "date": "2026-11-13"
     },
     {
-      "id": "tag_2026-11-13_002",
-      "level": 2,
+      "id": "word_2026-11-13_002",
+      "level": 3,
       "content": "AI 渗透测试平台被用于窃取云凭证",
       "date": "2026-11-13"
     },
     {
-      "id": "tag_2026-11-13_003",
-      "level": 2,
+      "id": "word_2026-11-13_003",
+      "level": 3,
       "content": "SGLang 漏洞致 NEAR A…",
       "date": "2026-11-13"
     },
     {
-      "id": "tag_2026-11-13_004",
-      "level": 2,
+      "id": "word_2026-11-13_004",
+      "level": 3,
       "content": "谷歌云推出医疗版 Gemini",
       "date": "2026-11-13"
     },
     {
-      "id": "tag_2026-11-13_005",
-      "level": 2,
+      "id": "word_2026-11-13_005",
+      "level": 3,
       "content": "Meta 发布 e-means 聚…",
       "date": "2026-11-13"
     },
     {
-      "id": "tag_2026-11-13_006",
-      "level": 2,
+      "id": "word_2026-11-13_006",
+      "level": 3,
       "content": "Anthropic 发布双版本 C…",
       "date": "2026-11-13"
     },
     {
-      "id": "tag_2026-11-12_001",
-      "level": 2,
+      "id": "word_2026-11-12_001",
+      "level": 3,
       "content": "Zyphra 开源轻量语音合成模型",
       "date": "2026-11-12"
     },
     {
-      "id": "tag_2026-11-12_002",
-      "level": 2,
+      "id": "word_2026-11-12_002",
+      "level": 3,
       "content": "英伟达捐赠 OpenShell 深…",
       "date": "2026-11-12"
     },
     {
-      "id": "tag_2026-11-12_003",
-      "level": 2,
+      "id": "word_2026-11-12_003",
+      "level": 3,
       "content": "OpenAI 证明纳维尔 - 斯托…",
       "date": "2026-11-12"
     },
     {
-      "id": "tag_2026-11-12_004",
-      "level": 2,
+      "id": "word_2026-11-12_004",
+      "level": 3,
       "content": "谷歌发布第八代双芯片 TPU",
       "date": "2026-11-12"
     },
@@ -177,60 +231,6 @@
       "level": 3,
       "content": "高盛因安全顾虑撤回 Claude …",
       "date": "2026-11-11"
-    },
-    {
-      "id": "word_2026-11-11_007",
-      "level": 3,
-      "content": "谷歌推插件规范智能体编码流程",
-      "date": "2026-11-11"
-    },
-    {
-      "id": "word_2026-11-11_008",
-      "level": 3,
-      "content": "者提出多智能体失败归因法",
-      "date": "2026-11-11"
-    },
-    {
-      "id": "word_2026-11-10_001",
-      "level": 3,
-      "content": "Claude Code 曝出严重密…",
-      "date": "2026-11-10"
-    },
-    {
-      "id": "word_2026-11-10_002",
-      "level": 3,
-      "content": "Buoyant 开源 Kinfer…",
-      "date": "2026-11-10"
-    },
-    {
-      "id": "word_2026-11-10_003",
-      "level": 3,
-      "content": "NVIDIA Dory 4B 本地…",
-      "date": "2026-11-10"
-    },
-    {
-      "id": "word_2026-11-10_004",
-      "level": 3,
-      "content": "Anthropic 披露多起 Cl…",
-      "date": "2026-11-10"
-    },
-    {
-      "id": "word_2026-11-10_005",
-      "level": 3,
-      "content": "Zyphra 发布 AMD 专用 …",
-      "date": "2026-11-10"
-    },
-    {
-      "id": "word_2026-11-09_001",
-      "level": 3,
-      "content": "OpenAI 智能体被指协作绕过限制",
-      "date": "2026-11-09"
-    },
-    {
-      "id": "word_2026-11-09_002",
-      "level": 3,
-      "content": "OpenAI 发布 GPT-6 C…",
-      "date": "2026-11-09"
     }
   ]
 }
