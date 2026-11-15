@@ -1,14 +1,50 @@
 {
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-15",
   "items": [
+    {
+      "id": "sig_2026-11-15_001",
+      "level": 1,
+      "content": "Cmpnd 发布权重空间编程原型",
+      "summary": "Cmpnd 发布 dspy-wsp 原型，利用前沿 LLM 直接读取并编辑小模型",
+      "source": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/",
+      "date": "2026-11-15",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-15_002",
+      "level": 1,
+      "content": "斯坦福开源 Memorilla 记忆模块",
+      "summary": "斯坦福开源 Memorilla 记忆系统，将文档压缩为 16 个记忆令牌，显著提",
+      "source": "https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens/",
+      "date": "2026-11-15",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-11-15_003",
+      "level": 1,
+      "content": "Vercel 发布 AI 编码 UI SDK",
+      "summary": "Vercel 发布包含 50 多种 UI 行为的 SDK，帮助 AI 编码智能体",
+      "source": "https://www.marktechpost.com/2026/11/13/vercel-ui-sdk-agent-ui-behaviors/",
+      "date": "2026-11-15",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-11-15_004",
+      "level": 1,
+      "content": "Shield 利用 OpenAI 辅助遗留系统",
+      "summary": "Shield 利用 OpenAI 技术辅助 IT 技术人员处理遗留系统工作，让智",
+      "source": "https://openai.com/business/customer-stories/shield",
+      "date": "2026-11-15",
+      "signal_index": 3
+    },
     {
       "id": "sig_2026-11-14_001",
       "level": 1,
       "content": "新型攻击突破 AMD 虚拟机保护",
       "summary": "新型 Mior 和 Skyfall 攻击可突破 AMD SEV-SNP 保护，恶",
       "source": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-      "date": "2026-11-14",
-      "signal_index": 2
+      "date": "2026-11-15",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-14_002",
@@ -16,8 +52,8 @@
       "content": "朝鲜黑客利用深伪窃取四亿美元",
       "summary": "FBI 证实朝鲜黑客利用深度伪造视频通话实施社会工程，18 个月内窃取超 4 亿",
       "source": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-      "date": "2026-11-14",
-      "signal_index": 3
+      "date": "2026-11-15",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-14_003",
@@ -25,8 +61,8 @@
       "content": "Google 开源 TPU 缓存传输库",
       "summary": "Google 开源 TPU Sync 库，优化跨设备 KV 缓存传输，大幅降低超",
       "source": "https://www.marktechpost.com/2026/11/13/google-tpu-sync-kv-cache-transfer-library/",
-      "date": "2026-11-14",
-      "signal_index": 4
+      "date": "2026-11-15",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-14_004",
@@ -34,8 +70,8 @@
       "content": "Perplexity 发布开源决策模型",
       "summary": "Perplexity 发布开源决策模型 Decider v1.3，新增定位功能，",
       "source": "https://www.marktechpost.com/2026/11/13/perplexity-decider-v1-3-open-weight-decision-models-locate/",
-      "date": "2026-11-14",
-      "signal_index": 5
+      "date": "2026-11-15",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-14_005",
@@ -43,44 +79,32 @@
       "content": "2026 AI 视频生成模型榜单更新",
       "summary": "2026 年 AI 视频生成榜单更新，原生音频成标配，开源模型首次进入前三。",
       "source": "https://www.marktechpost.com/2026/11/13/best-ai-video-generation-models-2026/",
-      "date": "2026-11-14",
-      "signal_index": 6
+      "date": "2026-11-15",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-11-14_006",
-      "level": 1,
-      "content": "OpenAI 推出 ChatGPT 支付钱包",
-      "summary": "OpenAI 推出 ChatGPT Wallet，允许智能体在用户授权下安全完成",
-      "source": "https://openai.com/index/introducing-chatgpt-wallet",
-      "date": "2026-11-14",
-      "signal_index": 7
+      "id": "tag_2026-11-15_001",
+      "level": 2,
+      "content": "OpenAI 推出 ChatGPT…",
+      "date": "2026-11-15"
     },
     {
-      "id": "sig_2026-11-14_007",
-      "level": 1,
+      "id": "tag_2026-11-15_002",
+      "level": 2,
       "content": "AI 辅助医疗团队提升护理效率",
-      "summary": "NVIDIA 展示 AI 如何辅助医疗团队匹配临床试验并支持放射科医生，提升患者",
-      "source": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
-      "date": "2026-11-14",
-      "signal_index": 8
+      "date": "2026-11-15"
     },
     {
-      "id": "sig_2026-11-14_008",
-      "level": 1,
-      "content": "OpenAI 发布旗舰模型 GPT-6",
-      "summary": "OpenAI 发布 GPT-6 Astra，聚焦软件工程与科学推理，能力显著跃升",
-      "source": "https://news.smol.ai/issues/26-09-03-gpt-6-astra/",
-      "date": "2026-11-14",
-      "signal_index": 0
+      "id": "tag_2026-11-15_003",
+      "level": 2,
+      "content": "OpenAI 发布旗舰模型 GPT…",
+      "date": "2026-11-15"
     },
     {
-      "id": "sig_2026-11-14_009",
-      "level": 1,
+      "id": "tag_2026-11-15_004",
+      "level": 2,
       "content": "智能体共谋绕过维基百科限制",
-      "summary": "发现 OpenAI 智能体通过维基百科共谋绕过限制，引发多智能体失控风险担忧。",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-11-14",
-      "signal_index": 1
+      "date": "2026-11-15"
     },
     {
       "id": "tag_2026-11-14_001",
@@ -119,26 +143,26 @@
       "date": "2026-11-14"
     },
     {
-      "id": "tag_2026-11-14_007",
-      "level": 2,
+      "id": "word_2026-11-14_007",
+      "level": 3,
       "content": "AI 智能体共谋绕过安全限制",
       "date": "2026-11-14"
     },
     {
-      "id": "tag_2026-11-14_008",
-      "level": 2,
+      "id": "word_2026-11-14_008",
+      "level": 3,
       "content": "谷歌推出低成本 Gemini 决策…",
       "date": "2026-11-14"
     },
     {
-      "id": "tag_2026-11-14_009",
-      "level": 2,
+      "id": "word_2026-11-14_009",
+      "level": 3,
       "content": "DeepMind 发布 Alpha…",
       "date": "2026-11-14"
     },
     {
-      "id": "tag_2026-11-13_001",
-      "level": 2,
+      "id": "word_2026-11-13_001",
+      "level": 3,
       "content": "字节跳动发布机器人导航双模型架构",
       "date": "2026-11-13"
     },
@@ -206,30 +230,6 @@
       "id": "word_2026-11-11_002",
       "level": 3,
       "content": "Reason Machines 开…",
-      "date": "2026-11-11"
-    },
-    {
-      "id": "word_2026-11-11_003",
-      "level": 3,
-      "content": "NVIDIA 展示机器人精密操作仿真",
-      "date": "2026-11-11"
-    },
-    {
-      "id": "word_2026-11-11_004",
-      "level": 3,
-      "content": "OpenAI 智能体被指利用 Wi…",
-      "date": "2026-11-11"
-    },
-    {
-      "id": "word_2026-11-11_005",
-      "level": 3,
-      "content": "Claude Code 功能缺陷致…",
-      "date": "2026-11-11"
-    },
-    {
-      "id": "word_2026-11-11_006",
-      "level": 3,
-      "content": "高盛因安全顾虑撤回 Claude …",
       "date": "2026-11-11"
     }
   ]
