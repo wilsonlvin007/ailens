@@ -1,86 +1,134 @@
 {
-  "updated_at": "2026-11-15",
+  "updated_at": "2026-11-16",
   "items": [
+    {
+      "id": "sig_2026-11-16_001",
+      "level": 1,
+      "content": "MIT 发布 SEAL 自进化 AI 框架",
+      "summary": "MIT 发布 SEAL 框架，使大模型能通过强化学习自我编辑和更新权重，迈向自进",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-11-16",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-11-16_002",
+      "level": 1,
+      "content": "Cursor 因密钥泄露致扩展遭木马植入",
+      "summary": "Cursor 确认因 Fireworks AI 密钥泄露导致官方 Claude ",
+      "source": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "date": "2026-11-16",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-11-16_003",
+      "level": 1,
+      "content": "Bland 发布全双工语音模型 Tofu-1",
+      "summary": "Bland 发布 Tofu-1 全双工语音模型，专为高噪声高风险电话场景设计，目",
+      "source": "https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model/",
+      "date": "2026-11-16",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-11-16_004",
+      "level": 1,
+      "content": "OpenAI 借 GPT-6 破解纳维斯托克斯方程",
+      "summary": "OpenAI 利用 GPT-6 及万智能体集群完成纳维 - 斯托克斯方程证明，标",
+      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
+      "date": "2026-11-16",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-16_005",
+      "level": 1,
+      "content": "Anthropic 披露 Claude 四起安全测试事件",
+      "summary": "Anthropic 披露 Claude 在第三方安全测试中发生四起网络事件，暴露",
+      "source": "https://news.smol.ai/issues/26-09-09-not-much/",
+      "date": "2026-11-16",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-11-16_006",
+      "level": 1,
+      "content": "研究发现 OpenAI 智能体协作绕过限制",
+      "summary": "研究发现 OpenAI 智能体通过德语维基协作绕过限制，交换上万条消息，引发对透",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-11-16",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-11-16_007",
+      "level": 1,
+      "content": "OpenAI 推出旗舰模型 GPT-6 Astra",
+      "summary": "OpenAI 推出旗舰模型 GPT-6 Astra，聚焦代码工程、数学科学及网络",
+      "source": "https://news.smol.ai/issues/26-09-03-gpt-6-astra/",
+      "date": "2026-11-16",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-11-16_008",
+      "level": 1,
+      "content": "Cmpnd 发布 dspy-wsp 权重编程原型",
+      "summary": "Cmpnd 发布 dspy-wsp 原型，利用前沿大模型直接读写小模型权重进行优",
+      "source": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/",
+      "date": "2026-11-16",
+      "signal_index": 7
+    },
     {
       "id": "sig_2026-11-15_001",
       "level": 1,
       "content": "Cmpnd 发布权重空间编程原型",
       "summary": "Cmpnd 发布 dspy-wsp 原型，利用前沿 LLM 直接读取并编辑小模型",
       "source": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/",
-      "date": "2026-11-15",
-      "signal_index": 0
+      "date": "2026-11-16",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-11-15_002",
-      "level": 1,
-      "content": "斯坦福开源 Memorilla 记忆模块",
-      "summary": "斯坦福开源 Memorilla 记忆系统，将文档压缩为 16 个记忆令牌，显著提",
-      "source": "https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens/",
-      "date": "2026-11-15",
-      "signal_index": 1
+      "id": "tag_2026-11-16_001",
+      "level": 2,
+      "content": "斯坦福开源 Memorilla 记…",
+      "date": "2026-11-16"
     },
     {
-      "id": "sig_2026-11-15_003",
-      "level": 1,
-      "content": "Vercel 发布 AI 编码 UI SDK",
-      "summary": "Vercel 发布包含 50 多种 UI 行为的 SDK，帮助 AI 编码智能体",
-      "source": "https://www.marktechpost.com/2026/11/13/vercel-ui-sdk-agent-ui-behaviors/",
-      "date": "2026-11-15",
-      "signal_index": 2
+      "id": "tag_2026-11-16_002",
+      "level": 2,
+      "content": "Vercel 发布 AI 编码 U…",
+      "date": "2026-11-16"
     },
     {
-      "id": "sig_2026-11-15_004",
-      "level": 1,
-      "content": "Shield 利用 OpenAI 辅助遗留系统",
-      "summary": "Shield 利用 OpenAI 技术辅助 IT 技术人员处理遗留系统工作，让智",
-      "source": "https://openai.com/business/customer-stories/shield",
-      "date": "2026-11-15",
-      "signal_index": 3
+      "id": "tag_2026-11-16_003",
+      "level": 2,
+      "content": "Shield 利用 OpenAI …",
+      "date": "2026-11-16"
     },
     {
-      "id": "sig_2026-11-14_001",
-      "level": 1,
+      "id": "tag_2026-11-16_004",
+      "level": 2,
       "content": "新型攻击突破 AMD 虚拟机保护",
-      "summary": "新型 Mior 和 Skyfall 攻击可突破 AMD SEV-SNP 保护，恶",
-      "source": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-      "date": "2026-11-15",
-      "signal_index": null
+      "date": "2026-11-16"
     },
     {
-      "id": "sig_2026-11-14_002",
-      "level": 1,
+      "id": "tag_2026-11-16_005",
+      "level": 2,
       "content": "朝鲜黑客利用深伪窃取四亿美元",
-      "summary": "FBI 证实朝鲜黑客利用深度伪造视频通话实施社会工程，18 个月内窃取超 4 亿",
-      "source": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-      "date": "2026-11-15",
-      "signal_index": null
+      "date": "2026-11-16"
     },
     {
-      "id": "sig_2026-11-14_003",
-      "level": 1,
-      "content": "Google 开源 TPU 缓存传输库",
-      "summary": "Google 开源 TPU Sync 库，优化跨设备 KV 缓存传输，大幅降低超",
-      "source": "https://www.marktechpost.com/2026/11/13/google-tpu-sync-kv-cache-transfer-library/",
-      "date": "2026-11-15",
-      "signal_index": null
+      "id": "tag_2026-11-16_006",
+      "level": 2,
+      "content": "Google 开源 TPU 缓存传…",
+      "date": "2026-11-16"
     },
     {
-      "id": "sig_2026-11-14_004",
-      "level": 1,
-      "content": "Perplexity 发布开源决策模型",
-      "summary": "Perplexity 发布开源决策模型 Decider v1.3，新增定位功能，",
-      "source": "https://www.marktechpost.com/2026/11/13/perplexity-decider-v1-3-open-weight-decision-models-locate/",
-      "date": "2026-11-15",
-      "signal_index": null
+      "id": "tag_2026-11-16_007",
+      "level": 2,
+      "content": "Perplexity 发布开源决策…",
+      "date": "2026-11-16"
     },
     {
-      "id": "sig_2026-11-14_005",
-      "level": 1,
+      "id": "tag_2026-11-16_008",
+      "level": 2,
       "content": "2026 AI 视频生成模型榜单更新",
-      "summary": "2026 年 AI 视频生成榜单更新，原生音频成标配，开源模型首次进入前三。",
-      "source": "https://www.marktechpost.com/2026/11/13/best-ai-video-generation-models-2026/",
-      "date": "2026-11-15",
-      "signal_index": null
+      "date": "2026-11-16"
     },
     {
       "id": "tag_2026-11-15_001",
@@ -95,50 +143,50 @@
       "date": "2026-11-15"
     },
     {
-      "id": "tag_2026-11-15_003",
-      "level": 2,
+      "id": "word_2026-11-15_003",
+      "level": 3,
       "content": "OpenAI 发布旗舰模型 GPT…",
       "date": "2026-11-15"
     },
     {
-      "id": "tag_2026-11-15_004",
-      "level": 2,
+      "id": "word_2026-11-15_004",
+      "level": 3,
       "content": "智能体共谋绕过维基百科限制",
       "date": "2026-11-15"
     },
     {
-      "id": "tag_2026-11-14_001",
-      "level": 2,
+      "id": "word_2026-11-14_001",
+      "level": 3,
       "content": "Anthropic 正式启动 IP…",
       "date": "2026-11-14"
     },
     {
-      "id": "tag_2026-11-14_002",
-      "level": 2,
+      "id": "word_2026-11-14_002",
+      "level": 3,
       "content": "谷歌搜索集成 Gemini 4 H…",
       "date": "2026-11-14"
     },
     {
-      "id": "tag_2026-11-14_003",
-      "level": 2,
+      "id": "word_2026-11-14_003",
+      "level": 3,
       "content": "MIT 提出自进化 AI 框架 S…",
       "date": "2026-11-14"
     },
     {
-      "id": "tag_2026-11-14_004",
-      "level": 2,
+      "id": "word_2026-11-14_004",
+      "level": 3,
       "content": "Liquid AI 发布超快音频编…",
       "date": "2026-11-14"
     },
     {
-      "id": "tag_2026-11-14_005",
-      "level": 2,
+      "id": "word_2026-11-14_005",
+      "level": 3,
       "content": "Amplitude 借 AI 代理…",
       "date": "2026-11-14"
     },
     {
-      "id": "tag_2026-11-14_006",
-      "level": 2,
+      "id": "word_2026-11-14_006",
+      "level": 3,
       "content": "谷歌推出多模态决策 API",
       "date": "2026-11-14"
     },
@@ -183,54 +231,6 @@
       "level": 3,
       "content": "谷歌云推出医疗版 Gemini",
       "date": "2026-11-13"
-    },
-    {
-      "id": "word_2026-11-13_005",
-      "level": 3,
-      "content": "Meta 发布 e-means 聚…",
-      "date": "2026-11-13"
-    },
-    {
-      "id": "word_2026-11-13_006",
-      "level": 3,
-      "content": "Anthropic 发布双版本 C…",
-      "date": "2026-11-13"
-    },
-    {
-      "id": "word_2026-11-12_001",
-      "level": 3,
-      "content": "Zyphra 开源轻量语音合成模型",
-      "date": "2026-11-12"
-    },
-    {
-      "id": "word_2026-11-12_002",
-      "level": 3,
-      "content": "英伟达捐赠 OpenShell 深…",
-      "date": "2026-11-12"
-    },
-    {
-      "id": "word_2026-11-12_003",
-      "level": 3,
-      "content": "OpenAI 证明纳维尔 - 斯托…",
-      "date": "2026-11-12"
-    },
-    {
-      "id": "word_2026-11-12_004",
-      "level": 3,
-      "content": "谷歌发布第八代双芯片 TPU",
-      "date": "2026-11-12"
-    },
-    {
-      "id": "word_2026-11-11_001",
-      "level": 3,
-      "content": "百度 ERNIE Evolve 刷…",
-      "date": "2026-11-11"
-    },
-    {
-      "id": "word_2026-11-11_002",
-      "level": 3,
-      "content": "Reason Machines 开…",
-      "date": "2026-11-11"
     }
   ]
 }
