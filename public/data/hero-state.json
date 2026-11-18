@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-11-17",
+  "updated_at": "2026-11-18",
   "items": [
+    {
+      "id": "sig_2026-11-18_001",
+      "level": 1,
+      "content": "Perplexity 推出多智能体互检模式",
+      "summary": "Perplexity 上线多智能体模式，调度多达 16 个代理跨模型协作互检，大",
+      "source": "https://www.marktechpost.com/2026/11/17/perplexity-computer-multiagent-effort-level/",
+      "date": "2026-11-18",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-18_002",
+      "level": 1,
+      "content": "MIT 发布自进化 AI 框架 SEAL",
+      "summary": "MIT 推出 SEAL 框架，使大模型能通过强化学习自我编辑权重，迈出自进化 A",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-11-18",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-11-18_003",
+      "level": 1,
+      "content": "OpenAI 协助北约强化网络防御",
+      "summary": "OpenAI 与北约达成合作，利用 AI 技术协助发现漏洞并保护关键基础设施系统",
+      "source": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "date": "2026-11-18",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-11-18_004",
+      "level": 1,
+      "content": "Gemini Tasks 功能六国免费开放",
+      "summary": "Gemini Tasks 功能在美英等六国免费开放，深度集成 Workspace",
+      "source": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "date": "2026-11-18",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-11-18_005",
+      "level": 1,
+      "content": "Claude Code 团队分享验证方法论",
+      "summary": "Claude Code 团队公开代码验证方法论，探讨如何确保 AI 生成代码的正",
+      "source": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "date": "2026-11-18",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-11-18_006",
+      "level": 1,
+      "content": "Trigram 活动伪装 AI 品牌攻击开发者",
+      "summary": "Trigram 攻击活动伪装成五十个 AI 品牌诱导开发者下载窃密软件，凸显供应",
+      "source": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+      "date": "2026-11-18",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-11-18_007",
+      "level": 1,
+      "content": "观点：并非所有场景都需要大模型",
+      "summary": "文章探讨决策模型选择，指出并非所有业务场景都需要大语言模型，简单规则有时更高效。",
+      "source": "https://newsletter.posthog.com/p/decision-models",
+      "date": "2026-11-18",
+      "signal_index": 6
+    },
     {
       "id": "sig_2026-11-17_001",
       "level": 1,
       "content": "阿里发布 Qwen4-Max 模型",
       "summary": "阿里发布 Qwen4-Max，具 2.4 万亿参数及百万上下文窗口，显著降本增效",
       "source": "https://www.marktechpost.com/2026/11/16/alibaba-qwen4-max-release/",
-      "date": "2026-11-17",
-      "signal_index": 0
+      "date": "2026-11-18",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-17_002",
@@ -16,71 +79,50 @@
       "content": "OpenAI 免费开放科研模型",
       "summary": "OpenAI 向全球二十万科研人员免费提供前沿模型，加速科学发现进程。",
       "source": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
-      "date": "2026-11-17",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-11-17_003",
-      "level": 1,
-      "content": "谷歌发现黑客利用 AI 攻击",
-      "summary": "谷歌发现黑客利用自主智能体自动构建漏洞利用程序，标志对抗新阶段。",
-      "source": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
-      "date": "2026-11-17",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-11-17_004",
-      "level": 1,
-      "content": "Meta 部署 LLM 生成测试用例",
-      "summary": "Meta 在生产环境部署 JiTTests，利用 LLM 生成用例拦截代码合并前",
-      "source": "https://www.marktechpost.com/2026/11/16/meta-jittests-llm-catching-tests-privacy-bugs/",
-      "date": "2026-11-17",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-11-17_005",
-      "level": 1,
-      "content": "英伟达推桌面超算开发者套件",
-      "summary": "英伟达推出 DGX Spark 套件，将四节点集群引入桌面，提供超级计算能力。",
-      "source": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
-      "date": "2026-11-17",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-11-17_006",
-      "level": 1,
-      "content": "Hark 发布双倍速电脑操作智能体",
-      "summary": "Hark 发布 Handoff²智能体，速度提升两倍，能高效完成复杂网页任务。",
-      "source": "https://www.marktechpost.com/2026/11/16/hark-handoff-2-computer-use-agent-2x-faster/",
-      "date": "2026-11-17",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-11-17_007",
-      "level": 1,
-      "content": "研究揭示多智能体故障归因法",
-      "summary": "宾州州立与杜克大学提出自动化方法，定位多智能体系统中导致任务失败的具体节点。",
-      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
-      "date": "2026-11-17",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-11-17_008",
-      "level": 1,
-      "content": "OpenAI 加强儿童网络安全保护",
-      "summary": "OpenAI 发布新工具和合作计划，利用 AI 技术预防应对在线儿童性剥削问题。",
-      "source": "https://openai.com/index/strengthening-online-child-safety",
-      "date": "2026-11-17",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-11-16_001",
-      "level": 1,
-      "content": "MIT 发布 SEAL 自进化 AI 框架",
-      "summary": "MIT 发布 SEAL 框架，使大模型能通过强化学习自我编辑和更新权重，迈向自进",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-11-18_001",
+      "level": 2,
+      "content": "谷歌发现黑客利用 AI 攻击",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "tag_2026-11-18_002",
+      "level": 2,
+      "content": "Meta 部署 LLM 生成测试用例",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "tag_2026-11-18_003",
+      "level": 2,
+      "content": "英伟达推桌面超算开发者套件",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "tag_2026-11-18_004",
+      "level": 2,
+      "content": "Hark 发布双倍速电脑操作智能体",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "tag_2026-11-18_005",
+      "level": 2,
+      "content": "揭示多智能体故障归因法",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "tag_2026-11-18_006",
+      "level": 2,
+      "content": "OpenAI 加强儿童网络安全保护",
+      "date": "2026-11-18"
+    },
+    {
+      "id": "tag_2026-11-18_007",
+      "level": 2,
+      "content": "MIT 发布 SEAL 自进化 A…",
+      "date": "2026-11-18"
     },
     {
       "id": "tag_2026-11-17_001",
@@ -101,44 +143,44 @@
       "date": "2026-11-17"
     },
     {
-      "id": "tag_2026-11-17_004",
-      "level": 2,
+      "id": "word_2026-11-17_004",
+      "level": 3,
       "content": "Anthropic 披露 Clau…",
       "date": "2026-11-17"
     },
     {
-      "id": "tag_2026-11-17_005",
-      "level": 2,
+      "id": "word_2026-11-17_005",
+      "level": 3,
       "content": "发现 OpenAI 智能体协作绕过…",
       "date": "2026-11-17"
     },
     {
-      "id": "tag_2026-11-17_006",
-      "level": 2,
+      "id": "word_2026-11-17_006",
+      "level": 3,
       "content": "OpenAI 推出旗舰模型 GPT…",
       "date": "2026-11-17"
     },
     {
-      "id": "tag_2026-11-17_007",
-      "level": 2,
+      "id": "word_2026-11-17_007",
+      "level": 3,
       "content": "Cmpnd 发布 dspy-wsp…",
       "date": "2026-11-17"
     },
     {
-      "id": "tag_2026-11-17_008",
-      "level": 2,
+      "id": "word_2026-11-17_008",
+      "level": 3,
       "content": "Cmpnd 发布权重空间编程原型",
       "date": "2026-11-17"
     },
     {
-      "id": "tag_2026-11-16_001",
-      "level": 2,
+      "id": "word_2026-11-16_001",
+      "level": 3,
       "content": "斯坦福开源 Memorilla 记…",
       "date": "2026-11-16"
     },
     {
-      "id": "tag_2026-11-16_002",
-      "level": 2,
+      "id": "word_2026-11-16_002",
+      "level": 3,
       "content": "Vercel 发布 AI 编码 U…",
       "date": "2026-11-16"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "AI 辅助医疗团队提升护理效率",
       "date": "2026-11-15"
-    },
-    {
-      "id": "word_2026-11-15_003",
-      "level": 3,
-      "content": "OpenAI 发布旗舰模型 GPT…",
-      "date": "2026-11-15"
-    },
-    {
-      "id": "word_2026-11-15_004",
-      "level": 3,
-      "content": "智能体共谋绕过维基百科限制",
-      "date": "2026-11-15"
-    },
-    {
-      "id": "word_2026-11-14_001",
-      "level": 3,
-      "content": "Anthropic 正式启动 IP…",
-      "date": "2026-11-14"
-    },
-    {
-      "id": "word_2026-11-14_002",
-      "level": 3,
-      "content": "谷歌搜索集成 Gemini 4 H…",
-      "date": "2026-11-14"
-    },
-    {
-      "id": "word_2026-11-14_003",
-      "level": 3,
-      "content": "MIT 提出自进化 AI 框架 S…",
-      "date": "2026-11-14"
-    },
-    {
-      "id": "word_2026-11-14_004",
-      "level": 3,
-      "content": "Liquid AI 发布超快音频编…",
-      "date": "2026-11-14"
-    },
-    {
-      "id": "word_2026-11-14_005",
-      "level": 3,
-      "content": "Amplitude 借 AI 代理…",
-      "date": "2026-11-14"
     }
   ]
 }

@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T11:35:27.703106+08:00",
+  "summary": "Perplexity 上线多智能体模式，调度多达 16 个代理跨模型协作互检，大幅提升任务可靠性。；MIT 推出 SEAL 框架，使大模型能通过强化学习自我编辑权重，迈出自进化 AI 关键一步。；OpenAI 与北约达成合作，利用 AI 技术协助发现漏洞并保护关键基础设施系统安全。",
+  "items": [
+    {
+      "id": "2026-11-18-004",
+      "title": "Perplexity 推出多智能体互检模式",
+      "category": "technology",
+      "importance": 4,
+      "source": "https://www.marktechpost.com/2026/11/17/perplexity-computer-multiagent-effort-level/",
+      "source_name": "MarkTechPost",
+      "summary": "Perplexity 上线多智能体模式，调度多达 16 个代理跨模型协作互检，大幅提升任务可靠性。",
+      "analysis": "Perplexity 的这一更新直击当前大模型应用的核心痛点——幻觉与错误累积。通过引入“红队”机制，让多个异构智能体对同一任务进行独立求解并交叉验证，系统能够自动识别并修正逻辑漏洞。这种“群体智慧”架构虽增加了计算开销，却显著提高了复杂任务（如深度研报、代码审计）的置信度。这预示着未来高价值 AI 服务将不再比拼单一模型的参数量，而是转向考察多智能体编排与共识机制的效率，为构建可信 AI 系统提供了工程化范本。",
+      "tags": [
+        "多智能体",
+        "可靠性",
+        "幻觉抑制"
+      ],
+      "collected_at": "2026-11-18T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-18-006",
+      "title": "OpenAI 协助北约强化网络防御",
+      "category": "thought",
+      "importance": 4,
+      "source": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "source_name": "OpenAI Blog",
+      "summary": "OpenAI 与北约达成合作，利用 AI 技术协助发现漏洞并保护关键基础设施系统安全。",
+      "analysis": "此次合作标志着 AI 安全从商业合规层面上升至地缘政治防御高度。利用大模型的海量代码分析与异常检测能力，可以以前所未有的速度识别零日漏洞与高级持续性威胁（APT）。然而，这也加剧了“攻防军备竞赛”：防御方使用的最强 AI 逻辑，同样可能被攻击方用于生成更隐蔽的攻击载荷。OpenAI 此举虽彰显了其安全承诺，但也引发了关于双重用途技术出口管制及算法武器化的国际伦理争议，提示我们需要在全球层面建立 AI 军事应用的边界共识。",
+      "tags": [
+        "网络安全",
+        "地缘政治",
+        "AI 安全"
+      ],
+      "collected_at": "2026-11-18T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-18-008",
+      "title": "Gemini Tasks 功能六国免费开放",
+      "category": "application",
+      "importance": 3,
+      "source": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+      "source_name": "Google AI Blog",
+      "summary": "Gemini Tasks 功能在美英等六国免费开放，深度集成 Workspace，可代表用户执行复杂任务。",
+      "analysis": "Gemini Tasks 的免费开放是谷歌将 AI 能力下沉至大众用户的关键一步。通过深度绑定 Gmail、Docs 等 Workspace 组件，谷歌试图将 AI 从“聊天机器人”转化为“个人行政助理”，直接介入用户的日常工作流。这种无缝集成策略能有效提高用户粘性，构建数据飞轮。然而，让 AI 代表用户执行操作也带来了权限管理与误操作责任界定的新问题，如何在便捷性与控制权之间找到平衡，将是决定该功能能否大规模普及的关键因素。",
+      "tags": [
+        "生产力工具",
+        "生态集成",
+        "自动化"
+      ],
+      "collected_at": "2026-11-18T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-18-011",
+      "title": "Claude Code 团队分享验证方法论",
+      "category": "technology",
+      "importance": 3,
+      "source": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "source_name": "HN AI",
+      "summary": "Claude Code 团队公开代码验证方法论，探讨如何确保 AI 生成代码的正确性与安全性。",
+      "analysis": "在 AI 编程助手日益普及的今天，代码的可靠性成为制约其大规模落地的瓶颈。Claude Code 团队分享的验证方法论，强调了形式化验证、单元测试生成与人工审查相结合的混合策略。这不仅是技术分享，更是一种行业标准的倡导：AI 生成的代码不能仅凭概率信任，必须经过确定性验证。这种严谨的工程态度有助于消除企业对 AI 编程的安全顾虑，推动软件开发模式从“人写机器查”向“机器写人查”的根本性转变。",
+      "tags": [
+        "代码生成",
+        "工程实践",
+        "质量控制"
+      ],
+      "collected_at": "2026-11-18T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-18-012",
+      "title": "Trigram 活动伪装 AI 品牌攻击开发者",
+      "category": "thought",
+      "importance": 3,
+      "source": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+      "source_name": "Hacker News",
+      "summary": "Trigram 攻击活动伪装成五十个 AI 品牌诱导开发者下载窃密软件，凸显供应链安全威胁。",
+      "analysis": "此次针对开发者的定向攻击反映了黑产风向的转变：利用开发者对新技术的渴求与信任进行社会工程学攻击。攻击者伪造知名 AI 项目的文档、库或工具链，一旦得手即可渗透至整个软件供应链。这警示开源社区与企业：在享受 AI 带来的效率红利时，必须建立更严格的依赖包验证机制与零信任架构。AI 时代的网络安全不仅是技术对抗，更是对开发者安全意识与验证流程的考验。",
+      "tags": [
+        "网络安全",
+        "供应链攻击",
+        "社会工程学"
+      ],
+      "collected_at": "2026-11-18T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-18-014",
+      "title": "观点：并非所有场景都需要大模型",
+      "category": "thought",
+      "importance": 2,
+      "source": "https://newsletter.posthog.com/p/decision-models",
+      "source_name": "HN AI",
+      "summary": "文章探讨决策模型选择，指出并非所有业务场景都需要大语言模型，简单规则有时更高效。",
+      "analysis": "在大模型狂热背景下，这篇反思文章显得尤为清醒。作者指出，对于确定性高、逻辑简单的任务，传统规则引擎或小型统计模型在成本、延迟与可控性上远优于 LLM。盲目追求大模型不仅造成算力浪费，还可能引入不必要的幻觉风险。这一观点呼吁回归工程本质：根据场景需求匹配最合适的技术栈。理性的技术选型观将有助于行业去泡沫化，推动 AI 应用在性价比最优的路径上务实落地。",
+      "tags": [
+        "技术选型",
+        "成本控制",
+        "理性思考"
+      ],
+      "collected_at": "2026-11-18T06:00:00+08:00"
+    }
+  ]
+}
