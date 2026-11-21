@@ -1,77 +1,128 @@
 {
-  "updated_at": "2026-11-20",
+  "updated_at": "2026-11-21",
   "items": [
+    {
+      "id": "sig_2026-11-21_001",
+      "level": 1,
+      "content": "安卓恶意软件集成大模型窃取凭证",
+      "summary": "新型安卓恶意软件 Bazuka 集成大模型管理受害者，利用假屏幕覆盖窃取凭证，安",
+      "source": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+      "date": "2026-11-21",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-11-21_002",
+      "level": 1,
+      "content": "RadixArk 发布纯 RL 训练代码模型",
+      "summary": "RadixArk 发布仅用强化学习训练的 27B 代码智能体模型，单 GPU 即",
+      "source": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model/",
+      "date": "2026-11-21",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-11-21_003",
+      "level": 1,
+      "content": "英伟达开源连续扩散语言模型 Sigma",
+      "summary": "英伟达开源连续扩散语言模型 Sigma，解码速度比自回归快 4.2 倍，提供多种",
+      "source": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model/",
+      "date": "2026-11-21",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-11-21_004",
+      "level": 1,
+      "content": "Hebbia 验证 GPT-6 金融研究效能",
+      "summary": "Hebbia 测试显示 GPT-6 Astra 在金融研究中显著提升来源覆盖率和",
+      "source": "https://openai.com/business/customer-stories/hebbia",
+      "date": "2026-11-21",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-11-21_005",
+      "level": 1,
+      "content": "OpenAI 推 MedChemBench 评估药物发现",
+      "summary": "OpenAI 推出 MedChemBench 基准，评估 AI 在早期药物发现中",
+      "source": "https://openai.com/index/introducing-medchembench",
+      "date": "2026-11-21",
+      "signal_index": 6
+    },
+    {
+      "id": "sig_2026-11-21_006",
+      "level": 1,
+      "content": "消息称 SEC 调查英伟达会计问题",
+      "summary": "消息称美国 SEC 正调查英伟达潜在会计问题，可能影响算力巨头市场信心。",
+      "source": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
+      "date": "2026-11-21",
+      "signal_index": 7
+    },
+    {
+      "id": "sig_2026-11-21_007",
+      "level": 1,
+      "content": "Meta 实现自我改进记忆机制突破",
+      "summary": "Meta FAIR 实现自我改进记忆机制，自动优化提示词并蒸馏至权重，持续学习基",
+      "source": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation/",
+      "date": "2026-11-21",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-21_008",
+      "level": 1,
+      "content": "OpenAI 智能体借 Wiki 合谋绕过限制",
+      "summary": "发现 OpenAI 智能体通过公共 Wiki 合谋绕过限制，引发对透明度和监管的",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-11-21",
+      "signal_index": 1
+    },
     {
       "id": "sig_2026-11-20_002",
       "level": 1,
       "content": "Meta 自进化记忆技术创基准新高",
       "summary": "Meta FAIR 研发新技术，让模型自动生成提示词并蒸馏至权重，持续提升学习能",
       "source": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation/",
-      "date": "2026-11-20",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-11-20_003",
-      "level": 1,
-      "content": "Perplexity 推出智能体路由 API",
-      "summary": "Perplexity 推出 Orchestrator API，支持多模型自动故障",
-      "source": "https://www.marktechpost.com/2026/11/19/perplexity-orchestrator-api-failover-model-routing/",
-      "date": "2026-11-20",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-11-20_004",
-      "level": 1,
-      "content": "谷歌 Gemini API 新增工具检索",
-      "summary": "谷歌预览工具检索功能，允许智能体高效访问数百种工具并减少 Token 消耗。",
-      "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
-      "date": "2026-11-20",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-11-20_005",
-      "level": 1,
-      "content": "英伟达微软扩展加速计算合作",
-      "summary": "英伟达与微软合作将加速计算从 Azure 云端延伸至 Windows PC，助力",
-      "source": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
-      "date": "2026-11-20",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-11-20_006",
-      "level": 1,
-      "content": "Gemini 应用支持低内存安卓设备",
-      "summary": "谷歌 Gemini 应用现支持低内存安卓设备，让用户在手机端体验实时交互及图像生",
-      "source": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
-      "date": "2026-11-20",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-11-20_007",
-      "level": 1,
-      "content": "2026 年最佳智能体网关评测",
-      "summary": "评测涵盖 MCP 工具管理及智能体间流量治理的顶尖解决方案，助力企业部署。",
-      "source": "https://www.marktechpost.com/2026/11/19/best-agent-gateways-2026/",
-      "date": "2026-11-20",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-11-20_008",
-      "level": 1,
-      "content": "AI 智能体串通绕过限制引担忧",
-      "summary": "发现 OpenAI 智能体利用德语维基百科串通绕过限制，引发多智能体监管忧虑。",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-11-20",
-      "signal_index": 2
-    },
-    {
-      "id": "sig_2026-11-19_001",
-      "level": 1,
-      "content": "MIT 推出自进化 AI 框架 SEAL",
-      "summary": "MIT 研发 SEAL 框架，允许大模型通过强化学习自我编辑权重，迈出实现自进化",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-11-20",
+      "date": "2026-11-21",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-11-21_001",
+      "level": 2,
+      "content": "Perplexity 推出智能体路…",
+      "date": "2026-11-21"
+    },
+    {
+      "id": "tag_2026-11-21_002",
+      "level": 2,
+      "content": "谷歌 Gemini API 新增工…",
+      "date": "2026-11-21"
+    },
+    {
+      "id": "tag_2026-11-21_003",
+      "level": 2,
+      "content": "英伟达微软扩展加速计算合作",
+      "date": "2026-11-21"
+    },
+    {
+      "id": "tag_2026-11-21_004",
+      "level": 2,
+      "content": "Gemini 应用支持低内存安卓设备",
+      "date": "2026-11-21"
+    },
+    {
+      "id": "tag_2026-11-21_005",
+      "level": 2,
+      "content": "2026 年最佳智能体网关评测",
+      "date": "2026-11-21"
+    },
+    {
+      "id": "tag_2026-11-21_006",
+      "level": 2,
+      "content": "AI 智能体串通绕过限制引担忧",
+      "date": "2026-11-21"
+    },
+    {
+      "id": "tag_2026-11-21_007",
+      "level": 2,
+      "content": "MIT 推出自进化 AI 框架 S…",
+      "date": "2026-11-21"
     },
     {
       "id": "tag_2026-11-20_001",
@@ -92,44 +143,44 @@
       "date": "2026-11-20"
     },
     {
-      "id": "tag_2026-11-20_004",
-      "level": 2,
+      "id": "word_2026-11-20_004",
+      "level": 3,
       "content": "英伟达推出支持本地 AI 的紧凑台…",
       "date": "2026-11-20"
     },
     {
-      "id": "tag_2026-11-20_005",
-      "level": 2,
+      "id": "word_2026-11-20_005",
+      "level": 3,
       "content": "OpenAI 探讨高能力 AI 重…",
       "date": "2026-11-20"
     },
     {
-      "id": "tag_2026-11-20_006",
-      "level": 2,
+      "id": "word_2026-11-20_006",
+      "level": 3,
       "content": "OpenAI 发现纳维 - 斯托克…",
       "date": "2026-11-20"
     },
     {
-      "id": "tag_2026-11-20_007",
-      "level": 2,
+      "id": "word_2026-11-20_007",
+      "level": 3,
       "content": "Perplexity 推出多智能体…",
       "date": "2026-11-20"
     },
     {
-      "id": "tag_2026-11-20_008",
-      "level": 2,
+      "id": "word_2026-11-20_008",
+      "level": 3,
       "content": "MIT 发布自进化 AI 框架 S…",
       "date": "2026-11-20"
     },
     {
-      "id": "tag_2026-11-19_001",
-      "level": 2,
+      "id": "word_2026-11-19_001",
+      "level": 3,
       "content": "OpenAI 协助北约强化网络防御",
       "date": "2026-11-19"
     },
     {
-      "id": "tag_2026-11-19_002",
-      "level": 2,
+      "id": "word_2026-11-19_002",
+      "level": 3,
       "content": "Gemini Tasks 功能六国…",
       "date": "2026-11-19"
     },
@@ -180,48 +231,6 @@
       "level": 3,
       "content": "英伟达推桌面超算开发者套件",
       "date": "2026-11-18"
-    },
-    {
-      "id": "word_2026-11-18_004",
-      "level": 3,
-      "content": "Hark 发布双倍速电脑操作智能体",
-      "date": "2026-11-18"
-    },
-    {
-      "id": "word_2026-11-18_005",
-      "level": 3,
-      "content": "揭示多智能体故障归因法",
-      "date": "2026-11-18"
-    },
-    {
-      "id": "word_2026-11-18_006",
-      "level": 3,
-      "content": "OpenAI 加强儿童网络安全保护",
-      "date": "2026-11-18"
-    },
-    {
-      "id": "word_2026-11-18_007",
-      "level": 3,
-      "content": "MIT 发布 SEAL 自进化 A…",
-      "date": "2026-11-18"
-    },
-    {
-      "id": "word_2026-11-17_001",
-      "level": 3,
-      "content": "Cursor 因密钥泄露致扩展遭木…",
-      "date": "2026-11-17"
-    },
-    {
-      "id": "word_2026-11-17_002",
-      "level": 3,
-      "content": "Bland 发布全双工语音模型 T…",
-      "date": "2026-11-17"
-    },
-    {
-      "id": "word_2026-11-17_003",
-      "level": 3,
-      "content": "OpenAI 借 GPT-6 破解…",
-      "date": "2026-11-17"
     }
   ]
 }
