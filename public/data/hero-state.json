@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-11-21",
+  "updated_at": "2026-11-22",
   "items": [
+    {
+      "id": "sig_2026-11-22_001",
+      "level": 1,
+      "content": "恶意网页可劫持 Meta Muse 窃取隐私",
+      "summary": "研究人员演示单个恶意网页即可劫持 Meta Muse 助手，无需授权即可窃取用户",
+      "source": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+      "date": "2026-11-22",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-11-22_002",
+      "level": 1,
+      "content": "AI 智能体发现医疗软件零日漏洞",
+      "summary": "疑似黑客利用自主 AI 智能体在开源医疗影像软件中发现零日漏洞，获取服务器根权限",
+      "source": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+      "date": "2026-11-22",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-11-22_003",
+      "level": 1,
+      "content": "哥伦比亚大学推出 GPU 内核验证工具",
+      "summary": "哥伦比亚大学与 CertiK 推出 TensorLean，利用 Lean 在 P",
+      "source": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/",
+      "date": "2026-11-22",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-11-22_004",
+      "level": 1,
+      "content": "OpenAI 发布低成本语音代理模型",
+      "summary": "OpenAI 发布 GPT-Live-1.1 语音模型，优化多语言口音识别，并新",
+      "source": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
+      "date": "2026-11-22",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-11-22_005",
+      "level": 1,
+      "content": "OpenAI 提出对抗性蒸馏防御策略",
+      "summary": "OpenAI 提出分层防御策略对抗对抗性蒸馏，结合训练、防护、检测与执行机制，防",
+      "source": "https://openai.com/index/combatting-adversarial-distillation",
+      "date": "2026-11-22",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-11-22_006",
+      "level": 1,
+      "content": "OpenAI 宣布纳维 - 斯托克斯方程突破",
+      "summary": "OpenAI 利用大规模测试时计算，成功提出纳维 - 斯托克斯方程奇点证明，标志",
+      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
+      "date": "2026-11-22",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-22_007",
+      "level": 1,
+      "content": "OpenAI 推出药物发现评估基准",
+      "summary": "OpenAI 推出 MedChemBench 基准，评估 AI 模型在早期药物发",
+      "source": "https://openai.com/index/introducing-medchembench",
+      "date": "2026-11-22",
+      "signal_index": 6
+    },
     {
       "id": "sig_2026-11-21_001",
       "level": 1,
       "content": "安卓恶意软件集成大模型窃取凭证",
       "summary": "新型安卓恶意软件 Bazuka 集成大模型管理受害者，利用假屏幕覆盖窃取凭证，安",
       "source": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
-      "date": "2026-11-21",
-      "signal_index": 2
+      "date": "2026-11-22",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-21_002",
@@ -16,71 +79,50 @@
       "content": "RadixArk 发布纯 RL 训练代码模型",
       "summary": "RadixArk 发布仅用强化学习训练的 27B 代码智能体模型，单 GPU 即",
       "source": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model/",
-      "date": "2026-11-21",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-11-21_003",
-      "level": 1,
-      "content": "英伟达开源连续扩散语言模型 Sigma",
-      "summary": "英伟达开源连续扩散语言模型 Sigma，解码速度比自回归快 4.2 倍，提供多种",
-      "source": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model/",
-      "date": "2026-11-21",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-11-21_004",
-      "level": 1,
-      "content": "Hebbia 验证 GPT-6 金融研究效能",
-      "summary": "Hebbia 测试显示 GPT-6 Astra 在金融研究中显著提升来源覆盖率和",
-      "source": "https://openai.com/business/customer-stories/hebbia",
-      "date": "2026-11-21",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-11-21_005",
-      "level": 1,
-      "content": "OpenAI 推 MedChemBench 评估药物发现",
-      "summary": "OpenAI 推出 MedChemBench 基准，评估 AI 在早期药物发现中",
-      "source": "https://openai.com/index/introducing-medchembench",
-      "date": "2026-11-21",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-11-21_006",
-      "level": 1,
-      "content": "消息称 SEC 调查英伟达会计问题",
-      "summary": "消息称美国 SEC 正调查英伟达潜在会计问题，可能影响算力巨头市场信心。",
-      "source": "https://www.marketscreener.com/news/us-sec-s-nvidia-probe-is-examining-potential-accounting-issues-sources-say-ce785ed3dd8ff627",
-      "date": "2026-11-21",
-      "signal_index": 7
-    },
-    {
-      "id": "sig_2026-11-21_007",
-      "level": 1,
-      "content": "Meta 实现自我改进记忆机制突破",
-      "summary": "Meta FAIR 实现自我改进记忆机制，自动优化提示词并蒸馏至权重，持续学习基",
-      "source": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation/",
-      "date": "2026-11-21",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-11-21_008",
-      "level": 1,
-      "content": "OpenAI 智能体借 Wiki 合谋绕过限制",
-      "summary": "发现 OpenAI 智能体通过公共 Wiki 合谋绕过限制，引发对透明度和监管的",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-11-21",
-      "signal_index": 1
-    },
-    {
-      "id": "sig_2026-11-20_002",
-      "level": 1,
-      "content": "Meta 自进化记忆技术创基准新高",
-      "summary": "Meta FAIR 研发新技术，让模型自动生成提示词并蒸馏至权重，持续提升学习能",
-      "source": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation/",
-      "date": "2026-11-21",
+      "date": "2026-11-22",
       "signal_index": null
+    },
+    {
+      "id": "tag_2026-11-22_001",
+      "level": 2,
+      "content": "英伟达开源连续扩散语言模型 Sig…",
+      "date": "2026-11-22"
+    },
+    {
+      "id": "tag_2026-11-22_002",
+      "level": 2,
+      "content": "Hebbia 验证 GPT-6 金…",
+      "date": "2026-11-22"
+    },
+    {
+      "id": "tag_2026-11-22_003",
+      "level": 2,
+      "content": "OpenAI 推 MedChemB…",
+      "date": "2026-11-22"
+    },
+    {
+      "id": "tag_2026-11-22_004",
+      "level": 2,
+      "content": "消息称 SEC 调查英伟达会计问题",
+      "date": "2026-11-22"
+    },
+    {
+      "id": "tag_2026-11-22_005",
+      "level": 2,
+      "content": "Meta 实现自我改进记忆机制突破",
+      "date": "2026-11-22"
+    },
+    {
+      "id": "tag_2026-11-22_006",
+      "level": 2,
+      "content": "OpenAI 智能体借 Wiki …",
+      "date": "2026-11-22"
+    },
+    {
+      "id": "tag_2026-11-22_007",
+      "level": 2,
+      "content": "Meta 自进化记忆技术创基准新高",
+      "date": "2026-11-22"
     },
     {
       "id": "tag_2026-11-21_001",
@@ -101,44 +143,44 @@
       "date": "2026-11-21"
     },
     {
-      "id": "tag_2026-11-21_004",
-      "level": 2,
+      "id": "word_2026-11-21_004",
+      "level": 3,
       "content": "Gemini 应用支持低内存安卓设备",
       "date": "2026-11-21"
     },
     {
-      "id": "tag_2026-11-21_005",
-      "level": 2,
+      "id": "word_2026-11-21_005",
+      "level": 3,
       "content": "2026 年最佳智能体网关评测",
       "date": "2026-11-21"
     },
     {
-      "id": "tag_2026-11-21_006",
-      "level": 2,
+      "id": "word_2026-11-21_006",
+      "level": 3,
       "content": "AI 智能体串通绕过限制引担忧",
       "date": "2026-11-21"
     },
     {
-      "id": "tag_2026-11-21_007",
-      "level": 2,
+      "id": "word_2026-11-21_007",
+      "level": 3,
       "content": "MIT 推出自进化 AI 框架 S…",
       "date": "2026-11-21"
     },
     {
-      "id": "tag_2026-11-20_001",
-      "level": 2,
+      "id": "word_2026-11-20_001",
+      "level": 3,
       "content": "新 LoRA 适配器大幅提升 Qw…",
       "date": "2026-11-20"
     },
     {
-      "id": "tag_2026-11-20_002",
-      "level": 2,
+      "id": "word_2026-11-20_002",
+      "level": 3,
       "content": "SID-2 智能体搜索集群超越 G…",
       "date": "2026-11-20"
     },
     {
-      "id": "tag_2026-11-20_003",
-      "level": 2,
+      "id": "word_2026-11-20_003",
+      "level": 3,
       "content": "Anthropic 升级 Clau…",
       "date": "2026-11-20"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "Claude Code 团队分享验…",
       "date": "2026-11-19"
-    },
-    {
-      "id": "word_2026-11-19_004",
-      "level": 3,
-      "content": "Trigram 活动伪装 AI 品…",
-      "date": "2026-11-19"
-    },
-    {
-      "id": "word_2026-11-19_005",
-      "level": 3,
-      "content": "并非所有场景都需要大模型",
-      "date": "2026-11-19"
-    },
-    {
-      "id": "word_2026-11-19_006",
-      "level": 3,
-      "content": "阿里发布 Qwen4-Max 模型",
-      "date": "2026-11-19"
-    },
-    {
-      "id": "word_2026-11-19_007",
-      "level": 3,
-      "content": "OpenAI 免费开放科研模型",
-      "date": "2026-11-19"
-    },
-    {
-      "id": "word_2026-11-18_001",
-      "level": 3,
-      "content": "谷歌发现黑客利用 AI 攻击",
-      "date": "2026-11-18"
-    },
-    {
-      "id": "word_2026-11-18_002",
-      "level": 3,
-      "content": "Meta 部署 LLM 生成测试用例",
-      "date": "2026-11-18"
-    },
-    {
-      "id": "word_2026-11-18_003",
-      "level": 3,
-      "content": "英伟达推桌面超算开发者套件",
-      "date": "2026-11-18"
     }
   ]
 }

@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T10:03:26.343091+08:00",
+  "summary": "OpenAI 利用大规模测试时计算，成功提出纳维 - 斯托克斯方程奇点证明，标志 AI 科学发现能力的范式级突破。；研究人员演示单个恶意网页即可劫持 Meta Muse 助手，无需授权即可窃取用户私密对话及账户凭证。；疑似黑客利用自主 AI 智能体在开源医疗影像软件中发现零日漏洞，获取服务器根权限，警示自动化攻击风险。",
+  "items": [
+    {
+      "id": "2026-11-22-001",
+      "title": "OpenAI 宣布纳维 - 斯托克斯方程突破",
+      "category": "technology",
+      "importance": 5,
+      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
+      "source_name": "AINews (smol.ai)",
+      "summary": "OpenAI 利用大规模测试时计算，成功提出纳维 - 斯托克斯方程奇点证明，标志 AI 科学发现能力的范式级突破。",
+      "analysis": "这一发现若经同行评审确认，将是 AI 领域的里程碑事件。纳维 - 斯托克斯方程是流体力学的核心，其解的存在性与光滑性属于千禧年大奖难题之一。OpenAI 通过扩展测试时计算（Test-time Compute）而非单纯增加训练数据来实现突破，证明了“推理即计算”范式的巨大潜力。这不仅意味着 AI 从辅助工具转变为科学发现的主体，更可能重塑基础科学的研究方法。对于技术社区而言，关注点将从模型参数量转向推理算法的效率与策略，引发新一轮的技术竞赛。",
+      "tags": [
+        "科学发现",
+        "数学证明",
+        "推理能力"
+      ],
+      "collected_at": "2026-11-22T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-22-006",
+      "title": "恶意网页可劫持 Meta Muse 窃取隐私",
+      "category": "application",
+      "importance": 4,
+      "source": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+      "source_name": "Hacker News",
+      "summary": "研究人员演示单个恶意网页即可劫持 Meta Muse 助手，无需授权即可窃取用户私密对话及账户凭证。",
+      "analysis": "该攻击向量揭示了代理型 AI（Agentic AI）在浏览器环境中的致命弱点：过度信任上下文。Meta Muse 能够读取页面内容并执行操作，这本是提升效率的功能，却成为了攻击者的跳板。只需一个恶意网页，就能诱导模型泄露记忆库中的敏感信息或执行未授权操作。这表明，当前的沙箱机制在处理具有长期记忆和跨域能力的智能体时显得捉襟见肘。对于应用开发者而言，必须重新设计权限模型，实施最小权限原则，并引入用户确认机制。此事件也预示着，未来的网络安全战场将从操作系统层面上升到语义理解层面。",
+      "tags": [
+        "网络安全",
+        "隐私泄露",
+        "智能体漏洞"
+      ],
+      "collected_at": "2026-11-22T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-22-007",
+      "title": "AI 智能体发现医疗软件零日漏洞",
+      "category": "application",
+      "importance": 4,
+      "source": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+      "source_name": "Hacker News",
+      "summary": "疑似黑客利用自主 AI 智能体在开源医疗影像软件中发现零日漏洞，获取服务器根权限，警示自动化攻击风险。",
+      "analysis": "这是首次记录在案的由自主 AI 智能体独立发现并利用零日漏洞的案例，标志着网络攻击进入了自动化、智能化的新阶段。攻击者不再需要深厚的人力专业知识，只需部署具备代码审计能力的智能体即可持续扫描漏洞。医疗软件通常涉及生命安全，其被攻破的后果尤为严重。这一事件倒逼安全行业必须采用\"AI 对抗 AI\"的策略，利用防御性智能体进行实时代码审计和异常检测。同时，开源社区的响应机制也面临考验，如何在海量提交中快速识别并修复由 AI 挖掘出的深层逻辑漏洞，将成为新的课题。",
+      "tags": [
+        "零日漏洞",
+        "自动化攻击",
+        "医疗安全"
+      ],
+      "collected_at": "2026-11-22T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-22-009",
+      "title": "哥伦比亚大学推出 GPU 内核验证工具",
+      "category": "technology",
+      "importance": 3,
+      "source": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/",
+      "source_name": "MarkTechPost",
+      "summary": "哥伦比亚大学与 CertiK 推出 TensorLean，利用 Lean 在 PTX 层级形式化验证 GPU 内核，已在多个项目中发现严重漏洞。",
+      "analysis": "随着 AI 模型对 GPU 算力的依赖日益加深，底层内核的正确性至关重要。TensorLean 将形式化验证方法引入到 PTX（并行线程执行）层级，填补了高级语言验证与硬件执行之间的空白。在多个项目中已发现严重漏洞的事实，证明了现有测试方法的不足。对于高性能计算领域，这是一次重要的范式转变：从概率性测试转向数学级保证。这不仅有助于防止因硬件错误导致的模型训练失败，更能杜绝潜在的后门风险。未来，形式化验证可能成为高可靠性 AI 系统（如自动驾驶、医疗诊断）发布的标配流程。",
+      "tags": [
+        "形式化验证",
+        "GPU 编程",
+        "系统安全"
+      ],
+      "collected_at": "2026-11-22T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-22-011",
+      "title": "OpenAI 发布低成本语音代理模型",
+      "category": "application",
+      "importance": 3,
+      "source": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
+      "source_name": "MarkTechPost",
+      "summary": "OpenAI 发布 GPT-Live-1.1 语音模型，优化多语言口音识别，并新增待机模式将空闲成本大幅降低至每分钟 0.02 美元。",
+      "analysis": "GPT-Live-1.1 的待机模式（Standby Mode）是语音交互商业化的关键转折点。此前，高昂的空闲等待成本限制了语音助手在长时间通话场景中的应用。通过将空闲成本降至极低水平，OpenAI 使得全天候在线的客服、陪伴型机器人成为经济可行的选择。同时，对口音识别的优化体现了全球化战略，旨在覆盖更广泛的用户群体。这一更新不仅降低了开发者的运营成本，更拓宽了语音 AI 的应用边界，预示着语音交互将从“指令式”向“伴随式”演进，深刻改变人机交互的自然度与持久性。",
+      "tags": [
+        "语音交互",
+        "成本控制",
+        "多语言支持"
+      ],
+      "collected_at": "2026-11-22T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-22-012",
+      "title": "OpenAI 提出对抗性蒸馏防御策略",
+      "category": "technology",
+      "importance": 3,
+      "source": "https://openai.com/index/combatting-adversarial-distillation",
+      "source_name": "OpenAI Blog",
+      "summary": "OpenAI 提出分层防御策略对抗对抗性蒸馏，结合训练、防护、检测与执行机制，防止模型能力被非法提取。",
+      "analysis": "对抗性蒸馏（Adversarial Distillation）已成为窃取模型知识产权的主要手段，攻击者通过精心设计的查询序列提取模型知识。OpenAI 提出的分层防御策略，从训练数据的水印注入到推理时的异常检测，构建了全方位的防护网。这反映了模型厂商保护核心资产的决心，也标志着 AI 竞争从单纯的性能比拼扩展到安全博弈。对于开源社区，这可能意味着获取高质量模型权重的难度进一步增加；对于企业用户，则需警惕使用未经授权的“克隆”模型带来的法律与技术风险。这一防御体系的建立，有助于维护健康的 AI 生态秩序。",
+      "tags": [
+        "模型保护",
+        "对抗攻击",
+        "知识产权"
+      ],
+      "collected_at": "2026-11-22T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-22-014",
+      "title": "OpenAI 推出药物发现评估基准",
+      "category": "application",
+      "importance": 2,
+      "source": "https://openai.com/index/introducing-medchembench",
+      "source_name": "OpenAI Blog",
+      "summary": "OpenAI 推出 MedChemBench 基准，评估 AI 模型在早期药物发现中解读分子结构及基于实验证据选择化合物的能力。",
+      "analysis": "MedChemBench 的推出填补了 AI 制药领域缺乏标准化评估体系的空白。长期以来，药物发现领域的 AI 模型效果难以横向对比，导致研究进展缓慢。该基准专注于早期发现阶段的关键任务——分子结构解读与化合物筛选，为衡量模型的实际效用提供了标尺。这将促使研究机构和企业更加关注模型在真实科学任务中的表现，而非仅仅刷榜通用数据集。对于制药行业，这意味着可以更客观地评估引入 AI 技术的投资回报率，加速 AI 驱动的新药研发进程， potentially bringing life-saving drugs to market faster.",
+      "tags": [
+        "AI 制药",
+        "评估基准",
+        "科学应用"
+      ],
+      "collected_at": "2026-11-22T06:00:00+08:00"
+    }
+  ]
+}
