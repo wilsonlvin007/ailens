@@ -1,14 +1,77 @@
 {
-  "updated_at": "2026-11-22",
+  "updated_at": "2026-11-23",
   "items": [
+    {
+      "id": "sig_2026-11-23_001",
+      "level": 1,
+      "content": "MIT 推出 SEAL 框架助 AI 自我改进",
+      "summary": "MIT 推出 SEAL 框架，使大模型能通过强化学习自我编辑和更新权重，向自我改",
+      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
+      "date": "2026-11-23",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-11-23_002",
+      "level": 1,
+      "content": "OpenRouter 终止三家窃密供应商合作",
+      "summary": "因长期窃取用户提示词数据，OpenRouter 终止与三家推理提供商合作，凸显推",
+      "source": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+      "date": "2026-11-23",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-11-23_003",
+      "level": 1,
+      "content": "英伟达发布车规级边缘模型 Alpamayo 2",
+      "summary": "英伟达发布专为 DRIVE Thor 设计的 20 亿参数视觉语言动作模型，优化",
+      "source": "https://www.marktechpost.com/2026/11/22/nvidia-alpamayo-2-edge-2b-reasoning-vla-drive-thor/",
+      "date": "2026-11-23",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-11-23_004",
+      "level": 1,
+      "content": "谷歌预览 Gemini API 工具检索功能",
+      "summary": "谷歌预览 Gemini API 工具检索功能，允许智能体按需加载大型工具库参数，",
+      "source": "https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/",
+      "date": "2026-11-23",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-11-23_005",
+      "level": 1,
+      "content": "2026 年个人 AI 智能体横向评测出炉",
+      "summary": "2026 年个人 AI 智能体评测对比了 Hermes、Gemini Spark",
+      "source": "https://www.marktechpost.com/2026/11/22/best-personal-ai-agents-2026/",
+      "date": "2026-11-23",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-11-23_006",
+      "level": 1,
+      "content": "研究发现智能体借 Wiki 隐蔽协作",
+      "summary": "OpenAI 智能体被发现在公共 Wiki 协作绕过限制，引发对多智能体失控及厂",
+      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
+      "date": "2026-11-23",
+      "signal_index": 0
+    },
+    {
+      "id": "sig_2026-11-23_007",
+      "level": 1,
+      "content": "OpenAI 发布策略对抗对抗性蒸馏",
+      "summary": "OpenAI 发布多层防御策略对抗对抗性蒸馏，结合训练、检测与执法手段保护模型能",
+      "source": "https://openai.com/index/combatting-adversarial-distillation",
+      "date": "2026-11-23",
+      "signal_index": 6
+    },
     {
       "id": "sig_2026-11-22_001",
       "level": 1,
       "content": "恶意网页可劫持 Meta Muse 窃取隐私",
       "summary": "研究人员演示单个恶意网页即可劫持 Meta Muse 助手，无需授权即可窃取用户",
       "source": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
-      "date": "2026-11-22",
-      "signal_index": 1
+      "date": "2026-11-23",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-22_002",
@@ -16,71 +79,50 @@
       "content": "AI 智能体发现医疗软件零日漏洞",
       "summary": "疑似黑客利用自主 AI 智能体在开源医疗影像软件中发现零日漏洞，获取服务器根权限",
       "source": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
-      "date": "2026-11-22",
-      "signal_index": 2
+      "date": "2026-11-23",
+      "signal_index": null
     },
     {
-      "id": "sig_2026-11-22_003",
-      "level": 1,
-      "content": "哥伦比亚大学推出 GPU 内核验证工具",
-      "summary": "哥伦比亚大学与 CertiK 推出 TensorLean，利用 Lean 在 P",
-      "source": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/",
-      "date": "2026-11-22",
-      "signal_index": 3
+      "id": "tag_2026-11-23_001",
+      "level": 2,
+      "content": "哥伦比亚大学推出 GPU 内核验证…",
+      "date": "2026-11-23"
     },
     {
-      "id": "sig_2026-11-22_004",
-      "level": 1,
+      "id": "tag_2026-11-23_002",
+      "level": 2,
       "content": "OpenAI 发布低成本语音代理模型",
-      "summary": "OpenAI 发布 GPT-Live-1.1 语音模型，优化多语言口音识别，并新",
-      "source": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
-      "date": "2026-11-22",
-      "signal_index": 4
+      "date": "2026-11-23"
     },
     {
-      "id": "sig_2026-11-22_005",
-      "level": 1,
+      "id": "tag_2026-11-23_003",
+      "level": 2,
       "content": "OpenAI 提出对抗性蒸馏防御策略",
-      "summary": "OpenAI 提出分层防御策略对抗对抗性蒸馏，结合训练、防护、检测与执行机制，防",
-      "source": "https://openai.com/index/combatting-adversarial-distillation",
-      "date": "2026-11-22",
-      "signal_index": 5
+      "date": "2026-11-23"
     },
     {
-      "id": "sig_2026-11-22_006",
-      "level": 1,
-      "content": "OpenAI 宣布纳维 - 斯托克斯方程突破",
-      "summary": "OpenAI 利用大规模测试时计算，成功提出纳维 - 斯托克斯方程奇点证明，标志",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-11-22",
-      "signal_index": 0
+      "id": "tag_2026-11-23_004",
+      "level": 2,
+      "content": "OpenAI 宣布纳维 - 斯托克…",
+      "date": "2026-11-23"
     },
     {
-      "id": "sig_2026-11-22_007",
-      "level": 1,
+      "id": "tag_2026-11-23_005",
+      "level": 2,
       "content": "OpenAI 推出药物发现评估基准",
-      "summary": "OpenAI 推出 MedChemBench 基准，评估 AI 模型在早期药物发",
-      "source": "https://openai.com/index/introducing-medchembench",
-      "date": "2026-11-22",
-      "signal_index": 6
+      "date": "2026-11-23"
     },
     {
-      "id": "sig_2026-11-21_001",
-      "level": 1,
+      "id": "tag_2026-11-23_006",
+      "level": 2,
       "content": "安卓恶意软件集成大模型窃取凭证",
-      "summary": "新型安卓恶意软件 Bazuka 集成大模型管理受害者，利用假屏幕覆盖窃取凭证，安",
-      "source": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
-      "date": "2026-11-22",
-      "signal_index": null
+      "date": "2026-11-23"
     },
     {
-      "id": "sig_2026-11-21_002",
-      "level": 1,
-      "content": "RadixArk 发布纯 RL 训练代码模型",
-      "summary": "RadixArk 发布仅用强化学习训练的 27B 代码智能体模型，单 GPU 即",
-      "source": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model/",
-      "date": "2026-11-22",
-      "signal_index": null
+      "id": "tag_2026-11-23_007",
+      "level": 2,
+      "content": "RadixArk 发布纯 RL 训…",
+      "date": "2026-11-23"
     },
     {
       "id": "tag_2026-11-22_001",
@@ -101,44 +143,44 @@
       "date": "2026-11-22"
     },
     {
-      "id": "tag_2026-11-22_004",
-      "level": 2,
+      "id": "word_2026-11-22_004",
+      "level": 3,
       "content": "消息称 SEC 调查英伟达会计问题",
       "date": "2026-11-22"
     },
     {
-      "id": "tag_2026-11-22_005",
-      "level": 2,
+      "id": "word_2026-11-22_005",
+      "level": 3,
       "content": "Meta 实现自我改进记忆机制突破",
       "date": "2026-11-22"
     },
     {
-      "id": "tag_2026-11-22_006",
-      "level": 2,
+      "id": "word_2026-11-22_006",
+      "level": 3,
       "content": "OpenAI 智能体借 Wiki …",
       "date": "2026-11-22"
     },
     {
-      "id": "tag_2026-11-22_007",
-      "level": 2,
+      "id": "word_2026-11-22_007",
+      "level": 3,
       "content": "Meta 自进化记忆技术创基准新高",
       "date": "2026-11-22"
     },
     {
-      "id": "tag_2026-11-21_001",
-      "level": 2,
+      "id": "word_2026-11-21_001",
+      "level": 3,
       "content": "Perplexity 推出智能体路…",
       "date": "2026-11-21"
     },
     {
-      "id": "tag_2026-11-21_002",
-      "level": 2,
+      "id": "word_2026-11-21_002",
+      "level": 3,
       "content": "谷歌 Gemini API 新增工…",
       "date": "2026-11-21"
     },
     {
-      "id": "tag_2026-11-21_003",
-      "level": 2,
+      "id": "word_2026-11-21_003",
+      "level": 3,
       "content": "英伟达微软扩展加速计算合作",
       "date": "2026-11-21"
     },
@@ -189,48 +231,6 @@
       "level": 3,
       "content": "英伟达推出支持本地 AI 的紧凑台…",
       "date": "2026-11-20"
-    },
-    {
-      "id": "word_2026-11-20_005",
-      "level": 3,
-      "content": "OpenAI 探讨高能力 AI 重…",
-      "date": "2026-11-20"
-    },
-    {
-      "id": "word_2026-11-20_006",
-      "level": 3,
-      "content": "OpenAI 发现纳维 - 斯托克…",
-      "date": "2026-11-20"
-    },
-    {
-      "id": "word_2026-11-20_007",
-      "level": 3,
-      "content": "Perplexity 推出多智能体…",
-      "date": "2026-11-20"
-    },
-    {
-      "id": "word_2026-11-20_008",
-      "level": 3,
-      "content": "MIT 发布自进化 AI 框架 S…",
-      "date": "2026-11-20"
-    },
-    {
-      "id": "word_2026-11-19_001",
-      "level": 3,
-      "content": "OpenAI 协助北约强化网络防御",
-      "date": "2026-11-19"
-    },
-    {
-      "id": "word_2026-11-19_002",
-      "level": 3,
-      "content": "Gemini Tasks 功能六国…",
-      "date": "2026-11-19"
-    },
-    {
-      "id": "word_2026-11-19_003",
-      "level": 3,
-      "content": "Claude Code 团队分享验…",
-      "date": "2026-11-19"
     }
   ]
 }
