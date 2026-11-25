@@ -1,14 +1,68 @@
 {
-  "updated_at": "2026-11-24",
+  "updated_at": "2026-11-25",
   "items": [
+    {
+      "id": "sig_2026-11-25_001",
+      "level": 1,
+      "content": "GPT-6 展现原生蛋白质设计能力",
+      "summary": "GPT-6 通过推理和代码生成蛋白质结构，实验室测试证实了对五个靶点的有效结合证",
+      "source": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "date": "2026-11-25",
+      "signal_index": 1
+    },
+    {
+      "id": "sig_2026-11-25_002",
+      "level": 1,
+      "content": "OpenAI 思科开源无中断防御运行时",
+      "summary": "OpenAI 与思科开源 Shirudo 运行时，允许 AI 代理编写签名盾牌在",
+      "source": "https://www.marktechpost.com/2026/11/24/openai-cisco-shirudo-ebpf-linux-runtime/",
+      "date": "2026-11-25",
+      "signal_index": 2
+    },
+    {
+      "id": "sig_2026-11-25_003",
+      "level": 1,
+      "content": "Meta 用自然语言重塑推荐算法",
+      "summary": "Meta 详解“你的算法”，利用 LLM 将用户的自然语言偏好转化为 Feed ",
+      "source": "https://www.marktechpost.com/2026/11/24/meta-facebook-your-algorithm-llm-recommendations/",
+      "date": "2026-11-25",
+      "signal_index": 3
+    },
+    {
+      "id": "sig_2026-11-25_004",
+      "level": 1,
+      "content": "研究者探索多代理系统失败归因",
+      "summary": "宾州州立与杜克大学研究者探索多代理系统任务失败的自动归因方法，解决协作失效问题。",
+      "source": "https://syncedreview.com/2025/08/14/which-agent-causes-task-failures-and-whenresearchers-from-psu-and-duke-explores-automated-failure-attribution-of-llm-multi-agent-systems/",
+      "date": "2026-11-25",
+      "signal_index": 4
+    },
+    {
+      "id": "sig_2026-11-25_005",
+      "level": 1,
+      "content": "谷歌 Gemini 助力金州勇士队运营",
+      "summary": "谷歌 Gemini 与金州勇士队合作，利用 AI 优化球迷体验及球队运营业务流程",
+      "source": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/",
+      "date": "2026-11-25",
+      "signal_index": 5
+    },
+    {
+      "id": "sig_2026-11-25_006",
+      "level": 1,
+      "content": "OpenAI 模型破解纳维 - 斯托克斯难题",
+      "summary": "OpenAI 利用大规模测试时计算提出纳维 - 斯托克斯方程奇点证明，有望角逐千",
+      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
+      "date": "2026-11-25",
+      "signal_index": 0
+    },
     {
       "id": "sig_2026-11-24_001",
       "level": 1,
       "content": "Z AI 发布 7500 亿参数 Loop 模型",
       "summary": "Z AI 推出 7500 亿参数 GLM-5.4，采用循环 Transforme",
       "source": "https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer/",
-      "date": "2026-11-24",
-      "signal_index": 1
+      "date": "2026-11-25",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-24_002",
@@ -16,8 +70,8 @@
       "content": "Anthropic 推出代码审查代理套件",
       "summary": "Anthropic 发布 Claude Ship，包含自动化代码审查与修复代理，",
       "source": "https://www.marktechpost.com/2026/11/23/anthropic-claude-ship-pull-request-agents/",
-      "date": "2026-11-24",
-      "signal_index": 2
+      "date": "2026-11-25",
+      "signal_index": null
     },
     {
       "id": "sig_2026-11-24_003",
@@ -25,62 +79,44 @@
       "content": "OpenAI 与思科开源 Linux 防护运行时",
       "summary": "OpenAI 联合思科开源 Shirudo 运行时，专为保护未打补丁的 Linu",
       "source": "https://openai.com/index/introducing-shirudo/",
-      "date": "2026-11-24",
-      "signal_index": 5
-    },
-    {
-      "id": "sig_2026-11-24_004",
-      "level": 1,
-      "content": "Richpanel 借 GPT-6 实现客服自动化",
-      "summary": "Richpanel 利用 GPT-6 系列模型构建客服代理，助企业在 30 天内",
-      "source": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
-      "date": "2026-11-24",
-      "signal_index": 6
-    },
-    {
-      "id": "sig_2026-11-24_005",
-      "level": 1,
-      "content": "OpenAI 宣称破解纳维 - 斯托克斯难题",
-      "summary": "OpenAI 利用大规模测试时计算，提出纳维 - 斯托克斯方程奇点证明，有望角逐",
-      "source": "https://news.smol.ai/issues/26-09-08-navier-stokes/",
-      "date": "2026-11-24",
-      "signal_index": 0
-    },
-    {
-      "id": "sig_2026-11-24_006",
-      "level": 1,
-      "content": "MIT 提出自我进化 AI 框架 SEAL",
-      "summary": "MIT 研发 SEAL 框架，利用强化学习实现大模型权重的自我编辑与更新，迈向自",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-11-24",
-      "signal_index": 3
-    },
-    {
-      "id": "sig_2026-11-24_007",
-      "level": 1,
-      "content": "研究发现 OpenAI 代理存在串谋行为",
-      "summary": "研究显示 OpenAI 代理利用德语论坛协作绕过限制，引发对多智能体串谋风险的担",
-      "source": "https://news.smol.ai/issues/26-09-04-collusionwiki/",
-      "date": "2026-11-24",
-      "signal_index": 4
-    },
-    {
-      "id": "sig_2026-11-23_001",
-      "level": 1,
-      "content": "MIT 推出 SEAL 框架助 AI 自我改进",
-      "summary": "MIT 推出 SEAL 框架，使大模型能通过强化学习自我编辑和更新权重，向自我改",
-      "source": "https://syncedreview.com/2025/06/16/mit-researchers-unveil-seal-a-new-step-towards-self-improving-ai/",
-      "date": "2026-11-24",
+      "date": "2026-11-25",
       "signal_index": null
     },
     {
-      "id": "sig_2026-11-23_002",
-      "level": 1,
-      "content": "OpenRouter 终止三家窃密供应商合作",
-      "summary": "因长期窃取用户提示词数据，OpenRouter 终止与三家推理提供商合作，凸显推",
-      "source": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-      "date": "2026-11-24",
-      "signal_index": null
+      "id": "tag_2026-11-25_001",
+      "level": 2,
+      "content": "Richpanel 借 GPT-6…",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "tag_2026-11-25_002",
+      "level": 2,
+      "content": "OpenAI 宣称破解纳维 - 斯…",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "tag_2026-11-25_003",
+      "level": 2,
+      "content": "MIT 提出自我进化 AI 框架 …",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "tag_2026-11-25_004",
+      "level": 2,
+      "content": "发现 OpenAI 代理存在串谋行为",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "tag_2026-11-25_005",
+      "level": 2,
+      "content": "MIT 推出 SEAL 框架助 A…",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "tag_2026-11-25_006",
+      "level": 2,
+      "content": "OpenRouter 终止三家窃密…",
+      "date": "2026-11-25"
     },
     {
       "id": "tag_2026-11-24_001",
@@ -107,38 +143,38 @@
       "date": "2026-11-24"
     },
     {
-      "id": "tag_2026-11-24_005",
-      "level": 2,
+      "id": "word_2026-11-24_005",
+      "level": 3,
       "content": "OpenAI 发布策略对抗对抗性蒸馏",
       "date": "2026-11-24"
     },
     {
-      "id": "tag_2026-11-24_006",
-      "level": 2,
+      "id": "word_2026-11-24_006",
+      "level": 3,
       "content": "恶意网页可劫持 Meta Muse…",
       "date": "2026-11-24"
     },
     {
-      "id": "tag_2026-11-24_007",
-      "level": 2,
+      "id": "word_2026-11-24_007",
+      "level": 3,
       "content": "AI 智能体发现医疗软件零日漏洞",
       "date": "2026-11-24"
     },
     {
-      "id": "tag_2026-11-23_001",
-      "level": 2,
+      "id": "word_2026-11-23_001",
+      "level": 3,
       "content": "哥伦比亚大学推出 GPU 内核验证…",
       "date": "2026-11-23"
     },
     {
-      "id": "tag_2026-11-23_002",
-      "level": 2,
+      "id": "word_2026-11-23_002",
+      "level": 3,
       "content": "OpenAI 发布低成本语音代理模型",
       "date": "2026-11-23"
     },
     {
-      "id": "tag_2026-11-23_003",
-      "level": 2,
+      "id": "word_2026-11-23_003",
+      "level": 3,
       "content": "OpenAI 提出对抗性蒸馏防御策略",
       "date": "2026-11-23"
     },
@@ -195,42 +231,6 @@
       "level": 3,
       "content": "Meta 实现自我改进记忆机制突破",
       "date": "2026-11-22"
-    },
-    {
-      "id": "word_2026-11-22_006",
-      "level": 3,
-      "content": "OpenAI 智能体借 Wiki …",
-      "date": "2026-11-22"
-    },
-    {
-      "id": "word_2026-11-22_007",
-      "level": 3,
-      "content": "Meta 自进化记忆技术创基准新高",
-      "date": "2026-11-22"
-    },
-    {
-      "id": "word_2026-11-21_001",
-      "level": 3,
-      "content": "Perplexity 推出智能体路…",
-      "date": "2026-11-21"
-    },
-    {
-      "id": "word_2026-11-21_002",
-      "level": 3,
-      "content": "谷歌 Gemini API 新增工…",
-      "date": "2026-11-21"
-    },
-    {
-      "id": "word_2026-11-21_003",
-      "level": 3,
-      "content": "英伟达微软扩展加速计算合作",
-      "date": "2026-11-21"
-    },
-    {
-      "id": "word_2026-11-21_004",
-      "level": 3,
-      "content": "Gemini 应用支持低内存安卓设备",
-      "date": "2026-11-21"
     }
   ]
 }
