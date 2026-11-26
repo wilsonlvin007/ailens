@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T12:04:48.709206+08:00",
+  "summary": "GPT-6 模型展示内在蛋白质设计能力，能通过推理和代码生成结构序列，并获实验室验证。；字节跳动开源异步强化学习框架 Laminar，解耦训练流程，显著提升 Qwen3-Coder 代码表现。；OpenAI 与思科发布开源运行时 Shirudo，允许 AI 智能体编写签名盾牌，无中断防御漏洞利用。",
+  "items": [
+    {
+      "id": "2026-11-26-005",
+      "title": "GPT-6 展示内在蛋白质设计能力",
+      "category": "application",
+      "importance": 4,
+      "source": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "source_name": "OpenAI Blog",
+      "summary": "GPT-6 模型展示内在蛋白质设计能力，能通过推理和代码生成结构序列，并获实验室验证。",
+      "analysis": "GPT-6 在蛋白质设计上的表现，证明了通用大模型在垂直科学领域的巨大潜力。不同于以往依赖专用模型或大量微调，GPT-6 展现了“内在”的推理与生成能力，能够通过编写代码直接设计具有特定结合效果的蛋白质结构。这不仅大幅降低了生物计算的门槛，更加速了新药研发与合成生物学的进程。这一进展意味着 AI for Science 正从“辅助筛选”迈向“从头设计”阶段，未来生物医药行业的创新速度将主要由算力与算法的迭代速度决定。",
+      "tags": [
+        "生物科技",
+        "蛋白质设计",
+        "AI for Science"
+      ],
+      "collected_at": "2026-11-26T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-26-006",
+      "title": "字节跳动开源异步强化学习框架",
+      "category": "technology",
+      "importance": 4,
+      "source": "https://www.marktechpost.com/2026/11/24/bytedance-seed-laminar-async-rl-post-training-framework/",
+      "source_name": "MarkTechPost",
+      "summary": "字节跳动开源异步强化学习框架 Laminar，解耦训练流程，显著提升 Qwen3-Coder 代码表现。",
+      "analysis": "Laminar 框架的开源反映了业界对高效后训练（Post-training）技术的迫切需求。通过解耦训练流程并引入异步强化学习，该框架显著提升了代码生成模型的性能，表明在预训练之后，高质量的 RL 微调是释放模型潜力的关键。对于技术社区而言，这不仅是一个工具的提升，更提供了一种可扩展的训练范式，使得中小团队也能利用有限资源优化大模型。这将加剧代码生成领域的竞争，推动编程助手从“补全代码”向“自主构建系统”进化。",
+      "tags": [
+        "开源框架",
+        "强化学习",
+        "代码生成"
+      ],
+      "collected_at": "2026-11-26T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-26-008",
+      "title": "OpenAI 与思科发布开源防御运行时",
+      "category": "technology",
+      "importance": 3,
+      "source": "https://www.marktechpost.com/2026/11/24/openai-cisco-shirudo-ebpf-linux-runtime/",
+      "source_name": "MarkTechPost",
+      "summary": "OpenAI 与思科发布开源运行时 Shirudo，允许 AI 智能体编写签名盾牌，无中断防御漏洞利用。",
+      "analysis": "Shirudo 的发布标志着 AI 在网络安全领域的应用进入了实时防御阶段。利用 eBPF 技术，AI 智能体能够在内核层面动态编写防御规则，且无需重启系统，这对于保障关键基础设施的连续性至关重要。这种“以 AI 制衡 AI 攻击”的模式将成为未来网络安全的标配。然而，将内核级的写入权限交给 AI 智能体也伴随着巨大风险，一旦智能体被误导，可能导致系统级瘫痪。因此，该项目的开源策略旨在通过社区审查来建立信任，推动安全自动化标准的形成。",
+      "tags": [
+        "网络安全",
+        "开源",
+        "eBPF"
+      ],
+      "collected_at": "2026-11-26T06:00:00+08:00"
+    },
+    {
+      "id": "2026-11-26-012",
+      "title": "谷歌搜索推出个人智能模式",
+      "category": "application",
+      "importance": 2,
+      "source": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "source_name": "Google AI Blog",
+      "summary": "谷歌搜索推出个人智能模式，用户可选择连接钱包和云端数据，以获得更个性化的搜索结果响应。",
+      "analysis": "谷歌搜索的个人智能模式代表了搜索引擎从“通用索引”向“个人助理”的转型。通过授权访问钱包、云端数据等私密信息，搜索结果的相关性将大幅提升，能够处理如“预订我常去的餐厅”等复杂指令。然而，这一功能的核心挑战在于隐私保护与数据安全。用户必须在便利性与隐私泄露风险之间做出权衡。谷歌此举意在构建更深的生态护城河，但也可能引发监管机构对个人数据聚合使用的新一轮审查。",
+      "tags": [
+        "谷歌搜索",
+        "个性化",
+        "数据隐私"
+      ],
+      "collected_at": "2026-11-26T06:00:00+08:00"
+    }
+  ]
+}
